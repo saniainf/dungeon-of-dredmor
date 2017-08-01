@@ -1,0 +1,481 @@
+<itemDB>
+
+<power name="Grenadier" description="explodes violently and without warning." spell="Grenade Center" />
+<power name="Bleeding" description="causes profuse bleeding." spell="Bleeding Out" />
+<power name="Blind" description="dazzles enemies with brilliance." spell="Blind Target"/>
+   
+<item name="The Log" iconFile="items/log.png" overrideClassName="Timber" artifact="1">
+	<price amount="11111"/>
+	<armour level="13" type="shield"/>
+   <artifact quality="1" />
+	<secondarybuff id="3" amount="10"/> <!-- magic power -->
+   <primarybuff id="1" amount="16" /> <!-- sag -->
+	<primarybuff id="2" amount="-5"/> <!-- nim -->
+	<description text="The log has a message for you. Are you ready to listen?"/>
+	</item>  
+   
+<!-- communist items -->
+
+<item name="Sickle" iconFile="items/sword_sickle.png" level="3" type="0" special="0">
+	<price amount="300"/>
+	<weapon slashing="3" />
+	<description text="The crop you harvest is pain."/>
+	</item>
+
+<item name="Hammer" iconFile="items/mace_hammer.png" level="3" type="2" special="1">
+	<price amount="300"/>
+	<weapon crushing="3" />
+	<description text="If you had a hammer, what would you do? Let's find out."/>
+	</item>
+
+<item name="Communist Ushanka" iconFile="items/helm_ushanka.png" special="1">
+   <price amount="700"/>
+   <armour level="3" type="head"/>
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<resistbuff hyperborean="4"/>
+	<description text="Ushanka to be keeping ears warm during great winter offensive lead by General Winter."/>
+	</item>
+
+  <item name="Potato" iconFile="items/food_potato.png" level="5">
+    <price amount="100"/>
+    <food hp="5"/>
+    <description text="The humblest of tubers."/>
+  </item>
+  
+<item name="Vodka" iconFile="items/booze_vodka.png" level="7" special="1">
+	<price amount="145"/>
+	<food mp="30" effect="Warming Vodka Effect" />
+	<description text="Vodka help keep warm for long winter."/>
+	</item>
+
+<item name="The Bomb" iconFile="items/thrown_the_bomb.png" level="14" type="5" maxstack="1" special="1" >
+	<price amount="25000"/>
+	<weapon crushing="1" hit="They Blew It Up" canTargetFloor="1" thrown="items/thrown_the_bomb.png" />
+	<description text="They said it couldn't be done, but here in your hands is proof that we can split the thaumaturgon and harness the vast power contained in that tiny particle!" />
+	</item>
+
+<!-- bankster items -->
+
+<item name="Rearden Metal Ingot" iconFile="items/ingot_rearden.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="100"/>
+	<description text="Free of government interference, this is an entreprenuerial wonder metal! Caution: Unregulated Rearden Metal Ingots, free of Government Interference, may explode when exposed to oxygen and/or sunlight."/>
+	</item>
+
+<!-- exp3 armour -->
+
+<item name="The Baron's Hat" iconFile="items/helm_samedi.png" special="1" craftoutput="1">
+	<price amount="1250"/>
+	<armour level="4" type="head"/>
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+		<!-- Hope this works -->
+		<targetHitEffectBuff percentage="15" name="Get Tipsy"/>
+		<playerHitEffectBuff percentage="15" name="Get Tipsy"/>
+	<description text="This hat contains a special power that keeps you partying all night long."/>
+	</item>
+
+<item name="Hat of the Space Wizard" iconFile="items/helm_star_wizard.png" >
+   <price amount="4900" />
+   <armour level="8" type="head" />
+   <description text="Space Wizards are not to be trusted; it is known." />
+	<secondaryBuff id="1" amount="5"/> <!-- mana -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+   <secondarybuff id="14" amount="2"/> <!-- magic regen -->
+	<resistbuff aethereal="3" transmutative="1"/>   
+	</item>
+	
+<item name="Ulmish Blacksteel Platemail" iconFile="items/armour_ulm.png">
+	<price amount="31031"/>
+	<armour level="14" type="chest"/>
+	<secondaryBuff id="7" amount="15"/> <!-- block -->
+	<secondaryBuff id="10" amount="13"/> <!-- armour absorption -->
+	<primaryBuff id="2" amount="-10"/> <!-- nim -->
+	<secondaryBuff id="3" amount="-20"/> <!-- magic power -->
+	<secondaryBuff id="14" amount="-5"/> <!-- mana regen -->
+	<secondaryBuff id="11" amount="15"/> <!-- resist -->
+	<resistBuff piercing="7"/>	
+	<description text="Above all the Ulmish love metalworking, compound words, and pickled cabbage. They do not approve of magic (or smiles) so this armour was created to protect their warriors from both."/>
+	</item>
+
+<!--
+<item name="Blogwart" iconFile="items/fungus00.png">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<casts spell="Healing Wound"/>
+	<description text="Found only in the dankest, foulest blogs, the Blogwart's great possibilities just manage to outweigh the difficulty in finding a useful specimen."/>
+	</item>
+<item name="Fallowthumb" iconFile="items/fungus02.png">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="This mushroom grows best on a rich humus of neglect."/>
+	</item>
+<item name="Velvet Club Mushroom" iconFile="items/fungus_velvet_club.spr">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="The rich, soft exterior hides a deadly heart."/>
+	</item>
+<item name="Troll Butter Fungus" iconFile="items/fungus_troll_butter.spr">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="This is not a much-loved fungus for obvious reasons."/>
+	</item>
+<item name="Dwarfsbeard" iconFile="items/fungus_dwarfsbeard.spr">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="Like its namesake, Dwarfsbeard grows best underground in a pool of alcohol."/>
+	</item>
+<item name="Waxcap" iconFile="items/fungus_waxcap.spr">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="This must be the secret ingredient of your aunt's legendary mushroom casserole!"/>
+	</item>
+<item name="Shaghorn Morel" iconFile="items/fungus01.png">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="This must be the secret ingredient of your aunt's legendary mushroom casserole!"/>
+	</item>
+<item name="Squidgebulb" iconFile="items/fungus_squidgebulb.spr">
+	<price amount="100"/>
+	<mushroom value="1000" worthless="an intriguing and potentially dangerous mushroom"/>
+	<description text="This fungus excretes slime when it is annoyed."/>
+	</item>
+-->
+
+  <!-- Find a place for these!
+<item name="Cave Triangle" iconFile="items/gem5.spr" alchemical="1">
+	<price amount="100"/>
+	<gem value="1000" worthless="worthless plastic triangle"/>
+	<description text="Many years ago, a beautiful princess scattered eight pieces of the Cave Triangle around the land of Hy-... wait, wrong video game."/>
+</item>
+
+<item name="Dilithium Crystal" iconFile="items/gem8.spr" alchemical="1">
+	<price amount="100"/>
+	<gem value="1000" worthless="worthless piece of clear glass"/>
+	<description text="The rare Dilithium Crystal has long been sought after by men who need to successfully control the interaction of matter and anti-matter."/>
+</item>
+-->
+
+<!-- swords -->
+
+<!-- Durendal -->
+<!-- Scourge - sword of the War God -->
+
+<item name="Sword in the Stone" iconFile="items/sword_in_stone.png" level="11" type="0" artifact="1">
+	<price amount="20000"/>
+	<weapon crushing="10" righteous="10" />
+	<artifact quality="16"/>
+	<resistBuff necromantic="5" />
+	<description text="It's an extremely magical sword meant for the heir to the throne or the destined saviour of the world or something. None of this nonsense applies to you, of course, so it's going to remain stuck in that rock."/>
+	</item>
+
+<item name="Emerald Sword" iconFile="items/sword_emerald.png" level="12" type="0" artifact="1">
+	<price amount="20000"/>
+	<weapon slashing="25" piercing="10" righteous="15" />
+	<artifact quality="10"/>
+	<resistBuff righteous="5" necromantic="5" />
+	<description text="Forged by the last Winged Unicorn; wielded by the Swordmaster to defeat ultimate evil, this sword has found its way to YOU."/>
+	</item>
+
+<item name="Scintillating Ethereal Sword" iconFile="items/sword_scintillating.png" level="13" type="0" >
+	<price amount="35000"/>
+	<weapon slashing="35" piercing="10" />
+	<description text="This sword's blade is a wisp of luminous energy hovering an inch above the hilt. It hums a slightly irritating tune."/>
+	</item>	
+	
+	<!-- should be spelled "Monofilament" but fixing it would explode savegames so I'm leaving this :( -->
+<item name="Monofiliment Sword" iconFile="items/sword_monofiliment.png" level="14" type="0" >
+	<price amount="50000"/>
+	<weapon slashing="50"/>
+	<description text="Favoured by giant cat-aliens and eastern assassins, this sword's blade is nearly invisible and entirely deadly because it is a single thaumaturgon in width."/>
+	</item>
+
+<!-- axes -->
+
+<!-- 11, 13, 14, 15 -->
+
+<item name="Axe of the Lunar Disc" iconFile="items/axe_lunar.png" level="13" type="1"  >
+	<price amount="45000" />
+	<weapon slashing="30" crushing="10" hyperborean="5" aethereal="10" />
+	<targetHitEffectBuff percentage="100" name="Blast Effect A" />
+	<description text="This axe uses chilling celestial tide-powers to tear enemies apart." />
+	</item>
+
+<item name="Axe of the Solar Disc" iconFile="items/axe_solar.png" level="14" type="1"  >
+	<price amount="50000" />
+	<weapon slashing="30" conflagratory="15" righteous="10" />
+	<targetHitEffectBuff percentage="100" name="On Fire" />
+	<description text="The burning power of the sun is effectively channeled by this axe - just don't look directly at it!" />
+	</item>
+
+<!-- maces -->
+
+<!-- Sharur, "smasher of thousands"-->
+<item name="Sharur" iconFile="items/mace_sharur.png" level="12" type="2" artifact="1">
+	<price amount="48000"/>
+	<weapon crushing="40" />
+	<artifact quality="8"/>
+	<description text="This mace is called the 'Smasher of Thousands' and, gross, you can see why."/>
+	<targetHitEffectBuff percentage="100" name="Crushed Bones" />
+	</item>
+	
+	<!-- Dwarven Atom-smasher -->
+<item name="Dwarven Atom-smasher" iconFile="items/mace_atom_smasher.png" level="13" type="2" >
+	<price amount="55000"/>
+	<weapon crushing="40" transmutative="5" />
+	<description text="Used by the Dwarves for one or another of their various projects that tend to result in unintended consequences. (Beware of stray transmutative thaumaturgons that may result from smashing atoms.)"/>
+   <targetHitEffectBuff percentage="100" name="Smash Atoms"/>
+	</item>
+
+	<!-- Hammer of the Abyssal Vortex -->
+
+<!-- staves -->
+
+<!-- Thyrsus : staff w/ pine cone on top, covered with ivy. Of Dionysus. Drunkeness power? -->
+<item name="Thyrsus" iconFile="items/staff_thyrsus.png" level="11" type="3" artifact="1">
+	<price amount="30125"/>
+	<weapon crushing="20" putrefying="5" toxic="10"/>
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+	<resistBuff toxic="5" putrefying="5" />
+	<artifact quality="5"/>
+	<description text="This magical staff handed down from the Gods in days of old offers the tastes of forbidden Wizarding Liquids to any wizard bold enough to grasp it."/>
+	<targetHitEffectBuff name="Indulge" percentage="18" />
+	</item>
+
+<!-- Griorarvolr, Odin's iron staff -->
+<!-- artifact -->
+<item name="Griorarvolr" iconFile="items/staff_griorarvolr.png" level="12" type="3" artifact="1">
+	<price amount="35750"/>
+	<weapon crushing="20" aethereal="5" hyperborean="5" voltaic="10"/>
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+	<secondarybuff id="5" amount="2"/> <!-- haywire -->
+	<resistBuff voltaic="5" hyperborean="5" />
+	<description text="Be careful with this staff - you could shoot your eye out."/>
+	<artifact quality="5"/>
+	</item>  
+
+<!-- Caduceus : winged staff w/ two serpents ; associated w/ mercury -->
+<item name="Caduceus" iconFile="items/staff_caduceus.png" level="13" type="3">
+	<price amount="40370"/>
+	<weapon crushing="20" putrefying="5" toxic="10"/>
+	<secondarybuff id="0" amount="15"/> <!-- hitpoints -->
+	<secondarybuff id="13" amount="1"/> <!-- life regen -->
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+	<resistBuff toxic="5" putrefying="5" />
+	<description text="Caduceus, the Kanadian Goddess of Health, created this foul weapon to ward off HMOs and other threats to socialized medicine."/>
+	</item>  
+
+
+
+<!-- thrown -->
+
+<!-- Zeus's bolts? -->
+
+<!-- daggers -->
+
+<item name="Daemonic Diggledagger" iconFile="items/dagger_diggle.png" level="12" type="7" artifact="1">
+   <artifact quality="5" />
+   <price amount="23200"/>
+   <weapon slashing="1" piercing="10" conflagratory="5" necromantic="5" />
+	<resistBuff righteous="-5" necromantic="1" conflagratory="1" />
+   <!-- TODO: resist, some anti-magic thing. -->
+   <!-- <targetHitEffectBuff name="Recrusive Stab" percentage="100" /> -->
+   <targetHitEffectBuff name="Daemonic Diggledagger Hit" percentage="100" />
+   <description text="Don't touch it, it's evil! (And it hates you so much!)"/>
+   </item>
+
+<!-- Carnewennan, of Arthur, "shrouds its user in shadow" -->
+
+<!-- polearm -->
+
+<!-- Ron the Lance. AKA Rhongomiant. King Arthur's. -->
+<!-- Plutonic Bident -->
+	
+<!-- rings / trinkets -->
+<!-- Andvarinaut : Andvari's gift: a ring that makes gold (also self-destruction) -->
+<!-- Draupnir : Odin's golden arm-ring; produces more golden rings -->
+<!-- Solomon's Seal : brass or steel, imprisons demons. -->
+<!-- Apple of Discord : Make monsters fight one another? -->
+<!-- Bone of Ullr : spells carved on a bone. -->
+
+<item name="Amber Ring of Unending Time" iconFile="items/ring_of_amber.png" >
+	<price amount="14600"/>
+	<armour type="ring" level="7" randoms="0" />
+	<description text="Gross little bugs are frozen in this amber ring; it tingles with static."/>
+	<resistBuff voltaic="4" putrefying="3" />
+	<playerHitEffectBuff name="Amber Ring Hit" percentage="50" />
+	<targetHitEffectBuff name="Amber Ring Hit" percentage="50" />
+   </item>
+
+<item name="Black Pearl Ring of Sleeping Secrets" iconFile="items/ring_of_black_pearl.png" >
+	<price amount="18600"/>
+	<armour type="ring" level="9" randoms="0" />
+	<description text="Look not too long into this black pearl ring lest it tell you something you didn't want to know."/>
+	<secondarybuff id="17" amount="2"/> <!-- trap sight -->
+	<secondaryBuff id="12" amount="10" /> <!-- sneak -->
+	<resistBuff aethereal="2" />
+	<secondarybuff id="23" amount="1"/> <!-- wandcrafting -->
+   </item>
+
+<item name="Diamond Ring of the Darkest Stars" iconFile="items/ring_of_diamond.png" >
+	<price amount="28600"/>
+	<armour type="ring" level="11" randoms="0" />
+	<description text="There are sharp little pinpoints shining dimly in this diamond ring."/>
+	<resistBuff aethereal="4" />
+	<secondaryBuff id="11" amount="10" />
+	<secondaryBuff id="22" amount="10" />
+   </item>
+
+<item name="Sapphire Ring of the Deepest Skies" iconFile="items/ring_of_sapphire.png" >
+	<price amount="39690"/>
+	<armour type="ring" level="13" randoms="0" />
+	<description text="Clouds swim and scud around in this sapphire ring; looks like a 30% chance of rain and a good chance that this ring will invigorate your precious bodily fluids and energies."/>
+	<secondarybuff id="14" amount="2"/> <!-- mana regen -->
+	<secondarybuff id="13" amount="2"/> <!-- hp regen -->
+	<secondarybuff id="1" amount="5"/> <!-- mana -->
+	<secondaryBuff id="0" amount="5" /> <!-- health -->
+	<playerHitEffectBuff name="Healing Rain Self" percentage="30" />
+	<targetHitEffectBuff name="Regen Mana 1" percentage="30" />
+   </item>
+
+
+<!-- amulets -->
+<!-- Agimat : Filipino charm ; gains powers. house/pentagon w/ star. -->
+<!-- Eye of Argon ; re. Grignr the Barbarian : "a many fauceted scarlet emerald"  -->
+
+<!-- tomes -->
+<!-- Book of Thoth : magic stuff, necro -->
+<!-- Tablet(s) of Destriny : Babylonian, secrets of creation and destruction -->
+<!-- The Cornucopia : makes fruit & stuff -->
+
+<!-- shields -->
+<!-- Savalinn : "the shield that stands before the sun" -->
+<!-- Ancile : shield/buckler of Mars ; "fiddle shield" -->
+
+<!-- helms -->
+<!-- Helm of Darkness aka Cap of Invisibility -->
+
+<!--
+Mr. Whitman , if you please:
+
+TODO: Helm of Ultimate Knowledge ; iconFile="items/helm_ultimate_knowledge.png"
+
+TODO: Leafy Treehelm ; iconFile="items/helm_tree.png"
+
+-->
+
+<item name="Daemonic Diggle Skull Helm" iconFile="items/helm_diggle_demon.png" artifact="1" >
+	<price amount="29653" />
+	<armour level="13" type="head"/>
+	<artifact quality="3" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<resistbuff necromantic="3" righteous="-5" conflagratory="3" piercing="5" />
+	<description text="This helm is either worn, or made from Daemonic Diggle Skulls. Either way, it's pretty disturbing." />
+	<targetHitEffectBuff percentage="50" name="Daemonic Diggle Fire" />
+	</item>
+	
+<item name="Diggle Ring of Digglish Torment" iconFile="items/ring_digglish_torment.png" >
+	<price amount="35690"/>
+	<armour type="ring" level="11" randoms="0" />
+	<description text="Into this ring is poured the nightmares of torment of Diggledom. There is only squeaky pain here."/>
+	<secondarybuff id="8" amount="10"/> <!-- counter -->
+	<damageBuff piercing="12" />
+	<resistBuff piercing="-2" />
+	<playerHitEffectBuff name="Bleedout Pain" percentage="50" />
+	<targetHitEffectBuff name="Geysering Wound" percentage="100" />
+   </item>
+
+<item name="Camera" iconFile="items/camera.png" overrideClassName="Camera" special="1">
+	<price amount="400" />
+	<wand spell="Camera Sparkle" mincharge="20" maxcharge="40" />
+	<description text="Take lovely holiday photos, then subject your friends and relatives to them unwillingly!"/>
+	</item>
+
+<item name="Communist Power Armour" iconFile="items/armour_communist_power.png" special="1" >
+	<price amount="30000"/>
+	<armour level="11" type="chest"/>
+	<secondarybuff id="10" amount="12"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="16"/> <!-- block -->
+	<secondarybuff id="3" amount="-10"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-4"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-4" /> <!-- nim -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak --> 
+	<resistbuff piercing="6" hyperborean="6" />
+	<description text="Party demands 'All power armour to the Soviets!' so you have appropriated imperialist-traitor armour technology to forward Revolution (and protect Comrade from General Winter)."/>
+	</item>
+
+<item name="Communist Power Ushanka" iconFile="items/helm_communist_power.png" special="1" craftoutput="1" >	
+	<price amount="15000"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="9" amount="-6"/> <!-- edr -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-4"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-2" /> <!-- nim -->
+	<resistbuff piercing="4" hyperborean="5" /> 
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<description text="Party demands 'All power armour to the Soviets!' so you have appropriated imperialist-traitor hat technology to forward Revolution (and protect Comrade from General Winter)."/>
+	</item>
+	
+<item name="Helm of Ultimate Knowledge" iconFile="items/helm_ultimate_knowledge.png" >
+   <price amount="9900" />
+	<armour level="11" type="head"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<primarybuff id="2" amount="-4" /> <!-- nim -->
+	<primarybuff id="1" amount="8" /> <!-- sag -->
+	<secondarybuff id="18" amount="-1" /> <!-- sight, ideally -->
+	<resistbuff piercing="2" transmutative="1" aethereal="3"/>
+	<description text="This helm is tumescent with knowledge and when you wear it sagacity throbs painfully into your skull." />
+	</item>
+
+<item name="Schrat's Helm" iconFile="items/helm_tree.png" artifact="1" >
+   <price amount="15900" />
+   <armour level="14" type="head" />
+	<artifact quality="3" />
+   <description text="The power of the forest wildmen hides in these leaves. Wearing this helm will give you their powers. It causes you to fly into a rage when you are hit. It wraps your enemies in choking roots." />
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+   <secondarybuff id="13" amount="2"/> <!-- life regen -->
+	<resistbuff conflagratory="-3" toxic="1" piercing="1"/>
+	<targetHitEffectBuff name="Skatha's Roots" percentage="100" />
+	<playerHitEffectBuff name="Berserker Rage" percentage="33" />
+	</item>
+
+	<!-- a few more daggers, for fun -->
+<item name="Invisible Dagger of Invisibility" iconFile="items/dagger_invisible.png" level="9" type="7">
+   <price amount="9600"/>
+   <weapon slashing="2" piercing="9"/>
+   <description text="This extremely difficult to find dagger has a fair chance of making its wielder invisible when in combat. This might be more helpful if it could be counted on better."/>
+   <playerhiteffectbuff name="Brief Invisibility" percentage="30" />
+   <targethiteffectbuff name="Brief Invisibility" percentage="25" /> <!-- pity I can't make monsters invisible with this -->
+   </item>
+<item name="Triangulon's Dagger" iconFile="items/dagger_triangulon.png" level="10" type="7">
+   <price amount="10667"/>
+   <weapon slashing="1" piercing="8" transmutative="5"/>
+   <resistbuff aethereal="1" transmutative="1" />
+   <secondarybuff id="9" amount="-5"/> <!-- EDR -->
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+   <description text="Triangulon insisted that it works much better shaped like this - and he can prove it mathemagically."/>
+   </item>
+<item name="Pyrrhic Diamonddagger" iconFile="items/dagger_diamond.png" level="11" type="7">
+   <price amount="12300"/>
+   <weapon slashing="3" piercing="27"/>
+   <resistbuff piercing="-5" slashing="-5" crushing="-5" />
+	<secondarybuff id="9" amount="5"/> <!-- EDR -->
+	<secondarybuff id="9" amount="-5"/> <!-- dodge -->
+   <description text="With another dagger like this you probably won't live to see the next floor of the dungeon."/>
+   </item>
+<item name="Dagger of Deadly Imagination" iconFile="items/dagger_imagination.png" level="13" type="7">
+   <price amount="29600"/>
+   <weapon slashing="1" piercing="1"/>
+   <description text="Formed from malicious thought itself, this dagger pours some of its wielder's Caddishness, Sagacity, and Savvy into the wounds it creates."/>
+   <targethiteffectbuff name="Deadly Imagination" percentage="100" />
+   </item>
+	
+	
+</itemDB>

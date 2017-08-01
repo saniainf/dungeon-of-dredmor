@@ -1,0 +1,31 @@
+<!-- the quest database. -->
+
+<questDB>
+  <item name="Wad of Stuff" sprite="items/wad.png" />
+  <item name="Sigil" sprite="items/quest_sigil.png" />
+  <item name="Timelord Scarf" sprite="items/quest_timelord_scarf.png" />
+  <item name="Tiny, Adorable Kitten" sprite="items/quest_kitten.png" />
+  <item name="Goat Figurine" sprite="items/quest_goat_figurine.png" />
+  <item name="Single Glove" sprite="items/quest_glove.png" />
+  <!-- <item name="Tendril" sprite="items/root_of_tchar.png" /> -->
+  <item name="Brain" sprite="items/quest_brain.png" />
+  <item name="Wizards' Sleeve" sprite="items/wizards_sleeve.png" />
+  <item name="Fell Lutefisk" sprite="items/quest_fell_lutefisk.png" />
+  <item name="Cravat" sprite="items/quest_cravat.png"/>
+  <item name="Crystal Candle" sprite="items/quest_crystal_candle.png"/>
+  
+<!--  <item name="Bread" sprite="items/bread.spr"/> -->
+<!--
+  <item name="Monstrous Egg" sprite="items/egg1.spr"/>
+  <item name="Eldritch Rune" sprite="sprites/sfx/rune1.spr"/>
+  <item name="Otherworldly Rune" sprite="sprites/sfx/rune2.spr"/>
+  <item name="Netherworldly Rune" sprite="sprites/sfx/rune3.spr"/>
+  <item name="Unnatural Rune" sprite="sprites/sfx/rune4.spr"/>
+  <item name="Dire Asparagus" sprite="items/dire_asparagus.spr"/>
+-->
+
+  <blocker name="Monolith" sprite="dungeon/monolith.spr" text="The monolith glares at you, ominously."/>
+  <blocker name="Eyeball Shrine" sprite="dungeon/shrine1.spr" text="The eyeball shrine stares at you with millions of creepy little eyeballs."/>
+  <blocker name="Mellow Shrine" sprite="dungeon/shrine2.spr" text="The mellow shrine makes you want to, like, chill out and stuff."/>
+  
+</questDB>

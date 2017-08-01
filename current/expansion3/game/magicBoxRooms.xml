@@ -1,0 +1,30 @@
+<roomdb>
+ 
+<room width="15" height="15" name="Box: Main Chamber" usefixedname="The Pocket Dimension">
+  <row text="     #####     "/>
+  <row text="    #######    "/>
+  <row text="######.1.######"/>
+  <row text="#..##.....##..#"/>
+  <row text="#..#.......#..#"/>
+  <row text="#.............#"/>
+  <row text="#.............#"/>
+  <row text="#.............#"/>
+  <row text="#......2......#"/>
+  <row text="#.............#"/>
+  <row text="#.............#"/>
+  <row text="#.............#"/>
+  <row text="#..#.......#..#"/>
+  <row text="#####.....#####"/>
+  <row text="    #######    "/>
+  <flags special="1" nomonsters="1" notraps="1" noblockers="1" notreasure="1" minLevel="2000" maxLevel="2000"/>
+   
+  <!-- decor -->
+  <element type="wizardportal" at="1" />
+  <element type="wizardcontrols" at="2" />
+  <magicblocker magicuid="0" x="4" y="6" />
+  <magicblocker magicuid="1" x="10" y="6" />
+  <magicblocker magicuid="2" x="4" y="10" />
+  <magicblocker magicuid="3" x="10" y="10" />
+  
+</room> 
+</roomdb>

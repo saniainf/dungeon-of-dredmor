@@ -1,0 +1,390 @@
+<craftDB>
+<!-- wands -->
+
+<craft>
+   <output skill="4" name="Wand of Laser"/>
+   <tool tag="lathe" />
+   <input name="Burnt Out Wand" />
+   <input name="Aetheric Power Cylinder" />
+   <input name="Ruby" />
+   </craft>
+<craft>
+   <output skill="4" name="Icicly Wand" />
+   <tool tag="lathe" />
+   <input name="Burnt Out Wand" />
+   <input name="Aquamarine" />
+   <input name="Aqua Vitae" />
+   </craft>
+<craft>
+   <output skill="3" name="Gelatinous Wand" />
+   <tool tag="lathe" />
+   <input name="Burnt Out Wand" />
+   <input name="Acidum Salis" />
+   <input name="Aqua Fortis" />
+   <input name="Oil of Vitriol" />
+   </craft>
+<craft>
+   <output skill="3" name="Deciduous Wand" />
+   <tool tag="lathe" />
+   <input name="Burnt Out Wand" />
+   <input name="Emerald" />
+   <input name="Apple" />
+   </craft>
+<craft>
+   <output skill="3" name="The Meatwand" />
+   <tool tag="lathe" />
+   <input name="Burnt Out Wand" />
+   <input name="Salt" />
+   <input name="Offal" />
+   <input name="Cube of Flesh" />
+   </craft>
+
+<!-- New crafts. Gaslamp salutes you, Zaratustra! -->
+
+<!-- new rings -->
+
+<craft>
+   <output skill="2" name="Tin Ring" />
+   <tool tag="smithing" />
+   <input name="Tin Ingot" />
+   <input name="Tin Ingot" />
+   </craft>
+
+<craft>
+   <output skill="2" name="Zinc Ring" />
+   <tool tag="smithing" />
+   <input name="Zinc Ingot" />
+   <input name="Zinc Ingot" />
+   </craft>
+
+<!-- amulets -->
+
+<craft>
+   <output skill="1" name="Spiked Leather Collar" />
+   <tool tag="tinkerer" />
+   <input name="Leather Belt" />
+   <input name="Iron Ingot" />
+   </craft>
+
+<craft>
+   <output skill="3" name="Steel Plate Gorget" />
+   <tool tag="smithing" />
+   <input name="Copper Torc" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+   </craft>
+
+<craft  hidden="1">
+   <output skill="6" name="The Window of Elements" />
+   <tool tag="alchemy" />
+   <input name="Ruby" />
+   <input name="Sapphire" />
+   <input name="Emerald" />
+   <input name="Citrine" />
+   </craft>
+
+<!-- weapons -->
+
+<craft>
+   <output skill="3" name="Double Razor Sword" />
+   <tool tag="smithing" />
+   <input name="Razor Sword" />
+   <input name="Razor Sword" />
+   </craft>
+
+<craft>
+   <output skill="3" name="Double Razor Sword" />
+   <tool tag="smithing" />
+   <input name="Razor Sword For Her" />
+   <input name="Razor Sword" />
+   </craft>
+
+<craft>
+   <output skill="3" name="Double Razor Sword" />
+   <tool tag="smithing" />
+   <input name="Razor Sword For Her" />
+   <input name="Razor Sword For Her" />
+   </craft>
+
+<craft>
+   <output skill="4" name="Quadruple Razor Sword" />
+   <tool tag="smithing" />
+   <input name="Double Razor Sword" />
+   <input name="Double Razor Sword" />
+   </craft>
+
+<craft>
+   <output skill="5" name="Vibrating Quadruple Razor Sword" />
+   <tool tag="tinkerer" />
+   <input name="Quadruple Razor Sword" />
+   <input name="Brass Mechanisms" />
+   <input name="Aetheric Power Cylinder" />
+   </craft>
+
+<craft  hidden="1">
+   <output skill="5" name="Dwarven Army Sword" />
+   <tool tag="tinkerer" />
+   <input name="Fine Steel Sword" />
+   <input name="Fine Steel Axe" />
+   <input name="Fine Steel Mace" />
+   </craft>
+
+<!-- over-powered weapons -->
+
+<craft  hidden="1">
+   <output skill="6" name="The Hexaxe of the Magic Axe Lords" />
+   <tool tag="smithing" />
+   <input name="Double-Bladed Axe" />
+   <input name="Double-Bladed Axe" />
+   <input name="Double-Bladed Axe" />
+   <input name="Steel Ingot" />
+   </craft>
+<craft  hidden="1">
+   <output skill="6" name="Mace of Windu" />
+   <tool tag="tinkerer" />
+   <input name="Aetheric Power Cylinder" />
+   <input name="Self-sealing Stem Bolt" />
+   <input name="Slotted Bronze Discs" />
+   <input name="Amethyst" />
+   </craft>
+
+<craft  hidden="1">
+   <output skill="6" name="Flashy Staff of Godewijn" />
+   <tool tag="tinkerer" />
+   <input name="Hefty Stick" />
+   <input name="Wand of Tesla" />
+   <input name="Copper Wire" />
+   <input name="Aetheric Power Cylinder" />
+   </craft>
+<craft  hidden="1">
+   <output skill="6" name="Bolt Eruptor" />
+   <tool tag="tinkerer" />
+   <input name="Steel Recurve Crossbow" />
+   <input name="Brass Piping" />
+   <input name="Steel Ingot" />
+   <input name="Brimstone" />
+   </craft>
+
+<!-- belts -->
+
+<craft>
+   <output skill="1" name="Bullet Belt" />
+   <tool tag="tinkerer" />
+   <input name="Leather Belt" />
+   <input name="Black Powder" />
+   <input name="Brass Piping" />
+   </craft>
+
+<!-- armours -->
+
+<craft hidden="1">
+   <output skill="2" name="Coat of Denim with Rhinestones" />
+   <tool tag="tinkerer" />
+   <input name="Coat of Denim" />
+   <input name="Diamond" />
+   <input name="Diamond" />
+   </craft>
+
+<craft  hidden="1">
+   <output skill="6" name="Scaly Hauberk of the Fish" />
+   <tool tag="smithing" />
+   <input name="Scaled Armour" />
+   <input name="Horadric Lutefisk Cube" />
+   </craft>
+
+<craft>
+	<output skill="6" name="Imperial Boilerplate" />
+	<tool tag="tinkerer"/>
+	<input name="Full Plate Armour" />
+	<input name="Brass Piping" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+   </craft>
+
+<craft>
+	<output skill="6" name="Imperial Boilerplate" />
+	<tool tag="tinkerer"/>
+	<input name="Embossed Serpentine Platemail" />
+	<input name="Brass Piping" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+   </craft>
+
+
+<!-- pants -->
+
+
+<craft>
+   <output skill="6" name="Pants of Serpentine Plates" />
+   <tool tag="smithing" />
+   <input name="Pants of Shiny Steel Plates" />
+   <input name="Silver Ingot" />
+   <input name="Gold Ingot" />
+   <input name="Platinum Ingot" />
+   </craft>
+
+
+<!-- boots -->
+
+<craft >
+   <output skill="6" name="Serpentine Sabatons" />
+   <tool tag="smithing" />
+   <input name="Sabatons" />
+   <input name="Silver Ingot" />
+   <input name="Gold Ingot" />
+   <input name="Platinum Ingot" />
+   </craft>
+
+<!-- gloves -->
+
+<craft >
+   <output skill="6" name="Embossed Serpentine Gauntlets" />
+   <tool tag="smithing" />
+   <input name="Platemail Gauntlets" />
+   <input name="Silver Ingot" />
+   <input name="Gold Ingot" />
+   <input name="Platinum Ingot" />
+   </craft>
+
+<craft>
+   <output skill="4" name="Clockwork Gauntlets" />
+   <tool tag="tinkerer"/>
+   <input name="Thick Leather Work Gloves" />
+   <input name="Spring-loaded Power Core" />
+   <input name="Brass Mechanisms" />
+   <input name="Brass Mechanisms" />
+   </craft>
+
+<!-- shield -->
+
+<craft>
+   <output skill="2" name="Rough Silver Shield" />
+   <tool tag="smithing" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   </craft>
+<craft>
+   <output skill="3" name="Circinated Silver Shield" />
+   <tool tag="smithing" />
+   <input name="Rough Silver Shield" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   </craft>
+<craft>
+   <output skill="4" name="Filigreed Silver Shield" />
+   <tool tag="smithing" />
+   <input name="Circinated Silver Shield" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   <input name="Silver Ingot" />
+   </craft>
+<craft>
+	<output skill="5" name="Mirror Shield" />
+	<tool tag="smithing"/>
+	<input name="Filigreed Silver Shield" />
+	<input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	<input name="Aqua Fortis" />
+   </craft>
+
+<!-- throwns -->
+
+<craft>
+	<output skill="2" name="Blink Dust" amount="1"/>
+	<output skill="4" name="Blink Dust" amount="2"/>
+	<output skill="6" name="Blink Dust" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Salt" />
+	<input name="Rust" /> 
+   </craft>
+
+<craft>
+	<output skill="3" name="Bonzai Bomb" amount="1"/>
+	<output skill="5" name="Bonzai Bomb" amount="2"/>
+	<output skill="6" name="Bonzai Bomb" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Apple" /> 
+	<input name="Plum" /> 
+	<input name="Pear" /> 
+   </craft>
+
+<craft hidden="1">
+	<output skill="4" name="Powder of Ibn Ghazi" amount="1"/>
+	<output skill="6" name="Powder of Ibn Ghazi" amount="2"/>
+	<output skill="7" name="Powder of Ibn Ghazi" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Brimstone" />
+	<input name="Powdered Aluminum" /> 
+   </craft>
+
+<!-- level 7 crafts; need to pad out craft skills before activating these. April 2012? -->
+
+<craft hidden="1">
+	<output skill="7" name="Magnetronic Shield" />
+	<tool tag="tinkerer"/>
+	<input name="Heater Shield" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Copper Wire" />
+	<input name="Iron Ingot" />
+   </craft>
+<craft hidden="1">
+	<output skill="7" name="Magnetronic Plate Armour" />
+	<tool tag="tinkerer"/>
+	<input name="Full Plate Armour" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Copper Wire" />
+	<input name="Iron Ingot" />
+   </craft>
+<craft hidden="1">
+	<output skill="6" name="A Mirror Darkly Shield" />
+	<tool tag="smithing"/>
+	<input name="Mirror Shield" />
+	<input name="Bituminous Coal" />
+	<input name="Black Pearl" />
+	<input name="Potion of Invisibility" />
+   </craft>
+<craft hidden="1">
+	<output skill="7" name="Imperial Boilerplate Helm" />
+	<tool tag="tinkerer"/>
+	<input name="Great Helm" />
+	<input name="Tinkerer's Goggles" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+   </craft>
+<craft  hidden="1">
+   <output skill="7" name="Eldritch Crossbow" />
+   <tool tag="tinkerer" />
+   <input name="Steel Recurve Crossbow" />
+   <input name="Root of T'Char" />
+   <input name="Powder of Ibn Ghazi" />
+   <input name="Potion of Dire Empowerment" />
+   </craft>
+<craft  hidden="1">
+   <output skill="7" name="Spear of Holy Sacrifice" />
+   <tool tag="smithing" />
+   <input name="Lirpa" />
+   <input name="Potion of Radiance" />
+   <input name="Gold Ingot" />
+   <input name="Gold Ingot" />
+   </craft>
+<craft  hidden="1"> 
+   <output skill="7" name="Asgaardian Stormhammer" />
+   <tool tag="smithing" />
+   <input name="Warhammer" />
+   <input name="Voltaic Potion" />
+   <input name="Platinum Ingot" />
+   <input name="Platinum Ingot" />
+   </craft>
+<craft  hidden="1">
+   <output skill="7" name="Sword of Necropoking" />
+   <tool tag="smithing" />
+   <input name="Fine Steel Sword" />
+   <input name="Root of T'Char" />
+   <input name="Powder of Ibn Ghazi" />
+   <input name="Potion of Dire Empowerment" />
+   </craft>
+
+</craftDB>

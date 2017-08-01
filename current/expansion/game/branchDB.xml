@@ -1,0 +1,1200 @@
+<branchDB>
+<!-- Expansion BranchDB-->
+
+<!--
+Level 11: Deeper Dungeon 10
+Level 12: Stygian Dojo 11
+Level 13: The Mechanarium 12
+Level 14: Underground Forest 13
+Level 15: The Ossuary 14
+-->
+
+<branch name="Deeper Dungeon" id="10" length="20" generator="1" corners="1">
+
+  <tileset name="tilesets/dungeon.png"/>
+  <leveldata min="10" max="10" genLakes="1" genShops="1" genZoo="1"/>
+  <music name="tunes/SPELUNK.IT"/>
+  <!-- <seed name="Starting Room"/> -->
+  
+  <!-- these need to be in all tilesets. This is a hack. Deal with it! -->
+  <tile name="fluid_ice" startx="0" starty="0" numframes="4" skip="0" framerate="280"/>
+  <tile name="fluid_lava" startx="0" starty="1" numframes="6" skip="0" framerate="280"/>
+  <tile name="fluid_water" startx="0" starty="2" numframes="3" skip="0" framerate="250"/>
+  <tile name="fluid_goo" startx="0" starty="3" numframes="3" skip="0" framerate="300"/>
+  
+  <!-- walls...  -->
+  <tile name="top_ul" startx="0" starty="0"/>
+  <tile name="top_u" startx="1" starty="0"/>
+  <tile name="top_ur" startx="2" starty="0"/>
+  <tile name="top_l" startx="0" starty="1"/>
+  <tile name="top_c" startx="1" starty="1"/>
+  <tile name="top_r" startx="2" starty="1"/>
+  <tile name="top_dl" startx="0" starty="2"/>
+  <tile name="top_d" startx="1" starty="2"/>
+  <tile name="top_dr" startx="2" starty="2"/>
+  <tile name="top_ud" startx="3" starty="2"/>
+  <tile name="top_lr" startx="4" starty="2"/>
+  
+  <tile name="top_cup_ldr" startx="8" starty="2"/>
+  <tile name="top_cup_lur" startx="7" starty="2"/>
+  <tile name="top_cup_dlu" startx="6" starty="2"/>
+  <tile name="top_cup_dru" startx="5" starty="2"/>
+  
+  <tile name="top_adj_ul" startx="5" starty="0"/>
+  <tile name="top_adj_ur" startx="6" starty="0"/>
+  <tile name="top_adj_dl" startx="5" starty="1"/>
+  <tile name="top_adj_dr" startx="6" starty="1"/>
+  
+  <tile name="top_dia_dl_dr" startx="9" starty="4"/>
+  <tile name="top_dia_ur_dr" startx="10" starty="3"/>
+  <tile name="top_dia_ul_dl" startx="10" starty="4"/>
+  <tile name="top_dia_ul_ur" startx="9" starty="3"/>
+  <tile name="top_dia_dl" startx="4" starty="0"/>
+  <tile name="top_dia_dr" startx="3" starty="0"/>
+  <tile name="top_dia_ul" startx="4" starty="1"/>
+  <tile name="top_dia_ur" startx="3" starty="1"/>
+  <tile name="top_allfour" startx="11" starty="3"/>
+
+  <!-- these are wall tiles with a diagonal square filler -->
+  <tile name="top_r_add_u" startx="11" starty="1"/>
+  <tile name="top_r_add_d" startx="11" starty="0"/>
+  <tile name="top_r_add_ud" startx="10" starty="0"/>
+  <tile name="top_l_add_u" startx="7" starty="1"/>
+  <tile name="top_l_add_d" startx="7" starty="0"/>
+  <tile name="top_l_add_ud" startx="8" starty="0"/>
+  <tile name="top_u_add_r" startx="11" starty="2"/>
+  <tile name="top_u_add_l" startx="10" starty="1"/>
+  <tile name="top_u_add_lr" startx="10" starty="2"/>
+  <tile name="top_d_add_r" startx="9" starty="2"/>
+  <tile name="top_d_add_l" startx="9" starty="1"/>
+  <tile name="top_d_add_lr" startx="9" starty="0"/>
+  <tile name="wall" startx="1" starty="3" endy="4"/>
+  <tile name="wall_l" startx="0" starty="3" endy="4"/>
+  <tile name="wall_r" startx="2" starty="3" endy="4"/>
+  <tile name="wall_lr" startx="3" starty="3" endy="4"/>
+
+  <!-- basic floors -->
+  <tile name="floor" startx="0" starty="5"/>
+  <tile name="floor" startx="0" starty="6"/>
+  <tile name="floor" startx="0" starty="7"/>
+  <tile name="floor" startx="1" starty="5"/>
+  <tile name="floor" startx="1" starty="6"/>
+  <tile name="floor" startx="1" starty="7"/>
+  <tile name="floor" startx="2" starty="5"/>
+  <tile name="floor" startx="2" starty="6"/>
+  <tile name="floor" startx="2" starty="7"/>
+  <tile name="floor" startx="3" starty="5"/>
+  <tile name="floor" startx="3" starty="6"/>
+  <tile name="floor" startx="3" starty="7"/>
+  <tile name="floor" startx="4" starty="5"/>
+  <tile name="floor" startx="4" starty="6"/>
+  <tile name="floor" startx="4" starty="7"/>
+  <tile name="floor" startx="5" starty="5"/>
+  <tile name="floor" startx="5" starty="6"/>
+  <tile name="floor" startx="5" starty="7"/>
+  <tile name="floor" startx="6" starty="5"/>
+  <tile name="floor" startx="6" starty="6"/>
+  <tile name="floor" startx="6" starty="7"/>
+  <tile name="floor" startx="7" starty="5"/>
+  <tile name="floor" startx="7" starty="6"/>
+  <tile name="floor" startx="7" starty="7"/>
+  <tile name="floor" startx="8" starty="5"/>
+  <tile name="floor" startx="8" starty="6"/>
+  <tile name="floor" startx="8" starty="7"/>
+  <tile name="floor" startx="9" starty="5"/>
+  <tile name="floor" startx="9" starty="6"/>
+  <tile name="floor" startx="9" starty="7"/>
+  <tile name="floor" startx="10" starty="5"/>
+  <tile name="floor" startx="10" starty="6"/>
+  <tile name="floor" startx="10" starty="7"/>
+  <tile name="floor" startx="11" starty="5"/>
+  <tile name="floor" startx="11" starty="6"/>
+  <tile name="floor" startx="11" starty="7"/>
+  
+  <!-- Lower section of tiles -->
+  <!--
+  <tile name="floor" startx="0" starty="17"/>
+  <tile name="floor" startx="0" starty="18"/>
+  <tile name="floor" startx="0" starty="19"/>
+  <tile name="floor" startx="1" starty="17"/>
+  <tile name="floor" startx="1" starty="18"/>
+  <tile name="floor" startx="1" starty="19"/>
+  <tile name="floor" startx="2" starty="17"/>
+  <tile name="floor" startx="2" starty="18"/>
+  <tile name="floor" startx="2" starty="19"/>
+  <tile name="floor" startx="3" starty="17"/>
+  <tile name="floor" startx="3" starty="18"/>
+  <tile name="floor" startx="3" starty="19"/>
+  <tile name="floor" startx="4" starty="17"/>
+  <tile name="floor" startx="4" starty="18"/>
+  <tile name="floor" startx="4" starty="19"/>
+  <tile name="floor" startx="5" starty="17"/>
+  <tile name="floor" startx="5" starty="18"/>
+  <tile name="floor" startx="5" starty="19"/>
+  <tile name="floor" startx="6" starty="17"/>
+  <tile name="floor" startx="6" starty="18"/>
+  <tile name="floor" startx="6" starty="19"/>
+  <tile name="floor" startx="7" starty="17"/>
+  <tile name="floor" startx="7" starty="18"/>
+  <tile name="floor" startx="7" starty="19"/>
+  <tile name="floor" startx="8" starty="17"/>
+  <tile name="floor" startx="8" starty="18"/>
+  <tile name="floor" startx="8" starty="19"/>
+  <tile name="floor" startx="9" starty="17"/>
+  <tile name="floor" startx="9" starty="18"/>
+  <tile name="floor" startx="9" starty="19"/>
+  <tile name="floor" startx="10" starty="18"/>
+  <tile name="floor" startx="10" starty="19"/>
+  <tile name="floor" startx="11" starty="18"/>
+  <tile name="floor" startx="11" starty="19"/>
+  -->
+  
+  <!-- water tiles -->
+  <tile name="water_ul" startx="0" starty="8" />
+  <tile name="water_u" startx="1" starty="8" />
+  <tile name="water_ur" startx="2" starty="8" />
+  <tile name="water_l" startx="0" starty="9" />
+  <tile name="water" startx="8" starty="3" />
+  <tile name="water_r" startx="2" starty="9" />
+  <tile name="water_dl" startx="0" starty="10" />
+  <tile name="water_d" startx="1" starty="10" />
+  <tile name="water_dr" startx="2" starty="10" />
+  <tile name="water_l_ur" startx="7" starty="9"/>
+  <tile name="water_l_dr" startx="7" starty="8"/>
+  <tile name="water_r_ul" startx="11" starty="9"/>
+  <tile name="water_r_dl" startx="11" starty="8"/>
+  <tile name="water_l_ur_dr" startx="8" starty="8"/>
+  <tile name="water_r_ul_dl" startx="10" starty="8"/>
+  <tile name="water_u_dl_dr" startx="10" starty="10"/>
+  <tile name="water_d_ul_ur" startx="9" starty="8"/>
+  <tile name="water_corner_ul_ur" startx="0" starty="15"  />
+  <tile name="water_corner_dl_dr" startx="1" starty="15"  />
+  <tile name="water_corner_ul_dl" startx="2" starty="15"  />
+  <tile name="water_corner_ur_dr" startx="3" starty="15"  />
+  <tile name="water_cap_corner_dr" startx="5" starty="8"  />
+  <tile name="water_cap_corner_dl" startx="6" starty="8"  />
+  <tile name="water_cap_corner_ur" startx="5" starty="9"  />
+  <tile name="water_cap_corner_ul" startx="6" starty="9"  />
+  <tile name="water_corner_dr" startx="3" starty="8"  />
+  <tile name="water_corner_dl" startx="4" starty="8"  />
+  <tile name="water_corner_ur" startx="3" starty="9"  />
+  <tile name="water_corner_ul" startx="4" starty="9"  />
+  <tile name="water_vert_cap_t" startx="7" starty="10"  />
+  <tile name="water_vert" startx="4" starty="10"  />
+  <tile name="water_vert_cap_b" startx="8" starty="10"  />
+  <tile name="water_horiz_cap_l" startx="6" starty="10" />
+  <tile name="water_horiz" startx="3" starty="10"  />
+  <tile name="water_horiz_cap_r" startx="5" starty="10"  />
+  
+  <!-- Row 1 of wall variations -->
+  <tile name="wallDecor" startx="0" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="1" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="2" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="3" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="4" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="5" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="6" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="7" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="8" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="9" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="10" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="11" starty="11" endy="12"/>
+  
+  <!-- Row 2 of wall variations -->
+  <!--
+  <tile name="wallDecor" startx="0" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="1" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="2" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="3" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="4" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="5" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="6" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="7" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="8" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="9" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="10" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="11" starty="13" endy="14"/>
+  -->
+
+  <tile name="stairsup" startx="10" starty="15" endy="17" />
+  <tile name="stairsdown" startx="11" starty="15" endy="17" />
+
+  <chestinfo
+  open="dungeon/chest0_open.png"
+  closed="dungeon/chest0_closed.png"
+  broken="dungeon/chest0_broken.png"/>
+
+  <breakable
+    name="Wooden Crate" vis="1"
+    png="dungeon/crate.png" pngBroken="dungeon/chest1_broken.png" 
+    pngSeriesBreak="dungeon/cratebreak/cratebreak" 
+    pngBreakFirst="1" pngBreakNum="4" pngBreakRate="60"/>
+  <breakable
+    name="Wooden Barrel" vis="1"
+    png="dungeon/barrelA.png" pngBroken="dungeon/barrelA_break/barrelA_break0002.png" 
+    pngSeriesBreak="dungeon/barrelA_break/barrelA_break" 
+    pngBreakFirst="0" pngBreakNum="3" pngBreakRate="60" />
+
+  <blocker name="firey brazier" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1"/>
+<!-- add this <customblocker name="Brazier" percent="50" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows languidly." / -->
+  <blocker name="lit candelabra" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1" />
+  <blocker name="unlit candelabra" png="dungeon/candelabra_unlit.png" passable="0" animate="0" description="These candles need a light." />
+  <blocker name="empty candelabra" png="dungeon/candelabra_empty.png" passable="0" animate="0" />
+  <blocker name="wooden table" png="dungeon/table_wood.png" passable="0" animate="0" />
+
+  <blocker name="some bones" sprite="dungeon/bones0.png" passable="1"/>
+  <blocker name="more bones" sprite="dungeon/bones1.png" passable="1"/>
+  <blocker name="even more bones" sprite="dungeon/bones2.png" passable="1"/>
+
+</branch>
+
+<branch name="The Stygian Dojo" id="11" length="20" generator="1" corners="1">
+  
+  <tileset name="tilesets/dojo.png" />
+  <leveldata min="11" max="11" genLakes="1" genShops="1" genZoo="1"/>
+  <music name="tunes/SPELUNK.IT"/>
+  <!-- <seed name="Starting Room"/> -->
+  
+  <!-- these need to be in all tilesets. This is a hack. Deal with it! -->
+  <tile name="fluid_ice" startx="0" starty="0" numframes="4" skip="0" framerate="280"/>
+  <tile name="fluid_lava" startx="0" starty="1" numframes="6" skip="0" framerate="280"/>
+  <tile name="fluid_water" startx="0" starty="2" numframes="3" skip="0" framerate="250"/>
+  <tile name="fluid_goo" startx="0" starty="3" numframes="3" skip="0" framerate="300"/>
+  
+  <!-- walls...  -->
+  <tile name="top_ul" startx="0" starty="0"/>
+  <tile name="top_u" startx="1" starty="0"/>
+  <tile name="top_ur" startx="2" starty="0"/>
+  <tile name="top_l" startx="0" starty="1"/>
+  <tile name="top_c" startx="1" starty="1"/>
+  <tile name="top_r" startx="2" starty="1"/>
+  <tile name="top_dl" startx="0" starty="2"/>
+  <tile name="top_d" startx="1" starty="2"/>
+  <tile name="top_dr" startx="2" starty="2"/>
+  <tile name="top_ud" startx="3" starty="2"/>
+  <tile name="top_lr" startx="4" starty="2"/>
+  
+  <tile name="top_cup_ldr" startx="8" starty="2"/>
+  <tile name="top_cup_lur" startx="7" starty="2"/>
+  <tile name="top_cup_dlu" startx="6" starty="2"/>
+  <tile name="top_cup_dru" startx="5" starty="2"/>
+  
+  <tile name="top_adj_ul" startx="5" starty="0"/>
+  <tile name="top_adj_ur" startx="6" starty="0"/>
+  <tile name="top_adj_dl" startx="5" starty="1"/>
+  <tile name="top_adj_dr" startx="6" starty="1"/>
+  
+  <tile name="top_dia_dl_dr" startx="9" starty="4"/>
+  <tile name="top_dia_ur_dr" startx="10" starty="3"/>
+  <tile name="top_dia_ul_dl" startx="10" starty="4"/>
+  <tile name="top_dia_ul_ur" startx="9" starty="3"/>
+  <tile name="top_dia_dl" startx="4" starty="0"/>
+  <tile name="top_dia_dr" startx="3" starty="0"/>
+  <tile name="top_dia_ul" startx="4" starty="1"/>
+  <tile name="top_dia_ur" startx="3" starty="1"/>
+  <tile name="top_allfour" startx="11" starty="3"/>
+
+  <!-- these are wall tiles with a diagonal square filler -->
+  <tile name="top_r_add_u" startx="11" starty="1"/>
+  <tile name="top_r_add_d" startx="11" starty="0"/>
+  <tile name="top_r_add_ud" startx="10" starty="0"/>
+  <tile name="top_l_add_u" startx="7" starty="1"/>
+  <tile name="top_l_add_d" startx="7" starty="0"/>
+  <tile name="top_l_add_ud" startx="8" starty="0"/>
+  <tile name="top_u_add_r" startx="11" starty="2"/>
+  <tile name="top_u_add_l" startx="10" starty="1"/>
+  <tile name="top_u_add_lr" startx="10" starty="2"/>
+  <tile name="top_d_add_r" startx="9" starty="2"/>
+  <tile name="top_d_add_l" startx="9" starty="1"/>
+  <tile name="top_d_add_lr" startx="9" starty="0"/>
+  <tile name="wall" startx="1" starty="3" endy="4"/>
+  <tile name="wall_l" startx="0" starty="3" endy="4"/>
+  <tile name="wall_r" startx="2" starty="3" endy="4"/>
+  <tile name="wall_lr" startx="3" starty="3" endy="4"/>
+
+  <!-- basic floors -->
+  <tile name="floor" startx="0" starty="5"/>
+  <tile name="floor" startx="0" starty="6"/>
+  <tile name="floor" startx="0" starty="7"/>
+  <tile name="floor" startx="1" starty="5"/>
+  <tile name="floor" startx="1" starty="6"/>
+  <tile name="floor" startx="1" starty="7"/>
+  <tile name="floor" startx="2" starty="5"/>
+  <tile name="floor" startx="2" starty="6"/>
+  <tile name="floor" startx="2" starty="7"/>
+  <tile name="floor" startx="3" starty="5"/>
+  <tile name="floor" startx="3" starty="6"/>
+  <tile name="floor" startx="3" starty="7"/>
+  <tile name="floor" startx="4" starty="5"/>
+  <tile name="floor" startx="4" starty="6"/>
+  <tile name="floor" startx="4" starty="7"/>
+  <tile name="floor" startx="5" starty="5"/>
+  <tile name="floor" startx="5" starty="6"/>
+  <tile name="floor" startx="5" starty="7"/>
+  <tile name="floor" startx="6" starty="5"/>
+  <tile name="floor" startx="6" starty="6"/>
+  <tile name="floor" startx="6" starty="7"/>
+  <tile name="floor" startx="7" starty="5"/>
+  <tile name="floor" startx="7" starty="6"/>
+  <tile name="floor" startx="7" starty="7"/>
+  <tile name="floor" startx="8" starty="5"/>
+  <tile name="floor" startx="8" starty="6"/>
+  <tile name="floor" startx="8" starty="7"/>
+  <tile name="floor" startx="9" starty="5"/>
+  <tile name="floor" startx="9" starty="6"/>
+  <tile name="floor" startx="9" starty="7"/>
+  <tile name="floor" startx="10" starty="5"/>
+  <tile name="floor" startx="10" starty="6"/>
+  <tile name="floor" startx="10" starty="7"/>
+  <tile name="floor" startx="11" starty="5"/>
+  <tile name="floor" startx="11" starty="6"/>
+  <tile name="floor" startx="11" starty="7"/>
+  
+  <!-- Lower section of tiles -->
+  <!-- 
+  <tile name="floor" startx="0" starty="17"/>
+  <tile name="floor" startx="0" starty="18"/>
+  <tile name="floor" startx="0" starty="19"/>
+  <tile name="floor" startx="1" starty="17"/>
+  <tile name="floor" startx="1" starty="18"/>
+  <tile name="floor" startx="1" starty="19"/>
+  <tile name="floor" startx="2" starty="17"/>
+  <tile name="floor" startx="2" starty="18"/>
+  <tile name="floor" startx="2" starty="19"/>
+  <tile name="floor" startx="3" starty="17"/>
+  <tile name="floor" startx="3" starty="18"/>
+  <tile name="floor" startx="3" starty="19"/>
+  <tile name="floor" startx="4" starty="17"/>
+  <tile name="floor" startx="4" starty="18"/>
+  <tile name="floor" startx="4" starty="19"/>
+  <tile name="floor" startx="5" starty="17"/>
+  <tile name="floor" startx="5" starty="18"/>
+  <tile name="floor" startx="5" starty="19"/>
+  <tile name="floor" startx="6" starty="17"/>
+  <tile name="floor" startx="6" starty="18"/>
+  <tile name="floor" startx="6" starty="19"/>
+  <tile name="floor" startx="7" starty="17"/>
+  <tile name="floor" startx="7" starty="18"/>
+  <tile name="floor" startx="7" starty="19"/>
+  <tile name="floor" startx="8" starty="17"/>
+  <tile name="floor" startx="8" starty="18"/>
+  <tile name="floor" startx="8" starty="19"/>
+  <tile name="floor" startx="9" starty="17"/>
+  <tile name="floor" startx="9" starty="18"/>
+  <tile name="floor" startx="9" starty="19"/>
+  <tile name="floor" startx="10" starty="18"/>
+  <tile name="floor" startx="10" starty="19"/>
+  <tile name="floor" startx="11" starty="18"/>
+  <tile name="floor" startx="11" starty="19"/>
+  -->
+  <!-- water tiles -->
+  <tile name="water_ul" startx="0" starty="8" />
+  <tile name="water_u" startx="1" starty="8" />
+  <tile name="water_ur" startx="2" starty="8" />
+  <tile name="water_l" startx="0" starty="9" />
+  <tile name="water" startx="8" starty="3" />
+  <tile name="water_r" startx="2" starty="9" />
+  <tile name="water_dl" startx="0" starty="10" />
+  <tile name="water_d" startx="1" starty="10" />
+  <tile name="water_dr" startx="2" starty="10" />
+  <tile name="water_l_ur" startx="7" starty="9"/>
+  <tile name="water_l_dr" startx="7" starty="8"/>
+  <tile name="water_r_ul" startx="11" starty="9"/>
+  <tile name="water_r_dl" startx="11" starty="8"/>
+  <tile name="water_l_ur_dr" startx="8" starty="8"/>
+  <tile name="water_r_ul_dl" startx="10" starty="8"/>
+  <tile name="water_u_dl_dr" startx="10" starty="10"/>
+  <tile name="water_d_ul_ur" startx="9" starty="8"/>
+  <tile name="water_corner_ul_ur" startx="0" starty="15"  />
+  <tile name="water_corner_dl_dr" startx="1" starty="15"  />
+  <tile name="water_corner_ul_dl" startx="2" starty="15"  />
+  <tile name="water_corner_ur_dr" startx="3" starty="15"  />
+  <tile name="water_cap_corner_dr" startx="5" starty="8"  />
+  <tile name="water_cap_corner_dl" startx="6" starty="8"  />
+  <tile name="water_cap_corner_ur" startx="5" starty="9"  />
+  <tile name="water_cap_corner_ul" startx="6" starty="9"  />
+  <tile name="water_corner_dr" startx="3" starty="8"  />
+  <tile name="water_corner_dl" startx="4" starty="8"  />
+  <tile name="water_corner_ur" startx="3" starty="9"  />
+  <tile name="water_corner_ul" startx="4" starty="9"  />
+  <tile name="water_vert_cap_t" startx="7" starty="10"  />
+  <tile name="water_vert" startx="4" starty="10"  />
+  <tile name="water_vert_cap_b" startx="8" starty="10"  />
+  <tile name="water_horiz_cap_l" startx="6" starty="10" />
+  <tile name="water_horiz" startx="3" starty="10"  />
+  <tile name="water_horiz_cap_r" startx="5" starty="10"  />
+  
+  <!-- Row 1 of wall variations -->
+  <tile name="wallDecor" startx="0" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="1" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="2" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="3" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="4" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="5" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="6" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="7" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="8" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="9" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="10" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="11" starty="11" endy="12"/>
+  
+  <!-- Row 2 of wall variations -->
+  <!--
+  <tile name="wallDecor" startx="0" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="1" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="2" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="3" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="4" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="5" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="6" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="7" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="8" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="9" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="10" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="11" starty="13" endy="14"/>
+  -->
+  <tile name="stairsup" startx="10" starty="15" endy="17" />
+  <tile name="stairsdown" startx="11" starty="15" endy="17" />
+
+  <chestinfo
+  open="dungeon/chest0_open.png"
+  closed="dungeon/chest0_closed.png"
+  broken="dungeon/chest0_broken.png"/>
+
+  <breakable
+    name="Wooden Crate" vis="1"
+    png="dungeon/crate.png" pngBroken="dungeon/chest1_broken.png" 
+    pngSeriesBreak="dungeon/cratebreak/cratebreak" 
+    pngBreakFirst="1" pngBreakNum="4" pngBreakRate="60"/>
+  <breakable
+    name="Wooden Barrel" vis="1"
+    png="dungeon/barrelA.png" pngBroken="dungeon/barrelA_break/barrelA_break0002.png" 
+    pngSeriesBreak="dungeon/barrelA_break/barrelA_break" 
+    pngBreakFirst="0" pngBreakNum="3" pngBreakRate="60" />
+
+  <blocker name="firey brazier" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1"/>
+  <blocker name="lit candelabra" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1" />
+  <blocker name="unlit candelabra" png="dungeon/candelabra_unlit.png" passable="0" animate="0" description="These candles need a light." />
+  <blocker name="empty candelabra" png="dungeon/candelabra_empty.png" passable="0" animate="0" />
+  <blocker name="wooden table" png="dungeon/table_wood.png" passable="0" animate="0" />
+
+  <blocker name="some bones" sprite="dungeon/bones0.png" passable="1"/>
+  <blocker name="more bones" sprite="dungeon/bones1.png" passable="1"/>
+  <blocker name="even more bones" sprite="dungeon/bones2.png" passable="1"/>
+
+</branch>
+
+<branch name="The Mechanarium" id="12" length="20" generator="1" corners="1">
+  
+  <tileset name="tilesets/clockwork.png"/>
+  <leveldata min="12" max="12" genLakes="1" genShops="1" genZoo="1"/>
+  <music name="tunes/SPELUNK.IT"/>
+  <!-- <seed name="Starting Room"/> -->
+  
+  <!-- these need to be in all tilesets. This is a hack. Deal with it! -->
+  <tile name="fluid_ice" startx="0" starty="0" numframes="4" skip="0" framerate="280"/>
+  <tile name="fluid_lava" startx="0" starty="1" numframes="6" skip="0" framerate="280"/>
+  <tile name="fluid_water" startx="0" starty="2" numframes="3" skip="0" framerate="250"/>
+  <tile name="fluid_goo" startx="0" starty="3" numframes="3" skip="0" framerate="300"/>
+  
+  <!-- walls...  -->
+  <tile name="top_ul" startx="0" starty="0"/>
+  <tile name="top_u" startx="1" starty="0"/>
+  <tile name="top_ur" startx="2" starty="0"/>
+  <tile name="top_l" startx="0" starty="1"/>
+  <tile name="top_c" startx="1" starty="1"/>
+  <tile name="top_r" startx="2" starty="1"/>
+  <tile name="top_dl" startx="0" starty="2"/>
+  <tile name="top_d" startx="1" starty="2"/>
+  <tile name="top_dr" startx="2" starty="2"/>
+  <tile name="top_ud" startx="3" starty="2"/>
+  <tile name="top_lr" startx="4" starty="2"/>
+  
+  <tile name="top_cup_ldr" startx="8" starty="2"/>
+  <tile name="top_cup_lur" startx="7" starty="2"/>
+  <tile name="top_cup_dlu" startx="6" starty="2"/>
+  <tile name="top_cup_dru" startx="5" starty="2"/>
+  
+  <tile name="top_adj_ul" startx="5" starty="0"/>
+  <tile name="top_adj_ur" startx="6" starty="0"/>
+  <tile name="top_adj_dl" startx="5" starty="1"/>
+  <tile name="top_adj_dr" startx="6" starty="1"/>
+  
+  <tile name="top_dia_dl_dr" startx="9" starty="4"/>
+  <tile name="top_dia_ur_dr" startx="10" starty="3"/>
+  <tile name="top_dia_ul_dl" startx="10" starty="4"/>
+  <tile name="top_dia_ul_ur" startx="9" starty="3"/>
+  <tile name="top_dia_dl" startx="4" starty="0"/>
+  <tile name="top_dia_dr" startx="3" starty="0"/>
+  <tile name="top_dia_ul" startx="4" starty="1"/>
+  <tile name="top_dia_ur" startx="3" starty="1"/>
+  <tile name="top_allfour" startx="11" starty="3"/>
+
+  <!-- these are wall tiles with a diagonal square filler -->
+  <tile name="top_r_add_u" startx="11" starty="1"/>
+  <tile name="top_r_add_d" startx="11" starty="0"/>
+  <tile name="top_r_add_ud" startx="10" starty="0"/>
+  <tile name="top_l_add_u" startx="7" starty="1"/>
+  <tile name="top_l_add_d" startx="7" starty="0"/>
+  <tile name="top_l_add_ud" startx="8" starty="0"/>
+  <tile name="top_u_add_r" startx="11" starty="2"/>
+  <tile name="top_u_add_l" startx="10" starty="1"/>
+  <tile name="top_u_add_lr" startx="10" starty="2"/>
+  <tile name="top_d_add_r" startx="9" starty="2"/>
+  <tile name="top_d_add_l" startx="9" starty="1"/>
+  <tile name="top_d_add_lr" startx="9" starty="0"/>
+  <tile name="wall" startx="1" starty="3" endy="4"/>
+  <tile name="wall_l" startx="0" starty="3" endy="4"/>
+  <tile name="wall_r" startx="2" starty="3" endy="4"/>
+  <tile name="wall_lr" startx="3" starty="3" endy="4"/>
+
+  <!-- basic floors -->
+  <tile name="floor" startx="0" starty="5"/>
+  <tile name="floor" startx="0" starty="6"/>
+  <tile name="floor" startx="0" starty="7"/>
+  <tile name="floor" startx="1" starty="5"/>
+  <tile name="floor" startx="1" starty="6"/>
+  <tile name="floor" startx="1" starty="7"/>
+  <tile name="floor" startx="2" starty="5"/>
+  <tile name="floor" startx="2" starty="6"/>
+  <tile name="floor" startx="2" starty="7"/>
+  <tile name="floor" startx="3" starty="5"/>
+  <tile name="floor" startx="3" starty="6"/>
+  <tile name="floor" startx="3" starty="7"/>
+  <tile name="floor" startx="4" starty="5"/>
+  <tile name="floor" startx="4" starty="6"/>
+  <tile name="floor" startx="4" starty="7"/>
+  <tile name="floor" startx="5" starty="5"/>
+  <tile name="floor" startx="5" starty="6"/>
+  <tile name="floor" startx="5" starty="7"/>
+  <tile name="floor" startx="6" starty="5"/>
+  <tile name="floor" startx="6" starty="6"/>
+  <tile name="floor" startx="6" starty="7"/>
+  <tile name="floor" startx="7" starty="5"/>
+  <tile name="floor" startx="7" starty="6"/>
+  <tile name="floor" startx="7" starty="7"/>
+  <tile name="floor" startx="8" starty="5"/>
+  <tile name="floor" startx="8" starty="6"/>
+  <tile name="floor" startx="8" starty="7"/>
+  <tile name="floor" startx="9" starty="5"/>
+  <tile name="floor" startx="9" starty="6"/>
+  <tile name="floor" startx="9" starty="7"/>
+  <tile name="floor" startx="10" starty="5"/>
+  <tile name="floor" startx="10" starty="6"/>
+  <tile name="floor" startx="10" starty="7"/>
+  <tile name="floor" startx="11" starty="5"/>
+  <tile name="floor" startx="11" starty="6"/>
+  <tile name="floor" startx="11" starty="7"/>
+  
+  <!-- Lower section of tiles -->
+  <!--
+  <tile name="floor" startx="0" starty="17"/>
+  <tile name="floor" startx="0" starty="18"/>
+  <tile name="floor" startx="0" starty="19"/>
+  <tile name="floor" startx="1" starty="17"/>
+  <tile name="floor" startx="1" starty="18"/>
+  <tile name="floor" startx="1" starty="19"/>
+  <tile name="floor" startx="2" starty="17"/>
+  <tile name="floor" startx="2" starty="18"/>
+  <tile name="floor" startx="2" starty="19"/>
+  <tile name="floor" startx="3" starty="17"/>
+  <tile name="floor" startx="3" starty="18"/>
+  <tile name="floor" startx="3" starty="19"/>
+  <tile name="floor" startx="4" starty="17"/>
+  <tile name="floor" startx="4" starty="18"/>
+  <tile name="floor" startx="4" starty="19"/>
+  <tile name="floor" startx="5" starty="17"/>
+  <tile name="floor" startx="5" starty="18"/>
+  <tile name="floor" startx="5" starty="19"/>
+  <tile name="floor" startx="6" starty="17"/>
+  <tile name="floor" startx="6" starty="18"/>
+  <tile name="floor" startx="6" starty="19"/>
+  <tile name="floor" startx="7" starty="17"/>
+  <tile name="floor" startx="7" starty="18"/>
+  <tile name="floor" startx="7" starty="19"/>
+  <tile name="floor" startx="8" starty="17"/>
+  <tile name="floor" startx="8" starty="18"/>
+  <tile name="floor" startx="8" starty="19"/>
+  <tile name="floor" startx="9" starty="17"/>
+  <tile name="floor" startx="9" starty="18"/>
+  <tile name="floor" startx="9" starty="19"/>
+  <tile name="floor" startx="10" starty="18"/>
+  <tile name="floor" startx="10" starty="19"/>
+  <tile name="floor" startx="11" starty="18"/>
+  <tile name="floor" startx="11" starty="19"/>
+  -->
+  
+  <!-- water tiles -->
+  <tile name="water_ul" startx="0" starty="8" />
+  <tile name="water_u" startx="1" starty="8" />
+  <tile name="water_ur" startx="2" starty="8" />
+  <tile name="water_l" startx="0" starty="9" />
+  <tile name="water" startx="8" starty="3" />
+  <tile name="water_r" startx="2" starty="9" />
+  <tile name="water_dl" startx="0" starty="10" />
+  <tile name="water_d" startx="1" starty="10" />
+  <tile name="water_dr" startx="2" starty="10" />
+  <tile name="water_l_ur" startx="7" starty="9"/>
+  <tile name="water_l_dr" startx="7" starty="8"/>
+  <tile name="water_r_ul" startx="11" starty="9"/>
+  <tile name="water_r_dl" startx="11" starty="8"/>
+  <tile name="water_l_ur_dr" startx="8" starty="8"/>
+  <tile name="water_r_ul_dl" startx="10" starty="8"/>
+  <tile name="water_u_dl_dr" startx="10" starty="10"/>
+  <tile name="water_d_ul_ur" startx="9" starty="8"/>
+  <tile name="water_corner_ul_ur" startx="0" starty="15"  />
+  <tile name="water_corner_dl_dr" startx="1" starty="15"  />
+  <tile name="water_corner_ul_dl" startx="2" starty="15"  />
+  <tile name="water_corner_ur_dr" startx="3" starty="15"  />
+  <tile name="water_cap_corner_dr" startx="5" starty="8"  />
+  <tile name="water_cap_corner_dl" startx="6" starty="8"  />
+  <tile name="water_cap_corner_ur" startx="5" starty="9"  />
+  <tile name="water_cap_corner_ul" startx="6" starty="9"  />
+  <tile name="water_corner_dr" startx="3" starty="8"  />
+  <tile name="water_corner_dl" startx="4" starty="8"  />
+  <tile name="water_corner_ur" startx="3" starty="9"  />
+  <tile name="water_corner_ul" startx="4" starty="9"  />
+  <tile name="water_vert_cap_t" startx="7" starty="10"  />
+  <tile name="water_vert" startx="4" starty="10"  />
+  <tile name="water_vert_cap_b" startx="8" starty="10"  />
+  <tile name="water_horiz_cap_l" startx="6" starty="10" />
+  <tile name="water_horiz" startx="3" starty="10"  />
+  <tile name="water_horiz_cap_r" startx="5" starty="10"  />
+  
+  <!-- Row 1 of wall variations -->
+  <tile name="wallDecor" startx="0" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="1" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="2" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="3" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="4" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="5" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="6" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="7" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="8" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="9" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="10" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="11" starty="11" endy="12"/>
+  
+  <!-- Row 2 of wall variations -->
+  <!--
+  <tile name="wallDecor" startx="0" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="1" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="2" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="3" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="4" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="5" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="6" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="7" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="8" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="9" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="10" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="11" starty="13" endy="14"/>
+  -->
+  <tile name="stairsup" startx="10" starty="15" endy="17" />
+  <tile name="stairsdown" startx="11" starty="15" endy="17" />
+
+  <chestinfo
+  open="dungeon/chest0_open.png"
+  closed="dungeon/chest0_closed.png"
+  broken="dungeon/chest0_broken.png"/>
+
+  <breakable
+    name="Wooden Crate" vis="1"
+    png="dungeon/crate.png" pngBroken="dungeon/chest1_broken.png" 
+    pngSeriesBreak="dungeon/cratebreak/cratebreak" 
+    pngBreakFirst="1" pngBreakNum="4" pngBreakRate="60"/>
+  <breakable
+    name="Wooden Barrel" vis="1"
+    png="dungeon/barrelA.png" pngBroken="dungeon/barrelA_break/barrelA_break0002.png" 
+    pngSeriesBreak="dungeon/barrelA_break/barrelA_break" 
+    pngBreakFirst="0" pngBreakNum="3" pngBreakRate="60" />
+
+  <blocker name="firey brazier" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1"/>
+  <blocker name="lit candelabra" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1" />
+  <blocker name="unlit candelabra" png="dungeon/candelabra_unlit.png" passable="0" animate="0" description="These candles need a light." />
+  <blocker name="empty candelabra" png="dungeon/candelabra_empty.png" passable="0" animate="0" />
+  <blocker name="wooden table" png="dungeon/table_wood.png" passable="0" animate="0" />
+
+  <blocker name="some bones" sprite="dungeon/bones0.png" passable="1"/>
+  <blocker name="more bones" sprite="dungeon/bones1.png" passable="1"/>
+  <blocker name="even more bones" sprite="dungeon/bones2.png" passable="1"/>
+
+</branch>
+
+<branch name="Underground Forest" id="13" length="20" generator="1" corners="1">
+  
+  <tileset name="tilesets/forest.png"/>
+  <leveldata min="13" max="13" genLakes="1" genShops="1" genZoo="1"/>
+  <music name="tunes/SPELUNK.IT"/>
+  <!-- <seed name="Starting Room"/> -->
+  
+  <!-- these need to be in all tilesets. This is a hack. Deal with it! -->
+  <tile name="fluid_ice" startx="0" starty="0" numframes="4" skip="0" framerate="280"/>
+  <tile name="fluid_lava" startx="0" starty="1" numframes="6" skip="0" framerate="280"/>
+  <tile name="fluid_water" startx="0" starty="2" numframes="3" skip="0" framerate="250"/>
+  <tile name="fluid_goo" startx="0" starty="3" numframes="3" skip="0" framerate="300"/>
+  
+  <!-- walls...  -->
+  <tile name="top_ul" startx="0" starty="0"/>
+  <tile name="top_u" startx="1" starty="0"/>
+  <tile name="top_ur" startx="2" starty="0"/>
+  <tile name="top_l" startx="0" starty="1"/>
+  <tile name="top_c" startx="1" starty="1"/>
+  <tile name="top_r" startx="2" starty="1"/>
+  <tile name="top_dl" startx="0" starty="2"/>
+  <tile name="top_d" startx="1" starty="2"/>
+  <tile name="top_dr" startx="2" starty="2"/>
+  <tile name="top_ud" startx="3" starty="2"/>
+  <tile name="top_lr" startx="4" starty="2"/>
+  
+  <tile name="top_cup_ldr" startx="8" starty="2"/>
+  <tile name="top_cup_lur" startx="7" starty="2"/>
+  <tile name="top_cup_dlu" startx="6" starty="2"/>
+  <tile name="top_cup_dru" startx="5" starty="2"/>
+  
+  <tile name="top_adj_ul" startx="5" starty="0"/>
+  <tile name="top_adj_ur" startx="6" starty="0"/>
+  <tile name="top_adj_dl" startx="5" starty="1"/>
+  <tile name="top_adj_dr" startx="6" starty="1"/>
+  
+  <tile name="top_dia_dl_dr" startx="9" starty="4"/>
+  <tile name="top_dia_ur_dr" startx="10" starty="3"/>
+  <tile name="top_dia_ul_dl" startx="10" starty="4"/>
+  <tile name="top_dia_ul_ur" startx="9" starty="3"/>
+  <tile name="top_dia_dl" startx="4" starty="0"/>
+  <tile name="top_dia_dr" startx="3" starty="0"/>
+  <tile name="top_dia_ul" startx="4" starty="1"/>
+  <tile name="top_dia_ur" startx="3" starty="1"/>
+  <tile name="top_allfour" startx="11" starty="3"/>
+
+  <!-- these are wall tiles with a diagonal square filler -->
+  <tile name="top_r_add_u" startx="11" starty="1"/>
+  <tile name="top_r_add_d" startx="11" starty="0"/>
+  <tile name="top_r_add_ud" startx="10" starty="0"/>
+  <tile name="top_l_add_u" startx="7" starty="1"/>
+  <tile name="top_l_add_d" startx="7" starty="0"/>
+  <tile name="top_l_add_ud" startx="8" starty="0"/>
+  <tile name="top_u_add_r" startx="11" starty="2"/>
+  <tile name="top_u_add_l" startx="10" starty="1"/>
+  <tile name="top_u_add_lr" startx="10" starty="2"/>
+  <tile name="top_d_add_r" startx="9" starty="2"/>
+  <tile name="top_d_add_l" startx="9" starty="1"/>
+  <tile name="top_d_add_lr" startx="9" starty="0"/>
+  <tile name="wall" startx="1" starty="3" endy="4"/>
+  <tile name="wall_l" startx="0" starty="3" endy="4"/>
+  <tile name="wall_r" startx="2" starty="3" endy="4"/>
+  <tile name="wall_lr" startx="3" starty="3" endy="4"/>
+
+  <!-- basic floors -->
+  <tile name="floor" startx="0" starty="5"/>
+  <tile name="floor" startx="0" starty="6"/>
+  <tile name="floor" startx="0" starty="7"/>
+  <tile name="floor" startx="1" starty="5"/>
+  <tile name="floor" startx="1" starty="6"/>
+  <tile name="floor" startx="1" starty="7"/>
+  <tile name="floor" startx="2" starty="5"/>
+  <tile name="floor" startx="2" starty="6"/>
+  <tile name="floor" startx="2" starty="7"/>
+  <tile name="floor" startx="3" starty="5"/>
+  <tile name="floor" startx="3" starty="6"/>
+  <tile name="floor" startx="3" starty="7"/>
+  <tile name="floor" startx="4" starty="5"/>
+  <tile name="floor" startx="4" starty="6"/>
+  <tile name="floor" startx="4" starty="7"/>
+  <tile name="floor" startx="5" starty="5"/>
+  <tile name="floor" startx="5" starty="6"/>
+  <tile name="floor" startx="5" starty="7"/>
+  <tile name="floor" startx="6" starty="5"/>
+  <tile name="floor" startx="6" starty="6"/>
+  <tile name="floor" startx="6" starty="7"/>
+  <tile name="floor" startx="7" starty="5"/>
+  <tile name="floor" startx="7" starty="6"/>
+  <tile name="floor" startx="7" starty="7"/>
+  <tile name="floor" startx="8" starty="5"/>
+  <tile name="floor" startx="8" starty="6"/>
+  <tile name="floor" startx="8" starty="7"/>
+  <tile name="floor" startx="9" starty="5"/>
+  <tile name="floor" startx="9" starty="6"/>
+  <tile name="floor" startx="9" starty="7"/>
+  <tile name="floor" startx="10" starty="5"/>
+  <tile name="floor" startx="10" starty="6"/>
+  <tile name="floor" startx="10" starty="7"/>
+  <tile name="floor" startx="11" starty="5"/>
+  <tile name="floor" startx="11" starty="6"/>
+  <tile name="floor" startx="11" starty="7"/>
+  
+  <!-- Lower section of tiles -->
+  <!--
+  <tile name="floor" startx="0" starty="17"/>
+  <tile name="floor" startx="0" starty="18"/>
+  <tile name="floor" startx="0" starty="19"/>
+  <tile name="floor" startx="1" starty="17"/>
+  <tile name="floor" startx="1" starty="18"/>
+  <tile name="floor" startx="1" starty="19"/>
+  <tile name="floor" startx="2" starty="17"/>
+  <tile name="floor" startx="2" starty="18"/>
+  <tile name="floor" startx="2" starty="19"/>
+  <tile name="floor" startx="3" starty="17"/>
+  <tile name="floor" startx="3" starty="18"/>
+  <tile name="floor" startx="3" starty="19"/>
+  <tile name="floor" startx="4" starty="17"/>
+  <tile name="floor" startx="4" starty="18"/>
+  <tile name="floor" startx="4" starty="19"/>
+  <tile name="floor" startx="5" starty="17"/>
+  <tile name="floor" startx="5" starty="18"/>
+  <tile name="floor" startx="5" starty="19"/>
+  <tile name="floor" startx="6" starty="17"/>
+  <tile name="floor" startx="6" starty="18"/>
+  <tile name="floor" startx="6" starty="19"/>
+  <tile name="floor" startx="7" starty="17"/>
+  <tile name="floor" startx="7" starty="18"/>
+  <tile name="floor" startx="7" starty="19"/>
+  <tile name="floor" startx="8" starty="17"/>
+  <tile name="floor" startx="8" starty="18"/>
+  <tile name="floor" startx="8" starty="19"/>
+  <tile name="floor" startx="9" starty="17"/>
+  <tile name="floor" startx="9" starty="18"/>
+  <tile name="floor" startx="9" starty="19"/>
+  <tile name="floor" startx="10" starty="18"/>
+  <tile name="floor" startx="10" starty="19"/>
+  <tile name="floor" startx="11" starty="18"/>
+  <tile name="floor" startx="11" starty="19"/>
+  -->
+  
+  <!-- water tiles -->
+  <tile name="water_ul" startx="0" starty="8" />
+  <tile name="water_u" startx="1" starty="8" />
+  <tile name="water_ur" startx="2" starty="8" />
+  <tile name="water_l" startx="0" starty="9" />
+  <tile name="water" startx="8" starty="3" />
+  <tile name="water_r" startx="2" starty="9" />
+  <tile name="water_dl" startx="0" starty="10" />
+  <tile name="water_d" startx="1" starty="10" />
+  <tile name="water_dr" startx="2" starty="10" />
+  <tile name="water_l_ur" startx="7" starty="9"/>
+  <tile name="water_l_dr" startx="7" starty="8"/>
+  <tile name="water_r_ul" startx="11" starty="9"/>
+  <tile name="water_r_dl" startx="11" starty="8"/>
+  <tile name="water_l_ur_dr" startx="8" starty="8"/>
+  <tile name="water_r_ul_dl" startx="10" starty="8"/>
+  <tile name="water_u_dl_dr" startx="10" starty="10"/>
+  <tile name="water_d_ul_ur" startx="9" starty="8"/>
+  <tile name="water_corner_ul_ur" startx="0" starty="15"  />
+  <tile name="water_corner_dl_dr" startx="1" starty="15"  />
+  <tile name="water_corner_ul_dl" startx="2" starty="15"  />
+  <tile name="water_corner_ur_dr" startx="3" starty="15"  />
+  <tile name="water_cap_corner_dr" startx="5" starty="8"  />
+  <tile name="water_cap_corner_dl" startx="6" starty="8"  />
+  <tile name="water_cap_corner_ur" startx="5" starty="9"  />
+  <tile name="water_cap_corner_ul" startx="6" starty="9"  />
+  <tile name="water_corner_dr" startx="3" starty="8"  />
+  <tile name="water_corner_dl" startx="4" starty="8"  />
+  <tile name="water_corner_ur" startx="3" starty="9"  />
+  <tile name="water_corner_ul" startx="4" starty="9"  />
+  <tile name="water_vert_cap_t" startx="7" starty="10"  />
+  <tile name="water_vert" startx="4" starty="10"  />
+  <tile name="water_vert_cap_b" startx="8" starty="10"  />
+  <tile name="water_horiz_cap_l" startx="6" starty="10" />
+  <tile name="water_horiz" startx="3" starty="10"  />
+  <tile name="water_horiz_cap_r" startx="5" starty="10"  />
+  
+  <!-- Row 1 of wall variations -->
+  <tile name="wallDecor" startx="0" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="1" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="2" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="3" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="4" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="5" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="6" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="7" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="8" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="9" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="10" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="11" starty="11" endy="12"/>
+  
+  <!-- Row 2 of wall variations -->
+  <!--
+  <tile name="wallDecor" startx="0" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="1" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="2" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="3" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="4" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="5" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="6" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="7" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="8" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="9" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="10" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="11" starty="13" endy="14"/>
+  -->
+
+  <tile name="stairsup" startx="10" starty="15" endy="17" />
+  <tile name="stairsdown" startx="11" starty="15" endy="17" />
+
+  <chestinfo
+  open="dungeon/chest0_open.png"
+  closed="dungeon/chest0_closed.png"
+  broken="dungeon/chest0_broken.png"/>
+
+  <breakable
+    name="Wooden Crate" vis="1"
+    png="dungeon/crate.png" pngBroken="dungeon/chest1_broken.png" 
+    pngSeriesBreak="dungeon/cratebreak/cratebreak" 
+    pngBreakFirst="1" pngBreakNum="4" pngBreakRate="60"/>
+  <breakable
+    name="Wooden Barrel" vis="1"
+    png="dungeon/barrelA.png" pngBroken="dungeon/barrelA_break/barrelA_break0002.png" 
+    pngSeriesBreak="dungeon/barrelA_break/barrelA_break" 
+    pngBreakFirst="0" pngBreakNum="3" pngBreakRate="60" />
+
+  <blocker name="firey brazier" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1"/>
+  <blocker name="lit candelabra" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1" />
+  <blocker name="unlit candelabra" png="dungeon/candelabra_unlit.png" passable="0" animate="0" description="These candles need a light." />
+  <blocker name="empty candelabra" png="dungeon/candelabra_empty.png" passable="0" animate="0" />
+  <blocker name="wooden table" png="dungeon/table_wood.png" passable="0" animate="0" />
+
+  <blocker name="some bones" sprite="dungeon/bones0.png" passable="1"/>
+  <blocker name="more bones" sprite="dungeon/bones1.png" passable="1"/>
+  <blocker name="even more bones" sprite="dungeon/bones2.png" passable="1"/>
+
+</branch>
+
+<branch name="The Ossuary" id="14" length="20" generator="1" corners="1">
+  
+  <tileset name="tilesets/ossuary.png"/>
+  <leveldata min="14" max="14" genLakes="1" genShops="1" genZoo="1"/>
+  <music name="tunes/SPELUNK.IT"/>
+  <!-- <seed name="Starting Room"/> -->
+  
+  <!-- these need to be in all tilesets. This is a hack. Deal with it! -->
+  <tile name="fluid_ice" startx="0" starty="0" numframes="4" skip="0" framerate="280"/>
+  <tile name="fluid_lava" startx="0" starty="1" numframes="6" skip="0" framerate="280"/>
+  <tile name="fluid_water" startx="0" starty="2" numframes="3" skip="0" framerate="250"/>
+  <tile name="fluid_goo" startx="0" starty="3" numframes="3" skip="0" framerate="300"/>
+  
+  <!-- walls...  -->
+  <tile name="top_ul" startx="0" starty="0"/>
+  <tile name="top_u" startx="1" starty="0"/>
+  <tile name="top_ur" startx="2" starty="0"/>
+  <tile name="top_l" startx="0" starty="1"/>
+  <tile name="top_c" startx="1" starty="1"/>
+  <tile name="top_r" startx="2" starty="1"/>
+  <tile name="top_dl" startx="0" starty="2"/>
+  <tile name="top_d" startx="1" starty="2"/>
+  <tile name="top_dr" startx="2" starty="2"/>
+  <tile name="top_ud" startx="3" starty="2"/>
+  <tile name="top_lr" startx="4" starty="2"/>
+  
+  <tile name="top_cup_ldr" startx="8" starty="2"/>
+  <tile name="top_cup_lur" startx="7" starty="2"/>
+  <tile name="top_cup_dlu" startx="6" starty="2"/>
+  <tile name="top_cup_dru" startx="5" starty="2"/>
+  
+  <tile name="top_adj_ul" startx="5" starty="0"/>
+  <tile name="top_adj_ur" startx="6" starty="0"/>
+  <tile name="top_adj_dl" startx="5" starty="1"/>
+  <tile name="top_adj_dr" startx="6" starty="1"/>
+  
+  <tile name="top_dia_dl_dr" startx="9" starty="4"/>
+  <tile name="top_dia_ur_dr" startx="10" starty="3"/>
+  <tile name="top_dia_ul_dl" startx="10" starty="4"/>
+  <tile name="top_dia_ul_ur" startx="9" starty="3"/>
+  <tile name="top_dia_dl" startx="4" starty="0"/>
+  <tile name="top_dia_dr" startx="3" starty="0"/>
+  <tile name="top_dia_ul" startx="4" starty="1"/>
+  <tile name="top_dia_ur" startx="3" starty="1"/>
+  <tile name="top_allfour" startx="11" starty="3"/>
+
+  <!-- these are wall tiles with a diagonal square filler -->
+  <tile name="top_r_add_u" startx="11" starty="1"/>
+  <tile name="top_r_add_d" startx="11" starty="0"/>
+  <tile name="top_r_add_ud" startx="10" starty="0"/>
+  <tile name="top_l_add_u" startx="7" starty="1"/>
+  <tile name="top_l_add_d" startx="7" starty="0"/>
+  <tile name="top_l_add_ud" startx="8" starty="0"/>
+  <tile name="top_u_add_r" startx="11" starty="2"/>
+  <tile name="top_u_add_l" startx="10" starty="1"/>
+  <tile name="top_u_add_lr" startx="10" starty="2"/>
+  <tile name="top_d_add_r" startx="9" starty="2"/>
+  <tile name="top_d_add_l" startx="9" starty="1"/>
+  <tile name="top_d_add_lr" startx="9" starty="0"/>
+  <tile name="wall" startx="1" starty="3" endy="4"/>
+  <tile name="wall_l" startx="0" starty="3" endy="4"/>
+  <tile name="wall_r" startx="2" starty="3" endy="4"/>
+  <tile name="wall_lr" startx="3" starty="3" endy="4"/>
+
+  <!-- basic floors -->
+  <tile name="floor" startx="0" starty="5"/>
+  <tile name="floor" startx="0" starty="6"/>
+  <tile name="floor" startx="0" starty="7"/>
+  <tile name="floor" startx="1" starty="5"/>
+  <tile name="floor" startx="1" starty="6"/>
+  <tile name="floor" startx="1" starty="7"/>
+  <tile name="floor" startx="2" starty="5"/>
+  <tile name="floor" startx="2" starty="6"/>
+  <tile name="floor" startx="2" starty="7"/>
+  <tile name="floor" startx="3" starty="5"/>
+  <tile name="floor" startx="3" starty="6"/>
+  <tile name="floor" startx="3" starty="7"/>
+  <tile name="floor" startx="4" starty="5"/>
+  <tile name="floor" startx="4" starty="6"/>
+  <tile name="floor" startx="4" starty="7"/>
+  <tile name="floor" startx="5" starty="5"/>
+  <tile name="floor" startx="5" starty="6"/>
+  <tile name="floor" startx="5" starty="7"/>
+  <tile name="floor" startx="6" starty="5"/>
+  <tile name="floor" startx="6" starty="6"/>
+  <tile name="floor" startx="6" starty="7"/>
+  <tile name="floor" startx="7" starty="5"/>
+  <tile name="floor" startx="7" starty="6"/>
+  <tile name="floor" startx="7" starty="7"/>
+  <tile name="floor" startx="8" starty="5"/>
+  <tile name="floor" startx="8" starty="6"/>
+  <tile name="floor" startx="8" starty="7"/>
+  <tile name="floor" startx="9" starty="5"/>
+  <tile name="floor" startx="9" starty="6"/>
+  <tile name="floor" startx="9" starty="7"/>
+  <tile name="floor" startx="10" starty="5"/>
+  <tile name="floor" startx="10" starty="6"/>
+  <tile name="floor" startx="10" starty="7"/>
+  <tile name="floor" startx="11" starty="5"/>
+  <tile name="floor" startx="11" starty="6"/>
+  <tile name="floor" startx="11" starty="7"/>
+  
+  <!-- Lower section of tiles -->
+  <!--
+  <tile name="floor" startx="0" starty="17"/>
+  <tile name="floor" startx="0" starty="18"/>
+  <tile name="floor" startx="0" starty="19"/>
+  <tile name="floor" startx="1" starty="17"/>
+  <tile name="floor" startx="1" starty="18"/>
+  <tile name="floor" startx="1" starty="19"/>
+  <tile name="floor" startx="2" starty="17"/>
+  <tile name="floor" startx="2" starty="18"/>
+  <tile name="floor" startx="2" starty="19"/>
+  <tile name="floor" startx="3" starty="17"/>
+  <tile name="floor" startx="3" starty="18"/>
+  <tile name="floor" startx="3" starty="19"/>
+  <tile name="floor" startx="4" starty="17"/>
+  <tile name="floor" startx="4" starty="18"/>
+  <tile name="floor" startx="4" starty="19"/>
+  <tile name="floor" startx="5" starty="17"/>
+  <tile name="floor" startx="5" starty="18"/>
+  <tile name="floor" startx="5" starty="19"/>
+  <tile name="floor" startx="6" starty="17"/>
+  <tile name="floor" startx="6" starty="18"/>
+  <tile name="floor" startx="6" starty="19"/>
+  <tile name="floor" startx="7" starty="17"/>
+  <tile name="floor" startx="7" starty="18"/>
+  <tile name="floor" startx="7" starty="19"/>
+  <tile name="floor" startx="8" starty="17"/>
+  <tile name="floor" startx="8" starty="18"/>
+  <tile name="floor" startx="8" starty="19"/>
+  <tile name="floor" startx="9" starty="17"/>
+  <tile name="floor" startx="9" starty="18"/>
+  <tile name="floor" startx="9" starty="19"/>
+  <tile name="floor" startx="10" starty="18"/>
+  <tile name="floor" startx="10" starty="19"/>
+  <tile name="floor" startx="11" starty="18"/>
+  <tile name="floor" startx="11" starty="19"/>
+  -->
+  
+  <!-- water tiles -->
+  <tile name="water_ul" startx="0" starty="8" />
+  <tile name="water_u" startx="1" starty="8" />
+  <tile name="water_ur" startx="2" starty="8" />
+  <tile name="water_l" startx="0" starty="9" />
+  <tile name="water" startx="8" starty="3" />
+  <tile name="water_r" startx="2" starty="9" />
+  <tile name="water_dl" startx="0" starty="10" />
+  <tile name="water_d" startx="1" starty="10" />
+  <tile name="water_dr" startx="2" starty="10" />
+  <tile name="water_l_ur" startx="7" starty="9"/>
+  <tile name="water_l_dr" startx="7" starty="8"/>
+  <tile name="water_r_ul" startx="11" starty="9"/>
+  <tile name="water_r_dl" startx="11" starty="8"/>
+  <tile name="water_l_ur_dr" startx="8" starty="8"/>
+  <tile name="water_r_ul_dl" startx="10" starty="8"/>
+  <tile name="water_u_dl_dr" startx="10" starty="10"/>
+  <tile name="water_d_ul_ur" startx="9" starty="8"/>
+  <tile name="water_corner_ul_ur" startx="0" starty="15"  />
+  <tile name="water_corner_dl_dr" startx="1" starty="15"  />
+  <tile name="water_corner_ul_dl" startx="2" starty="15"  />
+  <tile name="water_corner_ur_dr" startx="3" starty="15"  />
+  <tile name="water_cap_corner_dr" startx="5" starty="8"  />
+  <tile name="water_cap_corner_dl" startx="6" starty="8"  />
+  <tile name="water_cap_corner_ur" startx="5" starty="9"  />
+  <tile name="water_cap_corner_ul" startx="6" starty="9"  />
+  <tile name="water_corner_dr" startx="3" starty="8"  />
+  <tile name="water_corner_dl" startx="4" starty="8"  />
+  <tile name="water_corner_ur" startx="3" starty="9"  />
+  <tile name="water_corner_ul" startx="4" starty="9"  />
+  <tile name="water_vert_cap_t" startx="7" starty="10"  />
+  <tile name="water_vert" startx="4" starty="10"  />
+  <tile name="water_vert_cap_b" startx="8" starty="10"  />
+  <tile name="water_horiz_cap_l" startx="6" starty="10" />
+  <tile name="water_horiz" startx="3" starty="10"  />
+  <tile name="water_horiz_cap_r" startx="5" starty="10"  />
+  
+  <!-- Row 1 of wall variations -->
+  <tile name="wallDecor" startx="0" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="1" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="2" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="3" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="4" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="5" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="6" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="7" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="8" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="9" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="10" starty="11" endy="12"/>
+  <tile name="wallDecor" startx="11" starty="11" endy="12"/>
+  
+  <!-- Row 2 of wall variations -->
+  <!--
+  <tile name="wallDecor" startx="0" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="1" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="2" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="3" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="4" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="5" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="6" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="7" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="8" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="9" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="10" starty="13" endy="14"/>
+  <tile name="wallDecor" startx="11" starty="13" endy="14"/>
+  -->
+
+  <tile name="stairsup" startx="10" starty="15" endy="17" />
+  <tile name="stairsdown" startx="11" starty="15" endy="17" />
+
+  <chestinfo
+  open="dungeon/chest0_open.png"
+  closed="dungeon/chest0_closed.png"
+  broken="dungeon/chest0_broken.png"/>
+
+  <breakable
+    name="Wooden Crate" vis="1"
+    png="dungeon/crate.png" pngBroken="dungeon/chest1_broken.png" 
+    pngSeriesBreak="dungeon/cratebreak/cratebreak" 
+    pngBreakFirst="1" pngBreakNum="4" pngBreakRate="60"/>
+  <breakable
+    name="Wooden Barrel" vis="1"
+    png="dungeon/barrelA.png" pngBroken="dungeon/barrelA_break/barrelA_break0002.png" 
+    pngSeriesBreak="dungeon/barrelA_break/barrelA_break" 
+    pngBreakFirst="0" pngBreakNum="3" pngBreakRate="60" />
+
+  <blocker name="firey brazier" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1"/>
+  <blocker name="lit candelabra" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" animate="1" />
+  <blocker name="unlit candelabra" png="dungeon/candelabra_unlit.png" passable="0" animate="0" description="These candles need a light." />
+  <blocker name="empty candelabra" png="dungeon/candelabra_empty.png" passable="0" animate="0" />
+  <blocker name="wooden table" png="dungeon/table_wood.png" passable="0" animate="0" />
+
+  <blocker name="some bones" sprite="dungeon/bones0.png" passable="1"/>
+  <blocker name="more bones" sprite="dungeon/bones1.png" passable="1"/>
+  <blocker name="even more bones" sprite="dungeon/bones2.png" passable="1"/>
+
+</branch>
+
+</branchDB>

@@ -1,0 +1,808 @@
+<monDB>
+   
+<monster name="Murderous Rutabaga" level="1" splat="goo" taxa="Vegetable">
+	<idleSprite
+      left="sprites/monster/rutabaga/rutabaga_walk_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_walk_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_walk_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_walk_d.xml"/>
+	<attackSprite
+      left="sprites/monster/rutabaga/rutabaga_attack_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_attack_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_attack_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_attack_d.xml"/>
+	<hitSprite
+      left="sprites/monster/rutabaga/rutabaga_walk_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_walk_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_walk_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_walk_d.xml"/>
+   <!-- TODO: NEED HIT SPRITES -->
+	<dieSprite
+      name="sprites/monster/rutabaga/rutabaga_death.xml"/>
+   <castSpellSprite
+      name="sprites/monster/rutabaga/rutabaga_cast.xml" />
+	
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+	
+	<ai aggressiveness="4" span="8" />
+	<sight cone="270" modifier="0.85" />
+   
+	<!--<drop name="Native Gold" percent="75" />-->
+	
+	<stats numFig="3" xpValue="10" />
+	<damage crushing="5" />
+	<secondarybuff id="4" amount="-10"/> <!-- crit -->
+	<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+	<secondarybuff id="0" amount="12"/> <!-- hp -->
+    <info latin="(Brassica mazacrii)" text="Known also as 'The Swedish Turnip'; Evidently root vegetables are huge and murderous in the Viking Lands."/>
+
+	<monster name="Ancient Rutabaga" level="4">
+		<stats numFig="9" xpValue="58" />
+		<info latin="(Brassica antiqui)" text="A reminder to store your root vegetables in a cool, dry place, or this is what you'll get."/>
+		
+		<damage crushing="6" toxic="3"/>
+		<resistances toxic="10" />
+		
+		<secondarybuff id="0" amount="15"/> <!-- hp -->
+		<dash hitspell="Toxic Dash Attack Crush" missspell="Medium Dash Attack Fail" chance="75" interruptable="1" speed="3" mindistance="2"/>
+		<palette tint="140"/>
+	</monster>
+	
+	<monster name="Mandragora" level="8">
+		<info latin="(Brassica abominabilis)" text="Pulled screaming from the earth by the light of the full moon, this monstrous plant thirsts for human blood!"/>
+		<stats numFig="16" numWiz="5" xpValue="58" />
+		<resistances necromantic="20" righteous="-5" />
+		<palette tint="-50"/>
+		<ai aggressiveness="5" span="8" />
+		
+		<damage crushing="12" necromantic="8"/>
+		<secondarybuff id="0" amount="35"/> <!-- hp -->
+		<dash hitspell="Necro Dash Attack Crush" missspell="Strong Dash Attack Fail" chance="100" interruptable="1" speed="3" mindistance="2"/>
+	</monster>
+
+	<monster name="The Root Ram" level="10" horde="0" maxSpawns="1" named="1">
+		<info latin="(Brassica antiqui)" text="The Ur-Turnip, progenitor of all known root vegetables. It is ancient, cunning and wholly evil."/>
+		<stats numFig="16" numWiz="8" xpValue="220" />
+		<palette tint="-100"/>
+		<ai aggressiveness="5" span="8" />
+		
+		<drop name="Apple" percent="10"/>
+		<drop name="Plum" percent="10" />
+		<drop name="Pear" percent="10" />
+		<drop type="artifact" percent="70" />
+
+		<dash hitspell="Food Coma" missspell="Strong Dash Attack Fail" chance="100" interruptable="1" speed="3" mindistance="2"/>
+		
+		<damage crushing="15"/>
+		<secondarybuff id="0" amount="45"/> <!-- hp -->
+	</monster>
+	
+</monster>
+
+<monster name="Crustaceanoid Warrior" level="2" splat="blood" taxa="Animal">
+   <idleSprite
+      left="sprites/monster/crustaceanoid/crustaceanoid_idle_l.xml"
+      right="sprites/monster/crustaceanoid/crustaceanoid_idle_r.xml"
+      up="sprites/monster/crustaceanoid/crustaceanoid_idle_u.xml"
+      down="sprites/monster/crustaceanoid/crustaceanoid_idle_d.xml"/>
+	<attackSprite
+      left="sprites/monster/crustaceanoid/crustaceanoid_atk_l.xml"
+      right="sprites/monster/crustaceanoid/crustaceanoid_atk_r.xml"
+      up="sprites/monster/crustaceanoid/crustaceanoid_atk_u.xml"
+      down="sprites/monster/crustaceanoid/crustaceanoid_atk_d.xml"/>
+	<hitSprite
+      left="sprites/monster/crustaceanoid/crustaceanoid_idle_l.xml"
+      right="sprites/monster/crustaceanoid/crustaceanoid_idle_r.xml"
+      up="sprites/monster/crustaceanoid/crustaceanoid_idle_u.xml"
+      down="sprites/monster/crustaceanoid/crustaceanoid_idle_d.xml"/>
+   <!-- TODO: NEED HIT SPRITES -->
+	<dieSprite
+      name="sprites/monster/crustaceanoid/crustaceanoid_death.xml"/>
+   <castSpellSprite
+      name="sprites/monster/crustaceanoid/crustaceanoid_cast.xml" />
+	
+	<sfx attack="batty_attack"
+		  hit="batty_damage"
+		  die="batty_die"
+		  spell="batty_cast"/>
+	
+	<ai aggressiveness="5" span="6" />
+	<sight cone="90" modifier="1.0" />
+   
+	<!--<drop name="Native Gold" percent="75" />-->
+	
+	<stats numFig="5" xpValue="10" />
+	<damage slashing="2" piercing="2" />
+	<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+    <info latin="(Crustacea sapiens)" text="It came from crabby shores to seek adventure."/>
+
+	<monster name="Veteran Crustaceanoid" level="5">
+		<palette tint="38"/>
+		<stats numFig="8" numRog="2" xpValue="55" />
+		<damage slashing="3" piercing="4" />
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="7" amount="2" /> <!-- block -->
+
+		<info latin="(Crustacea sapiens)" text="The veteran of many wars, this Crustaceanoid is battle-hardened and wily."/>
+	</monster>
+
+	<monster name="Guerilla Crustaceanoid" level="7">
+		<palette tint="-120"/>
+
+		<stats numFig="9" numRog="7" xpValue="115" />
+		<damage slashing="1" piercing="10" />
+		<secondarybuff id="4" amount="3"/> <!-- critical -->
+		<secondarybuff id="10" amount="-5" /> <!-- armour -->
+		<info latin="(Crustacea sapiens)" text="Crustaceanoid guerilla units attempt to outflank their enemies by means of stealth scuttling. It works better than you might expect."/>
+    
+		<ai aggressiveness="8" span="20" invisible="1"/>
+	</monster>
+
+	<monster name="The Crab King" level="7" named="1" horde="0" maxSpawns="1">
+		<palette tint="-75"/>
+
+		<drop name="Crown of Yellow" percent="100" />
+
+		<stats numFig="14" numRog="3" xpValue="125" />
+		<damage slashing="5" piercing="10" />
+		<secondarybuff id="4" amount="5"/> <!-- critical -->
+		<info latin="(Crustacea sapiens)" text="A mighty king of Crustaceanoids, the Crab King is a reknowned warrior and brilliant strategist."/>
+	</monster>
+
+  <monster name="The Crab Composer" level="10" named="1" horde="0" maxSpawns="1">
+    <palette tint="-5"/>
+
+    <stats numFig="18" numRog="6" xpValue="125" />
+    <damage slashing="10" piercing="15" />
+    <secondarybuff id="4" amount="10"/>
+    <secondarybuff id="6" amount="10"/>
+    <secondarybuff id="7" amount="10"/>
+    <!-- critical -->
+    <info latin="(Crustacea sapiens)" text="The Crab Composer sits deep in the Dungeon, composing terrible and monstrous odes about how life is better under the sea."/>
+  </monster>
+
+  <monster name="Crabnir" level="13" named="1" horde="0" maxSpawns="1">
+		<ai aggressiveness="5" span="6" spellPercentage="20" />
+		<palette tint="-180"/>
+		
+		<spell name="Crabnir's Ravens" />
+
+		<stats numFig="30" numRog="10" xpValue="225" />
+		<damage slashing="10" piercing="10" righteous="10" />
+		<secondarybuff id="4" amount="10"/> <!-- critical -->
+		<info latin="(Crustacea sapiens)" text="The Crustaceanoid God of battle, magic and the hunt. From his home in Crabsgard, he watches over the seas."/>
+	</monster>
+	
+</monster>
+
+<!-- Raven adds for Crabnir -->
+<monster name="Muninn" level="13" tiny="1" splat="blood" taxa="Animal" terrain="2" special="1">
+	<idleSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<attackSprite left="sprites/monster/raven/raven_atk_l.xml"
+	right="sprites/monster/raven/raven_atk_r.xml"
+	up="sprites/monster/raven/raven_atk_u.xml"
+	down="sprites/monster/raven/raven_atk_d.xml"/>
+	<hitSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<dieSprite name="sprites/monster/raven/raven_die.xml"/>
+	<castSpellSprite name="sprites/monster/raven/raven_cast.xml"/>
+	
+	<sfx attack="raven_attack"
+		  hit="raven_damage"
+		  die="raven_die"
+		  spell="raven_cast"/>
+	
+	 <stats numRog="20" xpValue="105" />
+	 <ai span="15" aggressiveness="5" />
+	 <sight cone="360" modifier="1.2" />
+	 
+	 <palette tint="-10" />
+	 <damage slashing="3" piercing="3" hyperborean="7" />
+	 <secondarybuff id="6" amount="20"/> <!-- dodge --> 
+	 <secondarybuff id="0" amount="-5"/>  <!-- hp -->
+	 <resistances hyperborean="25" conflagratory="-25"/>
+
+	 <info latin="(Corvus Corvus)" text="Memory, one of the ravens of Crabnir. It is affiliated with ice."/>
+	 
+	<monster name="Huginn" level="4">
+		<palette tint="100" />
+		<damage slashing="3" piercing="3" conflagratory="7" />
+		<resistances conflagratory="25" hyperborean="-25" />
+		<info latin="(Corvus Corvus)" text="Thought, one of the ravens of Crabnir. It is affiliated with fire."/>
+	</monster>
+</monster>
+
+<monster name="Cloud Gremlin" level="3" splat="ichor" taxa="Demon" terrain="2">
+   <idleSprite
+      left="sprites/monster/cloud_gremlin/cloud_gremlin_idle_l.xml"
+      right="sprites/monster/cloud_gremlin/cloud_gremlin_idle_r.xml"
+      up="sprites/monster/cloud_gremlin/cloud_gremlin_idle_u.xml"
+      down="sprites/monster/cloud_gremlin/cloud_gremlin_idle_d.xml"/>
+	<attackSprite
+      left="sprites/monster/cloud_gremlin/cloud_gremlin_atk_l.xml"
+      right="sprites/monster/cloud_gremlin/cloud_gremlin_atk_r.xml"
+      up="sprites/monster/cloud_gremlin/cloud_gremlin_atk_u.xml"
+      down="sprites/monster/cloud_gremlin/cloud_gremlin_atk_d.xml"/>
+	<hitSprite
+      left="sprites/monster/cloud_gremlin/cloud_gremlin_idle_l.xml"
+      right="sprites/monster/cloud_gremlin/cloud_gremlin_idle_r.xml"
+      up="sprites/monster/cloud_gremlin/cloud_gremlin_idle_u.xml"
+      down="sprites/monster/cloud_gremlin/cloud_gremlin_idle_d.xml"/>
+   <!-- TODO: NEED HIT SPRITES -->
+	<dieSprite
+      name="sprites/monster/cloud_gremlin/cloud_gremlin_die.xml"/>
+   <castSpellSprite
+      name="sprites/monster/cloud_gremlin/cloud_gremlin_cast.xml" />
+	
+	<sfx attack="cloud_gremlin_attack"
+		  hit="cloud_gremlin_damage"
+		  die="cloud_gremlin_die"
+		  spell="cloud_gremlin_cast"/>
+	
+	<ai aggressiveness="5" span="7" spellPercentage="10" />
+	<spell name="Voltaic Arc 0" />
+	
+	<sight cone="270" modifier="1.2" />
+   
+	<!--<drop name="Native Gold" percent="75" />-->
+	
+	<stats numRog="5" numWiz="3" xpValue="32" />
+	<damage blasting="2" voltaic="4" />
+	
+	<resistances voltaic="3" />
+	<info latin="(Gremlinum caeli)" text="Cloud Gremlins! Riding Clouds! Out for Adventure and Shocking Times!"/>
+	<secondarybuff id="9" amount="1" /> <!-- dodge reduction -->
+	<secondarybuff id="6" amount="10" /> <!-- dodge -->
+
+	<monster name="Gaseous Gremlin" level="8">
+		<ai aggressiveness="5" span="7" spellPercentage="10" />
+			<spell name="Toxic Poison Cloud" />
+		<palette tint="77"/>
+		<info latin="(Gremlinum noxii)" text="Gaseous Gremlins are, for obvious reasons, generally pretty unpopular. This tends to make them cross and aggressive."/>
+		<stats numRog="10" numWiz="6" xpValue="125" />
+		<damage blasting="4" voltaic="4" putrefying="5"/>
+		<onhit spell="Flesh-eating Gas" onechancein="5"/>
+		<secondarybuff id="9" amount="3" /> <!-- dodge reduction -->
+		</monster>
+	
+	<monster name="Thorling" level="11">
+		<ai aggressiveness="5" span="7" spellPercentage="10" />
+			<spell name="Voltaic Arc 1" />
+			<spell name="Thor's Fulminaric Bolt" />
+		<palette tint="35"/>
+		<info latin="(Gremlinum thunderae)" text="Innumerable offspring of the famous God of Thunder, their squabbles provide constant fodder for the celestial tabloids."/>
+		<stats numRog="16" numWiz="7" xpValue="155" />
+		<damage blasting="6" voltaic="12" />
+		<secondarybuff id="9" amount="5" /> <!-- dodge reduction -->
+		</monster>	
+  <!--<dash hitspell="Dash Attack Crush" missspell="Dash Attack Fail" chance="100" interruptable="1" speed="1" mindistance="2"/>-->
+
+	<monster name="Tesla's Horror" level="5" maxSpawns="1" horde="0" named="1">
+		<ai aggressiveness="5" span="7" spellPercentage="20" />
+
+		<spell name="Voltaic Arc 0" />
+		<spell name="Electrosensitivity" />
+		
+		<drop name="Voltaic Potion" percent="25" />
+		<drop name="Wand of Tesla" percent="25" />
+		<drop type="artifact" percent="50" />
+		
+		<palette tint="-155"/>
+		<info latin="(Gremlinum scientiae)" text="This wee monstrosity was created by the wizard Tesla in an experiment gone awry. Now it thirsts for tiny vengeance!"/>
+		<stats numRog="9" numWiz="5" xpValue="105" />
+		<damage blasting="5" voltaic="5"/>
+		<secondarybuff id="9" amount="5" /> <!-- dodge reduction -->
+	</monster>
+  
+  </monster>
+
+<monster name="Samedi" level="1" splat="ichor" taxa="Undead" terrain="0">
+   <idleSprite
+      left="sprites/monster/samedi/samedi_walk_l.xml"
+      right="sprites/monster/samedi/samedi_walk_r.xml"
+      up="sprites/monster/samedi/samedi_walk_u.xml"
+      down="sprites/monster/samedi/samedi_walk_d.xml"/>
+	<attackSprite
+      left="sprites/monster/samedi/samedi_atk_l.xml"
+      right="sprites/monster/samedi/samedi_atk_r.xml"
+      up="sprites/monster/samedi/samedi_atk_u.xml"
+      down="sprites/monster/samedi/samedi_atk_d.xml"/>
+	<hitSprite
+      left="sprites/monster/samedi/samedi_walk_l.xml"
+      right="sprites/monster/samedi/samedi_walk_r.xml"
+      up="sprites/monster/samedi/samedi_walk_u.xml"
+      down="sprites/monster/samedi/samedi_walk_d.xml"/>
+   <!-- TODO: NEED HIT SPRITES -->
+	<dieSprite
+      name="sprites/monster/samedi/samedi_death.xml"/>
+   <castSpellSprite
+      name="sprites/monster/samedi/samedi_cast.xml" />
+	
+	<sfx attack="samedi_attack"
+		  hit="samedi_damage"
+		  die="samedi_die"
+		  spell="samedi_cast" />
+
+	<ai aggressiveness="5" span="6" />
+	<sight cone="90" modifier="1.45" />
+   
+	<!--<drop name="Native Gold" percent="75" />-->
+	
+	<stats numFig="2" numWiz="1" xpValue="12" />
+	<damage crushing="2" necromantic="1" />
+	
+	<primarybuff id="0" amount="1" /> <!-- burliness -->
+	<secondarybuff id="6" amount="-3"/> <!-- dodge -->
+    <resistances necromantic="3" toxic="10" asphyxiative="10" conflagratory="-1" />
+    <info latin="(Baro Saturni)" text="Samedi never let a small matter of death get in the way of having a good time."/>
+   
+	<monster name="The Baron" level="1" splat="ichor" taxa="Undead" terrain="0" maxSpawns="1" horde="0" named="1">
+		<stats numFig="3" numRog="3" numWiz="3" xpValue="150" />
+			<spell name="Baron Party" />
+			<spell name="Alcohol Poisoning" />
+			<spell name="Easy Target Curse" />
+		<palette tint="-150"/>
+		<ai aggressiveness="7" span="15" spellPercentage="20" />
+		<sight cone="270" modifier="1.7" />
+		<resistances necromantic="5" toxic="15" asphyxiative="15" conflagratory="-1" />
+			<secondaryBuff id="0" amount="50" /> <!-- hp -->
+		<onHit onechancein="1" spell="Monster Blink" />
+		<drop name="The Baron's Hat" percent="100" />
+		<info latin="(Baro Saturni)" text="The Baron is going to make sure you have a good time whether you like it or not."/>
+		</monster>
+	
+	<monster name="Mercredi" level="6">
+		<palette tint="65"/>
+		<info latin="(Baro Mercurii)" text="Also known as &quot;The Hump Baron.&quot; You are about halfway through the Barons, so keep it up."/>
+		
+		<stats numFig="8" numWiz="6" xpValue="98" />
+		<damage crushing="4" necromantic="8" />
+		
+		<primarybuff id="0" amount="4" /> <!-- burliness -->
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<resistances necromantic="20" />
+    <spell name="Targeted Mana Drain"/>
+  </monster>
+
+	<monster name="Lundi" level="12">
+		<palette tint="-105"/>
+		<info latin="(Baro Lunae)" text="Feared by office workers everywhere, Lundi inflicts exhaustion which no amount of coffee can remedy."/>
+
+		<stats numFig="16" numWiz="8" xpValue="155" />
+		<damage crushing="8" necromantic="12" />
+		
+		<primarybuff id="0" amount="4" /> <!-- burliness -->
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<resistances necromantic="50" />
+
+		<onhit spell="The Mondays" onechancein="3"/>
+	</monster>
+	
+	<onhit spell="Baron Party" onechancein="3"/>
+	
+  <!--<dash hitspell="Dash Attack Crush" missspell="Dash Attack Fail" chance="100" interruptable="1" speed="1" mindistance="2"/>-->
+   
+  </monster>  
+  
+<monster name="Fruit Treant" level="3" splat="goo" taxa="Vegetable" terrain="0">
+	<!-- design notes:
+	I like the idea of this guy as a tank-mage. Heavy, fairly hard-hitting, performs dash attacks, and throws fruit at player form afar. - dgb
+	-->
+   <idleSprite
+      left="sprites/monster/fruit_treant/fruit_treant_walk_l.xml"
+      right="sprites/monster/fruit_treant/fruit_treant_walk_r.xml"
+      up="sprites/monster/fruit_treant/fruit_treant_walk_u.xml"
+      down="sprites/monster/fruit_treant/fruit_treant_walk_d.xml"/>
+	<attackSprite
+      left="sprites/monster/fruit_treant/fruit_treant_atk_l.xml"
+      right="sprites/monster/fruit_treant/fruit_treant_atk_r.xml"
+      up="sprites/monster/fruit_treant/fruit_treant_atk_u.xml"
+      down="sprites/monster/fruit_treant/fruit_treant_atk_d.xml"/>
+	<hitSprite
+      left="sprites/monster/fruit_treant/fruit_treant_walk_l.xml"
+      right="sprites/monster/fruit_treant/fruit_treant_walk_r.xml"
+      up="sprites/monster/fruit_treant/fruit_treant_walk_u.xml"
+      down="sprites/monster/fruit_treant/fruit_treant_walk_d.xml"/>
+	<dieSprite
+      name="sprites/monster/fruit_treant/fruit_treant_death.xml"/>
+   <castSpellSprite
+      name="sprites/monster/fruit_treant/fruit_treant_cast.xml" />
+	
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+	
+	<ai aggressiveness="5" span="10" chicken="0" spellPercentage="15"/>
+	<spell name="Thrown Fruit" />
+	<sight cone="270" modifier="0.95" />
+	
+	<drop name="Apple" percent="12" />
+	<drop name="Plum" percent="12" />
+	<drop name="Pear" percent="12" />
+	
+	<stats numFig="4" numWiz="4" xpValue="32" />
+	<damage crushing="3" />
+	<dash hitspell="Medium Dash Attack Crush" missspell="Medium Dash Attack Fail" chance="50" interruptable="1" speed="2" mindistance="2"/>
+	
+	<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<resistances conflagratory="-3" />
+	
+	<info latin="(Arbor fructus)" text="The Fruit Treants have heard every possible variant of &quot;an apple a day...&quot; joke, and they do not find them amusing."/>
+   
+	<monster name="Luminescent Fruit Treant" level="5">
+		<palette tint="180"/>
+		<info latin="(Arbor fructus luminosi)" text="This treant blooms beautifully in dark caverns deep beneath the earth."/>
+		<spell name="Luminescent Fruit" />
+		
+		<ai aggressiveness="5" span="10" chicken="0" spellPercentage="15"/>
+		<stats numFig="5" numWiz="7" xpValue="52" />
+		<damage crushing="4" />
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<secondarybuff id="7" amount="10"/> <!-- block -->
+		<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	</monster>
+
+	<monster name="Fruit Treant of Knowledge" level="14">
+		<palette tint="30"/>
+		<info latin="(Arbor fructus scientiae)" text="It has all been downhill since humans were first struck violently about the head by this forbidden treant."/>
+		<spell name="Fruit of Knowledge" />
+		
+		<ai aggressiveness="5" span="10" chicken="0" spellPercentage="15"/>
+		<stats numFig="9" numWiz="16" xpValue="165" />
+		<damage crushing="8" aethereal="6" righteous="6" />
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<secondarybuff id="7" amount="15"/> <!-- block -->
+		<secondarybuff id="10" amount="6"/> <!-- armour absorption -->
+	</monster>
+	
+	<monster name="The Tree of Woe" level="3" maxSpawns="1" horde="0" named="1">
+		<palette tint="130"/>
+		<info latin="(Arbor fructus horribilis)" text="The Tree of Woe hates everyone, but it hates barbarians especially."/>
+		
+		<spell name="Exposure" />
+		
+		<ai aggressiveness="5" span="10" spellPercentage="15"/>
+		<stats numFig="4" numWiz="7" xpValue="65" />
+		<damage crushing="4" necromantic="2" asphyxiative="2" />
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<secondarybuff id="7" amount="8"/> <!-- block -->
+		<secondarybuff id="10" amount="5"/> <!-- armour absorption -->		
+	</monster>
+
+	<monster name="Banana the Hutt" level="6" maxSpawns="1" horde="0" named="1">
+		<palette tint="60"/>
+		<info latin="(Arbor bananae economicus)" text="A feared interdimensional loanshark and an excellent source of potassium."/>
+		
+		<spell name="Usury" />
+		
+		<drop type="zorkmids" percent="35"/>
+		<drop name="Wand of Bling" percent="35" />
+		<drop type="artifact" percent="30" />
+		
+		<ai aggressiveness="5" span="10" spellPercentage="20"/>
+		<stats numFig="6" numWiz="9" xpValue="90" />
+		<damage crushing="6" />
+		<secondarybuff id="7" amount="10"/> <!-- block -->
+		<secondarybuff id="10" amount="6"/> <!-- armour absorption -->		
+	</monster>
+
+	<spell name="Thrown Fruit" />
+  </monster>
+
+<monster name="Samurai-Bot Mk. III" level="3" splat="ichor" taxa="Construct" terrain="0">
+	<!-- design notes:
+	I trust we've all seen Brazil - dgb
+	And these guys should probably immediately dash at the player; it's only proper. - dgb
+	-->
+    <idleSprite
+       left="sprites/monster/samurai/Samurai_walk_l.xml"
+       right="sprites/monster/samurai/Samurai_walk_r.xml"
+       up="sprites/monster/samurai/Samurai_walk_u.xml"
+       down="sprites/monster/samurai/Samurai_walk_d.xml"/>
+    <attackSprite
+        left="sprites/monster/samurai/Samurai_atk_l.xml"
+        right="sprites/monster/samurai/Samurai_atk_r.xml"
+        up="sprites/monster/samurai/Samurai_atk_u.xml"
+        down="sprites/monster/samurai/Samurai_atk_d.xml"/>
+    <hitSprite
+        left="sprites/monster/samurai/Samurai_walk_l.xml"
+        right="sprites/monster/samurai/Samurai_walk_r.xml"
+        up="sprites/monster/samurai/Samurai_walk_u.xml"
+        down="sprites/monster/samurai/Samurai_walk_d.xml"/>
+    <!-- TODO: NEED HIT SPRITES -->
+    <dieSprite
+        name="sprites/monster/samurai/Samurai_death.xml"/>
+    <castSpellSprite
+       name="sprites/monster/samurai/Samurai_cast.xml" />
+
+	<sfx attack="samurai_attack"
+		  hit="samurai_damage"
+		  die="samurai_die"
+		  spell="samurai_cast"/>
+
+	<ai aggressiveness="6" span="8" />
+	<sight cone="90" modifier="1.0" />
+
+   <drop name="Katana" percent="1" />
+	<drop name="Brass Piping" percent="4" />
+	<drop name="Copper Wire" percent="3" />
+	<drop name="Brass Mechanisms" percent="5" />
+	<drop name="Rust" percent="2" />
+	<drop name="Powdered Aluminum" percent="2" />
+	<drop name="Spring-loaded Power Core" percent="4" />
+
+	<stats numFig="6" xpValue="25" />
+	<damage slashing="4" conflagratory="2" />
+	<primarybuff id="0" amount="2" /> <!-- burliness -->
+	<primarybuff id="2" amount="-2" /> <!-- nimbleness -->
+	<resistances voltaic="-3" slashing="1" conflagratory="1" asphyxiative="10" toxic="10" existential="10"/>
+	<info latin="(Mechanicus samurae)" text="Samurai-Bot Mk III, the latest in coal-fired Samurai Robot technology."/>
+
+	<monster name="Daimyo-Bot Mk IV" level="7">
+		<palette tint="30"/>
+		<info latin="(Mechanicus samurae belli)" text="The B-package: this Samurai-Bot comes complete with colour-matched bumpers and an unquenchable hatred for all life."/>
+
+		<stats numFig="17" xpValue="95" />
+		<damage slashing="3" blasting="3" conflagratory="5" />
+		<primarybuff id="0" amount="2" /> <!-- burliness -->
+		<primarybuff id="2" amount="-2" /> <!-- nimbleness -->
+		<resistances voltaic="-4" slashing="3" conflagratory="3" asphyxiative="25"/>
+	</monster>
+
+	<monster name="Shogun-Bot Mk V" level="11">
+		<palette tint="-30"/>
+		<info latin="(Mechanicus samurae magni)" text="The absolute top of the line. The Shogun-Bot Mk V slices, dices, and rules over feudal nations with an iron fist."/>
+
+		<stats numFig="24" xpValue="165" />
+		<damage slashing="4" blasting="4" conflagratory="8" />
+		<primarybuff id="0" amount="3" /> <!-- burliness -->
+		<primarybuff id="2" amount="-3" /> <!-- nimbleness -->
+		<resistances voltaic="-6" slashing="5" conflagratory="5" asphyxiative="50"/>
+	</monster>
+    
+	<monster name="Tokugawa Roboyatsu" level="12" named="1" horde="0" maxSpawns="1">
+		<palette tint="-140"/>
+		<info latin="(Mechanicus samurae magni)" text="A famed Sengoku era roboshogun. Fiercely loyal to friends and merciless to enemies, it was said he could compute pi to a staggering precision."/>
+		<ai aggressiveness="6" span="8" spellPercentage="15"/>
+		<spell name="Summon Vassals" />
+		
+		<onhit spell="Wrathful Strike" onechancein="3"/>		
+
+		<stats numFig="30" xpValue="220" />
+		<damage slashing="8" blasting="6" conflagratory="10" />
+		<primarybuff id="0" amount="5" /> <!-- burliness -->
+		<primarybuff id="2" amount="-4" /> <!-- nimbleness -->
+		<resistances voltaic="-6" slashing="5" conflagratory="5" asphyxiative="50"/>		
+	</monster>
+
+  </monster>
+
+  <monster name="Amazonian Bumblebeeperson" level="0" splat="blood" taxa="Animal" terrain="2">
+    <idleSprite
+       left="sprites/monster/ABBW/ABBW_walk_l.xml"
+       right="sprites/monster/ABBW/ABBW_walk_r.xml"
+       up="sprites/monster/ABBW/ABBW_walk_u.xml"
+       down="sprites/monster/ABBW/ABBW_walk_d.xml"/>
+    <attackSprite
+        left="sprites/monster/ABBW/ABBW_atk_l.xml"
+        right="sprites/monster/ABBW/ABBW_atk_r.xml"
+        up="sprites/monster/ABBW/ABBW_atk_u.xml"
+        down="sprites/monster/ABBW/ABBW_atk_d.xml"/>
+    <hitSprite
+        left="sprites/monster/ABBW/ABBW_walk_l.xml"
+        right="sprites/monster/ABBW/ABBW_walk_r.xml"
+        up="sprites/monster/ABBW/ABBW_walk_u.xml"
+        down="sprites/monster/ABBW/ABBW_walk_d.xml"/>
+    <!-- TODO: NEED HIT SPRITES -->
+    <dieSprite
+        name="sprites/monster/ABBW/ABBW_death.xml"/>
+    <castSpellSprite
+       name="sprites/monster/ABBW/ABBW_cast.xml" />
+
+    <sfx attack="abbw_attack"
+			hit="abbw_damage"
+			die="abbw_die"
+			spell="abbw_cast"/>
+
+    <ai aggressiveness="5" span="6" />
+    <sight cone="270" modifier="1.0" />
+
+    <!--<drop name="Native Gold" percent="75" />-->
+	 <!-- KILLING ME WON'T BRING BACK YOUR HONEY -->
+
+    <stats numFig="2" numWiz="1" xpValue="12" />
+    <damage slashing="1" piercing="1" />
+    <secondarybuff id="4" amount="3"/> <!-- crit -->
+    <secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="10" amount="-1"/> <!-- armour absorption -->
+	
+    <info latin="(Buzzus Buzzus)" text="Contrary to popular belief, not all of the Amazonian Bumblebeepeople are women. It's just that male beepeople are also exceedingly pretty with very long hair."/>
+
+	<monster name="Spelling Bee" level="6">
+		<ai aggressiveness="5" span="6" spellPercentage="25"/>
+	
+		<palette tint="131"/>
+		<info latin="(Buzzus Magices)" text="A member of the priestly caste, this Bumblebeeperson wields awesome magical powers."/>
+		
+		<stats numFig="6" numWiz="8" xpValue="90" />
+		<damage slashing="2" piercing="4" />
+		<secondarybuff id="4" amount="5"/> <!-- crit -->
+		<secondarybuff id="6" amount="5"/> <!-- dodge -->
+		<secondarybuff id="10" amount="-4"/> <!-- armour absorption -->
+		
+		<spell name="Aethereal Missile" />
+	</monster>
+
+	<monster name="Royal Bee" level="10">
+		<palette tint="11"/>
+		<info latin="(Buzzus Reginae)" text="The Queen Bee. King Bee? Honestly, it didn't seem polite to ask."/>
+		<stats numFig="16" numWiz="6" xpValue="145" />
+		<damage slashing="4" piercing="7" />
+		<secondarybuff id="4" amount="5"/> <!-- crit -->
+		<secondarybuff id="6" amount="5"/> <!-- dodge -->
+		<secondarybuff id="10" amount="-4"/> <!-- armour absorption -->
+	</monster>
+	
+	<!-- Bee bosses -->
+	<monster name="Bee Arthur" level="0" maxSpawns="1" horde="0" named="1">
+		<palette tint="-12"/>
+		<info latin="(Buzzus Arturis)" text="A heroine among the Bumblebeepeople, with a long and distinguished career."/>
+
+		<drop name="Spear" percent="50"/>
+		<drop name="Potion of Replenishment" percent="25"/>
+		<drop type="artifact" percent="25"/>
+		
+		<stats numFig="3" numWiz="1" xpValue="30" />
+		<damage slashing="2" piercing="2" />
+		<secondarybuff id="4" amount="2"/> <!-- crit -->
+		<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	</monster>
+
+	<monster name="The Green Hornet" level="9" maxSpawns="1" horde="0" named="1">
+		<ai aggressiveness="5" span="6" spellPercentage="15"/>
+		<palette tint="80"/>
+		<info latin="(Buzzus Buzzus)" text="A green hornet is born to the Bumblebeepeople only once every ten generations. It is destined to fight Bee Crime."/>
+		
+		<drop name="Guan Dao" percent="50"/>
+		<drop name="Potion of Lively Regeneration" percent="25"/>
+		<drop type="artifact" percent="25"/>
+		
+		<spell name="The Long Arm of the Law" />
+		
+		<stats numFig="15" numWiz="8" xpValue="150" />
+		<damage slashing="4" piercing="7" />
+		<secondarybuff id="4" amount="5"/> <!-- crit -->
+		<secondarybuff id="6" amount="10"/> <!-- dodge -->
+		<secondarybuff id="10" amount="-2"/> <!-- armour absorption -->
+	</monster>
+
+
+    <monster name="Evil Clone" level="2" tiny="0" splat="ichor" taxa="Other" maxSpawns="0" horde="0" special="1">
+      <idleSprite left="sprites/hero/hero_run_l.spr"
+      right="sprites/hero/hero_run_r.spr"
+      up="sprites/hero/hero_run_u.spr"
+      down="sprites/hero/hero_run_d.spr"/>
+      <attackSprite left="sprites/hero/hero_atk_unarm_l.spr"
+      right="sprites/hero/hero_atk_unarm_r.spr"
+      up="sprites/hero/hero_atk_unarm_u.spr"
+      down="sprites/hero/hero_atk_unarm_d.spr"/>
+      <hitSprite left="sprites/hero/hero_hit_l.spr"
+      right="sprites/hero/hero_hit_r.spr"
+      up="sprites/hero/hero_hit_u.spr"
+      down="sprites/hero/hero_hit_d.spr"/>
+      <dieSprite name="sprites/hero/hero_die_disintegrated_l.spr"/>
+
+      <sfx attack="unarmed2"
+			  hit="humanoid_hit"
+			  die="disintegrate"
+			  spell="humanoid_spell"/>
+
+      <ai aggressiveness="5" span="5" />
+      <sight cone="90" modifier="1.2" />
+      <palette tint="60" />
+      <stats numFig="20" numRog="10" xpValue="180" />
+      <damage slashing="20" piercing="5" acidic="5"/>
+      <secondarybuff id="6" amount="25"/> <!-- dodge -->
+      <secondarybuff id="0" amount="50"/>  <!-- hp -->
+      <secondarybuff id="10" amount="10"/>
+      <!-- armour -->
+      <resistances acidic="10" />
+      <info latin="(Androclonus Malificus)" text="It is often believed that the first copy is evil and the second is a loveable sidekick.  It turns out they're all evil."/>
+    </monster>
+
+
+  </monster>
+
+  <monster name="Vlad Digula" level="20" special="1" taxa="Diggle Prince" tiny="1" diggleHell="0" horde="0" named="1">
+
+    <info latin="(Poingus Poingus)" text="A despotic prince of diggles, condemned to Diggle Hell for all eternity for his terrible crimes. (Ah ah ah ah!)"/>
+    <idleSprite
+       left="sprites/monster/vladiggle/vladiggle_run_l.xml"
+       right="sprites/monster/vladiggle/vladiggle_run_r.xml"
+       up="sprites/monster/vladiggle/vladiggle_run_u.xml"
+       down="sprites/monster/vladiggle/vladiggle_run_d.xml"/>
+    <attackSprite
+        left="sprites/monster/vladiggle/vladiggle_atk_l.xml"
+        right="sprites/monster/vladiggle/vladiggle_atk_r.xml"
+        up="sprites/monster/vladiggle/vladiggle_atk_u.xml"
+        down="sprites/monster/vladiggle/vladiggle_atk_d.xml"/>
+    <hitSprite
+        left="sprites/monster/vladiggle/vladiggle_hit_l.xml"
+        right="sprites/monster/vladiggle/vladiggle_hit_r.xml"
+        up="sprites/monster/vladiggle/vladiggle_hit_u.xml"
+        down="sprites/monster/vladiggle/vladiggle_hit_d.xml"/>
+    <!-- TODO: NEED HIT SPRITES -->
+    <dieSprite
+        name="sprites/monster/vladiggle/vladiggle_die_r.xml"/>
+    <castSpellSprite
+       name="sprites/monster/vladiggle/vladiggle_wand_r.xml" />
+
+    <sfx attack="diggle_attack"
+			hit="diggle_damage"
+			die="diggle_die"
+			spell="diggle_cast"/>
+
+    <ai spellPercentage="50" aggressiveness="40" span="50" cancharm="0" canparalyze="0"/>
+    <sight cone="270" modifier="3.2" />
+    <stats numFig="33" numRog="19" numWiz="69" />
+
+<!--
+  By way of comparison, Tougher Lord D. is:
+  
+    <ai spellPercentage="80" aggressiveness="40" span="50" cancharm="0" canparalyze="0"/>
+    <sight cone="270" modifier="3.0" />
+    <stats numFig="23" numRog="19" numWiz="59" />
+ -->
+    
+    <secondarybuff id="6" amount="40"/>
+    <!-- dodge -->
+    <secondarybuff id="7" amount="30"/>
+    <!-- block -->
+
+   <!--
+    <resistances toxic="28" putrefying="18" necromantic="28" hyperborean="18" conflagratory="15" existential="19" asphyxiative="22" voltaic="14" piercing="10" transmutative="17" />
+    <damage blasting="6" crushing="15" necromantic="15" transmutative="15"/>
+-->    
+    
+    <resistances 
+      conflagratory="40" 
+      necromantic="30" 
+      toxic="30" 
+      voltaic="30" 
+      hyperborean="30" 
+      existential="10" 
+      righteous="-10" />
+
+    <secondarybuff id="10" amount="24"/>
+    <!-- armour -->
+
+    <secondarybuff id="0" amount="1000"/>
+    <!-- health! Give him some oomph. -->
+
+    <damage blasting="25" conflagratory="25" piercing="25" necromantic="25"/>
+
+    <onhit spell="Corrupt Equipment" onechancein="1"/>
+
+    <spell name="Antimagic Field"/>
+    <spell name="Greater Targeted Mana Drain"/>
+    <spell name="Thor's Fulminaric Bolt"/>
+    <spell name="Arctic Vortex"/>
+    <spell name="Obvious Fireball"/>
+    <spell name="Monstrous Rage"/>
+    <spell name="Mass Destruction"/>
+    <spell name="Sparkly Glamour"/>
+  </monster>
+
+</monDB>

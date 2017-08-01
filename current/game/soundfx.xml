@@ -1,0 +1,353 @@
+<sounds>
+
+  <!--
+  
+  SoundFX.xml associates wave files with their corresponding variable names from within the game.
+  
+  To alter one of the in-game sounds, say manalow1, simply change the wave="sfx/vox_more_mana02a.wav" tag to reflect the location of the new
+  sound.
+  
+  The sounds have been named as descriptively as possible, but in the cases where a variable has more than one sound such as blood1, blood2, etc,
+  this simply means that the game will randomly select from one of these files when that variable is called.
+ 
+  
+  -->
+  
+  <!-- announcer -->
+
+  <sound name="zorkmidslow1" wave="sfx/vox_not_enough_zm_jg_displeased02a.wav"/>
+  <sound name="zorkmidslow2" wave="sfx/vox_you_need_more_zm_financial_toady02a.wav"/>
+  <sound name="zorkmidslow3" wave="sfx/vox_you_need_more_zm_considered_loan02a.wav"/>
+  <sound name="zorkmidslow4" wave="sfx/vox_not_enough_zm02a.wav"/>
+  <sound name="zorkmidslow5" wave="sfx/vox_economy_doesnt_run02a.wav"/>
+  <sound name="zorkmidslow6" wave="sfx/vox_financial_solvency02a.wav"/>
+  
+  <sound name="manalow1" wave="sfx/vox_more_mana02a.wav"/>
+  <sound name="manalow2" wave="sfx/vox_more_mana02b.wav"/>
+  <sound name="manalow3" wave="sfx/vox_more_mana02c.wav"/>
+  <sound name="manalow4" wave="sfx/vox_more_mana_more_booze02a.wav"/>
+  <sound name="manalow5" wave="sfx/vox_more_mana_more_booze02b.wav"/>
+
+  <sound name="blood1" wave="sfx/vox_drink_blood.wav"/>
+  <sound name="blood2" wave="sfx/vox_you_thirst_for_blood01a.wav"/>
+  <sound name="blood3" wave="sfx/vox_drink_blood_restore_health01a.wav"/>
+
+  <sound name="healthlow1" wave="sfx/vox_health_low02a.wav"/>
+  <sound name="healthlow2" wave="sfx/vox_eat_food_reg_health02a.wav"/>
+  <sound name="healthcritical1" wave="sfx/vox_health_critical02a.wav"/>
+  <sound name="healthcritical2" wave="sfx/vox_lifeforce_running_out02a.wav"/>
+  <sound name="healthcritical3" wave="sfx/vox_lifeforce_running_out02b.wav"/>
+
+  <sound name="pleasedontgo" wave="sfx/vox_please_dont_go03.wav"/>
+
+  <!-- Crafting -->
+  <sound name="alchemy" wave="sfx/craft_alchemy01.wav" />
+  <sound name="smithing" wave="sfx/craft_smithing01.wav" />  
+  <sound name="tinkering" wave="sfx/tinkering.wav" />
+  <sound name="distill" wave="sfx/craft_distill.wav" />
+  <sound name="ingot_press" wave="sfx/craft_ingotpress.wav" />
+  <sound name="lutefisk" wave="sfx/crft_lutefisk01.wav"/>
+
+  <sound name="vending" wave="sfx/vending_machine01.wav" />
+  <sound name="teleport_short" wave="sfx/teleport_short.wav"/>
+  
+<!-- Damage Sounds -->  
+  <sound name="aetherial" wave="sfx/dmg_aetherial.wav" />
+  <sound name="conflagratory" wave="sfx/dmg_conflagratory.wav" />
+  <sound name="slashing" wave="sfx/dmg_slashing.wav" />
+  <sound name="putrifying" wave="sfx/dmg_putrefying.wav" />
+  <sound name="toxic" wave="sfx/dmg_toxic.wav" />
+  <sound name="crushing" wave="sfx/dmg_crushing.wav" />
+  <sound name="piercing" wave="sfx/dmg_piercing.wav" />
+  <sound name="righteous" wave="sfx/dmg_righteous.wav" />
+  <sound name="necromantic" wave="sfx/dmg_necromantic.wav" />
+
+<!-- New Magic Sounds -->
+<sound name="weakness" wave="sfx/math_weakness.wav" />
+<sound name="zenziz" wave="sfx/math_zenziz.wav" />
+<sound name="induction" wave="sfx/magic_induction.wav" />
+<sound name="fleshbore" wave="sfx/fleshbore.wav" />
+<sound name="flesh_heal" wave="sfx/flesh_heal.wav" />
+<sound name="fireball" wave="sfx/fireball.wav" />
+<sound name="haywire" wave="sfx/haywire.wav" />
+<sound name="vandalism" wave="sfx/heroic vandalism.wav" />
+<sound name="teleport" wave="sfx/teleport.wav" />
+
+<sound name="magic_steel" wave="sfx/magic_steel.wav" />
+<sound name="lightning_bolt" wave="sfx/lightning_bolt.wav" />
+<sound name="psychic" wave="sfx/psychic.wav" />
+<sound name="radiant" wave="sfx/radiant.wav" />
+<sound name="roots" wave="sfx/roots.wav" />
+<sound name="rune_set" wave="sfx/rune_set.wav" /> <!-- sound when mine is cast? -->
+<sound name="hex_missile" wave="sfx/hex_missile.wav" />
+<sound name="psychic_shove" wave="sfx/psychic_shove.wav" />
+<sound name="disintegrate" wave="sfx/player is disintegrated.wav" />
+
+<sound name="cursed" wave="sfx/player's item is cursed.wav"/>
+<sound name="enchanted" wave="sfx/player's item is enchanted.wav"/>
+
+
+  <sound name="fullinventory" wave="sfx/full_inventory_1.wav"/>
+  <sound name="fullinventory2" wave="sfx/full_inventory_2.wav"/>
+  <sound name="locked" wave="sfx/a door is locked.wav"/>
+  <sound name="magicbzzt" wave="sfx/player tried to do something magical but nothing happened.wav"/>
+  <sound name="foot1" wave="sfx/CF_Footstep1.wav"/>
+  <sound name="foot2" wave="sfx/CF_Footstep2.wav"/>
+  <sound name="foot3" wave="sfx/CF_Footsteps3.wav"/>
+  <sound name="combo" wave="sfx/combo.wav"/>
+  <sound name="chest" wave="sfx/a door opens without squeaking.wav"/>
+
+  <sound name="unarmed1" wave="sfx/unarmed attack 01.wav"/>
+  <sound name="unarmed2" wave="sfx/unarmed attack 02.wav"/>
+  <sound name="unarmed3" wave="sfx/unarmed attack 03.wav"/>
+  <sound name="unarmed_female1" wave="sfx/unarmed_attack_female01.wav"/>
+  <sound name="unarmed_female2" wave="sfx/unarmed_attack_female02.wav"/>
+  <sound name="unarmed_female3" wave="sfx/unarmed_attack_female03.wav"/>
+  
+  <sound name="choir" wave="sfx/prayer - holy magic.wav"/>
+  <sound name="fountain" wave="sfx/fountain drinking.wav"/>
+  <sound name="learnSpell" wave="sfx/learning a new spell.wav"/>
+  <sound name="missile" wave="sfx/missile.wav"/>
+  <sound name="evade" wave="sfx/evasion.wav"/>
+  <sound name="magic_damage" wave="sfx/magic damage.wav"/>
+  <sound name="key" wave="sfx/trap click.wav"/>
+  <sound name="click" wave="sfx/trap click.wav"/>
+  <sound name="drink" wave="sfx/drink potion.wav"/>
+  <sound name="eat" wave="sfx/eating.wav"/>
+  <sound name="impact" wave="sfx/impact.wav"/>
+  <sound name="breakable" wave="sfx/barrels and other wooden things are broken.wav"/>
+  <sound name="swing" wave="sfx/player swings a weapon.wav"/>
+  <sound name="fist" wave="sfx/unarmed attack 03.wav"/>
+  <sound name="monster_attack" wave="sfx/large creature - attack noise.wav"/>
+  <sound name="explosion" wave="sfx/explosion!.wav"/>
+  <sound name="magic" wave="sfx/magic.wav"/>
+  
+  <sound name="magic_open" wave="sfx/spellbook open.wav" />
+  <sound name="magic_close" wave="sfx/spellbook close.wav" />
+  <sound name="blast" wave="sfx/dmg_blast02a.wav" />
+  <sound name="ping" wave="sfx/bag open.wav" />
+  <sound name="pong" wave="sfx/bag close.wav" />
+  <sound name="chain" wave="sfx/chain up.wav" />
+  <sound name="shing" wave="sfx/a metal weapon is picked up.wav" />
+  <sound name="naughty" wave="sfx/player did something naughty.wav" />
+  <sound name="blades" wave="sfx/summon_blades.wav" />
+  <sound name="blade" wave="sfx/a metal weapon is picked up.wav" /> <!-- intentional repeat, btw. used for stabbing -->
+
+
+
+
+
+  <sound name="large_wooden_drop" wave="sfx/a large wooden object is dropped.wav"/>
+
+  <sound name="darkmagic" wave="sfx/dark poisonous damage.wav"/>
+  <sound name="vasebreak" wave="sfx/pottery is broken.wav"/>
+  <sound name="organic" wave="sfx/organic thing is destroyed.wav"/>
+  <sound name="levelup" wave="sfx/player levels up.wav"/>
+  <sound name="prayer" wave="sfx/prayer - holy magic.wav"/>
+  <sound name="turnpage" wave="sfx/player reads a book.wav"/>
+  <sound name="bow" wave="sfx/player fires a bow.wav"/>
+  <sound name="falling" wave="sfx/slidewhistledown.wav"/>
+
+  <sound name="small_attack" wave="sfx/small critter - attack noise.wav"/>
+  <sound name="small_die" wave="sfx/small critter - a dying noise.wav"/>
+  <sound name="small_hit" wave="sfx/small critter - hit noise.wav"/>
+  <sound name="small_spell" wave="sfx/small critter - spell casting noise.wav"/>
+<!-- die die die 
+  <sound name="large_attack" wave="sfx/large creature - attack noise.wav"/>
+  <sound name="large_die" wave="sfx/large creature - a dying noise.wav"/>
+   -->
+  <sound name="large_hit" wave="sfx/large creature - hit noise.wav"/>
+  <sound name="large_spell" wave="sfx/large creature - spell casting noise.wav"/>
+<!-- die die die
+  <sound name="undead_attack" wave="sfx/undead - attack noise.wav"/>
+  <sound name="undead_die" wave="sfx/undead - a dying noise.wav"/>
+   -->
+  <sound name="undead_hit" wave="sfx/undead - hit noise.wav"/>
+  <sound name="undead_spell" wave="sfx/undead - spell casting noise.wav"/>
+
+  <sound name="humanoid_attack" wave="sfx/humanoid - attack noise.wav"/>
+  <sound name="humanoid_die" wave="sfx/humanoid - a dying noise.wav"/>
+  <sound name="humanoid_hit" wave="sfx/humanoid - hit noise.wav"/>
+  <sound name="humanoid_spell" wave="sfx/humanoid - spell casting noise.wav"/>
+
+  <sound name="vegetable_attack" wave="sfx/vegetable - attack noise.wav"/>
+  <sound name="vegetable_die" wave="sfx/vegetable - a dying noise.wav"/>
+  <sound name="vegetable_hit" wave="sfx/vegetable - hit noise.wav"/>
+  <sound name="vegetable_spell" wave="sfx/vegetable - spell casting noise.wav"/>
+
+  <sound name="metal_drop" wave="sfx/a metal object is dropped.wav"/>
+  <sound name="metal_get" wave="sfx/a metal object is picked up.wav"/>
+  <sound name="leather_drop" wave="sfx/a leather object is dropped.wav"/>
+  <sound name="leather_get" wave="sfx/a leather object is picked up.wav"/>
+  <sound name="potion_drop" wave="sfx/potion is dropped.wav"/>
+  <sound name="potion_get" wave="sfx/potion is picked up.wav"/>
+  <sound name="food_drop" wave="sfx/a cloth object is dropped.wav"/>
+  <sound name="food_get" wave="sfx/a cloth object is picked up.wav"/>
+  <sound name="cloth_drop" wave="sfx/a cloth object is dropped.wav"/>
+  <sound name="cloth_get" wave="sfx/a cloth object is picked up.wav"/>
+
+  <sound name="item_purchase" wave="sfx/item is purchased or sold.wav"/>
+  <sound name="money_get" wave="sfx/money is picked up.wav"/>
+
+  <sound name="door_open" wave="sfx/a door opens.wav"/>
+  <sound name="door_close" wave="sfx/a door is closed.wav"/>
+  <sound name="flame_weak" wave="sfx/flame damage.wav"/>
+  <sound name="flame" wave="sfx/fire damage.wav"/>
+  <sound name="elec" wave="sfx/electrical damage.wav"/>
+  <sound name="earth" wave="sfx/earthy damage.wav"/>
+  <sound name="ice" wave="sfx/iceblast.wav"/>
+  <sound name="bampf" wave="sfx/cartoon bampf of smoke.wav"/>
+
+  <sound name="questopen" wave="sfx/quests open.wav"/>
+  <sound name="questclose" wave="sfx/quests close.wav"/>
+  <sound name="equipopen" wave="sfx/equipment open.wav"/>
+  <sound name="equipclose" wave="sfx/equipment close.wav"/>
+
+
+  <sound name="psycho" wave="sfx/player did something naughty.wav"/>
+  <sound name="poisonhead" wave="sfx/player's head explodes via poison.wav"/>
+  <sound name="stairs" wave="sfx/walking on stairs.wav"/>
+  <sound name="anvil" wave="sfx/anvil of krong.wav"/>
+  <sound name="portal" wave="sfx/entering a portal.wav"/>
+  <sound name="sick" wave="sfx/player feels sick.wav"/>
+
+  <sound name="caketown" wave="sfx/caketown.wav"/>
+
+  <sound name="fridge_open" wave="sfx/fridge open not running.wav"/>
+  <sound name="bbq" wave="sfx/bbq open.wav"/>
+  <sound name="lever" wave="sfx/pull a lever.wav"/>
+  <sound name="lever3" wave="sfx/pull a lever sounds of machinery.wav"/>
+<!-- cut.
+  <sound name="whew" wave="sfx/whew.wav"/>
+  <sound name="whew2" wave="sfx/whew2.wav"/>
+   -->
+  <sound name="wait" wave="sfx/wait.wav"/>
+  <sound name="crit" wave="sfx/crit1.wav"/>
+
+  <sound name="tutorialquery" wave="sfx/lightbulb query.wav"/>
+  <sound name="tutorialrespond" wave="sfx/lightbulb respond.wav"/>
+
+<!-- <sound name="momentum" wave="sfx/momentum.wav"/> -->
+
+<!-- new monster sounds -->
+
+<sound name="batty_attack" wave="sfx/batty/batty_attack.wav" />
+<sound name="batty_damage" wave="sfx/batty/batty_damage.wav" />
+<sound name="batty_cast" wave="sfx/batty/batty_cast.wav" />
+<sound name="batty_die" wave="sfx/batty/batty_die.wav" />
+<!-- cut.
+<sound name="blobby_attack" wave="sfx/blobby/blobby_attack.wav" />
+<sound name="blobby_damage" wave="sfx/blobby/blobby_damage.wav" />
+<sound name="blobby_cast" wave="sfx/blobby/blobby_cast.wav" />
+<sound name="blobby_die" wave="sfx/blobby/blobby_die.wav" />
+   -->
+<sound name="diggle_attack" wave="sfx/diggle/diggle_attack.wav" />
+<sound name="diggle_damage" wave="sfx/diggle/diggle_damage.wav" />
+<sound name="diggle_cast" wave="sfx/diggle/diggle_cast.wav" />
+<sound name="diggle_die" wave="sfx/diggle/diggle_die.wav" />
+
+<sound name="robot_attack" wave="sfx/robot/robot_attacks.wav" />
+<sound name="robot_damage" wave="sfx/robot/robot_damaged.wav" />
+<sound name="robot_cast" wave="sfx/robot/robot_spellcasting.wav" />
+<sound name="robot_die" wave="sfx/robot/robot_dying.wav" />
+
+<sound name="agar_attack" wave="sfx/agar/agar_attack.wav" />
+<sound name="agar_damage" wave="sfx/agar/agar_damage.wav" />
+<sound name="agar_cast" wave="sfx/agar/agar_cast.wav" />
+<sound name="agar_die" wave="sfx/agar/agar_die.wav" />
+
+<sound name="aether_attack" wave="sfx/aether/aether_attack.wav" />
+<sound name="aether_damage" wave="sfx/aether/aether_damage.wav" />
+<sound name="aether_cast" wave="sfx/aether/aether_cast.wav" />
+<sound name="aether_die" wave="sfx/aether/aether_die.wav" />
+
+<sound name="slick_attack" wave="sfx/slick/slick_attack.wav" />
+<sound name="slick_damage" wave="sfx/slick/slick_damage.wav" />
+<sound name="slick_cast" wave="sfx/slick/slick_cast.wav" />
+<sound name="slick_die" wave="sfx/slick/slick_die.wav" />
+<sound name="slick_verbose" wave="sfx/slick/slick_verbose.wav" />
+
+<sound name="wight_attack" wave="sfx/wight/wight_attack.wav" />
+<sound name="wight_damage" wave="sfx/wight/wight_damage.wav" />
+<sound name="wight_cast" wave="sfx/wight/wight_cast.wav" />
+<sound name="wight_die" wave="sfx/wight/wight_die.wav" />
+
+<sound name="muscle_attack" wave="sfx/muscle_diggle/muscle_diggle_attacks.wav" />
+<sound name="muscle_damage" wave="sfx/muscle_diggle/muscle_diggle_damaged.wav" />
+<sound name="muscle_cast" wave="sfx/muscle_diggle/muscle_diggle_spellcasting.wav" />
+<sound name="muscle_die" wave="sfx/muscle_diggle/muscle_diggle_dying.wav" />
+
+<sound name="mummy_attack" wave="sfx/mummy/mummy_attack.wav" />
+<sound name="mummy_damage" wave="sfx/mummy/mummy_damaged.wav" />
+<sound name="mummy_cast" wave="sfx/mummy/mummy_cast.wav" />
+<sound name="mummy_die" wave="sfx/mummy/mummy_die.wav" />
+
+<sound name="cloud_gremlin_attack" wave="sfx/cloud_gremlin/cloud_gremlin_attack.wav" />
+<sound name="cloud_gremlin_damage" wave="sfx/cloud_gremlin/cloud_gremlin_damaged.wav" />
+<sound name="cloud_gremlin_cast" wave="sfx/cloud_gremlin/cloud_gremlin_cast.wav" />
+<sound name="cloud_gremlin_die" wave="sfx/cloud_gremlin/cloud_gremlin_die.wav" />
+
+<sound name="samedi_attack" wave="sfx/samedi/samedi_attack.wav" />
+<sound name="samedi_damage" wave="sfx/samedi/samedi_damaged.wav" />
+<sound name="samedi_cast" wave="sfx/samedi/samedi_cast.wav" />
+<sound name="samedi_die" wave="sfx/samedi/samedi_die.wav" />
+
+  <sound name="raven_attack" wave="sfx/raven/raven_attack.wav" />
+  <sound name="raven_damage" wave="sfx/raven/raven_damage.wav" />
+  <sound name="raven_cast" wave="sfx/raven/raven_cast.wav" />
+  <sound name="raven_die" wave="sfx/raven/raven_die.wav" />
+
+  <sound name="paranormal0" wave="sfx/paranormal0.wav" />
+<sound name="paranormal1" wave="sfx/paranormal1.wav" />
+
+<sound name="emo_buff" wave="sfx/emo_buff.wav" />
+<sound name="emo_debuff" wave="sfx/emo_debuff.wav" />
+
+<sound name="transformation" wave="sfx/alchemical_transmutation.wav" />
+
+<sound name="dagger_strike" wave="sfx/dagger_strike.wav" />
+<sound name="polearm_strike" wave="sfx/polearm_strike.wav" />
+
+<sound name="dungeon_mechanism_small" wave="sfx/dungeon_mechanism_small.wav" />
+<sound name="dungeon_mechanism_large" wave="sfx/dungeon_mechanism_large.wav" />
+
+<sound name="magical_law" wave="sfx/magical_law.wav" />
+
+<sound name="slipgate_return" wave="sfx/slipgate_return.wav" />
+<sound name="slipgate_open" wave="sfx/slipgate_open.wav" />
+<sound name="slipgate_broken" wave="sfx/slipgate_broken.wav" />
+<sound name="slipgate_controls1" wave="sfx/slipgate_controls1.wav" />
+<sound name="slipgate_controls2" wave="sfx/slipgate_controls2.wav" />
+<sound name="slipgate_controls3" wave="sfx/slipgate_controls3.wav" />
+
+<sound name="samurai_attack" wave="sfx/samurai/samurai_attack.wav" />
+<sound name="samurai_damage" wave="sfx/samurai/samurai_damaged.wav" />
+<sound name="samurai_cast" wave="sfx/samurai/samurai_cast.wav" />
+<sound name="samurai_die" wave="sfx/samurai/samurai_die.wav" />
+
+<sound name="undead_attack" wave="sfx/undead/undead_attack.wav" />
+<sound name="undead_damage" wave="sfx/undead/undead_damage.wav" />
+<sound name="undead_cast" wave="sfx/undead/undead_cast.wav" />
+<sound name="undead_die" wave="sfx/undead/undead_die.wav" />
+
+<sound name="large_attack" wave="sfx/large/large_attack.wav" />
+<sound name="large_damage" wave="sfx/large/large_damage.wav" />
+<sound name="large_cast" wave="sfx/large/large_cast.wav" />
+<sound name="large_die" wave="sfx/large/large_die.wav" />
+
+<sound name="abbw_attack" wave="sfx/abbw/abbw_attack.wav" />
+<sound name="abbw_damage" wave="sfx/abbw/abbw_damage.wav" />
+<sound name="abbw_cast" wave="sfx/abbw/abbw_cast.wav" />
+<sound name="abbw_die" wave="sfx/abbw/abbw_die.wav" />
+
+<sound name="raven_attack" wave="sfx/large/large_attack.wav" />
+<sound name="large_damage" wave="sfx/large/large_damage.wav" />
+<sound name="large_cast" wave="sfx/large/large_cast.wav" />
+<sound name="large_die" wave="sfx/large/large_die.wav" />
+
+<sound name="broadside" wave="sfx/broadside.wav" />
+
+<sound name="diggle_digs_in" wave="sfx/diggle/diggle_digs_in.wav" />
+<sound name="diggle_digs_out" wave="sfx/diggle/diggle_digs_out.wav" />
+
+</sounds>

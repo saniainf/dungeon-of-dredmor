@@ -1,0 +1,315 @@
+<skillDB>
+
+<!--
+skill selection defs,
+parent skill line defs
+individual skill defs
+-->
+
+<!-- Hunter -->
+  
+<skill name="Big Game Hunter" id="34" type="warrior" achievement="ACHIEVEMENT_BIG_GAME_HUNTER_MASTERY" description="The hunt is on.">
+   <art icon="skills/hunter64.png"/>
+</skill>
+  
+<ability name="Big Game Hunter" icon="skills/hunter64.png" skill="34" startSkill="1">
+  <description text="The hunt is on."/>
+</ability>
+
+   <ability name="Trophy Collector" icon="skills/trophy_collector64.png" skill="34" level="0">
+   <description text="Carve trophies for vague, grisly rewards. (In other words, you get an experience bonus when killing animals.)" />
+   <!-- <spell name="Grisly Trophy" /> for testing -->
+   <targetKillBuff percentage="50" name="Grisly Trophy" taxa="Animal" />
+   <secondarybuff id="9" amount="3" /> <!-- edr -->
+   </ability>
+<ability name="Butcher" icon="skills/butcher64.png" skill="34" level="1">
+   <description text="You butcher animals for their fresh, fresh, fresh meat. This occurs automatically in the midst of combat due to the butchering reflexes you've honed into muscle-memory, as they say." />
+   <targetKillBuff percentage="49" name="Butcher" taxa="Animal" />    
+   </ability>
+<ability name="Hunter's Lure" icon="skills/tracker64.png" skill="34" level="2">
+   <description text="You can call out to a particular monster and lure them toward you at will. In particular, you've mastered the Diggle mating call which is produced by squeezing ones hands together in a particular manner and waggling your fingers while blowing air through the entire mess." />
+   <secondarybuff id="9" amount="5" /> <!-- edr -->
+   <secondarybuff id="4" amount="2" /> <!-- crit -->
+   <secondarybuff id="18" amount="1" />  <!-- sight -->
+   <spell name="Hunter's Lure" />
+   </ability>
+<ability name="The Most Dangerous Game" icon="skills/most_dangerous_game64.png" skill="34" level="3">
+   <description text="If it bleeds we can kill it. If not, we will give it blood so that it bleeds, and then we can kill it. This skill grants you more butchery and Grisly Trophy rewards." />
+   <damagebuff piercing="2" />
+   <targetHitEffectBuff percentage="15" name="Butcher" taxa="Animal" />
+   <targetKillBuff percentage="50" name="Hunter's Strike" taxa="Animal" />
+   <secondarybuff id="18" amount="1" /> <!-- sight -->
+   <secondarybuff id="12" amount="5" /> <!-- sneak -->
+   <secondarybuff id="9" amount="8" /> <!-- edr -->
+   </ability>
+<ability name="Release The Hounds" icon="skills/release_the_hounds64.png" skill="34" level="4">
+   <spell name="Release The Hounds"/>
+   <description text="Summons a pack of ravenous hunting Diggles." />
+   </ability>
+
+
+
+<!-- Emomancy -->
+<skill name="Emomancy" id="35" type="wizard" achievement="ACHIEVEMENT_EMOMANCY_MASTERY"  description="Harness the power of whatever, and, like, stuff. Maybe there's some exploding, you know, if you're up for it.">
+   <art icon="skills/emomancy64.png"/>
+   </skill>
+<ability name="Emomancy" icon="skills/emomancy64.png" skill="35" startSkill="1">
+  <description text="Harness the power of whatever, and, like, stuff."/>
+  </ability>
+
+  
+<ability name="Love Will Teleport Us Apart" icon="skills/emo_blink64.png" skill="35" level="0">
+	<spell name="Love Will Teleport Us Apart" />
+	<description text="You can't be together any more!" />
+	</ability>
+<ability name="The Cure" icon="skills/the_cure64.png" skill="35" level="1">
+	<spell name="The Cure" />
+	<description text="The Cure will heal you, but at a terrible price that will be photographed in your school yearbook." />
+	</ability>
+<ability name="My Chemical Explosion" icon="skills/chemical_explosion64.png" skill="35" level="2">
+	<spell name="My Chemical Explosion"/>
+	<description text="Show the world just how much it hurts with this depressingly sizzly acid ball of nastiness." />
+	</ability>
+<ability name="Dampening Field of Angst" icon="skills/dampening64.png" skill="35" level="3">
+	<spell name="Dampening Field of Angst" />
+	<description text="As long as this glooming cloud persists magic in its radius will cease to be." />
+	</ability>
+<ability name="Sigil of Whatever" icon="skills/whatever64.png" skill="35" level="4">
+   <spell name="Sigil of Whatever" />
+   <description text="Anything that steps on the Sigil of Whatever will suddenly find itself not really caring about anything at all." />
+   </ability>
+<ability name="Mark of the Black Eyeliner" icon="skills/black_eyeliner64.png" skill="35" level="5">
+   <spell name="Mark of the Black Eyeliner" />
+   <description text="Take up the mark, and be the saviour of the beaten, the broken and the damned. Or something." />
+   </ability>
+<ability name="Depressing Elemental Blast" icon="skills/depressing_blast64.png" skill="35" level="6">
+   <spell name="Depressing Elemental Blast" />
+   <description text="Depressing. So very, VERY depressing. Anyone hit by this beam will be struct with existential despair and passivity." />
+   </ability>
+
+
+<!-- Werediggle -->
+<skill name="Werediggle Curse" id="36" type="rogue" achievement="ACHIEVEMENT_WEREDIGGLE_MASTERY" description="Werediggles gonna weredig.">
+   <art icon="skills/werediggle64.png"/>
+   </skill>
+<ability name="Werediggle Curse" icon="skills/werediggle64.png" skill="36" startSkill="1">
+  <description text="Werediggles gonna weredig."/>
+  </ability>
+
+
+<ability name="Werediggle Form" icon="skills/werediggle_form64.png" skill="36" level="0" >
+   <spell name="Werediggle Form"/>
+   <description text="Assume the form of a Werediggle! While it lasts, you get multipliers to your attacks, but lose the ability to use non-Werediggle skills until the attack wears off."/>
+   </ability>
+  
+<ability name="Diggle Plague" icon="skills/diggle_plague64.png" skill="36" level="1" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="While in your Werediggle form, you may give enemies the dreaded Diggle Plague."/>
+   <resistbuff putrefying="2" toxic="1" />
+   <damagebuff putrefying="1" toxic="1" />
+   <spell name="Diggle Plague"/>
+   </ability>
+
+<ability name="Werediggles of London" icon="skills/werediggles_of_london64.png" skill="36" level="2" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="Power up your Werediggle Form with increased damage resistance! (Big dish of beef chow mein not included.)"/>
+   <secondarybuff id="10" amount="2"/><!-- armour -->
+   <secondarybuff id="7" amount="4"/><!-- block -->
+   <secondarybuff id="0" amount="5"/><!-- hp -->
+   <secondarybuff id="13" amount="4"/><!-- health regen -->
+   <resistbuff conflagratory="1" hyperborean="1" voltaic="1" />
+   </ability>
+
+<ability name="Going Commando" icon="skills/going_commando64.png" skill="36" level="3" polymorphedOnly="1" polymorphTag="Diggle">    
+   <description text="What's better than a Diggle? An invisible Diggle."/>
+   <secondarybuff id="12" amount="5" /> <!-- sneak -->
+   <spell name="Going Commando" />
+   </ability>
+
+<ability name="It Comes out of Where?!" icon="skills/diglet64.png" skill="36" level="4" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="Lay a Diggle Egg! Why would you ever want to do this?!"/>
+   <spell name="It Comes out of Where?!" />
+   </ability>
+
+<ability name="The Mighty Auger" icon="skills/mighty_auger64.png" skill="36" level="5" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="In a hurry? Need to get out of a jam? Use your massive nose to smash through walls!"/>
+   <damagebuff piercing="3" />
+   <resistbuff piercing="1" crushing="1" />
+   <spell name="The Mighty Auger" />
+   </ability>
+
+<ability name="Arch-Diggle Smash" icon="skills/archdiggle_smash64.png" skill="36" level="6" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="The mightiest diggles know how to utilize their fearsome auger in devasting attack maneuvers."/>
+   <spell name="Arch-Diggle Smash" />
+   </ability>
+
+<ability name="Dr. Diggle and Mr. Hyde" icon="skills/doctor_diggle64.png" skill="36" level="7" polymorphedOnly="1" polymorphTag="Diggle">
+   <description text="Your diggleness is taking over; When in human form, you keep thinking about nests and drilling. You don't know who to talk to about this. The power, though. THE POWER."/>
+   <primarybuff id="0" amount="2"/><!-- Bur -->
+   <primarybuff id="3" amount="2"/><!-- Cad -->
+   <secondarybuff id="2" amount="2"/><!-- melee -->
+   <secondarybuff id="10" amount="2"/><!-- armour -->
+   <secondarybuff id="6" amount="5" /> <!-- dodge -->
+   <resistbuff conflagratory="1" hyperborean="1" voltaic="1" />
+</ability>
+  
+
+
+<!-- Veganism -->
+<skill name="Killer Vegan" id="38" type="warrior" achievement="ACHIEVEMENT_VEGAN_MASTERY"  description="The power of clean living, moral superiority, and gluten-magic.">
+   <art icon="skills/killer_vegan64.png"/>
+   <loadout type="food" subtype="Tofu" amount="5" always="1" />
+   <flags nofood="1" veganism="1" friendlyTaxa="Animal"/>
+</skill>
+  
+<ability name="Killer Vegan" skill="38" type="warrior" icon="skills/killer_vegan64.png" startSkill="1">
+   <description text="The power of clean living, moral superiority, and gluten-magic." />
+  <flags veganism="1" friendlyTaxa="Animal"/>
+</ability>
+
+
+<ability name="Green Harvest" icon="skills/green_harvest64.png" skill="38" level="0">
+   <targetHitEffectBuff name="Fallen Vegan" taxa="Animal" percentage="50" /> <!-- If you attack an animal, you get fallen vegan. -->
+   <description text="The streets shall run green with the blood (sap?) of the vegetables -- and legumes, funguses, minerals, robots, homunculi, misc. demons and all other technically non-living beings) -- but particularly vegetables because you can harvest their flesh for Vegan-appropriate nutrition." />
+   <targetKillBuff name="Green Harvest" taxa="Vegetable" percentage="50" />
+   <primarybuff id="0" amount="1" />
+   <primarybuff id="2" amount="1" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <flags  friendlyTaxa="Animal"/>
+   </ability>
+  
+<ability name="Animal Friend" icon="skills/animal_friend64.png" skill="38" level="1">
+   <description text="Your animal friend will fight for you if you ask them because they love you sooo much. (Go animal friend, fight for me!) Be wary though, for your greater commitment to Veganism may cause greater penalties when you hurt the cute animals." />
+   <spell name="Make Animal Friend" />
+   <primarybuff id="0" amount="1" />
+   <primarybuff id="2" amount="1" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <targetHitEffectBuff name="Vegan Shame" taxa="Animal" percentage="50" />
+</ability>
+  
+<ability name="Clean Living" icon="skills/clean_living64.png" skill="38" level="2">
+   <description text="Attention to correct nutrition enhances your health (and killing vegetables will give you experience rewards). Be wary though, for your greater commitment to Veganism may cause greater penalties when you hurt the cute animals." />
+   <primarybuff id="0" amount="2" />
+   <primarybuff id="2" amount="2" />
+   <secondarybuff id="0" amount="10" /> <!-- hp -->
+   <secondarybuff id="13" amount="1" /> <!-- health regen -->
+   <targetHitEffectBuff name="Vegan Purging" taxa="Animal" percentage="50" />
+   <targetKillBuff name="Vegan Pride" percentage="100" taxa="Vegetable" />
+</ability>
+  
+<ability name="Aura of Self-Righteousness" icon="skills/selfrighteous_aura64.png" skill="38" level="3">
+   <description text="Your ethical standards imbue your attacks with burning righteousness! And, in turn, when you attack there is a chance for your righteousness to blind your enemies with its shining moral superiority." />
+   <primarybuff id="0" amount="2" />
+   <primarybuff id="2" amount="2" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <damagebuff righteous="5" />
+   <resistbuff righteous="1" />
+   <playerHitEffectBuff name="Blinding Flash" percentage="8" />
+   <targetHitEffectBuff name="Blinding Flash" percentage="8" />
+</ability>
+  
+<ability name="Level 5 Vegan" icon="skills/level5vegan64.png" skill="38" level="4">
+   <description text="Having achieved the purity and perfection of the fifth level of Veganism, you are privy to the inner secrets and methods of The Vegans." />
+   <spell name="Break The Circle Of Life" />
+   <primarybuff id="0" amount="3" />
+   <primarybuff id="2" amount="3" />
+   <secondarybuff id="0" amount="5" /> <!-- hp -->
+   <secondarybuff id="13" amount="4" /> <!-- health regen -->
+</ability>
+  
+
+
+<!-- Piracy -->
+<skill name="Piracy" id="39" type="rogue" achievement="ACHIEVEMENT_PIRACY_MASTERY" description="Yarr, ye knew it had to be.">
+   <art icon="skills/piracy64.png"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   </skill>
+
+<ability name="Piracy" skill="39" type="rogue" icon="skills/piracy64.png" startSkill="1">
+   <description text="Yarr, ye knew it had to be."/>
+   </ability>
+
+   
+<ability name="Plundering" icon="skills/plunder64.png" skill="39" level="0">
+   <description text="Yarr, ye plunder all the booty there be - and more that be not 'til ye plundered thereso reifying ye avarice as golden rewards to-hand, its being itself not being in question at this point. Yarr." />
+   <targetKillBuff percentage="10" name="Plunder" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Swashbuckling" icon="skills/swashbuckling64.png" skill="39" level="1">
+   <description text="You've learned dirty swashbuckling tactics from your time on the seas. Allows you to counter ALL of the next few attacks against yourself." />
+   <spell name="Swashbuckling" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Mists of the Corsair" icon="skills/corsair64.png" skill="39" level="2">
+   <description text="The Mists of the Corsair serve to hide all manner of piratical activity from the eyes of authorities - and can be very useful to escape a tight spot. Can only be called upon every so often." />
+   <spell name="Mists of the Corsair" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="The Black Spot" icon="skills/black_spot64.png" skill="39" level="3">
+   <description text="Whoever is marked with the Black Spot can hope only for a quick death, or the next best thing: deep-fried cheesecake on a stick. The point is the marked target is utterly doomed so watch where you point this thing." />
+   <spell name="The Black Spot" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Broadside" icon="skills/broadside64.png" skill="39" level="4">
+   <description text="Give 'em the broadside, me hearties! (Don't ask where the cannon is hidden.)" />
+   <spell name="Broadside" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+  
+
+
+<!-- Demonology -->
+
+<skill name="Demonologist" id="40" type="rogue"  achievement="ACHIEVEMENT_DEMONOLOGY_MASTERY" description="The Church of Demonology is an anvil that has worn out many hammers. Will you take up the path of righteousness, or will you be worn out?">
+   <art icon="skills/demonologist64.png" />
+   </skill>
+<ability name="Demonologist" skill="40" type="rogue" icon="skills/demonologist64.png" startSkill="1">
+   <description text="The Church of Demonology is an anvil that has worn out many hammers."/>
+   </ability>
+
+  
+<ability name="Turn Demon" icon="skills/turn_demon64.png" skill="40" level="0">
+   <spell name="Turn Demon" />
+   <description text="The power of Krong compels you - Get OUT! Demons, I saayyyy... Get OUT!" />
+   <resistbuff righteous="1" />
+   </ability>
+<ability name="Fervor of the Flagellant" icon="skills/flagellant64.png" skill="40" level="1">
+   <description text="As the beatings continue, your morale improves. Fighting demons has a chance to send you into righteous focus, enhancing your ability to defeat evil. On the downside this also really hurts." />
+   <playerHitEffectBuff percentage="35" name="Fervor of the Flagellant"  />
+   <targetHitEffectBuff percentage="35" name="Fervor of the Flagellant" taxa="Demon" />
+   <!-- <playerHitEffectBuff percentage="50" name="Fervor of the Flagellant" /> -->
+   <resistbuff righteous="1" />   
+   </ability>
+<ability name="Celestial Circle" icon="skills/celestial_circle64.png" skill="40" level="2">
+   <spell name="Celestial Circle" />
+   <description text="You put your demonologist hand in, you put your demonologist hand out and shake it all about. As long as you stay IN the circle, they shouldn't be able to hurt you." />   
+   <resistbuff righteous="1" />
+   </ability>
+<ability name="Abyssal Fire" icon="skills/demon_fire64.png" skill="40" level="3">
+   <spell name="Abyssal Fire" />
+   <description text="Suffer your enemies with the barbecue of The Pit as you wreath yourself in the fire of demons." />   
+   <resistbuff righteous="-3" />   
+   </ability>
+<ability name="Infernal Contract" icon="skills/demonic_contract64.png" skill="40" level="4">
+   <description text="Oh, the power that can be yours! Summons a pack of demonic denizens to do your bidding. (And watch out 'cause this deal is getting worse all the time.)" />
+   <resistbuff righteous="-2" />
+   <spell name="Infernal Contract" />
+   </ability>
+<ability name="Flames of The Heckforge" icon="skills/heckforge64.png" skill="40" level="5">
+   <spell name="Flames of the Heckforge"/>
+   <description text="Unleash abyssal fire on your equipment to cleanse it of its corruption. (Fortunately, the fires of Heck are not hot enough to damage your items.)" />
+   <resistbuff righteous="-6" conflagratory="3" />
+   </ability> 
+<ability name="No, You Are The Demons" icon="skills/you_are_the_demons64.png" skill="40" level="6">
+   <description text="The abyss has looked back into you and taken up residence on your couch. It doesn't even take out the trash. Sometimes ... it takes over." />
+   <resistbuff righteous="-4" conflagratory="4" transmutative="1" aethereal="1" />
+   <damagebuff conflagratory="4" />
+   <triggeroncast percent="1" name="Demon Form" />
+   <playerHitEffectBuff percentage="1" name="Demon Form" />
+   <targetHitEffectBuff percentage="1" name="Demon Form" /> 
+   <spell name="Demon Form"/>
+   </ability>
+
+  
+</skillDB>

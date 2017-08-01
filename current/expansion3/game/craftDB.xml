@@ -1,0 +1,90 @@
+<craftDB>
+
+<craft>
+	<output skill="0" name="Rearden Metal Ingot" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Iron Ingot"/>
+	<input name="Plastic Ore"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+
+<craft>
+	<output skill="0" name="Vodka" amount="1" />
+	<tool tag="still"/>
+	<input name="Potato"/>
+	<input name="Potato"/>
+	<input name="Potato"/>    
+	</craft>
+
+<!-- so non-commies can craft the Atom-smasher -->
+<craft>
+   <output skill="1" name="Hammer"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Hefty Stick"/>
+   </craft>
+
+<craft hidden="1">
+	<output skill="7" name="Dwarven Atom-smasher" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Hammer"/>
+	<input name="Vodka"/>
+	<input name="Aetheric Power Cylinder"/>
+	<input name="Bolt of Mass Destruction"/>    
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="The Bomb" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Aetheric Power Cylinder"/>
+	<input name="Bolt of Mass Destruction"/>
+	<input name="Vodka"/>
+	<input name="Orb of Nothing"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Amber Ring of Unending Time"/>
+	<tool tag="smithing"/>
+	<input name="Gold Ring"/>
+	<input name="Aluminum Ring"/>
+	<input name="Amber"/>
+	<input name="The Mana Torus"/>
+	</craft>
+  
+<craft hidden="1">
+	<output skill="7" name="Black Pearl Ring of Sleeping Secrets"/>
+	<tool tag="smithing"/>
+	<input name="Black Pearl"/>
+	<input name="Black Pearl"/>
+	<input name="Chalcoelectronic Ring"/>
+	<input name="The Mana Torus"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Sapphire Ring of the Deepest Skies"/>
+	<tool tag="smithing"/>
+	<input name="Sapphire"/>
+	<input name="Sapphire"/>
+	<input name="Ring of Iron Thorns"/>
+	<input name="The Mana Torus"/>
+	</craft>
+  
+<craft hidden="1">
+	<output skill="7" name="Communist Power Armour"/>
+	<tool tag="smithing"/>
+	<input name="Hammer"/>
+	<input name="Sickle"/>
+	<input name="Vodka"/>
+	<input name="Embossed Serpentine Platemail"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Communist Power Ushanka"/>
+	<tool tag="smithing"/>
+	<input name="Hammer"/>
+	<input name="Sickle"/>
+	<input name="Communist Ushanka"/>
+	<input name="Great Helm"/>
+	</craft>
+
+</craftDB>

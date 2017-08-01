@@ -1,0 +1,28 @@
+﻿<ScrollDB>
+
+  <scroll name="Scroll of Massive Corpse Explosion" iconFile="items/sword6.spr" level="15">
+    <casts spell="Massive Corpse Explosion"/>
+    <description text="This scroll seems energized with runes writhing with magical energy.  Do you dare read it?"/>
+  </scroll>
+  
+  <scroll name="Scroll of Ancient Folly" iconFile="items/sword6.spr" level="16">
+    <casts spell="Ancient Folly"/>
+    <description text="This scroll seems energized with runes writhing with magical energy.  Do you dare read it?"/>
+  </scroll>
+  
+  <scroll name="Scroll of Aristea" iconFile="items/sword6.spr" level="17">
+    <casts spell="Aristea"/>
+    <description text="This scroll seems energized with runes writhing with magical energy.  Do you dare read it?"/>
+  </scroll>
+  
+  <scroll name="Scroll of Brimstone" iconFile="items/sword6.spr" level="18">
+    <casts spell="Brimstone"/>
+    <description text="This scroll seems energized with runes writhing with magical energy.  Do you dare read it?"/>
+  </scroll>
+  
+  <scroll name="Scroll of Darkness" iconFile="items/sword6.spr" level="19">
+    <casts spell="Army of Darkness"/>
+    <description text="This scroll seems energized with runes writhing with magical energy.  Do you dare read it?"/>
+  </scroll>
+
+</ScrollDB>

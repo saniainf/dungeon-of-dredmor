@@ -1,0 +1,1659 @@
+<spellDB>
+
+<!-- New Item Spell Abilities -->
+<spell name="Grenade Self" type="self" >
+   <effect type="damage" blasting="18" slashing="6" piercing="4" affectscaster="1" />
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+   <effect type="trigger" spell="Grenade Blast" />
+</spell>
+
+<spell name="Blind Target" type="target">
+	<effect type="damage" righteous="2" righteousF="0.32" aethereal="2" aetherealF="0.23" self="0" affectscaster="1" />
+	<effect type="paralyze" amount="2" turns="4" self="0" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" />
+</spell>
+
+<spell name="Easy Target Instability" type="self" icon="skills/easy_target_inst32.png">
+	<anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="cursed" centerEffect="1"/>
+	<buff useTimer="0" brittle="1" self="0" stacksize="1" allowstacking="0" icon="skills/easy_target_inst64.png" smallicon="skills/easy_target_inst32.png" bad="1">
+      <secondarybuff id="6" amount="-15"/> <!-- dodge -->
+      </buff>
+   <description text="The target of this unfortunate crusting instability finds their enemies' strikes landing rather more often than mundane statistics would suggest."/>
+</spell>
+
+<spell name="Tentacular Self-doom" type="self" icon="skills/spells/eldritch_pillar32.png"
+		mineTimer="5" 
+		mineUseGlints="1" 
+		mineGlintDensity="16" 
+		mineSpritePNGSeries="sprites/sfx/zalgoA/zalgoA"  
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="10" 
+		mineSpritePNGRate="100" 
+		mine="1"
+      mineSpriteDrawOrder="1"
+		mineradius="1"
+		minePermanent="1" >
+	<requirements mp="12" savvyBonus="0.25" />
+	<effect type="damage" necromantic="1" necromanticF="0.35" affectsCaster="1" />
+	<effect type="dot" spell="Zalgo1" amount="1" />
+   <effect type="trigger" spell="Infested With Tentacles" amount="0" affectsCaster="1" />
+	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="100" sfx="magic_damage" centerEffect="1" />
+	<description text="Open one of your six mouths and sing the song that ends the Earth." />  
+   </spell>
+<!-- Room scripting abilities -->
+<spell name="Mysterious Booze" type="target" >
+   <effect type="drunkenness" amount="12" />
+   </spell>
+
+
+<!-- Monster attacks -->
+
+   <!-- Gremlin -->
+   
+   <!-- voltaic arcs moved to core -->
+   
+   <!-- stronger gas mine -->
+   <spell name="Toxic Poison Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="12" 
+      mineUseGlints="1" 
+      mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/skullpuffG/skullpuffG" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="10" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="2"
+      minePermanent="1" >
+      <effect type="damage" toxic="6" asphyxiative="6" affectscaster="1" />
+      <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+      <ai hint="target"/>
+      </spell>
+
+<spell name="Electrosensitivity" type="target" >
+   <anim sprite="sprites/sfx/arcB/arcB" frames="4" framerate="100" centerEffect="1" sfx="elec" />
+   <buff useTimer="1" time="25" self="0" allowstacking="1" stacksize="3"
+         icon="skills/electro64.png"
+         smallicon="skills/electro32.png" bad="1" >
+      <resistbuff voltaic="-5" />
+   </buff>
+   <description text="You are incredibly sensitive to electromagnetic fields, or at least you believe yourself to be." />
+   </spell>
+
+<spell name="Flesh-eating Hit" type="target" >
+   <effect type="damage" putrefying="6" />
+   </spell>
+
+<spell name="Flesh-eating Gas" type="target" >
+   <anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" centerEffect="1" sfx="darkmagic" />
+   <buff useTimer="1" time="5" self="0" allowstacking="0"
+         icon="skills/fleshgas64.png"
+         smallicon="skills/fleshgas32.png" bad="1" >
+      <secondarybuff id="10" amount="-4" /> <!-- armour absorption --> 
+      </buff>
+   <description text="You've been exposed to a hideous, flesh-eating chemical! Should you stop, drop and roll? If only you'd paid attention in chemistry class." />
+   <effect type="dot" spell="Flesh-eating Hit" amount="7" affectsCaster="0" requirebuff="1" />
+   </spell>
+      
+   <!-- Treant Attacks -->
+<spell name="Thrown Fruit" type="missile" >
+   <effect type="damage" affectsCaster="1" crushing="2" crushingF="0.50" secondaryScale="2" />
+   <anim sprite="sprites/sfx/fruit/fruit" frames="1" framerate="10" sfx="cloth_drop" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   <description text="A piece of high-velocity fruit." monsterText="throws a piece of fruit!"/>
+</spell>
+
+<spell name="Luminescent Fruit" type="missile" >
+   <effect type="damage" affectsCaster="1" crushing="2" crushingF="0.50" secondaryScale="2" />
+   <effect type="trigger" spell="Luminescent Mark" />
+   <anim sprite="sprites/sfx/glowingfruit/glowingfruit" frames="1" framerate="10" sfx="cloth_drop" />
+   <impact sprite="sprites/sfx/water_impact/water_impact" frames="6" framerate="80" sfx="magic" centerEffect="0"/>
+   <description text="A piece of high-velocity fruit." monsterText="throws a piece of glowing fruit!"/>
+</spell>
+
+<spell name="Fruit of Knowledge" type="missile" >
+   <effect type="damage" affectsCaster="1" crushing="2" crushingF="0.50" secondaryScale="2" />
+   <effect type="trigger" spell="Forbidden Knowledge" />
+   <anim sprite="sprites/sfx/knowledgefruit/knowledgefruit" frames="1" framerate="10" sfx="cloth_drop" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   <description text="A piece of high-velocity fruit." monsterText="throws a piece of forbidden fruit!"/>
+</spell>
+
+<spell name="Exposure Hit" type="target" >
+   <effect type="damage" asphyxiative="1" conflagratory="2"/>
+   </spell>
+
+<spell name="Exposure" type="target" >
+   <anim sprite="sprites/sfx/arctic_vortex/arctic_vortex" frames="6" framerate="100" centerEffect="1" sfx="darkmagic" />
+   <buff useTimer="1" time="10" self="0" allowstacking="0"
+         icon="skills/exposure64.png"
+         smallicon="skills/exposure32.png" bad="1" >
+      <primaryBuff id="0" amount="-1" /> <!-- burliness --> 
+      <primaryBuff id="2" amount="-1" /> <!-- nimbleness --> 
+      <secondaryBuff id="17" amount="-1" /> <!-- sight radius --> 
+   </buff>
+   <description text="The Tree of Woe inflicts the boundless fury of the elements, wearing down the body." />
+   <effect type="dot" spell="Exposure Hit" amount="10" affectsCaster="0" requirebuff="1" />
+   </spell>
+
+<spell name="Luminescent Mark" type="target" >
+   <!-- TODO: unique icon art -->
+	<buff useTimer="1" time="45" allowstacking="0"
+         icon="skills/luminous64.png"
+         smallicon="skills/luminous32.png" bad="1" >
+		<secondarybuff id="12" amount="-50" /> <!-- sneakiness -->
+      <secondarybuff id="18" amount="1" /> <!-- sight -->
+	</buff>
+	<description text="This glowing stain renders you about as subtle as an explosion in a fireworks factory." />
+</spell>
+
+<spell name="Forbidden Knowledge" type="target" >
+	<buff useTimer="1" time="45" allowstacking="0"
+         icon="skills/forbidden_knowledge64.png"
+         smallicon="skills/forbidden_knowledge32.png" bad="1" >
+		<resistbuff righteous="-10" />
+      <primaryBuff id="1" amount="2" /> 
+	</buff>
+	<description text="You have eaten of the forbidden fruit of knowledge! You are especially vulnerable to righteous retribution and religious tracts." />
+</spell>
+
+<spell name="Mob Retribution" type="target" >
+   <anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="100" centerEffect="1" sfx="impact" />
+   <buff useTimer="1" time="10" self="0" allowstacking="0"
+         icon="skills/mob_justice64.png"
+         smallicon="skills/mob_justice32.png" bad="1" >
+      <primarybuff id="2" amount="-5" /> <!-- nimbleness --> 
+   </buff>
+   <description text="Defaulting on mob loans is a leading cause of broken legs." />
+   <effect type="damage" affectsCaster="1" crushing="8"/>
+   </spell>
+
+<spell name="Usury" type="target" > 
+   <buff useTimer="1" time="16" stackable="1" stacksize="3" bad="1"
+         icon="skills/zorkmid64.png"
+         smallicon="skills/zorkmid32.png"
+         zorkmidUpkeep="15" 
+         insufficientFunds="Mob Retribution">
+      </buff>
+   <description text="The First International Bank of Diggle: Hating our Customers So Much for 1,800 years." />
+ </spell>
+
+ <!-- other monster spells -->
+ 
+<spell name="The Mondays" type="target" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="magic" centerEffect="1" />
+	<buff useTimer="1" time="15" allowstacking="0"
+         icon="skills/mondays64.png"
+         smallicon="skills/mondays32.png" bad="1" >
+		<primarybuff id="1" amount="-6" /> <!-- sagacity -->
+		<primarybuff id="2" amount="-4" /> <!-- nimbleness -->
+		<primarybuff id="5" amount="-3" /> <!-- savvy -->
+	</buff>
+	<description text="Looks like someone has a case of the Mondays!" />
+</spell>
+
+<spell name="Food Poisoning" type="target" >
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" centerEffect="1" sfx="darkmagic" />
+	<buff useTimer="1" time="30" allowstacking="1" stacksize="3"
+         icon="skills/food_poisoning64.png"
+         smallicon="skills/food_poisoning32.png" bad="1" >
+		<secondarybuff id="13" amount="-4" /> <!-- life regen --> 
+		<secondarybuff id="0" amount="-5" /> <!-- life -->
+		<primarybuff id="0" amount="-1" /> <!-- burliness -->
+		<primarybuff id="2" amount="-1" /> <!-- nimbleness -->
+	</buff>
+	<description text="Your insides are trying to promote themselves to outsides." />
+   </spell>
+
+<spell name="Summon Muninn" type="self" >
+	<effect type="summonhostile" monsterType="Muninn" />
+</spell>
+
+<spell name="Summon Huginn" type="self" >
+	<effect type="summonhostile" monsterType="Huginn" />
+</spell>
+
+<spell name="Crabnir's Ravens" type="self" >
+	<effect type="triggerfromlist">
+		<option name="Summon Muninn"/>
+		<option name="Summon Huginn"/>
+   </effect>
+</spell> 
+
+<spell name="Baron Party" type="target" >
+   <effect type="drunkenness" amount="3" />
+   </spell>
+
+<!-- Same deal, but on YOU -->
+<spell name="Get Tipsy" type="self" >
+   <effect type="drunkenness" amount="3" />
+   </spell>
+
+<spell name="Indulge" type="self" >
+   <effect type="drunkenness" amount="8" />
+   </spell>
+
+<spell name="The Long Arm of the Law" type="target" >
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" centerEffect="1" sfx="darkmagic" />
+	<effect type="paralyze" turns="5" self="0" />
+</spell>
+
+<spell name="Summon Vassals" type="self" >
+	<effect type="summonhostile" monsterType="Shogun-Bot Mk V" />
+</spell>
+
+<spell name="Wrathful Strike" type="target" >
+  <buff useTimer="1" time="25" stacksize="3" allowstacking="1" removable="0" bad="1"
+        icon="skills/shogun_wrath64.png"
+        smallicon="skills/shogun_wrath32.png" >
+		<secondarybuff id="2" amount="-2" /> <!-- melee power -->
+		<secondarybuff id="4" amount="-3" /> <!-- critical -->
+		<secondarybuff id="8" amount="-3" /> <!-- counter -->
+  </buff>
+  <description text="The fury of the shogun has reduced you to a weakened state." />	
+</spell>
+
+<!-- Communist -->  
+
+<!-- random communist debuffs; should find a use for these somewhere -->
+ 
+<spell name="Party Purge" type="self" icon="skills/commie_purge32.png" >
+  <buff useTimer="1" time="24" stacksize="1" allowstacking="0" removable="0" bad="1"
+        icon="skills/commie_purge64.png"
+        smallicon="skills/commie_purge32.png" >
+     <secondaryBuff id="0" amount="-5" /> <!-- hp -->
+     <secondaryBuff id="13" amount="-5" /> <!-- regen -->
+     <secondaryBuff id="2" amount="-3" /> <!-- melee power -->
+  </buff>
+  <description text="Please to purge The Party of all imperialists and saboteurs! Though may be to weaken us in the short term, The Party will overcome and grow stronger than ever! (Really!)" />
+</spell>
+
+<spell name="Self-Criticism" type="self" icon="skills/commie_self_criticism32.png" >
+  <buff useTimer="1" time="24" stacksize="3" allowstacking="1" removable="0" bad="1"
+        icon="skills/commie_self_criticism64.png"
+        smallicon="skills/commie_self_criticism32.png" >
+     <resistbuff existential="-6" righteous="-2"/>
+     <secondaryBuff id="11" amount="-5" /> <!-- resist -->
+     <secondaryBuff id="8" amount="-5" /> <!-- counter -->
+     <secondaryBuff id="7" amount="-5" /> <!-- block -->
+  </buff>
+  <description text="Through process of self-criticism, you admit your ideological errors and re-affirm your commitment to the Party line. Yay!" />
+</spell>
+
+<spell name="Water Supply Fluoridation" type="self" icon="skills/commie_water_supply32.png" >
+  <buff useTimer="1" time="24" stacksize="3" allowstacking="1" removable="0" bad="1"
+        icon="skills/commie_water_supply64.png"
+        smallicon="skills/commie_water_supply32.png" >
+    <resistbuff toxic="-4" putrefying="-4"/>
+    <primarybuff id="0" amount="-1"/>
+    <primarybuff id="1" amount="-1"/>
+    <primarybuff id="2" amount="-1"/>
+    <primarybuff id="3" amount="-1"/>
+    <primarybuff id="4" amount="-1"/>
+    <primarybuff id="5" amount="-1"/>
+    <secondarybuff id="10" amount="1"/> <!-- teeth/armour absorption -->
+  </buff>
+  <description text="Accidental exposure to Communist water fluoridation has resulted in decrease of strength of personal bodily fluids! (Still, teeth feel powerful and socialist.)" />
+</spell>
+
+<spell name="Reform and Opening" type="self" icon="skills/commie_reform32.png"> 
+   <buff useTimer="1" time="15"
+         stackable="1" stacksize="3" bad="0"
+         icon="skills/commie_reform64.png"
+         smallicon="skills/commie_reform32.png" >
+         <!-- zorkmidUpkeep="-10" > -->
+      </buff>
+   <effect type="dot" resistable="0" self="1" amount="32" spell="Payout" requireBuff="1"/>
+   <description text="Special economic zones are to providink additional income without compromisink your commitment to glorious revolution (somehow)." />
+   </spell>
+
+<spell name="Real-socialism" type="self" icon="skills/commie_real32.png"> 
+   <buff useTimer="1" time="10"
+         stackable="0" stacksize="1" bad="1"
+         icon="skills/commie_real64.png"
+         smallicon="skills/commie_real32.png"
+         zorkmidUpkeep="15" >
+      </buff>
+   <description text="EVERYTHING IS FINE IN KREMLIN." />
+   </spell>
+  
+  <spell name="Rationing" type="self" icon="skills/rationing32.png" >
+  <buff useTimer="1" time="20" stacksize="3" allowstacking="1" removable="0" bad="1"
+        icon="skills/rationing64.png"
+        smallicon="skills/rationing32.png" >
+     <resistbuff hyperborean="-4" conflagratory="-2" />
+     <secondaryBuff id="10" amount="-2" /> <!-- armour -->
+     <primaryBuff id="2" amount="-2" /> <!-- NIM -->
+     <playerHitEffectBuff name="Hungry Hero" percentage="5" />
+  </buff>
+  <description text="Hard times to be testink commitment of comrade. True comrade needs only revolutionary spirit to fill stomach! Please to be recovering mana with nice Party-approved cup of hot water." />
+</spell>
+
+<spell name="Internal Contradiction" type="self" icon="skills/dialectical_materialism32.png" >
+  <buff useTimer="1" time="20" stacksize="3" allowstacking="1" removable="0" bad="0"
+        icon="skills/dialectical_materialism64.png"
+        smallicon="skills/dialectical_materialism32.png" >
+     <resistbuff existential="-2" righteous="-2" />
+     <secondaryBuff id="10" amount="-2" /> <!-- armour -->
+     <primaryBuff id="5" amount="-2" /> <!-- SAV -->
+  </buff>
+  <description text="Affirmation must meet negation!" />
+</spell>
+
+  <!--
+   Cultural Revolution
+   -->  
+
+<spell name="Communist Debuff Effect" type="self" >
+		<effect type="triggerfromlist">
+		<option name="Party Purge"/>
+		<option name="Self-criticism"/>
+		<option name="Real-socialism"/>
+		<option name="Rationing"/>
+		<option name="Internal Contradiction"/>
+    <option name="Water Supply Fluoridation"/>
+    </effect>
+   <anim sprite="sprites/sfx/communismsigil/communismsigil" frames="10" framerate="100" sfx="blast" />
+   </spell>
+
+<spell name="Communist Random Effect" type="self" >
+		<effect type="triggerfromlist">
+		<option name="Party Purge"/>
+		<option name="Self-criticism"/>
+		<option name="Rationing"/>
+		<option name="Real-socialism"/>
+		<option name="Internal Contradiction"/>
+		<option name="Reform and Opening"/>
+      <option name="Water Supply Fluoridation"/>
+      <option name="Winter Offensive" />
+      </effect>
+   <anim sprite="sprites/sfx/communismsigil/communismsigil" frames="10" framerate="100" sfx="blast" />
+   </spell> 
+
+   <!-- end random debuffs -->
+   <!-- start random buffs -->
+<!--
+Permanent Revolution
+Proletarian Dictatorship
+Vanguard Party
+-->
+   <!-- end random commie buffs -->
+ 
+<spell name="Guerrilla in the Mist" type="self" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open" />
+	<buff useTimer="1" time="3" stackable="0" self="1" bad="0"
+         icon="skills/guerrilla64.png"
+         smallicon="skills/guerrilla32.png" >
+		<invisible amount="1" />
+      <sightbuff amount="-3" />
+      <secondarybuff id="12" amount="10" />
+	</buff>
+	<description text="Quickly, disappear before the imperialist counterattack!"/>
+   </spell> 
+ 
+<spell name="Guerrilla Effect" type="target" >
+   <effect type="pacify" />
+	<effect type="confuse" />
+   <effect type="paralyze" turns="1" />
+   </spell>
+
+<spell name="Guerrilla Attack" type="adjacent" attack="1" downtime="15" icon="skills/guerrilla32.png" >
+   <effect type="trigger" spell="Guerrilla Effect" />
+   <effect type="trigger" spell="Guerrilla in the Mist" />
+   <description text="Guerrilla warfare is to be attackink imperialists quickly, then disappearink before they respond!"/>
+   </spell>      
+   
+<spell name="General Winter Snowstorm" 
+      type="targetfloor" 
+      mineTimer="4" 
+      mineUseGlints="1" 
+      mineGlintDensity="16" 
+      mineSpritePNGSeries="sprites/sfx/icepuff/icepuff" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="8" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="2"
+      minePermanent="1" wand="1">
+   <effect type="damage" hyperborean="5" hyperboreanF="0.1" primaryScale="4" affectscaster="1" /> <!-- scale to stub, for real this time -->
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+   </spell>   
+   
+<spell name="General Winter" type="self" icon="skills/general_winter32.png" >
+   <effect type="trigger" spell="General Winter Snowstorm" />
+   <effect type="trigger" spell="Winter Offensive" />
+	<description text="To counterattackink during winter is to drive back imperialists! (Could use vodka to warm comrade.)" />
+   </spell>   
+
+<spell name="Winter Offensive" type="self" icon="skills/general_winter32.png" >
+	<buff useTimer="1" time="20" stacksize="1" allowstacking="0" removable="0" bad="0"
+         icon="skills/general_winter64.png"
+         smallicon="skills/general_winter32.png" >
+      <resistbuff hyperborean="2" />
+   </buff>
+	<description text="To counterattackink during winter is to drive back imperialists! (Could use vodka to warm comrade.)" />
+   </spell>     
+   
+<spell name="Warming Vodka" type="self" icon="skills/communist32.png" wand="0">
+	<buff useTimer="1" time="80" stacksize="3" allowstacking="1" removable="0" bad="0"
+         icon="skills/communist64.png"
+         smallicon="skills/communist32.png" >
+      <primarybuff id="0" amount="3" />
+      <resistbuff hyperborean="2" />
+   </buff>
+   <effect type="trigger" spell="Alcohol Poisoning" percentage="10" />
+	<description text="Vodka is to be fuellink winter counter-offensive. Death to imperialist scum!" />
+</spell>
+
+<spell name="Warming Vodka Effect" type="self" >
+   <!-- Only commies can handle this stuff -->
+   <effect type="trigger" spell="Warming Vodka" requirebuffontrigger="1" requirebuffontriggername="Winter Offensive" />
+   <effect type="trigger" spell="Water Supply Fluoridation" requirebuffonnottrigger="1" requirebuffonnottriggername="Winter Offensive" />
+   </spell>
+
+<spell name="Regen Life Effect 0" type="target" >
+	<effect type="heal" amount="1" />
+   </spell>   
+   
+<spell name="The Public Option" type="self" icon="skills/socialized_healthcare32.png" downtime="92" >
+   <effect type="heal" amount="1" />
+   <description text="Glorious Socialist Health Care of Kanadian comrades closes wounds at the steady bureaucratic pace."/>
+   <buff useTimer="1" time="17" stackable="1" stacksize="3" bad="0"
+         icon="skills/socialized_healthcare64.png"
+         smallicon="skills/socialized_healthcare32.png">
+      </buff>
+   <effect type="dot" resistable="0" spell="Regen Life Effect 0" amount="17" />
+   <effect type="trigger" spell="Communist Debuff Effect" percent="33" />
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   </spell>
+
+<spell name="Vanguard Party" type="self" icon="skills/vanguard_party32.png" downtime="30" >
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/vanguard_party64.png"
+         smallicon="skills/vanguard_party32.png" >
+      <secondaryBuff id="13" amount="1" />
+      <secondaryBuff id="2" amount="2" />
+      <primaryBuff id="0" amount="3" />
+      <primaryBuff id="3" amount="3" />
+      <primaryBuff id="4" amount="3" />
+      <playerHitEffectBuff percentage="3" name="Communist Debuff Effect" />
+      <targetHitEffectBuff percentage="2" name="Communist Debuff Effect" />
+   </buff>
+   <description text="Vanguard Party will lead working class in glorious workers' revolution! (Beware of possibility of negative effects resultink from use of Party Vanguard. If in doubt, purge Central Committee.)" />
+   </spell>
+
+<spell name="Dialectical Materialism" type="self" icon="skills/dialectical_materialism32.png" downtime="36" >
+   <effect type="randomuncurse" />
+   <effect type="trigger" spell="Communist Random Effect" />
+   <description text="Revolutionary Science will sweep away irrationality and superstitions of old! (Please to be removink random capitalist curse and replacink with Party-approved buff or debuff.)"/>
+   </spell>
+   
+   
+<!-- Bankster -->
+
+   <!-- Thanks Lunix Vandal! -->
+<spell name="Payout" type="self" >
+   <effect type="spawnitematlocation" itemname="zorkmids" amount="10" floorScaleF="1"/>
+   </spell>
+
+<!-- bankster debuffs -->
+
+<spell name="Bad Credit" type="self" > 
+   <buff useTimer="0" stackable="1" stacksize="3" bad="1"
+      icon="skills/bad_credit64.png"
+      smallicon="skills/bad_credit32.png"
+      zorkmidUpkeep="1" 
+      tag="bankster">
+     <!--<secondaryBuff id="13" amount="1" />--> <!-- hp regen -->
+     <!--<primaryBuff id="5" amount="-1" />--> <!-- SAV -->
+     <!--<primaryBuff id="2" amount="-1" />--> <!-- NIM -->
+   </buff>
+   <description text="'Brax, buddy, I'll have your money next week - I promise!'" />
+ </spell>
+
+<spell name="Poor Investment" type="self" > 
+   <buff useTimer="1" time="32" stackable="1" stacksize="3" bad="1"
+      icon="skills/diggle_juice64.png"
+      smallicon="skills/diggle_juice32.png"
+      zorkmidUpkeep="10" 
+      tag="bankster">
+      <primaryBuff id="5" amount="-1" /> <!-- SAV -->
+      <primaryBuff id="1" amount="-1" /> <!-- SAG -->
+      </buff>
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Glyph of Imhotep"
+      spell="Pyramid Scheme" percentage="25" />
+   <description text="It doesn't look like Diggle Juice is taking off." />
+ </spell>
+
+<spell name="Frozen Account" type="self" > 
+   <buff useTimer="1" time="32" stackable="1" stacksize="3" bad="1"
+      icon="skills/frozen_account64.png"
+      smallicon="skills/frozen_account32.png"
+      zorkmidUpkeep="4" 
+      tag="bankster" >
+     <resistBuff hyperborean="-2" />
+     <!-- <secondaryBuff id="14" amount="1" /> --><!-- mana regen -->
+     <primaryBuff id="5" amount="-1" /> <!-- SAV -->
+     <primaryBuff id="2" amount="-1" /> <!-- NIM -->
+   </buff>
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Glyph of Imhotep"
+      spell="Pyramid Scheme" percentage="25" />
+   <description text="Now you've got to run expenses off credit - the interest is killer!" />
+ </spell>
+
+<spell name="Cooked Books" type="self" > 
+   <buff useTimer="1" time="32"
+         stackable="1" stacksize="3" bad="1"
+         icon="skills/cooked_books64.png"
+         smallicon="skills/cooked_books32.png"
+         zorkmidUpkeep="2" 
+		 tag="bankster" >
+      <resistBuff conflagratory="-2" />
+      <primaryBuff id="4" amount="-1" /> <!-- STU -->
+      <primaryBuff id="5" amount="-1" /> <!-- SAV -->
+      </buff>
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Glyph of Imhotep"
+      spell="Pyramid Scheme" percentage="25" />
+   <description text="You got burned on this one. But no one said that rogue-entrepreneuership was going to be easy!" />
+   </spell>
+
+<spell name="Payback" type="self" > 
+   <buff useTimer="1" time="10"
+         stackable="1" stacksize="10" bad="1"
+         icon="skills/payback64.png"
+         smallicon="skills/payback32.png"
+         zorkmidUpkeep="8" 
+		 tag="bankster">
+      </buff>
+   <description text="The First International Bank of Diggle: Hating Our Customers So Much For 1000 Years." />
+   </spell>
+
+<spell name="Pyramid Scheme" type="self" > 
+   <buff useTimer="1" time="32"
+         stackable="1" stacksize="3" bad="0"
+         icon="skills/pyramid_scheme64.png"
+         smallicon="skills/pyramid_scheme32.png" >
+         <!-- zorkmidupkeep="-10" > -->
+      </buff>
+      <effect type="dot" resistable="0" self="1" amount="32" spell="Payout" requireBuff="1"/>
+   <description text="Some of Imhotep's earlier, little-known ventures could tend toward the shady." />
+   </spell>
+<!--
+<spell name="In The Red" type="self" > 
+   <buff useTimer="1" time="32" stackable="1" stacksize="3" bad="0"
+      icon="skills/bad_credit64.png"
+      smallicon="skills/bad_credit32.png"
+      zorkmidUpkeep="-10" >
+      </buff>
+   </spell>
+-->
+
+<spell name="Random Bankster Debuff" type="self">
+	<effect type="triggerfromlist">
+		<option name="Cooked Books"/>
+		<option name="Frozen Account"/>
+		<option name="Poor Investment"/>
+		</effect>
+   </spell>
+
+<!-- visual effects -->
+
+<spell name="Document Cloud" 
+		type="targetfloor" 
+		mineTimer="3" 
+		mineUseGlints="1" 
+		mineGlintDensity="10"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/feather/feather" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="20" 
+		mineSpritePNGRate="140" 
+		mine="1"
+		mineradius="1"
+      minesMustBeUnobstructed="0" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+   </spell> 
+
+<!-- start spells -->
+   
+<spell name="High Interest Loan" icon="skills/high_interest_loan32.png" type="self" downtime="32" >
+   <!--<requirements zorkmids="10" savvyBonus="2.0" />-->
+   <description text="Your credit is still good, right? Take out a quick loan. (This is not a good idea if you're currently involved in any shady business practices.)" />
+   <effect type="spawnitematlocation" itemname="zorkmids" amount="100" floorScaleF="1.1" />
+   <!-- scales to SAV -->
+   <effect type="trigger" spell="Bad Credit" percentage="23" after="0" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Bad Credit"
+      spell="Payback" percentage="50" after="1" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Cooked Books"
+      spell="Payback" percentage="50" after="1" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Frozen Account"
+      spell="Payback" percentage="50" after="1" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Poor Investment"
+      spell="Payback" percentage="50" after="1" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Glyph of Imhotep"
+      spell="Pyramid Scheme" percentage="25" />
+   <anim sprite="sprites/sfx/zorkmidsigil/zorkmidsigil" frames="8" framerate="100" centerEffect="1"/>
+   </spell>
+
+<spell name="Insurance Fraud" icon="skills/insurance_fraud32.png" type="targetfloor" >
+   <requirements zorkmids="25" zorkmidScaleF="2.5" savvyBonus="0.25" />
+   <buff useTimer="0" allowstacking="0" brittle="10" bad="0" removable="1" self="0"
+         icon="skills/insurance_fraud64.png"
+         smallicon="skills/insurance_fraud32.png" affectsCorpses="0">
+      <payback secondaryScale="0" paybackF="0.1" />
+      <targetHitEffectBuff percentage="5" name="Random Bankster Debuff" />
+      <playerHitEffectBuff percentage="5" name="Random Bankster Debuff" />
+      </buff>
+   <effect type="trigger" spell="Random Bankster Debuff" percentage="35" />
+   <description text="Scales payback based on hitpoints." />
+   </spell>
+
+<spell name="Dump Toxic Assets" icon="skills/toxic_assets32.png" downtime="12" type="target" >
+   <!-- <requirements zorkmids="20" floorScaleF="1.75" savvyBonus="0.25" /> -->
+   <effect type="moverandomcurse" buffTag="bankster" affectsCorpses="0" />
+   <effect type="damage" toxic="3" toxicF="0.5" primaryScale="3" affectsCorpses="0" />
+   <effect type="trigger" spell="Small Weak Poison Cloud" affectsCaster="1" affectsCorpses="0"/>
+   <effect type="trigger" spell="Document Cloud" affectsCaster="1" affectsCorpses="0" />
+   <effect type="trigger" spell="Random Bankster Debuff" percentage="10" affectsCorpses="0"/>
+   <description text="Some investments are simply no good - make them someone elses' responsibility! Moves the consequences of your poor financial choices onto a target monster and deals toxic damage based on your Caddishness."/>
+   </spell>
+
+<spell name="Hire Contractor" icon="skills/hire_contractor32.png" type="target" >
+   <requirements zorkmids="100" zorkmidScaleF="2.0" savvyBonus="0.25" />
+   <effect type="charm" turns="50" affectsCorpses="0" />
+   <effect type="trigger" spell="Random Bankster Debuff" percentage="25" />
+   <description text="Hire one of Dredmor's minions as a contractor for 50 turns. ('Bribery' is such an ugly word.)"/>
+   <anim sprite="sprites/sfx/zorkmidglow/zorkmidglow" frames="6" framerate="100" centerEffect="1"/>
+   </spell>
+
+<spell name="Fiscal Hedge" icon="skills/zorkmid32.png" type="self" >
+   <requirements zorkmids="50" zorkmidScaleF="1.75" savvyBonus="0.25" />
+   <buff useTimer="0" allowstacking="0" bad="0" removable="1" 
+         icon="skills/zorkmid64.png"
+         smallicon="skills/zorkmid32.png">
+      <halo name="sprites/sfx/zorkmidaura/zorkmidaura" first="0" num="6" frameRate="100" centerEffect="1"/>
+      <zorkmidAbsorption zorkmidsPerDamage="30" damageCap="20" maxRatio="0.5" />
+      <!-- $10 per dmg, max 20, 50% -->
+      <targetHitEffectBuff percentage="10" name="Random Bankster Debuff" />
+      <playerHitEffectBuff percentage="10" name="Random Bankster Debuff" />
+      </buff>
+   <description text="Make an investment in your own safety; trades your hard &quot;earned&quot; zorkmids for damage mitigation of up to half of all damage done to you."/>
+   <effect type="trigger" spell="Random Bankster Debuff" percentage="25" />
+   </spell>
+
+<spell name="Bailout" icon="skills/bailout32.png" downtime="50" type="self" >
+   <description text="You're too big to fail now! Get a bailout to remove all the consequences of your fiscal  irresponsibility."/>
+   <effect type="removebuffbyname" name="Bad Credit" amount="1" />
+   <effect type="removebuffbyname" name="Frozen Account" amount="1" />
+   <effect type="removebuffbyname" name="Poor Investment" amount="1" />
+   <effect type="removebuffbyname" name="Cooked Books" amount="1" />
+   <effect type="removebuffbyname" name="Payback" amount="1" />
+   <!-- add a penalty that can't be easily removed? -->
+   <anim sprite="sprites/sfx/zorkmidglow/zorkmidglow" frames="6" framerate="100" centerEffect="1"/>
+   </spell>
+   
+<!-- Egyptian Magic -->
+
+<!-- first, all the combined effects -->
+
+   <!-- Asp Effects -->
+   
+<spell name="Asp Empowerment" type="target" icon="skills/asp32.png" wand="0">
+	<buff useTimer="1" time="32" stacksize="3" allowstacking="1" removable="0" bad="0"
+         icon="skills/asp_empowerment64.png"
+         smallicon="skills/asp_empowerment32.png" >
+      <damagebuff toxic="1" />
+      <resistbuff toxic="1" />
+   </buff>
+	<description text="The poisons of the Asp combined with the cleverness of Imhotep enhances your damage and resistance." />
+   </spell>
+
+   <!-- Imhotep Effects -->
+<spell name="Asp Poison Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="12" 
+      mineUseGlints="1" 
+      mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/aspPuff/aspPuff" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="10" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" toxic="1" toxicF="0.1" asphyxiative="1" asphyxiativeF="0.1" affectscaster="1" />
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+   </spell>
+
+<spell name="Asp Poison Burst" type="template" templateID="09" anchored="1" >
+   <effect type="trigger" spell="Asp Poison Cloud" />
+   </spell>
+   
+   <!-- trigger if imhotep ; CUT THIS? effect of imhotep already exists -->
+<spell name="Asp Self Hit Effect" type="self" >
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Asp Poison Burst" percentage="25"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Asp Empowerment" percentage="50" />
+   </spell>
+
+   <!-- Sandstorm -->
+
+<spell name="Asp Target Hit Effect" type="targetfloor" >
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Asp Poison Cloud" percentage="35"/>
+   </spell>
+
+<spell name="Sand in Eyes" type="target" > 
+   <buff useTimer="1" time="30" self="0"
+         stackable="1" stacksize="5" bad="1"
+         icon="skills/sand_in_eyes64.png"
+         smallicon="skills/sand_in_eyes32.png" >
+      <secondarybuff id="18" amount="-1" /> <!-- negative sight syntax is broken! leaving this here 'til fixed -->
+      <!-- <sightbuff amount="-1" /> --><!-- archaic sight syntax works in negative -->
+      <secondarybuff id="9" amount="-10" /> <!-- EDR -->
+      <secondarybuff id="17" amount="-2" /> <!-- trap sight -->
+      </buff>
+   <description text="The sand does not belong in your eyes!" />
+   </spell>
+   
+   <!-- extra fun Sandstorm hit effects -->
+
+<spell name="The Test Of Time" type="self" >
+   <buff useTimer="1" stacksize="1" allowstacking="0" removable="0" bad="0" self="1" time="64"
+         icon="skills/test_of_time64.png"
+         smallicon="skills/test_of_time32.png" >
+      <primaryBuff id="1" amount="5" /> <!-- SAG -->
+      <secondaryBuff id="10" amount="2" /> <!-- armour -->
+      <resistbuff blasting="4" />
+      <effect type="removebuffbyname" name="The Ruin of Time" amount="1" />
+      <halo name="sprites/sfx/imhotep/imhotep" first="0" num="1" frameRate="100" centerEffect="1"/>
+      </buff>
+   <description text="Truly, you were built to stand the test of time. (Thanks, Imhotep.)" />
+   </spell>
+
+<spell name="The Ruin Of Time" type="target" >
+   <buff useTimer="1" stacksize="1" allowstacking="0" removable="0" bad="1" self="0" time="24"
+         icon="skills/test_of_time64.png"
+         smallicon="skills/test_of_time32.png" >
+      <primaryBuff id="0" amount="-3" /> <!-- BUR -->
+      <secondaryBuff id="10" amount="-3" /> <!-- armour -->
+      <resistbuff blasting="-2" />
+      </buff>
+   <description text="Truly, this one has failed the test of time. Watch it crumble. (Thanks, Imhotep.)" />
+   </spell>
+
+<spell name="Asp Sandstorm Effect" type="target" >
+   <effect type="trigger" spell="Asp Poison Cloud" percentage="40" />
+   </spell>
+<spell name="Imhotep Sandstorm Effect" type="target" >
+   <effect type="trigger" spell="The Ruin Of Time" percentage="50" taxa="Animal" />
+   <effect type="trigger" spell="The Ruin Of Time" percentage="50" taxa="Construct" />
+   <effect type="trigger" spell="The Ruin Of Time" percentage="50" taxa="Other" />
+   <effect type="trigger" spell="The Ruin Of Time" percentage="50" taxa="Undead" />
+   <!-- anyone want to let me know why the ruin of time is fired on the player? I suppose taxa isn't respected in that case -->
+   <effect type="trigger" spell="The Test Of Time" percentage="50" taxa="Player" />
+   </spell>
+<spell name="Anubis Sandstorm Effect" type="target" >
+   <effect type="damage" putrefying="2" putrefyingF="0.09" necromantic="1" necromanticF="0.09" />
+   </spell>
+<spell name="Ra Sandstorm Effect" type="target" >
+   <effect type="trigger" spell="On Fire" percentage="80" />
+   <effect type="trigger" spell="Fire 1" percentage="40" />
+   </spell>
+
+<spell name="Sandstorm Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="6" 
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/sandstorm/sandstorm" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="5" 
+      mineSpritePNGRate="100" 
+      mine="1"
+      mineradius="1"
+      minePermanent="1"
+      minesMustBeUnobstructed="0">
+   <effect type="damage" blasting="1" slashing="1" blastingF="0.05" slashingF="0.04" piercing="1" affectscaster="1" />
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Asp" spell="Asp Sandstorm Effect" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Imhotep Sandstorm Effect" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Anubis" spell="Anubis Sandstorm Effect" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Eye of Ra" spell="Ra Sandstorm Effect" percentage="100"/>
+   <effect type="trigger" spell="Sand in Eyes" percentage="33" taxa="Player" />
+   <anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+   </spell>
+   
+<spell name="Call the Sandstorm" type="targetfloor" icon="skills/sandstorm32.png">
+   <requirements mincost="13" mp="25" savvyBonus="0.09" />
+	<anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="50" centerEffect="1" />
+   <effect type="trigger" spell="Sand in Eyes" percentage="33" />
+	<effect type="trigger" spell="Sandstorm Cloud" />
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Asp" spell="Sandstorm2" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Sandstorm3" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Anubis" spell="Sandstorm4" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Eye of Ra" spell="Sandstorm5" percentage="100"/>
+   <description text="Channel the fury of nature and the Ruin of Time to blast away ye mighty enemies - and despair. The Sandstorm becomes more powerful with the more Egyptian Glyphs you have active."/> 
+   </spell>
+<spell name="Sandstorm2" type="template" templateID="09">
+	<anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+	<effect type="trigger" spell="Sandstorm Cloud" />
+   </spell>
+<spell name="Sandstorm3" type="template" templateID="15">
+	<anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+	<effect type="trigger" spell="Sandstorm Cloud" />
+   </spell>
+<spell name="Sandstorm4" type="template" templateID="21">
+	<anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+	<effect type="trigger" spell="Sandstorm Cloud" />
+   </spell>
+<spell name="Sandstorm5" type="template" templateID="22">
+	<anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+	<effect type="trigger" spell="Sandstorm Cloud" />
+   </spell>
+
+<spell name="Sandstorm Hit Effect" type="targetfloor" >
+   <effect type="damage" blasting="1" blastingF="0.2" slashing="1" slashingF="0.2" secondaryScale="3" />
+   <anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="100" centerEffect="1" />
+   <effect type="trigger" spell="Sandstorm Cloud" percentage="100" />
+   </spell>
+   
+ <!-- Nile / Ankh effects -->
+
+<spell name="Imhotep Heal" type="self" > <!-- heal more if Imhotep! -->
+   <effect type="heal" amount="1" resistable="0" />
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Fungal Heal 0" percentage="100" resistable="0"/>
+   </spell>	
+ 
+<spell name="Asp Nile Cloud" type="template" templateID="15" anchored="1" >
+   <!-- hopefully this serves as a defense -->
+   <effect type="trigger" spell="Asp Poison Cloud" />
+   </spell> 
+
+<spell name="Life Mostly Eternal" downtime="1" type="self" icon="skills/life_eternal32.png" wand="0">
+	<buff useTimer="1" stacksize="1" allowstacking="0" removable="0" bad="0"
+         icon="skills/life_eternal64.png"
+         smallicon="skills/life_eternal32.png"
+         time="100" >
+      <secondarybuff id="0" amount="4" /> <!-- hp -->
+      <secondarybuff id="13" amount="1" /> <!-- regen -->
+      <resistBuff righteous="-4" conflagratory="-2" asphyxiative="6" toxic="6" />
+      <damageBuff necromantic="1" />
+      <!--<halo name="sprites/sfx/nile/nile" first="0" num="1" frameRate="100" centerEffect="1"/> -->
+      <!-- <halo name="sprites/sfx/water_loop/water_loop" first="0" num="6" frameRate="100" centerEffect="1"/> -->
+   </buff>
+	<description text="Mostly Eternal(ish) life comes with certain advantages ... and certain drawbacks." />
+   </spell>
+
+<spell name="The Unconquered Sun" downtime="1" type="self" icon="skills/sol_invictus32.png" wand="0">
+	<buff useTimer="1" stacksize="1" allowstacking="0" removable="0" bad="0"
+         icon="skills/sol_invictus64.png"
+         smallicon="skills/sol_invictus32.png"
+         time="100" >
+      <secondarybuff id="0" amount="4" /> <!-- hp -->
+      <secondarybuff id="13" amount="1" /> <!-- regen -->
+      <resistBuff righteous="4" conflagratory="6" />
+      <damagebuff righteous="1" conflagratory="1" />
+   </buff>
+	<description text="You are the unconquered source of all power! (Or, at least, a serviceable analog for the modestly-disputed middleman of some power.)" />
+   </spell>
+
+<spell name="Glyph of the Nile" downtime="1" type="self" icon="skills/nile32.png" wand="0">
+	<buff useTimer="1" stacksize="1" allowstacking="0" removable="0" bad="0"
+         icon="skills/nile64.png"
+         smallicon="skills/nile32.png"
+         time="64" >
+      <secondarybuff id="0" amount="12" /> <!-- hp -->
+      <secondarybuff id="13" amount="2" /> <!-- regen -->
+      <resistBuff necromantic="2" />
+      <halo name="sprites/sfx/nile/nile" first="0" num="1" frameRate="100" centerEffect="1"/>
+      <!-- <halo name="sprites/sfx/water_loop/water_loop" first="0" num="6" frameRate="100" centerEffect="1"/> -->
+   </buff>
+	<description text="It's not just a river in Egypt anymore - it's a way of life." />
+   <effect type="dot" resistable="0" self="1" amount="6" spell="Imhotep Heal" requireBuff="1" />
+   </spell> 
+ 
+<spell name="Call the Nile" type="self" icon="skills/nile32.png">
+   <requirements mincost="10" mp="24" savvyBonus="0.1" />
+   <anim sprite="sprites/sfx/stancechange/stancechange" frames="5" framerate="50" centerEffect="1" />
+   <effect type="trigger" spell="Glyph of the Nile" />
+   <!--
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Asp" spell="Sandstorm2" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Imhotep" spell="Sandstorm3" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Anubis" spell="Sandstorm4" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Eye of Ra" spell="Sandstorm5" percentage="100"/>
+   -->
+   <description text="Channel the power of The Nile; of life and death; of growth and renewel. With each sigil, you are assisted with further effects of healing and regrowth."/>
+   
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Asp" spell="Asp Nile Cloud" percentage="100" resistable="0"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of Anubis" spell="Life Mostly Eternal" percentage="100"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glyph of the Eye of Ra" spell="The Unconquered Sun" percentage="100"/>
+   </spell>
+
+ 
+ <!-- Ra effects -->
+<spell name="Ra Blast Push" type="targetmonster" >
+   <effect type="knock" self="0" amount="1" percentage="75" />
+   </spell>
+
+<spell name="Ra Blast Effect" type="template" templateID="20" >
+   <effect type="damage" blasting="10" conflagratory="8" conflagratoryF="0.2" blastingF="0.1" affectscaster="1" />
+   <effect type="trigger" spell="Ra Blast Push" />
+   <effect type="trigger" spell="On Fire" amount="1" />
+   <anim sprite="sprites/sfx/null" frames="1" framerate="50" sfx="blast"/>
+   </spell>
+
+<spell name="Ra Blast" type="self"  >
+   <anim sprite="sprites/sfx/fireRingA/fireRingA" frames="9" framerate="120" sfx="blast" />
+   <effect type="trigger" spell="Ra Blast Effect" />
+   </spell>
+
+<spell name="Ra Defense" type="self"  >
+   <anim sprite="sprites/sfx/raDefenseA/raDefenseA" frames="7" framerate="120" sfx="blast" />
+   <!-- for show. -->
+   <!--<effect type="trigger" spell="Ra Blast Effect" />-->
+   </spell>
+   
+<!-- all the glyphs -->
+
+<spell name="Glyph of the Asp" type="self" icon="skills/asp32.png" wand="0">
+   <requirements mincost="4" mp="12" savvyBonus="0.12" />
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/asp64.png"
+         smallicon="skills/asp32.png"
+         manaUpkeep="10" >
+      <damagebuff toxic="1" />
+      <resistbuff toxic="1" />
+      <halo name="sprites/sfx/asp/asp" first="0" num="1" frameRate="200" centerEffect="1"/>
+      <targetHitEffectBuff percentage="100" name="Asp Target Hit Effect" />
+      <playerHitEffectBuff percentage="100" name="Asp Self Hit Effect" />
+   </buff>
+	<description text="The asp is a symbol of royalty. It's also really, really poisonous. Maybe it's best not to read too much into that." />
+   </spell>
+
+<spell name="Glyph of Imhotep" type="self" icon="skills/imhotep32.png" wand="0">
+   <requirements mincost="6" mp="16" savvyBonus="0.13" />
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/imhotep64.png"
+         smallicon="skills/imhotep32.png"
+         manaUpkeep="8" >
+      <secondarybuff id="16" amount="1" /> <!-- trap level -->
+      <secondarybuff id="17" amount="1" /> <!-- trap sight -->
+      <halo name="sprites/sfx/imhotep/imhotep" first="0" num="1" frameRate="200" centerEffect="1"/>
+   </buff>
+	<description text="Ah, Imhotep. He's so dreamy..." />
+   </spell>
+<!--
+<spell name="Glyph of the Sandstorm" downtime="1" type="self" icon="skills/sandstorm32.png" wand="0">
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/sandstorm64.png"
+         smallicon="skills/sandstorm32.png"
+         manaUpkeep="6" >
+      <damagebuff blasting="1" />
+      <resistbuff blasting="1" />
+      <playerHitEffectBuff percentage="3" name="The Test Of Time" />
+      <targetHitEffectBuff percentage="100" name="Sandstorm Hit Effect" />
+      <halo name="sprites/sfx/sand/sand" first="0" num="1" frameRate="200" centerEffect="1"/>
+   </buff>
+	<description text="Call upon the fury of the Sandstorm to blast your enemies!" />
+   </spell>
+nope. -->
+<spell name="Glyph of Anubis" type="self" icon="skills/anubis32.png" wand="0">
+   <requirements mincost="8" mp="20" savvyBonus="0.14" />
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/anubis64.png"
+         smallicon="skills/anubis32.png"
+         manaUpkeep="5" >
+      <damagebuff necromantic="1" putrefying="1" />
+      <resistbuff necromantic="1" putrefying="1" />
+      <halo name="sprites/sfx/anubis/anubis" first="0" num="1" frameRate="200" centerEffect="1"/>
+   </buff>
+	<description text="When you die, Anubis will weigh your heart against a feather. For best results, try to avoid foods high in cholesterol." />
+   </spell>
+
+<spell name="Glyph of the Eye of Ra" type="self" icon="skills/eye_of_ra32.png" wand="0">
+   <requirements mincost="10" mp="30" savvyBonus="0.15" />
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/eye_of_ra64.png"
+         smallicon="skills/eye_of_ra32.png"
+         manaUpkeep="3" >
+      <damagebuff conflagratory="1" righteous="1" />
+      <resistbuff conflagratory="2" righteous="2"/>
+      <halo name="sprites/sfx/ra/ra" first="0" num="1" frameRate="200" centerEffect="0"/>
+      <targetHitEffectBuff percentage="100" name="Ra Blast" />
+      <playerHitEffectBuff percentage="100" name="Ra Defense" />
+   </buff>
+	<description text="Ra is the only deity who can afford to own two boats in this economy." />
+   <anim sprite="sprites/sfx/eyeofrasigil/eyeofrasigil" frames="9" framerate="100" sfx="blast" />
+   </spell>
+
+<!-- Magical Law -->
+
+<spell name="Confiscate Evidence" type="targetflooritem" icon="skills/confiscate_evidence32.png" >
+   <requirements mp="9" mincost="3" savvyBonus="0.2" />
+   <effect type="grabitem" />
+   <description text="Cast on items far away to shove them in your inventory. Nothing exceeds the reach of the law!"/>
+   </spell>   
+   
+<spell name="Polymorphic Injunction" type="target" icon="skills/polymorphic_injunction32.png" >
+   <requirements mp="15" mincost="7" savvyBonus="0.2" />
+   <effect type="damage" transmutative="4" transmutativeF="0.20" /> <!-- add more? -->
+   <effect type="transformmonster" />
+   <description text="Using powerful legalese, obtain an injunction against a monster for transformation plus damages." />
+   </spell>
+
+<spell name="Rune of Objection" type="target" icon="skills/objection32.png" >
+   <requirements mp="10" mincost="3" savvyBonus="0.2" />
+   <description text="OBJECTION! Removes a curse from yourself and gives it to target." />
+   <effect type="moverandomcurse" />
+   </spell>
+
+<spell name="Gag Hit" type="target" >
+   <effect type="damage" asphyxiative="1" asphyxiativeF="0.15" primaryScale="5" /> <!-- sav -->
+   </spell>
+   
+<spell name="Gag Order" type="target" icon="skills/gag_order32.png" >
+   <requirements mp="13" mincost="4" savvyBonus="0.2" />
+   <anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="magical_law" centerEffect="1"/>
+   <buff
+      useTimer="1"
+      time="15"
+      self="0"
+      stacksize="1"
+      allowstacking="0"
+      icon="skills/gag_order64.png"
+      smallicon="skills/gag_order32.png"
+      bad="1">
+      <mute amount="1"/>
+   </buff>
+   <effect resistable="0" type="dot" spell="Gag Hit" amount="15" requireBuff="1" />
+   <description text="How can you cast when you have no mouth? And how can you breathe, for that matter."/>
+   </spell>   
+   
+<!-- gag order : asphyx dot and mute -->
+
+<spell name="Writ of Counterspelling" type="self" icon="skills/writ_of_counterspelling32.png" wand="0">
+   <requirements mp="20" mincost="5" savvyBonus="0.2" />
+	<buff useTimer="0" stacksize="1" allowstacking="0" removable="1" bad="0" manaUpkeep="6"
+         icon="skills/writ_of_counterspelling64.png"
+         smallicon="skills/writ_of_counterspelling32.png" >
+      <secondaryBuff id="22" amount="50" /> <!-- reflect -->
+      <secondaryBuff id="11" amount="25" /> <!-- resist -->
+   </buff>
+	<description text="The courts have seen fit to grant you a temporary resistance to magic. Use it wisely." />
+   </spell>
+
+<spell name="Wright's Irrefutable Argument" type="self" icon="skills/magical_law32.png">
+   <requirements mp="25" mincost="15" savvyBonus="0.2" />
+   <effect type="resetrandomcooldown" />
+   </spell>
+
+<!-- Paranormal Investigator -->
+
+<spell name="Close Encounter" type="targetfloor" icon="skills/close_encounter32.png" downtime="15" >
+   <anim sprite="sprites/sfx/ufolightbeam/ufolightbeam" frames="6" framerate="100" sfx="paranormal0"/>
+   <effect type="manipulateobject" />
+   <description text="Manipulate objects with the powers of the mind." />
+   </spell>
+
+<spell name="Rational Explanation" type="self" icon="skills/rational_explanation32.png" downtime="90" >
+    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="90" sfx="paranormal1"/>
+    <buff removable="1"
+          useTimer="1"
+          time="30"
+          self="1"
+          stacksize="1"
+          allowstacking="0"
+          icon="skills/rational_explanation64.png"
+          smallicon="skills/rational_explanation32.png">
+      <mute amount="1"/>
+	  <secondarybuff id="11" amount="25" /> <!-- resist -->
+     <resistBuff aethereal="5" transmutative="4" necromantic="3" righteous="2" existential="1" />
+    </buff>
+   <description text="You are steadfast in your denial of supernatural powers. Science must have an answer!" />
+</spell>
+
+<spell name="Brain Worm Bites" type="target" >
+	<effect type="damage" aethereal="2" affectscaster="1"/>
+   </spell>
+
+<spell name="Brain Worms" type="target" >
+    <anim sprite="sprites/sfx/ufolightbeam/ufolightbeam" frames="6" framerate="100" sfx="paranormal0"/>
+    <buff
+      useTimer="1"
+      time="30"
+      self="1"
+      stacksize="1"
+      allowstacking="0"
+      icon="skills/brain_worms64.png"
+      smallicon="skills/brain_worms32.png"
+		bad="1">
+	  <primarybuff id="1" amount="5" /> <!-- sagacity -->
+    </buff>
+   <effect type="dot" spell="Brain Worm Bites" amount="10" affectsCaster="1" requirebuff="1" />
+   <description text="You have the Brain Worms! A colony of alien parasites have set up camp in your cranium, granting you increased intelligence, but causing severe headaches as they gnaw inconsiderately on your fusiform gyrus." />
+</spell>
+
+<spell name="Xenocontagion" type="target" >
+    <anim sprite="sprites/sfx/ufolightbeam/ufolightbeam" frames="6" framerate="100" sfx="paranormal0"/>
+    <buff
+         useTimer="1"
+         time="60"
+         self="1"
+         stacksize="1"
+         allowstacking="0"
+         icon="skills/xenocontagion64.png"
+         smallicon="skills/xenocontagion32.png"
+         bad="1">
+	  <primarybuff id="0" amount="-2" /> <!-- burliness -->
+	  <secondarybuff id="0" amount="-5" /> <!-- hitpoints -->
+	  <secondarybuff id="2" amount="-3" /> <!-- melee power -->
+	  <secondarybuff id="3" amount="8" /> <!-- magic power -->
+    </buff>
+   <description text="You have contracted a hideous disease from outer space, resulting in a bout of crippling weakness but boosting your latent mental abilities! Also your pee glows now." />
+</spell>
+
+<spell name="Xeno-instrumentality" type="target" >
+    <anim sprite="sprites/sfx/ufolightbeam/ufolightbeam" frames="6" framerate="100" sfx="paranormal1"/>
+    <buff
+         useTimer="1"
+         time="25"
+         self="1"
+         stacksize="1"
+         allowstacking="0"
+         icon="skills/xenoinstrumentality64.png"
+         smallicon="skills/xenoinstrumentality32.png">
+	  <primarybuff id="0" amount="2" /> <!-- burliness -->
+	  <primarybuff id="2" amount="1" /> <!-- nimbleness -->
+	  <secondarybuff id="16" amount="2" /> <!-- trap sense -->
+	  <secondarybuff id="18" amount="2" /> <!-- sight radius -->
+    </buff>
+   <description text="Strange alien nanoparticles course through your bloodstream, temporarily granting you preternatural speed and strength." />
+</spell>
+
+<spell name="Xenochemistry Side-effect" type="target">
+	<effect type="triggerfromlist">
+		<option name="Xenocontagion" />
+		<option name="Xeno-instrumentality" />
+		<option name="Brain Worms" />
+	</effect>
+</spell>
+   
+<spell name="Xenochemistry" type="item" consumeItem="0" consumeItemType="potion" icon="skills/xenochemistry32.png" downtime="50" >
+   <effect type="randomizepotion" />
+   <effect type="trigger" spell="Xenochemistry Side-effect" />
+   </spell>
+
+<spell name="Alien Autopsy" type="self" icon="skills/alien_autopsy32.png">
+   <anim sprite="sprites/sfx/signaltospace/signaltospace" frames="7" framerate="90" sfx="paranormal0"/>
+   <effect type="findrecipe" />
+</spell>
+
+<spell name="Skepticism-To-Monster" type="target">
+   <effect type="transformmonster" />
+</spell>
+
+<spell name="Skepticism-To-Item" type="target">
+	<effect type="removemonster" />
+	<effect type="spawnitematlocation" />
+</spell>
+
+<spell name="My Brain Hurts" type="target" >
+    <buff
+         useTimer="1"
+         time="45"
+         self="1"
+         stacksize="1"
+         allowstacking="0"
+         icon="skills/brain_hurts64.png"
+         smallicon="skills/brain_hurts32.png"
+         bad="1">
+	  <primarybuff id="1" amount="-3" /> <!-- sagacity -->
+    </buff>
+   <description text="Thinking is a dangerous pastime. Try to avoid it wherever possible." />
+</spell>
+
+<spell name="Skepticism" type="target" icon="skills/skepticism32.png" downtime="25" >
+    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="90" sfx="paranormal1"/>
+	<effect type="triggerfromlist">
+		<option name="Skepticism-To-Monster" />
+		<option name="Skepticism-To-Item" />
+	</effect> 
+	<effect type="trigger" spell="My Brain Hurts" percent="10" />
+</spell>
+
+<spell name="Meteor Strike" type="template" templateid="99">
+   <anim sprite="sprites/sfx/meteorhit/meteorhit" frames="8" framerate="100" sfx="blast"/>
+	<effect type="damage" blasting="5" conflagratory="5" aethereal="5" aetherealF="0.1" blastingF="0.1" conflagratoryF="0.1" />
+   </spell>
+
+<spell name="Meteor Strike Centre" type="target">
+   <anim sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="80" centerEffect="1" sfx="explosion" />
+	<effect type="damage" blasting="10" conflagratory="15" aethereal="5" aetherealF="0.1" blastingF="0.1" conflagratoryF="0.1" />
+   <effect type="trigger"
+      requirebuffontrigger="1"
+      requirebuffontriggername="Glyph of the Eye of Ra"
+      spell="Power of the Goa'uld"/>
+   </spell>
+
+<spell name="Phone Home" type="self">
+   <anim sprite="sprites/sfx/signaltospace/signaltospace" frames="7" framerate="90" sfx="paranormal1"/>
+   </spell>
+
+<spell name="Power of the Goa'uld" type="self" >
+    <buff
+         useTimer="1"
+         time="35"
+         self="1"
+         stacksize="1"
+         allowstacking="0"
+         icon="skills/goauld64.png"
+         smallicon="skills/goauld32.png" >
+	  <primarybuff id="0" amount="2" /> <!-- burliness -->
+	  <primarybuff id="1" amount="2" /> <!-- sagacity -->
+	  <secondarybuff id="2" amount="3" /> <!-- melee power -->
+	  <secondarybuff id="3" amount="3" /> <!-- magic power -->
+    </buff>
+   <description text="You have been granted a great boon for striking down enemies in the name of your god, Ra. Jaffa kree!" />
+</spell>
+
+<spell name="Alien Weapon" type="target" icon="skills/alien_weapon32.png" downtime="75" >
+   <effect type="trigger" spell="Phone Home" />
+   <effect type="trigger" spell="Flamefield 1" amount="3"/>
+   <effect type="trigger" spell="Meteor Strike" amount="3"/>
+   <effect type="trigger" spell="Meteor Strike Centre" amount="3"/>
+</spell>
+
+<!-- Tourist Spells -->
+<spell name="See the Sights" type="self" icon="skills/see_the_sights32.png" downtime="45" >
+    <buff
+      useTimer="0"
+      self="1"
+      stacksize="1"
+      allowstacking="0"
+      removable="1"
+      icon="skills/see_the_sights64.png"
+      smallicon="skills/see_the_sights32.png">
+	  <secondarybuff id="16" amount="1" /> <!-- trap sense -->
+	  <secondarybuff id="17" amount="2" /> <!-- trap sight radius -->
+	  <secondarybuff id="18" amount="3" /> <!-- sight radius -->
+	  <secondarybuff id="12" amount="-25" /> <!-- sneakiness -->
+    </buff>
+   <description text="So much to do, and so much to see!" />	
+</spell>
+
+<spell name="Meet People Good" type="targetfloor">
+	<effect type="summon" />
+</spell>
+
+<spell name="Meet People Bad" type="targetfloor">
+	<effect type="summonhostile" />
+</spell>
+
+<spell name="Meet Interesting People" type="targetemptyfloor" icon="skills/meet_people32.png" downtime="55" >
+   <anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="90" sfx="magic"/>
+   <effect type="triggerfromlist">
+		<option name="Meet People Good" />
+		<option name="Meet People Good" />
+		<option name="Meet People Bad" />
+	</effect>
+</spell>
+
+<spell name="Get Away from It All" type="self" icon="skills/get_away32.png" downtime="80" >
+   <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+   <effect type="dropitem" />
+   <effect type="ascenddungeonlevel" />
+   </spell>
+
+<spell name="Indigestion" type="self">
+   <buff
+         useTimer="1"
+         time="15"
+         self="1"
+         stacksize="1"
+         allowstacking="0"
+         icon="skills/indigestion64.png"
+         smallicon="skills/indigestion32.png"
+         bad="1">
+      <description text="Curse that strange, foreign food!" />
+      <primarybuff id="0" amount="-2" /> <!-- burliness -->
+      <secondaryBuff id="13" amount="-2" /> <!-- life regen -->
+      <secondaryBuff id="6" amount="-5" /> <!-- dodge -->
+      </buff>
+   </spell>
+
+<spell name="Sample the Local Cuisine" type="item" icon="skills/sample_cuisine32.png" downtime="5" noanimation="1" >
+	<effect type="consumeanything" />
+	<effect type="trigger" spell="Indigestion" percent="10" />
+   </spell>
+
+
+   <!-- Dash attack effects -->
+   
+<spell name="Weak Dash Attack Crush" type="target" attack="1" >
+   <effect type="damage" crushing="5" crushingF="0.20" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="knock" amount="1" />
+   </spell>
+<spell name="Weak Dash Attack Fail" type="self" >
+   <effect type="damage" crushing="5" self="1" affectscaster="1"/>
+   <effect type="paralyze" amount="2" turns="2" self="1" />
+   </spell>
+
+<spell name="Medium Dash Attack Crush" type="target" attack="1" >
+   <effect type="damage" crushing="6" crushingF="0.35" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="knock" amount="2" /> <!-- pow! -->
+   </spell>
+<spell name="Medium Dash Attack Fail" type="self" >
+   <effect type="damage" crushing="15" self="1" affectscaster="1"/>
+   <effect type="paralyze" amount="2" turns="2" self="1" />
+   </spell>
+   
+<spell name="Toxic Dash Attack Crush" type="target" attack="1" >
+   <effect type="damage" crushing="10" crushingF="0.45" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="damage" toxic="8"/>
+   <effect type="trigger" spell="Food Poisoning" />
+   </spell>
+ 
+<spell name="Strong Dash Attack Fail" type="self" >
+   <effect type="damage" crushing="35" self="1" affectscaster="1"/>
+   <effect type="paralyze" amount="2" turns="2" self="1" />
+   </spell>
+   
+<spell name="Necro Dash Attack Crush" type="target" attack="1" >
+   <effect type="damage" crushing="15" crushingF="0.55" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="damage" necromantic="25"/>
+   </spell>
+
+<spell name="Food Coma" type="target" attack="1" >
+   <effect type="damage" crushing="15" crushingF="0.55" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="sleep" turns="5"/>
+   <buff useTimer="1" time="5" self="0" allowstacking="0" icon="skills/fruit64.png" smallicon="skills/fruit32.png" bad="1" >
+		<primarybuff id="0" amount="-3" /> <!-- burliness -->
+		<primarybuff id="1" amount="-3" /> <!-- sagacity -->
+		<primarybuff id="2" amount="-3" /> <!-- nimbleness -->		
+		<secondarybuff id="6" amount="-5" /> <!-- dodge -->		
+   </buff>
+   <description text="I will never eat again." />
+</spell>
+   
+   <!-- new item effcts -->
+   
+   <!-- really ought to have radiation poisoning ... --> 
+
+<spell name="Tiny Radiation Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="24" 
+      mineUseGlints="1" 
+      mineGlintDensity="7"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/radiationA/radiationA" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="12" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" conflagratory="1" toxic="3" transmutative="5" aethereal="2" affectscaster="1" />
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+   </spell>
+   
+<spell name="Small Radiation Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="24" 
+      mineUseGlints="1" 
+      mineGlintDensity="7"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/radiationA/radiationA" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="12" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="2"
+      minePermanent="1" >
+   <effect type="damage" conflagratory="1" toxic="3" transmutative="5" aethereal="2" affectscaster="1" />
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+   </spell>
+   
+<spell name="Giant Radiation Cloud" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="24" 
+      mineUseGlints="1" 
+      mineGlintDensity="7"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/radiationA/radiationA" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="12" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="6"
+      minePermanent="1" >
+   <effect type="damage" conflagratory="1" toxic="3" transmutative="5" aethereal="2" affectscaster="1" />
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+   </spell>
+
+<spell name="Smash Atoms" type="targetfloor" >
+   <effect type="triggerfromlist">
+		<option name="Small Radiation Cloud"/>
+		<option name="Tiny Radiation Cloud"/>
+      <option name="Tiny Radiation Cloud"/>
+      <option name="Tiny Radiation Cloud"/>
+      <option name="Tiny Radiation Cloud"/>
+      </effect>
+   </spell>
+   
+<spell name="They Blew It Up" type="targetfloor" >
+   <!-- No idea why this is crashing. -->
+   <!-- OK it stopped. -->
+   <effect type="trigger" spell="Thermite Center" />
+   <effect type="trigger" spell="Generic Fireball" />
+   <effect type="trigger" spell="Big Dig" />
+   <effect type="trigger" spell="Burning Blinding Flash" />
+   <effect type="trigger" spell="Giant Radiation Cloud" />
+   </spell>
+   
+<!-- Hermeticism -->
+<!-- Nope.
+<skill name="Hermetic Magic" id="37" type="warrior" description="The most English of magicks. Fake beard not included.">
+   <art icon="skills/hermeticism64.png"/>
+   </skill>
+<ability name="Hermetic Magic" skill="37" type="warrior" icon="skills/hermeticism64.png" startSkill="1">
+   <description text="The most English of magicks. Fake beard not included."/>
+</ability>
+
+<hermeticismSkills>
+<ability name="The Rune of Triangulon" icon="skills/hermeticism64.png" skill="37" level="0">
+   <description text="A long-term buff that, somewhat unreliably, reflects missile based attacks back in the direction of their caster."/>
+   </ability>
+<ability name="The Voorish Sign"	icon="skills/hermeticism64.png" skill="37" level="1">
+   <description text="See invisible monsters and traps."/>
+   </ability>
+<ability name="The Ring of Asmodai"	icon="skills/hermeticism64.png" skill="37" level="2">
+   <description text="Summons a djinn."/>
+   </ability>
+<ability name="The Lantern of True Appearances"	icon="skills/hermeticism64.png" skill="37" level="3">
+   <description text="Changes a monster into another monster."/>
+   </ability>
+<ability name="The Philosopher's Stone" icon="skills/hermeticism64.png" skill="37" level="4">
+   <description text="Restore all cooldown timers. Permanently lose five mana points."/>
+   </ability>
+<ability name="The Trismegistron" icon="skills/hermeticism64.png" skill="37" level="5">
+   <description text="Removes corruption effects from an item in your inventory. Permanently lose five mana points."/>
+   </ability>
+<ability name="The Cube of Souls" icon="skills/hermeticism64.png" skill="37" level="6">
+   <description text="Permanently lose half your health and mana. Upon your death, if you have a cube of souls in your inventory you will find yourself revived and the cube shatters to dust."/>
+</ability>
+</hermeticismSkills>
+-->
+
+<spell name="Diggle Devil Blessing" type="self">
+   <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+   <buff useTimer="0" stacksize="1"
+         icon="skills/diggle_devil64.png"
+         smallicon="skills/diggle_devil32.png" digglegod="1">
+      <damagebuff conflagratory="6" blasting="6" />
+      <resistbuff conflagratory="6" righteous="-10"/>
+      <targetHitEffectBuff percentage="10" name="Ignition Bolt"/>
+      <targetHitEffectBuff percentage="10" name="On Fire" />
+      <targetHitEffectBuff percentage="5" name="Gog's Tactical Pyre" />
+      </buff>
+   <description text="The Diggle Devil thanks you for your patronage and looks forward to collecting his payment... later." monsterText="smoulders with RAGE!"/>
+   <ai hint="buff"/>
+   </spell>
+
+  <digglegod name="Diggle Devil" description="Hell *is* other Diggles." art="dungeon/diggle_devil.png" spell="Diggle Devil Blessing"/>
+
+<!-- weapon effects -->
+
+<spell name="Amber Ring Hit" type="target" wand="0" >
+   <effect type="damage" affectsCaster="1" voltaic="5" blasting="2" affectsCorpses="0" />
+   <effect type="paralyze"  amount="3" affectsCaster="1" turns="1" self="0" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="60" sfx="elec" />
+   <impact sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" framerate="80"/>
+   <effect type="trigger" spell="Blast Effect A" />
+   </spell>
+
+<spell name="Daemonic Diggledagger Hit" type="target">
+   <effect type="trigger" spell="Fleshbore" percentage="100" affectsCorpses="0" />
+   <effect type="trigger" spell="Pact Lifesteal" percentage="100" affectsCorpses="0" />
+   <effect type="trigger" spell="On Fire" percentage="100" after="1" affectsCorpses="0" />
+   <effect type="trigger" spell="Eldritch Inhabitation" percentage="30" after="1" affectsCorpses="0" />
+   <effect type="trigger" spell="Soul Price" percentage="50" after="1" />
+   </spell>
+
+<spell name="Daemonic Diggle Fire" type="self" icon="skills/diggle_fire32.png" wand="0">
+   <anim sprite="sprites/sfx/pyre_loop/pyre_loop" frames="4" sfx="flame" framerate="100" centerEffect="1"/>
+   <buff useTimer="0" attacks="3" removable="0" stacksize="1" stackable="0" icon="skills/diggle_fire64.png" smallicon="skills/diggle_fire32.png">
+      <damagebuff conflagratory="3"/>
+      <resistbuff conflagratory="2" righteous="-2"/>
+      <targetHitEffectBuff percentage="100" name="Ignition Bolt"/>
+		<targetHitEffectBuff percentage="100" name="On Fire" />
+   </buff>
+   <description text="Suffer your enemies the fiery wrath of Diggle Hell! (It's a real place. Really.)" />
+	</spell>
+  
+  
+<!-- Electric Warrior Spells -->
+<!-- 
+<spell name="Raw Power" type="self" icon="skills/electric_warrior32.png" downtime="30">
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" removable="1" bad="0" icon="skills/stat_str64.png" smallicon="skills/stat_str32.png">
+		<secondaryBuff id="2" amount="4" />
+		<secondaryBuff id="10" amount="-4" />
+	</buff> 
+	<description text="Raw power is much too much." />
+</spell>
+
+<spell name="ALI Nip" type="target">
+	<effect type="damage" blasting="1" blastingF="0.25" secondaryScale="2" />
+</spell>
+
+<spell name="ALI Buzz" type="target">
+	<effect type="damage" blasting="2" blastingF="0.3" secondaryScale="2" />
+</spell>
+
+<spell name="ALI Krunk" type="target">
+	<effect type="damage" blasting="4" blastingF="0.35" secondaryScale="2" />
+</spell>
+
+<spell name="ALI Ballmer" type="target">
+	<effect type="damage" blasting="7" blastingF="0.4" secondaryScale="2" />
+</spell>
+
+<spell name="ALI Liquored" type="target">
+	<effect type="damage" blasting="12" blastingF="0.45" secondaryScale="2" />
+</spell>
+
+<spell name="ALI Blasted" type="target">
+	<effect type="damage" blasting="15" blastingF="0.5" secondaryScale="2" />
+</spell>
+
+<spell name="A Lad Insane" type="adjacent" icon="skills/electric_warrior32.png" downtime="20" attack="1">
+	<effect type="trigger" spell="ALI Nip" requirebuffontrigger="1" requirebuffontriggername="Nip of Courage" />
+	<effect type="trigger" spell="ALI Buzz" requirebuffontrigger="1" requirebuffontriggername="Buzzing with Magic" />
+	<effect type="trigger" spell="ALI Krunk" requirebuffontrigger="1" requirebuffontriggername="Wizard Krunk" />
+	<effect type="trigger" spell="ALI Ballmer" requirebuffontrigger="1" requirebuffontriggername="The Ballmer Peak" />
+	<effect type="trigger" spell="ALI Liquored" requirebuffontrigger="1" requirebuffontriggername="Magically Liquoured" />
+	<effect type="trigger" spell="ALI Blasted" requirebuffontrigger="1" requirebuffontriggername="Dangerously Mana-blasted" />
+</spell>
+
+<spell name="Cosmic Dance Hit" type="target">
+   <effect type="damage" aethereal="8" affectscaster="1" />	
+</spell>
+
+<spell name="Cosmic Dance" type="self" icon="skills/electric_warrior32.png" downtime="55">
+	<buff useTimer="0" stacksize="1" allowstacking="0" brittle="4" removable="1" bad="0" icon="skills/stunned64.png" smallicon="skills/stunned32.png">
+		<secondaryBuff id="6" amount="15" />
+		<playerHitEffectBuff percentage="50" name="Cosmic Dance Hit" />
+	</buff>
+	<description text="Is it wrong to understand/the fear that dwells inside a man?" />
+</spell>
+
+<spell name="Diamond Dogs Rule" type="target" >
+	<buff useTimer="1" time="15" stacksize="1" allowstacking="0" bad="1" self="0" icon="skills/electric_warrior64.png" smallicon="skills/electric_warrior32.png">
+		<secondaryBuff id="10" amount="-7" />
+	</buff>
+</spell>
+
+<spell name="Diamond Dogs" type="adjacent" icon="skills/electric_warrior32.png" downtime="60" attack="1">
+	<effect type="damage" slashing="15" slashingF="0.3" secondaryScale="2" unblockable="1"/>
+	<effect type="spell" name="Diamond Dogs Rule" />
+</spell>
+
+<spell name="Mama, Ooo" type="self" >
+	<buff useTimer="1" time="20" stacksize="1" allowstacking="0" bad="1" self="1" icon="skills/electric_warrior64.png" smallicon="skills/electric_warrior32.png">
+	</buff>
+	<description text="You are overcome with melodic grief. No amount of stacked harmonies or guitar solos can truly capture your feelings." />
+   </spell>
+
+<spell name="Battle Rhapsody" type="adjacent" icon="skills/electric_warrior32.png" attack="1">
+	<effect type="spell" name="Mama, Ooo" />
+   <description text="test" />
+   </spell>
+
+<spell name="Ashes to Ashes" type="self" icon="skills/electric_warrior32.png">
+   <description text="test" />
+   </spell>
+-->
+
+<spell name="Camera Sparkle" type="self" icon="skills/wizard/vampirism2_32.png" downtime="24" >
+   <effect type="trigger" spell="Camera Sparkly Area Hit" amount="0" />
+   <anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" framerate="60" centerEffect="0" sfx="magic_damage" />
+   <description text="The joys of photography can be yours!" />
+   </spell>
+
+<spell name="Camera Sparkly Area Hit" type="template" templateID="13" >
+   <effect type="drain" righteous="1" righteousF="0.10" />
+   <effect type="damage" righteous="1" righteousF="0.10" />
+   <effect type="paralyze"  amount="2" turns="6" />
+   <effect type="trigger" spell="Stolen Soul" taxa="Animal" percentage="2" amount="1"/>
+   <effect type="trigger" spell="Stolen Soul" taxa="Demon" percentage="2" amount="1"/>    
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="magic_open" />
+   </spell>
+
+   <!-- this might get nuts -->
+<spell name="Deadly Imagination" type="target" >
+   <effect type="damage" existentialF="0.25" primaryscale="1" />
+   <effect type="damage" existentialF="0.25" primaryscale="3" />
+   <effect type="damage" existentialF="0.25" primaryscale="5" />   
+   </spell>
+  
+</spellDB>

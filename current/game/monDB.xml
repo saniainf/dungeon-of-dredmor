@@ -1,0 +1,1735 @@
+<!-- 
+
+Orion Monster DB
+
+Do not edit unless you wish for spoilers!
+
+-->
+
+<!-- NOTE ON BRANCHES
+
+Branches... are now dead. We just start at level 0 and we go down to level 20. Bring on the gurneys.
+
+NEW BRANCH CODE:
+
+0,1,2 Dungeon
+1 3,4 Mines
+2 5,6,7 Crypts
+3 8,9 Wood
+4 10,11 Frozen
+5 12,13,14 Lava Pits
+6 15,16 Marble Baths
+7 17,18,19 Pandemonium
+EVIL BOSS FIGHT!
+
+-->
+
+
+  <!-- MONSTER LIST:
+  
+  Dungeon Level
+    Monsters
+    
+  0 Dungeon:
+      Blobby
+	  Diggle
+	  
+	  
+      Octo
+    
+  1 Crypts
+      Diggle
+      Zomby
+      Deth
+    
+  2 Pyramids
+      Djinn
+      Batty
+    
+  3 Baths
+      Thrusty
+      Pumpkinn
+      Eely
+    
+  4 Wood
+      Witchy
+      Swarmy
+    
+  5 Fungus
+      Mush
+      Carroty
+    
+  6 Frozen
+      Golem
+      Squiddy
+    
+  7 Mines
+      Fatty
+      Greeny
+    
+  8 Lavaaa
+      Fire
+      Red
+    
+  9 Pandemonium
+      Luck
+      Robo
+    
+
+ 
+-->
+  <!-- LUCKY MONSTERS -->
+
+<monDB>
+
+  <!-- BLOBBY MONSTERS -->
+
+<monster name="Blobby" level="0" tiny="1" splat="goo" taxa="Other">
+	<idleSprite left="sprites/monster/blobby/blobby_run_l.spr"
+	right="sprites/monster/blobby/blobby_run_r.spr"
+	up="sprites/monster/blobby/blobby_run_u.spr"
+	down="sprites/monster/blobby/blobby_run_d.spr"/>
+	<attackSprite left="sprites/monster/blobby/blobby_atk_l.spr"
+	right="sprites/monster/blobby/blobby_atk_r.spr"
+	up="sprites/monster/blobby/blobby_atk_u.spr"
+	down="sprites/monster/blobby/blobby_atk_d.spr"/>
+	<hitSprite left="sprites/monster/blobby/blobby_hit_l.spr"
+	right="sprites/monster/blobby/blobby_hit_r.spr"
+	up="sprites/monster/blobby/blobby_hit_u.spr"
+	down="sprites/monster/blobby/blobby_hit_d.spr"/>
+	<dieSprite name="sprites/monster/blobby/blobby_die.spr"/>
+
+	<!--<sfx attack="blobby_attack" hit="blobby_damage" die="blobby_die" spell="blobby_cast"/>-->
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+	
+	<ai aggressiveness="3" span="4" />
+	<sight cone="270" modifier="0.75" />
+	<onhit spell="Weak Acid Pool" onechancein="5" />
+	
+	<stats numFig="2" xpValue="5"/>
+	<damage crushing="1" acidic="2"/>
+	<secondarybuff id="4" amount="-5"/> <!-- crit -->
+	<secondarybuff id="6" amount="9"/> <!-- dodge -->
+	<resistances acidic="3" piercing="2" />
+	
+	<info latin="(Gloppus Gloppus Generis)" text="It's a blob of animated slime,&#xa;possibly from an adventurer's armpit."/>
+	
+<monster name="Electroblobby" level="1">
+	<palette tint="-50"/>
+	<resistances voltaic="4" piercing="2" />
+	<stats numFig="2" numRog="1" xpValue="10"/>
+	<damage crushing="1" voltaic="2" acidic="0"/>
+	<secondarybuff id="4" amount="-5"/> <!-- crit -->
+	<info latin="(Gloppus Gloppus Electrolysissus)" text="If you thought this was just a regular blob of animated slime then you're in for a shock."/>
+	<spell name="Weak Electrobolt"/>
+   <ai aggressiveness="3" span="4" spellPercentage="5"/>
+   </monster>
+
+<monster name="Kleptoblobby" level="4">
+	<palette tint="-75"/>
+	<resistances acidic="4" piercing="2" />
+	<stats numFig="1" numRog="6" steal="1" xpValue="40"/>
+	<damage crushing="1" voltaic="2" acidic="0"/>
+	<ai stealPercentage="20"/>
+	<secondarybuff id="4" amount="-5"/> <!-- crit -->
+	<secondarybuff id="6" amount="25"/> <!-- dodge -->
+	<info latin="(Gloppus Gloppus Packrattus)" text="The kleptoblobby likes to get ahold of everything it can get its hands(?) on."/>
+	</monster>    
+	
+<monster name="Toxiblobby" level="1">
+	<palette tint="-155"/>
+	<resistances toxic="4" piercing="2" />
+	<stats numFig="2" numRog="1" xpValue="10"/>
+	<damage crushing="1" toxic="3" acidic="0"/>
+	<info latin="(Gloppus Gloppus Toxicausticus)" text="It's a particularly revolting blob of animated slime."/>
+	<onhit spell="Small Weak Poison Cloud" onechancein="5" />
+	</monster>
+	
+<monster name="Sanguiblobby" level="2">
+	<palette tint="120"/>
+	<resistances piercing="2" blasting="1" acidic="0"/>
+	<stats numFig="2" numRog="2" xpValue="14"/>
+	<damage crushing="2"/>
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<info latin="(Gloppus Gloppus Sanguinous)" text="It's a very tough blob of animated slime, the sort of which collects around the drainpipes of gym showers."/>    
+	<!-- <spell name="Meatshield"/>
+   <ai aggressiveness="3" span="4" spellPercentage="4"/> -->
+   </monster>
+	
+<monster name="Thermoblobby" level="3">
+	<onhit spell="Pyrokinesis" onechancein="3"/>
+	<palette tint="150"/>
+	<resistances conflagratory="4" piercing="2" hyperborean="-2"/>
+	<stats numFig="3" numRog="3" xpValue="26"/>
+	<damage crushing="2" conflagratory="4" acidic="0"/>
+	<info latin="(Gloppus Gloppus Conflagrattus)" text="It's a very hot blob of animated slime."/>
+   <spell name="Weak Firebolt"/>
+   <ai aggressiveness="3" span="4" spellPercentage="5"/>
+	</monster>
+
+  <monster name="Blob of Corruption" level="9">
+    <palette tint="165"/>
+    <stats numFig="10" numRog="10" xpValue="130"/>
+    <damage crushing="10" putrefying="10"/>
+	 <resistances piercing="2" />
+    <onhit spell="Corrupt Equipment" onechancein="3"/>
+    <info latin="(Gloppus Gloppus Corruptus)" text="It's a blob of death and despair, in slime form. It has a corrupting effect on any weapons and armour it touches."/>
+  </monster>
+
+  <!-- Add lots of silly oil-based powers. also getting-set-on-fire-based powers -->
+<monster name="Animated Oil" displayName="Petrolblobby" level="5" special="1">
+	<palette tint="165"/>
+	<stats numFig="4" numRog="2" xpValue="30"/>
+	<damage crushing="2" toxic="2"/>
+	<info latin="(Gloppus Gloppus Petroleus)" text="It's an oily blob of animated slime."/>
+	</monster>
+	
+	<!-- Give it special bloob-based powers. -->
+<monster name="Animate Blood" displayName="Your Sanguiblobby" special="1">
+	<onhit spell="Fleshbore" onechancein="15"/>
+	<palette tint="-140"/>
+	<resistances crushing="3" blasting="1"/>
+	<stats numFig="7" numRog="4" xpValue="25"/>
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<info latin="(Gloppus Gloppus Sanguinous)" text="It's a very tough blob of animated slime, the sort of which collects around the drainpipes of gym showers."/>
+	</monster>	
+
+	<!-- Give it special bloob-based powers. -->
+<monster name="Summon Slime" displayName="Summoned Slime" special="1">
+	<palette tint="-160"/>
+	<onhit spell="Mini Toxic Spore Cloud" onechancein="4"/>
+	<resistances toxic="4" crushing="1"/>
+	<stats numFig="5" numRog="3" xpValue="0"/>
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<info latin="(fungus ichoolungus)" text="Your very own slime. Sometimes drops clouds of toxic spores."/>
+	</monster>
+	
+  </monster>
+
+  <!-- DIGGLE MONSTERS-->
+
+<monster name="Diggle" level="0" tiny="1" splat="blood" taxa="Animal" diggleHell="1">
+  <idleSprite left="sprites/monster/diggle/diggle_run_l.spr"
+	right="sprites/monster/diggle/diggle_run_r.spr"
+	up="sprites/monster/diggle/diggle_run_u.spr"
+	down="sprites/monster/diggle/diggle_run_d.spr"/>
+  <attackSprite left="sprites/monster/diggle/diggle_atk_l.spr"
+	right="sprites/monster/diggle/diggle_atk_r.spr"
+	up="sprites/monster/diggle/diggle_atk_u.spr"
+	down="sprites/monster/diggle/diggle_atk_d.spr"/>
+  <hitSprite left="sprites/monster/diggle/diggle_hit_l.spr"
+	right="sprites/monster/diggle/diggle_hit_r.spr"
+	up="sprites/monster/diggle/diggle_hit_u.spr"
+	down="sprites/monster/diggle/diggle_hit_d.spr"/>
+  <morphsprites
+    eatSprite="sprites/monster/diggle/diggle_eat.xml"
+    drinkSprite="sprites/monster/diggle/diggle_drink.xml"
+    levelupmSprite ="sprites/monster/diggle/diggle_levelup_male.xml"
+    levelupfSprite ="sprites/monster/diggle/diggle_levelup_female.xml"
+    vanishSprite="sprites/monster/diggle/diggle_vanish.xml"
+    longidleSprite="sprites/monster/diggle/diggle_long_idle.xml"/>
+  <digSprites downSprite = "sprites/monster/diggle/diggle_dig.xml"
+	upSprite = "sprites/monster/diggle/diggle_pop.xml" />
+
+  <dieSprite name="sprites/monster/diggle/diggle_die_r.spr"/>
+
+  <sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast" dig_in="diggle_digs_in" dig_out="diggle_digs_out" />
+
+  <ai aggressiveness="4" span="10" />
+  <sight cone="90" modifier="1.10" />
+
+  <stats numFig="3" xpValue="10" />
+  <damage slashing="1" piercing="2"/>
+  <secondarybuff id="4" amount="-10"/>
+  <!-- crit -->
+  <secondarybuff id="6" amount="4"/>
+  <!-- dodge -->
+  <secondarybuff id="0" amount="-2"/>
+  <!-- hp -->
+  <info latin="(Poingus Poingus)" text="A strange little bird-thing that tunnels through walls with its odd, rubbery nasal appliance."/>
+  
+  <dig mindistance="3" percent="5" ambushpercent="5" blockedpercent="100" minturns="3" maxTurns="6" />
+
+  <monster name="Sickly Diggle" level="0" diggleHell="1">
+	<palette tint="40"/>
+	<onhit spell="Diggle Flu" onechancein="5"/>
+	<resistances toxic="2"/>
+	<damage slashing="1" piercing="1" toxic="2"/>
+	<stats numFig="2" numRog="1" xpValue="7"/>
+	<secondarybuff id="0" amount="-4"/> <!-- hp -->
+	<secondarybuff id="4" amount="-5"/> <!-- crit -->
+	<secondarybuff id="6" amount="4"/> <!-- dodge -->
+	<info latin="(Poingus Poingus)" text="A strange little bird-thing that tunnels through walls with its odd, rubbery nasal appliance. This one looks like it has some kind of disease."/>
+	</monster>
+
+<monster name="Enraged Diggle" level="1" diggleHell="1">
+  <palette tint="-40"/>
+  <damage slashing="3" piercing="2" />
+  <stats numFig="5" xpValue="16"/>
+  <secondarybuff id="10" amount="1"/>
+  <!-- armour -->
+  <info latin="(Poingus Poingus)" text="A strange little bird-thing that tunnels through walls with its odd, rubbery nasal appliance. This one looks really mad."/>
+  <ai aggressiveness="5" span="24" spellPercentage="3"/>
+  <spell name="Monstrous Rage"/>
+</monster>
+
+<monster name="Arch Diggle" level="9" diggleHell="1">
+    <palette tint="-111"/>
+    <damage slashing="12" piercing="16" />
+    <stats numFig="15" numRog="15" xpValue="150"/>
+  <dig mindistance="3" percent="20" ambushpercent="20" blockedpercent="100" minturns="3" maxTurns="6" />
+  <secondarybuff id="10" amount="8"/>
+  <!-- armour -->
+  <info latin="(Poingus Poingus)" text="The secret leaders of Diggle society. (Such as it is.)"/>
+</monster>
+
+<monster name="Diggle Commando" level="4" diggleHell="1">
+  <palette tint="-180"/>
+  <damage slashing="1" piercing="6"/>
+  <stats numFig="5" numRog="6" xpValue="53"/>
+  <secondarybuff id="10" amount="5"/>
+  <!-- armour -->
+  <dig mindistance="3" percent="40" ambushpercent="40" blockedpercent="100" minturns="3" maxTurns="6" />
+  <info latin="(Poingus Poingus)" text="The fearsome Diggle Commando sneaks through the dungeons, being all it can be."/>
+  <ai aggressiveness="5" span="24" spellPercentage="5" invisible="1"/>
+</monster>
+
+<monster name="Hungry Diggle" level="7" diggleHell="1">
+  <palette tint="-200"/>
+  <damage slashing="2" piercing="10"/>
+  <stats numFig="9" numRog="6" xpValue="75"/>
+  <dig mindistance="3" percent="20" ambushpercent="20" blockedpercent="100" minturns="3" maxTurns="6" />
+
+  <secondarybuff id="10" amount="6"/>
+  <!-- armour -->
+  <onhit spell="Consume Food" onechancein="5"/>
+  <info latin="(Poingus Poingus)" text="It's so hungry. So very, VERY hungry."/>
+  <ai aggressiveness="55" span="24"/>
+</monster>
+
+<monster name="Thirsty Diggle" level="11" diggleHell="1">
+  <palette tint="-140"/>
+  <damage slashing="10" piercing="22"/>
+  <stats numFig="16" numRog="16" xpValue="100"/>
+  <secondarybuff id="10" amount="7"/>
+  <dig mindistance="3" percent="20" ambushpercent="20" blockedpercent="100" minturns="3" maxTurns="6" />
+    <!-- armour -->
+    <onhit spell="Consume Booze" onechancein="5"/>
+    <info latin="(Poingus Poingus)" text="It hatesh you sho much... *hic*"/>
+    <ai aggressiveness="75" span="24"/>
+  </monster>
+
+  <monster name="Trained Hunting Diggle" level="4" special="1">
+    <palette tint="-15"/>
+    <damage slashing="3" piercing="3" />
+    <stats numFig="7" xpValue="0"/>
+    <secondarybuff id="10" amount="6"/>
+    <!-- armour -->
+    <secondarybuff id="6" amount="22"/>
+    <!-- dodge -->
+    <secondarybuff id="7" amount="18"/>
+    <!-- block -->
+    <secondarybuff id="8" amount="10"/>
+    <!-- counter -->
+    <info latin="(Poingus Poingus)" text="A strange little bird-thing that tunnels through walls with its odd, rubbery nasal appliance. This one has been trained to hunt with absolute loyalty. Well, some loyalty. Mostly."/>
+  </monster>
+
+  <monster name="Impish Diggle" level="20" diggleHell="1" special="1">
+    <palette tint="-45"/>
+    <damage conflagratory="10" slashing="3" piercing="2" />
+    <stats numFig="6" numRog="12" xpValue="1"/>
+    <secondarybuff id="10" amount="3"/>
+    <!-- armour -->
+    <secondarybuff id="6" amount="40"/>
+    <!-- dodge -->
+    <dig mindistance="3" percent="20" ambushpercent="20" blockedpercent="100" minturns="3" maxTurns="6" />
+		<resistances conflagratory="20" necromantic="10" righteous="-5" /> 
+		<info latin="(Poingus Poingus)" text="An infernal little diggle, burning with infernal little diggle rage."/>
+		<ai aggressiveness="5" span="24" spellPercentage="5"/>
+			<spell name="Monstrous Rage"/>
+			<spell name="Firebolt"/>
+		</monster>
+
+  <!-- Vlad needs a diggleHell tag so that he doesn't inherit it and show up randomly in Diggle Hell. -->
+  
+
+  <!-- ... so does Siegfried. -->
+    
+  <monster name="Siegfried" level="0" horde="0" maxSpawns="1" diggleHell="0"  named="1">
+    <palette tint="-5"/>
+    <stats numFig="3" xpValue="10" />
+    <damage slashing="1" piercing="2"/>
+    <secondarybuff id="4" amount="-10"/>
+    <!-- crit -->
+    <secondarybuff id="6" amount="4"/>
+    <!-- dodge -->
+    <secondarybuff id="0" amount="20"/>
+    <!-- hp -->
+    <info latin="(Poingus Poingus)" text="Trapped in Diggle form, he wanders the Dungeons looking for revenge."/>
+    <ai aggressiveness="4" span="10" />
+    <sight cone="90" modifier="1.1" />
+
+  </monster> <!-- siegfried -->
+
+</monster>  <!-- diggle -->
+
+  <!-- OCTO MONSTERS MONSTERS-->
+
+<monster name="Octo" level="2"  tiny="1" splat="ichor" taxa="Animal">
+  <idleSprite left="sprites/monster/octo/Octo_Walk_Left.spr"
+	right="sprites/monster/octo/Octo_Walk_Right.spr"
+	up="sprites/monster/octo/Octo_Walk_Up.spr"
+	down="sprites/monster/octo/Octo_Walk_Down.spr"/>
+  <attackSprite left="sprites/monster/octo/Octo_Atk_left.spr"
+	right="sprites/monster/octo/Octo_Atk_right.spr"
+	up="sprites/monster/octo/Octo_Atk_up.spr"
+	down="sprites/monster/octo/Octo_Atk_down.spr"/>
+  <hitSprite left="sprites/monster/octo/Octo_Hit_left.spr"
+	right="sprites/monster/octo/Octo_Hit_right.spr"
+	up="sprites/monster/octo/Octo_Hit_up.spr"
+	down="sprites/monster/octo/Octo_Hit_down.spr"/>
+
+  <castSpellSprite name="sprites/monster/octo/Octo_cast.spr"/>
+  <dieSprite name="sprites/monster/octo/Octo_Die.spr"/>
+  <sfx attack="slick_attack"
+		 hit="slick_damage"
+		 die="slick_die"
+		 spell="slick_cast"/>
+
+  <ai aggressiveness="5" span="24" chicken="1" spellPercentage="13"/>
+  <sight cone="90" modifier="1.75" />
+	
+  <stats numFig="2" numWiz="7" xpValue="30"/>
+  <damage crushing="2" transmutative="3"/>
+  <secondarybuff id="6" amount="1"/>
+  <!-- dodge -->
+  <resistances crushing="1" transmutative="3" />
+  <spell name="Aethereal Missile"/>
+  <!-- <spell name="Froda's Jump Discontinuity" /> -->
+  <info latin="(calamaris generis)" text="Spell-casting cephalopods with a&#xa;taste for human brains. Make&#xa;calamari out of them."/>
+
+  <monster name="Molluscus" level="4" maxSpawns="1" horde="0" named="1">
+	  <stats numFig="4" numWiz="9" xpValue="60"/>
+	  <damage crushing="4" transmutative="4"/>
+	  
+	  <secondarybuff id="3" amount="3"/> <!-- magic power -->
+	  <secondarybuff id="5" amount="2"/> <!-- haywire -->
+	  
+	  <drop name="Tentacular Wand" percent="35" />  
+	  <drop name="Arcane Wand" percent="25" />  
+	  <drop name="Fiery Wand" percent="25" />  
+	  <drop type="artifact" percent="15" />  
+	  
+	  <resistances crushing="3" transmutative="6" />
+	  <spell name="Aethereal Missile"/>
+	  <spell name="Firebolt"/>	  
+	  <spell name="Beklam's Diminuating Calculus"/>
+	  <!-- <spell name="Froda's Jump Discontinuity" /> -->
+	  <info latin="(calamaris generis)" text="A wizard who sought too greedily for magical power. Transformed into a cephalopod, he vainly seeks a cure for his curse."/>
+	
+  </monster>
+
+</monster>
+
+<!-- Zomby Monsters 5,6,8,9-->
+
+<monster name="Zomby" level="1" splat="ichor" taxa="Undead">
+	<idleSprite left="sprites/monster/zomby/zomby_run_l.spr"
+	right="sprites/monster/zomby/zomby_run_r.spr"
+	up="sprites/monster/zomby/zomby_run_u.spr"
+	down="sprites/monster/zomby/zomby_run_d.spr"/>
+	<attackSprite left="sprites/monster/zomby/zomby_atk_l.spr"
+	right="sprites/monster/zomby/zomby_atk_r.spr"
+	up="sprites/monster/zomby/zomby_atk_u.spr"
+	down="sprites/monster/zomby/zomby_atk_d.spr"/>
+	
+	<hitSprite left="sprites/monster/zomby/zomby_run_l.spr"
+	right="sprites/monster/zomby/zomby_run_r.spr"
+	up="sprites/monster/zomby/zomby_run_u.spr"
+	down="sprites/monster/zomby/zomby_run_d.spr"/>
+	
+	<dieSprite name="sprites/monster/zomby/zomby_die_r.spr"/>
+	<sfx attack="undead_attack"
+		  hit="undead_damage"
+		  die="undead_die"
+		  spell="undead_cast"/>
+	
+	<stats numFig="6" xpValue="20" zomby="1"/>
+	<damage crushing="1" putrefying="2"/>
+	<resistances toxic="10" asphyxiative="10" existential="10" righteous="-2" conflagratory="-2" />
+   <secondarybuff id="6" amount="-10"/> <!-- dodge -->
+   <secondarybuff id="10" amount="1"/> <!-- armour -->
+	
+	<info latin="(corpus derilicti)" text="The remains of one of your predecessors, restored to life by the evil magic of Lord Dredmor and sent out to kill more adventurers."/>
+	
+	<ai aggressiveness="2" span="10"/>
+	<sight cone="360" modifier="0.66" />
+	
+	</monster>
+
+  <!-- DETH MONSTERS level 6, 10-->
+
+<monster name="Deth" level="1" splat="ichor"  taxa="Undead">
+	<idleSprite left="sprites/monster/deth/deth_run_l.spr"
+		right="sprites/monster/deth/deth_run_r.spr"
+		up="sprites/monster/deth/deth_run_u.spr"
+		down="sprites/monster/deth/deth_run_d.spr"/>
+	<attackSprite left="sprites/monster/deth/deth_atk_l.spr"
+		right="sprites/monster/deth/deth_atk_r.spr"
+		up="sprites/monster/deth/deth_atk_u.spr"
+		down="sprites/monster/deth/deth_atk_d.spr"/>
+	<hitSprite left="sprites/monster/deth/deth_hit_l.spr"
+		right="sprites/monster/deth/deth_hit_r.spr"
+		up="sprites/monster/deth/deth_hit_u.spr"
+		down="sprites/monster/deth/deth_hit_d.spr"/>
+	
+	<dieSprite name="sprites/monster/deth/deth_die_d.spr"/>
+	
+	<castSpellSprite name="sprites/monster/deth/deth_spl_d.spr"/>
+  <!--
+	<spell name="Darkened Vision"/>
+	<spell name="Mini Curse Missile"/>
+   -->
+  
+	<sfx attack="undead_attack"
+		  hit="undead_damage"
+		  die="undead_die"
+		  spell="undead_cast"/>
+	
+	<stats numRog="2" numWiz="6" xpValue="32"/>
+	<damage slashing="2" necromantic="2"/>
+	<resistances righteous="-3" toxic="10" piercing="3" asphyxiative="10" hyperborean="5"/>
+	<info latin="(reapus creepus)" text="A terrifying phantasmal reaper with a menacing scythe."/>
+	
+	<ai aggressiveness="4" span="20" spellPercentage="0"/>
+	<sight cone="270" modifier="1.35" />
+	<!-- add Megadeth -->
+
+  <monster name="Megadeth" level="10" splat="ichor" taxa="Undead">    
+    <stats numFig="9" numWiz="9" xpValue="90"/>
+    <damage slashing="5" necromantic="5"/>
+    <resistances righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="10" hyperborean="5"/>
+    <info latin="(reapus creepus)" text="A terrifying phantasmal reaper with a menacing scythe and a couple of missing umlauts."/>
+    <ai aggressiveness="4" span="20" spellPercentage="15"/>
+    <spell name="Lingering Weakness Missile"/>
+    <spell name="Lingering Dullness Missile"/>
+    <palette name="sprites/monster/deth/grim_deth.pal"/>
+  </monster>
+
+  <monster name="Red Deth" level="12" splat="ichor" taxa="Undead">
+    <stats numFig="11" numWiz="10" xpValue="110"/>
+    <damage slashing="8" necromantic="15"/>
+    <resistances righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="10" hyperborean="5"/>
+    <info latin="(reapus creepus)" text="All shall know the darkness of the tomb!"/>
+    <ai aggressiveness="20" span="60" spellPercentage="25"/>
+    <spell name="Supreme Lingering Weakness Missile"/>
+    <spell name="Supreme Lingering Dullness Missile"/>
+    <spell name="Eye Laser Blast"/>   
+    <palette name="sprites/monster/deth/red_deth.pal"/>
+  </monster>
+
+</monster>
+
+  <!-- DJINN MONSTERS -->
+
+<monster name="Djinn" level="2" terrain="2" splat="ichor" taxa="Demon" >
+	<idleSprite left="sprites/monster/djinn/Djinn_Walk_Left.spr"
+		right="sprites/monster/djinn/Djinn_Walk_Right.spr"
+		up="sprites/monster/djinn/Djinn_Walk_Up.spr"
+		down="sprites/monster/djinn/Djinn_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/djinn/Djinn_Attack_left.spr"
+		right="sprites/monster/djinn/Djinn_Attack_right.spr"
+		up="sprites/monster/djinn/Djinn_Attack_up.spr"
+		down="sprites/monster/djinn/Djinn_Attack_down.spr"/>
+	<hitSprite left="sprites/monster/djinn/Djinn_Hit_left.spr"
+		right="sprites/monster/djinn/Djinn_Hit_right.spr"
+		up="sprites/monster/djinn/Djinn_Hit_up.spr"
+		down="sprites/monster/djinn/Djinn_Hit_down.spr"/>
+	
+	<dieSprite name="sprites/monster/djinn/Djinn_Die.spr"/>
+	<castSpellSprite name="sprites/monster/djinn/Djinn_Cast.spr"/>
+	
+	<stats numRog="2" numFig="6" xpValue="24"/>
+	<damage crushing="2" transmutative="1"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<resistances aethereal="2" />
+	
+	<info latin="(genicus inabottleus)" text="The Djinns like to inhabit small, attractive glass vessels, like gin bottles, because they think it's slimming."/>
+	
+	<sfx attack="humanoid_attack"
+		  hit="humanoid_hit"
+		  die="humanoid_die"
+		  spell="humanoid_spell"/>
+	
+	<spell name="Aethereal Missile"/>
+	<ai aggressiveness="4" span="16" spellPercentage="4"/>
+	<sight cone="90" modifier="1.35" />
+	
+	<monster name="Djinn Fizz" level="9">
+		<palette tint="120"/>
+		<damage slashing="1" piercing="6" blasting="10"/>
+		
+		<stats numFig="8" numWiz="10" xpValue="135"/>
+		
+		<secondarybuff id="10" amount="5"/>	<!-- armour -->
+		<secondarybuff id="0" amount="5"/>    <!-- hp -->    
+		<info text="The Djinn Fizz likes to blow things up. It's not a complicated thinker."/>
+		
+		<ai aggressiveness="7" span="24" spellPercentage="32"/>
+		<spell name="Monstrous Nerve Staple"/>
+		<spell name="Icebolt"/>
+		<spell name="Electrobolt"/>
+		<spell name="Gargoyle Acid Bolt"/>
+		</monster>
+</monster>
+
+<!-- TODO: cut this? -->
+<monster name="s1Djinn" displayName="Djinn" level="12"  special="1">
+	<idleSprite left="sprites/monster/djinn/Djinn_Walk_Left.spr"
+	right="sprites/monster/djinn/Djinn_Walk_Right.spr"
+	up="sprites/monster/djinn/Djinn_Walk_Up.spr"
+	down="sprites/monster/djinn/Djinn_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/djinn/Djinn_Attack_left.spr"
+	right="sprites/monster/djinn/Djinn_Attack_right.spr"
+	up="sprites/monster/djinn/Djinn_Attack_up.spr"
+	down="sprites/monster/djinn/Djinn_Attack_down.spr"/>
+	<hitSprite left="sprites/monster/djinn/Djinn_Hit_left.spr"
+	right="sprites/monster/djinn/Djinn_Hit_right.spr"
+	up="sprites/monster/djinn/Djinn_Hit_up.spr"
+	down="sprites/monster/djinn/Djinn_Hit_down.spr"/>
+	
+	<dieSprite name="sprites/monster/djinn/Djinn_Die.spr"/>
+	
+	<stats numRog="6" numFig="2" xpValue="20"/>
+	<damage crushing="4" transmutative="1"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	
+	<info latin="(genicus inabottleus)" text="The Djinn likes to inhabit small, attractive glass vessels, like gin bottles, because they think it's slimming."/>
+	<sfx attack="humanoid_attack" hit="humanoid_hit" die="humanoid_die" spell="humanoid_spell"/>
+	
+	</monster>
+	<!-- fixme: there should only be one spell djinn now, but this needs to be rebalanced.-->
+  
+  <!-- BATTY MONSTERS 0,1,3,4-->
+
+<monster name="Batty" level="1" tiny="1" terrain="2" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/batty/batty_run_l.spr"
+		right="sprites/monster/batty/batty_run_r.spr"
+		up="sprites/monster/batty/batty_run_u.spr"
+		down="sprites/monster/batty/batty_run_d.spr"/>
+	<attackSprite left="sprites/monster/batty/batty_atk_l.spr"
+		right="sprites/monster/batty/batty_atk_r.spr"
+		up="sprites/monster/batty/batty_atk_u.spr"
+		down="sprites/monster/batty/batty_atk_d.spr"/>
+	<hitSprite left="sprites/monster/batty/batty_hit_l.spr"
+		right="sprites/monster/batty/batty_hit_r.spr"
+		up="sprites/monster/batty/batty_hit_u.spr"
+		down="sprites/monster/batty/batty_hit_d.spr"/>
+	
+	<castSpellSprite name="sprites/monster/batty/batty_hit_d.spr"/>
+	<dieSprite name="sprites/monster/batty/batty_die_r.spr"/>
+	
+	<ai aggressiveness="2" span="12"/>
+	<sight cone="270" modifier="1.1" />
+	
+	<sfx attack="batty_attack"
+		  hit="batty_damage"
+		  die="batty_die"
+		  spell="batty_cast" />
+	
+	<stats numRog="6" xpValue="16"/>
+	<secondarybuff id="6" amount="15"/> <!-- dodge -->
+	<secondarybuff id="0" amount="-4"/> <!-- life -->
+	<info latin="(flittus flappus)" text="It's a bat! It flaps! It has teeth."/>
+	<damage slashing="1" piercing="3"/>
+	<resistances crushing="-1" slashing="-1" blasting="-1" />
+
+<monster name="Lil Batty" level="0" splat="blood" terrain="2">
+  <stats numRog="3" xpValue="7"/>
+  <palette tint="90"/>
+  <damage slashing="2" piercing="1"/>
+  <info latin="(flittus flappus)" text="It's a bat! It flaps! It has teeth."/>
+  <resistances crushing="-1" slashing="-1" blasting="-1" />
+</monster>
+
+<monster name="Blink Batty" level="5" splat="blood" terrain="2">
+	<stats numRog="8" xpValue="48"/>
+	<palette tint="-90"/>
+	<damage slashing="2" piercing="2"/>
+   <secondarybuff id="6" amount="25"/> <!-- dodge -->
+	<info latin="(flittus flappus)" text="It's a bat! It flaps! It has teeth. This one randomly teleports when the mood takes it."/>
+	<spell name="Monster Blink"/>
+	<ai aggressiveness="4" span="20" spellPercentage="5"/>
+	<onhit spell="Monster Blink" onechancein="1"/>
+	</monster>
+
+<!-- Roy Batty? -->
+
+</monster>
+
+  <!-- THRUSTY Monsters 2,14,16,19-->
+
+<monster name="Thrusty" level="3" tiny="1" splat="goo" taxa="Demon" >
+	<idleSprite left="sprites/monster/thrusty/thrusty_run_l.spr"
+		right="sprites/monster/thrusty/thrusty_run_r.spr"
+		up="sprites/monster/thrusty/thrusty_run_u.spr"
+		down="sprites/monster/thrusty/thrusty_run_d.spr"/>
+	<attackSprite left="sprites/monster/thrusty/thrusty_atk_l.xml"
+		right="sprites/monster/thrusty/thrusty_atk_r.xml"
+		up="sprites/monster/thrusty/thrusty_atk_u.xml"
+		down="sprites/monster/thrusty/thrusty_atk_d.xml"/>
+	<hitSprite left="sprites/monster/thrusty/thrusty_hit_l.spr"
+		right="sprites/monster/thrusty/thrusty_hit_r.spr"
+		up="sprites/monster/thrusty/thrusty_hit_u.spr"
+		down="sprites/monster/thrusty/thrusty_hit_d.spr"/>
+	<dieSprite name="sprites/monster/thrusty/thrusty_die.spr"/>
+	
+	<sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell" />
+	
+	<ai aggressiveness="3" span="14"/>
+	<sight cone="90" modifier="1.1" />
+	
+	<stats numFig="5" numRog="6" xpValue="30" />
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+   <secondarybuff id="7" amount="5"/> <!-- block -->
+	<damage crushing="4"/>
+	
+	<info latin="(thrustus humpus)" text="These are Thrusties. They love to thrust; in thrust they trust, and thrust they must."/>
+
+  <monster name="Creep-Creep" level="12">
+    <ai aggressiveness="10" span="20"/>
+    <secondarybuff id="10" amount="8"/>
+    <!-- armour -->
+    <secondarybuff id="8" amount="10"/>
+    <!-- counter -->
+    <secondarybuff id="6" amount="35"/>
+    <!-- dodge -->
+    <stats numFig="2" numRog="12" xpValue="150"/>
+    <damage crushing="4" existential="10"/>
+    <resistances existential="10" voltaic="10"/>
+    <palette tint="180"/>
+    <info text="The Creep-Creep wanders through the Dungeon, not taking a hint."/>
+    <onhit spell="Nightmare" onechancein="2"/>
+
+  </monster>
+	
+</monster>
+
+  <!-- PUMPKINN MONSTERS MONSTERS 7,16-->
+
+<monster name="Pumpkinn" level="3" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/pumpkinn/DemPum_Walk_Left.spr"
+		right="sprites/monster/pumpkinn/DemPum_Walk_Right.spr"
+		up="sprites/monster/pumpkinn/DemPum_Walk_Up.spr"
+		down="sprites/monster/pumpkinn/DemPum_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/pumpkinn/DemPum_Atk_left.spr"
+		right="sprites/monster/pumpkinn/DemPum_Atk_right.spr"
+		up="sprites/monster/pumpkinn/DemPum_Atk_up.spr"
+		down="sprites/monster/pumpkinn/DemPum_Atk_down.spr"/>
+	<hitSprite left="sprites/monster/pumpkinn/DemPum_Hit_left.spr"
+		right="sprites/monster/pumpkinn/DemPum_Hit_right.spr"
+		up="sprites/monster/pumpkinn/DemPum_Hit_up.spr"
+		down="sprites/monster/pumpkinn/DemPum_Hit_down.spr"/>
+	<dieSprite name="sprites/monster/pumpkinn/DemPum_Die.spr"/>
+	<castSpellSprite name="sprites/monster/pumpkinn/DemPum_Cast.spr"/>
+	
+	<ai aggressiveness="4" span="15" chicken="1" spellPercentage="5"/>
+	<sight cone="270" modifier="1.35" />
+	
+  <stats numFig="4" numWiz="6" numRog="6" xpValue="40"/>
+
+  <secondarybuff id="7" amount="5"/><!-- block -->
+  <secondarybuff id="10" amount="2"/><!-- armour -->
+  <damage slashing="8"/>
+  <spell name="Weak Poison Cloud"/>
+
+  <sfx attack="humanoid_attack"
+		 hit="humanoid_hit"
+		 die="humanoid_die"
+		 spell="humanoid_spell"/>
+
+  <info latin="(jacko lantus)" text="A misanthropic jack-o-lantern&#xa;on a scarecrow's body."/>
+  
+  <monster name="The Great Pumpkinn" level="3" named="1" horde="0" maxSpawns="1" >
+		<ai aggressiveness="4" span="20" invisible="1" chicken="1" spellPercentage="15"/>
+    <stats numFig="6" numWiz="7" numRog="7" xpValue="250"/>
+    <secondarybuff id="7" amount="15"/>
+    <!-- block -->
+    <secondarybuff id="10" amount="5"/>
+    <!-- armour -->
+    <damage slashing="8"/>
+    <spell name="Poison Cloud 1"/>
+    <spell name="Corpse Reviver"/>
+    <resistances toxic="5" asphyxiative="5" existential="-10" />
+    <info latin="(jacko lantus)" text="Do not question its existence! All shall tremble and fall!"/>
+  </monster>
+
+  <!-- TODO: add level 13 version -->
+  <monster name="Rotten Pumpkinn" level="12" horde="1" maxSpawns="10" >
+    <ai aggressiveness="4" span="20" invisible="0" chicken="1" spellPercentage="15"/>
+		<stats numFig="6" numWiz="8" numRog="8" xpValue="130"/>
+		<secondarybuff id="7" amount="15"/><!-- block -->
+		<secondarybuff id="10" amount="5"/><!-- armour -->
+		<damage slashing="8"/>
+		<spell name="Poison Cloud 1"/>
+		<spell name="Strong Brimstone Cloud" />
+		<resistances toxic="5" putrefying="10" asphyxiative="5" />
+		<info latin="(jacko lantus)" text="Something has gone terribly wrong deep inside this vegetative horror."/>
+		</monster>
+  
+
+  
+	</monster>
+
+<!-- EELY MONSTERS 0,1,2,13,14-->
+
+<monster name="Eely" level="3" splat="blood" terrain="1" taxa="Animal">
+
+  <idleSprite left="sprites/monster/eely/eely_run_l.spr"
+        right="sprites/monster/eely/eely_run_r.spr"
+        up="sprites/monster/eely/eely_run_u.spr"
+        down="sprites/monster/eely/eely_run_d.spr"/>
+  <attackSprite left="sprites/monster/eely/eely_atk_l.spr"
+    right="sprites/monster/eely/eely_atk_r.spr"
+    up="sprites/monster/eely/eely_atk_u.spr"
+    down="sprites/monster/eely/eely_atk_d.spr"/>
+  <hitSprite left="sprites/monster/eely/eely_hit_l.spr"
+       right="sprites/monster/eely/eely_hit_r.spr"
+       up="sprites/monster/eely/eely_hit_u.spr"
+       down="sprites/monster/eely/eely_hit_d.spr"/>
+
+  <dieSprite name="sprites/monster/eely/eely_die_l.spr"/>
+  <castSpellSprite name="sprites/monster/eely/eely_atk_d.spr"/>
+
+  <sfx attack="large_attack"
+		 hit="large_damage"
+		 die="large_die"
+		 spell="large_cast"/>
+
+  <info latin="(anguilla anguillia)" text="A vicious, man-eating creature from the deep. How it wound up in the Dungeon is anyone's guess."/>
+  <stats numFig="5" numWiz="5" xpValue="40"/>
+  <ai spellPercentage="7" />
+  <sight cone="270" modifier="1.1" />
+  
+  <spell name="Weak Acid Bolt" />
+
+  <secondarybuff id="8" amount="15"/>
+  <!-- counter -->
+  <secondarybuff id="10" amount="2"/>
+  <!-- armour -->
+  <secondarybuff id="7" amount="10"/>
+  <!-- block -->
+  <damage slashing="6"/>
+
+  <monster name="Lava Eely" level="8" terrain="1">
+    <stats numFig="12" numWiz="12" xpValue="140"/>
+    <secondarybuff id="8" amount="15"/>
+    <secondarybuff id="10" amount="10"/>
+    <damage slashing="10" conflagratory="10"/>
+    <resistances conflagratory="24"/>
+    <palette tint="180"/>
+    <ai spellpercentage="18"/>
+    <spell name="Firebolt"/>
+    <spell name="Gog's Tactical Pyre"/>
+  </monster>
+
+</monster>
+
+<!-- Witch Doctor Monsters -->
+
+<monster name="Witchy" splat="ichor" level="4" taxa="Demon">
+  <idleSprite left="sprites/monster/witch/witch_walk_left.spr"
+	right="sprites/monster/witch/witch_walk_right.spr"
+	up="sprites/monster/witch/witch_walk_up.spr"
+	down="sprites/monster/witch/witch_walk_down.spr"/>
+  <attackSprite left="sprites/monster/witch/witch_atk_left.spr"
+	right="sprites/monster/witch/witch_atk_right.spr"
+	up="sprites/monster/witch/witch_atk_up.spr"
+	down="sprites/monster/witch/witch_atk_down.spr"/>
+  <hitSprite left="sprites/monster/witch/witch_hit_left.spr"
+	right="sprites/monster/witch/witch_hit_right.spr"
+	up="sprites/monster/witch/witch_hit_up.spr"
+	down="sprites/monster/witch/witch_hit_down.spr"/>
+
+  <dieSprite name="sprites/monster/witch/witch_die.spr"/>
+
+  <castSpellSprite name="sprites/monster/witch/witch_cast.spr"/>
+
+  <stats numWiz="9" numRog="2" xpValue="80"/>
+  <sfx attack="humanoid_attack"
+		 hit="humanoid_hit"
+		 die="humanoid_die"
+		 spell="humanoid_spell" />
+
+  <info latin="(voodus voodus)" text="A mysterious tribal shaman in a giant wooden mask. Beware of his terrifying curses!"/>
+  <spell name="Corpse Reviver"/>
+  <spell name="Shroud of Darkness"/>
+
+  <secondarybuff id="7" amount="4"/>
+  <!-- block -->
+  <secondarybuff id="10" amount="1"/>
+  <!-- armour -->
+  <damage slashing="1" piercing="7"/>
+
+	<ai chicken="1" spellpercentage="17"/>
+	<sight cone="90" modifier="2.00" />
+	
+  <monster name="Monstrous Mask" level="6">
+    <info latin="(hoodus voodus)" text="A dark enchanter who hides behind an enormous wooden mask. Beware of his dire magic!"/>
+    <stats numWiz="14" numRog="5" xpValue="120"/>
+    <secondarybuff id="7" amount="6"/>
+    <!-- block -->
+    <secondarybuff id="10" amount="4"/>
+    <!-- armour -->
+    <damage slashing="1" piercing="3" hyperborean="6"/>
+    <spell name="Arctic Swirly"/>
+    <spell name="Corpse Reviver"/>
+    <spell name="Shroud of Darkness"/>
+    <spell name="Rune of Exploding"/>
+    <palette tint="180"/>
+    <ai chicken="1" spellpercentage="15"/>
+		</monster>
+
+  <monster name="The Masked Marvel" level="11" named="1" horde="0" maxSpawns="1">
+    <info latin="(hoodus voodus)" text="Who is this mysterious stranger behind the mask - and why is he such a nuisance?"/>
+    <stats numWiz="20" numRog="5" xpValue="200"/>
+    <secondarybuff id="7" amount="10"/>
+    <!-- block -->
+    <secondarybuff id="10" amount="10"/>
+    <!-- armour -->
+    <damage slashing="2" piercing="6" hyperborean="10"/>
+    <spell name="Arctic Vortex"/>
+    <spell name="Corpse Reviver"/>
+    <spell name="Shroud of Darkness"/>
+    <charge chance="10" turns="5" spell="Nightmare" interruptable="1" blockaction="1" range="5" targetself="0" />
+    <palette tint="160"/>
+    <ai chicken="1" spellpercentage="20"/>
+  </monster>
+
+  <monster name="Voodoo Joe" level="14" named="1" horde="0" maxSpawns="1">
+    <info latin="(hoodus voodus)" text="He does that Voodoo that you do so well."/>
+    <stats numWiz="30" numRog="5" xpValue="200"/>
+    <secondarybuff id="7" amount="12"/>
+    <!-- block -->
+    <secondarybuff id="10" amount="12"/>
+    <!-- armour -->
+    <damage slashing="4" piercing="10" hyperborean="12"/>
+    <spell name="Shroud of Darkness"/>
+    <spell name="Knitting Tissue"/>
+    <charge chance="15" turns="10" spell="Tenebrous Rift" interruptable="1" blockaction="1" range="5" targetself="0" />
+    <palette tint="160"/>
+    <ai chicken="1" spellpercentage="25"/>
+  </monster>
+
+</monster>
+
+  <!-- SWARMY MONSTERS -->
+
+<monster name="Swarmy" level="4" tiny="1" splat="ichor"  taxa="Demon">
+	<idleSprite left="sprites/monster/swarmy/swarmy_run_l.spr"
+	right="sprites/monster/swarmy/swarmy_run_r.spr"
+	up="sprites/monster/swarmy/swarmy_run_u.spr"
+	down="sprites/monster/swarmy/swarmy_run_d.spr"/>
+	<attackSprite left="sprites/monster/swarmy/swarmy_atk_l.spr"
+	right="sprites/monster/swarmy/swarmy_atk_r.spr"
+	up="sprites/monster/swarmy/swarmy_atk_u.spr"
+	down="sprites/monster/swarmy/swarmy_atk_d.spr"/>
+	<hitSprite left="sprites/monster/swarmy/swarmy_hit_l.spr"
+	right="sprites/monster/swarmy/swarmy_hit_r.spr"
+	up="sprites/monster/swarmy/swarmy_hit_u.spr"
+	down="sprites/monster/swarmy/swarmy_hit_d.spr"/>
+	<dieSprite name="sprites/monster/swarmy/swarmy_die.spr"/>
+	
+	<stats numFig="4" numRog="9" xpValue="60"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<damage slashing="6" piercing="2"/>
+	<resistances righteous="-2" />
+	<ai aggressiveness="4" span="10" />
+	<sight cone="90" modifier="1.1" />
+	
+	<info latin="(swarmus zergrus)" text="As the name implies, they travel in swarms. Brutal, adventurer-destroying swarms."/>
+	<sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell" />
+	
+	<monster name="Demonic Denizen" level="6" splat="ichor" special="1">
+		<palette tint="50"/>
+		<damage slashing="5" />
+		<stats numFig="7" xpValue="0"/>
+		<secondarybuff id="10" amount="5"/> <!-- armour -->
+		<secondarybuff id="6" amount="20"/> <!-- dodge -->
+		<secondarybuff id="7" amount="15"/> <!-- block -->
+		<secondarybuff id="8" amount="10"/> <!-- counter -->
+		<resistances righteous="-3" conflagratory="2" />
+		<info latin="" text="A vaguely loyal demonic minion from the demonic bits of the Realm of Minions."/>
+		</monster>
+	
+	</monster>
+
+  <!-- MUSHROOM MONSTERS -->
+
+<monster name="Mushy" level="5" tiny="1" splat="ectoplasm" taxa="Vegetable">
+	<idleSprite left="sprites/monster/mush/mush_run_l.spr"
+	right="sprites/monster/mush/mush_run_r.spr"
+	up="sprites/monster/mush/mush_run_u.spr"
+	down="sprites/monster/mush/mush_run_d.spr"/>
+	<attackSprite left="sprites/monster/mush/mush_atk_l.spr"
+	right="sprites/monster/mush/mush_atk_r.spr"
+	up="sprites/monster/mush/mush_atk_u.spr"
+	down="sprites/monster/mush/mush_atk_d.spr"/>
+	<hitSprite left="sprites/monster/mush/mush_hit_l.spr"
+	right="sprites/monster/mush/mush_hit_r.spr"
+	up="sprites/monster/mush/mush_hit_u.spr"
+	down="sprites/monster/mush/mush_hit_d.spr"/>
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+	<dieSprite name="sprites/monster/mush/mush_die.spr"/>
+	<castSpellSprite name="sprites/monster/mush/mush_atk_d.spr"/>
+	
+	<ai aggressiveness="2" span="12"/>
+	<sight cone="360" modifier="0.95" />
+	
+	<stats numFig="4" numWiz="8" xpValue="80"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<damage slashing="4" toxic="8"/>
+	<resistances piercing="3" />
+	
+	<info latin="(fungus amungus)" text="What happens when good spores go bad."/>
+
+	<monster name="Summon Mushroom-beast" displayName="Summoned Mushroom Beast" special="1">
+		<onhit spell="Mini Toxic Spore Cloud" onechancein="4"/>
+		<palette tint="120"/>
+		<resistances toxic="6" asphyxiative="6"/>
+		<stats numFig="4" numRog="4" numWiz="4" xpValue="0" />
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<info latin="(fungus ichoolungus)" text="Your very own Mushroom Beast. Sometimes drops clouds of toxic spores."/>
+		</monster>	
+
+	<monster name="Toady" level="1" tiny="1" maxSpawns="1" horde="0" named="1">
+		<palette tint="75" /> 
+		<stats numFig="2" numWiz="2" xpValue="80"/>
+		<secondarybuff id="7" amount="10"/> <!-- block -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<damage slashing="1" toxic="2"/>
+		<resistances piercing="2" />
+		<info latin="(fungus amungus)" text="I'm sorry, but your love interest is in another dungeon."/>
+		
+		<drop name="Night Cap" percent="8" />
+		<drop name="Plumber's Agaric" percent="8" />
+		<drop name="Azure Mob-Bonnet" percent="9" />
+		<drop name="Fell Truffle" percent="8" />
+		<drop name="Grunge Ear" percent="8" />
+		<drop name="Odious Puffball" percent="9" />
+		<drop name="Greedy Blungecap" percent="8" />
+		<drop name="Fairywodger" percent="8" />
+		<drop name="Inky Hoglantern" percent="9" />
+		<drop name="Mud Wen" percent="8" />
+		<drop name="The Prince" percent="8" />
+		<drop name="Lobstermane Fungus" percent="9" />
+		
+	</monster>
+</monster>
+
+
+  <!-- Carrott Monsters levels 1, 8, 13, 17 -->
+
+  <monster name="Carrotty" level="5" splat="goo" tiny="1" taxa="Vegetable">
+    <idleSprite left="sprites/monster/carrotty/carrotty_walk_l.spr"
+		      right="sprites/monster/carrotty/carrotty_walk_r.spr"
+		      up="sprites/monster/carrotty/carrotty_walk_u.spr"
+		      down="sprites/monster/carrotty/carrotty_walk_d.spr"/>
+    <attackSprite left="sprites/monster/carrotty/carrotty_atk_l.spr"
+			right="sprites/monster/carrotty/carrotty_atk_r.spr"
+			up="sprites/monster/carrotty/carrotty_atk_u.spr"
+			down="sprites/monster/carrotty/carrotty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/carrotty/carrotty_hit_l.spr"
+		     right="sprites/monster/carrotty/carrotty_hit_r.spr"
+		     up="sprites/monster/carrotty/carrotty_hit_u.spr"
+		     down="sprites/monster/carrotty/carrotty_hit_d.spr"/>
+
+	<castSpellSprite name="sprites/monster/carrotty/carrotty_hit_d.spr"/>
+   <dieSprite name="sprites/monster/carrotty/carrotty_die_l.spr"/>
+
+    <sfx attack="vegetable_attack"
+			hit="vegetable_hit"
+			die="vegetable_die"
+			spell="vegetable_spell"/>
+
+    <info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. Zomg! The tables have turned!"/>
+
+   <stats numFig="12" xpValue="68"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<damage slashing="4"/>
+	<resistances piercing="3" />
+	<ai aggressiveness="3" span="12"/>
+	<sight cone="90" modifier="1.1" />
+
+<monster name="Young Carrot" level="4">
+	<palette tint="30"/>
+	<stats numFig="10" xpValue="54"/>
+	<damage slashing="2" />
+	<secondarybuff id="4" amount="-5"/> <!-- crit -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<resistances piercing="3" />
+	<info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. This one is young and crisp."/>
+	</monster>
+
+<monster name="Cold Carrot" level="6">
+	<palette tint="160"/>
+	<stats numFig="12" numWiz="2" xpValue="90"/>
+	<damage slashing="1" hyperborean="10" />
+	<resistances hyperborean="10" piercing="3" conflagratory="-3" />
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. This one looks rather cold."/>
+	</monster>
+
+<monster name="Magma Carrot" level="8">
+	<palette tint="-30"/>
+	<resistances conflagratory="20" hyperborean="-3" piercing="2"/>
+	<stats numFig="13" numWiz="3" xpValue="120"/>
+	<damage slashing="1" conflagratory="5" />
+	<secondarybuff id="7" amount="15"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. This one looks over-hot."/>
+	<onhit spell="Flamefield 1" onechancein="5"/>
+	</monster>
+
+<monster name="Fell Carrot" level="9">
+	<palette tint="-120"/>
+	<resistances necromantic="6" putrefying="2" righteous="-4" piercing="2" />
+	<stats numFig="14" numRog="4" numWiz="8" xpValue="140"/>
+	<damage slashing="3" necromantic="4" putrefying="4" />
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour -->
+	<info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. This one looks decidedly evil."/>
+	<spell name="Mini Curse Missile"/>
+	<ai aggressiveness="3" span="12" spellPercentage="5" />
+	</monster>
+	
+  </monster>
+
+  <!-- GOLEM MONSTERS -->
+
+<monster name="Icy Golem" level="6" splat="ectoplasm" taxa="Construct">
+  <idleSprite left="sprites/monster/golem/ice_Walk_Left.spr"
+	right="sprites/monster/golem/ice_Walk_Right.spr"
+	up="sprites/monster/golem/ice_Walk_Up.spr"
+	down="sprites/monster/golem/ice_Walk_Down.spr"/>
+  <attackSprite left="sprites/monster/golem/ice_Atk_left.spr"
+	right="sprites/monster/golem/ice_Atk_right.spr"
+	up="sprites/monster/golem/ice_Atk_up.spr"
+	down="sprites/monster/golem/ice_Atk_down.spr"/>
+  <hitSprite left="sprites/monster/golem/ice_Hit_left.spr"
+	right="sprites/monster/golem/ice_Hit_right.spr"
+	up="sprites/monster/golem/ice_Hit_up.spr"
+	down="sprites/monster/golem/ice_Hit_down.spr"/>
+
+  <dieSprite name="sprites/monster/golem/ice_Die.spr"/>
+  <sfx attack="large_attack"
+		 hit="large_damage"
+		 die="large_die"
+		 spell="large_cast"/>
+
+  <stats numFig="10" numRog="4" xpValue="100"/>
+  <resistances hyperborean="20" conflagratory="-4"/>
+  <secondarybuff id="10" amount="6"/>
+  <!-- armour -->
+  <damage crushing="6" hyperborean="6"/>
+  <onhit spell="Small Snowstorm" onechancein="4"/>
+
+  <info latin="(anthro stonus)" text="A thin sheen of ice covers this golem."/>
+
+  <ai aggressiveness="3" span="16"/>
+  <sight cone="90" modifier="1.1" />
+
+  <monster name="Flaming Golem" level="8">
+    <stats numFig="14" numRog="4" numWiz="0" xpValue="130"/>
+    <resistances conflagratory="30" asphyxiative="10" toxic="10" hyperborean="-5" />
+    <secondarybuff id="10" amount="7"/>
+    <!-- armour -->
+    <damage crushing="6" conflagratory="8" hyperborean="0"/>
+    <palette tint="160"/>
+    <onhit spell="Flamefield 1" onechancein="4"/>
+    <info latin="(anthro stonus)" text="A sheath of flame wreathes this golem."/>
+  </monster>
+
+  <monster name="Unhealthful Golem" level="5">
+    <stats numFig="9" numRog="2" xpValue="80"/>
+    <resistances toxic="10" asphyxiative="10" hyperborean="0"/>
+    <secondarybuff id="10" amount="5"/>
+    <!-- armour -->
+    <damage crushing="4" toxic="4" hyperborean="0"/>
+    <palette tint="-120"/>
+    <onhit spell="Weak Poison Cloud" onechancein="4"/>
+    <info latin="(anthro stonus)" text="This golem is formed from highly unpleasant poisons."/>
+  </monster>
+
+  <monster name="Magic Golem" level="4">
+    <stats numFig="5" numRog="1" numWiz="1" xpValue="60"/>
+    <resistances toxic="10" asphyxiative="10" hyperborean="0" transmutative="-5" />
+    <secondarybuff id="10" amount="5"/>
+    <!-- armour -->
+    <damage crushing="4" toxic="4" hyperborean="0"/>
+    <palette tint="75"/>
+    <onhit spell="Aethereal Missile" onechancein="4"/>
+    <onhit spell="Corrupt Equipment" onechancein="5"/>
+    <info latin="(anthro stonus)" text="This golem is made of impure magicks. Be wary, for its touch may harm magical items."/>
+  </monster>
+
+  <monster name="Steam Golem" level="3">
+    <stats numFig="6" xpValue="30"/>
+    <resistances toxic="10" asphyxiative="10" hyperborean="-4"/>
+    <secondarybuff id="10" amount="4"/>
+    <!-- armour -->
+    <damage crushing="1" asphyxiative="1" conflagratory="1" blasting="1" hyperborean="0"/>
+    <palette tint="-30"/>
+    <onhit spell="Steam Burst" onechancein="4"/>
+    <info latin="(anthro stonus)" text="This golem is most often found lurking around saunas and is a traditional enemy of the Finns. It is well known for operating on a timescale beyond the ken of mundane beings such as yourself."/>
+  </monster>
+
+  <monster name="Gold Golem" level="7">
+    <stats numFig="15" numRog="4" xpValue="110"/>
+    <resistances transmutative="10" asphyxiative="10" toxic="10"/>
+    <secondarybuff id="10" amount="5"/>
+    <!-- armour -->
+    <damage crushing="8" hyperborean="0"/>
+    <palette tint="-180"/>
+    <onhit spell="Midas" onechancein="4"/>
+    <info latin="(anthro stonus)" text="This golem is fabulously blinged out."/>
+  </monster>
+
+</monster>
+
+<!-- SQUIDDY MONSTERS 10,11-->
+
+<monster name="Squiddy" level="6" tiny="1" splat="blood" taxa="Animal">
+	<idleSprite
+		left="sprites/monster/squiddy/squiddy_run_l.spr"
+		right="sprites/monster/squiddy/squiddy_run_r.spr"
+		up="sprites/monster/squiddy/squiddy_run_u.spr"
+		down="sprites/monster/squiddy/squiddy_run_d.spr"/>
+	<attackSprite
+		left="sprites/monster/squiddy/squiddy_atk_l.spr"
+		right="sprites/monster/squiddy/squiddy_atk_r.spr"
+		up="sprites/monster/squiddy/squiddy_atk_u.spr"
+		down="sprites/monster/squiddy/squiddy_atk_d.spr"/>
+	<hitSprite
+		left="sprites/monster/squiddy/squiddy_hit_l.spr"
+		right="sprites/monster/squiddy/squiddy_hit_r.spr"
+		up="sprites/monster/squiddy/squiddy_hit_u.spr"
+		down="sprites/monster/squiddy/squiddy_hit_d.spr"/>
+	<dieSprite
+		name="sprites/monster/squiddy/squiddy_die_l.spr"/>
+	<sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell"/>
+	
+	<onhit spell="Shroud of Darkness" onechancein="3"/>
+	<info latin="(tentaclus frostbiteus)" text="The constant lack of feeling in its tentacles has made this Squiddy ill-tempered. Beware its blinding ink attacks!"/>
+	
+	<stats numRog="14" xpValue="80" />
+	<secondarybuff id="10" amount="4"/> <!-- armour -->
+	<damage blasting="3" toxic="7"/>
+	
+	<ai aggressiveness="2" span="12"/>
+	<sight cone="90" modifier="1.1" />
+	
+	</monster>
+
+  <!-- FOOTY MONSTERS -->
+
+  <monster name="Footy" level="7" splat="ichor" taxa="Demon">
+    <idleSprite left="sprites/monster/fatty/fatty_run_l.spr"
+    right="sprites/monster/fatty/fatty_run_r.spr"
+    up="sprites/monster/fatty/fatty_run_u.spr"
+    down="sprites/monster/fatty/fatty_run_d.spr"/>
+    <attackSprite left="sprites/monster/fatty/fatty_atk_l.spr"
+    right="sprites/monster/fatty/fatty_atk_r.spr"
+    up="sprites/monster/fatty/fatty_atk_u.spr"
+    down="sprites/monster/fatty/fatty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/fatty/fatty_hit_l.spr"
+    right="sprites/monster/fatty/fatty_hit_r.spr"
+    up="sprites/monster/fatty/fatty_hit_u.spr"
+    down="sprites/monster/fatty/fatty_hit_d.spr"/>
+
+    <dieSprite name="sprites/monster/fatty/fatty_die_r.spr"/>
+
+    <info latin="(footus eyeballus)" text="Nobody's entirely sure how this demon&#xa;manages to kill adventurers. But it does."/>
+
+	<ai span="4" aggressiveness="6" />
+	<sight cone="90" modifier="1.1" />
+	 
+    <stats numFig="10" numWiz="5" xpValue="80" />
+    <sfx attack="large_attack"
+			hit="large_damage"
+			die="large_die"
+			spell="large_cast"/>
+    <castSpellSprite name="sprites/monster/fatty/fatty_atk_d.spr"/>
+
+	<secondarybuff id="10" amount="5"/> <!-- armour -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="6" amount="-10"/> <!-- dodge -->
+	<damage crushing="12"/>
+
+  </monster>
+
+  <!-- Mustache MONSTERS 3,4-->
+
+<monster name="Grandpa Mustache" level="7" tiny="1" splat="ichor" taxa="Demon">
+	<idleSprite left="sprites/monster/greeny/greeny_run_l.spr"
+	right="sprites/monster/greeny/greeny_run_r.spr"
+	up="sprites/monster/greeny/greeny_run_u.spr"
+	down="sprites/monster/greeny/greeny_run_d.spr"/>
+	<attackSprite left="sprites/monster/greeny/greeny_atk_l.spr"
+	right="sprites/monster/greeny/greeny_atk_r.spr"
+	up="sprites/monster/greeny/greeny_atk_u.spr"
+	down="sprites/monster/greeny/greeny_atk_d.spr"/>
+	<hitSprite left="sprites/monster/greeny/greeny_hit_l.spr"
+	right="sprites/monster/greeny/greeny_hit_r.spr"
+	up="sprites/monster/greeny/greeny_hit_u.spr"
+	down="sprites/monster/greeny/greeny_hit_d.spr"/>
+	<dieSprite name="sprites/monster/greeny/greeny_die.spr"/>
+
+	<stats numFig="4" numRog="10" xpValue="80"/>
+	<sight cone="90" modifier="1.1" />
+
+   <sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell"/>
+
+    <info latin="(mustas mustas)" text="The Grandpa Mustache: a pinnacle of wisdom and experience in the Mustache Community."/>
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<secondarybuff id="8" amount="5"/> <!-- counter -->
+	<secondarybuff id="6" amount="25"/> <!-- dodge -->
+	<damage crushing="3" asphyxiative="4" />
+
+	<monster name="Mustache Spirit" level="3" tiny="1">
+		<stats numRog="8" xpValue="30"/>
+		<palette tint="-150" />
+		<secondarybuff id="10" amount="2"/> <!-- armour -->
+		<secondarybuff id="8" amount="5"/> <!-- counter -->
+		<secondarybuff id="6" amount="20"/> <!-- dodge -->
+		<damage crushing="1" asphyxiative="2" />
+		<info latin="(mustas mustas)" text="These strange, brick-shaped creatures have a&#xa;Mysterious Growing Moustache Attack."/>
+		</monster>
+	
+	<monster name="Mustache League Champion" level="11" tiny="1" >
+		<stats numRog="8" numFig="10" xpValue="155"/>
+		<secondarybuff id="10" amount="8"/> <!-- armour -->
+		<secondarybuff id="8" amount="10"/> <!-- counter -->
+		<secondarybuff id="6" amount="35"/> <!-- dodge -->
+		<damage crushing="5" asphyxiative="6" />
+		<info latin="" text="This hardened veteran of the Mustache Fighting League has been training its entire life to face you in melee."/>	
+		</monster>
+
+	<monster name="Animate Mustache" displayName="Mustache Golem" special="1">
+		<onhit spell="Mustache Root" onechancein="20"/>
+		<damage crushing="1" asphyxiative="2" />
+		<palette tint="90"/>
+		<resistances crushing="3" blasting="1"/>
+		<stats numFig="7" numRog="4" xpValue="0"/>
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="0" amount="10"/> <!-- hitpoints -->
+		<info latin="(mustas mustas)" text="It's an animated mustache which will serve you until death."/>
+		</monster>	
+
+  </monster>
+
+  <!-- FLAMER MONSTERS -->
+
+<monster name="Flamer" level="8"  tiny="1" terrain="2" splat="blood" taxa="Animal" >
+	<idleSprite
+		left="sprites/monster/fire/fire_Walk_Left.spr"
+		right="sprites/monster/fire/fire_Walk_Right.spr"
+		up="sprites/monster/fire/fire_Walk_Up.spr"
+		down="sprites/monster/fire/fire_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<beamSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<hitSprite
+		left="sprites/monster/fire/fire_Hit_left.spr"
+		right="sprites/monster/fire/fire_Hit_right.spr"
+		up="sprites/monster/fire/fire_Hit_up.spr"
+		down="sprites/monster/fire/fire_Hit_down.spr"/>
+
+	<castSpellSprite name="sprites/monster/fire/fire_Cast.spr"/>
+	<dieSprite name="sprites/monster/fire/fire_Die.spr"/>
+	<sfx attack="large_attack"
+		  hit="large_hit"
+		  die="large_die"
+		  spell="large_spell"/>
+
+   <stats numRog="10" numWiz="6" xpValue="95"/>
+	<resistances conflagratory="20" hyperborean="-3"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="6" amount="10"/> <!-- dodge -->
+	<damage blasting="3" conflagratory="5"/>
+	
+	<ai aggressiveness="3" span="10" spellPercentage="10" />
+	<sight cone="270" modifier="1.1" />
+	
+   <info latin="(draconis ignitis)" text="A fire-breathing dragon."/>
+	<spell name="Firebolt"/>
+
+	<monster name="Ice Wyrm" level="6" terrain="2">
+		<stats numWiz="2" numRog="8" xpValue="70"/>
+		<resistances hyperborean="16" conflagratory="-4"/>
+		<secondarybuff id="10" amount="1"/> <!-- armour -->
+		<secondarybuff id="6" amount="10"/> <!-- dodge -->
+		<damage blasting="1" hyperborean="5" conflagratory="0"/>
+		<palette tint="-150"/>
+		<onhit spell="Small Snowstorm" onechancein="5"/>
+		<info latin="(draconis frozi)" text="A snow-breathing dragonling."/>
+		</monster>
+	
+	<monster name="Magic Dragon" level="6" terrain="2">
+		<stats numWiz="7" numRog="7" xpValue="70"/>
+		<resistances transmutative="-5" conflagratory="0"/>
+		<secondarybuff id="10" amount="1"/> <!-- armour -->
+		<secondarybuff id="6" amount="10"/> <!-- dodge -->
+		<damage blasting="1" transmutative="3" conflagratory="0"/>
+      <onhit spell="Corrupt Equipment" onechancein="5"/>
+		<palette tint="-100"/>
+		<info latin="(draconis thaumis)" text="A magic-breathing dragonling. Beware, for its magic breath can corrupt magical items."/>
+		<ai aggressiveness="3" span="6" spellPercentage="15"/>
+		<spell name="Aethereal Missile"/>
+	<!--	<spell name="Solar Inscription"/>
+		<spell name="Radiant Aura"/> -->
+	</monster>
+
+	<monster name="Summon Wyrmling" displayName="Friendly Wyrmling" level="8" special="1" terrain="2">
+		<palette tint="20"/>
+		<stats numFig="12" xpValue="0"/>
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="6" amount="7"/> <!-- dodge -->
+		<secondarybuff id="0" amount="12"/> <!-- hp --> 
+		<resistances conflagratory="12" hyperborean="-3"/>
+		<damage blasting="1" conflagratory="3"/>
+		<onhit spell="Pyrokinesis" onechancein="3"/>
+		<info latin="(draconis cooperatus)" text="This fire-breathing drake is sooo cute."/>
+		</monster>
+
+
+  </monster>
+
+  <!-- BIG RED DEMON MONSTERS 11, 12 -->
+
+  <monster name="Big Red" level="8" splat="ichor" taxa="Demon">
+    <idleSprite left="sprites/monster/red/red_run_l.spr"
+    right="sprites/monster/red/red_run_r.spr"
+    up="sprites/monster/red/red_run_u.spr"
+    down="sprites/monster/red/red_run_d.spr"/>
+    <attackSprite left="sprites/monster/red/red_atk_l.spr"
+    right="sprites/monster/red/red_atk_r.spr"
+    up="sprites/monster/red/red_atk_u.spr"
+    down="sprites/monster/red/red_atk_d.spr"/>
+    <hitSprite left="sprites/monster/red/red_hit_l.spr"
+    right="sprites/monster/red/red_hit_r.spr"
+    up="sprites/monster/red/red_hit_u.spr"
+    down="sprites/monster/red/red_hit_d.spr"/>
+
+   <dieSprite name="sprites/monster/red/red_die_r.spr"/>
+    <castSpellSprite name="sprites/monster/red/red_spl_r.spr"/>
+
+   <sfx attack="large_attack"
+		  hit="large_damage"
+		  die="large_die"
+		  spell="large_cast"/>
+	 
+	<stats numFig="12" numRog="4" xpValue="120"/>
+	<secondarybuff id="10" amount="10"/> <!-- armour -->
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<resistances righteous="-5" conflagratory="20"/>
+	<damage crushing="30"/>
+	
+	<ai aggressiveness="5" span="16"/>
+	<sight cone="90" modifier="1.35" />
+	
+	<info latin="(daemonus burgundus)" text="It's a big, red, demon. It likes lifting weights.&#xa;Like adventurers."/>
+
+<monster name="Snow Baal" level="6">
+	<palette tint="-145"/>
+	<resistances righteous="-5" hyperborean="12"/>
+	<stats numFig="10" numRog="2" xpValue="100"/>
+	<damage crushing="18"/>
+	<secondarybuff id="10" amount="5"/> <!-- armour -->
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<info latin="(daemonus burgundus)" text="It's a big, blue, demon. It likes lifting weights.&#xa;Like adventurers."/>
+	</monster>
+
+    <monster name="Dread Collector" displayName="Dread Collector" level="20" special="1">
+      <info latin="(daemonus collectus)" text="It's a Dread Collector. It likes pulverizing things, and it hates Criminal Scum like you."/>
+      <ai aggressiveness="10" span="26" spellPercentage="5"/>
+		<sight cone="270" modifier="1.75" />
+		<resistances toxic="2" asphyxiative="2"/>
+      <spell name="Corpus Burst"/>
+		<stats numFig="10" numRog="2" xpValue="0"/>
+    </monster>
+  </monster>
+
+  <!-- LUCKY MONSTERS -->
+
+  <monster name="Lucky" level="8"  tiny="1" splat="blood" taxa="Demon">
+    <idleSprite left="sprites/monster/luck/luck_Walk_Left.spr"
+    right="sprites/monster/luck/luck_Walk_Right.spr"
+    up="sprites/monster/luck/luck_Walk_Up.spr"
+    down="sprites/monster/luck/luck_Walk_Down.spr"/>
+    <attackSprite left="sprites/monster/luck/luck_Atk_left.spr"
+    right="sprites/monster/luck/luck_Atk_right.spr"
+    up="sprites/monster/luck/luck_Atk_up.spr"
+    down="sprites/monster/luck/luck_Atk_down.spr"/>
+    <hitSprite left="sprites/monster/luck/luck_Hit_left.spr"
+    right="sprites/monster/luck/luck_Hit_right.spr"
+    up="sprites/monster/luck/luck_Hit_up.spr"
+    down="sprites/monster/luck/luck_Hit_down.spr"/>
+
+    <dieSprite name="sprites/monster/luck/luck_Die.spr"/>
+    <castSpellSprite name="sprites/monster/luck/Luck_Cast.spr"/>
+
+	<ai aggressiveness="5" span="4" stealgold="1" stealPercentage="50" />
+	<sight cone="270" modifier="1.75" />
+	
+    <!-- spell name="m_zot"/ -->
+    <!-- need level 15, 16, 17, 18 -->
+
+    <sfx attack="humanoid_attack"
+			hit="humanoid_hit"
+			die="humanoid_die"
+			spell="humanoid_spell"/>
+
+    <stats numFig="1" numRog="15" numWiz="1"  xpValue="110" stealgold="1" />
+	<secondarybuff id="4" amount="10"/> <!-- crit -->
+	<secondarybuff id="6" amount="18"/> <!-- dodge -->
+	<damage crushing="2" aethereal="5"/>
+
+    <info latin="(luckof irishus)" text="These little green men wander around the Dungeons of Dredmor looking for pots of gold, bottles of Guinness, and heroes to rob."/>
+
+<!-- Make a "Far darrig" version that wears a red coat. -->
+  <monster name="Far Darrig" displayName="Far Darrig" level="9" >
+    <stats numFig="5" numRog="20" numWiz="1"  xpValue="130" stealgold="1" />
+    <secondarybuff id="4" amount="10"/> <!-- crit -->
+    <secondarybuff id="6" amount="15"/> <!-- dodge -->
+    <damage crushing="6" aethereal="6"/>
+    <ai aggressiveness="5" span="4" invisible="1" stealpercentage="50"/>
+    <info latin="(luckof irishus)" text="These little invisible men wander around the Dungeons of Dredmor looking for pots of gold, bottles of Guinness, and heroes to rob."/>
+    </monster>
+
+
+  </monster>
+
+  <!-- ROBOT MONSTERS -->
+
+<monster name="Robo" level="9" splat="ichor" taxa="Construct">
+	<idleSprite
+		left="sprites/monster/robo/Robo_Walk_Left.spr"
+		right="sprites/monster/robo/Robo_Walk_Right.spr"
+		up="sprites/monster/robo/Robo_Walk_Up.spr"
+		down="sprites/monster/robo/Robo_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/robo/Robo_Attack_left.spr"
+		right="sprites/monster/robo/Robo_Attack_right.spr"
+		up="sprites/monster/robo/Robo_Attack_up.spr"
+		down="sprites/monster/robo/Robo_Attack_down.spr"/>
+	<hitSprite
+		left="sprites/monster/robo/Robo_Hit_left.spr"
+		right="sprites/monster/robo/Robo_Hit_right.spr"
+		up="sprites/monster/robo/Robo_Hit_up.spr"
+		down="sprites/monster/robo/Robo_Hit_down.spr"/>
+	
+	<dieSprite name="sprites/monster/robo/Robo_Die.spr"/>
+	<stats numFig="17" xpValue="150"/>
+	<ai aggressiveness="3" span="50"/>
+	<sight cone="90" modifier="0.85" />
+
+
+	<info latin="(roboticus primus)" text="As robots go, this one is a basic model. It has shiny blades, though."/>
+	<sfx attack="robot_attack"
+		  hit="robot_damage"
+		  die="robot_die"
+		  spell="robot_cast"/>
+	<secondarybuff id="10" amount="10"/> <!-- armour -->
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+	<damage slashing="10" piercing="5" voltaic="5"/>
+
+	<monster name="Unfriendly AI" displayName="Unfriendly AI" level="2" >
+		<stats numFig="6" xpValue="32"/>
+		<palette tint="90"/>
+		<secondarybuff id="10" amount="4"/> <!-- armour -->
+		<secondarybuff id="7" amount="6"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage slashing="1" piercing="3" voltaic="3"/>
+		<info latin="(roboticus vulgaris)" text="This shows the tangible threat of the Unfriendly AI problem."/>
+		</monster>
+
+	<monster name="Mortal Machine" displayName="The Robo That Loves" level="9" special="1">
+		<palette tint="180"/>
+		<stats numFig="16" xpValue="0"/>
+		<secondarybuff id="10" amount="10"/> <!-- armour -->
+		<secondarybuff id="7" amount="15"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage slashing="8" piercing="5" voltaic="5"/>
+		<info latin="(roboticus mortalitus)" text="This robot has some kind of malevolent inner life."/>
+		</monster>
+	
+	<monster name="Flint Ultrasparc" level="13" splat="ichor" taxa="Construct" terrain="0" maxSpawns="1" horde="0" named="1">
+		<stats numFig="25" numWiz="5" xpValue="350" />
+			<spell name="Voltaic Arc 2" />
+			<spell name="Easy Target Curse" />
+			<spell name="Targeted Mana Drain" />
+		<palette tint="45"/>
+		<ai aggressiveness="3" span="55" spellPercentage="10" />
+		<sight cone="360" modifier="2.0" />
+		<resistances toxic="20" putrefying="15" asphyxiative="20" piercing="10" voltaic="-1"/>
+			<secondaryBuff id="0" amount="100" /> <!-- hp -->
+		<info latin="(Robo Commie)" text="The ultimate communist machine, Flint Ultrasparc only turns right by performing an inversion function on its Turn Left sequence."/>
+		</monster>
+		
+  </monster>
+	
+	
+
+  <!-- SPECIAL MONSTERS -->
+
+<monster name="Lord Dredmor" level="10" branch="-1" special="1" splat="ectoplasm" taxa="Undead">
+	<idleSprite left="sprites/monster/lich/lich_Walk_Left.spr"
+		right="sprites/monster/lich/lich_Walk_Right.spr"
+		up="sprites/monster/lich/lich_Walk_Up.spr"
+		down="sprites/monster/lich/lich_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/lich/lich_Attack_left.spr"
+		right="sprites/monster/lich/lich_Attack_right.spr"
+		up="sprites/monster/lich/lich_Attack_up.spr"
+		down="sprites/monster/lich/lich_Attack_down.spr"/>
+	<beamSprite left="sprites/monster/lich/lich_Attack_left.spr"
+		right="sprites/monster/lich/lich_Attack_right.spr"
+		up="sprites/monster/lich/lich_Attack_up.spr"
+		down="sprites/monster/lich/lich_Attack_down.spr"/>
+	<hitSprite left="sprites/monster/lich/lich_Hit_left.spr"
+		right="sprites/monster/lich/lich_Hit_right.spr"
+		up="sprites/monster/lich/lich_Hit_up.spr"
+		down="sprites/monster/lich/lich_Hit_down.spr"/>
+	
+	<castSpellSprite name="sprites/monster/lich/lich_Cast.spr"/>
+	<dieSprite name="sprites/monster/lich/lich_Die.spr"/>
+	<sfx attack="undead_attack"
+		  hit="undead_damage"
+		  die="undead_die"
+		  spell="undead_cast"/>
+	
+	<ai spellPercentage="40" aggressiveness="30" span="50" cancharm="0" canparalyze="0"/>
+	<sight cone="270" modifier="2.75" />
+	
+	<stats numFig="15" numRog="10" numWiz="40" />
+	
+  <secondarybuff id="10" amount="20"/> <!-- armour -->
+  <secondarybuff id="0" amount="200"/> <!-- health! Give him some oomph. -->
+  <secondarybuff id="7" amount="25"/> <!-- block -->
+
+  <resistances toxic="20" putrefying="10" necromantic="20" hyperborean="10" conflagratory="10" existential="15" asphyxiative="20" voltaic="10" piercing="5" transmutative="10" />
+
+  <damage blasting="4" crushing="10" necromantic="10" transmutative="10"/>
+
+  <onhit spell="Corrupt Equipment" onechancein="1"/>  
+  
+  <spell name="Corpse Reviver"/>
+  <spell name="Shroud of Darkness"/>
+  <spell name="Thor's Fulminaric Bolt"/>
+  <spell name="Arctic Vortex"/>
+  <spell name="Obvious Fireball"/>
+  <spell name="Corrupt Equipment"/>
+  <spell name="Icebolt"/>
+  <spell name="Electrobolt"/>
+  <spell name="Gargoyle Acid Bolt"/>
+  <spell name="Monster Blink"/>
+	
+  <info latin="(real name unknown)" text="A terrifying sorcerer, who sought to defy death by means of his powerful magic. Now, trapped in the Dungeon, he seeks to turn the world to dust. Evil dust."/>
+
+  <monster name="Tougher Lord Dredmor" displayName="Lord Dredmor" level="15" branch="-1" special="1" taxa="Undead">
+    <ai spellPercentage="80" aggressiveness="40" span="50" cancharm="0" canparalyze="0"/>
+	  <sight cone="270" modifier="3.0" />	
+    <stats numFig="23" numRog="19" numWiz="59" />
+
+    <secondarybuff id="10" amount="30"/> <!-- armour -->
+    <secondarybuff id="0" amount="400"/> <!-- health! Give him some oomph. -->
+    <secondarybuff id="7" amount="30"/> <!-- block -->
+    
+    <resistances toxic="28" putrefying="18" necromantic="28" hyperborean="18" conflagratory="15" existential="19" asphyxiative="22" voltaic="14" piercing="10" transmutative="17" />
+
+    <damage blasting="6" crushing="15" necromantic="15" transmutative="15"/>
+
+    <onhit spell="Corrupt Equipment" onechancein="1"/>
+
+    <spell name="Antimagic Field"/>
+    <spell name="Greater Targeted Mana Drain"/>
+    <spell name="Ennui"/>
+    <spell name="Strong Lingering Dullness Missile"/>
+    <spell name="Strong Lingering Weakness Missile"/>
+    <spell name="Strong Acid Burn"/>
+    <spell name="Corpse Reviver"/>
+    <spell name="Shroud of Darkness"/>
+    <spell name="Thor's Fulminaric Bolt"/>
+    <spell name="Arctic Vortex"/>
+    <spell name="Obvious Fireball"/>
+    <spell name="Monster Blink"/>
+    <spell name="Icebolt"/>
+    <spell name="Electrobolt"/>
+    <spell name="Gargoyle Acid Bolt"/>
+	</monster>
+  </monster>
+  
+
+  <monster name="Brax" level="12" branch="-1" special="1" splat="ichor" taxa="Demon">
+        <idleSprite left="sprites/monster/brax/brax_run_l.spr"
+        right="sprites/monster/brax/brax_run_r.spr"
+        up="sprites/monster/brax/brax_run_u.spr"
+        down="sprites/monster/brax/brax_run_d.spr"/>
+        <attackSprite left="sprites/monster/brax/brax_atk_l.spr"
+        right="sprites/monster/brax/brax_atk_r.spr"
+        up="sprites/monster/brax/brax_atk_u.spr"
+        down="sprites/monster/brax/brax_atk_d.spr"/>
+        <hitSprite left="sprites/monster/brax/brax_hit_l.spr"
+        right="sprites/monster/brax/brax_hit_r.spr"
+        up="sprites/monster/brax/brax_hit_u.spr"
+        down="sprites/monster/brax/brax_hit_d.spr"/>
+	<dieSprite name="sprites/monster/brax/brax_die.spr"/>
+
+	<stats numFig="21" numWiz="16" />
+	<ai span="10" aggressiveness="20" cancharm="0" />
+	<sight cone="270" modifier="2.2" />
+
+    <info latin="(sellus usedvolvos)" text="A villainous Salesdemon with a terrible checkered suit. He will&#xa;sell you the equipment that you need for&#xa;your quest, but he does not take to shoplifters."/>
+
+   <sfx attack="large_attack"
+		  hit="large_damage"
+		  die="large_die"
+		  spell="large_cast"/>
+	<secondarybuff id="10" amount="6"/> <!-- armour -->
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<damage crushing="10"/>
+
+  </monster>      <!-- Brax -->
+
+</monDB>

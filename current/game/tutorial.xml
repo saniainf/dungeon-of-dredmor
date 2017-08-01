@@ -1,0 +1,306 @@
+<tutorialfile>
+  
+  <!-- list o'triggers
+  
+  "fliplever" - a lever is pulled (any lever will do; each leve can only be flipped once)
+  "killmonster" - kill a monster
+  "eatfood" - food is eaten/booze is drunk
+  "drinkpotion" - a potion is drunk
+  "wands" - a wand is drunk  
+  "equipability" - an ability is equipped
+  "useability" - an ability is used        
+  -->
+  
+  <tutorial>
+    <info name="Movement" description="Learn how to move your character around." icon="skills/stat_chr64.png"/>
+    <room name="Tutorial Chamber: Movement" playerStartX="4" playerStartY="3"/>
+    <script
+      text="Welcome to Dungeons of Dredmor! We've got a lot to cover today, so let's get started."/>
+    <script text="The object of Dungeons of Dredmor is not necessarily to beat the game. Beating the game is very, very, very, hard. Instead, go into the game seeing if you can do just a little bit better than you did last time. Eventually, you will win!"/>
+    <script text="First, however, the Hero Certification Board requires us to explain to you how to play the game so that you can die appropriately at the hands of your enemies. First, let's learn how to move the hero."/>
+    <script      
+      text="Moving in Dungeons of Dredmor is easy. The W, A, S, and D keys on the keyboard will move your hero up, left, down, and right respectively."/>
+    <script text="Try walking over to the first lever and flipping it. To activate an object in Dungeons of Dredmor, simply click on it." trigger="fliplever"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="Very good - the Dwarven Educational Grate has opened, and you may now proceed to the Very Small Watery Maze section of the tutorial."/>
+    <script text="If you don't want to use the keyboard, you can also click on the floor. Your hero will then move to the appropriate square."/>
+    <script text="Try using the mouse to move your way through the watery maze below. Note that you can just click on an object, like the lever, to move directly to it." trigger="fliplever"/>
+    <script text="Well done! This completes the first tutorial."/>
+  </tutorial>
+
+  <tutorial>
+    <info name="Combat" description="Beat the ever-lovin' poop out of a Diggle."  icon="skills/warrior/macery2_64.png"/>
+    <room name="Tutorial Chamber: Combat" playerStartX="7" playerStartY="7"/>
+    <equip name="Wooden Sword"/>
+    <equip name="Leather Cuirass"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <script text="Every time you move or perform an action in Dungeons of Dredmor, you and the monsters alternate taking turns. You move, then they move, then you can move, et cetera."/>
+    <script text="To demonstrate this principle, let's kill something. This little fellow here is the Tutorial Diggle, one of many Diggles that you will encounter. Let's kill it, quick."/>
+    <script text="To attack a monster, simply move next to it - either with the WASD buttons, or with the mouse - and click on him to attack." trigger="killmonster" value="Tutorial Diggle"/>
+    <script text="Well, you sure beat him into a bloody pulp. Congratulations!"/>
+  </tutorial>
+
+  <tutorial>
+    <info name="Combat Skills" description="Learn to solve the Riddle of Steel with our easy home-study course." icon="skills/unskilled_dualwield.png" />
+    <room name="Tutorial Chamber: Combat Skills" playerStartX="4" playerStartY="18"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Wooden Sword"/>
+    <equip name="Leather Cuirass"/>
+    <ability name="Norwegian Axenado"/>
+    
+    <script text="No man ever became a great warrior by merely clicking on his enemy. You must apply combat skills and magic if you wish to survive the dungeon."/>
+    <script text="This level contains four mighty Diggle Warriors. Look at them thirsting for your blood. If you simply charge in and try clicking on them, you'll get slaughtered!"/>
+    <script text="Fortunately, there is an easier way. In your skill belt, on the right hand side of the screen, you have access to a skill. The skills you can access depend on your initial career choices that you make at the start of the game."/>
+    <script text="In this case, you are a mighty Axe wielder, and as such have access to the mighty Norwegian Axenado. Click on the Axenado icon to equip it." trigger="equipability" value="Norwegian Axenado"/>
+    <script action="removeblocker" value="Diggle Pen Bars"/>
+    <script text="Excellent. Now, we can kill some Diggles."/>
+    <script text="Notice how the Axenado icon now appears in the small gold box at the bottom of the screen. This means that it is active, and can be executed by RIGHT-clicking on a square with your mouse."/>
+    <script text="Move up to the Diggle. Hold down RIGHT-click to see the squares that you can target. Release RIGHT-click to fire the Axenado. Now go kill that Diggle." trigger="killmonster" value="Diggle"/>
+    <script text="You do your Viking ancestors proud! Notice that some numbers have now appeared on top of the skill, and how it appears to be disabled. This is because your skill has a cooldown period, and you must wait before you can use it again."/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="We've opened up a chamber to the Diggle Nests. You can hit SPACE to pass your turn, and they will advance on your position. Wait for them to have you surrounded, then attack with your Norwegian Axenado!"/>
+    <script trigger="killmonster" value="Diggle"/>
+    <script trigger="killmonster" value="Diggle"/>
+    <script trigger="killmonster" value="Diggle"/>
+    <script text="This completes the Combat ability section of the tutorial. Combat abilities do different things - try them and find out!"/>
+
+  </tutorial>
+
+  <tutorial>
+    <info name="Food" description="Food, the wonder food!" icon="ui/icons/buff_healthy_appetite64.png" />
+    <room name="Tutorial Chamber: Food" playerStartX="4" playerStartY="8"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Crude Stone Axe"/>
+    <equip name="Leather Cuirass"/>
+    <script text="Let's start by killing a Diggle. You should be old hat at this by now." trigger="killmonster" value="Diggle"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="Look how well you're doing at killing Diggles! There's blood everywhere, bless your little heart."/>
+    <script text="You may have noticed at this point that your health is low. Health is represented by the RED bar at the bottom of the screen. If your health falls to zero, you will die. This ends the current game."/>
+    <script text="You can regain health in a few ways. First, you can simply wait, either by moving around the dungeon or by hitting SPACE. This waits a turn. Your hero will regain health slowly on his own."/>
+    <script text="If your hero eats food, he will regain health more quickly - one point of health every turn. We've left some in the dungeon for you - go pick it up and eat it."/>
+    <script text="To eat food, pick it up and drop it in your belt. Then press RIGHT-CLICK to eat." trigger="eatfood" value="Dire Sandwich"/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Now go kill the other Diggle." trigger="killmonster" value="Diggle"/>    
+  </tutorial>
+  
+  <tutorial>
+    <info name="Item Use" description="Let's drop some acid together!" icon="skills/rogue/skill_alchemy1_64.png" />
+    <room name="Tutorial Chamber: Item Use" playerStartX="4" playerStartY="4"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Crude Stone Axe"/>
+    <equip name="Leather Cuirass"/>
+    <script text="One of the fun things about Dungeons of Dredmor is that you never know what items will do. You are encouraged to learn by experimentation, death, and starting a new game."/>
+    <script text="Press i to open your inventory, or click on the inventory button." trigger="openinventory"/>
+    <script text="This is your backpack. You can store items in it. Clicking the inventory button again, or pressing i, will close it. You can also close it by hitting the little gold X."/>
+    <script text="You can also drag the backpack around by clicking the top of it and dragging it to where you want to move it."/>
+    <script text="Try picking up that potion of Aqua Regia and putting it in your inventory." trigger="putitemininventory" value="Aqua Regia"/>
+    <script text="Now try right-clicking on the potion to drink it." trigger="drinkpotion" value="Aqua Regia"/>
+    <script text="The acid burns through your body, propelling you from this world and onto the next tutorial."/>
+  </tutorial>
+  
+  <tutorial>
+    <info name="Equipment Maintenance" description="Do not wear boots on your head. After all, where would you put the traffic cone?" icon="skills/warrior/armourer1_64.png" />
+    <room name="Tutorial Chamber: Equipment Maintenance" playerStartX="4" playerStartY="17"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <!-- <skill id="2"/>  -->
+    
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <skill id="7"/>
+    
+    <script text="While journeying through the dungeon, you may encounter a variety of weapons and armour. Many of these weapons and armour are better than what you start off with, and a key to success is upgrading your equipment whenever possible."/>
+    <script text="Next to you is a mace. Pick that up." trigger="pickupitem" value="Iron Mace"/>
+    <script text="Now that you have a mace, we need to put it into your equipment. You can open up the character panel by pressing C or by clicking the Character button on the bottom of the screen with your mouse." trigger="opencharactersheet"/>
+    <script text="This is the character panel, where you can see your character's attributes and can also equip weapons and armour. You can equip weapons and armour by depositing them in the appropriate slot."/>
+    <script text="On the bottom of the panel, you can see your statistics. You have two types of statistics: primary attributes and secondary attributes."/>
+    <script text="Primary attributes - burliness, sagacity, caddishness, nimbleness, stubbornness and savvy - do not directly affect your performance. They are, however, used to calculate your secondary statistics. For instance, your counterattack percentage is calculated from your Nimbleness and your Caddishness."/>
+    <script text="Your secondary attributes include... all sorts of stuff. Run the mouse cursor over any attribute to see what it does."/>
+    <script text="That said, you don't really need to know what everything does. Simply understand that higher numbers in the panel are better numbers. You want things to go up, not down."/>
+    <script text="Now, equip that mace by depositing it in an appropriate slot." trigger="equipitem" value="Iron Mace"/>
+    <script text="Remove the iron mace from your equipment. It has served its purpose." trigger="deequipitem" value="Iron Mace"/>
+    <script action="removeblocker" value="Wooden Gate"/>
+    <script text="When we created this character for you, we chose swords and axes. Go see if you can find something more appropriate." trigger="pickupitem" value="Wooden Sword"/>
+    <script text="Excellent! Now equip the wooden sword." trigger="equipitem" value="Wooden Sword"/>
+    <script action="removeblocker" value="Wooden Gate"/>
+    <script text="Now you just need some armour. Go find something appropriate." trigger="pickupitem" value="Traffic Cone"/>
+    <script text="This is a traffic cone. It's a very poor helmet, but we spent all our money for this tutorial on that Iron Mace you can't use... so it will have to do. Equip it on your head." trigger="equipitem" value="Traffic Cone"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="You're ready to go. Now go kill that monster." trigger="killmonster" value="Diggle"/>
+    <script text="Another Diggle dead, another Tutorial complete. You're making short work of these - well done!"/>
+         
+  </tutorial>
+  
+  <tutorial>
+    <info name="Crossbows" description="Shoot yourself in the foot." icon="skills/warrior/crossbow0_64.png"/>
+    <room name="Tutorial Chamber: Crossbows" playerStartX="4" playerStartY="17"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Crude Stone Axe"/>
+    <equip name="Leather Cuirass"/>
+    <script text="You know what's fun? Killing Diggles. Unfortunately, they're getting craftier. This one has surrounded himself with a body of water, and only one of you is leaving this tutorial alive."/>
+    <script text="Crossbows can be used to shoot monsters from a long ways away. You need two things to use a crossbow: a crossbow, and some bolts. First let's look around for some bolts." trigger="pickupitem" value="Wooden Bolts"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>    
+    <script text="Now that we have some bolts, we need to find a crossbow." trigger="pickupitem" value="Simple Iron Crossbow"/>    
+    <script text="Excellent. Now open your character panel by pressing C, or by clicking on the Character button. Let's put this crossbow somewhere." trigger="opencharactersheet"/>
+    <script text="The character panel has a slot for crossbows. Pick up the crossbow from your inventory by clicking in it, then place the crossbow in your inventory by placing it in the equipment slot." trigger="equipitem" value="Simple Iron Crossbow"/>
+    <script text="To fire bolts, RIGHT-click the bolts to equip them. The bolts will appear in the gold square at the bottom of the screen to indicate that they are the active item." trigger="equipability" value="Wooden Bolt"/>
+    <script text="You can now shoot bolts at the Diggle by targeting it with the mouse and pressing RIGHT-click." trigger="killmonster" value="Diggle"/>
+  </tutorial>
+
+  <tutorial>    
+    <info name="Thrown Weapons" description="Bombs! Who doesn't love bombs? You love bombs. They love you too." icon="skills/warrior/thrown2_64.png"/>
+    <room name="Tutorial Chamber: Thrown Weapons" playerStartX="4" playerStartY="2"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <script text="This Diggle has surrounded himself with a charming moat of lava, and we left our crossbow in the previous tutorial. Fortunately, we have explosives."/>
+    <script text="Find the pile of bombs and put them in your belt." trigger="pickupitem" value="Makeshift Bomb"/>
+    <script text="Thrown weaponry - bombs, softballs, boomerangs, shuriken, and so forth - operate in the same way as crossbow bolts do. The main difference is that you don't need a crossbow to use them."/>
+    <script text="Equip the makeshift bombs by RIGHT-clicking on them in your belt." trigger="equipability" value="Makeshift Bomb"/>
+    <script text="You can tell that the bomb has been activated by looking at the gold box at the bottom of your screen that represents the currently active item. Now right click on the Diggle to blow it to kingdom come." trigger="killmonster" value="Diggle"/>
+  </tutorial>
+
+  <tutorial>
+    <info name="Resistances" description="Resistance is futile!" icon="skills/spells/celestial_aegis64.png" />
+    <room name="Tutorial Chamber: Resistances" playerStartX="4" playerStartY="7"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Rusty Sword"/>
+    <equip name="Leather Cuirass"/>
+    <script text="The room next to yours contains a Thermoblobby, who will do his best to kill you with his fiery, gooey attacks. Before you go in there and deliver a Heroic Beatdown, you need to find protection."/>
+    <script text="Open the equipment panel by clicking on the Character button, or by pressing C." trigger="opencharactersheet"/>
+    <script text="Various types of monsters and spells do various types of damages. You can find magical equipment and skills that will help you resist these effects. Not surprisingly, these are called resistances."/>    
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="Go pick up the Ring of Ash." trigger="pickupitem" value="Ring of Ash"/>
+    <script text="You will see two slots for rings on the left hand side of the character panel. Equip the Ring of Ash in your equipment screen." trigger="equipitem" value="Ring of Ash"/>
+    <script text="You can see that a small fiery circle has appeared in the Resistances panel of the character sheet. Equipping the ring has given you two points of Conflagratory resistance. This means that you can absorb two points of Conflagratory damage before it starts to affect you."/>
+    <script text="For instance, suppose a monster hits you for two crushing, and two conflagratory damage. With the Ring of Ash equipped, you would only receive the two points of crushing damage. That's a 50 percent savings!"/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Go kill that Thermoblobby! Show it who's boss." trigger="killmonster" value="Thermoblobby"/>
+    <script text="It is important to understand that normal armour only protects you against crushing, slashing, and blasting damage. Most monsters do one of these three types of damage, but they may have additional special damages on top of that."/>
+    <script text="Managing your resistances - specifically, getting as much of it as you can - is essential to surviving the Dungeon."/>    
+  </tutorial>
+
+  <tutorial>
+    <info name="Potions" description="Tasty beverages, brewed in unclean wizarding stills." icon="skills/rogue/skill_alchemy2_64.png" />
+    <room name="Tutorial Chamber: Potions" playerStartX="4" playerStartY="7"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+    <equip name="Wooden Sword"/>
+    <equip name="Leather Cuirass"/>
+    <script text="Ah, potions. Magic liquids, sorcerous fluids, wizard juices, whatever you want to call them, they're powerful items that you can find in the Dungeons of Dredmor and store in your belt or inventory in case of emergency."/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="Various potions do different things. You may already have encountered Aqua Regia in a previous tutorial, but most potions are more useful than that. Let's start by finding the Potion of Invisibility." trigger="pickupitem" value="Potion of Invisibility"/>
+    <script text="The Potion of Invisibility makes you invisible. Place it in your belt, and RIGHT-click to drink it." trigger="drinkpotion" value="Potion of Invisibility"/>
+    <script text="Excellent! You will notice that an icon has appeared in the left hand corner of the screen. This is an example of a Buff - an active ability that makes you stronger or weaker. In this case, it makes you invisible."/>
+    <script text="Note that there is a timer in one corner of the icon. When the timer goes to zero, the effect of the potion wears off. In this case, you will return to visibility."/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Proceed to the second room and kill the Diggle." trigger="killmonster" value="Diggle"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="As you may have noticed, invisibility also wears off when you hit a monster. Proceed to the northern chamber, where you will find a second potion." trigger="pickupitem" value="Voltaic Potion"/>
+    <script text="The Voltaic potion imbues your body with electrical energy, granting you resistance to voltaic attacks and shocking your foes with Deadly Lightning. RIGHT-click it to drink." trigger="drinkpotion" value="Voltaic Potion"/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Excellent. Prooced to the third room, and kill the Electroblobby." trigger="killmonster" value="Electroblobby"/>
+    <script action="removeblocker" value="Dwarven Educational Grate"/>
+    <script text="You're looking pretty beat up after those battles, hero. Why not enjoy a delicious potion of healing?" trigger="drinkpotion" value="Potion of Healing"/>
+  </tutorial>
+
+  <!--
+  <tutorial>
+    <info name="Lockpicks" description="Why not get yourself something nice?" icon="skills/rogue/skill_burglary0_64.png" />
+  </tutorial>
+  -->
+  
+  <tutorial>
+    <info name="Magic" description="If you're the Sorceror of Light, why are you casting magic missile?" icon="skills/wizard/magictraining2_64.png"/>
+    <room name="Tutorial Chamber: Magic" playerStartX="2" playerStartY="4"/>
+    <skill id="14"/>
+    <skill id="15"/>
+    <skill id="16"/>
+    <skill id="17"/>
+    <skill id="18"/>
+    <skill id="19"/>
+    <skill id="20"/>
+    <ability name="Xeuclid's Translation"/>
+    <ability name="Pyrokinesis"/>
+    <script text="Some heroes choose to fight with steel - or, when times are tough, weapons of wood and occasionally spaghetti. Others have chosen the cerebral, sagely art of magic - and this is the subject of today's tutorial."/>
+    <script text="Magic spells are used in the same way as you use combat skills. Magic can summon pets, transport you in and out of danger, and generally make your life better."/>
+    <script text="For instance, consider the giant moat blocking your progress. By using Xeuclid's Translation, you can move to the other side of the moat."/>
+    <script text="First, equip the spell by clicking on it in your skill belt." trigger="equipability" value="Xeuclid's Translation"/>
+    <script text="Now RIGHT-click on the other side of the moat to teleport, and pull the lever to continue the tutorial." trigger="fliplever"/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Spells consume mana. The amount of mana consumed is highlighted on the blue Mana bar at the bottom of the screen."/>
+    <script text="To regain mana, you can either wait by hitting SPACE, or you can drink booze. Go find the Sewer Brew, then place it in your belt and RIGHT-click to drink it." trigger="eatfood" value="Sewer Brew"/>
+    <script text="Sewer Brew is not a high-quality form of alcohol. However, every turn that you still have booze in your system, you will regain mana at a faster rate than you would normally - specifically, one point of mana every turn."/>
+    <script text="The Fuelled by Booze icon indicates how long you will remain refreshed."/>
+    <script text="The next room contains a Diggle. As a wizard, you are weak and puny, and would not survive a direct confrontation. Instead, blow him up with your magical powers."/>
+    <script text="First, equip the Pyrokinesis spell in your skill belt by clicking on it." trigger="equipability" value="Pyrokinesis"/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Next, blow up that Diggle by RIGHT-clicking on it with the mouse." trigger="killmonster" value="Diggle"/>    
+  </tutorial>
+
+  <tutorial>
+    <info name="Buffs" description="Let's get powered up." icon="skills/stat_str64.png"/>
+    <room name="Tutorial Chamber: Buffs" playerStartX="4" playerStartY="4"/>
+    <skill id="0"/>
+    <skill id="1"/>
+    <skill id="2"/>
+    <skill id="3"/>
+    <skill id="4"/>
+    <skill id="5"/>
+    <skill id="6"/>
+
+    <ability name="Power of Magic Steel"/>
+    <script text="Some heroes choose to combine magic and weaponry for potent effects. These wizards often choose to use spells to make their attacks more powerful. These are called 'Buffs'."/>
+    <script text="For instance, the Power of Magic Steel spell, from the school of Viking Magic, infuses your weapon with potent voltaic energies. Click on the Power of Magic Steel spell in your spell belt." trigger="equipability" value="Power of Magic Steel"/>
+    <script text="Now right-click to cast." trigger="useability" value="Power of Magic Steel"/>
+    <script text="The Power of Magic Steel has now infused your weapon with voltaic energy. This spell stays active for up to five attacks, but it also consumes magic as long as it is in effect. If you run out of mana, the spell will dissolve."/>
+    <script text="You can also cancel the spell at any time by pressing the gold X in the buff icon on the left hand side of the screen."/>
+    <script action="removeblocker" value="Dungeon Rubble"/>
+    <script text="Now that you are full of lightning, why not take it out on the Enraged Diggle in the other room?" trigger="killmonster" value="Enraged Diggle"/>           
+  </tutorial>
+   
+</tutorialfile>

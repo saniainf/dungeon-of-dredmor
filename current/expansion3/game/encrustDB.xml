@@ -1,0 +1,1190 @@
+<!-- The EncrustDB stores all encrusting information -->
+<encrustDB>
+
+<unstableEffect name="Exploder" spell="Grenade Self" />
+<unstableEffect name="Missing" spell="Easy Target Instability" />
+<unstableEffect name="Necromanticula" spell="Necropain" />
+<unstableEffect name="Tentacles" spell="Tentacular Self-doom" />
+<unstableEffect name="Twitchiness" spell="Froda's Jump Discontinuity" />
+<unstableEffect name="Impoisoning" spell="Terrible Poison" />
+<unstableEffect name="Weakening" spell="Curse of Weakness" />
+<unstableEffect name="Sucker" spell="Easy Target Sucker Curse" />
+<unstableEffect name="Sanguinous Misappropriation" spell="Blood Debt" />
+<unstableEffect name="Foul Lich-magic" spell="Haematic Drain" />
+<unstableEffect name="Immolation" spell="Pyromatic Implosion" />
+<unstableEffect name="Darkening" spell="Self Darkened Vision" />
+<unstableEffect name="Seeing What Should Not Be Seen" spell="Necromantic Blinding" />
+<unstableEffect name="Thaumoentropic Vexation" spell="Greater Necrodrain" />
+<unstableEffect name="Draining" spell="Necrodrain" />
+<unstableEffect name="Hunger" spell="Hungry Hero" />
+
+<!-- Hand Weapon Crusts -->
+  <encrust name="Polymer Shell">
+	<description text="The pride of the Dwarven Plasticsmiths, this garish polymer shell is unlikely to improve the offensive capabilities of your weapon, but may help you block incoming attacks." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	<input name="Bituminous Coal" />
+	
+	<skill level="0" />
+	
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	
+	<encrustwith name="hideous, brightly coloured plastics" />
+	
+	<instability amount="3" />
+  </encrust>
+
+  <encrust name="Overgrowth">
+	<description text="This wreath of unruly vines sways lazily. That's just the wind, right?" />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Potion of Lively Regeneration" />
+	<input name="Apple" />
+	<input name="Wooden Sword" />
+	
+	<skill level="1" />
+	
+	<damagebuff toxic="2" />
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	
+	<encrustwith name="menacing vines" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Blasphemous Sheathing">
+	<description text="Hideous images writhe and cavort on the cursed iron of this sheathing, committing indecent acts of violence and, uh... very special grown-up hugs." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Potion of Dire Empowerment" />
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	<input name="Bone Club" />
+	
+	<skill level="2" />
+	
+	<damagebuff necromantic="3" />
+	<resistbuff righteous="-1" />
+	<encrustwith name="profane images" />
+	
+	<instability amount="8" />
+  </encrust>
+  
+  <encrust name="Steam Drive">
+	<description text="Harness the unstoppable power of steam! This produces much the same effect as striking your enemies with a locomotive, but without the tiresome requirement of laying miles of track." />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Brass Piping" />
+	<input name="Brass Piping" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Black Powder" />
+	
+	<skill level="2" />
+	
+	<damagebuff blasting="3" />
+	
+	<encrustwith name="pipes" />
+	<encrustwith name="gauges" />
+	
+	<instability amount="8" />
+  </encrust>
+  
+  
+  <encrust name="Rearden Crust">
+    <description text="The power of Free Enterprise compels you! Also, fountainheads and trains and something. Caution: unregulated crusting with unlicensed Free Enterprise metals may cause outbreaks of spontaneous Free Market Efficiency."/>
+    <tool tag="smithing" />
+    <slot type="weapon" />
+
+    <input name="Rearden Metal Ingot" />
+    <input name="Rearden Metal Ingot" />
+    <input name="Rearden Metal Ingot" />
+
+    <skill level="2" />
+
+    <!-- nim -->
+    <damagebuff existential="3" />
+
+    <encrustwith name="Rearden metal" />
+    <encrustwith name="trains" />
+
+    <instability amount="7" />
+  </encrust>
+
+  <encrust name="Hive Weapon">
+	<description text="Turn any ordinary weapon into a nest for hungry Thaumites." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Potion of Mana" />
+	<input name="Potion of Mana" />
+	<input name="Aqua Vitae" />
+	<input name="Arcane Wand" />
+	
+	<skill level="2" />
+
+	<power name="Thaumite Infection" chance="0.10" />
+	
+	<encrustwith name="wickedly gleaming barbs" />
+	
+	<instability amount="12" />
+  </encrust>
+  
+  <encrust name="Ruinous Sheathing">
+	<description text="This weapon consumes bone and corrupts flesh. Yikes." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Verdant Poison" />
+	<input name="Verdant Poison" />
+	<input name="Acid Flask" />
+	<input name="Bronze Dagger" />
+	
+	<skill level="3" />
+	
+	<damagebuff acidic="3" putrefying="3" />
+	
+	<encrustwith name="wickedly gleaming barbs" />
+	
+	<instability amount="8" />
+  </encrust>
+
+  <encrust name="The Worst Idea Ever" hidden="1">
+	<description text="Warning: your life insurance does not cover using hand grenades in this manner." />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Hand Grenade" />
+	<input name="Hand Grenade" />
+	<input name="Hand Grenade" />
+	<input name="Copper Wire" />
+	
+	<skill level="3" />
+
+	<power name="Grenadier"/>
+	
+	<encrustwith name="grenades" />
+	
+	<instability amount="24" />
+  </encrust>
+
+  <encrust name="Sapphire Crust">
+	<description text="These sapphires twinkle with hyperborean power." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Sapphire" />
+	<input name="Sapphire" />
+	<input name="Hyperborean Potion" />
+	
+	<skill level="4" />
+	
+	<damagebuff hyperborean="6" />
+	
+	<encrustwith name="sapphires" />
+	
+	<instability amount="8" />
+  </encrust>
+
+  <encrust name="Ruby Crust">
+	<description text="As any alchemist worth their acidum salis knows, rubies are red because they contain elemental fire. Let it out." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Ruby" />
+	<input name="Ruby" />
+	<input name="Infernal Potion" />
+	
+	<skill level="4" />
+	
+	<damagebuff conflagratory="6" />
+	
+	<encrustwith name="rubies" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Ultimate Rearden Crust">
+    <description text="Once it was a weapon, but after Free Enterprise crusting - now it's a weapon that creates Liberty Zorkmids!"/>
+    <tool tag="smithing" />
+    <slot type="weapon" />
+
+    <input name="Rearden Metal Ingot" />
+    <input name="Rearden Metal Ingot" />
+    <input name="Silver Ingot" />
+    <input name="Gold Ingot" />
+
+    <skill level="4" />
+    
+    <power name="Midas" />
+    <!-- nim -->
+    <damagebuff existential="5" />
+    <resistbuff existential="4" />
+
+    <encrustwith name="Essence of Pon Raul" />
+    <encrustwith name="fiat currency" />
+
+    <instability amount="40" />
+  </encrust>
+
+  <encrust name="Rune Weapon">
+	<description text="Pulsing runes cover the surface of your weapon." />
+	<tool tag="lathe" />
+	<slot type="weapon" />
+	
+	<input name="Brimstone" />
+	<input name="Carnelian" />
+	<input name="Dark Orb" />
+	
+	<skill level="5" />
+	
+	<secondarybuff id="1" amount="8" /> <!-- mana -->
+	<secondarybuff id="3" amount="4" /> <!-- magic power -->
+	<secondarybuff id="11" amount="-2" /> <!-- m resist -->
+		
+	<encrustwith name="glowing runes" />
+	
+	<instability amount="11" />
+  </encrust>
+  
+  <encrust name="Emerald Crust">
+	<description text="A crust of sparkling emeralds focuses the natural electrochemical energies of the human body. Shocking!" />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Emerald" />
+	<input name="Emerald" />
+	<input name="Voltaic Potion" />
+	
+	<skill level="5" />
+	
+	<damagebuff voltaic="8" />
+	<resistbuff voltaic="-2" />
+	
+	<encrustwith name="emeralds" />
+	
+	<instability amount="13" />
+  </encrust>
+
+  <encrust name="Recursive Crust">
+	<description text="On your weapons there are smaller weapons, and on these even tinier weapons, and... maybe just try not to think too hard about it." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Steel Sword" />
+	<input name="Steel Axe" />
+	<input name="Steel Mace" />
+	
+	<skill level="6" />
+	
+	<damagebuff crushing="4" slashing="4" existential="4" />
+	<secondarybuff id="9" amount="-2" />
+	
+	<power name="Bleeding" />
+	
+	<encrustwith name="a dizzying array of weaponry" />
+	
+	<instability amount="18" />
+  </encrust>
+  
+<!-- Ranged Weapon Crusts -->
+  <encrust name="Seemingly Useless Mechanisms">
+	<description text="How do they work? They don't even connect to anything." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Piping" />
+	<input name="Copper Wire" />
+	
+	<skill level="1" />
+	
+	<damagebuff piercing="2" />
+	<secondarybuff id="9" amount="-2" />
+	
+	<encrustwith name="doodads" />
+	<encrustwith name="gizmos" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Fungal Bloom">
+	<description text="Looks like someone forgot this crossbow in the back of the fridge." />
+	<tool tag="alchemy" />
+	<slot type="ranged" />
+	
+	<input name="Odious Puffball" />
+	<input name="Mud Wen" />
+	<input name="Fell Truffle" />
+	
+	<skill level="1" />
+	
+	<damagebuff toxic="2" />
+	
+	<encrustwith name="sickening mold" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Experimental Cooling System">
+	<description text="This aftermarket cooling system is effective on crossbows that suffer from overheating. Warning: this modification is not Bolt Council approved, and as such may void your warranty/life." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Brass Piping" />
+	<input name="Voltaic Cell" />
+	<input name="Slotted Bronze Discs" />
+	
+	<skill level="3" />
+	
+	<damagebuff hyperborean="5" />
+	<resistbuff hyperborean="-1" />
+	
+	<encrustwith name="pipes" />
+	<encrustwith name="fans" />
+	<encrustwith name="frost" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Dangerously Unstable Reactor" hidden="1">
+	<description text="Is it a good idea to strap something like this to a crossbow? Let's find out." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Aetheric Power Cylinder" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Voltaic Potion" />
+	
+	<skill level="5" />
+	
+	<damagebuff piercing="2" transmutative="2" aethereal="4" />
+	<resistbuff transmutative="-2" />
+	
+	<encrustwith name="high-tech reactors" />
+	
+	<instability amount="18" />
+  </encrust>
+
+  <encrust name="Gaudy Baubling">
+	<description text="If this doesn't kill your enemies, it might just blind them." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Diamond" />
+	<input name="Ruby" />
+	<input name="Platinum Ingot" />
+	<input name="Platinum Ingot" />
+	
+	<skill level="6" />
+
+	<damagebuff righteous="5" aethereal="5" />
+	<power name="Blind"/>
+	
+	<encrustwith name="an embarrassing display of wealth" />
+	
+	<instability amount="12" />
+  </encrust>
+  
+<!-- Armour Crusts -->
+  <encrust name="Stone Crust">
+	<description text="Part adventurer, part architecture."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Hematite" />
+	<input name="Bauxite" />
+	<input name="Cassiterite" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	
+	<encrustwith name="stone" />
+	
+	<instability amount="4" />
+  </encrust>
+
+  <encrust name="Buckle Up">
+	<description text="All the rage among comely, spiky-haired hero types. Why not cover everything you own in belts?"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Leather Belt" />
+	<input name="Leather Belt" />
+	<input name="Swashbuckling Belt" />
+	
+	<skill level="0" />
+
+	<resistbuff asphyxiative="-1" slashing="1" />
+	
+	<encrustwith name="random, pointless belts" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Defensive Curds" hidden="1">
+	<description text="A layer of gooey, molten cheese acts to slow incoming attacks. Also, you smell delicious."/>
+	<tool tag="ingot" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Aged Cheese" />
+	<input name="Brie Cheese" />
+	<input name="Havarti" />
+	<input name="Parmigiano Reggiano Cheese" />
+	
+	<skill level="0" />
+	
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<resistbuff crushing="2" />
+	
+	<encrustwith name="a blend of fine cheeses" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Encoggling" >
+	<tool tag="tinkerer"/>
+	<slot type="chest" />
+	<description text="It's about time to get on board with the style of today's youth with their pneumatic mallets and horseless taverns. Find some armour and stick a cog on it!"/>
+	<input name="Brass Mechanisms"/>
+	<skill level="0"/>
+	<secondarybuff id="12" amount="-1" /> <!-- sneak -->
+	<secondarybuff id="6" amount="-1"/> <!-- dodge  -->
+	<secondarybuff id="7" amount="1"/> <!-- block  -->
+	<encrustwith name="pointless cogs" />
+	<encrustwith name="useless cogs" />
+	<encrustwith name="unnecessary cogs" />
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Seaman's Encrusting" >
+	<description text ="During the rainy season, ancient sailors would often treat their trousers with fish to... wait, why are you snickering?" />
+	<tool tag="alchemy" />
+	<slot type="legs" />
+	
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<secondarybuff id="7" amount="1"/> <!-- block  -->
+	
+	<encrustwith name="lutefisk" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Copper Plating">
+	<description text="Copper plating is malleable, but it beats taking a bolt to the knee. Have you seen what they pay guards these days?" />
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Copper Ingot" />
+	<input name="Copper Ingot" />
+	<input name="Copper Ingot" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<resistbuff voltaic="1" />
+	
+	<encrustwith name="copper plates" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Iron Plating">
+	<description text="Nailing iron plates to your equipment is the perfect solution for those who love defence and hate moving."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	
+	<skill level="2" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<resistbuff voltaic="-1" />
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	
+	<encrustwith name="iron plates" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Medicoating">
+	<description text="A variety of soothing balms render you more resistant to the effects of poisons, acids and other organic damage. Also, you smell like old people and liniment."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="hands" />
+	
+	<input name="Potion of Healing" />
+	<input name="Potion of Healing" />
+	<input name="Potion of Replenishment" />
+	<input name="Potion of Purity" />
+	
+	<skill level="2" />
+
+	<resistbuff acidic="2" toxic="2" putrefying="2" />
+	
+	<encrustwith name="curative reagents" />
+	
+	<instability amount="7" />
+  </encrust>
+
+  <encrust name="Steel Plating">
+	<description text="Is that your final answer to the riddle of steel?"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	<input name="Potion of Steeling" />
+	
+	<skill level="3" />
+	
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<resistbuff voltaic="-1" />
+	
+	<encrustwith name="steel plates" />
+	
+	<instability amount="4" />
+  </encrust>
+
+  <encrust name="Fireproof Coating">
+	<description text="Fire-retardant equipment is more or less a necessity for treading into the bowels of the earth."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Infernal Potion" />
+	<input name="Potion of Steeling" />
+	
+	<skill level="3" />
+
+	<resistbuff conflagratory="4" />
+	<secondarybuff id="6" amount="1" /> <!-- dodge -->
+	
+	<encrustwith name="rough, blackened material" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Refractive Coating">
+	<description text="This scientifically advanced coating bends light around you. Got to be good-looking 'cause you're so hard to see."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Potion of Invisibility" />
+	<input name="Aluminum Ingot" />
+	<input name="Aluminum Ingot" />
+	<input name="Pyrite Sun" />
+	
+	<skill level="3" />
+
+	<secondarybuff id="12" amount="4"/> <!-- sneak -->
+	<secondarybuff id="6" amount="-1"/> <!-- dodge -->
+	
+	<encrustwith name="transparent aluminum" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Black Pearl Inlay">
+	<description text="Some say the black pearl holds the soul of a sailor who perished at sea. This costly inlay offers protection from the merciless tides."/>
+	<tool tag="tinkerer" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Black Pearl" />
+	<input name="Black Pearl" />
+	<input name="Silver Ingot" />
+	<input name="Gold Ingot" />
+	
+	<skill level="4" />
+
+	<resistbuff hyperborean="3" asphyxiative="2" />
+	<secondarybuff id="12" amount="-1"/> <!-- sneak -->
+	
+	<encrustwith name="black pearls" />
+	<encrustwith name="a filigree of precious metals" />
+	
+	<instability amount="10" />
+  </encrust>
+
+  <encrust name="Diamond Crust">
+	<description text="They say a diamond is forever, so with this you can take some comfort in the fact that your equipment will probably outlive you."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Diamond" />
+	<input name="Diamond" />
+	<input name="Diamond" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	<secondarybuff id="12" amount="-3"/> <!-- sneak -->
+	<resistbuff piercing="5" slashing="3" />
+	
+	<encrustwith name="diamonds" />
+	
+	<instability amount="11" />
+  </encrust>
+
+  <encrust name="Rune Armour">
+	<description text="Pulsing runes cover the surface of your armour."/>
+	<tool tag="lathe" />
+	<slot type="chest" />
+	
+	<input name="Brimstone" />
+	<input name="Carnelian" />
+	<input name="Dark Orb" />
+	
+	<skill level="5" />
+
+	<secondarybuff id="11" amount="6"/> <!-- magic resist -->
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-4"/> <!-- sneak -->
+	
+	<encrustwith name="glowing runes" />
+	
+	<instability amount="11" />
+  </encrust>
+
+  <encrust name="Conceptual Reinforcement" hidden="1">
+	<description text="For safety to remain comprehensible to subjects, there must to some extent be an identity between safety and the concept of safety. Gird your loins with the absolute in defensive idealism."/>
+	<tool tag="lathe" />
+	<slot type="head" />
+	
+	<input name="Lederhosen" />
+	<input name="Starry Orb" />
+	<input name="Absinthe" />
+	<input name="Absinthe" />
+	
+	<skill level="5" />
+
+	<secondarybuff id="11" amount="4"/> <!-- magic resist -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<resistbuff existential="6" />
+	
+	<encrustwith name="Hegel" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Mad Haberdashery" hidden="1">
+	<description text="Some people have questioned the wisdom of strapping an arsenal of weapons-grade thaumaturgy to your head, but the more mercury fumes you inhale, the more this feels like a good idea."/>
+	<tool tag="lathe" />
+	<slot type="head" />
+	
+	<input name="Fiery Wand" />
+	<input name="Wand of Laser" />
+	<input name="Wand of Tesla" />
+	
+	<skill level="6" />
+
+	<secondarybuff id="3" amount="8"/> <!-- magic power -->
+	<secondarybuff id="5" amount="8"/> <!-- haywire -->
+	<secondarybuff id="11" amount="4"/> <!-- magic resist -->
+	
+	<encrustwith name="barely restrained magicks" />
+  <encrustwith name="blatant stupidity"/>
+    
+	<instability amount="29" />
+  </encrust>
+  
+<!-- Shield Crusts -->
+  <encrust name="Faraday Shielding">
+	<description text="This thoroughly grounded shielding protects you from electrical discharges, accidental and otherwise."/>
+	<tool tag="tinkerer" />
+	<slot type="shield" />
+	
+	<input name="Copper Wire" />
+	<input name="Copper Wire" />
+	<input name="Copper Wire" />
+	<input name="Copper Wire" />
+	
+	<skill level="1" />
+
+	<resistbuff voltaic="2" />
+	
+	<encrustwith name="a fine wire mesh" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Shield of Denial">
+	<description text="Patented sound- and light-proof coating should keep you blissfully unaware of your surroundings. What you don't know about can't hurt you."/>
+	<tool tag="alchemy" />
+	<slot type="shield" />
+	
+	<input name="Potion of Invisibility" />
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	<input name="Aqua Fortis" />
+	
+	<skill level="2" />
+
+	<secondarybuff id="11" amount="2"/> <!-- magic resist -->
+	
+	<encrustwith name="willful ignorance" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Really Holy Shield" hidden="1">
+	<description text="From Morlodon the Sun Weevil, to Hotak the Divine Plumber, this complicated frieze of ideological images covers pretty much all your bases in the God department."/>
+	<tool tag="lathe" />
+	<slot type="shield" />
+	
+	<input name="Electrum Ingot" />
+	<input name="Electrum Ingot" />
+	<input name="Potion of Radiance" />
+	
+	<skill level="3" />
+
+	<resistbuff righteous="5" necromantic="5" />
+	
+	<encrustwith name="every deity imaginable" />
+	
+	<instability amount="10" />
+  </encrust>
+
+  <encrust name="Offensive Shielding">
+	<description text="A coating of rude words and sharp objects. Tasteless AND dangerous."/>
+	<tool tag="smithing" />
+	<slot type="shield" />
+	
+	<input name="Iron Dirk" />
+	<input name="Bronze Dagger" />
+	<input name="Gladius" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<secondarybuff id="4" amount="5"/> <!-- critical chance -->
+	<secondarybuff id="6" amount="-2" /> <!-- dodge -->
+	
+	<encrustwith name="harmful stuff" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Laser-etched Script">
+	<description text="Mystic runes by modern means."/>
+	<tool tag="lathe" />
+	<slot type="shield" />
+	
+	<input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	<input name="Diamond" />
+	<input name="Wand of Laser" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire chance -->
+	<secondarybuff id="11" amount="4"/> <!-- magic resistance -->
+	
+	<encrustwith name="fancy script" />
+	
+	<instability amount="18" />
+  </encrust>
+
+<encrust name="Rocky Crust">
+	<description text="Basically, glue some rocks to your weapon. Crusting ain't what it used to be."/>
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Hematite" />
+	<input name="Bauxite" />
+	<input name="Cassiterite" />
+	
+	<skill level="2" />
+	
+	<damagebuff crushing="3" piercing="-3" slashing="-3"/>
+	
+	<encrustwith name="rock" />
+	
+	<instability amount="4" />
+	</encrust>
+
+<encrust name="Sassy Banding">
+	<description text="Strips of colorful cloth that will make your armour 1) aetherically impregnable, and 2) fabulous looking."/>
+	<tool tag="smithing" />
+	<slot type="waist" />
+	<slot type="chest" />
+	
+	<input name="Sash of the Blue Wizards" />
+	<input name="Time Lord Scarf" />
+	
+	<skill level="4" />
+	
+	<resistbuff aethereal="5" transmutative="5"/>
+	
+	<encrustwith name="fabulous sashes" />
+	
+	<instability amount="18" />
+	</encrust>
+
+<encrust name="Serpentine Filigree">
+	<description text="Did you know you can emboss pretty much anything with precious metals and it'll look like it's part of a set?"/>
+	<tool tag="smithing" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Silver Ingot" />
+	<input name="Gold Ingot" />
+	<input name="Platinum Ingot" />
+	
+	<skill level="5" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<resistbuff piercing="1"/>
+	
+	<encrustwith name="intricate filigree" />
+	
+	<instability amount="6" />
+</encrust>
+
+<encrust name="Iron Spikes">
+	<description text="The poor man's enchantment: weld some nails to it."/>
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	<slot type="hands" />
+	
+	<input name="Iron Ingot" />
+	
+	<skill level="1" />
+	
+	<damagebuff piercing="1" />
+	
+	<encrustwith name="spikes" />
+	
+	<instability amount="9" />
+	</encrust>
+
+<encrust name="Joint Lubricant">
+	<description text="This graphite-based compound makes metal armour feel like it was cloth. Imagine what it would do to cloth armour!"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	
+	<input name="Bituminous Coal" />
+	<input name="Alchemical Ooze" />
+	
+	<skill level="2" />
+	
+	<primarybuff id="2" amount="3"/>
+	
+	<encrustwith name="oil" />
+	
+	<instability amount="9" />
+	</encrust>
+
+<encrust name="Citrus Crust">
+	<description text="Empower your weapon with the clean, crisp taste of Lymon." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Citrine" />
+	<input name="Citrine" />
+	<input name="Acid Flask" />
+	
+	<skill level="4" />
+	
+	<damagebuff acidic="6" />
+	
+	<encrustwith name="citrus" />
+	
+	<instability amount="8" />
+	</encrust>
+
+<encrust name="Blister Pack">
+	<description text="Protect your items from the elements with this indestructible plastic sheath. You're not sure how you might use them afterwards, though." />
+	<tool tag="ingot" />
+	<slot type="ring" />
+	<slot type="neck" />
+	
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	<input name="Plastic Ingot" />
+	
+	<skill level="4" />
+	
+	<primarybuff id="2" amount="-3"/>
+	<!-- nim -->
+	<encrustwith name="clear plastic" />
+	
+	<instability amount="-5" />
+	</encrust>
+
+<encrust name="Noneuclidian Translation">
+	<description text="Bend your weapon into impossible angles - your enemies will never see it coming."/>
+	<tool tag="lathe" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	
+	<input name="Spatial Instability Infusion" />
+	<input name="Blink Dust" />
+	
+	<skill level="3" />
+	
+	<secondarybuff id="9" amount="2" />
+	<!-- edr -->
+	<power name="Boot"  chance="0.10"/>
+	
+	<encrustwith name="impossible angles" />
+	
+	<instability amount="19" />
+	</encrust>
+
+<encrust name="Blood Groove">
+	<description text="A mystical rune that allows weapons to drain your enemy's lifeforce. While most weapons do that, very few inject said lifeforce into you. And this one will."/>
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	
+	<input name="Greedy Blungecap" />
+	<input name="Carnelian" />
+	<input name="Zinc Ingot" />
+	<input name="Potion of Lively Regeneration" />
+	
+	<skill level="4" />
+	
+	<resistbuff righteous="-2" />
+	
+	<power name="Vampirism Attack"  chance="0.25"/>
+	
+	<encrustwith name="blood (ooo)" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Service Pack">
+	<description text="A required update to protect your items against the most common forms of damage."/>
+	<tool tag="alchemy" />
+	<slot type="ring" />
+	<slot type="neck" />
+	
+	<input name="Ruby" />
+	<input name="Sapphire" />
+	<input name="Emerald" />
+	<input name="Citrine" />
+	
+	<skill level="6" />
+	
+	<resistbuff conflagratory="2" hyperborean="2" voltaic="2" crushing="2" />
+	
+	<encrustwith name="cracked gems" />
+	
+	<instability amount="24" />
+	</encrust>
+
+<encrust name="Electrostatic Module">
+	<description text="Strike enemies with the power of electricity AND make your cat's fur stand up." />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Voltaic Cell" />
+	<input name="Copper Wire" />
+	<input name="Copper Ingot" />
+	
+	<skill level="3" />
+	
+	<damagebuff voltaic="3" />
+	
+	<encrustwith name="electric wiring" />
+	
+	<instability amount="6" />
+	</encrust>
+
+<encrust name="Mounted Flashlight">
+	<description text="You're pretty sure nobody else has ever thought of taping a light to your equipment so you don't need to be lugging a torch around." />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	<slot type="weapon" />
+	
+	<input name="Aluminum Tube" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Plastic Ingot" />
+	
+	<skill level="2" />
+	
+	<secondarybuff id="18" amount="1" />
+	<!-- sight radius -->
+	
+	<encrustwith name="tasteful indirect lighting" />
+	
+	<instability amount="6" />
+	</encrust>
+
+<encrust name="Phrenological Massager">
+	<description text="Carefully positioned micro-pistons reconfigure your skull into optimal configurations." />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	
+	<input name="Brass Ingot" />
+	<input name="Slotted Bronze Discs" />
+	<input name="Pressure Plate" />
+	<input name="Self-sealing Stem Bolt" />
+	
+	<skill level="3" />
+	
+	<primarybuff id="1" amount="3" /> <!-- sagacity -->
+	
+	<encrustwith name="screws" />
+	
+	<instability amount="13" />
+	</encrust>
+
+<encrust name="Heads-Up Display">
+	<description text="This helmet-mounted device sends information about obstacles, traps, and power levels straight into your retina." />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	
+	<input name="Voltaic Cell" />
+	<input name="Copper Wire" />
+	<input name="Ruby" />
+	<input name="Plastic Ingot" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="9" amount="3" /> <!-- edr -->
+	<secondarybuff id="18" amount="1" /> <!-- sight radius -->
+	<secondarybuff id="17" amount="2"/> <!-- trap sight -->
+	<secondarybuff id="16" amount="1"/> <!-- trap level -->
+	
+	<encrustwith name="global positioning" />
+	
+	<instability amount="10" />
+	</encrust>
+
+<encrust name="Rocket Thrusters">
+	<description text="Boost the strength of your attacks with the power of ROCKET FISTS." />
+	<tool tag="tinkerer" />
+	<slot type="hands" />
+	
+	<input name="Iron Ingot" />
+	<input name="Aluminum Tube" />
+	<input name="Aluminum Tube" />
+	<input name="Black Powder" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="2" amount="3"/>
+	<!-- melee power -->
+	
+	<encrustwith name="rocket power" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Rocket Thrusters">
+	<description text="What if everything you ever wanted... came. in. a. ROCKET BOOT?" />
+	<tool tag="tinkerer" />
+	<slot type="feet" />
+	
+	<input name="Iron Ingot" />
+	<input name="Aluminum Tube" />
+	<input name="Aluminum Tube" />
+	<input name="Black Powder" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="6" amount="5"/>
+	<!-- dodge -->
+	
+	<encrustwith name="rocket power" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Razored Chain">
+	<description text="A clockwork powered bladed chain that spins when you pull on a string. Time it just right, and you can turn your enemies into kibble."/>
+	
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Steel Ingot" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Slotted Bronze Discs" />
+	
+	<skill level="4" />
+	
+	<damagebuff slashing="3"/>
+	<secondarybuff id="4" amount="5"/> <!-- critical chance -->
+	
+	<encrustwith name="nasty spinning blades" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Gaga's Glaze" hidden="1">
+	<description text="Coats your armor with delicious meat, preventing the nasty monsters from biting down into the more important meats. (Recognizing, of course, that Sterbak did it first.)"/>
+	<tool tag="ingot" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Fresh Steak" />
+	<input name="Steak" />
+	<input name="Aged Steak" />
+	<input name="Grilled Steak" />
+	
+	<skill level="0" />
+	
+	<secondarybuff id="0" amount="5"/>
+	<!-- hp -->
+	
+	<encrustwith name="oozing meat" />
+	
+	<instability amount="9" />
+	</encrust>
+  
+</encrustDB>

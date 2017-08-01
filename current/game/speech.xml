@@ -1,0 +1,57 @@
+<!-- monsters now talk.
+
+give them a speech profile, and so on and so forth.
+
+speech types:
+
+insult - monster taunts
+injured - monsters are injured
+dead - monsters are dying
+
+-->
+<speeches>
+  
+  <profile name="default">
+
+    <speech type="idle" text="i am so bored right now"/>
+    <speech type="idle" text="this isn't as good as their first album"/>
+    <speech type="idle" text="i don't understand magnets"/>
+
+    <speech type="search" text="i'm looking for you..."/>
+    <speech type="search" text="i know where you live..."/>
+    
+    <speech type="insult" text="you dress funny"/>
+    <speech type="insult" text="your mother was a radish"/>
+    <speech type="insult" text="your father was a quivering lump of man-beef"/>
+    <speech type="insult" text="you have a terrible disease"/>
+    <speech type="insult" text="you are a hateful little sneak and a murderer"/>
+    <speech type="insult" text="you have killed so many of us"/>
+    <speech type="insult" text="you are a quivering pile of spew"/>
+    <speech type="insult" text="you are a tiny, tiny potato"/>
+    <speech type="insult" text="we will hack you into tiny pieces"/>
+
+    <speech type="injured" text="that hurt"/>
+    <speech type="injured" text="oww, my head"/>
+    <speech type="injured" text="i can't believe you hit me"/>
+
+    <speech type="dead" text="i see the colors"/>
+    <speech type="dead" text="i go now to a better place"/>
+    <speech type="dead" text="my dead relatives are beckoning"/>
+    
+  </profile>
+
+  <profile name="blobby">
+
+    <speech type="insult" text="*squelch*"/>
+    <speech type="insult" text="*slrrp*"/>
+    <speech type="insult" text="*ooze*"/>
+    <speech type="insult" text="*slime*"/>
+
+    <speech type="injured" text="*squish*"/>
+    <speech type="injured" text="*sblrrp*"/>
+
+    <speech type="dead" text="*slllllssssh*"/>
+
+  </profile>
+
+</speeches>

@@ -1,0 +1,1651 @@
+<!-- TODO:
+- corruption art for art shrines
+- all the rooms!
+- script rooms
+-->
+
+<roomDB>
+
+<!-- Level 11 : Deeper Dungeon (10) -->
+
+<room width="11" height="11" name="Basic block" >
+  <row text="   ###D### " />
+  <row text="#####...###" />
+  <row text="##P##...1##" />
+  <row text="#..3#.....#" />
+  <row text="#.........d" />
+  <row text="#.........#" />
+  <row text="d...@.^.2##" />
+  <row text="#........##" />
+  <row text="##..^....# " />
+  <row text="###...#### " />
+  <row text=" ###D##### " />
+  <flags minLevel="10" maxLevel="10" />
+  <customblocker name="Brazier" percent="30" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows smugly." />
+  <customblocker name="Brazier" percent="30" at="2" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows lazily." />
+  <customblocker name="Stone Column" percent="40" at="3" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  </room>
+
+<room width="7" height="12" name="Basic Vert Hall" >
+  <row text=" ###D##" />
+  <row text=" ##...#" />
+  <row text="##2...#" />
+  <row text="##.@..#" />
+  <row text="#....##" />
+  <row text="d.1.###" />
+  <row text="#...P##" />
+  <row text="#....##" />
+  <row text="##.^..#" />
+  <row text="##....#" />
+  <row text=" #...##" />
+  <row text=" ##D###" />
+  <flags minLevel="10" maxLevel="10" />
+  <customblocker name="Brazier" percent="50" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows languidly." />
+  <customblocker name="Stone Column" percent="40" at="2" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Stone Slot" percent="20" x="1" y="3" png="dungeon/deep_slot.png" can_push="0" />
+  </room>
+
+<room width="12" height="8" name="Basic Horz Hall" >
+  <row text="######D#####" />
+  <row text="###P#...####" />
+  <row text="#.2.....1###" />
+  <row text="d...^.@....#" />
+  <row text="#..........d" />
+  <row text="####...##..#" />
+  <row text="############" />
+  <row text="   #########" />
+  <flags minLevel="10" maxLevel="10" />
+  <customblocker name="Brazier" percent="50" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows languidly." />
+  <customblocker name="Stone Column" percent="40" at="2" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Stone Slot" percent="20" x="3" y="1" png="dungeon/deep_slot.png" can_push="0" />
+  <customblocker name="Stone Slot" percent="20" x="9" y="2" png="dungeon/deep_slot.png" can_push="0" />
+  </room>
+
+  <!-- script rooms -->
+  
+  <!-- TODO -->
+  
+<!-- Level 12 : Stygian Dojo (11) -->
+
+<room width="14" height="13" name="Ninja Hall 1" >
+  <row text="#######D###   " />
+  <row text="##P###...#####" />
+  <row text="#......^...###" />
+  <row text="d............#" />
+  <row text="#...####..@..d" />
+  <row text="#WWW####.....#" />
+  <row text="#...####...###" />
+  <row text="d..........#P#" />
+  <row text="#......##....#" />
+  <row text="#####..##....d" />
+  <row text="#####.....##.#" />
+  <row text="    #...######" />
+  <row text="    ##D###  ##" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+<room width="12" height="16" name="Ninja Hall 2" >
+  <row text="#####D##### " />
+  <row text="####...#####" />
+  <row text="#.........P#" />
+  <row text="#.##....^..#" />
+  <row text="#.##.##....d" />
+  <row text="#....##....#" />
+  <row text="d..WW....###" />
+  <row text="#..WW....## " />
+  <row text="###....^.## " />
+  <row text="#P#......###" />
+  <row text="#....##....#" />
+  <row text="d..^.##..@.d" />
+  <row text="#..........#" />
+  <row text="###........#" />
+  <row text="###...######" />
+  <row text="  ##D#######" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+<room width="7" height="8" name="Mini Ninja Room 1" >
+  <row text="#######" />
+  <row text="###P###" />
+  <row text="#.....#" />
+  <row text="#.@...d" />
+  <row text="#.GG..#" />
+  <row text="#..^..#" />
+  <row text="#...###" />
+  <row text="##D####" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+<room width="7" height="7" name="Mini Ninja Room 2" >
+  <row text="####D##" />
+  <row text="##P...#" />
+  <row text="#..^@.#" />
+  <row text="d..LL.#" />
+  <row text="#.....#" />
+  <row text="#######" />
+  <row text="#######" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+
+<!-- script rooms -->
+  
+  
+<room width="15" height="17" name="Mustache Fighting Ring">
+  <row text=" ############# "/>
+  <row text=" ###P#####P### "/>
+  <row text="##...........##"/>
+  <row text="##4.........3.#"/>
+  <row text="##..##WWWWW...#"/>
+  <row text="#.^.##....##..#"/>
+  <row text="d...W.....##.##"/>
+  <row text="#...W........##"/>
+  <row text="###WW..1.....##"/>
+  <row text="###.......##.##"/>
+  <row text="#####.....##..#"/>
+  <row text="#.###WWWWW##..#"/>
+  <row text="d...#.........#"/>
+  <row text="#.5.#.^..@..2.#"/>
+  <row text="#............##"/>
+  <row text="############## "/>
+  <row text=" ############# "/>
+  <flags special="1" nomonsters="1" notraps="1" noblockers="1" notreasure="1" minLevel="11" maxLevel="11"/>
+  <customengraving name="Carved Dais" at="1" png="dungeon/wood_platform.png" can_push="0" />
+  <loot type="artifact" at="1" id="xymox"/>
+  <loot type="zorkmids" x="6" y="7" />
+  <loot type="zorkmids" x="7" y="7" />
+  <loot type="zorkmids" x="8" y="7" />
+  <loot type="zorkmids" x="6" y="8" />
+  <loot type="zorkmids" x="8" y="8" />
+  <loot type="zorkmids" x="6" y="9" />
+  <loot type="zorkmids" x="7" y="9" />
+  <loot type="zorkmids" x="8" y="9" />
+  <script repeat="1">    
+    <condition condition_type="at" not="1" id="xymox" at="1"/>
+    <action on="success" action_type="create" create_type="horde" name="Mustache League Champion" at="3" />
+    <action on="success" action_type="create" create_type="horde" name="Mustache League Champion" at="4" />
+    <action on="success" action_type="create" create_type="horde" name="Mustache League Champion" at="5" />
+    <action on="success" action_type="create" create_type="horde" name="Mustache League Champion" at="2" />
+    <action on="success" action_type="ticker" text="The entire Mustache Fighting League has been summoned by your plundering of their most holy treasures!"/>
+  </script>
+  </room>
+  
+  <!-- NV: disabling. This room is just completely broken... -->
+
+  <!-- Room TODO : ninja ambush 1 -->
+  <!-- Room TODO : ninja ambush 2 -->
+  
+  <!-- Room TODO : secret shrine of wood -->
+  <!-- Room TODO : secret shrine of fire -->
+  <!-- Room TODO : secret shrine of metal -->
+  <!-- Room TODO : secret shrine of water -->
+  <!-- Room TODO : secret shrine of air -->
+
+<!-- Level 13: The Mechanarium (12) -->
+
+<room name="Mechanical Halls 1" width="14" height="14" >
+  <row text="  ###D####    " />
+  <row text="  ##...P##    " />
+  <row text="###....LL#    " />
+  <row text="###..@...#####" />
+  <row text="#..^.....#####" />
+  <row text="#.....#L.....#" />
+  <row text="d.##..#L.^...#" />
+  <row text="#.#P..#LL.##.#" />
+  <row text="#.....#L..##.d" />
+  <row text="#.....LL..##.#" />
+  <row text="##..@.....##.#" />
+  <row text="##....###....#" />
+  <row text="###...####...#" />
+  <row text="####D######D##" />
+  <flags minLevel="12" maxLevel="12" />
+  </room>
+  
+<room name="Mechanical Halls 2" width="13" height="13" >
+  <row text="  ##D######  " />
+  <row text="  #...#####  " />
+  <row text="###.#.##..###" />
+  <row text="###.P.....###" />
+  <row text="#...L...@...#" />
+  <row text="d...L.......#" />
+  <row text="#..LL.##.##.#" />
+  <row text="##.##.##.##.d" />
+  <row text="##.##.....#.#" />
+  <row text="#.........#.#" />
+  <row text="#.^..##...###" />
+  <row text="#...###...###" />
+  <row text="##D#####D##  " />
+  <flags minLevel="12" maxLevel="12" />
+  </room>
+  
+<room name="Mechanical Halls 3" width="10" height="14" >
+  <row text="##D####D##" />
+  <row text="#...##...#" />
+  <row text="#.@.P#...#" />
+  <row text="#...P#.#.#" />
+  <row text="#......#.d" />
+  <row text="#......#.#" />
+  <row text="#..WW....#" />
+  <row text="#.^.WWW..#" />
+  <row text="#...##W..#" />
+  <row text="#.#.#PW..#" />
+  <row text="d.#......#" />
+  <row text="#.#..^...#" />
+  <row text="####...###" />
+  <row text="#####D####" />
+  <flags minLevel="12" maxLevel="12" />
+  </room>
+  
+<room name="Mechanical Halls 4" width="14" height="10" >
+  <row text="###########D##" />
+  <row text="##P###P###...#" />
+  <row text="#.......###.##" />
+  <row text="##.......##.##" />
+  <row text="##W...##..#.##" />
+  <row text="#.WWWW##.^...#" />
+  <row text="d............#" />
+  <row text="#.....@...##.d" />
+  <row text="#####...####.#" />
+  <row text="######D#######" />
+  <flags minLevel="12" maxLevel="12" />
+  </room>
+
+<!-- Level 14: Underground Forest (13) -->
+
+<room width="24" height="9" name="ew forest corridor" >
+  <row text="  ########D###########  " />
+  <row text="###P#####...#####P######" />
+  <row text="###..#.##.^.###.#..#.###" />
+  <row text="###....##...###........#" />
+  <row text="#...@.......##.....##..d" />
+  <row text="d.........#.....#..##..#" />
+  <row text="#...##..#.#.^..##...####" />
+  <row text="###########...###...####" />
+  <row text="####  ######D#####D###  " />
+  <flags minLevel="13" maxLevel="13"/>
+  </room>
+
+<room height="20" width="9" name="ns forest corridor" >
+  <row text="###D#####" />
+  <row text="##...####" />
+  <row text="##W...#.#" />
+  <row text="#WWW....d" />
+  <row text="#WWW.^..#" />
+  <row text="###W...##" />
+  <row text="###W..###" />
+  <row text="##....###" />
+  <row text="#......##" />
+  <row text="d.@.....#" />
+  <row text="#...##..#" />
+  <row text="##W###.##" />
+  <row text="##W###.##" />
+  <row text="#WWWP#..#" />
+  <row text="#WWWW...#" />
+  <row text="#WWW....d" />
+  <row text="#WW.....#" />
+  <row text="#WW..^..#" />
+  <row text="####...##" />
+  <row text="#####D###" />
+  <flags minLevel="13" maxLevel="13"/>
+  </room>
+
+<room width="11" height="25" name="Confusing Forest Paths">
+  <row text=" ###D####  "/>
+  <row text=" #P...###  "/>
+  <row text=" #..#..### "/>
+  <row text="##.##..####"/>
+  <row text="##.##....##"/>
+  <row text="##........#"/>
+  <row text="#...@.....d"/>
+  <row text="d.....WW..#"/>
+  <row text="#....WW####"/>
+  <row text="##..WWWW#  "/>
+  <row text="##...WW##  "/>
+  <row text="##.#..W####"/>
+  <row text="#..##...###"/>
+  <row text="#.###.....#"/>
+  <row text="#.##...##.#"/>
+  <row text="#.#W.^.##.#"/>
+  <row text="#.#W....#.#"/>
+  <row text="#.#.......d"/>
+  <row text="#.....#.#.#"/>
+  <row text="d..#.####.#"/>
+  <row text="#..#.###..#"/>
+  <row text="##...#....#"/>
+  <row text="###....####"/>
+  <row text="  #...#####"/>
+  <row text="  ##D##    "/>
+  <flags minLevel="13" maxLevel="13"/>
+  </room>
+
+<room width="15" height="15" name="The Jiggy Circle">
+  <row text="   ####D####   "/>
+  <row text=" ###P#...#P### "/>
+  <row text=" ##....1....## "/>
+  <row text="##...WW.WW...##"/>
+  <row text="##.WWW...WWW.##"/>
+  <row text="#..W..^.^..W..#"/>
+  <row text="#..W.......W..#"/>
+  <row text="d....@.3.@....d"/>
+  <row text="#..W.......W..#"/>
+  <row text="#..W..^.^..W..#"/>
+  <row text="##.WW.....WW.##"/>
+  <row text="##..WWW.WWW..##"/>
+  <row text=" ##....2....## "/>
+  <row text=" #####...##### "/>
+  <row text="   ####D####   "/>
+  <flags minLevel="13" maxLevel="13" special="1" nomonsters="1" />
+  <!-- needs more fungus -->
+  <customengraving name="Carved Dais" at="3" png="dungeon/wood_platform.png" can_push="0" />
+  <loot type="artifact" at="3" id="jiggy"/>
+  <script repeat="1">  
+    <condition condition_type="at" not="1" id="jiggy" at="3" />
+    <action on="success" action_type="create" create_type="horde" name="Elder Gnome" at="1" />
+    <action on="success" action_type="create" create_type="horde" name="Elder Gnome" at="2" />
+    <action on="success" action_type="ticker" text="With a rustling of leaves a horde of angry gnomes appear!"/>
+  </script>
+  </room>
+  
+<!-- Level 15: The Ossuary (14) -->
+
+<room name="Basic Bone Room 1" height="9" width="11" >
+  <row text="#####D#####" />
+  <row text="####...####" />
+  <row text="#P.#.@.#.P#" />
+  <row text="#.........#" />
+  <row text="d..#...#..d" />
+  <row text="#..#.#.#..#" />
+  <row text="#.^..#..^.#" />
+  <row text="#...###...#" />
+  <row text="##D#####D##" />
+  <flags minLevel="14" maxLevel="14" />  
+  </room>
+
+<room name="Basic Bone Room 2" height="9" width="11" >
+  <row text="###D###D###" />
+  <row text="##...#...##" />
+  <row text="#P.#.@.#.P#" />
+  <row text="#..#...#..#" />
+  <row text="d.^.....^.d" />
+  <row text="#....#....#" />
+  <row text="#....#....#" />
+  <row text="####...####" />
+  <row text="#####D#####" />
+  <flags minLevel="14" maxLevel="14" />  
+  </room>
+
+<room name="Hall of Skulls" height="17" width="15" >
+  <row text="###############" />
+  <row text="###############" />
+  <row text="####L#...#L####" />
+  <row text="##LLL.....LLL##" />
+  <row text="###L.......L###" />
+  <row text="#.#L.......L#.#" />
+  <row text="d.............d" />
+  <row text="#.#.........#.#" />
+  <row text="###.........###" />
+  <row text="##...#...#...##" />
+  <row text="#...##...##...#" />
+  <row text="d...##...##...d" />
+  <row text="#...#..#..#...#" />
+  <row text="##..#..#..#..##" />
+  <row text="##...........##" />
+  <row text="##...#####...##" />
+  <row text="###D#######D###" /> 
+  <flags minLevel="14" maxLevel="14" />
+  <!-- needs more skulls -->
+  </room>
+
+<!--
+
+example room:
+
+
+<room width="27" height="11" name="Starting Room2">   
+<row text=" #######  #######  ###d### "/>
+<row text="##.....####.....####.....##"/>
+<row text="#.......##.......##.......#"/>
+<row text="#.......##.......##.......#"/>
+<row text="#.......##.......##.......#"/>
+<row text="D.......1........2........D"/>
+<row text="#.......##.......##.......#"/>
+<row text="#.......##.......##.......#"/>
+<row text="#...3...##.......##.......#"/>
+<row text="##.....####.....####.....##"/>
+<row text=" #######  #######  ###d### "/>
+<flags special="1" nomonsters="1" notraps="1" noblockers="1" notreasure="1" minLevel="2000" maxLevel="2000"/>
+
+<customblocker name="Dungeon Rubble" at="1" visblock="1" png="dungeon/dungeon_rubble.png" description="A large pile of rubble blocks your way." id="rubble1" />
+<monster at="3" name="Diggle" id="diggle"/>
+<script repeat="1">
+  <condition condition_type="isdead" id="diggle" />
+  <action on="success" action_type="remove" id="rubble1" />
+  <action on="success" action_type="ticker" text="The rubble disappears!" />
+</script>
+
+<customblocker name="Dungeon Rubble" at="2" visblock="1" png="dungeon/dungeon_rubble.png" description="A large pile of rubble blocks your way." id="rubble2" />
+<lever x="14" y="2" activated="1" id="lever1"/>
+<lever x="14" y="3" activated="0" id="lever2"/>
+<script repeat="1">
+  <condition condition_type="activated" activated="1" id="lever1" />
+  <condition condition_type="activated" activated="1" id="lever2" />
+  <action on="success" action_type="set" id="rubble2" set_type="passable" value="1" />
+  <action on="success" action_type="ticker" text="The rubble seems more passable now." />
+
+  <action on="success" action_type="remove" id="lever1" />
+  <action on="success" action_type="move" id="lever2" x="14" y="8" />
+</script>
+
+<script repeat="1">
+  <condition condition_type="at" id="lever2" x="14" y="8" />
+  <action on="success" action_type="spell" casts="Tenebrous Rift" sourceX="5" sourceY="5" targetX="5" targetY="5" />
+</script>
+
+<script repeat="-1">
+  <condition condition_type="exited" />
+  <action on="success" action_type="ticker" text="You exit the starting room - surely your time in Dredmor's Garden will be educational." />
+  <action on="success" action_type="spell" casts="Lobstery Toughness" />
+</script>
+
+<script repeat="-1">
+  <condition condition_type="entered" />
+  <action on="success" action_type="ticker" text="You enter the starting room, pausing only to smell the roses." />
+</script>
+</room>
+
+-->
+
+
+
+<room width="11" height="15" name="Breakable Test">
+  <row text=" ####D#### "/>
+  <row text="####...####"/>
+  <row text="#.........#"/>
+  <row text="#.........#"/>
+  <row text="d.######..d"/>
+  <row text="#.#######.#"/>
+  <row text="#.##WWW##.#"/>
+  <row text="#.##W1W##.#"/>
+  <row text="#.##W.W##.#"/>
+  <row text="d..##!###.d"/>
+  <row text="#..##!##..#"/>
+  <row text="##.......##"/>
+  <row text="##.......##"/>
+  <row text="####...####"/>
+  <row text=" ####D#### "/>
+  <loot at="1" type="armour" artifact="1" id="artifact"/>
+  <flags minLevel="4" maxLevel="6"  special="1"/>
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="artifact" x="5" y="6" notfound="0" />
+    <action on="success" action_type="ticker" text="A mist surrounds you."/>
+    <action on="success" action_type="spell" casts="Enormous Blinding Mist Cloud"/>
+  </script>   
+  </room>
+
+<room width="11" height="13" name="World of Goo">
+  <row text=" ####D#### "/>
+  <row text="####...####"/>
+  <row text="##.......##"/>
+  <row text="#.........#"/>
+  <row text="d...WWW...d"/>
+  <row text="#..WW.WW..#"/>
+  <row text="#..W.1.W..#"/>
+  <row text="#..WW.WW..#"/>
+  <row text="d...W.W...d"/>
+  <row text="#.........#"/>
+  <row text="##.......##"/>
+  <row text="####...####"/>
+  <row text=" ####D#### "/>
+  <loot at="1" type="armour" artifact="1" id="artifact"/>    
+  <flags minLevel="4" maxLevel="4"  special="1"/>
+  <script repeat="1">
+  <condition condition_type="at" not="1" id="artifact" x="5" y="5" notfound="0" />
+  <action on="success" action_type="ticker" text="A mist surrounds you."/>
+  <action on="success" action_type="spell" casts="Enormous Blinding Mist Cloud"/>
+  </script>
+  </room>
+
+
+<room width="11" height="11" name="More Loot">
+  <row text=" ####D#### "/>
+  <row text="####...####"/>
+  <row text="#....1....#"/>
+  <row text="##.......##"/>
+  <row text="##.......##"/>
+  <row text="#W.......W#"/>
+  <row text="#W.W.2.W.W#"/>
+  <row text="#WWWWWWWWW#"/>
+  <row text="#WWWWWWWWW#"/>
+  <row text="###########"/>
+  <row text=" ######### "/>
+  <flags minLevel="9" maxLevel="12"  special="1"/>
+  
+  <loot at="2" type="weapon" artifact="1" id="artifact"/>
+  <pedestal at="1" name="Only the Brave" text="Seize the artifact at your own risk - and only if you can handle its power."/>
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="artifact" x="5" y="6" notfound="0" />
+    <action on="success" action_type="ticker" text="You are blasted by the artifact's power!"/>
+    <action on="success" action_type="spell" casts="Generic Fireball" targetX="5" targetY="6" />
+    </script>
+  </room>
+
+  <room width="11" height="11" name="Room of Demands">
+
+    <row text=" ####D#### "/>
+    <row text="##P#...#P##"/>
+    <row text="#....7....#"/>
+    <row text="d.^..6..^.d"/>
+    <row text="#....5....#"/>
+    <row text="#.@.....@.#"/>
+    <row text="#....8....#"/>
+    <row text="d.^.234.^.d"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text=" ####D#### "/>
+
+    <element at="8"  type="lever" can_push="0" id="lever0"/>
+    <customengraving name="Receptacle" at="5"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <customengraving name="Receptacle" at="6"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <customengraving name="Receptacle" at="7"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <loot at="2" type="gem" subtype="Rune of Pillars" id="rune0"/>
+    <loot at="3" type="gem" subtype="Rune of Growth and Decay" id="rune1"/>
+    <loot at="4" type="gem" subtype="Rune of Scrutiny" id="rune2"/>
+
+    <flags minLevel="0" maxLevel="14"  special="1" noblockers="1" notreasure="1" nomonsters="1"/>
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="5"/>
+      <condition condition_type="at" id="rune1" at="6"/>
+      <condition condition_type="at" id="rune2" at="7"/>
+
+      <action on="success" action_type="ticker" text="A vending machine appears!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="create" create_type="element" x="5" y="6" type="drinkvending" id="drink0"/>
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="6"/>
+      <condition condition_type="at" id="rune1" at="7"/>
+      <condition condition_type="at" id="rune2" at="5"/>
+
+      <action on="success" action_type="ticker" text="A vending machine appears!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="create" create_type="element" x="5" y="6" type="craftvending" id="craft0"/>
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="7"/>
+      <condition condition_type="at" id="rune1" at="5"/>
+      <condition condition_type="at" id="rune2" at="6"/>
+
+      <action on="success" action_type="ticker" text="A vending machine appears!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="create" create_type="element" x="5" y="6" type="boltvending" id="bolt0"/>
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="5"/>
+      <condition condition_type="at" id="rune1" at="7"/>
+      <condition condition_type="at" id="rune2" at="6"/>
+
+      <action on="success" action_type="ticker" text="A vending machine appears!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="create" create_type="element" x="5" y="6" type="thrownvending" id="thrown0"/>
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="7"/>
+      <condition condition_type="at" id="rune1" at="6"/>
+      <condition condition_type="at" id="rune2" at="5"/>
+
+      <action on="success" action_type="ticker" text="A vending machine appears!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="create" create_type="element" x="5" y="6" type="foodvending" id="food0"/>
+    </script>
+  </room>
+
+
+  <room width="11" height="10" name="Mass Pitting">
+    <row text=" ####D#### "/>
+    <row text="####...####"/>
+    <row text="##.......##"/>
+    <row text="#.........#"/>
+    <row text="#.........#"/>
+    <row text="#....7....#"/>
+    <row text="#.........#"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text=" ####D#### "/>
+
+    <flags minLevel="1" maxLevel="14" special="1" nomonsters="0"/>
+    <element x="5" y="6" type="lever" can_push="0" id="lever0"/>
+    <pedestal at="7" name="Warning" text="Mass pitting mechanism above."/>
+
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <action on="success" action_type="create" create_type="horde" x="4" y="10"/>
+      <action on="success" action_type="create" create_type="horde" x="5" y="10"/>
+      <action on="success" action_type="create" create_type="horde" x="6" y="10"/>
+      <action on="success" action_type="ticker" text="A horde of monsters fall into the pit!"/>
+    </script>
+
+
+
+  </room>
+
+  <room width="11" height="10" name="Dwarven Mail System">
+    <row text=" ####D#### "/>
+    <row text="####...####"/>
+    <row text="##.......##"/>
+    <row text="#..4.5.6..#"/>
+    <row text="#.........#"/>
+    <row text="#....7....#"/>
+    <row text="#.........#"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text=" ####D#### "/>
+
+    <flags minLevel="1" maxLevel="14" special="1" nomonsters="0"/>
+    <element x="5" y="6" type="lever" can_push="0" id="lever0"/>
+    <pedestal at="7" name="Warning" text="Dwarven Express Post."/>
+
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <action on="success" action_type="create" create_type="horde" x="5" y="10"/>
+      <action on="success" action_type="create" create_type="element" type="evilchest" at="4" id="chest0"/>
+      <action on="success" action_type="create" create_type="element" type="evilchest" at="5"  id="chest1"/>
+      <action on="success" action_type="create" create_type="element" type="evilchest" at="6" id="chest2"/>
+      <action on="success" action_type="ticker" text="Some ancient evil is dislodged from the ceiling above!"/>
+    </script>
+
+  </room>
+  
+  
+<room width="18" height="11" name="Room of Levers">
+  <row text=" ################ "/>
+  <row text="##################"/>
+  <row text="##...#.####.#6..##"/>
+  <row text="#5...#..##..#7...#"/>
+  <row text="##...#..##..#8..##"/>
+  <row text="##3###..##..###4##"/>
+  <row text="#..###..##..###..#"/>
+  <row text="d...1........2...d"/>
+  <row text="#................#"/>
+  <row text="##################"/>
+  <row text="##################"/>
+  <flags minLevel="0" maxLevel="1" special="1" nomonsters="1"/>
+
+  <customblocker id="grate0" name="Dwarven Educational Grate" at="3" png="dungeon/bars_iron_ew.png" description="The Dwarven Educational System is well-known for two things: its efficiency, and having more teaching equipment made out of ferrous metal than any other civilization."/>
+  <customblocker id="grate1" name="Dwarven Educational Grate" at="4" png="dungeon/bars_iron_ew.png" description="The Dwarven Educational System is well-known for two things: its efficiency, and having more teaching equipment made out of ferrous metal than any other civilization."/>
+  <element at="1" type="lever" can_push="0" id="lever0"/>
+  <element at="2" type="lever" can_push="0" id="lever1"/>
+  
+  <loot at="5" type="artifact"/>
+  <monster at="6" name="Enraged Diggle"/>
+  <monster at="7" name="Enraged Diggle"/>
+  <monster at="8" name="Enraged Diggle"/>
+  <script>
+    <condition condition_type="activated" activated="1" id="lever0"/>
+    <action on="success" action_type="remove" id="lever0"/>
+    <action on="success" action_type="remove" id="lever1"/>
+    <action on="success" action_type="remove" id="grate0"/>      
+    </script>
+  <script>
+    <condition condition_type="activated"  activated="1" id="lever1"/>
+    <action on="success" action_type="remove" id="lever0"/>
+    <action on="success" action_type="remove" id="lever1"/>
+    <action on="success" action_type="remove" id="grate1"/>
+    </script>
+  </room>
+  
+  <!-- duplicate this room so you never know which lever is which... -->
+  
+  <room width="11" height="13" name="Control Point">
+    <row text="   ##D##   "/>
+    <row text="####...####"/>
+    <row text="####...####"/>
+    <row text="#..#......#"/>
+    <row text="#2........d"/>
+    <row text="#GG.....GG#"/>
+    <row text="#GGG#.#GGG#"/>
+    <row text="#GGG#1#GGG#"/>
+    <row text="#GG.....GG#"/>
+    <row text="d........3#"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text="#####D#####"/>
+    <flags minLevel="0" maxLevel="3" special="1"/>
+    <customblocker id="grate" name="Iron Grate" at="1"  png="dungeon/bars_iron_ew.png" description="The iron bars of the grate refuse to let you pass."/>    
+    <element at="2" type="lever" can_push="0" id="lever0"/>
+    <element at="3" type="lever" can_push="0" id="lever1"/>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="remove" id="grate"/>
+    </script>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever1"/>
+      <action on="success" action_type="remove" id="grate"/>
+    </script>
+  </room>
+
+  <room width="11" height="13" name="Control Point 2">
+    <row text="   ##D##   "/>
+    <row text="####...####"/>
+    <row text="####...####"/>
+    <row text="#..#......#"/>
+    <row text="#2........d"/>
+    <row text="#LL.....LL#"/>
+    <row text="#LLL#.#LLL#"/>
+    <row text="#LLL#1#LLL#"/>
+    <row text="#.LLL...LL#"/>
+    <row text="d........3#"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text="#####D#####"/>
+    <flags minLevel="8" maxLevel="11" special="1"/>
+    <customblocker id="grate" name="Iron Grate" at="1"  png="dungeon/bars_iron_ew.png" description="The iron bars of the grate refuse to let you pass."/>
+    <element at="2" type="lever" can_push="0" id="lever0"/>
+    <element at="3" type="lever" can_push="0" id="lever1"/>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="remove" id="grate"/>
+    </script>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever1"/>
+      <action on="success" action_type="remove" id="grate"/>
+    </script>
+  </room>
+
+  <room width="13" height="13" name="Customs">
+    <row text="    ##D##    "/>
+    <row text=" ####...#    "/>
+    <row text=" ####...#### "/>
+    <row text=" #......#### "/>
+    <row text="##.......GG# "/>
+    <row text="#....#.GGGG##"/>
+    <row text="d...##.G2...#"/>
+    <row text="#...##.G....d"/>
+    <row text="##..1#.GGGG.#"/>
+    <row text=" #......GGG##"/>
+    <row text=" #......GGG# "/>
+    <row text=" ####...#### "/>
+    <row text=" #####D##### "/>
+    <flags minLevel="0" maxLevel="3" special="1"/>
+
+    <element at="1" type="lever" can_push="0" id="lever0"/>
+    <element at="2" type="lever" can_push="0" id="lever1"/>
+
+    <loot type="artifact" x="9" y="7"/>
+
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="8" targetY="7"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever1"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="4" targetY="9"/>
+    </script>
+  </room>
+
+<room width="13" height="16" name="Split">
+  <row text="    ##D##    "/>
+  <row text=" ####...#####"/>
+  <row text=" ####...#####"/>
+  <row text=" #4.....W3..#"/>
+  <row text=" #......W...d"/>
+  <row text="#####WWWW...#"/>
+  <row text="#.###WWWW...#"/>
+  <row text="d..5#W..WW###"/>
+  <row text="#...#W..W####"/>
+  <row text="##..#W..W##.#"/>
+  <row text="##..WWWWW2..d"/>
+  <row text=" ####..#W..##"/>
+  <row text=" ####1.#W..##"/>
+  <row text=" #.....WW### "/>
+  <row text=" ####...#### "/>
+  <row text=" #####D###   "/>
+  <flags minLevel="0" maxLevel="3" special="1" />
+  <element at="1" type="lever" can_push="0" id="lever1"/>
+  <element at="2" type="lever" can_push="0" id="lever2"/>
+  <element at="3" type="lever" can_push="0" id="lever3"/>
+  <element at="4" type="lever" can_push="0" id="lever4"/>
+  <element at="5" type="lever" can_push="0" id="lever5"/>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever1"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="10" targetY="10"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever2"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="10" targetY="4"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever3"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="5" targetY="3"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever4"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="2" targetY="8"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever5"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="5" targetY="13"/>
+    </script>
+  </room>
+
+<room width="13" height="16" name="Split 2">
+  <row text="    ##D##    "/>
+  <row text=" ####...#####"/>
+  <row text=" ####...#####"/>
+  <row text=" #4.....W3..#"/>
+  <row text=" #......W...d"/>
+  <row text="#####WWWW...#"/>
+  <row text="#.###WWWW...#"/>
+  <row text="d..5#W..WWWW#"/>
+  <row text="#...#W67W####"/>
+  <row text="##..#W..W##.#"/>
+  <row text="##..WWWWW2..d"/>
+  <row text=" ####..#W..##"/>
+  <row text=" ####1.#W..##"/>
+  <row text=" #.....WW### "/>
+  <row text=" ####...#### "/>
+  <row text=" #####D###   "/>
+  <flags minLevel="4" maxLevel="6" special="1"/>
+  <element at="1" type="lever" can_push="0" id="lever1"/>
+  <element at="2" type="lever" can_push="0" id="lever2"/>
+  <element at="3" type="lever" can_push="0" id="lever3"/>
+  <element at="4" type="lever" can_push="0" id="lever4"/>
+  <element at="5" type="lever" can_push="0" id="lever5"/>
+  <monster at="6" name="Jiggy Gnome"/>
+  <monster at="7" name="Jiggy Gnome"/>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever1"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="10" targetY="10"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever2"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="10" targetY="4"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever3"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="5" targetY="3"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever4"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="2" targetY="8"/>
+    </script>
+  <script repeat="-1">
+    <condition condition_type="activated_changed" id="lever5"/>
+    <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="5" targetY="12"/>
+    </script>
+  </room>
+  
+<room width="9" height="25" name="Indiana Jones 1">
+  <row text=" ####### "/>
+  <row text=" ####### "/>
+  <row text="##.....##"/>
+  <row text="#.......#"/>
+  <row text="#.WWWWW.#"/>
+  <row text="#.WWWWW.#"/>
+  <row text="#.WW1WW.#"/>
+  <row text="#.WW.WW.#"/>
+  <row text="#.WW.WW.#"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="##.....##"/>
+  <row text=" ###.### "/>
+  <row text=" ###.### "/>
+  <row text="##.....##"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="d...2...#"/>
+  <row text="#.......d"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="##.....##"/>
+  <row text=" ##...## "/>
+  <row text=" ###D### "/>
+  <loot type="artifact" at="1" id="monkey"/>
+  <flags minLevel="0" maxLevel="3" special="1"/>
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="monkey" at="1" />
+    <action on="success" action_type="create" create_type="horde" at="2"/>
+    <action on="success" action_type="ticker" text="The guards come running!"/>
+    </script>
+  </room>
+
+<room width="9" height="25" name="Indiana Jones 2">
+  <row text=" ####### "/>
+  <row text=" ####### "/>
+  <row text="##.....##"/>
+  <row text="#.......#"/>
+  <row text="#.LLLLL.#"/>
+  <row text="#.LLLLL.#"/>
+  <row text="#.LL1LL.#"/>
+  <row text="#.LL.LL.#"/>
+  <row text="#.LL.LL.#"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="##.....##"/>
+  <row text=" ###.### "/>
+  <row text=" ###.### "/>
+  <row text="##.....##"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="d...2...#"/>
+  <row text="#.......d"/>
+  <row text="#.......#"/>
+  <row text="#.......#"/>
+  <row text="##.....##"/>
+  <row text=" ##...## "/>
+  <row text=" ###D### "/>
+  <loot type="artifact" at="1" id="monkey"/>
+  <flags minLevel="8" maxLevel="14" special="1"/>
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="monkey" at="1" />
+    <action on="success" action_type="create" create_type="horde" at="2"/>
+    <action on="success" action_type="ticker" text="The guards come running!"/>
+    </script>
+  </room>
+
+  <room width="15" height="18" name="The Pit">
+
+    <row text="###############"/>
+    <row text="###############"/>
+    <row text="#####.....#####"/>
+    <row text="######...######"/>
+    <row text="#######.#######"/>
+    <row text="#######2#######"/>
+    <row text="#..LLLL.LLLL..#"/>
+    <row text="#..LLLL.LLLL..#"/>
+    <row text="#LLLLLL.LLLLLL#"/>
+    <row text="#LLLLL...LLLLL#"/>
+    <row text="#LLLL.....LLLL#"/>
+    <row text="d......1......d"/>
+    <row text="#LLLL.....LLLL#"/>
+    <row text="#LLLLL...LLLLL#"/>
+    <row text="#LLLLLL.LLLLLL#"/>
+    <row text="#..LLLL.LLLL..#"/>
+    <row text="#..LLLL.LLLL..#"/>
+    <row text="#######D#######"/>
+
+    <loot x="8" y="1" type="artifact"/>
+    
+    <monster at="1" name="Muscle Diggle" id="warrior"/>
+    <customblocker id="grate" name="Iron Grate" at="2"  png="dungeon/bars_iron_ew.png" description="The iron bars of the grate refuse to let you pass."/>
+
+    <script repeat="1">
+      <condition condition_type="entered"/>
+      <action on="success" action_type="ticker" text="You must now face a ghastly foe in... THE PIT!" />
+    </script>
+    
+    <script repeat="1">
+      <condition condition_type="isdead" id="warrior"/>
+      <action on="success" action_type="ticker" text="Well done, warrior. You may claim your prize."/>
+      <action on="success" action_type="remove" id="grate"/>
+    </script>
+    
+    <flags minLevel="9" maxLevel="14" special="1" nomonsters="1"/>
+  </room>
+
+  <room width="11" height="11" name="Antimagic Testing Chamber">
+
+    <row text=" ####D#### "/>
+    <row text="#####.#####"/>
+    <row text="##.......##"/>
+    <row text="d.........d"/>
+    <row text="##.......##"/>
+    <row text="##.......##"/>
+    <row text="##.......##"/>
+    <row text="d.........d"/>
+    <row text="##.......##"/>
+    <row text="#####.#####"/>
+    <row text=" ####D#### "/>
+    <flags minLevel="2" maxLevel="5"  special="1"/>
+    <element x="2" y="2" type="lever" can_push="0" id="lever0"/>    
+    <script>
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="spell" casts="Antimagic Cloud" targetX="5" targetY="5"/>
+    </script>
+  </room>
+
+  <room width="11" height="11" name="Brimstone Testing Chamber">
+
+    <row text=" ####D#### "/>
+    <row text="#####.#####"/>
+    <row text="##.......##"/>
+    <row text="d.........d"/>
+    <row text="##.......##"/>
+    <row text="##.......##"/>
+    <row text="##.......##"/>
+    <row text="d.........d"/>
+    <row text="##.......##"/>
+    <row text="#####.#####"/>
+    <row text=" ####D#### "/>
+    <flags minLevel="7" maxLevel="13"  special="1"/>
+    <element x="5" y="5" type="lever" can_push="0" id="lever0"/>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="spell" casts="Brimstone Cloud" targetX="5" targetY="5"/>
+    </script>
+  </room>
+
+  <room width="11" height="11" name="Healing Chamber">
+
+    <row text=" ######### "/>
+    <row text="##WWW1WWW##"/>
+    <row text="#WWWW.WWWW#"/>
+    <row text="d.........d"/>
+    <row text="#.........#"/>
+    <row text="#.WW...WW.#"/>
+    <row text="#.W3...4W.#"/>
+    <row text="d.WW...WW.d"/>
+    <row text="#....2....#"/>
+    <row text="#####.#####"/>
+    <row text=" ####D#### "/>
+    <pedestal at="2" name="Refreshment" text="Make a wish, and pull the lever."/>
+    <element type="fountain"  at="3"/>
+    <element type="fountain"  at="4"/>
+
+    <flags minLevel="0" maxLevel="4"  special="1"/>
+    <element at="1" type="lever" can_push="0" id="lever0"/>
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="spell" casts="Crystal Healing" sourceX="5" sourceY="5" targetX="5" targetY="5"/>
+    </script>
+  </room>
+
+  <room width="11" height="11" name="Fun Chamber">
+
+    <row text=" ####D#### "/>
+    <row text="##GGG.GGG##"/>
+    <row text="#GGGG.GGGG#"/>
+    <row text="d..GG.....d"/>
+    <row text="#.GGGGGGG.#"/>
+    <row text="#.GGGGGGG.#"/>
+    <row text="#.G..1..G.#"/>
+    <row text="d.G.....G.d"/>
+    <row text="#....2....#"/>
+    <row text="#####.#####"/>
+    <row text=" ####D#### "/>
+    <pedestal at="2" name="Heh heh heh." text="Pull lever to engage Dark Forces. Heh, heh, heh. Heh. HEH."/>
+
+    <flags minLevel="2" maxLevel="6" special="1"/>
+    <element at="1" type="lever" can_push="0" id="lever0"/>
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever0"/>
+      <action on="success" action_type="spell" casts="Pact of Fleeting Life" sourceX="5" sourceY="5" targetX="5" targetY="5"/>
+    </script>
+  </room>
+
+  <!-- Inconsequentia -->
+
+  <room width="7" height="7" name="Small Shrine of Inconsequentia">
+    <row text="#######"/>
+    <row text="#######"/>
+    <row text="##...##"/>
+    <row text="#.....#"/>
+    <row text="#WW.WW#"/>
+    <row text="##...##"/>
+    <row text="###D###"/>
+    <flags minLevel="0" maxLevel="9" noblockers="1" notraps="1" notreasure="1" nomonsters="1" special="1" />
+    <element type="statue" x="3" y="2" />
+    
+    <horde x="3" y="3" name="Wight" min="3"/>
+    
+    <customengraving name="Floor Candles" x="2" y="2" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker aloofly at you." />
+    <customengraving name="Floor Candles" x="4" y="2" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker aloofly at you." />
+    <customblocker name="Wall Sconce" x="1" y="2" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames billow and roll in their little nook." />
+    <customblocker name="Wall Sconce" x="5" y="2" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames billow and roll in their little nook." />
+    <customengraving name="Floor Candles" x="1" y="3" png="dungeon/candles_floor_nw0.png" passable="1" description="These candles are burned out."/>
+    <customengraving name="Floor Candles" x="5" y="3" png="dungeon/candles_floor_ne0.png" passable="1" description="These candles are burned out."/>
+  </room>
+
+  <!-- Krong -->
+
+<room width="7" height="9" name="Small Corrupted Shrine of Krong">
+  <row text="#######" />
+  <row text="#######" />
+  <row text="##LLL##" />
+  <row text="#.L1L.#" />
+  <row text="d.234.d" />
+  <row text="#.5.6.#" />
+  <row text="#.....#" />
+  <row text="##...##" />
+  <row text="###D###" />
+  <flags minLevel="7" maxLevel="14" noblockers="1" notreasure="1" nomonsters="1" special="1" />
+  <customblocker name="Corrupted Anvil" at="1" can_push="0" description="This Anvil of Krong has been shamefully defiled." png="dungeon/krong_anvil_broken.png" visblock="0" id="defiled" />
+  <monster at="2" id="badguy1" />
+  <monster at="3" id="badguy2" />
+  <monster at="4" id="badguy3" />
+  <monster at="5" id="badguy4" />
+  <monster at="6" id="badguy5" />
+  
+  <script repeat="-1">
+    <condition condition_type="isdead" id="badguy1" />
+    <condition condition_type="isdead" id="badguy2" />
+    <condition condition_type="isdead" id="badguy3" />
+    <condition condition_type="isdead" id="badguy4" />
+    <condition condition_type="isdead" id="badguy5" />
+    <condition condition_type="at" id="defiled" at="1" />
+    <action on="success" action_type="remove" id="defiled" />
+    <action on="success" action_type="create" create_type="element" type="anvil" at="1" />
+    <action on="success" action_type="spell" casts="Ignition Bolt" targetat="1" />
+    <action on="success" action_type="ticker" text="Praises to the faithful adventurer, the shrine is cleansed and Krong may reward you! Or not." />
+    </script>
+  
+  <customblocker name="Brazier" x="2" y="5" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong." can_push="0" />
+  <customblocker name="Brazier" x="4" y="5" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong." can_push="0" />
+  </room>
+
+<room width="11" height="13" name="Corrupted Shrine of Krong">
+  <row text="#####D#####" />
+  <row text="####...####" />
+  <row text="##.......##" />
+  <row text="#..LL.LL..#" />
+  <row text="#.LL63.LL.#" />
+  <row text="#.LL415LL.#" />
+  <row text="d.LL.27LL.d" />
+  <row text="#..LL.LL..#" />
+  <row text="#.........#" />
+  <row text="#LL.....LL#" />
+  <row text="#LL.....LL#" />
+  <row text="####...####" />
+  <row text="#####D#####" />
+  <flags minLevel="5" maxLevel="14" noblockers="1" notreasure="1" nomonsters="1" special="1" />
+  <customblocker name="Corrupted Anvil" at="1" can_push="0" description="This Anvil of Krong has been shamefully defiled." png="dungeon/krong_anvil_broken.png" visblock="0" id="defiled" />
+  <monster at="2" id="badguy1" />
+  <monster at="3" id="badguy2" />
+  <monster at="4" id="badguy3" />
+  <monster at="5" id="badguy4" />
+  <monster at="6" id="badguy5" />
+  <monster at="7" id="badguy6" />
+  
+  <script repeat="-1">
+    <condition condition_type="isdead" id="badguy1" />
+    <condition condition_type="isdead" id="badguy2" />
+    <condition condition_type="isdead" id="badguy3" />
+    <condition condition_type="isdead" id="badguy4" />
+    <condition condition_type="isdead" id="badguy5" />
+    <condition condition_type="isdead" id="badguy6" />
+    <condition condition_type="at" id="defiled" at="1" />
+    <action on="success" action_type="remove" id="defiled" />
+    <action on="success" action_type="create" create_type="element" type="anvil" at="1" />
+    <action on="success" action_type="spell" casts="Ignition Bolt" targetat="1" />
+    <action on="success" action_type="ticker" text="Praises to the faithful adventurer, the shrine is cleansed and Krong may reward you! Or not." />
+    </script>
+  
+  <customblocker name="Brazier" x="4" y="9" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong." can_push="0" />
+  <customblocker name="Brazier" x="6" y="9" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong." can_push="0" />
+  <customengraving name="Floor Candles" x="4" y="4" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker judgmentally at you." can_push="0" />
+  <customengraving name="Floor Candles" x="6" y="4" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker judgmentally at you." can_push="0" />
+  <customengraving name="Floor Candles" x="4" y="6" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker judgmentally at you." can_push="0" />
+  <customengraving name="Floor Candles" x="6" y="6" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker judgmentally at you." can_push="0" />
+  <customblocker name="Wall Sconce" x="2" y="1" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames flicker fickly at you." can_push="0" />
+  <customblocker name="Wall Sconce" x="8" y="1" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames flicker fickly at you." can_push="0" />
+</room>
+
+  <room width="10" height="10" name="Small Corrupted Shrine of The Lutefisk God">
+    <row text="##########"/>
+    <row text="##########"/>
+    <row text="##WWW#####"/>
+    <row text="#WW1WW####"/>
+    <row text="#W...W##2#"/>
+    <row text="#.....!!.#"/>
+    <row text="#.....##.#"/>
+    <row text="#.....####"/>
+    <row text="##...#####"/>
+    <row text="###D######"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1" special="1"/>
+    <element type="lutefiskstatue" at="1" />
+    <loot type="Food" subtype="Lutefisk" at="2" amount="10"/>
+    <horde x="5" y="4" name="Fish Paladin" min="4"/>
+
+    <customengraving name="Floor Candles" x="2" y="4" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles writhe tentacularly in the damp air." />
+    <customengraving name="Floor Candles" x="4" y="4" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles struggle against the dampness." />
+    <customengraving name="Floor Candles" x="4" y="6" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker aloofly at you." />
+    <customengraving name="Floor Candles" x="2" y="6" png="dungeon/candles_floor_sw0.png" passable="1" description="These candles have flickered their last in this soggy domain."/>
+    <customblocker name="Fishy Sconce" x="1" y="2" pngSprite="dungeon/sconce_lutefisk/sconce_lutefisk" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The fishy little flame beats with the steady rhythm of the waves." />
+    <customblocker name="Fishy Sconce" x="5" y="2" pngSprite="dungeon/sconce_lutefisk/sconce_lutefisk" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The fishy little flame beats with the steady rhythm of the waves." />
+    <customblocker name="Fishy Sconce" x="2" y="1" pngSprite="dungeon/sconce_lutefisk/sconce_lutefisk" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The fishy little flame beats with the steady rhythm of the waves." />
+    <customblocker name="Fishy Sconce" x="4" y="1" pngSprite="dungeon/sconce_lutefisk/sconce_lutefisk" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The fishy little flame beats with the steady rhythm of the waves." />
+  </room>
+
+  <!-- DIGGLE GODS -->
+
+  <!-- War -->
+  <room width="9" height="13" name="Medium Shrine of the Diggle God of War">
+    <row text="#########"/>
+    <row text="#########"/>
+    <row text="###X1X###"/>
+    <row text="#LL.3.LL#"/>
+    <row text="##L2.4L##"/>
+    <row text="##L...L##"/>
+    <row text="#LLL.LLL#"/>
+    <row text="#.......#"/>
+    <row text="d.......d"/>
+    <row text="#.LL.LL.#"/>
+    <row text="#LLL.LLL#"/>
+    <row text="###...###"/>
+    <row text="####D####"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1"  digglegod="1" special="1" />
+    <element type="digglegod" name="Diggle God of War" at="1" />
+    
+    <customblocker name="Fiery Brazier" at="2" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="4" pngSprite="dungeon/brazierA/brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    
+    <customblocker name="Sconce" x="2" y="2" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames burn with rage." can_push="0" />
+    <customblocker name="Sconce" x="6" y="2" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames burn with rage." can_push="0" />
+    <customblocker name="Sconce" x="1" y="5" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames burn with rage." can_push="0" />
+    <customblocker name="Sconce" x="7" y="5" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames burn with rage." can_push="0" />
+    
+    <loot type="weapon" at="3" />
+
+    <customengraving name="Floor Candles" x="3" y="2" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles writhe tentacularly in the damp air." />
+    <customengraving name="Floor Candles" x="5" y="2" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles struggle against the dampness." />
+    <customengraving name="Floor Candles" x="5" y="5" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker aloofly at you." />
+    <customengraving name="Floor Candles" x="3" y="5" png="dungeon/candles_floor_sw0.png" passable="1" description="These candles have flickered their last in this soggy domain."/>
+  </room>
+
+  <!-- Fertility -->
+
+  <room width="9" height="13" name="Medium Shrine of the Diggle God of Fertility">
+    <row text="#########"/>
+    <row text="#########"/>
+    <row text="###XXX###"/>
+    <row text="#WWX1XWW#"/>
+    <row text="##W...W##"/>
+    <row text="##W...W##"/>
+    <row text="#WWW.WWW#"/>
+    <row text="#.......#"/>
+    <row text="d.......d"/>
+    <row text="#.......#"/>
+    <row text="#WWW.WWW#"/>
+    <row text="###...###"/>
+    <row text="####D####"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1"  digglegod="1" special="1" />
+    <element type="digglegod" name="Diggle God of Fertility" at="1" />
+
+    <customengraving name="Floor Candles" x="3" y="4" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles writhe tentacularly in the damp air." />
+    <customengraving name="Floor Candles" x="5" y="4" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The flames of these candles struggle against the dampness." />
+    <customengraving name="Floor Candles" x="5" y="5" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="Caution: candle may be made of 100% Diggle Earwax." />
+    <customengraving name="Floor Candles" x="3" y="5" png="dungeon/candles_floor_sw0.png" passable="1" description="These candles have flickered their last in this soggy domain."/>
+  </room>
+
+  <!-- Death  -->
+
+  <room width="9" height="13" name="Medium Shrine of the Diggle God of Death">
+    <row text="#########"/>
+    <row text="#########"/>
+    <row text="###X1X###"/>
+    <row text="###2.5###"/>
+    <row text="###3.6###"/>
+    <row text="###4.7###"/>
+    <row text="###9.8###"/>
+    <row text="#.#...#.#"/>
+    <row text="d.......d"/>
+    <row text="#.##.##.#"/>
+    <row text="####.##.#"/>
+    <row text="###...###"/>
+    <row text="####D####"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1"  digglegod="1" special="1" />
+    <element type="digglegod" name="Diggle God of Death" at="1" />
+  <customengraving name="Candles" at="5" percent="60" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0" />
+  <customengraving name="Candles" at="6" percent="60" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/> 
+  <customengraving name="Candles" at="7" percent="60" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/>
+  <customengraving name="Candles" at="9" percent="60" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/>
+  <customengraving name="Candles" at="5" percent="60" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0" />
+  <customengraving name="Candles" at="6" percent="60" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/> 
+  <customengraving name="Candles" at="7" percent="60" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/>
+  <customengraving name="Candles" at="8" percent="60" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/>
+  <customengraving name="Candles" at="9" percent="60" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0" />
+  <customengraving name="Candles" at="4" percent="60" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/> 
+  <customengraving name="Candles" at="3" percent="60" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/>
+  <customengraving name="Candles" at="2" percent="60" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker in a draft." can_push="0"/> 
+    
+  </room>
+
+  <!-- Drilling -->
+  <room width="9" height="13" name="Medium Shrine of the Diggle God of Digging">
+    <row text="#########"/>
+    <row text="#GGGGGGG#"/>
+    <row text="#GGXXXGG#"/>
+    <row text="#GGX1XGG#"/>
+    <row text="#GG...GG#"/>
+    <row text="#GG...GG#"/>
+    <row text="#GG...GG#"/>
+    <row text="#GG...GG#"/>
+    <row text="d.......d"/>
+    <row text="#.......#"/>
+    <row text="#.......#"/>
+    <row text="###...###"/>
+    <row text="####D####"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1"  digglegod="1" special="1" />
+    <element type="digglegod" name="Diggle God of Digging" at="1" />
+  </room>
+
+  <!-- Secrets -->
+  <room width="9" height="12" name="Medium Shrine of the Diggle God of Secrets">
+    <row text="#########"/>
+    <row text="#########"/>
+    <row text="#IIIIIII#"/>
+    <row text="#III1III#"/>
+    <row text="#II...II#"/>
+    <row text="####!####"/>
+    <row text="####!####"/>
+    <row text="####!####"/>
+    <row text="#.......#"/>
+    <row text="d.......d"/>
+    <row text="#.......#"/>    
+    <row text="####D####"/>
+    <flags minLevel="10" maxLevel="15" noblockers="1" notraps="1" notreasure="1" nomonsters="1"  digglegod="1" special="1" />
+    <element type="digglegod" name="Diggle God of Secrets" at="1" />
+
+    <customblocker name="Candles On A Shelf" x="1" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Candles On A Shelf" x="4" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Candles On A Shelf" x="7" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+
+  </room>
+  
+  <!-- nv 2011 12 20: moving this here for now, because room DBs suffer from the same problem that spell DBs used to suffer from. Aie! -->
+  
+  <room width="11" height="11" name="Goo Ambush 1">
+    <row text="###D#######"/>
+    <row text="#P...######"/>
+    <row text="#G...G#..2#"/>
+    <row text="#G.@.G#...#"/>
+    <row text="#....G#####"/>
+    <row text="d...GG.####"/>
+    <row text="#......1..#"/>
+    <row text="##...GGGG.d"/>
+    <row text="##...GGGG.#"/>
+    <row text="##...######"/>
+    <row text="###D#######"/>
+    <flags minLevel="2" maxLevel="2" special="1" />
+    <customblocker name="Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_on.png" x="6" y="4" can_push="0" />
+    <customblocker name="Flickering Glass Square" x="8" y="1" pngSprite="dungeon/monitor_snow/monitor_snow" pngFirst="0" pngNum="3" pngRate="100" pngAnimate="1" description="The random patterns are strangely mesmerizing." can_push="0" />
+    <loot at="2" type="gem" subtype="Rune of Pillars" id="flag"/>
+
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="1" />
+      <condition condition_type="at" id="flag" at="2" />
+      <action on="success" action_type="remove" id="flag" />
+      <!-- kill the gem! -->
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="7" targetY="4" sourceX="7" sourceY="4" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="8" targetY="4" sourceX="8" sourceY="4" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="9" targetY="4" sourceX="9" sourceY="4" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="7" targetY="5" sourceX="7" sourceY="5" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="8" targetY="5" sourceX="8" sourceY="5" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="9" targetY="5" sourceX="9" sourceY="5" />
+      <action on="success" action_type="create" create_type="monster" x="7" y="4" />
+      <action on="success" action_type="create" create_type="monster" x="8" y="4" />
+      <action on="success" action_type="create" create_type="monster" x="9" y="4" />
+      <action on="success" action_type="create" create_type="monster" x="8" y="3" />
+      <action on="success" action_type="create" create_type="monster" x="9" y="3" />
+      <action on="success" action_type="ticker" text="An ambush! You're doomed!"/>
+    </script>
+  </room>
+
+<!-- 1.0.10 rooms -->
+
+  <!-- for floor 10 -->
+  
+<room width="16" height="13" name="Dungeon Block 1" >
+  <row text=" ####D########  " />
+  <row text="####...###P#####" />
+  <row text="##1#.^..2....###" />
+  <row text="#............3.#" />
+  <row text="#.....##.......#" />
+  <row text="#..@..##.....@.d" />
+  <row text="#....######....#" />
+  <row text="d....####P#....#" />
+  <row text="#...^.##.......#" />
+  <row text="###...##..^.####" />
+  <row text="###.........####" />
+  <row text="  #######...#   " />
+  <row text="  ########D##   " />
+  <flags minLevel="10" maxLevel="10" />
+  <customblocker name="Brazier" percent="50" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows languidly." />
+  <customblocker name="Stone Column" percent="40" at="2" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Stone Column" percent="40" at="3" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Conspicuous Stone Slot" percent="20" x="5" y="7" png="dungeon/deep_slot.png" can_push="0" />
+  <customblocker name="Inconspicuous Stone Slot" percent="20" x="11" y="2" png="dungeon/deep_slot.png" can_push="0" />
+  </room>
+
+<room width="13" height="16" name="Dungeon Block 2" >
+  <row text=" ##D#######  " />
+  <row text=" #...######  " />
+  <row text="##.^.##.2.#  " />
+  <row text="##......^.d  " />
+  <row text="#.........#  " />
+  <row text="#....##...###" />
+  <row text="##..###.@.###" />
+  <row text="##..#P#.....#" />
+  <row text="#....WWWW##.#" />
+  <row text="d..^..W1W##.#" />
+  <row text="#.....WWW3..#" />
+  <row text="####....W...d" />
+  <row text="####..@.....#" />
+  <row text="  #.......###" />
+  <row text="  #####...###" />
+  <row text="  ######D##  " />
+  <flags minLevel="10" maxLevel="10" />
+  <customblocker name="Brazier" percent="50" at="1" pngSprite="dungeon/deep_brazierA/deep_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="The brazier glows languidly." />
+  <customblocker name="Stone Column" percent="40" at="2" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Stone Column" percent="40" at="3" png="dungeon/deep_column.png" description="It stands, mostly immovable."/>
+  <customblocker name="Forboding Stone Slot" percent="20" x="6" y="7" png="dungeon/deep_slot.png" can_push="0" />
+  <customblocker name="Anonymous Stone Slot" percent="20" x="11" y="6" png="dungeon/deep_slot.png" can_push="0" />
+  </room>
+
+  <!-- for floor 11 -->
+
+<room width="7" height="16" name="Mini Ninja Room 3" >
+  <row text="#######" />
+  <row text="###P###" />
+  <row text="#.....#" />
+  <row text="#.@...d" />
+  <row text="#.GG..#" />
+  <row text="#..^.##" />
+  <row text="#....##" />
+  <row text="##....#" />
+  <row text="##.##.#" />
+  <row text="##.##.#" />
+  <row text="#..#..#" />
+  <row text="d.@#..#" />
+  <row text="#.GG..#" />
+  <row text="#..^..#" />
+  <row text="#...###" />
+  <row text="##D####" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+<room width="14" height="7" name="Mini Ninja Room 4" >
+  <row text="####D#########" />
+  <row text="##P...#####P##" />
+  <row text="#..^@.###.LL.#" />
+  <row text="d..LL.##.....d" />
+  <row text="#.........##.#" />
+  <row text="#######...####" />
+  <row text="########D#####" />
+  <flags minLevel="11" maxLevel="11" />
+  </room>
+
+  <!-- ninja ambush rooms -->
+
+<room width="7" height="20" name="Ninja Ambush 1" >
+  <row text="#######" />
+  <row text="#######" />
+  <row text="#L...L#" />
+  <row text="#..2..#" />
+  <row text="#######" />
+  <row text="#######" />
+  <row text="#@.1..#" />
+  <row text="#..G..d" />
+  <row text="#..GG.#" />
+  <row text="#..^G##" />
+  <row text="#...G##" />
+  <row text="##....#" />
+  <row text="##.##.#" />
+  <row text="##.##.#" />
+  <row text="#..#..#" />
+  <row text="d.@#..#" />
+  <row text="#.GG..#" />
+  <row text="#..^..#" />
+  <row text="#...###" />
+  <row text="##D####" />
+  <flags minLevel="11" maxLevel="11" special="1" />
+  
+  <loot at="2" type="gem" subtype="Rune of Pillars" id="flag"/>
+  <script repeat="-1">
+    <condition condition_type="at" id="player" at="1" />
+    <condition condition_type="at" id="flag" at="2" />
+    <action on="success" action_type="remove" id="flag" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="4" sourceX="2" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="4" sourceX="3" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="4" sourceX="4" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="5" sourceX="2" sourceY="5" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="5" sourceX="3" sourceY="5" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="5" sourceX="4" sourceY="5" />
+    <action on="success" action_type="create" create_type="monster" x="2" y="3" />
+    <action on="success" action_type="create" create_type="monster" x="3" y="3" />
+    <action on="success" action_type="create" create_type="monster" x="4" y="3" />
+    <action on="success" action_type="create" create_type="monster" x="2" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="3" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="4" y="2" />
+    <action on="success" action_type="ticker" text="They came from behind!"/>
+  </script>  
+  </room>
+
+<room width="14" height="10" name="Ninja Ambush 2" >
+  <row text="      ########" />
+  <row text="      ########" />
+  <row text="      #2....L#" />
+  <row text="##############" />
+  <row text="##P...########" />
+  <row text="#..^@.###....#" />
+  <row text="d..LL.##.1...d" />
+  <row text="#.........##.#" />
+  <row text="#######...####" />
+  <row text="########D#####" />
+  <flags minLevel="11" maxLevel="11" special="1" />
+  
+  <loot at="2" type="gem" subtype="Rune of Pillars" id="flag"/>
+  <script repeat="-1">
+    <condition condition_type="at" id="player" at="1" />
+    <condition condition_type="at" id="flag" at="2" />
+    <action on="success" action_type="remove" id="flag" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="9" targetY="4" sourceX="9" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="4" sourceX="10" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="4" sourceX="11" sourceY="4" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="9" targetY="3" sourceX="9" sourceY="3" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="3" sourceX="10" sourceY="3" />
+    <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="3" sourceX="11" sourceY="3" />
+    <action on="success" action_type="create" create_type="monster" x="7" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="8" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="9" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="10" y="2" />
+    <action on="success" action_type="create" create_type="monster" x="11" y="2" />
+    <action on="success" action_type="ticker" text="They came from behind!"/>
+  </script>  
+  </room>
+
+<!-- for floor 12 -->
+
+<!-- for floor 13 -->
+
+<!-- for floor 15 -->
+
+<!-- patch 1.0.11 -->
+
+<room width="18" height="11" name="Room of Levers Alt">
+  <row text=" ################ "/>
+  <row text="##################"/>
+  <row text="#...8#.####.##..##"/>
+  <row text="#...7#..##..#5...#"/>
+  <row text="##..6#..##..##..##"/>
+  <row text="##3###..##..###4##"/>
+  <row text="#..###..##..###..#"/>
+  <row text="d...1........2...d"/>
+  <row text="#................#"/>
+  <row text="##################"/>
+  <row text="##################"/>
+  <flags minLevel="0" maxLevel="1" special="1" nomonsters="1"/>
+
+  <customblocker id="grate0" name="Dwarven Educational Grate" at="3" png="dungeon/bars_iron_ew.png" description="The Dwarven Educational System is well-known for two things: its efficiency, and having more teaching equipment made out of ferrous metal than any other civilization."/>
+  <customblocker id="grate1" name="Dwarven Educational Grate" at="4" png="dungeon/bars_iron_ew.png" description="The Dwarven Educational System is well-known for two things: its efficiency, and having more teaching equipment made out of ferrous metal than any other civilization."/>
+  <element at="1" type="lever" can_push="0" id="lever0"/>
+  <element at="2" type="lever" can_push="0" id="lever1"/>
+  
+  <loot at="5" type="artifact"/>
+  <monster at="6" name="Enraged Diggle"/>
+  <monster at="7" name="Enraged Diggle"/>
+  <monster at="8" name="Enraged Diggle"/>
+  <script>
+    <condition condition_type="activated" activated="1" id="lever0"/>
+    <action on="success" action_type="remove" id="lever0"/>
+    <action on="success" action_type="remove" id="lever1"/>
+    <action on="success" action_type="remove" id="grate0"/>      
+    </script>
+  <script>
+    <condition condition_type="activated"  activated="1" id="lever1"/>
+    <action on="success" action_type="remove" id="lever0"/>
+    <action on="success" action_type="remove" id="lever1"/>
+    <action on="success" action_type="remove" id="grate1"/>
+    </script>
+  </room>
+
+  <!-- from exp2; thx Bergstrom! -->
+<room width="16" height="16" name="Benenatos Wardrobe">
+	<row text="###D#########   "/>
+	<row text="##...########   "/>
+	<row text="#.......#3X4#   "/>
+	<row text="#....^..!.2.####"/>
+	<row text="#.......!...#P##"/>
+	<row text="#####.####.##..#"/>
+	<row text="   ##.####1##..d"/>
+	<row text="   #...........#"/>
+	<row text="   #..WWW@WW...#"/>
+	<row text="   #..W5...W...#"/>
+	<row text="   #..W...6W..##"/>
+	<row text="   #..WW@WWW..##"/>
+	<row text="   d..........# "/>
+	<row text="   #..........# "/>
+	<row text="   ####...##### "/>
+	<row text="   #####D###### "/>
+	<flags minLevel="1" maxLevel="1" special="1"/>
+	<customblocker name="Iron Bars" at="1"  png="dungeon/bars_iron_ew.png" description="Stout iron bars." Percent="80"/>    
+	<customblocker name="Grave of Benenato" at="2" png="dungeon/grave_vert.png" description="Here lies the dandy rogue Benenato, who was buried along with his wardrobe, for the good of humanity."/>
+	<customblocker name="Closet Bar" at="3" png="dungeon/bar_closet.png" description="A bar for hanging articles of clothing." passable="1" />
+	<customblocker name="Closet Bar" x="10" y="1" png="dungeon/bar_closet.png" description="A bar for hanging articles of clothing." passable="1" />
+	<customblocker name="Closet Bar" at="4" png="dungeon/bar_closet.png" description="A bar for hanging articles of clothing." passable="1" />
+	<loot type="armour" subtype="Ostentatious Tunic" at="3" />
+	<!-- The Ost. Tunics are really only useful on early floors, when you haven't found something with Armor or Magic Power. They normally spawn too late to be used, in my experience.   -->
+	<loot type="armour" subtype="Fabulously Striped Pants" at="4"  /> 
+	<!-- Like the Ost. Tunic, these pants have too high a quality rating to be likely to spawn while they're still useful. It's not quite as bad as the tunic since there's less pants than chest armor.   -->
+	<monster at="5" name="Mummy"/>
+	<monster at="6" name="Mummy"/>
+	</room> 
+
+</roomDB>

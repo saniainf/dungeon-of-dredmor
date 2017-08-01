@@ -1,0 +1,293 @@
+<tweakDB>
+
+  <!--
+  Each of the entries in this section affect gameplay balance.  Each entry is given a name and a corresponding integer value.
+  While the names cannot be changed, the integer values can be tweaked to increase gold dropped, damage done, quests available,
+  experience earned, and most other quantifiable tweaks within the game.  Most of the names should make the effects fairly obvious,
+  but in some cases tweaks may have been disconnected - usually due to a change in game mechanics - which render their values moot.
+  -->
+  
+  <tweak name="gold drop per level" ival="3"/>
+  
+  <!-- gods -->
+  <tweak name="artifact quality museum multiplier" ival="60"/>
+  <tweak name="item power granting chance" ival="4"/>
+  
+  <tweak name="num lutefisk statues" ival="0"/>
+  <tweak name="num quest statues" ival="0"/>
+  <tweak name="lutefisk divider" ival="5"/>
+  <tweak name="additional monster grace period" ival="3"/>
+  <tweak name="horde room grace period" ival="10"/>
+  <tweak name="num shelves per level" ival="4"/>
+
+  <tweak name="additional number of monsters per room per level" ival="2"/>
+
+  <tweak name="dredmor statue break exp" ival="50"/>
+  <tweak name="lockpick exp" ival="8"/>
+  <tweak name="dredmor statues per level" ival="3"/>
+
+  <!-- For Wands -->
+  <!-- results in starting entropy from 5 to 30-->
+  <tweak name="entropy min" ival="1"/>
+  <tweak name="entropy max" ival="7"/>
+  <tweak name="entropy scale" ival="6"/>
+
+  <!-- results in burn rate from 2 to 10 -->
+  <tweak name="burn min" ival="1"/>
+  <tweak name="burn max" ival="6"/>
+  <tweak name="burn scale" ival="3"/>
+
+  <tweak name="monster hurt anim time" ival="90"/>
+  <tweak name="corpse time" ival="250"/> <!-- !? -->
+  <tweak name="max shops" ival="3"/>
+
+  <!-- Uber -->
+
+  <tweak name="box muller std dev" fval="1.40"/> <!-- mersenne twister now, innit? -->
+  <tweak name="monster loot drop chance" ival="3"/>
+  
+  <!-- 1 out of -->
+  <tweak name="numstairs" ival="6"/>
+
+  <!-- treasure rolling -->
+  <tweak name="treasure roll size" ival="690"/>
+
+   <!-- 90 -->
+  <tweak name="weapon roll min" ival="0"/>
+  <tweak name="weapon roll max" ival="89"/>
+   <!-- 160-->
+  <tweak name="armour roll min" ival="90"/>
+  <tweak name="armour roll max" ival="249"/>
+   <!-- 20 -->
+  <tweak name="ring roll min" ival="250"/>
+  <tweak name="ring roll max" ival="269"/>
+  <!-- 80 -->
+  <tweak name="ammo roll min" ival="270"/>
+  <tweak name="ammo roll max" ival="349"/>
+   <!-- 80 -->
+  <tweak name="food roll min" ival="350"/>
+  <tweak name="food roll max" ival="429"/>
+   <!-- 90 -->
+  <tweak name="potion roll min" ival="430"/>
+  <tweak name="potion roll max" ival="519"/>
+   <!-- 40 -->
+  <tweak name="lockpick roll min" ival="520"/>
+  <tweak name="lockpick roll max" ival="559"/>
+   <!-- 90 -->
+  <tweak name="mushroom roll min" ival="560"/>
+  <tweak name="mushroom roll max" ival="649"/>
+   <!-- 40 -->
+  <tweak name="wand roll min" ival="650"/>
+  <tweak name="wand roll max" ival="689"/>
+
+  <tweak name="minimum number of treasures" ival="37"/>
+  <tweak name="maximum additional treasures" ival="55"/>
+  
+  <tweak name="number of reagents per level" ival="30"/>
+  
+  <tweak name="percent chance a found recipe is encrusting" ival="20"/>
+  <!-- Dungeons -->
+
+  <!-- blockers are 1-in-X , right? -->
+  <tweak name="minimum blockers" ival="22"/>
+  <tweak name="blocker number a" ival="12"/>
+  <tweak name="blocker number b" ival="12"/>
+  <tweak name="dispenser chance" ival="10"/>
+  <tweak name="fountain chance" ival="19"/>
+  <tweak name="uberchest chance" ival="21"/>
+  <tweak name="anvil chance" ival="80"/>
+  <tweak name="evilchest chance" ival="60"/>
+  <tweak name="bbq chance" ival="22"/>
+  <tweak name="freezer chance" ival="30"/>  
+  
+  <tweak name="number of teleporters" ival="5"/>
+  
+  <tweak name="max wizard graffitis" ival="3" /> <!-- 3 usualy; for testing -->
+  
+  <!-- Combat -->
+  <tweak name="bad weapon penalty" fval="3.00"/>
+  <!-- div by this -->
+  <tweak name="bad dual wield penalty" fval="3.00"/>
+
+  <tweak name="miss ammo drop percent" ival="75"/>
+  <tweak name="hit ammo drop percent" ival="20"/>
+  <tweak name="hit thrown drop percent" ival="25"/>
+
+  <!-- Spells & things -->
+
+  <tweak name="blood magic inc level 0" ival="1"/>
+  <tweak name="blood magic inc level 1" ival="2"/>
+  <tweak name="blood magic inc level 2" ival="3"/>
+  <tweak name="blood magic inc level 3" ival="4"/>
+  <tweak name="blood magic inc level 4" ival="5"/>
+
+  <tweak name="midas scaler" ival="4"/>
+
+  <!-- UI -->
+
+  <tweak name="tooltip border size" ival="4"/>
+
+  <!-- trap uber -->
+
+  <tweak name="trap XP scale" ival="2"/>
+
+  <!-- difficulty levels -->
+
+  <!-- <tweak name="monster level adder" ival="0"/> -->
+
+  <tweak name="boss mob XP scaler" fval="4.0"/>
+
+  <tweak name="small random food buff" ival="10" />
+  <tweak name="small random food buff variation" ival="3" />
+  
+  <easy>
+
+
+    <!-- monsters -->
+  <tweak name="monster HP global scale" fval="1.1"/>
+  <tweak name="monster additional HP percent per level" fval="0.1"/>
+  <tweak name="monster additional HP per level" fval="3"/>
+
+    <tweak name="artifact quality museum multiplier" ival="75"/>
+    
+    <tweak name="monster level adder" ival="-1"/>
+    <tweak name="experience n" ival="125"/>
+    <tweak name="monster boost chance" ival="100"/>
+    <!-- Shops -->
+    <tweak name="store buy price scaler" fval="1.63"/>
+    <tweak name="store sell price scaler" fval="0.63"/>
+    <tweak name="vending machine scale" fval="1.71"/>
+    <!-- Regens -->
+    <tweak name="hpregenturns" ival="5"/>
+    <tweak name="spregenturns" ival="5"/>
+    <!-- Monster spawning -->
+    <tweak name="monsterspawnturns" ival="240"/>
+    <tweak name="minimum number of monsters in room" ival="1"/>
+    <tweak name="maximum number of additional monsters" ival="3"/>
+  
+  <tweak name="horde chance" ival="12"/>
+  <tweak name="minimum horde size" ival="3"/>
+  <tweak name="additional horde size" ival="2"/>
+  <tweak name="horde is overpowered chance" ival="100"/> <!-- one in 20, that is -->
+<!-- boss monsters -->
+  <tweak name="named monster chance" ival="13"/>
+  <tweak name="additional named monster primary point budget" ival="1"/>
+  <tweak name="additional named monster secondary point budget" ival="1"/>
+  <tweak name="additional named monster damage per level" ival="1"/>
+  <tweak name="named monster box muller" fval="0.35"/> <!-- deviation from dungeon's level -->
+<!-- Traps -->
+  <tweak name="num traps per level" ival="40"/>
+  <tweak name="trap XP scale" ival="5"/>
+
+    <!-- Loot drops -->
+  <tweak name="gold amount per level" ival="6"/> <!-- modifer for monster drops -->
+  <tweak name="zorkmids per level" ival="300"/> <!-- is multiplied by (level # + 1)-->
+  <tweak name="minimum food per level" ival="40"/>
+
+ <!-- Sneaking -->
+  <tweak name="monster level sneaking penalty" ival="3" />
+  
+  <!-- Encrusting -->
+  <tweak name="instability proc rate" ival="5" />
+ </easy>
+
+
+<medium>
+
+<!-- monsters -->
+  <tweak name="monster HP global scale" fval="1.35"/>
+  <tweak name="monster additional HP percent per level" fval="0.1"/>
+  <tweak name="monster additional HP per level" fval="8"/>
+  
+  <tweak name="monster level adder" ival="1"/>
+  <tweak name="experience n" ival="190"/>
+  <tweak name="monster boost chance" ival="50"/>
+<!-- Shops -->
+  <tweak name="store buy price scaler" fval="2.07"/>
+  <tweak name="store sell price scaler" fval="0.43"/>
+  <tweak name="vending machine scale" fval="1.81"/>
+<!-- Regens --> 
+  <tweak name="hpregenturns" ival="7"/>
+  <tweak name="spregenturns" ival="7"/>
+<!-- Monster spawning -->
+  <tweak name="monsterspawnturns" ival="200"/>
+  <tweak name="minimum number of monsters in room" ival="1"/>
+  <tweak name="maximum number of additional monsters" ival="3"/>
+  
+  <tweak name="horde chance" ival="12"/>
+  <tweak name="minimum horde size" ival="3"/>
+  <tweak name="additional horde size" ival="3"/>
+  <tweak name="horde is overpowered chance" ival="20"/> <!-- one in 20, that is -->
+<!-- boss monsters -->
+  <tweak name="named monster chance" ival="15"/>
+  <tweak name="additional named monster primary point budget" ival="4"/>
+  <tweak name="additional named monster secondary point budget" ival="5"/>
+  <tweak name="additional named monster damage per level" ival="2"/>
+  <tweak name="named monster box muller" fval="0.45"/> <!-- deviation from dungeon's level -->
+<!-- Traps -->
+    <tweak name="num traps per level" ival="60"/>
+<!-- Loot drops -->
+  <tweak name="gold amount per level" ival="5"/> <!-- modifer for monster drops -->
+  <tweak name="zorkmids per level" ival="210"/> <!-- is multiplied by (level # + 1)-->
+  <tweak name="minimum food per level" ival="35"/>
+
+  <!-- Sneaking -->
+  <tweak name="monster level sneaking penalty" ival="5" />
+
+  <!-- Encrusting -->
+  <tweak name="instability proc rate" ival="10" />
+  
+</medium>
+
+
+<hard>
+<!-- monsters -->
+  <tweak name="monster HP global scale" fval="1.35"/>
+  <tweak name="monster additional HP percent per level" fval="0.1"/>
+  <tweak name="monster additional HP per level" fval="9"/>
+  
+  <tweak name="monster level adder" ival="3"/>
+  <tweak name="experience n" ival="260"/>
+  <tweak name="monster boost chance" ival="20"/>
+<!-- Shops -->
+  <tweak name="store buy price scaler" fval="2.43"/>
+  <tweak name="store sell price scaler" fval="0.23"/>
+  <tweak name="vending machine scale" fval="2.11"/>
+<!-- Regens --> 
+  <tweak name="hpregenturns" ival="13"/>
+  <tweak name="spregenturns" ival="8"/>
+<!-- Monster spawning -->
+  <tweak name="monsterspawnturns" ival="180"/>
+  <tweak name="minimum number of monsters in room" ival="1"/>
+  <tweak name="maximum number of additional monsters" ival="4"/>
+  
+  <tweak name="horde chance" ival="12"/>
+  <tweak name="minimum horde size" ival="3"/>
+  <tweak name="additional horde size" ival="3"/>
+  <tweak name="horde is overpowered chance" ival="16"/> <!-- one in 20, that is -->
+  <tweak name="box muller std dev" fval="1.70"/>
+  
+  <!-- boss monsters -->
+  <tweak name="named monster chance" ival="15"/>
+  <tweak name="additional named monster primary point budget" ival="6"/>
+  <tweak name="additional named monster secondary point budget" ival="8"/>
+  <tweak name="additional named monster damage per level" ival="3"/>
+  <tweak name="named monster box muller" fval="0.75"/> <!-- deviation from dungeon's level -->
+
+  <!-- Traps -->
+  
+  <tweak name="num traps per level" ival="75"/>
+<!-- Loot drops -->
+  <tweak name="gold amount per level" ival="4"/> <!-- modifer for monster drops -->
+  <tweak name="zorkmids per level" ival="150"/> <!-- is multiplied by (level # + 1)-->
+  <tweak name="minimum food per level" ival="25"/>    
+
+  <!-- Sneaking -->
+  <tweak name="monster level sneaking penalty" ival="7" />
+
+  <!-- Encrusting -->
+  <tweak name="instability proc rate" ival="15" />
+  
+</hard>
+
+</tweakDB>

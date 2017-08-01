@@ -1,0 +1,3164 @@
+<roomDB>
+<!-- Wizard Rooms -->
+
+<!-- Starting Rooms -->
+ 
+<room width="9" height="10" name="Small Wizard Starting Room" >
+   <row text="#########" />
+   <row text="#########" />
+   <row text="##12.45##" />
+   <row text="##3...6##" />
+   <row text="#.......#" />
+   <row text="d.......d" />
+   <row text="#.7...8.#" />
+   <row text="#.......#" />
+   <row text="###...###" />
+   <row text="####D####" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardStart"/>
+   
+  <!-- decor -->
+   <customblocker
+      name="Bronze Brazier" at="7"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="8"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />  
+
+   <customengraving
+      name="Candles" at="1" percent="60"
+      pngSprite="dungeon/candles_floor_sw/candles_floor_sw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0" />
+   <customengraving
+      name="Candles" at="2" percent="60"
+      pngSprite="dungeon/candles_floor_nw/candles_floor_nw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/> 
+   <customengraving
+      name="Candles" at="3" percent="60"
+      pngSprite="dungeon/candles_floor_ne/candles_floor_ne"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   <customengraving
+      name="Candles" at="4" percent="60"
+      pngSprite="dungeon/candles_floor_se/candles_floor_se"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   <customengraving
+      name="Candles" at="5" percent="60"
+      pngSprite="dungeon/candles_floor_sw/candles_floor_sw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0" />
+   <customengraving
+      name="Candles" at="6" percent="60"
+      pngSprite="dungeon/candles_floor_nw/candles_floor_nw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   
+   <customblocker
+      name="Magic Sconce" x="1" y="3"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flutter cryptically in patterns you can't make sense of." can_push="0" />
+   <customblocker
+      name="Magic Sconce" x="7" y="3"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flit arcanely around and around." can_push="0" />
+   
+</room>
+
+<room width="17" height="16" name="Medium Wizard Starting Room" >
+   <row text="######     ######" />
+   <row text="#######   #######" />
+   <row text="#.....#####.....#" />
+   <row text="d......#P#......d" />
+   <row text="#..1.........2..#" />
+   <row text="#......###......#" />
+   <row text="###....###....###" />
+   <row text=" ###...#5#...### " />
+   <row text=" ###...#.#...### " />
+   <row text="###...........###" />
+   <row text="#...............#" />
+   <row text="#..4.........3..#" />
+   <row text="d......###......d" />
+   <row text="#.....#####.....#" />
+   <row text="#######   #######" />
+   <row text="######     ######" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardStart"/>
+
+   <customblocker
+      name="Bronze Brazier" at="1"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+
+   <customblocker
+      name="Bronze Brazier" at="2"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+
+   <customblocker name="Bronze Pedestal" at="3"
+      png="dungeon/bronze_pedestal.png" can_push="0"/>
+
+   <customblocker name="Bronze Pedestal" at="4"
+      png="dungeon/bronze_pedestal.png" can_push="0"/>
+
+   <customblocker name="Mystic Orb" at="5"
+      png="dungeon/wizard_pedestal_clothed_orb.png" can_push="0"/>
+
+</room>
+
+<!-- Ending Rooms -->
+
+<room width="9" height="10" name="Small Wizard Ending Room" >
+   <row text="#########" />
+   <row text="#########" />
+   <row text="##12945##" />
+   <row text="##3...6##" />
+   <row text="#.......#" />
+   <row text="d.......d" />
+   <row text="#.7LLL8.#" />
+   <row text="#.......#" />
+   <row text="###...###" />
+   <row text="####D####" />
+   <flags minLevel="0" maxLevel="14" noblockers="1" notraps="1" genhint="wizardEnd"/> <!-- 2 for ending -->
+   
+   <element type="portal" at="9" />
+   
+   <!-- give 'em a prize -->
+   <loot type="artifact" x="4" y="4"/>
+   <loot type="zorkmids" x="3" y="4"/>
+   <loot type="zorkmids" x="5" y="4"/>
+   <loot type="zorkmids" x="3" y="5"/>
+   <loot type="zorkmids" x="4" y="5"/>
+   <loot type="zorkmids" x="3" y="5"/>
+   
+   <trap x="2" y="4" percent="70" />
+   <trap x="2" y="5" percent="70" />
+   <trap x="6" y="4" percent="70" />
+   <trap x="6" y="5" percent="70" />
+   
+   <!-- decor -->
+   <customblocker
+      name="Bronze Brazier" at="7"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="8"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />  
+
+   <customengraving
+      name="Candles" at="1" percent="60"
+      pngSprite="dungeon/candles_floor_sw/candles_floor_sw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0" />
+   <customengraving
+      name="Candles" at="2" percent="60"
+      pngSprite="dungeon/candles_floor_nw/candles_floor_nw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/> 
+   <customengraving
+      name="Candles" at="3" percent="60"
+      pngSprite="dungeon/candles_floor_ne/candles_floor_ne"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   <customengraving
+      name="Candles" at="4" percent="60"
+      pngSprite="dungeon/candles_floor_se/candles_floor_se"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   <customengraving
+      name="Candles" at="5" percent="60"
+      pngSprite="dungeon/candles_floor_sw/candles_floor_sw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0" />
+   <customengraving
+      name="Candles" at="6" percent="60"
+      pngSprite="dungeon/candles_floor_nw/candles_floor_nw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+   
+   <customblocker
+      name="Magic Sconce" x="1" y="3"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flutter cryptically in patterns you can't make sense of." can_push="0" />
+   <customblocker
+      name="Magic Sconce" x="7" y="3"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flit arcanely around and around." can_push="0" />
+   
+</room>
+
+<room width="11" height="14" name="Larger Wizard Ending Room" >
+   <row text="###########" />
+   <row text="###########" />
+   <row text="#WWW...WWW#" />
+   <row text="#WWWWWWWWW#" />
+   <row text="#WWWW4WWWW#" />
+   <row text="#WWW5.6WWW#" />
+   <row text="#WW2.1.3WW#" />
+   <row text="#....7....#" />
+   <row text="#...8.9...#" />
+   <row text="d....^....d" />
+   <row text="#.........#" />
+   <row text="#.........#" />
+   <row text="####...####" />
+   <row text="#####D#####" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardEnd"/>
+   <element type="portal" at="1" />
+
+   <loot type="artifact" at="7" />
+   <loot type="zorkmids" at="8" />
+   <loot type="zorkmids" at="9" />
+
+   <customblocker
+      name="Bronze Brazier" at="2"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="3"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="4"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	  
+   <customengraving
+      name="Candles" at="5" percent="60"
+      pngSprite="dungeon/candles_floor_nw/candles_floor_nw"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/> 
+   <customengraving
+      name="Candles" at="6" percent="60"
+      pngSprite="dungeon/candles_floor_ne/candles_floor_ne"
+      pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1"
+      description="The candles flicker in a draft." can_push="0"/>
+</room>
+
+<room width="13" height="13" name="Big Square Wizard Ending Room" >
+   <row text="#############" />
+   <row text="#############" />
+   <row text="#LLLLL#.....#" />
+   <row text="#LL1LL#..@..d" />
+   <row text="#.....#.....#" />
+   <row text="#..^..#..2..#" />
+   <row text="#.....#.3.4.#" />
+   <row text="#.....P.....#" />
+   <row text="#...........#" />
+   <row text="#...........#" />
+   <row text="#...........#" />
+   <row text="#####...#####" />
+   <row text="######D######" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardEnd"/>
+   <element type="portal" at="1" />
+
+   <customblocker
+      name="Magic Sconce" x="8" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flutter cryptically in patterns you can't make sense of." can_push="0" />
+   <customblocker
+      name="Magic Sconce" x="10" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="The flames flutter cryptically in patterns you can't make sense of." can_push="0" />
+	  
+	<loot type="artifact" at="2" />
+	<loot type="zorkmids" at="3" />
+	<loot type="zorkmids" at="4" />
+</room>
+
+<room width="33" height="18" name="Hall of the Wizard King" >
+   <row text="          #############" />
+   <row text="          #############" />
+   <row text="          #WWW.....WWW#" />
+   <row text="###########WWW..1..WWW###########" />
+   <row text="###P###P###WW.......WW###P###P###" />
+   <row text="#W........#W.........W#........W#" />
+   <row text="#W........#W.........W#........W#" />
+   <row text="#W...@....#.....2.....#....@...W#" />
+   <row text="#W...5....#...........#....6...W#" />
+   <row text="#WW.......#...3...4...#.......WW#" />
+   <row text="#WW...........................WW#" />
+   <row text="#WWWW.......................WWWW#" />
+   <row text="#WWWWW.....................WWWWW#" />
+   <row text="#WWWWWW.........^.........WWWWWW#" />
+   <row text="#WWWWWW...................WWWWWW#" />
+   <row text="#WWWWWW...................WWWWWW#" />
+   <row text="###############...###############" />
+   <row text="################D################" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardEnd"/>
+   <element type="portal" at="1" />
+   <customblocker name="Throne" at="2"
+      png="dungeon/throne_b.png" can_push="0"/>
+   <customblocker
+      name="Bronze Brazier" at="3"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="4"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+
+	<loot type="artifact" at="5" />
+	<loot type="wand" at="6" />
+
+</room>
+<!-- Other Rooms -->
+   
+<room width="28" height="13" name="Behold, the Cube!" >
+   <row text="  ################          " />
+   <row text="#####P######...##########   " />
+   <row text="##P.....P##..@..########### " />
+   <row text="##...@...###...####..4..####" />
+   <row text="#........###...##.........##" />
+   <row text="d...................213...##" />
+   <row text="#........###...##.........##" />
+   <row text="##.......###...####.....####" />
+   <row text="###.....###..@..########### " />
+   <row text="####...#####...##########   " />
+   <row text="  ###D############          " />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker
+      name="The Cube" at="1"
+      pngSprite="dungeon/brass_cube_float/brass_cube_float"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1"
+      description="Behold, the Cube!" can_push="0"/>
+   <customblocker
+      name="Bronze Brazier" at="2"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+   <customblocker
+      name="Bronze Brazier" at="3"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	  
+   <loot type="potion" at="4" percent="50"/>
+</room>
+
+<room width="15" height="9" name="Wizard Bedroom 1" >
+   <row text="###############" />
+   <row text="###############" />
+   <row text="#..34.6.....12#" />
+   <row text="#......7.#....#" />
+   <row text="d...^....#....#" />
+   <row text="#........######" />
+   <row text="#5.......######" />
+   <row text="######...#     " />
+   <row text="#######D##     " />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="Painting of Kolzar the Magnificent" x="3" y="1"
+	  png="dungeon/wizard_painting00.png" can_push="0"
+	  description="A lesser-known wizard with a cult following. I still prefer Triangulon." />
+
+   <customblocker name="Vanity" at="1"
+      png="dungeon/wizard_vanity_left.png" can_push="0"/>
+   <customblocker name="Vanity" at="2"
+      png="dungeon/wizard_vanity_right.png" can_push="0"/>
+   <customblocker name="Desk" at="3"
+      png="dungeon/wizard_desk_left.png" can_push="0"/>
+   <customblocker name="Desk" at="4"
+      png="dungeon/wizard_desk_right.png" can_push="0"/>
+   <customblocker name="Hat Rack" at="5"
+      png="dungeon/wizard_hatrack.png" can_push="0"/>
+   <customblocker name="Books" at="7"
+      png="dungeon/bookpile.png" can_push="0"/>
+
+   <loot type="wand" at="6" percent="35" />
+</room>
+
+<room width="13" height="17" name="Wizard Bedroom 2" >
+	<row text="#######      " />
+	<row text="#######      " />
+	<row text="#...12#      " />
+	<row text="#.....#      " />
+	<row text="#..^..#      " />
+	<row text="#.....#      " />
+	<row text="####..##     " />
+	<row text="####..###### " />
+	<row text="#.3....##### " />
+	<row text="#..........# " />
+	<row text="#..........##" />
+	<row text="#4......@..##" />
+	<row text="#...........#" />
+	<row text="d...........d" />
+	<row text="#...........#" />
+	<row text="#####...#####" />
+	<row text="######D######" />
+   <flags minLevel="0" maxLevel="14"/>
+	
+	<customblocker name="Vanity" at="1"
+	   png="dungeon/wizard_vanity_left.png" can_push="0"/>
+	<customblocker name="Vanity" at="2"
+	   png="dungeon/wizard_vanity_right.png" can_push="0"/>
+
+	<customblocker name="Wizardly Cask" at="3"
+	   png="dungeon/beercask.png" can_push="0"
+	   description="Sometimes wizards get together to replenish their mana, tell rude jokes and fall over."/>
+	   
+	<customblocker name="Hat Rack" at="4"
+	   png="dungeon/wizard_hatrack.png" can_push="0"/>
+
+	<customblocker name="Painting of Triangulon" x="3" y="1"
+	   png="dungeon/wizard_painting01.png" can_push="0"
+	   description="OMG is that Triangulon? He's so dreamy." />
+	   
+</room>
+
+<room width="15" height="9" name="Wizard Study" >
+   <row text="###############" />
+   <row text="###############" />
+   <row text="#........134..#" />
+   <row text="d............2#" />
+   <row text="#.............#" />
+   <row text="######........#" />
+   <row text="     #........#" />
+   <row text="     ######...#" />
+   <row text="     #######D##" />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="Desk" at="3"
+      png="dungeon/wizard_desk_left.png" can_push="0"/>
+   <customblocker name="Desk" at="4"
+      png="dungeon/wizard_desk_right.png" can_push="0"/>
+
+	<customblocker name="Wizarding Degree" x="12" y="1"
+	   png="dungeon/wizard_certificate.png" can_push="0"
+	   description="A bachelor's of sorcery (BSc.) from &quot;Bortwain's Distance School of Wizardry.&quot;" />
+	   
+   <customblocker name="Books" at="1"
+      png="dungeon/bookpile.png" can_push="0"/>
+
+   <customengraving name="Wizardly Empties" at="2"
+      png="dungeon/wizardly_empties.png"
+	  description="It's always 5:00 p.m. somewhere in the multiverse." />
+</room>
+
+<room width="15" height="12" name="Wizard Parlour" >
+   <row text="       ########" />
+   <row text="       ########" />
+   <row text="       #.4125.#" />
+   <row text="########..3...#" />
+   <row text="########......#" />
+   <row text="#.............#" />
+   <row text="#.............#" />
+   <row text="#......#......#" />
+   <row text="d......#......d" />
+   <row text="#......#......#" />
+   <row text="##...#####...##" />
+   <row text="###D#######D###" />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="Couch" at="1"
+      png="dungeon/wizarding_couch_left.png" can_push="0"/>
+   <customblocker name="Couch" at="2"
+      png="dungeon/wizarding_couch_right.png" can_push="0"/>
+   <customblocker name="Table" at="5"
+      png="dungeon/table_wood.png" can_push="0"/>
+
+	<customblocker name="Painting of the Hyperpope" x="5" y="4"
+	   png="dungeon/wizard_painting02.png" can_push="0"
+	   description="Wizards disagree widely on the current Hyperpope's legitimacy, but his choice of headwear is universally respected and admired nonetheless." />
+	   
+   <customblocker name="Books" at="3"
+      png="dungeon/bookpile.png" can_push="0"/>
+
+   <customengraving name="Wizardly Empties" at="4"
+      png="dungeon/wizardly_empties.png"
+	  description="It's always 5:00 p.m. somewhere in the multiverse." />
+</room>
+
+<room width="17" height="11" name="Small Wizard Parlour" >
+	<row text="#####        ####" />
+	<row text="#####  ##########" />
+	<row text="#.1.##########..#" />
+	<row text="#.2.####........d" />
+	<row text="#....3##...###..#" />
+	<row text="#.^...##...######" />
+	<row text="#..........# ####" />
+	<row text="d..........#     " />
+	<row text="#..........#     " />
+	<row text="##...#######     " />
+	<row text="###D########     " />
+
+	<flags minLevel="0" maxLevel="14"/>
+
+	<customblocker name="Wingback Chair" at="1"
+      png="dungeon/chair_wingback.png" can_push="0"/>
+   <customblocker name="Table" at="2"
+      png="dungeon/table_wood.png" can_push="0"/>
+   <customblocker name="Hat Rack" at="3"
+      png="dungeon/wizard_hatrack.png" can_push="0"/>
+
+</room>
+
+<room width="5" height="8" name="Unlucky Wizard" >
+   <row text=" ####" />
+   <row text="###1#" />
+   <row text="##23#" />
+   <row text="#4..#" />
+   <row text="d...d" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="##D##" />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="Long-dead Wizard" at="1"
+      png="dungeon/wizard_skeleton.png"
+	  description="No amount of sorcery could save this wizard from the ravages of time." />
+   <loot type="wand" at="2"/>
+   <loot type="potion" at="4"/>
+	  
+   <customengraving name="Wizardly Empties" at="3"
+      png="dungeon/wizardly_empties.png"
+	  description="A little mana is a dangerous thing." />
+</room>
+
+<room width="9" height="9" name="The Wizards Have the Box" >
+	<row text="####D####" />
+	<row text="###...###" />
+	<row text="#.2.....#" />
+	<row text="#.......#" />
+	<row text="d...1...d" />
+	<row text="#.......#" />
+	<row text="#.......#" />
+	<row text="#########" />
+	<row text="#########" />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="A Police Box?" at="1"
+      png="dungeon/whobox.png" can_push="0"
+	  description="The wizards have the box!"/>
+	
+   <customblocker name="Books" at="2"
+      png="dungeon/bookpile.png" can_push="0" />
+</room>
+
+<room width="7" height="9" name="Boring 7x9 Wizard Room" >
+   <row text="#######" />
+   <row text="###P###" />
+   <row text="##...##" />
+   <row text="#.....#" />
+   <row text="d.....d" />
+   <row text="#..^..#" />
+   <row text="#.....#" />
+   <row text="##...##" />
+   <row text="###D###" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<room width="7" height="11" name="Hero Photocopier" >
+  <row text="###D###" />
+  <row text="###.###" />
+  <row text="##...##" />
+  <row text="#.....#" />
+  <row text="#.2.3.#" />
+  <row text="#.....#" />
+  <row text="d.....d" />
+  <row text="#..1..#" />
+  <row text="#.....#" />
+  <row text="##...##" />
+  <row text="###D###" />
+  <flags minLevel="11" maxLevel="14" nomonsters="1"/>
+
+  <element at="1" type="lever" can_push="0" id="lever0"/>
+
+  <script repeat="-1">
+    <condition condition_type="activated" activated="1" id="lever0"/>
+    <action on="success" action_type="create" create_type="monster" name="Evil Clone" at="3" />
+    <action on="success" action_type="create" create_type="monster" name="Evil Clone" at="2" />
+    <action on="success" action_type="ticker" text="A bright light scans the room and the faint sounds of dot matrix machinery can be heard." />
+    <action on="success" action_type="remove" id="lever0" />
+
+  </script>
+
+
+
+</room>
+
+<room width="7" height="12" name="Its a Trap" >
+  <row text="#######" />
+  <row text="###5###" />
+  <row text="###4###" />
+  <row text="###3###" />
+  <row text="###2###" />
+  <row text="###1###" />
+  <row text="###7###" />
+  <row text="#.....#" />
+  <row text="d.....d" />
+  <row text="#.....#" />
+  <row text="##...##" />
+  <row text="###D###" />
+  <flags minLevel="11" maxLevel="14" nomonsters="1"/>
+  
+  <loot at="5" type="armour" artifact="1" id="artifact"/>
+  
+  <customengraving name="Rune of Ominous Warning" at="7"
+     png="dungeon/inlaid_rune01.png"
+   description="It's a trap."/>
+ 
+  <trap at="1" name="Elder Rune of Incandescence"/>
+  <trap at="2" name="Elder Rune of Incandescence"/>
+  <trap at="3" name="Elder Rune of Incandescence"/>
+  <trap at="4" name="Elder Rune of Incandescence"/>
+
+</room>
+
+
+  <room width="7" height="9" name="Secret Stash" >
+   <row text="###D###" />
+   <row text="##...##" />
+   <row text="#..@..#" />
+   <row text="#.123.#" />
+   <row text="d.4W6.d" />
+   <row text="#.789.#" />
+   <row text="#.....#" />
+   <row text="##...##" />
+   <row text="###D###" />
+   <flags minLevel="0" maxLevel="14"/>
+   <customengraving name="Wizardly Empties" at="3"
+      png="dungeon/wizardly_empties.png"
+	  description="Wizards can stop drinking anytime they want."/>
+   <customengraving name="Wizardly Empties" at="7"
+      png="dungeon/wizardly_empties.png"
+	  description="Looks like someone was running pretty low on mana."/>
+   <customengraving name="Wizardly Empties" at="6"
+      png="dungeon/wizardly_empties.png"
+	  description="Wizards don't have a problem."/>
+	  
+   <loot type="food" at="1" subtype="Dr. Sanin's New-style Pilsner" percent="65"/>   
+   <loot type="food" at="9" subtype="Dr. Sanin's New-style Pilsner" percent="65"/>   
+
+   <loot type="food" at="2" subtype="Pear Wine" percent="15"/>   
+   <loot type="food" at="4" subtype="Pear Wine" percent="25"/>   
+   <loot type="food" at="8" subtype="Pear Wine" percent="15"/>   
+</room>
+
+<room width="21" height="21" name="Big Weird Room" >
+   <row text="###########          " />
+   <row text="###P###P###          " />
+   <row text="#.........#          " />
+   <row text="d.........#          " />
+   <row text="#....^....#          " />
+   <row text="#.........#          " />
+   <row text="#####.########  #####" />
+   <row text="#####.#####P#P#######" />
+   <row text="#.........#...##.123#" />
+   <row text="#..5...6..#.4.......#" />
+   <row text="#.........#.........#" />
+   <row text="#.............##....#" />
+   <row text="#....@........##....#" />
+   <row text="#...................#" />
+   <row text="#######.............#" />
+   <row text="#######.............#" />
+   <row text="#...................#" />
+   <row text="#..^................#" />
+   <row text="#...................#" />
+   <row text="#########   #########" />
+   <row text="##########D##########" />
+   <flags minLevel="0" maxLevel="14"/>
+
+      <!-- decor -->
+   <customblocker name="Distillomancer's Workbench" at="1"
+      png="dungeon/alchemy_set_left.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+   <customblocker name="Distillomancer's Workbench" at="2"
+      png="dungeon/alchemy_set_middle.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+   <customblocker name="Distillomancer's Workbench" at="3"
+      png="dungeon/alchemy_set_right.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+
+   <customblocker
+      name="Bronze Brazier" at="4"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+
+   <customblocker name="Bronze Pedestal" at="5"
+      png="dungeon/bronze_pedestal.png" can_push="0"/>
+   <customblocker name="Bronze Pedestal" at="6"
+      png="dungeon/bronze_pedestal.png" can_push="0"/>
+
+</room>
+
+<room width="5" height="10" name="Tiny 5x7 Wizard Hall" >
+   <row text="##D##" />
+   <row text="#...#" />
+   <row text="#.^.#" />
+   <row text="#...#" />
+   <row text="#1#.#" />
+   <row text="#.P2#" />
+   <row text="#...#" />
+   <row text="#.@.#" />
+   <row text="#...#" />
+   <row text="##D##" />
+   <flags minLevel="0" maxLevel="14"/>
+   <trap percent="60" at="1" />
+   <trap percent="60" at="2" />
+</room>
+
+<room width="13" height="18" name="Alcove 13x13 Wizard Room" >
+   <row text="######D######" />
+   <row text="#####...#####" />
+   <row text="#...........#" />
+   <row text="d...@...@...d" />
+   <row text="#...........#" />
+   <row text="####..^..####" />
+   <row text="#####...#####" />
+   <row text="#..##.^.##..#" />
+   <row text="#...#...#...#" />
+   <row text="#.1.......2.#" />
+   <row text="#...#...#...#" />
+   <row text="#..##...##..#" />
+   <row text="#####.^.#####" />
+   <row text="##P#.....#P##" />
+   <row text="#.....^.....#" />
+   <row text="#...........#" />
+   <row text="#####...#####" />
+   <row text="######D######" />
+   <flags minLevel="0" maxLevel="14"/>
+   
+   <loot type="zorkmids" percent="75" at="1"/>
+   <loot type="zorkmids" percent="75" at="2"/>
+</room>
+
+<!-- put magic shit around here -->
+<room width="13" height="9" name="Magic Distillery" >
+   <row text="#############" />
+   <row text="#############" />
+   <row text="#4123##P....#" />
+   <row text="#.....#.....d" />
+   <row text="#...^...@...#" />
+   <row text="d...........#" />
+   <row text="#.....#.....#" />
+   <row text="#############" />
+   <row text="#############" />
+   <flags minLevel="0" maxLevel="14"/>
+   
+   <!-- decor -->
+   <customblocker name="Distillomancer's Workbench" at="1"
+      png="dungeon/alchemy_set_left.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+   <customblocker name="Distillomancer's Workbench" at="2"
+      png="dungeon/alchemy_set_middle.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+   <customblocker name="Distillomancer's Workbench" at="3"
+      png="dungeon/alchemy_set_right.png" can_push="0"
+      description="It appears as though someone was producing a potent brew." />
+
+  <loot type="toolkit" subtype="Porta-Still" at="4" percent="25"/>
+	  
+</room>
+
+<room width="13" height="12" name="Wizard Room of Thing" >
+	<row text="#############" />
+	<row text="#############" />
+	<row text="#...........#" />
+	<row text="#...........d" />
+	<row text="#...........#" />
+	<row text="#.@.#########" />
+	<row text="#...#P###P###" />
+	<row text="#..........##" />
+	<row text="d..^.......##" />
+	<row text="#..........##" />
+	<row text="#############" />
+	<row text="#############" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<room width="29" height="17" name="Secretly Three Rooms in Disguise" >
+	<row text="        ######D######        " />
+	<row text="        #####...#####        " />
+	<row text="        #...........#        " />
+	<row text="        #....LLL....#        " />
+	<row text="        #....LLL....#        " />
+	<row text="        #.....L.....#        " />
+	<row text="        #.....L.....#        " />
+	<row text="#########...#...#...#########" />
+	<row text="#########...#.1.#...#########" />
+	<row text="#.......#...#...#...#.......#" />
+	<row text="#...@...#...#####...#...@...#" />
+	<row text="#.......#...#####...#.......#" />
+	<row text="d...........#   #...........d" />
+	<row text="#...........#   #...........#" />
+	<row text="#############   #############" />
+	<row text="#############   #############" />
+   <flags minLevel="0" maxLevel="14"/>
+   
+   <loot type="reagent" at="1" />
+</room>
+
+<!-- Corridors -->
+<room width="5" height="17" name="Truly Magic Corridor" >
+   <row text="##D##" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="##..#" />
+   <row text="###.#" />
+   <row text="###.#" />
+   <row text="##..#" />
+   <row text="#...#" />
+   <row text="d..##" />
+   <row text="#.###" />
+   <row text="#.###" />
+   <row text="#..##" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="##D##" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<room width="5" height="13" name="Corridor of Inscrutable Dampness" >
+   <row text="##D##" />
+   <row text="#...#" />
+   <row text="#...#" />
+   <row text="#.W.#" />
+   <row text="#.W.#" />
+   <row text="#.W.d" />
+   <row text="#.W.#" />
+   <row text="#.WW#" />
+   <row text="#...#" />
+   <row text="#WW.#" />
+   <row text="#W..#" />
+   <row text="#...#" />
+   <row text="##D##" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<room width="19" height="8" name="Fish Corridor">
+   <row text=" ################# " />
+   <row text="###################" />
+   <row text="##.1.#.2.#.3.#.4.##" />
+   <row text="#........5........#" />
+   <row text="d.................d" />
+   <row text="#.......###.......#" />
+   <row text="###...#######...###" />
+   <row text="####D#### ####D####" />
+
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker
+      name="Bronze Brazier" at="5"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1"/>
+
+   <customblocker
+      name="Aquarium" at="1"
+      png="dungeon/wizard_aquarium.png" can_push="0"/>
+   <customblocker
+      name="Aquarium" at="2"
+      png="dungeon/wizard_aquarium.png" can_push="0"/>
+   <customblocker
+      name="Aquarium" at="3"
+      png="dungeon/wizard_aquarium.png" can_push="0"/>
+   <customblocker
+      name="Aquarium" at="4"
+      png="dungeon/wizard_aquarium.png" can_push="0"/>
+	  
+</room>
+
+<room width="23" height="8" name="Corridor of Sideways" >
+	<row text="#######################" />
+	<row text="#######################" />
+	<row text="#......##P###P##......#" />
+	<row text="#.....................#" />
+	<row text="d..@...............@..d" />
+	<row text="#.....................#" />
+	<row text="#######################" />
+	<row text="#######################" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<room width="17" height="19" name="I Bent My Corridor" >
+	<row text="          ###D###" />
+	<row text="          #P...P#" />
+	<row text="          #.....#" />
+	<row text="          #..^..#" />
+	<row text="          #.....#" />
+	<row text="          #.....#" />
+	<row text="          #.....#" />
+	<row text="          #.....#" />
+	<row text="          #.....#" />
+	<row text="          #.....#" />
+	<row text="###########.....#" />
+	<row text="###########.....#" />
+	<row text="##..............#" />
+	<row text="#...............#" />
+	<row text="d.......@.......#" />
+	<row text="#...............#" />
+	<row text="##..............#" />
+	<row text="#################" />
+	<row text="#################" />
+   <flags minLevel="0" maxLevel="14"/>
+</room>
+
+<!-- Scripted Monstrosities-->
+
+<room width="11" height="9" name="Crystal Room" >
+   <row text="#####D#####" />
+   <row text="####...####" />
+   <row text="#..#...#..#" />
+   <row text="#....1....#" />
+   <row text="#.4.WWW.3.#" />
+   <row text="#...W2W...#" />
+   <row text="#....5....#" />
+   <row text="####...####" />
+   <row text="#####D#####" />
+   <flags minLevel="0" maxLevel="14"/>
+
+   <customblocker name="Inactive Crystalline Node" at="1"
+      png="dungeon/crystal_node_off.png" can_push="0"
+      description="This crystal node powers abstract arcane machinery. It is currently inactive." id="crystalOff"/>
+   <customblocker name="Active Crystalline Node" x="0" y="0"
+      png="dungeon/crystal_node_on.png" can_push="0"
+      description="This crystal node powers abstract arcane machinery. It pulses with thaumaturgic current." id="crystalOn"/>
+
+   <customblocker
+      name="Bronze Brazier" x="1" y="0"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" id="brazierLit0"/>
+   <customblocker
+      name="Bronze Brazier" x="2" y="0"
+      pngSprite="dungeon/bronze_brazierA/bronze_brazierA"
+      pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" id="brazierLit1"/>
+
+   <customblocker name="Bronze Brazier" at="4"
+      png="dungeon/bronze_brazierA_unlit.png" can_push="0" id="brazierUnlit0"/>
+   <customblocker name="Bronze Brazier" at="3"
+      png="dungeon/bronze_brazierA_unlit.png" can_push="0" id="brazierUnlit1"/>
+
+   <element at="2" type="lever" can_push="0" id="lever0"/>
+
+   <script repeat="-1">
+      <condition condition_type="activated" activated="1" id="lever0"/>
+	  <condition condition_type="at" id="crystalOff" at="1"/>
+	  <action on="success" action_type="move" id="crystalOff" x="8" y="0" />
+	  <action on="success" action_type="move" id="crystalOn" x="5" y="3" />
+	  <action on="success" action_type="move" id="brazierUnlit0" x="9" y="0" />
+	  <action on="success" action_type="move" id="brazierLit0" x="2" y="4" />
+	  <action on="success" action_type="move" id="brazierUnlit1" x="10" y="0" />
+	  <action on="success" action_type="move" id="brazierLit1" x="8" y="4" />
+	  <action on="success" action_type="spell" casts="Mysterious Booze" targetat="5"/>
+      <action on="success" action_type="ticker" text="You are drunk with thaumaturgic energy! You taste cherries and mild chocolate with a rich finish. 88 points." />
+   </script>
+</room>  
+
+
+
+<!-- Diggle Hell -->
+
+<room width="17" height="9" name="Profane Church" >
+	<row text=" ################" />
+	<row text="#################" />
+	<row text="###.............#" />
+	<row text="#......X..X..X..#" />
+	<row text="d..1...X..X..X..d" />
+	<row text="#......4..3..2..#" />
+	<row text="###.............#" />
+	<row text="#################" />
+	<row text=" ################" />
+
+   <flags minLevel="0" maxLevel="14" genhint="diggleHell"/>
+
+   <customblocker name="Pew" at="2"
+      png="dungeon/pew_vert.png" can_push="0"/>
+   <customblocker name="Pew" at="3"
+      png="dungeon/pew_vert.png" can_push="0"/>
+   <customblocker name="Pew" at="4"
+      png="dungeon/pew_vert.png" can_push="0"/>
+
+   <customblocker
+      name="The Bomb" at="1"
+      png="dungeon/goldbomb.png" can_push="0"
+	  description="An object of fear and awe among digglekind, it is said this terrible device is capable of displacing massive amounts of earth almost instantaneously." />
+
+   <customblocker
+      name="Diabolical Sconce" x="2" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="This sconce casts a dim light over your hellish surroundings." can_push="0" />
+   <customblocker
+      name="Diabolical Sconce" x="6" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="This sconce casts a dim light over your hellish surroundings." can_push="0" />
+   <customblocker
+      name="Diabolical Sconce" x="10" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="This sconce casts a dim light over your hellish surroundings." can_push="0" />
+   <customblocker
+      name="Diabolical Sconce" x="14" y="1"
+      pngSprite="dungeon/nordic_sconceA/nordic_sconceA"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1"
+      description="This sconce casts a dim light over your hellish surroundings." can_push="0" />  
+</room>
+
+  <!-- Diggle Hell God -->
+  <room width="9" height="12" name="Medium Shrine of the Diggle God of Hell">
+    <row text="####D####"/>
+    <row text="####.####"/>
+    <row text="#LL...LL#"/>
+    <row text="#LL...LL#"/>
+    <row text="#LL.1.LL#"/>
+    <row text="#LL...LL#"/>
+    <row text="#LL...LL#"/>
+    <row text="#LL...LL#"/>
+    <row text="#.......#"/>
+    <row text="d.......d"/>
+    <row text="#.......#"/>
+    <row text="####D####"/>
+    <flags minLevel="0" maxLevel="14" genhint="diggleHell"/>
+    <element type="digglegod" name="Diggle Devil" at="1" />
+
+    <customblocker name="Candles On A Shelf" x="1" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Candles On A Shelf" x="7" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+
+  </room>
+
+  <room width="11" height="14" name="Hell Throne Room" usefixedname="Digging Never Dies">
+  <row text="#####D#####"/>    
+  <row text="##P#...#P##"/>
+  <row text="##.......##"/>
+  <row text="#..3.1.4..#"/>
+  <row text="#....2....#"/>
+  <row text="d.........d"/>
+  <row text="#..5...6..#"/>
+  <row text="#.........#"/>
+  <row text="#.........#"/>
+  <row text="#....X....#"/>
+  <row text="d....7....d"/>
+  <row text="#.........#"/>
+  <row text="####...####"/>
+  <row text="#####D#####"/>
+
+  <flags minLevel="0" maxLevel="14" nomonsters="1" genhint="diggleHell"/>
+  
+  <customblocker
+     name="Infernal Throne" at="1"
+	 png="dungeon/throne_c.png"
+	 description="From atop his throne, Vlad Digula, Prince of Diggle Hell, rules over his prison." />
+
+   <customblocker
+      name="Brazier" at="3"
+      pngSprite="dungeon/diggle_hell_lamp/diggle_hell_lamp"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" can_push="0" />
+   <customblocker
+      name="Brazier" at="4"
+      pngSprite="dungeon/diggle_hell_lamp/diggle_hell_lamp"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" can_push="0" />
+   <customblocker
+      name="Brazier" at="5"
+      pngSprite="dungeon/diggle_hell_lamp/diggle_hell_lamp"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" can_push="0" />
+   <customblocker
+      name="Brazier" at="6"
+      pngSprite="dungeon/diggle_hell_lamp/diggle_hell_lamp"
+      pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" can_push="0" />
+
+	<monster at="2" name="Vlad Digula" />
+
+  <customblocker
+     name="Torture Rack" at="7"
+	 png="dungeon/torture_rack.png"/>
+
+	
+</room>
+
+<room width="11" height="19" name="The Cell">
+  <row text=" ####D#### "/>    
+  <row text="####...####"/>
+  <row text="###.....###"/>
+  <row text="#.........#"/>
+  <row text="#.1..@..2.#"/>
+  <row text="#.........#"/>
+  <row text="###.....###"/>
+  <row text="###.....###"/>
+  <row text="#.........#"/>
+  <row text="d....@....d"/>
+  <row text="#.........#"/>
+  <row text="###.....###"/>
+  <row text="###.....###"/>
+  <row text="#.........#"/>
+  <row text="#.3..@..4.#"/>
+  <row text="#.........#"/>
+  <row text="###.....###"/>
+  <row text="####...####"/>
+  <row text=" ####D#### "/>
+
+  <flags minLevel="0" maxLevel="14" genhint="diggleHell"/>
+
+  <customblocker
+     name="Cage" at="1"
+	 png="dungeon/cage_a.png"/>
+  <customblocker
+     name="Cage" at="2"
+	 png="dungeon/cage_a.png"/>
+  <customblocker
+     name="Broken Cage" at="3"
+	 png="dungeon/cage_broken.png"/>
+  <customblocker
+     name="Cage" at="4"
+	 png="dungeon/cage_a.png"/>
+  
+</room>
+
+<!-- I think Daniel made these -->
+
+<!-- general rooms -->
+
+<room width="10" height="8" name="10x8 rather plain wizard room">
+  <row text="####D#####"/>    
+  <row text="###...#P##"/>
+  <row text="#........#"/>
+  <row text="#...@....d"/>
+  <row text="d.....^..#"/>
+  <row text="#........#"/>
+  <row text="####...###"/>
+  <row text="#####D####"/>
+  <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+<!-- starting rooms -->
+<room width="20" height="16" name="20x16 boring starting room" >
+   <row text="######D#############" />
+   <row text="#####...############" />
+   <row text="##.......#P#..#P#..#" />
+   <row text="##.................#" />
+   <row text="##.................#" />
+   <row text="###...##...........#" />
+   <row text="###...##....^......d" />
+   <row text="##.................#" />
+   <row text="#...........^.....##" />
+   <row text="d...@.............##" />
+   <row text="#...........^.....##" />
+   <row text="#.................##" />
+   <row text="####....##..^.....##" />
+   <row text="####....##........##" />
+   <row text="###########...######" />
+   <row text="############D#######" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardStart"/>
+   </room>
+
+<!-- ending rooms -->
+<room width="20" height="16" name="20x16 boring ending room" >
+   <row text="####################" />
+   <row text="####################" />
+   <row text="##....##....########" />
+   <row text="#.....##...........#" />
+   <row text="#.........^.###....#" />
+   <row text="#.....##....###....#" />
+   <row text="####..##.^..#P#....#" />
+   <row text="####.###....W......#" />
+   <row text="#..#.#P#WWWWW....1.#" />
+   <row text="d...........W......#" />
+   <row text="#....@..@...WWWWWW##" />
+   <row text="#...........WWWWWW##" />
+   <row text="##................##" />
+   <row text="####....##........##" />
+   <row text="###########...######" />
+   <row text="############D#######" />
+   <flags minLevel="0" maxLevel="14" genhint="wizardEnd"/>
+   <element type="portal" at="1" />
+   </room>
+
+
+  <!-- Rooms by Zara. Thanks, Zara! -->
+
+  <room width="21" height="27" name="Tetris Gauntlet A">
+    <!-- working -->
+    <row text="##D###D###D###D###D##"/>
+    <row text="#####################"/>
+    <row text="#...........#.......#"/>
+    <row text="d.^...^...^.#.^...^.d"/>
+    <row text="#...........#.......#"/>
+    <row text="#########...#.......#"/>
+    <row text="#########...#.......#"/>
+    <row text="#.......#...#.......#"/>
+    <row text="d.^...^.#.^.#.^...^.d"/>
+    <row text="#.......#...#.......#"/>
+    <row text="##.##...##.###.######"/>
+    <row text="##.##...##.###.######"/>
+    <row text="#...#.......#.......#"/>
+    <row text="d.^.#.^...^.#.^...^.d"/>
+    <row text="#...#.......#.......#"/>
+    <row text="#...#############...#"/>
+    <row text="#...#############...#"/>
+    <row text="#.......#.......#...#"/>
+    <row text="d.^...^.#.^...^...^.d"/>
+    <row text="#.......#.......#...#"/>
+    <row text="#...#####...#####...#"/>
+    <row text="#...#####...#####...#"/>
+    <row text="#...#.......#   #...#"/>
+    <row text="d.^...^...^.#   #.^.d"/>
+    <row text="#...#.......#   #...#"/>
+    <row text="#############   #####"/>
+    <row text="##D###D###D##   ##D##"/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="21" height="27" name="Tetris Gauntlet B">
+    <!-- working -->
+    <row text="##D###D###D###D###D##"/>
+    <row text="#####################"/>
+    <row text="#...#.......#.......#"/>
+    <row text="d.^...^...^...^...^.d"/>
+    <row text="#...#.......#.......#"/>
+    <row text="#...#####...#####...#"/>
+    <row text="#...#####...#####...#"/>
+    <row text="#...#...#.......#...#"/>
+    <row text="d.^.#.^...^...^.#.^.d"/>
+    <row text="#...#...#.......#...#"/>
+    <row text="#...#...#########...#"/>
+    <row text="#...#...#########...#"/>
+    <row text="#...#.......#   #...#"/>
+    <row text="d.^.#.^...^.#   #.^.d"/>
+    <row text="#...#.......#   #...#"/>
+    <row text="#...#####...#########"/>
+    <row text="#...#####...#########"/>
+    <row text="#...#...#...#.......#"/>
+    <row text="d.^...^.#.^...^...^.d"/>
+    <row text="#...#...#...#.......#"/>
+    <row text="#####...#####.......#"/>
+    <row text="#####...#####.......#"/>
+    <row text="#...........#.......#"/>
+    <row text="d.^...^...^...^...^.d"/>
+    <row text="#...........#.......#"/>
+    <row text="#####################"/>
+    <row text="##D###D###D###D###D##"/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="21" height="27" name="Tetris Gauntlet C">
+    <!-- working -->
+    <row text="    ##D###D###D###D##"/>
+    <row text="    #################"/>
+    <row text="    #...#...........#"/>
+    <row text="    #.^...^...^...^.d"/>
+    <row text="    #...#...........#"/>
+    <row text="#####...#####...#####"/>
+    <row text="#####...#####...#####"/>
+    <row text="#...........#...#...#"/>
+    <row text="d.^...^...^.#.^.#.^.d"/>
+    <row text="#...........#...#...#"/>
+    <row text="##########.###.##...#"/>
+    <row text="##########.###.##...#"/>
+    <row text="#...........#.......#"/>
+    <row text="d.^...^...^.#.^...^.d"/>
+    <row text="#...........#.......#"/>
+    <row text="#...#########...##.##"/>
+    <row text="#...#########...##.##"/>
+    <row text="#...#.......#...#...#"/>
+    <row text="d.^.#.^...^.#.^.#.^.d"/>
+    <row text="#...#.......#...#...#"/>
+    <row text="##.##...##.######...#"/>
+    <row text="##.##...##.######...#"/>
+    <row text="#.......#...........#"/>
+    <row text="d.^...^.#.^...^...^.d"/>
+    <row text="#.......#...........#"/>
+    <row text="#####################"/>
+    <row text="##D###D###D###D###D##"/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="21" height="27" name="Tetris Gauntlet D">
+    <!-- working -->
+    <row text="    ##D###D###D##    "/>
+    <row text="    #############    "/>
+    <row text="    #...#.......#    "/>
+    <row text="    #.^...^...^.#    "/>
+    <row text="    #...#.......#    "/>
+    <row text="#####...#.......#####"/>
+    <row text="#####...#.......#####"/>
+    <row text="#.......#.......#...#"/>
+    <row text="d.^...^.#.^...^.#.^.d"/>
+    <row text="#.......#.......#...#"/>
+    <row text="##.##...######.##...#"/>
+    <row text="##.##...######.##...#"/>
+    <row text="#...#...#   #.......#"/>
+    <row text="d.^.#.^.#   #.^...^.d"/>
+    <row text="#...#...#   #.......#"/>
+    <row text="#...#############...#"/>
+    <row text="#...#############...#"/>
+    <row text="#.......#.......#...#"/>
+    <row text="d.^...^.#.^...^...^.d"/>
+    <row text="#.......#.......#...#"/>
+    <row text="#####...#.......#####"/>
+    <row text="#####...#.......#####"/>
+    <row text="    #...#.......#    "/>
+    <row text="    #.^...^...^.#    "/>
+    <row text="    #...#.......#    "/>
+    <row text="    #############    "/>
+    <row text="    ##D###D###D##    "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="49" height="11" name="Teleportation Chamber H">
+    <!-- working -->
+    <row text="####D####                               ####D####"/>
+    <row text="##P###P##                               ##P###P##"/>
+    <row text="#.......#                               #.......#"/>
+    <row text="#..WWW..#                               #..WWW..#"/>
+    <row text="#..W1W..#                               #..W2W..#"/>
+    <row text="d..W.W..d                               d..W.W..d"/>
+    <row text="#.......#                               #.......#"/>
+    <row text="#.......#                               #.......#"/>
+    <row text="#.......#                               #.......#"/>
+    <row text="#########                               #########"/>
+    <row text="####D####                               ####D####"/>
+    <flags minLevel="0" maxLevel="14" />
+
+    <element at="1" type="lever" can_push="0" id="lever0"/>
+    <element at="2" type="lever" can_push="0" id="lever1"/>
+
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="44" targetY="5"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever1"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="4" targetY="5"/>
+    </script>
+  </room>
+
+
+  <room width="9" height="51" name="Teleportation Chamber V">
+    <!-- working -->
+    <row text="####D####"/>
+    <row text="##P###P##"/>
+    <row text="#.......#"/>
+    <row text="#..WWW..#"/>
+    <row text="#..W1W..#"/>
+    <row text="d..W.W..d"/>
+    <row text="#.......#"/>
+    <row text="#.......#"/>
+    <row text="#.......#"/>
+    <row text="#########"/>
+    <row text="####D####"/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="         "/>
+    <row text="####D####"/>
+    <row text="##P###P##"/>
+    <row text="#.......#"/>
+    <row text="#..WWW..#"/>
+    <row text="#..W2W..#"/>
+    <row text="d..W.W..d"/>
+    <row text="#.......#"/>
+    <row text="#.......#"/>
+    <row text="#.......#"/>
+    <row text="#########"/>
+    <row text="####D####"/>
+    <flags minLevel="0" maxLevel="14"/>
+
+    <element at="1" type="lever" can_push="0" id="lever0"/>
+    <element at="2" type="lever" can_push="0" id="lever1"/>
+
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="4" targetY="45"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever1"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="4" targetY="5"/>
+    </script>
+  </room>
+
+  <room width="21" height="23" name="Blast Zone">
+    <!-- working -->
+    <row text="     #####D#### ##   "/>
+    <row text="    #####...#######  "/>
+    <row text=" #####2.L....###.3#  "/>
+    <row text="######..LL...##...#  "/>
+    <row text="##1.@##..L..##...L#  "/>
+    <row text=" ##...##.L..#..LLL## "/>
+    <row text="##....##LL..L.LL..###"/>
+    <row text="##L....#L...LLLL..4##"/>
+    <row text="#PLLLLLL^..LLLLLLLLP#"/>
+    <row text="#...........^LLLLL..#"/>
+    <row text="d...LLL..8.....LL...d"/>
+    <row text="#..#LL.^...9...LL...#"/>
+    <row text="#@###LL......L....###"/>
+    <row text="#####LLLL.^..LLLL### "/>
+    <row text=" ###..LLLLL.LLLLL##  "/>
+    <row text=" ##...LLLL..LLLL..## "/>
+    <row text=" ##.LLL..L...#L...@# "/>
+    <row text="##..L#..LL...##....# "/>
+    <row text="#7.###6.L....####.5# "/>
+    <row text="#########...## ##### "/>
+    <row text="###   ####D###   ##  "/>
+    <flags minLevel="0" maxLevel="14" noblockers="1" />
+    <loot type="armour"  at="1" percent="25"/>
+    <loot type="reagent" at="2" percent="25"/>
+    <loot type="potion"  at="3" percent="25"/>
+    <loot type="bolts"   at="4" percent="25"/>
+    <loot type="wand"    at="5" percent="25"/>
+    <loot type="food"    at="6" percent="25"/>
+    <loot type="weapon"  at="7" percent="25"/>
+    <customengraving passable="1" png="dungeon/wizard_skeleton.png" at="8" name="Ex-Wizard" description="When Wizardkings duel, they don't fool around."/>
+    <customengraving passable="1" png="dungeon/wizard_skeleton.png" at="9" name="Ex-Wizard" description="Wizardkings sometimes get rowdy when drunk."/>
+  </room>
+
+  <room width="21" height="26" name="Packed Chamber">
+    <row text="#####################"/>
+    <row text="###P###P#####P###P###"/>
+    <row text="#.........#.........#"/>
+    <row text="#1WWW.WWW.#.WWW.WWW2#"/>
+    <row text="#.WWW.WWW.#.WWW.WWW.#"/>
+    <row text="#....^.^.....^.^....#"/>
+    <row text="#.WWW.W.WWWWW.W.WWW.#"/>
+    <row text="#....^W...W...W^....#"/>
+    <row text="#####.WWW.W.WWW.#####"/>
+    <row text=" ####.W.......W.#### "/>
+    <row text=" ####.W.#####.W.#### "/>
+    <row text=" #.##.W.##8##.W.##.# "/>
+    <row text=" d......#567#......d "/>
+    <row text=" #.##.W.#####.W.##.# "/>
+    <row text=" ####.W.#P#P#.W.#### "/>
+    <row text=" ####.W...9...W.#### "/>
+    <row text="#####.W.WWWWW.W.#####"/>
+    <row text="#....^....W....^....#"/>
+    <row text="#.WWW.WWW.W.WWW.WWW.#"/>
+    <row text="#3..W^.^.....^.^W..4#"/>
+    <row text="###.W.W.WWWWW.W.W.###"/>
+    <row text="#.....W...W...W.....#"/>
+    <row text="#.WWWWWWW.W.WWWWWWW.#"/>
+    <row text="#...................#"/>
+    <row text="#####################"/>
+    <row text="#####################"/>
+    <flags minLevel="0" maxLevel="14" noblockers="1"/>
+    <loot type="food" subtype="Lutefisk" at="1" id="potion1"/>
+    <loot type="food" subtype="Lutefisk" at="2" id="potion2"/>
+    <loot type="food" subtype="Lutefisk" at="3" id="potion3"/>
+    <loot type="food" subtype="Lutefisk" at="4" id="potion4"/>
+    <monster at="5"/>
+    <monster at="6"/>
+    <monster at="7"/>
+    <monster at="8"/>
+    <script repeat="1">
+      <condition condition_type="at" id="potion1" at="1" not="1"/>
+      <condition condition_type="at" id="potion2" at="2"/>
+      <condition condition_type="at" id="potion3" at="3"/>
+      <condition condition_type="at" id="potion4" at="4"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10"  targetY="10" sourceX="10" sourceY="10" />
+      <action on="success" action_type="spell" casts="Blinding Mist Cloud" targetX="10"  targetY="11" sourceX="10" sourceY="11" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="potion1" at="1"/>
+      <condition condition_type="at" id="potion2" at="2" not="1"/>
+      <condition condition_type="at" id="potion3" at="3"/>
+      <condition condition_type="at" id="potion4" at="4"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10"  targetY="10" sourceX="10" sourceY="10" />
+      <action on="success" action_type="spell" casts="Blinding Mist Cloud" targetX="10"  targetY="11" sourceX="10" sourceY="11" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="potion1" at="1"/>
+      <condition condition_type="at" id="potion2" at="2"/>
+      <condition condition_type="at" id="potion3" at="3" not="1"/>
+      <condition condition_type="at" id="potion4" at="4"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10"  targetY="10" sourceX="10" sourceY="10" />
+      <action on="success" action_type="spell" casts="Blinding Mist Cloud" targetX="10"  targetY="11" sourceX="10" sourceY="11" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="potion1" at="1"/>
+      <condition condition_type="at" id="potion2" at="2"/>
+      <condition condition_type="at" id="potion3" at="3"/>
+      <condition condition_type="at" id="potion4" at="4" not="1"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10"  targetY="10" sourceX="10" sourceY="10" />
+      <action on="success" action_type="spell" casts="Blinding Mist Cloud" targetX="10"  targetY="11" sourceX="10" sourceY="11" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="potion1" at="1" not="1"/>
+      <condition condition_type="at" id="potion2" at="2" not="1"/>
+      <condition condition_type="at" id="potion3" at="3" not="1"/>
+      <condition condition_type="at" id="potion4" at="4" not="1"/>
+      <action on="success" action_type="create" create_type="loot" type="food" at="9" amount="3" />
+    </script>
+
+  </room>
+
+  <room width="21" height="21" name="Summoning Circle">
+    <!-- working -->
+    <row text="      ####D####      "/>
+    <row text="    ###P#...#P###    "/>
+    <row text="  ####.........####  "/>
+    <row text="  ##.............##  "/>
+    <row text=" ##.......6.......## "/>
+    <row text=" ##...............## "/>
+    <row text="##....1.^...^.2....##"/>
+    <row text="##.................##"/>
+    <row text="#@....^.......^....@#"/>
+    <row text="#...................#"/>
+    <row text="d...7.....9.....5...d"/>
+    <row text="#...................#"/>
+    <row text="#@....^.......^....@#"/>
+    <row text="##.................##"/>
+    <row text="##....4.^...^.3....##"/>
+    <row text=" ##...............## "/>
+    <row text=" ##.......8.......## "/>
+    <row text="  ##.............##  "/>
+    <row text="  ####.........####  "/>
+    <row text="    #####...#####    "/>
+    <row text="      ####D####      "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customblocker name="Fiery Brazier" at="1" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="2" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="3" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="4" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="5" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="6" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="7" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customblocker name="Fiery Brazier" at="8" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+    <customengraving name="Summoning Circle" id="circle" at="9" passable="1" png="dungeon/inlaid_rune_star.png" description="It hums with magic power. You wonder just what is missing to complete the summoning."/>
+
+    <pedestal x="4" y="4" name="Warning" text="Don't disturb my circles."/>
+    <pedestal x="16" y="16" name="Warning" text="Don't disturb my circles."/>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="8"  y="7" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="9"  y="7" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="10" y="7" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="11" y="7" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="12" y="7" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="7"  y="8" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="7"  y="9" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="7"  y="10"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="7"  y="11"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="7"  y="12"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="13" y="8" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="13" y="9" />
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="13" y="10"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="13" y="11"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="13" y="12"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="8"  y="13"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="9"  y="13"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="10" y="13"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="11" y="13"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="player" x="12" y="13"/>
+      <action on="success" action_type="remove" id="circle" />
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" id="circle" at="9" not="1"/>
+      <action on="success" action_type="create" create_type="horde" at="9" />
+    </script>
+  </room>
+
+  <room width="13" height="11" name="Erosion I">
+    <!-- working -->
+    <row text="#############"/>
+    <row text="###P##P##P###"/>
+    <row text="#...........#"/>
+    <row text="#!!!!!!!!!!!#"/>
+    <row text="#...2.....4.#"/>
+    <row text="d..^..5..^..d"/>
+    <row text="#.1.....3...#"/>
+    <row text="#!!!!!!!!!!!#"/>
+    <row text="#...........#"/>
+    <row text="#############"/>
+    <row text="#############"/>
+    <flags minLevel="0" maxLevel="4" noblockers="1" nomonsters="1" />
+    <trap name="Shoddy Dwarven IED" at="1" />
+    <trap name="Shoddy Dwarven IED" at="2" />
+    <trap name="Shoddy Dwarven IED" at="3" />
+    <trap name="Shoddy Dwarven IED" at="4" />
+    <trap name="Shoddy Dwarven IED" at="5" />
+    <monster x="2" y="2"/>
+    <monster x="4" y="2"/>
+    <monster x="6" y="2"/>
+    <monster x="8" y="2"/>
+    <monster x="10" y="2"/>
+    <monster x="2" y="8"/>
+    <monster x="4" y="8"/>
+    <monster x="6" y="8"/>
+    <monster x="8" y="8"/>
+    <monster x="10" y="8"/>
+  </room>
+
+  <room width="11" height="15" name="Erosion II">
+    <!-- working -->
+    <row text="   ##D##   "/>
+    <row text="   #...#   "/>
+    <row text="   #.^.#   "/>
+    <row text="####...####"/>
+    <row text="#P##...##P#"/>
+    <row text="#..!3.4!..#"/>
+    <row text="#..!...!..#"/>
+    <row text="#..!.5.!..#"/>
+    <row text="#..!...!..#"/>
+    <row text="#..!1.2!..#"/>
+    <row text="####...####"/>
+    <row text="####...####"/>
+    <row text="   #.^.#   "/>
+    <row text="   #...#   "/>
+    <row text="   ##D##   "/>
+    <flags minLevel="5" maxLevel="9" noblockers="1" nomonsters="1" />
+    <trap name="Shoddy Dwarven IED" at="1" />
+    <trap name="Shoddy Dwarven IED" at="2" />
+    <trap name="Shoddy Dwarven IED" at="3" />
+    <trap name="Shoddy Dwarven IED" at="4" />
+    <trap name="Shoddy Dwarven IED" at="5" />
+    <monster x="1" y="5"/>
+    <monster x="1" y="7"/>
+    <monster x="1" y="9"/>
+    <monster x="2" y="6"/>
+    <monster x="2" y="8"/>
+    <monster x="8" y="6"/>
+    <monster x="8" y="8"/>
+    <monster x="9" y="5"/>
+    <monster x="9" y="7"/>
+    <monster x="9" y="9"/>
+  </room>
+
+  <room width="13" height="15" name="Erosion III">
+    <!-- working -->
+    <row text="######D######"/>
+    <row text="##P###.###P##"/>
+    <row text="#...!...!...#"/>
+    <row text="#...!6..!...#"/>
+    <row text="#...!...!...#"/>
+    <row text="#!!!!.2.!!!!#"/>
+    <row text="#.........7.#"/>
+    <row text="d...1.^.3...d"/>
+    <row text="#.5.........#"/>
+    <row text="#!!!!.4.!!!!#"/>
+    <row text="#...!...!...#"/>
+    <row text="#...!..8!...#"/>
+    <row text="#...!...!...#"/>
+    <row text="######.######"/>
+    <row text="######D######"/>
+    <flags minLevel="10" maxLevel="14" noblockers="1" nomonsters="1" />
+    <trap name="Dwarven Landmine" at="1" />
+    <trap name="Dwarven Landmine" at="2" />
+    <trap name="Dwarven Landmine" at="3" />
+    <trap name="Dwarven Landmine" at="4" />
+    <trap name="Dwarven Landmine" at="5" />
+    <trap name="Dwarven Landmine" at="6" />
+    <trap name="Dwarven Landmine" at="7" />
+    <trap name="Dwarven Landmine" at="8" />
+    <monster x="1" y="2"/>
+    <monster x="2" y="3"/>
+    <monster x="3" y="4"/>
+    <monster x="11" y="2"/>
+    <monster x="10" y="3"/>
+    <monster x="9"  y="4"/>
+    <monster x="1" y="12"/>
+    <monster x="2" y="11"/>
+    <monster x="3" y="10"/>
+    <monster x="11" y="12"/>
+    <monster x="10" y="11"/>
+    <monster x="9"  y="10"/>
+  </room>
+
+
+  <room width="27" height="27" name="Lutefisk Experiment">
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="          ###D###          "/>
+    <row text="          ##...##          "/>
+    <row text="          #.....#          "/>
+    <row text="          #.647.#          "/>
+    <row text="          d.152.d          "/>
+    <row text="          #.839.#          "/>
+    <row text="          #.....#          "/>
+    <row text="          ##...##          "/>
+    <row text="          ###D###          "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <row text="                           "/>
+    <flags minLevel="0" maxLevel="14" special="1"/>
+
+    <element at="1" type="lever" can_push="0" id="lever1"/>
+    <element at="2" type="lever" can_push="0" id="lever2"/>
+    <element at="3" type="lever" can_push="0" id="lever3"/>
+    <element at="4" type="lever" can_push="0" id="lever4"/>
+
+    <customblocker name="Stone Block" at="6" png="dungeon/portalC_inactive.png" passable="0" can_push="0"/>
+    <customblocker name="Stone Block" at="7" png="dungeon/portalC_inactive.png" passable="0" can_push="0"/>
+    <customblocker name="Stone Block" at="8" png="dungeon/portalC_inactive.png" passable="0" can_push="0"/>
+    <customblocker name="Stone Block" at="9" png="dungeon/portalC_inactive.png" passable="0" can_push="0"/>
+
+    <loot type="toolkit" subtype="Horadric Lutefisk Cube" at="5" id="item"/>
+
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever1"/>
+      <action on="success" action_type="move" id="item" x="0" y="13"/>
+    </script>
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever2"/>
+      <action on="success" action_type="move" id="item" x="26" y="13"/>
+    </script>
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever3"/>
+      <action on="success" action_type="move" id="item" x="13" y="26"/>
+    </script>
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever4"/>
+      <action on="success" action_type="move" id="item" x="13" y="0"/>
+    </script>
+  </room>
+
+  <room width="21" height="19" name="The Crimson Hexagon">
+    <!-- working -->
+    <row text="   #######D#######   "/>
+    <row text="  ####P##...##P####  "/>
+    <row text=" ##...............## "/>
+    <row text=" #5...............6# "/>
+    <row text=" #.................# "/>
+    <row text=" ######.......###### "/>
+    <row text="####P##.1...2.##P### "/>
+    <row text="##.................##"/>
+    <row text="#...................#"/>
+    <row text="d.........@.........d"/>
+    <row text="#...................#"/>
+    <row text="##.................##"/>
+    <row text="#######.3...4.###### "/>
+    <row text=" ###P##.......##P### "/>
+    <row text=" #.................# "/>
+    <row text=" #7...............8# "/>
+    <row text=" ##...............## "/>
+    <row text="  #######...#######  "/>
+    <row text="   #######D#######   "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customblocker name="Table" at="1" png="dungeon/table_wood.png" can_push="0"/>
+    <customblocker name="Table" at="2" png="dungeon/table_wood.png" can_push="0"/>
+    <customblocker name="Table" at="3" png="dungeon/table_wood.png" can_push="0"/>
+    <customblocker name="Table" at="4" png="dungeon/table_wood.png" can_push="0"/>
+    <element type="bookshelf" at="5" percent="25" />
+    <element type="bookshelf" at="6" percent="25" />
+    <element type="bookshelf" at="7" percent="25" />
+    <element type="bookshelf" at="8" percent="25" />
+
+    <customblocker name="Books" x="7" y="6" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="9" y="6" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="8" y="5" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="8" y="7" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+
+    <customblocker name="Books" x="11" y="6" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="13" y="6" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="12" y="5" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="12" y="7" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+
+    <customblocker name="Books" x="7" y="12" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="9" y="12" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="8" y="11" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="8" y="13" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+
+    <customblocker name="Books" x="11" y="12" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="13" y="12" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="12" y="11" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+    <customblocker name="Books" x="12" y="13" png="dungeon/bookpile.png" can_push="0" percent="15"/>
+
+    <customblocker name="Dusty Bookcase" x="3"  y="2"  png="dungeon/shelfB0.png" description="'Jv, b a q ougg mgxcotbm xp iwbvh, qmzt.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="2"  png="dungeon/shelfB1.png" description="'Wmnz I kuo, vcqzxkjlfwxmemnmnjydo iibpgh.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="2"  png="dungeon/shelfA0.png" description="'Djy a, jx, lvqvrvkjz nw amtlj n, a ly h.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="2"  png="dungeon/shelfB3.png" description="'T mbeli ftgc vj, dayoxwg h kcmptf m fxwn.'"/>
+    <customblocker name="Dusty Bookcase" x="7"  y="2"  png="dungeon/shelfB3.png" description="'Uki n pw v rgmpldgsloa ks brw av, x, mjz.'"/>
+    <customblocker name="Dusty Bookcase" x="8"  y="2"  png="dungeon/shelfA0.png" description="'Slv m wu, k, sxixou sm knvt nd hwury.'"/>
+    <customblocker name="Dusty Bookcase" x="12" y="2"  png="dungeon/shelfB2.png" description="'Smtpcdj zv, ne, v v pnel, asbeupf np u.'"/>
+    <customblocker name="Dusty Bookcase" x="13" y="2"  png="dungeon/shelfB3.png" description="'Cv ljiz ugum wmd rzvibvjjg vy l yip, rc.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="2"  png="dungeon/shelfB2.png" description="'Sm. Uxjmp eqp nrvxsy lc. E uvjw.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="2"  png="dungeon/shelfB0.png" description="'Noeta horhjcry obdsjpc ntyloek oxza pvar.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="2"  png="dungeon/shelfA0.png" description="'Vbah mgyks, fbgf, b pi ctnit f, fx, lh.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="2"  png="dungeon/shelfB0.png" description="'G fbyccm l, w rb qgv vgxj qhrvytr, pd.'"/>
+    <customblocker name="Dusty Bookcase" x="2"  y="4"  png="dungeon/shelfA2.png" description="'Uda, y n zqtp bp f cd, j m rnuw lrfnkfb.'"/>
+    <customblocker name="Dusty Bookcase" x="3"  y="4"  png="dungeon/shelfA1.png" description="'Tj sbvf, xybw utfq, wzdbth, x e cmt cdnv.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="4"  png="dungeon/shelfB1.png" description="'C lpvlwmf xurpwd l o, vty inxvhfoc, kle.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="4"  png="dungeon/shelfA1.png" description="'Zni yiqjvzfacxdgqcztt if wicevvxwfuev vq.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="4"  png="dungeon/shelfB1.png" description="'Ut mregeg, c cavtn c vfwk yf jo vti t md.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="4"  png="dungeon/shelfA0.png" description="'Yxaz whikjfldsbnrj v, w gdr fz, nllqfg I.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="4"  png="dungeon/shelfB1.png" description="'Lie a, cn zpnhykx. Oh time thy pyramids.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="4"  png="dungeon/shelfB2.png" description="'C sfaozjeji d mtkcujtjrsinedls, f qlbry.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="4"  png="dungeon/shelfA2.png" description="'Hat, am, hvaogvbhdfiaijnyi, tf v bicyp.'"/>
+    <customblocker name="Dusty Bookcase" x="18" y="4"  png="dungeon/shelfB1.png" description="'Nc, nc ulhswnq s, hli ylfuhp ekuwadg, l.'"/>
+    <customblocker name="Dusty Bookcase" x="2"  y="7"  png="dungeon/shelfA3.png" description="'Opewzqbez dr, z, f, r zkr, si m, jiaix.'"/>
+    <customblocker name="Dusty Bookcase" x="3"  y="7"  png="dungeon/shelfA0.png" description="'Lkawdpbzzn m sbklfwhuzi, bbrormreprrgzw.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="7"  png="dungeon/shelfA3.png" description="'Bkk nz x, p, baqjm xxfhqy, hg j ytkcys.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="7"  png="dungeon/shelfB0.png" description="'U tzsn c, v, rhhsq ccymxqc hhjt awcvhdxt.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="7"  png="dungeon/shelfA0.png" description="'Acxxu znvc lemv pzqgyyp, s avo y bs l.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="7"  png="dungeon/shelfB1.png" description="'Qfmwi. F o ozii nf zix ha zmjvwpr iom.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="7"  png="dungeon/shelfA0.png" description="'Lhbqeuc d upwk x ci eosnc, y gs yr, vq.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="7"  png="dungeon/shelfB0.png" description="'Gp erzm ovv hpr cqrpf ljiju xkw zb, x j.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="7"  png="dungeon/shelfB1.png" description="'Anmgevo y, q f wzjex ukqqhublviz c, c, m.'"/>
+    <customblocker name="Dusty Bookcase" x="18" y="7"  png="dungeon/shelfB2.png" description="'Dalg jg, rvcj I uhtf, rt b dkyk z ftgk.'"/>
+    <customblocker name="Dusty Bookcase" x="3"  y="16" png="dungeon/shelfA0.png" description="'Qsv p qhvy tub t yl ptr, ktmfr rflxvpuh.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="16" png="dungeon/shelfA3.png" description="'Nkyy p, a ba etz nettduby. Esrui mk n.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="16" png="dungeon/shelfA1.png" description="'Chaf lzbx e myzdw, s mbvw bfb, hhhfpdh.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="16" png="dungeon/shelfA3.png" description="'Zhb, a mydnkx mo tj subkc t, edd, wzz t.'"/>
+    <customblocker name="Dusty Bookcase" x="7"  y="16" png="dungeon/shelfA1.png" description="'Q vy kla mzcmsyqzl ftcfyw, nqa tb mm on.'"/>
+    <customblocker name="Dusty Bookcase" x="8"  y="16" png="dungeon/shelfA2.png" description="'X uxx onyruioyhitkzyq, nraeu kjnahy mt.'"/>
+    <customblocker name="Dusty Bookcase" x="12" y="16" png="dungeon/shelfB3.png" description="'Zot hg bc, pmzxrwtwkmnto r, xo s o dc ss.'"/>
+    <customblocker name="Dusty Bookcase" x="13" y="16" png="dungeon/shelfB2.png" description="'X br, d y zzrq vk mv lltpbt yvq ivuwn z.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="16" png="dungeon/shelfB1.png" description="'Nfel, du qnw, k ofs, zv jgr, suleu, w.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="16" png="dungeon/shelfB3.png" description="'Ig wvbrohhioy, p ox w, ilydoeqsqayji x.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="16" png="dungeon/shelfA3.png" description="'Q vshppn, xd hw, trg, wv rdhy cvn r.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="16" png="dungeon/shelfA2.png" description="'Bxwb, eur, xnhcnwtgiixskmlwtcuip cujgzgo.'"/>
+    <customblocker name="Dusty Bookcase" x="2"  y="14" png="dungeon/shelfB1.png" description="'Ar. Ytz k j ha, z ppn oabumemh jq kdi.'"/>
+    <customblocker name="Dusty Bookcase" x="3"  y="14" png="dungeon/shelfB3.png" description="'Dbiegpberhserukpru tn wggct w zlobcn ea.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="14" png="dungeon/shelfB0.png" description="'Y qq xozq vwkxxz flz, pda, p hig, hqx c.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="14" png="dungeon/shelfB3.png" description="'Zu oepjms k kw, vbohfew, cfkqwibpms w ln.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="14" png="dungeon/shelfA1.png" description="'Kwj, ku rlnaso paa bzy r vhaspq exitaw,.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="14" png="dungeon/shelfA2.png" description="'Vrc b xdciey, c gavsie kqd pohsatasj qm.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="14" png="dungeon/shelfB3.png" description="'No, none of these books make any sense.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="14" png="dungeon/shelfA1.png" description="'Hj t rk kde I u vy ocfabe tqqx cddzwsb y.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="14" png="dungeon/shelfA0.png" description="'En, fbv cdfeobjgbwmam mfqgxzi, z cqsx,.'"/>
+    <customblocker name="Dusty Bookcase" x="18" y="14" png="dungeon/shelfA1.png" description="'Vv. Vlrhz unry v, crt, xvrcyth w tcsw.'"/>
+    <customblocker name="Dusty Bookcase" x="2"  y="11" png="dungeon/shelfA0.png" description="'Vzc f xlh wh, kiw jxngwn lf ldsirpllrqb.'"/>
+    <customblocker name="Dusty Bookcase" x="3"  y="11" png="dungeon/shelfA3.png" description="'Xc, mz, k kpqtsiqufjb epdno, zxtvrsq, h.'"/>
+    <customblocker name="Dusty Bookcase" x="4"  y="11" png="dungeon/shelfA0.png" description="'E vw bamwqiah g pwn, g wo, amqg, t, ujt.'"/>
+    <customblocker name="Dusty Bookcase" x="5"  y="11" png="dungeon/shelfB2.png" description="'Km nlcp, q, I, czy qgq chm jmn, b l gfv.'"/>
+    <customblocker name="Dusty Bookcase" x="6"  y="11" png="dungeon/shelfA1.png" description="'Oy qq p, k dapdsjindx q ppl zemrijqhn, b.'"/>
+    <customblocker name="Dusty Bookcase" x="14" y="11" png="dungeon/shelfB2.png" description="'X, xr p, fa zpep es bot yhdpc ftaa, rmg.'"/>
+    <customblocker name="Dusty Bookcase" x="15" y="11" png="dungeon/shelfB1.png" description="'Q, uu yggbmrbzqurn, fp zfesoboy u.'"/>
+    <customblocker name="Dusty Bookcase" x="16" y="11" png="dungeon/shelfA2.png" description="'No, fa civ hbooyopvl lauzh mbypqyldutzja.'"/>
+    <customblocker name="Dusty Bookcase" x="17" y="11" png="dungeon/shelfA3.png" description="'Djt za a xvl. D mca j joplqarsjne irn.'"/>
+    <customblocker name="Dusty Bookcase" x="18" y="11" png="dungeon/shelfA1.png" description="'Vd qpxj, cr yyn uhb izqo, zfv, mgnm, b.'"/>
+  </room>
+
+  <room width="12" height="11" name="Gate Repair Workshop">
+    <!-- working -->
+    <row text="############"/>
+    <row text="############"/>
+    <row text="#..........#"/>
+    <row text="#........6.#"/>
+    <row text="#..........#"/>
+    <row text="#.123......d"/>
+    <row text="#..4.......#"/>
+    <row text="#.....5....#"/>
+    <row text="#..........#"/>
+    <row text="############"/>
+    <row text="########D###"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customblocker name="Portal Controls" x="1" y="2" png="dungeon/magic_slipgate_controls_off.png" description="They're not working, and you're not an authorized repair service."/>
+    <customblocker name="Portal" x="2" y="2" png="dungeon/magic_slipgate_off.png" description="Either this is broken, or it's a really short-range portal."/>
+    <customblocker name="Portal Controls" x="4" y="2" png="dungeon/magic_slipgate_controls_on.png" description="The console is flashing 'PC LOAD LETTER'."/>
+    <customblocker name="Portal" x="5" y="2" png="dungeon/magic_slipgate_off.png" description="Hopefully it's not working from the other side as well."/>
+    <customblocker name="Portal Controls" x="8" y="2" png="dungeon/magic_slipgate_controls_on.png" description="It's in diagnostic mode. Some problem with CONFIG.SYS."/>
+    <customblocker name="Portal" x="9" y="2" png="dungeon/magic_slipgate_off.png" description="This portal's days of sending stab-happy fools into unknown dimensions are over."/>
+    <customblocker name="Portal Controls" x="1" y="3" png="dungeon/wizard_controls.png" description="Unfortunately, Electronics is not a skill tree."/>
+    <customblocker name="Portal Controls" x="3" y="7" png="dungeon/wizard_controls.png" description="Maybe if you tried zapping the PRAM?"/>
+    <customblocker name="Discharged Crystal Node" x="1" y="7" png="dungeon/crystal_node_off.png" description="This one is all out of magic smoke."/>
+    <customblocker name="Discharged Crystal Node" x="8" y="3" png="dungeon/crystal_node_off.png" description="No signal."/>
+
+    <customblocker name="Portal Controls" x="2" y="3" png="dungeon/magic_slipgate_controls_off.png" description="They're not working, and you're not an authorized repair service."/>
+
+    <loot type="component" at="4" percent="75"/>
+    <loot type="component" at="5" percent="50"/>
+    <loot type="component" at="6" percent="25"/>
+
+    <customblocker name="Workbench" at="1" png="dungeon/techbench1.png" description="Apparently, sufficiently advanced magic is indistinguishable from technology." can_push="0"/>
+    <customblocker name="Workbench" at="2" png="dungeon/techbench0.png" description="Apparently, sufficiently advanced magic is indistinguishable from technology." can_push="0"/>
+    <customblocker name="Workbench" at="3" png="dungeon/techcrate.png"  description="Apparently, sufficiently advanced magic is indistinguishable from technology." can_push="0"/>
+
+  </room>
+
+  <room width="33" height="32" name="Grosse">
+    <!-- working -->
+    <row text="                   ##########    "/>
+    <row text="                   ##########    "/>
+    <row text="                   #.......7#    "/>
+    <row text="                   #.8...9..#    "/>
+    <row text="                   #........#    "/>
+    <row text="                   #######..#    "/>
+    <row text="                   #######..#####"/>
+    <row text="                   ##.......#####"/>
+    <row text="                   ##......1.2.3#"/>
+    <row text="                   #.......4.5.6#"/>
+    <row text="        ############!############"/>
+    <row text="        ############!############"/>
+    <row text="        ############!############"/>
+    <row text="        #@.....................@#"/>
+    <row text="        #.......................#"/>
+    <row text="#########.......................#"/>
+    <row text="#####P###...#...#...#...#...#...#"/>
+    <row text="#...........#...#...#...#...#...#"/>
+    <row text="#...............................#"/>
+    <row text="#.#..#..#.......................#"/>
+    <row text="#...............................#"/>
+    <row text="d...............................d"/>
+    <row text="#...............................#"/>
+    <row text="#.#..#..#.......................#"/>
+    <row text="#...............................#"/>
+    <row text="#...........#...#...#...#...#...#"/>
+    <row text="#########...#...#...#...#...#...#"/>
+    <row text="#########.......................#"/>
+    <row text="        #.......................#"/>
+    <row text="        #@.....................@#"/>
+    <row text="        #########################"/>
+    <row text="        #########################"/>
+    <flags minLevel="0" maxLevel="14"/>
+
+    <customblocker name="Astrological Banner" x="12" y="12" png="dungeon/wizard_banner_celestial.png" description="This is important. This means something." />
+    <customblocker name="Astrological Banner" x="16" y="12" png="dungeon/wizard_banner_celestial.png" description="Something is in conjunction with something and opposition with something else." />
+    <customblocker name="Astrological Banner" x="24" y="12" png="dungeon/wizard_banner_celestial.png" description="You're actually not sure which planets orbit your sun, actually." />
+    <customblocker name="Astrological Banner" x="28" y="12" png="dungeon/wizard_banner_celestial.png" description="Wizardking astrology is ages beyond that of regular mortal astrology." />
+    <customblocker name="Pedestal" x="12" y="18" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="16" y="18" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="20" y="18" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="24" y="18" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="28" y="18" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="12" y="24" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="16" y="24" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="20" y="24" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="24" y="24" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <customblocker name="Pedestal" x="28" y="24" png="dungeon/wizard_pedestal_clothed.png" can_push="0"/>
+    <loot type="potion" at="1"/>
+    <loot type="potion" at="2"/>
+    <loot type="potion" at="3"/>
+    <loot type="potion" at="4"/>
+    <loot type="potion" at="5"/>
+    <loot type="potion" at="6"/>
+    <loot type="weapon" at="7"/>
+    <loot type="weapon" at="8"/>
+    <loot type="weapon" at="9"/>
+
+  </room>
+
+  <room width="15" height="17" name="Wolf Prison">
+    <!-- working -->
+
+    <row text="###############"/>
+    <row text="###############"/>
+    <row text="#.##.##.##.##.#"/>
+    <row text="#......1......#"/>
+    <row text="#54...........d"/>
+    <row text="#.............#"/>
+    <row text="######...######"/>
+    <row text="#....#...#....#"/>
+    <row text="#6..2.........#"/>
+    <row text="#....#...#....#"/>
+    <row text="######...######"/>
+    <row text="#....#...#....#"/>
+    <row text="#....#...#....#"/>
+    <row text="#..7..........#"/>
+    <row text="#....#...#..38#"/>
+    <row text="#######.#######"/>
+    <row text="#######D#######"/>
+
+    <flags minLevel="0" maxLevel="14"/>
+    <loot type="food" at="1"/>
+    <loot type="food" at="2"/>
+    <loot type="food" at="3"/>
+    <monster at="4"/>
+    <loot type="weapon" at="5"/>
+    <customengraving name="Bone Pile" at="6" passable="1" png="dungeon/bones2.png"/>
+    <customengraving name="Bone Pile" at="7" passable="1" png="dungeon/bones2.png"/>
+    <customengraving name="Bone Pile" at="8" passable="1" png="dungeon/bones2.png"/>
+    <customblocker name="Cage" x="1" y="2" png="dungeon/cage_a.png"/>
+    <customblocker name="Cage" x="4" y="2" png="dungeon/cage_a.png"/>
+    <customblocker name="Cage" x="7" y="2" png="dungeon/cage_a.png"/>
+    <customblocker name="Cage" x="10" y="2" png="dungeon/cage_a.png"/>
+    <customblocker name="Cage" x="13" y="2" png="dungeon/cage_a.png"/>
+  </room>
+
+
+  <room width="24" height="20" name="Hangar">
+    <row text="          #######D##    "/>
+    <row text="   #############...#    "/>
+    <row text=" #########..4###...#    "/>
+    <row text=" ##.........5###...#    "/>
+    <row text=" #...##.....6###...#    "/>
+    <row text=" #..###....#####...#####"/>
+    <row text=" ##..##...######...#####"/>
+    <row text=" ##..##!!!###........G##"/>
+    <row text="  #...##1.3GGG.....GGGG#"/>
+    <row text=" ##...##.2.GG.....GGGGG#"/>
+    <row text="###..###GGGG.....GGGGGG#"/>
+    <row text="##..#####GG........GGGG#"/>
+    <row text="#...#####GGGG.........G#"/>
+    <row text="#....####GGGGGGGGG...GG#"/>
+    <row text="##....###!GGGGGG....GGG#"/>
+    <row text=" ##....#.!!#G..........#"/>
+    <row text="  ##......#####........#"/>
+    <row text="   ##.....# #####...####"/>
+    <row text="    #######   ###...####"/>
+    <row text="     ######     ##D##   "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <monster at="1"/>
+    <monster at="2"/>
+    <monster at="3"/>
+    <loot type="weapon" at="4"/>
+    <loot type="food" at="5"/>
+    <loot type="potion" at="6"/>
+  </room>
+
+  <!-- Bergstrom rooms. -->
+
+  <room width="25" height="14" name="Simple Forcefield Maze">
+    <!--Tested and working -->
+    <row text=" ################D###### "/>
+    <row text=" #############P#...##### "/>
+    <row text=" #.....................##"/>
+    <row text=" #.3X.XXXXX.XXXXXXX.X4..#"/>
+    <row text=" #.X......@.....^....X..d"/>
+    <row text=" #.X.XXX.XXXXXXX.XXX.X..#"/>
+    <row text=" #.X.X........1X...X@X.##"/>
+    <row text="##...X...X...2.....X...# "/>
+    <row text="#..X@XXX.X.XXXXXXX.X.X.# "/>
+    <row text="d..X......^.....@....X.# "/>
+    <row text="#..5XX.XXXXX.XXXXX.XX6.# "/>
+    <row text="##.....................# "/>
+    <row text=" ####...################ "/>
+    <row text=" #####D################# "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customengraving passable="1" name="Copper Runes" at="1" png="dungeon/runes_copper0.png"/>
+    <loot type="wand" subtype="Wand of Tesla" at="1" percent="50"/>
+    <horde at="2" min="4" additional="4"/>
+    <customblocker name="Aetheric Field Aemitter" png="dungeon/tesla_coil.png" at="3" can_push="0" description="This gently humming thaumomechanical device emits invisible fields of arcane energy. When you try to touch it, your fingers go numb and then are gently pushed away by some unseen force."/>
+    <customblocker name="Aetheric Field Aemitter" png="dungeon/tesla_coil.png" at="4" can_push="0" description="This gently humming thaumomechanical device emits invisible fields of arcane energy. When you try to touch it, your fingers go numb and then are gently pushed away by some unseen force."/>
+    <customblocker name="Aetheric Field Aemitter" png="dungeon/tesla_coil.png" at="5" can_push="0" description="This gently humming thaumomechanical device emits invisible fields of arcane energy. When you try to touch it, your fingers go numb and then are gently pushed away by some unseen force."/>
+    <customblocker name="Aetheric Field Aemitter" png="dungeon/tesla_coil.png" at="6" can_push="0" description="This gently humming thaumomechanical device emits invisible fields of arcane energy. When you try to touch it, your fingers go numb and then are gently pushed away by some unseen force."/>
+    <customblocker name="Magic Sconce" x="4" y="1" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="The flames flit arcanely around and around, as though they were being manipulated by some mystical force." can_push="0"/>
+    <customblocker name="Magic Sconce" x="20" y="1" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="The flames flit arcanely around and around, as though they were being manipulated by some mystical force." can_push="0"/>
+  </room>
+  <room width="24" height="23" name="Triangulon's Treasure Trove">
+    <!--Tested and working -->
+    <row text="                    ####"/>
+    <row text="                 #######"/>
+    <row text="              ######...#"/>
+    <row text="           ######......d"/>
+    <row text="        ######.........#"/>
+    <row text="     ######............#"/>
+    <row text="  ######.........###...#"/>
+    <row text="#####.........######...#"/>
+    <row text="##.........######4.#...#"/>
+    <row text="d.......######.....#...#"/>
+    <row text="##......####...152.#...#"/>
+    <row text="####......####..3..#...#"/>
+    <row text="  ####......####...#...#"/>
+    <row text="    ####......####.#...#"/>
+    <row text="      ####......####.. #"/>
+    <row text="        ####......##...#"/>
+    <row text="          ####.........#"/>
+    <row text="            ####.......#"/>
+    <row text="              ####.....#"/>
+    <row text="                ####...d"/>
+    <row text="                  ####.#"/>
+    <row text="                    ####"/>
+    <row text="                      ##"/>
+    <flags minLevel="5" maxLevel="10"/>
+    <customblocker name="Painting of Triangulon" x="8" y="10" png="dungeon/wizard_painting01.png" can_push="0" description="OMG is that Triangulon? Makes me wish I was just a little more equilateral, if you know what I mean."/>
+    <customblocker name="Painting of Triangulon" x="19" y="15" png="dungeon/wizard_painting01.png" can_push="0" description="Triangulon! It's the picture from when he was on the cover of Mathemagic Beat!"/>
+    <customblocker name="Painting of Triangulon" x="18" y="7" png="dungeon/wizard_painting01.png" can_push="0" description="This picture of triangulon is covered with lipstick stains."/>
+    <!-- To get access to these treasures, you need either a dig effect or a random teleport. -->
+    <loot type="ring" subtype="Triangulonic Zinc Ring" at="1"/>
+    <loot type="weapon" subtype="Triangulon's Staff of Greater Tessellation" at="2" percent="66"/>
+    <horde at="3" percent="90"/>
+    <customengraving name="Wizardly Empties" at="4" png="dungeon/wizardly_empties.png" description="My heart skips a beat when I think that about how triangulon's famously angular lips may have touched this bottle."/>
+    <element at="5" type="lever" can_push="0" id="lever5"/>
+    <!-- Should someone get in via instability infusion, this lever assures they won't be stuck here and lose the character. -->
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever5"/>
+      <action on="success" action_type="spell" casts="Xeuclid's Translation" targetX="4" targetY="9"/>
+    </script>
+  </room>
+  <room width="20" height="16" name="Branchy Blurry Vending">
+    <!--Tested and working -->
+    <row text="##D##############D##"/>
+    <row text="#...############...#"/>
+    <row text="#..3...............#"/>
+    <row text="#..................#"/>
+    <row text="#WWWWWW###.....#####"/>
+    <row text="#WWWWWW###.....#####"/>
+    <row text="#.......1..........#"/>
+    <row text="#..................d"/>
+    <row text="#..................#"/>
+    <row text="#...#####...###WWWW#"/>
+    <row text="##D######...###WWWW#"/>
+    <row text="      #......2.....#"/>
+    <row text="      d............#"/>
+    <row text="      #............#"/>
+    <row text="      #########...##"/>
+    <row text="       #########D###"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <element at="1" type="drinkvending"/>
+    <element at="2" type="craftvending"/>
+    <horde at="3"/>
+    <customblocker name="Magic Sconce" x="7" y="5" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="Just enough light to see the buttons on the vending machine. You know how hard it is to read small print when you need a fix and your eyes are blurry." can_push="0"/>
+    <customblocker name="Magic Sconce" x="9" y="5" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="Just enough light to see the buttons on the vending machine. You know how hard it is to read small print when you need a fix and your eyes are blurry." can_push="0"/>
+    <customblocker name="Magic Sconce" x="12" y="10" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="This particular candle serves no useful purpose whatsoever." can_push="0"/>
+    <customblocker name="Magic Sconce" x="14" y="10" pngSprite="dungeon/nordic_sconceA/nordic_sconceA" pngFirst="0" pngNum="4" pngRate="110" passable="0" pngAnimate="1" description="This particular candle serves no useful purpose whatsoever." can_push="0"/>
+  </room>
+  <room width="11" height="12" name="Stubborn Krong Corridor">
+    <!--Tested and working -->
+    <row text="##D##      "/>
+    <row text="#...###### "/>
+    <row text="#L.L###### "/>
+    <row text="#L.L##LLL##"/>
+    <row text="#L.LLLLLLL#"/>
+    <row text="#L.1.....L#"/>
+    <row text="#L.LLL324L#"/>
+    <row text="#L.LLL...L#"/>
+    <row text="#L.L#LLLLL#"/>
+    <row text="#L.L#LLLLL#"/>
+    <row text="#...#######"/>
+    <row text="##D####### "/>
+    <flags minLevel="0" maxLevel="14" noblockers="1"/>
+    <customblocker name="Extremely Stubborn Trap" at="1" can_push="0" png="dungeon/trap_hidden.png" passable="1" description="An uber trap is stubbornly guarding this specific bit of floor. No amount of tinkering or thievery is likely to persuade it to move or deactivate."/>
+    <element type="anvil" at="2"/>
+    <customblocker name="Brazier" at="3" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong."/>
+    <customblocker name="Brazier" at="4" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" pngAnimate="1" description="These flames burn for the glory of Krong."/>
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="1"/>
+      <action on="success" action_type="spell" casts="Ignition Bolt" targetat="1"/>
+      <action on="success" action_type="spell" casts="Generic Fireball" targetat="1"/>
+      <action on="success" action_type="ticker" text="You have been blasted by Krong's favorite firetrap! Consider it a blessing! Krong don't suffer no sissies."/>
+    </script>
+  </room>
+  <room width="14" height="15" name="Fountains Everywhere">
+    <!--Tested and working -->
+    <row text="##D#######D###"/>
+    <row text="##..#####...##"/>
+    <row text="#............d"/>
+    <row text="d...1WWW2....#"/>
+    <row text="#.WWWWWWW...##"/>
+    <row text="##WWWW....W## "/>
+    <row text="####W..3WWW#  "/>
+    <row text="####W.7WWWW#  "/>
+    <row text="####W..4WWW#  "/>
+    <row text="##WWWW....W## "/>
+    <row text="#.WWWWWWW...##"/>
+    <row text="d...6WWW5....#"/>
+    <row text="#............d"/>
+    <row text="##..#####...##"/>
+    <row text="##D#######D###"/>
+    <flags minLevel="0" maxLevel="14" noblockers="1"/>
+    <element type="fountain" at="1" percent="86"/>
+    <element type="fountain" at="2" percent="83"/>
+    <element type="fountain" at="3" percent="81"/>
+    <element type="fountain" at="4" percent="82"/>
+    <element type="fountain" at="5" percent="84"/>
+    <element type="fountain" at="6" percent="85"/>
+    <horde at="7" min="4" additional="4"/>
+  </room>
+  <room width="22" height="12" name="The Exit Or The Tiger">
+    <!--Tested and working -->
+    <row text="   ################   "/>
+    <row text="########P#############"/>
+    <row text="###.......##.......###"/>
+    <row text="#....................#"/>
+    <row text="#....................#"/>
+    <row text="#####.##########.#####"/>
+    <row text="######################"/>
+    <row text="#.1..#..2.##.3..#..4.#"/>
+    <row text="#.........##.........#"/>
+    <row text="###.....######.....###"/>
+    <row text="  ##...##    ##...##  "/>
+    <row text="   ##D##      ##D##   "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <element at="1" type="lever" can_push="0" id="lever1"/>
+    <element at="2" type="lever" can_push="0" id="lever2"/>
+    <element at="3" type="lever" can_push="0" id="lever3"/>
+    <element at="4" type="lever" can_push="0" id="lever4"/>
+    <customblocker name="Painting of a Tiger" x="1" y="6" png="dungeon/painting_tiger.png" description="This reminds me of a story I read somewhere. I'd share it with you, but I can't quite remember how it ends."/>
+    <customblocker name="Tiger Portrait" x="13" y="1" png="dungeon/painting_tiger.png" description="As it turns out, this was actually a much easier decision than the one in that story." percent="80"/>
+    <monster x="1" y="3"/>
+    <monster x="3" y="3"/>
+    <monster x="5" y="3"/>
+    <monster x="7" y="3"/>
+    <monster x="9" y="3"/>
+    <monster x="10" y="3"/>
+    <monster x="14" y="3"/>
+    <monster x="16" y="3"/>
+    <monster x="18" y="3"/>
+    <monster x="20" y="3"/>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever1"/>
+      <condition condition_type="at" id="lever1" at="1"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="5" sourceX="2" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="6" sourceX="2" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="5" sourceX="3" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="6" sourceX="3" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="5" sourceX="4" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="6" sourceX="4" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="5" sourceX="2" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="6" sourceX="2" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="18" targetY="5" sourceX="3" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="18" targetY="6" sourceX="3" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="19" targetY="5" sourceX="4" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="19" targetY="6" sourceX="4" sourceY="6"/>
+      <action on="success" action_type="remove" id="lever1"/>
+      <action on="success" action_type="remove" id="lever2"/>
+      <action on="success" action_type="remove" id="lever3"/>
+      <action on="success" action_type="remove" id="lever4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever2"/>
+      <condition condition_type="at" id="lever1" at="1"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="7" sourceX="10" sourceY="7"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="8" sourceX="10" sourceY="8"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="7" sourceX="11" sourceY="7"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="8" sourceX="11" sourceY="8"/>
+      <action on="success" action_type="remove" id="lever1"/>
+      <action on="success" action_type="remove" id="lever2"/>
+      <action on="success" action_type="remove" id="lever3"/>
+      <action on="success" action_type="remove" id="lever4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever3"/>
+      <condition condition_type="at" id="lever1" at="1"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="7" sourceX="10" sourceY="7"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="10" targetY="8" sourceX="10" sourceY="8"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="7" sourceX="11" sourceY="7"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="11" targetY="8" sourceX="11" sourceY="8"/>
+      <action on="success" action_type="remove" id="lever1"/>
+      <action on="success" action_type="remove" id="lever2"/>
+      <action on="success" action_type="remove" id="lever3"/>
+      <action on="success" action_type="remove" id="lever4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="activated_changed" id="lever4"/>
+      <condition condition_type="at" id="lever1" at="1"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="5" sourceX="2" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="2" targetY="6" sourceX="2" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="5" sourceX="3" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="3" targetY="6" sourceX="3" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="5" sourceX="4" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="4" targetY="6" sourceX="4" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="5" sourceX="2" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="6" sourceX="2" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="18" targetY="5" sourceX="3" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="18" targetY="6" sourceX="3" sourceY="6"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="19" targetY="5" sourceX="4" sourceY="5"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="19" targetY="6" sourceX="4" sourceY="6"/>
+      <action on="success" action_type="remove" id="lever1"/>
+      <action on="success" action_type="remove" id="lever2"/>
+      <action on="success" action_type="remove" id="lever3"/>
+      <action on="success" action_type="remove" id="lever4"/>
+    </script>
+  </room>
+  <room width="22" height="14" name="Light to Read By">
+    <!--Tested and working -->
+    <row text="######D######"/>
+    <row text="#####...#####"/>
+    <row text="#..6#...#7..#"/>
+    <row text="d...#...#...d"/>    
+    <row text="#...#...#...#"/>
+    <row text="##8.......9##"/>
+    <row text=" #...1.2...# "/>
+    <row text=" #....5....# "/>
+    <row text=" #...3.4...# "/>
+    <row text=" #.........# "/>
+    <row text=" ####...#### "/>
+    <row text=" ####...#### "/>
+    <row text="    #...#    "/>
+    <row text="    ##D##    "/>
+    <flags minLevel="3" maxLevel="14"/>
+    <customblocker at="1" name="Brazier" png="dungeon/bronze_brazierA_unlit.png" visblock="1" id="torch1" can_push="0"/>
+    <customblocker at="2" name="Brazier" png="dungeon/bronze_brazierA_unlit.png" visblock="1" id="torch2" can_push="0"/>
+    <customblocker at="3" name="Brazier" png="dungeon/bronze_brazierA_unlit.png" visblock="1" id="torch3" can_push="0"/>
+    <customblocker at="4" name="Brazier" png="dungeon/bronze_brazierA_unlit.png" visblock="1" id="torch4" can_push="0"/>
+    <horde at="5"/>
+    <element type="bookshelf" at="6" percent="60"/>
+    <element type="bookshelf" at="7" percent="55"/>
+    <element type="bookshelf" at="8" percent="30"/>
+    <element type="bookshelf" at="9" percent="35"/>
+    <customblocker x="6" y="3" name="Comfy Reading Chair" png="dungeon/chair_wingback.png" visblock="1" percent="30"/>
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="5"/>
+      <condition condition_type="at" id="torch1" at="1"/>
+      <action on="success" action_type="remove" id="torch1"/>
+      <action on="success" action_type="remove" id="torch2"/>
+      <action on="success" action_type="remove" id="torch3"/>
+      <action on="success" action_type="remove" id="torch4"/>
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" at="1" id="torch1_lit"/>
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" at="2" id="torch2_lit"/>
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" at="3" id="torch3_lit"/>
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/bronze_brazierA/bronze_brazierA" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" at="4" id="torch4_lit"/>
+      <action on="success" action_type="spell" casts="Sparkly Area Hit" targetat="5"/>
+      <action on="success" action_type="ticker" text="My it got bright in here all of a sudden!"/>
+    </script>
+  </room>
+  <room width="7" height="11" name="Frankenshteen">
+    <!--Tested and working -->
+    <row text="  ###  "/>
+    <row text=" ##### "/>
+    <row text="##213##"/>
+    <row text="#.4...#"/>
+    <row text="##...##"/>
+    <row text="##...##"/>
+    <row text="#.....#"/>
+    <row text="d.....d"/>
+    <row text="#.....#"/>
+    <row text="##...##"/>
+    <row text="###D###"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customblocker name="Fleshsmith's Worktable" at="1" can_push="0" png="dungeon/torture_rack.png" description="Covered with gooey bits of past experiments, and the mystic residues they left behind."/>
+    <customblocker name="Lightning Rod" png="dungeon/tesla_coil.png" at="2" can_push="0"/>
+    <customblocker name="Lightning Rod" png="dungeon/tesla_coil.png" at="3" can_push="0"/>
+    <element at="4" type="lever" can_push="0" id="lever4"/>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever4"/>
+      <action on="success" action_type="spell" casts="Thor's Fulminaric Bolt" targetat="2"/>
+      <action on="success" action_type="spell" casts="Thor's Fulminaric Bolt" targetat="3"/>
+      <action on="success" action_type="spell" casts="Lightning Blast" targetat="2"/>
+      <action on="success" action_type="spell" casts="Lightning Blast" targetat="3"/>
+      <action on="success" action_type="create" create_type="monster" x="3" y="2"/>
+      <action on="success" action_type="ticker" text="My monster! It's alive!"/>
+      <action on="success" action_type="remove" id="lever4"/>
+    </script>
+  </room>
+  <room width="15" height="11" name="OneRoom Wizard Apartment">
+    <!--Tested and working -->
+    <row text="##D########    "/>
+    <row text="#...#######    "/>
+    <row text="#.......^1#    "/>
+    <row text="##..###..######"/>
+    <row text="#P..###..######"/>
+    <row text="#........34@5.#"/>
+    <row text="#..2..........d"/>
+    <row text="##...##...6...#"/>
+    <row text="###D####.....##"/>
+    <row text="       ##...## "/>
+    <row text="        ##D##  "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <customblocker name="Countertop" x="7" y="4" png="dungeon/kitchen_counter_ew.png"/>
+    <customblocker name="Countertop" x="8" y="4" png="dungeon/kitchen_counter_ew.png"/>
+    <element at="1" type="bbq"/>
+    <element x="5" y="4" type="freezer"/>
+    <customengraving name="Cupboard" x="7" y="1" png="dungeon/cupboard_open.png" description="It is a rare phenomenon, but not unheard of, for a wizard to have a little food with their booze." can_push="0"/>
+    <customengraving name="Cupboard" x="8" y="1" png="dungeon/cupboard_open.png" description="It is a rare phenomenon, but not unheard of, for a wizard to have a little food with their booze." can_push="0"/>
+    <loot type="food" x="7" y="1" subtype="Dire Sandwich" percent="60"/>
+    <loot type="food" x="8" y="1" subtype="Aged Steak" percent="65"/>
+    <loot type="food" x="7" y="1" subtype="Diggle Nog" percent="80"/>
+    <loot type="food" x="8" y="1" subtype="Hard Cider" percent="70"/>
+    <custombreakable name="Cupboard" x="7" y="1" png="dungeon/cupboard_closed.png" broken="dungeon/splinters.png" description="It is a rare phenomenon, but not unheard of, for a wizard to have a little food with their booze." can_push="0"/>
+    <custombreakable name="Cupboard" x="8" y="1" png="dungeon/cupboard_closed.png" broken="dungeon/splinters.png" description="It is a rare phenomenon, but not unheard of, for a wizard to have a little food with their booze." can_push="0"/>
+    <customblocker name="Dining Nook Table" at="2" png="dungeon/table_wood.png" description="Covered with footprints from all those times some drunk wizard has climbed on top of it during a wild party."/>
+    <loot type="zorkmids" at="3"/>
+    <loot type="zorkmids" at="4"/>
+    <customblocker name="Dirty Couch" at="3" png="dungeon/wizarding_couch_left.png" description="It's been literally aeons since anyone vacuumed under or between these cushions."/>
+    <customblocker name="Dirty Couch" at="4" png="dungeon/wizarding_couch_right.png" description="It's been literally aeons since anyone vacuumed under or between these cushions."/>
+    <customblocker name="Technomancer's Coldfire" at="5" pngSprite="dungeon/techlamp_flicker/techlamp_flicker" pngFirst="0" pngNum="8" pngRate="100" passable="0" pngAnimate="1"/>
+    <customblocker name="Mystic Orb" at="6" png="dungeon/wizard_pedestal_clothed_orb.png" can_push="0" description="Even in the wizardlands, there's never anything good on TV. You'd think these guys would spring for cable."/>
+  </room>
+  <!-- Existing Wizard-rooms now with added secret treasure stashes -->
+  <room width="29" height="17" name="Secretly Four Rooms in Disguise">
+    <row text="        ######D######        "/>
+    <row text="        #####...#####        "/>
+    <row text="        #...........#        "/>
+    <row text="        #....LLL....#        "/>
+    <row text="        #....LLL....#        "/>
+    <row text="        #.....L.....#        "/>
+    <row text="        #.....L.....#        "/>
+    <row text="#########...#...#...#########"/>
+    <row text="#########...#.1.#...#########"/>
+    <row text="#.......#...#...#...#.......#"/>
+    <row text="#...@...#...#!!!#...#...@...#"/>
+    <row text="#.......#...#!!!#...#.......#"/>
+    <row text="d...........#324#...........d"/>
+    <row text="#...........#...#...........#"/>
+    <row text="#############################"/>
+    <row text="#############################"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <loot type="reagent" at="1"/>
+    <loot type="ring" at="2"/>
+    <loot type="zorkmids" at="3"/>
+    <loot type="zorkmids" at="4"/>
+  </room>
+  <room width="23" height="10" name="Corridor of Sideways with Stash">
+    <row text="         #####         "/>
+    <row text="         #####         "/>
+    <row text="##########213##########"/>
+    <row text="##########!!!##########"/>
+    <row text="#......##P!!!P##......#"/>
+    <row text="#.....................#"/>
+    <row text="d..@...............@..d"/>
+    <row text="#.....................#"/>
+    <row text="#######################"/>
+    <row text="#######################"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <loot type="potion" at="1"/>
+    <loot type="zorkmids" at="2"/>
+    <loot type="zorkmids" at="3"/>
+  </room>
+  <room width="17" height="19" name="I Bent My Wand">
+    <row text="          ###D###"/>
+    <row text="          #P...P#"/>
+    <row text="          #.....#"/>
+    <row text="          #..^..#"/>
+    <row text="          #.....#"/>
+    <row text="        ###.....#"/>
+    <row text="        ###.....#"/>
+    <row text="        #2!.....#"/>
+    <row text="        #1!.....#"/>
+    <row text="        #3!.....#"/>
+    <row text="#########!#.....#"/>
+    <row text="#########!#.....#"/>
+    <row text="##..............#"/>
+    <row text="#...............#"/>
+    <row text="d.......@.......#"/>
+    <row text="#...............#"/>
+    <row text="##..............#"/>
+    <row text="#################"/>
+    <row text="#################"/>
+    <flags minLevel="0" maxLevel="14"/>
+    <loot type="wand" at="1"/>
+    <loot type="zorkmids" at="2"/>
+    <loot type="zorkmids" at="3"/>
+  </room>
+
+  <!-- more zara rooms -->
+
+  <room width="14" height="17" name="Wizardly Domicile">
+    <!-- working -->
+    <row text=" #########    "/>
+    <row text="###P###P###   "/>
+    <row text="#.........##  "/>
+    <row text="d#....##...## "/>
+    <row text="##..^.##..^.# "/>
+    <row text="##....###...##"/>
+    <row text=" #....###....#"/>
+    <row text=" #....###....#"/>
+    <row text=" #....###@...d"/>
+    <row text=" #....###....#"/>
+    <row text=" #....###....#"/>
+    <row text="##....###...##"/>
+    <row text="##..^.##..^.# "/>
+    <row text="#d....##...## "/>
+    <row text="#.........##  "/>
+    <row text="###########   "/>
+    <row text=" #########    "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="13" height="17" name="Wizardly Room">
+    <row text=" #########   "/>
+    <row text="####P##P###  "/>
+    <row text="#.........## "/>
+    <row text="##....#....##"/>
+    <row text=" #.^..##..^.#"/>
+    <row text=" #....##....#"/>
+    <row text=" #....##....#"/>
+    <row text=" #....#....##"/>
+    <row text=" d........## "/>
+    <row text=" #........## "/>
+    <row text=" #....#....# "/>
+    <row text=" #....#@...##"/>
+    <row text=" #.^..##..^.#"/>
+    <row text="##....##....d"/>
+    <row text="#......#....#"/>
+    <row text="#############"/>
+    <row text=" ###### #### "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="12" height="17" name="Wizardly Edifice">
+    <!-- working -->
+    <row text=" ########## "/>
+    <row text="###P####P###"/>
+    <row text="#..........#"/>
+    <row text="##....###^.d"/>
+    <row text=" #.^..###..#"/>
+    <row text=" #....######"/>
+    <row text=" #....##### "/>
+    <row text=" #....####  "/>
+    <row text=" #......@#  "/>
+    <row text=" #....####  "/>
+    <row text=" #....##### "/>
+    <row text="##....######"/>
+    <row text="##.^..###..#"/>
+    <row text="d#....#P#^.d"/>
+    <row text="#..........#"/>
+    <row text="############"/>
+    <row text=" ########## "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="17" height="17" name="Wizardly Mansion">
+    <row text=" #####     ##### "/>
+    <row text="###P###   ###P###"/>
+    <row text="#.....##  #.....#"/>
+    <row text="##.^...# ##..^.##"/>
+    <row text=" #.....###.....# "/>
+    <row text=" #......##.....# "/>
+    <row text=" #...^..#..^...# "/>
+    <row text=" #.............# "/>
+    <row text=" d..#.....#....d "/>
+    <row text=" #..##....#....# "/>
+    <row text=" #..##...##....# "/>
+    <row text=" #..###.@##....# "/>
+    <row text=" #..# #####....# "/>
+    <row text="##..## ####....##"/>
+    <row text="#....#   #......#"/>
+    <row text="######   ########"/>
+    <row text=" ####     ###### "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="14" height="17" name="Wizardly Outlet">
+    <row text="    ######    "/>
+    <row text="   ##P##P##   "/>
+    <row text="  ##......##  "/>
+    <row text=" ##...##...## "/>
+    <row text=" #....##....# "/>
+    <row text="##.^.####.^.##"/>
+    <row text="#....####....#"/>
+    <row text="#....####....#"/>
+    <row text="d...@####@...d"/>
+    <row text="#....####....#"/>
+    <row text="#....####....#"/>
+    <row text="##.^.####.^.##"/>
+    <row text=" #....##....# "/>
+    <row text=" ##...##...## "/>
+    <row text="  ##......##  "/>
+    <row text="   ########   "/>
+    <row text="    ######    "/>
+    <flags minLevel="0" maxLevel="14"/>
+  </room>
+
+  <room width="33" height="31" name="Thaumatron">
+    <row text="##D##################            "/>
+    <row text="########################         "/>
+    <row text="#......62....###.....#####       "/>
+    <row text="d.......................###      "/>
+    <row text="#..@#######.....#####.....##     "/>
+    <row text="##########...###########...##    "/>
+    <row text="####   ##...####     ####...##   "/>
+    <row text="      ##...##           ##...##  "/>
+    <row text="      #...##             ##...#  "/>
+    <row text="     ##..##              ###..## "/>
+    <row text="     #..##                 ##..# "/>
+    <row text="     #..#                   #..# "/>
+    <row text="    ##..#               #####..##"/>
+    <row text="    #..##               ###P##..#"/>
+    <row text="    #..#                #...3#..#"/>
+    <row text="    #1.#                d.5^....#"/>
+    <row text="    #..#                #....#..#"/>
+    <row text="    #..##               ######..#"/>
+    <row text="    ##..#               #####..##"/>
+    <row text="     #..#                   #..# "/>
+    <row text="     #..##                 ##..# "/>
+    <row text="     ##..##              ###..## "/>
+    <row text="      #...##             ##...#  "/>
+    <row text="      ##...##           ##...##  "/>
+    <row text="####   ##...####     ####...##   "/>
+    <row text="##########...###########...##    "/>
+    <row text="#..@#######.....#####.....##     "/>
+    <row text="d......74...............###      "/>
+    <row text="#............###.....#####       "/>
+    <row text="########################         "/>
+    <row text="##D##################            "/>
+    <flags minLevel="0" maxLevel="14" noblockers="1"/>
+
+    <customblocker name="Bigonium Atom" at="1" pngSprite="dungeon/brass_cube_float/brass_cube_float" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" description="It's coming your way at near-relativistic speeds!" can_push="0" id="atom"/>
+    <element at="2" type="lever" can_push="0" id="lever2"/>
+    <element at="3" type="lever" can_push="0" id="lever3"/>
+    <element at="4" type="lever" can_push="0" id="lever4"/>
+    <loot type="artifact" at="5"/>
+
+    <pedestal at="6" name="Thaumatron Active" text="Thaumatron active - careful within area of influence. Turn off all three levers for emergency shutoff."/>
+    <pedestal at="7" name="Thaumatron Active" text="Thaumatron active - careful within area of influence. Turn off all three levers for emergency shutoff."/>
+
+
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="6" y="16"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="6" targetY="16" sourceX="6" sourceY="16" />
+      <action on="success" action_type="move" id="atom" x="5" y="16"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="6" y="18"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="6" targetY="18" sourceX="6" sourceY="18" />
+      <action on="success" action_type="move" id="atom" x="6" y="16"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="7" y="19"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="7" targetY="19" sourceX="7" sourceY="19" />
+      <action on="success" action_type="move" id="atom" x="6" y="18"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="7" y="21"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="7" targetY="21" sourceX="7" sourceY="21" />
+      <action on="success" action_type="move" id="atom" x="7" y="19"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="8" y="23"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="8" targetY="23" sourceX="8" sourceY="23" />
+      <action on="success" action_type="move" id="atom" x="7" y="21"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="9" y="24"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="9" targetY="24" sourceX="9" sourceY="24" />
+      <action on="success" action_type="move" id="atom" x="8" y="23"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="11" y="25"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="11" targetY="25" sourceX="11" sourceY="25" />
+      <action on="success" action_type="move" id="atom" x="9" y="24"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="12" y="26"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="12" targetY="26" sourceX="12" sourceY="26" />
+      <action on="success" action_type="move" id="atom" x="11" y="25"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="14" y="26"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="14" targetY="26" sourceX="14" sourceY="26" />
+      <action on="success" action_type="move" id="atom" x="12" y="26"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="15" y="27"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="15" targetY="27" sourceX="15" sourceY="27" />
+      <action on="success" action_type="move" id="atom" x="14" y="26"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="17" y="27"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="17" targetY="27" sourceX="17" sourceY="27" />
+      <action on="success" action_type="move" id="atom" x="15" y="27"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="18" y="28"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="18" targetY="28" sourceX="18" sourceY="28" />
+      <action on="success" action_type="move" id="atom" x="17" y="27"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="20" y="27"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="20" targetY="27" sourceX="20" sourceY="27" />
+      <action on="success" action_type="move" id="atom" x="18" y="28"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="21" y="27"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="21" targetY="27" sourceX="21" sourceY="27" />
+      <action on="success" action_type="move" id="atom" x="20" y="27"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="22" y="26"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="22" targetY="26" sourceX="22" sourceY="26" />
+      <action on="success" action_type="move" id="atom" x="21" y="27"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="24" y="26"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="24" targetY="26" sourceX="24" sourceY="26" />
+      <action on="success" action_type="move" id="atom" x="22" y="26"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="26" y="25"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="26" targetY="25" sourceX="26" sourceY="25" />
+      <action on="success" action_type="move" id="atom" x="24" y="26"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="27" y="24"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="27" targetY="24" sourceX="27" sourceY="24" />
+      <action on="success" action_type="move" id="atom" x="26" y="25"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="28" y="22"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="28" targetY="22" sourceX="28" sourceY="22" />
+      <action on="success" action_type="move" id="atom" x="27" y="24"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="29" y="21"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="29" targetY="21" sourceX="29" sourceY="21" />
+      <action on="success" action_type="move" id="atom" x="28" y="22"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="29" y="19"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="29" targetY="19" sourceX="29" sourceY="19" />
+      <action on="success" action_type="move" id="atom" x="29" y="21"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="30" y="18"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="30" targetY="18" sourceX="30" sourceY="18" />
+      <action on="success" action_type="move" id="atom" x="29" y="19"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="30" y="16"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="30" targetY="16" sourceX="30" sourceY="16" />
+      <action on="success" action_type="move" id="atom" x="30" y="18"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="31" y="15"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="31" targetY="15" sourceX="31" sourceY="15" />
+      <action on="success" action_type="move" id="atom" x="30" y="16"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="30" y="14"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="30" targetY="14" sourceX="30" sourceY="14" />
+      <action on="success" action_type="move" id="atom" x="31" y="15"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="30" y="12"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="30" targetY="12" sourceX="30" sourceY="12" />
+      <action on="success" action_type="move" id="atom" x="30" y="14"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="29" y="11"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="29" targetY="11" sourceX="29" sourceY="11" />
+      <action on="success" action_type="move" id="atom" x="30" y="12"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="29" y="9"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="29" targetY="9" sourceX="29" sourceY="9" />
+      <action on="success" action_type="move" id="atom" x="29" y="11"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="28" y="7"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="28" targetY="7" sourceX="28" sourceY="7" />
+      <action on="success" action_type="move" id="atom" x="29" y="9"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="27" y="6"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="27" targetY="6" sourceX="27" sourceY="6" />
+      <action on="success" action_type="move" id="atom" x="28" y="7"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="25" y="5"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="25" targetY="5" sourceX="25" sourceY="5" />
+      <action on="success" action_type="move" id="atom" x="27" y="6"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="24" y="4"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="24" targetY="4" sourceX="24" sourceY="4" />
+      <action on="success" action_type="move" id="atom" x="25" y="5"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="22" y="4"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="22" targetY="4" sourceX="22" sourceY="4" />
+      <action on="success" action_type="move" id="atom" x="24" y="4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="21" y="3"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="21" targetY="3" sourceX="21" sourceY="3" />
+      <action on="success" action_type="move" id="atom" x="22" y="4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="19" y="3"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="19" targetY="3" sourceX="19" sourceY="3" />
+      <action on="success" action_type="move" id="atom" x="21" y="3"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="18" y="2"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="18" targetY="2" sourceX="18" sourceY="2" />
+      <action on="success" action_type="move" id="atom" x="19" y="3"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="17" y="3"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="17" targetY="3" sourceX="17" sourceY="3" />
+      <action on="success" action_type="move" id="atom" x="18" y="2"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="15" y="3"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="15" targetY="3" sourceX="15" sourceY="3" />
+      <action on="success" action_type="move" id="atom" x="17" y="3"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="14" y="4"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="14" targetY="4" sourceX="14" sourceY="4" />
+      <action on="success" action_type="move" id="atom" x="15" y="3"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="12" y="4"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="12" targetY="4" sourceX="12" sourceY="4" />
+      <action on="success" action_type="move" id="atom" x="14" y="4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="10" y="5"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="10" targetY="5" sourceX="10" sourceY="5" />
+      <action on="success" action_type="move" id="atom" x="12" y="4"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="9" y="6"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="9" targetY="6" sourceX="9" sourceY="6" />
+      <action on="success" action_type="move" id="atom" x="10" y="5"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="8" y="8"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="8" targetY="8" sourceX="8" sourceY="8" />
+      <action on="success" action_type="move" id="atom" x="9" y="6"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="7" y="9"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="7" targetY="9" sourceX="7" sourceY="9" />
+      <action on="success" action_type="move" id="atom" x="8" y="8"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="6" y="10"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="6" targetY="10" sourceX="6" sourceY="10" />
+      <action on="success" action_type="move" id="atom" x="7" y="9"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="6" y="12"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="6" targetY="12" sourceX="6" sourceY="12" />
+      <action on="success" action_type="move" id="atom" x="6" y="10"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="5" y="13"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="5" targetY="13" sourceX="5" sourceY="13" />
+      <action on="success" action_type="move" id="atom" x="6" y="12"/>
+    </script>
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="5" y="15"/>
+      <action on="success" action_type="spell" casts="The Stars Aligned" targetX="5" targetY="15" sourceX="5" sourceY="15" />
+      <action on="success" action_type="move" id="atom" x="5" y="13"/>
+    </script>
+
+    <script repeat="-1">
+      <condition condition_type="at" id="atom" x="5" y="16"/>
+      <action on="success" action_type="move" id="atom" x="5" y="15"/>
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated" activated="1" id="lever2"/>
+      <condition condition_type="activated" activated="1" id="lever3"/>
+      <condition condition_type="activated" activated="1" id="lever4"/>
+      <action on="success" action_type="remove" id="atom"/>
+    </script>
+
+  </room>
+
+  <room width="31" height="29" name="Magical Target">
+    <row text="         ######D######         "/>
+    <row text="       ###P##.....##P###       "/>
+    <row text="      ###@...........@###      "/>
+    <row text="     ##......WW.WW......##     "/>
+    <row text="    ##....WWWWW.WWWWW....##    "/>
+    <row text="   ##...WWWWW.....WWWWW...##   "/>
+    <row text="  ##...WWW...........WWW...##  "/>
+    <row text="  #...WW.....WWWWW.....WW...#  "/>
+    <row text=" ##..WW....WWWWWWWWW....WW..## "/>
+    <row text=" #..WWW..WWWW.....WWWW..WWW..# "/>
+    <row text=" #..WW..WWW.........WWW..WW..# "/>
+    <row text="##..WW..WW.^.WW.WW.^.WW..WW..##"/>
+    <row text="#..WW..WW...WW...WW...WW..WW..#"/>
+    <row text="#..WW..WW..WW.....WW..WW..WW..#"/>
+    <row text="d..WW......WW..1..WW......WW..d"/>
+    <row text="#..WW..WW..WW.....WW..WW..WW..#"/>
+    <row text="#..WW..WW...WW...WW...WW..WW..#"/>
+    <row text="##..WW..WW.^.WW.WW.^.WW..WW..##"/>
+    <row text=" #..WW..WWW.........WWW..WW..# "/>
+    <row text=" #..WWW..WWWW.....WWWW..WWW..# "/>
+    <row text=" ##..WW....WWWWWWWWW....WW..## "/>
+    <row text="  #...WW.....WWWWW.....WW...#  "/>
+    <row text="  ##...WWW...........WWW...##  "/>
+    <row text="   ##...WWWWW.....WWWWW...##   "/>
+    <row text="    ##....WWWWW.WWWWW....##    "/>
+    <row text="     ##......WW.WW......##     "/>
+    <row text="      ###.............###      "/>
+    <row text="       ######.....######       "/>
+    <row text="         ######D######         "/>
+
+    <flags minLevel="0" maxLevel="14" genhint="wizardStart"/>
+    <customblocker name="Mystic Orb" at="1"
+       png="dungeon/wizard_pedestal_clothed_orb.png" can_push="0"/>
+  </room>
+
+  <room width="45" height="29" name="Double Spiral Of Hell">
+    <row text="             ################                "/>
+    <row text="           #####P##P##P##P#####              "/>
+    <row text="         ###P#..............#P###            "/>
+    <row text="       ####....................###           "/>
+    <row text="     ####.......LLLLLLLLLL.......##          "/>
+    <row text="    ###......LLLLLLLLLLLLLLL......##         "/>
+    <row text="   ##......LLLL...........LLLL.....#######D##"/>
+    <row text="  ##.....LLLL................LLL....#####...#"/>
+    <row text=" ##.....LLL......LLLLLLL....^.LLL....####...#"/>
+    <row text="##.....LL......LLLLLLLLLLLL....LLL....###...#"/>
+    <row text="##....LL..^..LLL.........LLL....LL....###...#"/>
+    <row text="#....LL.....LL.............LL....LL....##...#"/>
+    <row text="#....LL....LL.....LLLLL....LL....LL....##...#"/>
+    <row text="#...##....LL.....LLL.......LL....LL....##...#"/>
+    <row text="#...##....LL....LL....@....LL....LL....##...#"/>
+    <row text="#...##....LL....LL.......LLL.....LL....##...#"/>
+    <row text="#...##....LL....LL....LLLLL.....LL....LL....#"/>
+    <row text="#...##....LL....LL.............LL.....LL....#"/>
+    <row text="#...###....LL....LLL.........LLL..^..LL....##"/>
+    <row text="#...###....LLL....LLLLLLLLLLLL......LL.....##"/>
+    <row text="#...####....LLL.^....LLLLLLL......LLL.....## "/>
+    <row text="#...#####....LLL................LLLL.....##  "/>
+    <row text="##D#######.....LLLL...........LLLL......##   "/>
+    <row text="         ##......LLLLLLLLLLLLLLL......###    "/>
+    <row text="          ##.......LLLLLLLLLL.......####     "/>
+    <row text="           ###....................####       "/>
+    <row text="            #####..............#####         "/>
+    <row text="              ####################           "/>
+    <row text="                ################             "/>
+    <flags minLevel="0" maxLevel="14" genhint="diggleHell"/>
+  </room>
+
+
+  <room width="7" height="9" name="Trapped Stash" >
+    <row text="###D###" />
+    <row text="##...##" />
+    <row text="#..@..#" />
+    <row text="#.123.#" />
+    <row text="d.456.d" />
+    <row text="#.789.#" />
+    <row text="#.....#" />
+    <row text="##...##" />
+    <row text="###D###" />
+    <flags minLevel="0" maxLevel="14"/>
+
+    <trap at="1" percent="75"/>
+    <trap at="2" percent="75"/>
+    <trap at="3" percent="75"/>
+    <trap at="4" percent="75"/>
+    <trap at="6" percent="75"/>
+    <trap at="7" percent="75"/>
+    <trap at="8" percent="75"/>
+    <trap at="9" percent="75"/>
+
+    <customengraving name="Wizardly Empties" at="1" png="dungeon/wizardly_empties.png" description="99 bottles of booze on the ground, 99 bottles of booze." percent="75"/>
+    <customengraving name="Wizardly Empties" at="2" png="dungeon/wizardly_empties.png" description="Careful not to step on one of these." percent="75"/>
+    <customengraving name="Wizardly Empties" at="3" png="dungeon/wizardly_empties.png" description="Monstruous Rutabaga Wine, popular with the trendy crowd." percent="75"/>
+    <customengraving name="Wizardly Empties" at="4" png="dungeon/wizardly_empties.png" description="Double Brandy, guaranteed to have a 120% alcohol rate." percent="75"/>
+    <customengraving name="Wizardly Empties" at="6" png="dungeon/wizardly_empties.png" description="Expired potions, mixed and blended with fruit, make for a nearly respectable drink." percent="75"/>
+    <customengraving name="Wizardly Empties" at="7" png="dungeon/wizardly_empties.png" description="Grognor's Anti-Wine. It has as much alcohol as regular wine." percent="75"/>
+    <customengraving name="Wizardly Empties" at="8" png="dungeon/wizardly_empties.png" description="These are just some grape sodas." percent="75"/>
+    <customengraving name="Wizardly Empties" at="9" png="dungeon/wizardly_empties.png" description="Hopefully there aren't any glass shards mixed up in there." percent="75"/>
+
+    <loot type="food" at="5" subtype="Slivovitz" />
+    <loot type="food" at="5" subtype="Slivovitz" percent="50" />
+    <loot type="food" at="5" subtype="Slivovitz" percent="25" />
+  </room>
+
+  <room width="17" height="18" name="The Elbow 1">
+    <row text="     ##D##       "/>
+    <row text="     #...#       "/>
+    <row text="     #...###     "/>
+    <row text="     #....#P##   "/>
+    <row text="#### #!.....#P#  "/>
+    <row text="##P###!.......## "/>
+    <row text="#...!!!!....^..# "/>
+    <row text="d.....!####....##"/>
+    <row text="#......#####....#"/>
+    <row text="###....#   ##...#"/>
+    <row text="####...##  ##...#"/>
+    <row text="   #....####@...#"/>
+    <row text="   ##.^..##@...##"/>
+    <row text="    #........1.# "/>
+    <row text="    ##........## "/>
+    <row text="     ###....###  "/>
+    <row text="      ########   "/>
+    <row text="        ####     "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <horde at="1" percent="75" />
+
+  </room>
+
+  <room width="17" height="18" name="The Elbow 2">
+    <row text="        ####     "/>
+    <row text="      ###P####   "/>
+    <row text="     ###....#P#  "/>
+    <row text="    ##........## "/>
+    <row text="    #........1.# "/>
+    <row text="   ##....##@...##"/>
+    <row text="   #....####@...#"/>
+    <row text="####...##  ##...#"/>
+    <row text="##P....#   ##...#"/>
+    <row text="#......#####....#"/>
+    <row text="d.....!####....##"/>
+    <row text="#...!!!!.......# "/>
+    <row text="######!.......## "/>
+    <row text="#### #!.....###  "/>
+    <row text="     #....####   "/>
+    <row text="     #...###     "/>
+    <row text="     #...#       "/>
+    <row text="     ##D##       "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <horde at="1" percent="75" />
+  </room>
+
+  <room width="17" height="18" name="The Elbow 3">
+    <row text="     ####        "/>
+    <row text="   ####P###      "/>
+    <row text="  #P#....###     "/>
+    <row text=" ##........##    "/>
+    <row text=" #.1........#    "/>
+    <row text="##...@##....##   "/>
+    <row text="#...@####....#   "/>
+    <row text="#...##  ##...####"/>
+    <row text="#...##   #....P##"/>
+    <row text="#....#####......#"/>
+    <row text="##....####!.....d"/>
+    <row text=" #.......!!!!...#"/>
+    <row text=" ##.......!######"/>
+    <row text="  ###.....!# ####"/>
+    <row text="   ####....#     "/>
+    <row text="     ###...#     "/>
+    <row text="       #...#     "/>
+    <row text="       ##D##     "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <horde at="1" percent="75" />
+  </room>
+
+  <room width="17" height="18" name="The Elbow 4">
+    <row text="       ##D##     "/>
+    <row text="       #...#     "/>
+    <row text="     ###...#     "/>
+    <row text="   ##P#....#     "/>
+    <row text="  #P#.....!# ####"/>
+    <row text=" ##.......!###P##"/>
+    <row text=" #.......!!!!...#"/>
+    <row text="##....####!.....d"/>
+    <row text="#....#####......#"/>
+    <row text="#...##   #....###"/>
+    <row text="#...##  ##...####"/>
+    <row text="#...@####....#   "/>
+    <row text="##...@##....##   "/>
+    <row text=" #.1........#    "/>
+    <row text=" ##........##    "/>
+    <row text="  ###....###     "/>
+    <row text="   ########      "/>
+    <row text="     ####        "/>
+    <flags minLevel="0" maxLevel="14"/>
+    <horde at="1" percent="75" />
+  </room>
+
+  <room width="25" height="23" name="Barging In">
+    <row text="    #######    "/>
+    <row text="###############"/>
+    <row text="######31.######"/>
+    <row text="#..##.....##..#"/>
+    <row text="#..#.......#..#"/>
+    <row text="#....4........#"/>
+    <row text="#...........7.#"/>
+    <row text="#.5...........#"/>
+    <row text="#......2..8...#"/>
+    <row text="#.............#"/>
+    <row text="#........9....#"/>
+    <row text="#....6........#"/>
+    <row text="#..#.......#..#"/>
+    <row text="#####.....#####"/>
+    <row text="######!!!######"/>
+    <row text="   ###!!!####  "/>
+    <row text="   ###...#P##  "/>
+    <row text="   #........#  "/>
+    <row text="   #...@....d  "/>
+    <row text="   d.....^..#  "/>
+    <row text="   #........#  "/>
+    <row text="   ####...###  "/>
+    <row text="   #####D####  "/>
+    <flags minLevel="0" maxLevel="14" nomonsters="1"/>
+
+    <!-- decor -->
+
+    <customblocker name="Portal Controls" at="3" png="dungeon/magic_slipgate_controls_off.png" description="The console reads 'ANYTHING BUT DIGGLE HELL'."/>
+    <customblocker name="Portal" at="1" png="dungeon/magic_slipgate_off.png" description="You hope whoever owns this place doesn't come back right now."/>
+    <customblocker name="Pocket Dimension Controls" at="2" png="dungeon/wizard_controls.png" description="Oh. Well. This is awkward."/>
+
+    <customblocker name="Fungal Lamp" x="4" y="6"  pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/>
+    <customblocker name="Brazier" png="dungeon/brazierB.png" visblock="0" x="10" y="6" can_push="0" />
+    <customblocker name="Brazier" png="dungeon/brazierB.png" visblock="0" x="4" y="10"  can_push="0" />
+    <customblocker name="Fungal Lamp" x="10" y="10" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/>
+
+    <loot at="4" percent="75"/>
+    <loot at="5" percent="75"/>
+    <loot at="6" percent="75"/>
+    <loot at="7" percent="75"/>
+    <loot at="8" percent="75"/>
+    <loot at="9" percent="75"/>
+    <loot at="4" percent="25"/>
+    <loot at="5" percent="25"/>
+    <loot at="6" percent="25"/>
+    <loot at="7" percent="25"/>
+    <loot at="8" percent="25"/>
+    <loot at="9" percent="25"/>
+
+
+  </room>
+  
+</roomDB>

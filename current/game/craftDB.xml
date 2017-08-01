@@ -1,0 +1,2803 @@
+<!-- craft DB stores all crafting information -->
+
+<craftDB>
+
+<craft>
+	<output skill="1" name="Wand of Bling" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Gold Ingot"/>
+	</craft>
+<craft>
+	<output skill="1" name="Arcane Wand" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Zinc Ingot"/>
+	<input name="Aquamarine"/>
+	</craft>
+<craft>
+	<output skill="2" name="Coral Wand" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Lutefisk" />
+	<input name="Salt" />		 
+	</craft>
+<craft>
+	<output skill="2" name="Fiery Wand" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Carnelian"/>
+	<input name="Brimstone" />	 
+	</craft>
+<craft>
+	<output skill="3" name="Zodiacal Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Diamond" />
+	<input name="Powdered Aluminum" />
+	</craft>
+<craft>
+	<output skill="4" name="Rock Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Cassiterite" />
+	<input name="Zincblende" />
+	</craft>
+<craft>
+	<output skill="5" name="Tentacular Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Offal" />
+	<input name="Bolt of Squid" />
+	</craft>
+
+  <!-- Grinder -->
+
+<craft>
+	<output skill="0" name="Powdered Aluminum" amount="2" />
+	<tool tag="grinder"/>
+	<input name="Aluminum Ingot"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rust" amount="2" />
+	<tool tag="grinder"/>
+	<input name="Iron Ingot"/>  
+	</craft>
+<craft>
+	<output skill="0" name="Powdered Aluminum"/>    
+	<tool tag="grinder"/>
+	<input name="Aluminum Tube"/>
+	</craft>
+
+
+
+<!-- Alchemy -->
+
+   <!-- alchemy reagents -->
+   
+<craft hidden="0">
+	<output skill="0" name="Aqua Fortis" amount="1"/>
+	<output skill="1" name="Aqua Fortis" amount="2"/>
+	<output skill="3" name="Aqua Fortis" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Salt" />
+	<input name="Oil of Vitriol" />
+	<input name="Chalk" />
+	<input name="Bituminous Coal" />
+	</craft>
+<craft hidden="0">
+	<output skill="0" name="Oil of Vitriol" amount="1"/>
+	<output skill="1" name="Oil of Vitriol" amount="2"/>
+	<output skill="3" name="Oil of Vitriol" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Brimstone" />
+	<input name="Saltpetre" /> 
+	</craft>
+<craft hidden="0">
+	<output skill="0" name="Acidum Salis" amount="1" />
+	<output skill="1" name="Acidum Salis" amount="2" />
+	<output skill="3" name="Acidum Salis" amount="3" />
+	<tool tag="alchemy" />
+	<input name="Salt" />
+	<input name="Oil of Vitriol" /> 
+	</craft>
+<craft>
+	<output skill="0" name="Aqua Regia" amount="1"/>
+	<output skill="1" name="Aqua Regia" amount="2"/>
+	<output skill="3" name="Aqua Regia" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Acidum Salis" />
+	<input name="Aqua Fortis" /> 
+	</craft>
+
+<craft>
+	<output skill="0" name="Solution of Gold" amount="1" />
+	<output skill="3" name="Solution of Gold" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Aqua Regia"/>
+	<input name="Gold Ingot"/>
+	</craft>
+
+<!-- serve no purpose yet
+<craft>
+   <tool tag="alchemy"/>
+   <input name="Aqua Regia"/>
+   <input name="Native Platinum"/>
+   <output name="Solution of Platinum"/>
+</craft>
+<craft>
+   <tool tag="alchemy"/>
+   <input name="Aqua Regia"/>
+   <input name="Native Silver"/>
+   <output name="Solution of Silver"/>
+ </craft>
+-->
+
+
+<craft>
+   <output skill="0" name="Black Powder" amount="1" />
+   <output skill="1" name="Black Powder" amount="2" />
+   <output skill="2" name="Black Powder" amount="3" />
+	<output skill="3" name="Black Powder" amount="4" />
+   <tool tag="alchemy"/>
+   <input name="Brimstone"/>
+   <input name="Saltpetre"/>
+   <input name="Bituminous Coal"/>
+	</craft>
+	
+<!-- Alchemy potions -->
+
+<craft hidden="0">
+	<output skill="1" name="Potion of Healing" amount="1" />
+	<output skill="2" name="Potion of Healing" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Rust"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Verdant Poison" amount="1" />
+	<output skill="2" name="Verdant Poison" amount="2" />
+	<output skill="5" name="Verdant Poison" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Mud Wen"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Potion of Mana" amount="1" />
+	<output skill="2" name="Potion of Mana" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Lutefisk"/>
+	</craft>
+<craft hidden="0">
+	<output skill="2" name="Potion of Radiance" amount="1" />
+	<output skill="3" name="Potion of Radiance" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Aqua Fortis"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="2" name="Potion of Clear Vision" amount="1" />
+	<output skill="3" name="Potion of Clear Vision" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Aquamarine"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="1">
+	<output skill="3" name="Potion of Replenishment" amount="1" />
+	<output skill="4" name="Potion of Replenishment" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Diamond"/>
+	<input name="Acidum Salis"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="2" name="Potion of Steeling" amount="1" />
+	<output skill="3" name="Potion of Steeling" amount="2" />
+	<output skill="5" name="Potion of Steeling" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Pyrite Sun"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Potion of Invisibility" amount="1" />
+	<output skill="4" name="Potion of Invisibility" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Bituminous Coal"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Potion of Midas" amount="1" />
+	<output skill="4" name="Potion of Midas" amount="2" />
+	<output skill="5" name="Potion of Midas" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Amber"/>
+	<input name="Oil of Vitriol"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="1">
+	<output skill="0" name="Potion of Lively Regeneration" amount="1" />
+	<output skill="4" name="Potion of Lively Regeneration" amount="2" />
+	<output skill="5" name="Potion of Lively Regeneration" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Rust"/>
+	<input name="Saltpetre"/>
+	<input name="Oil of Vitriol"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Potion of Dire Empowerment" amount="1" />
+	<output skill="4" name="Potion of Dire Empowerment" amount="2" />
+	<output skill="5" name="Potion of Dire Empowerment" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mana"/>
+	<input name="Verdant Poison"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="2" name="Potion of Purity" amount="1" />
+	<output skill="4" name="Potion of Purity" amount="2" />
+	<output skill="5" name="Potion of Purity" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Healing"/>
+	<input name="Potion of Clear Vision"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Infernal Potion" amount="1" />
+	<output skill="3" name="Infernal Potion" amount="2" />
+	<output skill="5" name="Infernal Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mana"/>
+	<input name="Ruby"/>
+	<input name="Aqua Vitae"/>
+	<input name="Iron Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Hyperborean Potion" amount="1" />
+	<output skill="3" name="Hyperborean Potion" amount="2" />
+	<output skill="5" name="Hyperborean Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mana"/>
+	<input name="Sapphire"/>
+	<input name="Aqua Vitae"/>
+	<input name="Silver Ingot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Voltaic Potion" amount="1" />
+	<output skill="3" name="Voltaic Potion" amount="2" />
+	<output skill="5" name="Voltaic Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mana"/>
+	<input name="Amber"/>
+	<input name="Aqua Vitae"/>
+	<input name="Copper Ingot"/>
+	</craft>
+<craft >
+	<output skill="2" name="Spatial Instability Infusion" amount="1" />
+	<output skill="4" name="Spatial Instability Infusion" amount="2" />
+	<output skill="5" name="Spatial Instability Infusion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Zinc Ingot"/>
+	<input name="Acidum Salis"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+
+<!-- Stranger Alchemical Craftings -->
+<craft hidden="1">
+	<output skill="4" name="Steeled Robe" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Robe" />
+	<input name="Potion of Steeling" />
+	<input name="Steel Ingot" />
+	</craft>
+
+
+<!-- Distilling -->
+<!-- booze -->
+<craft>
+   <output skill="1" name="Hard Cider" amount="1"/>
+   <tool tag="still"/>
+   <input name="Apple"/>
+	<input name="Apple"/>
+	</craft>
+<craft>
+	<output skill="2" name="Applejack" amount="1"/>
+	<tool tag="still"/>
+	<input name="Hard Cider"/>
+	<input name="Hard Cider"/>
+	</craft>
+<craft>
+	<output skill="1" name="Pear Wine" amount="1"/>
+	<tool tag="still"/>
+	<input name="Pear"/>
+	<input name="Pear"/>
+	</craft>
+<craft>
+	<output skill="2" name="Pear Brandy" amount="1"/>
+	<tool tag="still"/>
+	<input name="Pear Wine"/>
+	<input name="Pear Wine"/>
+	</craft>
+<craft>
+   <output skill="3" name="Brandy" amount="1"/>
+   <tool tag="still"/>
+   <input name="Merlot"/>
+	<input name="Merlot"/>
+	</craft>
+<craft>
+   <output skill="3" name="Brandy" amount="1"/>
+   <tool tag="still"/>
+   <input name="Pinot Noir"/>
+	<input name="Pinot Noir"/>
+	</craft>
+<craft>
+   <output skill="2" name="Slivovitz" amount="1"/>
+   <tool tag="still"/>
+   <input name="Plum"/>
+   <input name="Plum"/>
+	</craft>
+<craft>
+	<output skill="1" name="Dwarven Gut Rot" amount="1"/>
+	<tool tag="still"/>
+	<input name="Sewer Brew"/>
+	<input name="Sewer Brew"/>
+	</craft>
+
+  <!-- aqua vitae reactions ; tops off all boozes -->
+  
+<craft>
+   <output skill="1" name="Aqua Vitae" amount="1" />
+   <tool tag="still"/>
+   <input name="Slivovitz"/>
+	</craft>
+
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Pear Brandy"/>
+	</craft>
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Applejack"/>
+	</craft>
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Brandy"/>
+	</craft>
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Dwarven Gut Rot"/>
+	</craft>
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Absinthe"/>
+	</craft>
+<craft>
+	<output skill="1" name="Aqua Vitae" amount="1" />
+	<tool tag="still"/>
+	<input name="Colonel Miz Stizzix's Old-Time Country-style Bourbon"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Aqua Vitae" amount="1" />
+   <output skill="4" name="Aqua Vitae" amount="2" />
+   <tool tag="still"/>
+   <input name="Night Cap"/>
+	</craft>
+
+<craft hidden="0" >
+  <output skill="0" name="Diggle Nog" amount="1" />
+  <tool tag="still"/>
+  <input name="Aqua Vitae"/>
+  <input name="Diggle Egg"/>
+  <input name="Grog"/>
+</craft>
+
+
+
+<!--
+<craft>
+   <output skill="1" name="Green Potion, Minor" amount="2" />
+   <tool tag="still"/>
+   <input name="Puffball"/>
+</craft>
+-->
+<!-- flask crafting ?? -->
+<!--
+<craft>
+    <tool tag="still"/>
+    <input name="Empty Flask"/>
+    <input name="Plastic Ingot"/>
+    <output name="Oil Flask" amount="5"/>
+</craft>
+<craft>
+    <tool tag="still"/>
+    <input name="Empty Flask"/>
+    <input name="Plastic Ore"/>
+    <output name="Oil Flask" amount="2"/>
+</craft> -->
+
+<!-- Smelting -->
+<!-- ore smelting -->
+<craft>
+   <output skill="0" name="Copper Ingot" amount="1" />
+   <output skill="1" name="Copper Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Malachite"/>
+	</craft>
+<craft>
+   <output skill="0" name="Tin Ingot" amount="1" />
+   <output skill="1" name="Tin Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Cassiterite"/>
+	</craft>
+<craft>
+   <output skill="0" name="Zinc Ingot" amount="1" />
+   <output skill="1" name="Zinc Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Zincblende"/>
+	</craft>
+<craft>
+   <output skill="0" name="Gold Ingot" amount="1" />
+   <output skill="1" name="Gold Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Native Gold"/>
+	</craft>
+<craft>
+   <output skill="0" name="Silver Ingot" amount="1" />
+   <output skill="1" name="Silver Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Argentite"/>
+	</craft>
+<craft>
+   <output skill="0" name="Platinum Ingot" amount="1" />
+   <output skill="1" name="Platinum Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Native Platinum" />
+	</craft>
+<craft>
+   <output skill="0" name="Plastic Ingot" amount="1" />
+   <output skill="1" name="Plastic Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Plastic Ore"/>
+	</craft>
+<craft>
+   <output skill="0" name="Iron Ingot" amount="1" />
+   <output skill="1" name="Iron Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Hematite"/>
+	</craft>
+<craft>
+   <output skill="0" name="Aluminum Ingot" amount="1" />
+   <output skill="1" name="Aluminum Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Bauxite"/>
+	</craft>
+
+
+
+<!-- alloy crafting -->
+<craft>
+   <output skill="0" name="Brass Ingot" amount="1" />
+   <output skill="1" name="Brass Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Copper Ingot"/>
+   <input name="Zinc Ingot"/>
+	</craft>
+<craft>
+   <output skill="0" name="Electrum Ingot" amount="2" />
+   <output skill="1" name="Electrum Ingot" amount="3" />
+   <tool tag="ingot"/>
+   <input name="Gold Ingot"/>
+   <input name="Silver Ingot"/>
+	</craft>
+<craft>
+   <output skill="0" name="Bronze Ingot" amount="1" />
+   <output skill="1" name="Bronze Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Copper Ingot"/>
+   <input name="Tin Ingot"/>
+	</craft>
+
+<craft>
+   <output skill="0" name="Steel Ingot" amount="1" />
+   <output skill="1" name="Steel Ingot" amount="2" />
+   <tool tag="ingot"/>
+   <input name="Iron Ingot"/>
+   <input name="Bituminous Coal"/>
+   <input name="Chalk"/>
+	</craft>
+
+
+<!-- Smithing -->
+
+
+  <!-- smithing buffs -->
+  <!--
+  <craft>
+    <tool tag="smithing"/>
+    <input name="Sapphire"/>
+    <input name="Sapphire"/>
+    <input name="Sapphire"/>    
+    <outputbuff>
+      <material text="sapphires" format="encrusted"/>
+      <primarybuff id="2" amount="1"/>
+    </outputbuff>          
+  </craft>
+
+  <craft>
+    <tool tag="smithing"/>
+    <input name="Citrine"/>
+    <input name="Citrine"/>
+    <input name="Citrine"/>
+    <outputbuff>
+      <secondarybuff id="1" amount="1"/>
+    </outputbuff>
+  </craft>
+
+  <craft>
+    <tool tag="smithing"/>
+    <input name="Black Pearl"/>
+    <input name="Black Pearl"/>
+    <input name="Black Pearl"/>
+    <outputbuff>
+      <damagebuff toxic="2"/>
+    </outputbuff>
+  </craft>
+
+-->
+  <!-- smithing boots -->
+<craft>
+   <output skill="1" name="Copper Plate Boots" />
+   <tool tag="smithing" />
+   <input name="Copper Ingot" />
+   <input name="Copper Ingot" />
+	</craft>
+<craft>
+   <output skill="2" name="Iron Plate Boots" />
+   <tool tag="smithing" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	</craft>
+<craft>
+   <output skill="4" name="Winged Aluminum Boots" />
+   <tool tag="smithing" />
+   <input name="Aluminum Ingot" />
+   <input name="Aluminum Ingot" />
+	<input name="Aluminum Ingot" />
+	</craft>
+
+<craft>
+   <output skill="1" name="Rough Iron Hjalmr" />
+	<tool tag="smithing" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	</craft>
+<craft>
+   <output skill="2" name="Iron Hjalmr" />
+	<tool tag="smithing" />
+   <input name="Rough Iron Hjalmr" />
+   <input name="Iron Ingot" />
+	</craft>
+<craft hidden="1">
+   <output skill="4" name="Runed Iron Hjalmr" />
+   <tool tag="smithing" />
+   <input name="Iron Hjalmr" />
+   <input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	</craft>
+
+<!-- smithing armour -->
+<craft>
+   <output skill="2" name="Rough Bronze Cuirass" />
+	<tool tag="smithing" />
+   <input name="Bronze Ingot" />
+   <input name="Bronze Ingot" />
+   <input name="Bronze Ingot" />
+	</craft>
+<craft>
+	<output skill="3" name="Bronze Cuirass" />
+	<tool tag="smithing" />
+   <input name="Rough Bronze Cuirass" />
+   <input name="Bronze Ingot" />
+	<input name="Bronze Ingot" />
+	</craft>
+<craft>
+	<output skill="4" name="Fine Bronze Cuirass" />
+   <tool tag="smithing" />
+   <input name="Bronze Cuirass" />
+	<input name="Gold Ingot" />
+   <input name="Gold Ingot" />
+	</craft>
+
+<craft>
+	<output skill="2" name="Bronze Greaves" />
+	<tool tag="smithing" />
+   <input name="Bronze Ingot" />
+   <input name="Bronze Ingot" />
+	</craft>
+<craft>
+	<output skill="3" name="Fine Bronze Greaves" />
+   <tool tag="smithing" />
+   <input name="Bronze Greaves" />
+	<input name="Gold Ingot" />
+   <input name="Gold Ingot" />
+	</craft>
+
+<craft>
+   <output skill="2" name="Rough Bronze Aspis" />
+	<tool tag="smithing" />
+   <input name="Bronze Ingot" />
+   <input name="Bronze Ingot" />
+	</craft>
+<craft>
+	<output skill="3" name="Bronze Aspis" />
+	<tool tag="smithing" />
+   <input name="Rough Bronze Aspis" />
+   <input name="Bronze Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Heroic Bronze Aspis" />
+   <tool tag="smithing" />
+   <input name="Bronze Aspis" />
+   <input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	</craft>
+
+
+<craft>
+   <output skill="2" name="Iron Cuirass" />
+   <tool tag="smithing" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	</craft>
+<craft>
+   <output skill="3" name="Steel Cuirass" />
+   <tool tag="smithing" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft>
+   <output skill="4" name="Fine Aluminum Cuirass" />
+   <tool tag="smithing" />
+   <input name="Aluminum Ingot" />
+   <input name="Aluminum Ingot" />
+   <input name="Aluminum Ingot" />
+	<input name="Aluminum Ingot" />
+	</craft>
+
+<craft>
+   <output skill="1" name="Rough Iron Skjoldr" />
+	<tool tag="smithing" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Iron Skjoldr" />
+	<tool tag="smithing" />
+   <input name="Rough Iron Skjoldr" />
+   <input name="Iron Ingot" />
+	</craft>
+<craft>
+	<output skill="4" name="Runed Iron Skjoldr" />
+   <tool tag="smithing" />
+   <input name="Iron Skjoldr" />
+   <input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	</craft>
+
+<craft>
+	<output skill="4" name="Fine Aluminum Helm" />
+   <tool tag="smithing" />
+   <input name="Aluminum Ingot" />
+   <input name="Aluminum Ingot" />
+	<input name="Aluminum Ingot" />
+	</craft>
+
+<!-- smithing weapons -->
+<craft>
+   <output skill="1" name="Rough Iron Sword"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+	</craft>
+<craft>
+   <output skill="2" name="Iron Sword"/>
+	<tool tag="smithing" />
+   <input name="Rough Iron Sword"/>
+   <input name="Iron Ingot"/>
+	</craft>
+<craft>
+   <output skill="4" name="Fine Iron Sword"/>
+   <tool tag="smithing" />
+   <input name="Iron Sword"/>
+   <input name="Iron Ingot"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Rough Steel Sword"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="2" name="Steel Sword"/>
+	<tool tag="smithing" />
+   <input name="Rough Steel Sword"/>
+   <input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="4" name="Fine Steel Sword"/>
+   <tool tag="smithing" />
+   <input name="Steel Sword"/>
+   <input name="Steel Ingot"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Rough Iron Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+   </craft>
+<craft>
+   <output skill="2" name="Iron Axe"/>
+	<tool tag="smithing" />
+	<input name="Rough Iron Axe"/>
+   <input name="Iron Ingot"/>
+   </craft>
+<craft>
+   <output skill="4" name="Fine Iron Axe"/>
+   <tool tag="smithing" />
+	<input name="Iron Axe"/>
+   <input name="Iron Ingot"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Rough Steel Axe"/>
+   <tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="2" name="Steel Axe"/>
+   <tool tag="smithing" />
+   <input name="Rough Steel Axe"/>
+	<input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="4" name="Fine Steel Axe"/>
+   <tool tag="smithing" />
+   <input name="Steel Axe"/>
+	<input name="Steel Ingot"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Rough Iron Mace"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+   </craft>
+<craft>
+   <output skill="2" name="Iron Mace"/>
+	<tool tag="smithing" />
+	<input name="Rough Iron Mace"/>
+   <input name="Iron Ingot"/>
+   </craft>
+<craft>
+   <output skill="4" name="Fine Iron Mace"/>
+   <tool tag="smithing" />
+	<input name="Iron Mace"/>
+   <input name="Iron Ingot"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Rough Steel Mace"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="2" name="Steel Mace"/>
+	<tool tag="smithing" />
+	<input name="Rough Steel Mace"/>
+   <input name="Steel Ingot"/>
+   </craft>
+<craft>
+   <output skill="4" name="Fine Steel Mace"/>
+   <tool tag="smithing" />
+	<input name="Steel Mace"/>
+   <input name="Steel Ingot"/>
+   </craft>
+
+<craft>
+	<output skill="0" name="Plastic Ring"/>
+	<tool tag="smithing" />
+	<input name="Plastic Ingot"/>
+	</craft>	
+<craft>
+	<output skill="1" name="Plastic Shoes"/>
+	<tool tag="smithing" />
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	</craft>	
+<craft>
+	<output skill="1" name="Pleather Armour"/>
+	<tool tag="smithing" />
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	</craft>
+<craft hidden="0" >
+	<output skill="2" name="Plastic Platemail"/>
+	<tool tag="smithing" />
+	<input name="Pleather Armour"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	</craft>
+
+<!-- smithing upgrades -->
+<craft>
+	<output skill="2" name="Brutal Club" />
+	<tool tag="smithing" />
+	<input name="Gnarled Club" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Fancy Hatchet" />
+	<tool tag="smithing" />
+	<input name="Simple Hatchet" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft>
+	<output skill="1" name="Macuahuitl" />
+	<tool tag="smithing" />
+	<input name="Wooden Sword" />
+	<input name="Crude Stone Axe" />
+	</craft>
+<craft hidden="1">
+   <output skill="2" name="Omnipotent Pork Sword" />
+   <tool tag="smithing" />
+   <input name="Rough Iron Sword" />
+   <input name="Cube of Flesh" />
+   <input name="Cube of Flesh" />
+   <input name="Cube of Flesh" />
+   </craft>
+
+<!-- smithing rings -->
+<craft>
+	<output skill="1" name="Copper Ring" />
+	<tool tag="smithing" />
+	<input name="Copper Ingot" />
+	<input name="Copper Ingot" />
+	</craft>
+<craft>
+	<output skill="1" name="Iron Ring" />
+	<tool tag="smithing" />
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Silver Ring" />
+	<tool tag="smithing" />
+	<input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Gold Ring" />
+	<tool tag="smithing" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Emerald Set Gold Ring" />
+	<tool tag="smithing" />
+	<input name="Gold Ingot" />
+	<input name="Emerald" />
+	</craft>
+<craft>
+	<output skill="2" name="Emerald Encrusted Gold Ring" />
+	<tool tag="smithing" />
+	<input name="Gold Ingot" />
+	<input name="Emerald" />
+	<input name="Emerald" />
+	<input name="Emerald" />
+	</craft>
+<craft>
+	<output skill="2" name="Aluminum Ring" />
+	<tool tag="smithing" />
+	<input name="Aluminum Ingot" />
+	<input name="Aluminum Ingot" />
+	</craft>
+<craft hidden="1" >
+	<output skill="4" name="Chalcoelectronic Ring" />
+	<tool tag="smithing" />
+	<input name="Copper Ring" />
+	<input name="Copper Wire" />
+	<input name="Electrum Ingot" />
+	<input name="Voltaic Cell" />
+	</craft>
+<craft hidden="1" >
+	<output skill="4" name="Ring of Iron Thorns" />
+	<tool tag="smithing" />
+	<input name="Iron Ring" />
+	<input name="Iron Ingot" />
+	<input name="Pyrite Sun" />
+	<input name="Potion of Steeling" />
+	</craft>
+<craft hidden="1" >
+	<output skill="4" name="The Mana Torus" />
+	<tool tag="smithing" />
+	<input name="Silver Ring" />
+	<input name="Platinum Ingot" />
+	<input name="Sapphire" />
+	<input name="Potion of Mana" />
+	</craft>
+
+
+<!-- Tinkerer -->
+<!--
+<craft>
+	<output skill="1" name="Lockpick" amount="1" />
+	<output skill="2" name="Lockpick" amount="2" />
+	<output skill="3" name="Lockpick" amount="3" />
+	<output skill="4" name="Lockpick" amount="4" />
+	<output skill="5" name="Lockpick" amount="5" />
+	<tool tag="tinkerer" />
+	<input name="Iron Ingot" />
+	</craft>
+-->
+
+
+
+   <!-- Tinkerer, parts-->
+  
+<craft>
+	<output skill="1" name="Aluminum Tube" amount="1" />
+<!-- output skill="3" name="Aluminum Tube" amount="2" />
+	<output skill="5" name="Aluminum Tube" amount="3" /> -->
+	<tool tag="tinkerer" />
+	<input name="Aluminum Ingot" />	
+	</craft>
+<craft>
+   <output skill="1" name="Copper Wire" amount="1" />
+   <output skill="2" name="Copper Wire" amount="2" />
+   <output skill="4" name="Copper Wire" amount="3" />
+	<output skill="5" name="Copper Wire" amount="4" />
+   <tool tag="tinkerer"/>
+   <input name="Copper Ingot"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Brass Piping" amount="1" />
+   <output skill="3" name="Brass Piping" amount="2" />
+   <output skill="5" name="Brass Piping" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Brass Ingot"/>
+   </craft>
+<craft>
+   <output skill="1" name="Brass Mechanisms" amount="1" />
+   <output skill="3" name="Brass Mechanisms" amount="2" />
+   <output skill="5" name="Brass Mechanisms" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Brass Ingot"/>
+   </craft>
+<craft>
+   <output skill="1" name="Pressure Plate" amount="1" />
+   <output skill="2" name="Pressure Plate" amount="2" />
+   <output skill="3" name="Pressure Plate" amount="3" />
+   <output skill="4" name="Pressure Plate" amount="4" />
+	<output skill="5" name="Pressure Plate" amount="5" />
+   <tool tag="tinkerer"/>
+   <input name="Copper Ingot"/>
+	<input name="Brass Mechanisms"/>
+   </craft>
+<craft>
+   <output skill="1" name="Voltaic Cell" amount="1" />
+   <output skill="2" name="Voltaic Cell" amount="2" />
+   <output skill="3" name="Voltaic Cell" amount="3" />
+	<output skill="5" name="Voltaic Cell" amount="4" />
+   <tool tag="tinkerer"/>
+   <input name="Oil of Vitriol"/>
+   <input name="Zinc Ingot"/>
+   <input name="Copper Ingot"/>
+   </craft>
+<craft>
+   <output skill="1" name="Spring-loaded Power Core" amount="1" />
+   <output skill="2" name="Spring-loaded Power Core" amount="2" />
+   <output skill="3" name="Spring-loaded Power Core" amount="3" />
+   <output skill="5" name="Spring-loaded Power Core" amount="4" />
+   <tool tag="tinkerer"/>
+   <input name="Brass Mechanisms"/>
+   <input name="Steel Ingot"/>
+   </craft>
+
+   <!-- tinkerer, xbows -->
+
+<craft>
+   <output skill="1" name="Crude Iron Crossbow" />
+   <tool tag="tinkerer"/>
+   <input name="Iron Ingot"/>
+   <input name="Brass Mechanisms"/>
+   </craft>
+<craft>
+   <output skill="2" name="Simple Iron Crossbow" />
+   <tool tag="tinkerer"/>
+	<input name="Crude Iron Crossbow"/>
+   <input name="Iron Ingot"/>
+	<input name="Brass Mechanisms"/>
+   </craft>
+<craft>   
+	<output skill="3" name="Iron Lever Crossbow" />
+   <tool tag="tinkerer"/>
+	<input name="Simple Iron Crossbow"/>
+	<input name="Iron Ingot"/>
+   <input name="Brass Mechanisms"/>
+   </craft>
+<craft>   
+	<output skill="4" name="Iron Ratchet Crossbow" />
+   <tool tag="tinkerer"/>
+	<input name="Iron Lever Crossbow"/>
+   <input name="Brass Mechanisms"/>
+	<input name="Spring-loaded Power Core"/>
+   </craft>
+
+<craft>
+   <output skill="1" name="Crude Steel Crossbow" />
+   <tool tag="tinkerer"/>
+   <input name="Steel Ingot"/>
+   <input name="Brass Mechanisms"/>
+   </craft>
+<craft>
+	<output skill="2" name="Simple Steel Crossbow" />
+	<tool tag="tinkerer"/>
+   <input name="Crude Steel Crossbow"/>
+	<input name="Steel Ingot"/>
+	<input name="Brass Mechanisms"/>
+   </craft>
+<craft>
+   <output skill="3" name="Steel Lever Crossbow" />
+   <tool tag="tinkerer"/>
+	<input name="Simple Steel Crossbow"/>
+	<input name="Steel Ingot"/>
+	<input name="Brass Mechanisms"/>
+   </craft>
+<craft>
+   <output skill="4" name="Steel Ratchet Crossbow" />
+   <tool tag="tinkerer"/>
+	<input name="Steel Lever Crossbow"/>
+   <input name="Brass Mechanisms"/>
+	<input name="Spring-loaded Power Core"/>
+   </craft>
+
+	<!-- Tinkerer, Bolts -->
+<craft>
+   <output skill="0" name="Plastic Bolt" amount="5"/>
+   <output skill="1" name="Plastic Bolt" amount="6"/>
+   <output skill="2" name="Plastic Bolt" amount="7"/>
+   <output skill="3" name="Plastic Bolt" amount="8"/>
+   <output skill="4" name="Cruelly Barbed Plastic Bolt" amount="9"/>
+   <output skill="5" name="Cruelly Barbed Plastic Bolt" amount="10"/>
+	<output skill="6" name="Ingeniously Scythed Plastic Bolt" amount="11"/>
+	<output skill="7" name="Ingeniously Scythed Plastic Bolt" amount="12"/>
+   <tool tag="tinkerer" />
+   <input name="Plastic Ingot"/>
+   </craft>
+<craft>
+   <output skill="0" name="Copper Bolt" amount="6"/>
+   <output skill="1" name="Copper Bolt" amount="7"/>
+   <output skill="2" name="Barbed Copper Bolt" amount="8"/>
+   <output skill="3" name="Barbed Copper Bolt" amount="9"/>
+   <output skill="4" name="Cruelly Barbed Copper Bolt" amount="10"/>
+   <output skill="5" name="Cruelly Barbed Copper Bolt" amount="11"/>
+   <output skill="6" name="Ingeniously Scythed Copper Bolt" amount="12"/>
+   <output skill="7" name="Ingeniously Scythed Copper Bolt" amount="13"/>
+   <tool tag="tinkerer" />
+   <input name="Copper Ingot"/>
+   </craft>
+<craft>
+   <output skill="0" name="Bronze Bolt" amount="6"/>
+   <output skill="1" name="Bronze Bolt" amount="7"/>
+   <output skill="2" name="Barbed Bronze Bolt" amount="8"/>
+   <output skill="3" name="Barbed Bronze Bolt" amount="9"/>
+   <output skill="4" name="Cruelly Barbed Bronze Bolt" amount="10"/>
+   <output skill="5" name="Cruelly Barbed Bronze Bolt" amount="11"/>
+   <output skill="6" name="Ingeniously Scythed Bronze Bolt" amount="12"/>
+   <output skill="7" name="Ingeniously Scythed Bronze Bolt" amount="13"/>
+   <tool tag="tinkerer" />
+   <input name="Bronze Ingot"/>
+   </craft>
+<craft>
+   <output skill="0" name="Iron Bolt" amount="6"/>
+   <output skill="1" name="Iron Bolt" amount="7"/>
+   <output skill="2" name="Barbed Iron Bolt" amount="8"/>
+   <output skill="3" name="Barbed Iron Bolt" amount="9"/>
+   <output skill="4" name="Cruelly Barbed Iron Bolt" amount="10"/>
+   <output skill="5" name="Cruelly Barbed Iron Bolt" amount="11"/>
+   <output skill="6" name="Ingeniously Scythed Iron Bolt" amount="12"/>
+   <output skill="7" name="Ingeniously Scythed Iron Bolt" amount="13"/>
+   <tool tag="tinkerer" />
+   <input name="Iron Ingot"/>
+   </craft>
+<craft>
+   <output skill="0" name="Steel Bolt" amount="6"/>
+   <output skill="1" name="Steel Bolt" amount="7"/>
+   <output skill="2" name="Barbed Steel Bolt" amount="8"/>
+   <output skill="3" name="Barbed Steel Bolt" amount="9"/>
+   <output skill="4" name="Cruelly Barbed Steel Bolt" amount="10"/>
+   <output skill="5" name="Cruelly Barbed Steel Bolt" amount="11"/>
+	<output skill="6" name="Ingeniously Scythed Steel Bolt" amount="12"/>
+   <output skill="7" name="Ingeniously Scythed Steel Bolt" amount="13"/>
+   <tool tag="tinkerer" />
+   <input name="Steel Ingot"/>
+   </craft>
+
+<craft hidden="1">
+	<output skill="2" name="Clockwork Drill Bolt" amount="1"/>
+	<output skill="3" name="Clockwork Drill Bolt" amount="2"/>
+	<output skill="4" name="Clockwork Drill Bolt" amount="3"/>
+	<output skill="5" name="Clockwork Drill Bolt" amount="4"/>
+	<tool tag="tinkerer" />
+	<input name="Steel Ingot"/>
+	<input name="Brass Mechanisms"/>
+	<input name="Spring-loaded Power Core" />   
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Tesla's Bolt" amount="1"/>
+	<output skill="3" name="Tesla's Bolt" amount="2"/>
+	<output skill="4" name="Tesla's Bolt" amount="3"/>
+	<output skill="5" name="Tesla's Bolt" amount="4"/>
+	<tool tag="tinkerer" />
+	<input name="Iron Ingot"/>
+	<input name="Copper Wire" />
+	<input name="Voltaic Cell" />
+	</craft>
+<craft hidden="1" >
+	<output skill="5" name="Bolt of Mass Destruction" />
+	<tool tag="tinkerer" />
+	<input name="Fiery Wand" />
+	<input name="Voltaic Cell" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Iron Bomb" />
+	</craft>
+
+	<!-- Tinkerer, arms & armour -->
+	
+<craft >
+	<output skill="1" name="Spectacles" />
+	<tool tag="tinkerer" />
+	<input name="Diamond" />
+	<input name="Brass Ingot" />
+	</craft>
+	
+
+	<!-- Tinkerer, Bombs -->
+
+<craft >
+	<output skill="0" name="Makeshift Bomb" amount="1" />
+	<output skill="1" name="Makeshift Bomb" amount="2" />
+	<output skill="2" name="Makeshift Bomb" amount="3" />
+	<output skill="3" name="Makeshift Bomb" amount="4" />
+	<output skill="4" name="Makeshift Bomb" amount="5" />
+	<output skill="5" name="Makeshift Bomb" amount="6" />
+	<tool tag="tinkerer"/>
+	<input name="Black Powder"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Concussion Bomb" amount="1" />
+	<output skill="3" name="Concussion Bomb" amount="2" />
+	<output skill="5" name="Concussion Bomb" amount="3" />
+	<tool tag="tinkerer"/>
+	<input name="Makeshift Bomb"/>
+	<input name="Makeshift Bomb"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Iron Bomb" amount="1" />
+	<output skill="3" name="Iron Bomb" amount="2" />
+	<output skill="5" name="Iron Bomb" amount="3" />
+	<tool tag="tinkerer"/>
+	<input name="Makeshift Bomb"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Frag Bomb" amount="1" />
+	<output skill="3" name="Frag Bomb" amount="2" />
+	<output skill="5" name="Frag Bomb" amount="3" />
+	<tool tag="tinkerer"/>
+	<input name="Makeshift Bomb"/>
+	<input name="Steel Ingot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Hand Grenade" amount="1" />
+	<output skill="3" name="Hand Grenade" amount="2" />
+	<output skill="5" name="Hand Grenade" amount="3" />
+	<tool tag="tinkerer"/>
+	<input name="Iron Bomb"/>
+	<input name="Steel Ingot"/>
+	</craft>
+<craft hidden="0">
+	<output skill="2" name="Thermite Bomb" amount="1" />
+	<output skill="3" name="Thermite Bomb" amount="2" />
+	<output skill="5" name="Thermite Bomb" amount="3" />
+	<tool tag="tinkerer"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Rust"/>
+	</craft>
+
+	<!-- Tinkerer, Traps -->
+
+<craft>
+   <output skill="1" name="Shoddy Dwarven IED" amount="1" />
+   <output skill="2" name="Shoddy Dwarven IED" amount="2" />
+   <output skill="3" name="Shoddy Dwarven IED" amount="3" />
+   <output skill="4" name="Shoddy Dwarven IED" amount="4" />
+   <output skill="5" name="Shoddy Dwarven IED" amount="5" />
+   <tool tag="tinkerer"/>
+   <input name="Black Powder" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft>
+   <output skill="1" name="Toxic Gas Sprayer Mine" amount="1" />
+   <output skill="2" name="Toxic Gas Sprayer Mine" amount="2" />
+   <output skill="3" name="Toxic Gas Sprayer Mine" amount="3" />
+   <output skill="4" name="Toxic Gas Sprayer Mine" amount="4" />
+   <output skill="5" name="Toxic Gas Sprayer Mine" amount="5" />
+   <tool tag="tinkerer"/>
+	<input name="Verdant Poison" />
+   <input name="Brass Piping" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft>
+   <output skill="1" name="Tesla Mine" amount="1" />
+   <output skill="2" name="Tesla Mine" amount="2" />
+   <output skill="3" name="Tesla Mine" amount="3" />
+   <output skill="4" name="Tesla Mine" amount="4" />
+   <output skill="5" name="Tesla Mine" amount="5" />
+   <tool tag="tinkerer"/>
+   <input name="Voltaic Cell" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft>
+   <output skill="1" name="Firespout Mine" amount="1" />
+   <output skill="2" name="Firespout Mine" amount="2" />
+   <output skill="3" name="Firespout Mine" amount="2" />
+   <output skill="4" name="Firespout Mine" amount="3" />
+   <output skill="5" name="Firespout Mine" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Brass Piping" />
+   <input name="Makeshift Bomb" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft  hidden="0">
+   <output skill="1" name="Acid Sprayer Mine" amount="1" />
+   <output skill="2" name="Acid Sprayer Mine" amount="2" />
+   <output skill="3" name="Acid Sprayer Mine" amount="2" />
+   <output skill="4" name="Acid Sprayer Mine" amount="3" />
+   <output skill="5" name="Acid Sprayer Mine" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Aqua Regia" />
+   <input name="Brass Piping" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft  hidden="1">
+   <output skill="1" name="Thaumite Nest" amount="1" />
+   <output skill="2" name="Thaumite Nest" amount="2" />
+   <output skill="3" name="Thaumite Nest" amount="2" />
+   <output skill="4" name="Thaumite Nest" amount="3" />
+   <output skill="5" name="Thaumite Nest" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Copper Wire" />
+   <input name="Aqua Vitae" />
+   <input name="Potion of Mana" />
+   <input name="Pressure Plate" />
+   </craft>
+<craft  hidden="1">
+   <output skill="1" name="Acidic Rhizome Trap" amount="1" />
+   <output skill="2" name="Acidic Rhizome Trap" amount="2" />
+   <output skill="3" name="Acidic Rhizome Trap" amount="2" />
+   <output skill="4" name="Acidic Rhizome Trap" amount="3" />
+   <output skill="5" name="Acidic Rhizome Trap" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Odious Puffball" />
+   <input name="Aqua Regia" />
+   <input name="Brass Piping" />
+	<input name="Pressure Plate" />
+   </craft>
+<craft hidden="1">
+   <output skill="1" name="Dwarven Landmine" amount="1" />
+   <output skill="2" name="Dwarven Landmine" amount="2" />
+   <output skill="3" name="Dwarven Landmine" amount="2" />
+   <output skill="4" name="Dwarven Landmine" amount="3" />
+   <output skill="5" name="Dwarven Landmine" amount="3" />
+   <tool tag="tinkerer"/>
+   <input name="Iron Bomb" />
+   <input name="Black Powder" />
+   <input name="Pressure Plate" />
+   </craft>
+
+<!-- blade traps -->
+<craft>
+   <output skill="0" name="Crude Blade Trap" amount="1" />
+   <output skill="1" name="Crude Blade Trap" amount="2" />
+	<output skill="2" name="Rough Blade Trap" amount="2" />
+   <output skill="3" name="Rough Blade Trap" amount="3" />
+   <output skill="4" name="Blade Trap" amount="3" />
+	<output skill="5" name="Blade Trap" amount="4" />
+   <tool tag="tinkerer"/>
+   <input name="Iron Ingot" />
+   <input name="Pressure Plate" />
+   </craft>
+
+<!-- tinkerer random stuff -->
+
+<craft hidden="1" >
+	<output skill="4" name="Clockwork Power-limb" />
+	<tool tag="tinkerer"/>
+	<input name="Steel Ingot" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<!-- Fungus? -->
+
+
+<!-- 1.03 additions -->
+<!-- zaracrafts (thanks!) -->
+
+<!-- Grinder -->
+<craft>
+	<output skill="0" name="Rust" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Rusty Sword"/>  
+	</craft>
+<craft>
+	<output skill="0" name="Rust" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Rusty Metal Buckler"/>  
+	</craft>
+<craft>
+	<output skill="0" name="Rust" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Rusty Old Helm"/>  
+	</craft>
+
+<!-- crude weapons -->
+
+<craft>
+   <output skill="0" name="Crude Knife"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+	</craft>
+<craft>
+   <output skill="0" name="Crude Iron Sword"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+	</craft>
+<craft>
+   <output skill="0" name="Crude Steel Sword"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+<craft>
+   <output skill="1" name="Rough Iron Sword"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Crude Iron Sword"/>
+	</craft>
+<craft>
+   <output skill="1" name="Rough Steel Sword"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Crude Steel Sword"/>
+	</craft>
+<craft>
+   <output skill="0" name="Crude Iron Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+	</craft>
+<craft>
+   <output skill="0" name="Crude Steel Axe"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+	
+<!-- bronze weapons -->	
+	
+<craft>
+   <output skill="2" name="Bronze Dagger"/>
+	<tool tag="smithing" />
+   <input name="Bronze Ingot"/>
+   <input name="Bronze Ingot"/>
+	</craft>
+<craft>
+   <output skill="3" name="Gladius"/>
+	<tool tag="smithing" />
+   <input name="Bronze Dagger"/>
+   <input name="Bronze Ingot"/>
+	</craft>
+<craft>
+   <output skill="1" name="Simple Hatchet"/>
+	<tool tag="smithing" />
+   <input name="Bronze Ingot"/>
+   <input name="Bronze Ingot"/>
+	</craft>
+<craft>
+   <output skill="2" name="Fancy Hatchet"/>
+	<tool tag="smithing" />
+   <input name="Bronze Ingot"/>
+   <input name="Simple Hatchet"/>
+	</craft>	
+
+<craft>
+   <output skill="1" name="Spear"/>
+	<tool tag="smithing" />
+   <input name="Bronze Ingot"/>
+   <input name="Bronze Ingot"/>
+	</craft>
+
+<craft>
+   <output skill="3" name="Trident"/>
+	<tool tag="smithing" />
+   <input name="Bronze Ingot"/>
+   <input name="Spear"/>
+	</craft>
+
+<!-- alt weapons -->
+
+<craft>
+   <output skill="1" name="Woodsman's Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Gnarled Club"/>
+	</craft>
+<craft>
+   <output skill="1" name="Woodsman's Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Hefty Stick"/>
+	</craft>
+<craft>
+   <output skill="2" name="Bo Staff"/>
+	<tool tag="smithing" />
+   <input name="Hefty Stick"/>
+	</craft>
+<craft hidden="1">
+   <output skill="2" name="Interdimensional Axe"/>
+	<tool tag="smithing" />
+   <input name="Rough Iron Axe"/>
+   <input name="Spatial Instability Infusion"/>
+	</craft>
+<craft>
+   <output skill="2" name="Bent Staff"/>
+	<tool tag="alchemy" />
+   <input name="Hefty Stick"/>
+   <input name="Spatial Instability Infusion"/>
+	</craft>
+<craft>
+   <output skill="2" name="Flail"/>
+	<tool tag="smithing" />
+	<input name="Iron Ingot"/>
+   <input name="Rough Iron Mace"/>
+	</craft>
+<craft>
+   <output skill="3" name="Dao"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Sword"/>
+	</craft>
+<craft>
+   <output skill="3" name="Samurai Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Axe"/>
+	</craft>
+<craft>
+   <output skill="3" name="Slinky Flail"/>
+	<tool tag="smithing" />
+	<input name="Steel Ingot"/>
+   <input name="Flail"/>
+	</craft>
+<craft>
+   <output skill="3" name="Knobbly Staff"/>
+	<tool tag="alchemy" />
+   <input name="Bent Staff"/>
+   <input name="Aqua Fortis"/>
+	</craft>
+<craft hidden="0">
+   <output skill="4" name="Falx"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Iron Ingot"/>
+   <input name="Iron Sword"/>
+	</craft>
+<craft hidden="0">
+   <output skill="4" name="Blue Steel Sword"/>
+	<tool tag="tinkerer" />
+   <input name="Copper Wire"/>
+   <input name="Voltaic Cell"/>
+   <input name="Steel Sword"/>
+	</craft>
+<craft hidden="0">
+   <output skill="4" name="Blue Steel Sword"/>
+	<tool tag="smithing" />
+   <input name="Voltaic Potion"/>
+   <input name="Steel Sword"/>
+	</craft>
+<craft hidden="0">
+   <output skill="4" name="Double-Bladed Axe"/>
+	<tool tag="smithing" />
+   <input name="Iron Axe"/>
+   <input name="Iron Axe"/>
+	</craft>
+<craft hidden="1">
+   <output skill="4" name="Metal Orby Staff"/>
+	<tool tag="alchemy" />
+   <input name="Knobbly Staff"/>
+   <input name="Potion of Steeling"/>
+   <input name="Black Pearl"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Knightly Sword"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Fine Iron Sword"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Katana"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   <input name="Fine Steel Sword"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Die Kohlaxt"/>
+	<tool tag="smithing" />
+   <input name="Iron Ingot"/>
+   <input name="Fine Iron Axe"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Bearded Axe"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Fine Steel Axe"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Broader Axe"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   <input name="Fine Steel Axe"/>
+	</craft>	
+<craft hidden="1">
+   <output skill="5" name="Staff of Immaculate Conceptualization"/>
+	<tool tag="alchemy" />
+   <input name="Metal Orby Staff"/>
+   <input name="Potion of Clear Vision"/>
+   <input name="Ruby"/>
+	</craft>
+<craft hidden="1">
+   <output skill="5" name="Fruitful Staff"/>
+	<tool tag="alchemy" />
+   <input name="Knobbly Staff"/>
+   <input name="Apple"/>
+   <input name="Pear"/>
+   <input name="Plum"/>
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Jingly Jangly Staff of Crystals"/>
+	<tool tag="alchemy" />
+   <input name="Metal Orby Staff"/>
+   <input name="Ruby"/>
+   <input name="Sapphire"/>
+   <input name="Emerald"/>
+	</craft>	
+<craft>
+   <output skill="4" name="Great Warhammer"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Warhammer"/>
+	</craft>	
+<craft hidden="1">
+   <output skill="5" name="Triple Flail"/>
+	<tool tag="smithing" />
+   <input name="Slinky Flail"/>
+   <input name="Slinky Flail"/>
+   <input name="Slinky Flail"/>
+	</craft>	
+<craft hidden="1">
+   <output skill="5" name="The Royal Beatdown"/>
+	<tool tag="smithing" />
+   <input name="Potion of Steeling"/>
+	<input name="Wand of Bling"/>
+	<input name="Steel Ingot"/>
+   <input name="Fine Steel Mace"/>
+	</craft>	
+	
+<!-- artifacts -->
+<craft hidden="1">
+	<output skill="4" name="Golden Axe"/>
+	<tool tag="smithing"/>
+	<input name="Iron Axe"/>
+	<input name="Gold Ingot"/>
+	<input name="Gold Ingot"/>
+	<input name="Potion of Midas"/>
+	</craft>
+<craft hidden="1">
+   <output skill="3" name="Bony Axe"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Bone Club"/>
+   <input name="Potion of Dire Empowerment"/>
+	</craft>
+<craft hidden="1">
+   <output skill="4" name="Magma Mace"/>
+	<tool tag="smithing" />
+   <input name="Fine Iron Mace"/>
+   <input name="Infernal Potion"/>
+   <input name="Ruby"/>
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Flail of Pleiades"/>
+	<tool tag="smithing"/>
+	<input name="Triple Flail"/>
+	<input name="Zodiacal Wand"/>
+	<input name="Pyrite Sun"/>
+	<input name="Platinum Ingot"/>
+	</craft>
+
+<!-- armor -->
+
+<craft>
+   <output skill="1" name="Bucket" />
+	<tool tag="smithing" />
+   <input name="Tin Ingot" />
+   <input name="Tin Ingot" />
+	</craft>
+<craft>
+   <output skill="1" name="Traffic Cone" />
+	<tool tag="smithing" />
+   <input name="Plastic Ingot" />
+   <input name="Plastic Ingot" />
+	</craft>
+<craft hidden="1">
+   <output skill="3" name="Historically Inaccurate Viking Helm" />
+	<tool tag="smithing" />
+   <input name="Rough Iron Hjalmr" />
+   <input name="Plastic Ingot" />
+   <input name="Plastic Ingot" />
+	</craft>
+<craft hidden="1">
+   <output skill="4" name="Knight's Helmet" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+   <input name="Bucket" />
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Tinkerer's Goggles" />
+	<tool tag="tinkerer" />
+	<input name="Leather Cap" />
+	<input name="Diamond" />
+	<input name="Diamond" />
+	<input name="Brass Ingot" />
+	</craft>
+
+<craft>
+   <output skill="3" name="Steel Reinforced Boots" />
+	<tool tag="smithing" />
+   <input name="Steel Ingot" />
+   <input name="Leather Boots" />
+	</craft>
+<craft hidden="1">
+   <output skill="5" name="Magic Sandals" />
+	<tool tag="alchemy" />
+   <input name="Flippy Floppies" />
+   <input name="Fairywodger" />
+   <input name="Grunge Ear" />
+   <input name="The Prince" />
+	</craft>
+<craft>
+   <output skill="4" name="Brigandine" />
+   <tool tag="smithing" />
+   <input name="Studded Leather Coat" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	</craft>
+<craft>
+   <output skill="4" name="Scaled Armour" />
+   <tool tag="smithing" />
+   <input name="Iron Cuirass" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	</craft>
+<craft hidden="0">
+   <output skill="5" name="Full Plate Armour" />
+   <tool tag="smithing" />
+   <input name="Steel Cuirass" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft hidden="1">
+   <output skill="5" name="Embossed Serpentine Platemail" />
+   <tool tag="smithing" />
+   <input name="Full Plate Armour" />
+   <input name="Silver Ingot" />
+   <input name="Gold Ingot" />
+	<input name="Platinum Ingot" />
+	</craft>
+<craft hidden="0">
+   <output skill="2" name="Enjeweled Wooden Shield" />
+   <tool tag="smithing" />
+   <input name="Wooden Shield" />
+   <input name="Emerald" />
+	</craft>
+<craft hidden="1">
+   <output skill="1" name="Mossy Shield" />
+   <tool tag="alchemy" />
+   <input name="Simple Wooden Shield" />
+   <input name="Potion of Lively Regeneration" />
+	</craft>
+<craft>
+   <output skill="1" name="Battered Kite Shield" />
+   <tool tag="smithing" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	</craft>
+<craft>
+   <output skill="2" name="Kite Shield" />
+   <tool tag="smithing" />
+   <input name="Battered Kite Shield" />
+   <input name="Steel Ingot" />
+	</craft>
+<craft>
+   <output skill="4" name="Heater Shield" />
+   <tool tag="smithing" />
+   <input name="Kite Shield" />
+   <input name="Steel Ingot" />
+	</craft>
+	
+<!-- orbs -->
+
+<craft>
+	<output skill="0" name="Cracked Orb" />
+	<tool tag="smithing" />
+	<input name="Naturey Orb" />
+	</craft>
+<craft>
+	<output skill="0" name="Cracked Orb" />
+	<tool tag="smithing" />
+	<input name="Dark Orb" />
+	</craft>
+<craft>
+	<output skill="0" name="Cracked Orb" />
+	<tool tag="smithing" />
+	<input name="Starry Orb" />
+	</craft>
+<craft>
+	<output skill="0" name="Cracked Orb" />
+	<tool tag="smithing" />
+	<input name="Molten Orb" />
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Naturey Orb" />
+	<tool tag="alchemy" />
+	<input name="Cracked Orb" />
+	<input name="Amber" />
+	<input name="Potion of Healing" />
+	</craft>
+<craft hidden="1">
+	<output skill="3" name="Dark Orb" />
+	<tool tag="alchemy" />
+	<input name="Cracked Orb" />
+	<input name="Black Pearl" />
+	<input name="Potion of Dire Empowerment" />
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Starry Orb" />
+	<tool tag="alchemy" />
+	<input name="Cracked Orb" />
+	<input name="Pyrite Sun" />
+	<input name="Potion of Clear Vision" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Molten Orb" />
+	<tool tag="alchemy" />
+	<input name="Cracked Orb" />
+	<input name="Ruby" />
+	<input name="Infernal Potion" />
+	</craft>
+
+<!-- amulets -->
+<!-- possibly overpowered recipes
+<craft>
+	<output skill="2" name="Copper Torc" />
+	<tool tag="smithing" />
+	<input name="Copper Ingot" />
+	<input name="Copper Ingot" />
+	<input name="Copper Ingot" />
+	</craft>
+	
+<craft>
+	<output skill="3" name="Silver Necklace" />
+	<tool tag="smithing" />
+	<input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	<input name="Silver Ingot" />
+	</craft>
+	
+<craft>
+	<output skill="3" name="Gold Necklace" />
+	<tool tag="smithing" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	</craft>
+	
+<craft hidden="1">
+	<output skill="4" name="Sapphire Amulet" />
+	<tool tag="smithing" />
+	<input name="Silver Necklace" />
+	<input name="Sapphire" />
+	</craft>
+	
+<craft hidden="1">
+	<output skill="5" name="Ruby Amulet" />
+	<tool tag="smithing" />
+	<input name="Gold Necklace" />
+	<input name="Ruby" />
+	</craft>
+-->	
+<craft hidden="1">
+	<output skill="5" name="Emerald Amulet" />
+	<tool tag="smithing" />
+	<input name="Platinum Ingot" />
+	<input name="Platinum Ingot" />
+	<input name="Platinum Ingot" />
+	<input name="Emerald" />
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Cybertronic Amulet" />
+	<tool tag="tinkerer" />
+	<input name="Copper Wire" />
+	<input name="Plastic Ingot" />
+	<input name="Voltaic Cell" />
+	</craft>
+
+<!-- rando -->
+
+<craft>
+	<output skill="4" name="Noxious Brimstone Flask" amount="2"/>
+	<output skill="5" name="Noxious Brimstone Flask" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Brimstone" />
+	<input name="Brimstone" />
+	</craft>
+<craft>
+	<output skill="1" name="Poison Flask" amount="1"/>
+	<output skill="2" name="Poison Flask" amount="2"/>
+	<output skill="4" name="Poison Flask" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Verdant Poison" />
+	<input name="Verdant Poison" />
+	</craft>
+<craft>
+	<output skill="2" name="Acid Flask" amount="1"/>
+	<output skill="3" name="Acid Flask" amount="2"/>
+	<output skill="5" name="Acid Flask" amount="3"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Aqua Regia" />
+	</craft>
+<craft hidden="1" >
+	<output skill="5" name="Clockwork Chainaxe" />
+	<tool tag="tinkerer"/>
+	<input name="Fine Steel Axe" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<!-- still -->
+
+<craft hidden="1">
+	<output skill="1" name="Grog" amount="2"/>
+	<output skill="2" name="Grog" amount="3"/>
+	<output skill="3" name="Grog" amount="4"/>
+	<output skill="4" name="Grog" amount="6"/>
+	<output skill="5" name="Grog" amount="7"/>
+	<tool tag="still"/>
+	<input name="Acid Flask" />
+	<input name="Mud Wen" />
+	</craft>
+
+<!-- Possibly overpowered or innapropriate. 
+<craft>
+	<output skill="3" name="Pan-Galactic Gargle Blaster" amount="1"/>
+	<tool tag="still"/>
+	<input name="Mud Wen" />
+	</craft>
+<craft>
+   <output skill="4" name="Absinthe" amount="1"/>
+   <tool tag="still"/>
+   <input name="Fairywodger" />
+	</craft>
+-->
+
+<!-- 1.0.4 crafts -->
+
+<!-- Grinder -->
+<craft>
+	<output skill="0" name="Powdered Aluminum" amount="2"/>    
+	<tool tag="grinder"/>
+	<input name="Fine Aluminum Helm"/>
+	</craft>
+<craft>
+	<output skill="0" name="Powdered Aluminum" amount="2"/>    
+	<tool tag="grinder"/>
+	<input name="Winged Aluminum Boots"/>
+	</craft>
+<craft>
+	<output skill="0" name="Powdered Aluminum" amount="3"/>    
+	<tool tag="grinder"/>
+	<input name="Fine Aluminum Cuirass"/>
+	</craft>
+<craft>
+	<output skill="0" name="Powdered Aluminum" amount="1"/>    
+	<tool tag="grinder"/>
+	<input name="Aluminum Ring"/>
+	</craft>
+
+<craft>
+	<output skill="0" name="Chalk" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Black Pearl"/>
+	</craft>
+	<!-- you're welcome. -->
+	
+<!-- Smithable throwns -->
+
+<craft hidden="1">
+	<output skill="2" name="Bolas" amount="1" />
+	<tool tag="smithing" />
+	<input name="Softball" />
+	<input name="Softball" />
+	<input name="Softball" />
+	</craft>
+<craft>
+	<output skill="1" name="Throwing Knife" amount="3" />
+	<output skill="2" name="Throwing Knife" amount="4" />
+	<output skill="3" name="Throwing Knife" amount="5" />
+	<output skill="4" name="Kunai" amount="5" />
+	<output skill="5" name="Kunai" amount="6" />
+	<tool tag="smithing" />
+	<input name="Iron Ingot" />
+	</craft>
+<craft>
+	<output skill="1" name="Dart" amount="4" />
+	<output skill="2" name="Dart" amount="5" />
+	<output skill="3" name="Dart" amount="6" />
+	<tool tag="smithing" />
+	<input name="Bronze Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Throwing Star" amount="5" />
+	<output skill="3" name="Throwing Star" amount="6" />
+	<output skill="4" name="Throwing Star" amount="7" />
+	<output skill="5" name="Throwing Star" amount="8" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft>
+	<output skill="1" name="Throwing Axe" amount="3" />
+	<output skill="2" name="Throwing Axe" amount="4" />
+	<output skill="3" name="Throwing Axe" amount="5" />
+	<output skill="4" name="Nzappa Zap" amount="5" />
+	<output skill="5" name="Nzappa Zap" amount="6" />
+	<tool tag="smithing" />
+	<input name="Crude Iron Axe" />
+	</craft>
+<craft>
+	<output skill="2" name="Javelin" amount="4" />
+	<output skill="3" name="Javelin" amount="5" />
+	<output skill="4" name="Javelin" amount="6" />
+	<output skill="5" name="Javelin" amount="7" />
+	<tool tag="smithing" />
+	<input name="Dart" />
+	<input name="Hefty Stick" />
+	</craft>
+
+<!-- de-crafting to make more sticks available -->
+
+<craft>
+   <output skill="0" name="Hefty Stick"/>
+	<tool tag="smithing" />
+   <input name="Bo Staff"/>
+	</craft>
+
+<!-- zaracrafts 2.0, by popular demand -->
+<craft>
+	<output skill="1" name="Nailboard(tm)"/>
+	<tool tag="smithing"/>
+	<input name="Steel Ingot"/>
+	<input name="Gnarled Club"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Nailboard(tm)"/>
+	<tool tag="smithing"/>
+	<input name="Steel Ingot"/>
+	<input name="Hefty Stick"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Nailboard (TM) Mark II prototype"/>
+	<tool tag="smithing"/>
+	<input name="Steel Ingot"/>
+	<input name="Nailboard(tm)"/>
+	</craft>
+<craft>
+	<output skill="1" name="Enormous Wrench" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Overclockedwork Power-limb"/>
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Power-limb"/>
+	<input name="Brass Mechanisms"/>
+	<input name="Voltaic Cell"/>
+	<input name="Copper Wire"/>
+	</craft>
+<craft>
+	<output skill="3" name="Cranky Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Simple Iron Crossbow"/>
+	<input name="Spring-loaded Power Core"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+<craft>
+	<output skill="3" name="Wind-up Doubleplus Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Simple Steel Crossbow"/>
+	<input name="Simple Steel Crossbow"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+<craft hidden="1">
+	<output skill="3" name="Sneaky Assassin's Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Simple Iron Crossbow"/>
+	<input name="Bituminous Coal"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+<craft >
+	<output skill="4" name="Gem-encrusted Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Lever Crossbow"/>
+	<input name="Electrum Ingot"/>
+	<input name="Electrum Ingot"/>
+	<input name="Ruby"/>
+	</craft>
+<craft >
+	<output skill="5" name="Gem-encrusted Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Lever Crossbow"/>
+	<input name="Electrum Ingot"/>
+	<input name="Electrum Ingot"/>
+	<input name="Ruby"/>
+	</craft>
+<craft >
+	<output skill="5" name="Steel Recurve Crossbow"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Ratchet Crossbow"/>
+	<input name="Steel Ingot"/>
+	<input name="Brass Mechanisms"/>
+	<input name="Spring-loaded Power Core"/>
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Clockwork Bolt-thrower"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Recurve Crossbow"/>
+	<input name="Aluminum Tube"/>
+	<input name="Brass Mechanisms"/>
+	<input name="Voltaic Cell"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Poison Ampoule Bolt" amount="3"/>
+	<output skill="2" name="Poison Ampoule Bolt" amount="4"/>
+	<output skill="3" name="Poison Bottle Bolt" amount="2"/>
+	<output skill="4" name="Poison Bottle Bolt" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Ingot"/>
+	<input name="Poison Flask"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Acid Ampoule Bolt" amount="3"/>
+	<output skill="2" name="Acid Ampoule Bolt" amount="4"/>
+	<output skill="3" name="Acid Bottle Bolt" amount="2"/>
+	<output skill="4" name="Acid Bottle Bolt" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Ingot"/>
+	<input name="Acid Flask"/>
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Fire Bolt" amount="3"/>
+	<output skill="2" name="Fire Bolt" amount="5"/>
+	<output skill="3" name="Fire Bolt" amount="7"/>
+	<output skill="4" name="Fire Bolt" amount="8"/>
+	<output skill="5" name="Fire Bolt" amount="10"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Ingot"/>
+	<input name="Brimstone"/>
+	<input name="Brass Piping"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Timberbane the All-Natural Blade"/>
+	<tool tag="alchemy"/>
+	<input name="Wooden Sword"/>
+	<input name="Naturey Orb"/>
+	</craft>
+<craft >
+	<output skill="3" name="Three-Pronged Sword"/>
+	<tool tag="smithing"/>
+	<input name="Iron Sword"/>
+	<input name="Iron Sword"/>
+	<input name="Iron Sword"/>
+	</craft>
+<craft>
+	<output skill="4" name="Guan Dao"/>
+	<tool tag="smithing"/>
+	<input name="Bo Staff"/>
+	<input name="Dao"/>
+	<input name="Steel Ingot"/>
+	<input name="Ruby"/>
+	</craft>
+<craft hidden="1">
+	<output skill="3" name="Maple Shield"/>
+	<tool tag="alchemy"/>
+	<input name="Wooden Shield"/>
+	<input name="Toque of Kanada"/>
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="The Ugly Stick"/>
+	<tool tag="alchemy"/>
+	<input name="Spiky Mace"/>
+	<input name="Steel Ingot"/>
+	<input name="Verdant Poison"/>
+	</craft>
+
+<!-- Gaslamp thanks Zara for more silly crafts! -->
+
+<!-- And a balance thing. -->
+
+<craft>
+   <output skill="0" name="Black Powder" amount="1" />
+   <output skill="1" name="Black Powder" amount="2" />
+   <output skill="2" name="Black Powder" amount="3" />
+	<output skill="3" name="Black Powder" amount="4" />
+   <tool tag="tinkerer"/>
+   <input name="Brimstone"/>
+   <input name="Saltpetre"/>
+   <input name="Bituminous Coal"/>
+	</craft>
+
+<!-- 106 crafts -->
+
+<craft hidden="1">
+	<output skill="0" name="Magical Badass Jacket" amount="1" />
+	<tool tag="smithing" />
+	<input name="The Wizard's Sleeve" />
+	<input name="One-armed Leather Jacket" />
+	</craft>
+
+<craft>
+	<output skill="0" name="Mosolov Cocktail" amount="2"/>
+	<output skill="1" name="Mosolov Cocktail" amount="3"/>
+	<output skill="3" name="Mosolov Cocktail" amount="4"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Aqua Vitae" />
+	<input name="Brimstone" />
+	</craft>
+
+<craft>
+	<output skill="0" name="Empty Flask" amount="1"/>
+	<output skill="1" name="Empty Flask" amount="2"/>
+	<output skill="5" name="Empty Flask" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Plastic Ingot"/>
+	</craft>
+
+<craft hidden="1" >
+   <output skill="5" name="Axetar"/>
+   <tool tag="smithing" />
+   <input name="Fine Iron Axe"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	<input name="Copper Wire"/>
+   </craft>
+<craft hidden="1" >
+   <output skill="5" name="The Axekeytar"/>
+   <tool tag="smithing" />
+   <input name="Fine Steel Axe"/>
+	<input name="Plastic Ingot"/>
+	<input name="Plastic Ingot"/>
+	<input name="Spring-loaded Power Core"/>
+   </craft>
+<craft>
+	<output skill="2" name="Electrum Ring" />
+	<tool tag="smithing" />
+	<input name="Electrum Ingot" />
+	<input name="Electrum Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Brass Ring" />
+	<tool tag="smithing" />
+	<input name="Brass Ingot" />
+	<input name="Brass Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Bronze Ring" />
+	<tool tag="smithing" />
+	<input name="Bronze Ingot" />
+	<input name="Bronze Ingot" />
+	</craft>
+<craft>
+  <output skill="0" name="Brimstone" amount="1" />
+  <output skill="1" name="Brimstone" amount="2" />
+  <tool tag="alchemy" />
+  <input name="Diggle Egg" />
+  <input name="Diggle Egg" />
+  </craft>
+
+<!-- Cooking -->
+
+<!-- Ingot Press foods -->
+<craft hidden="0" >
+	<output skill="0" name="Deep Omelette" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Diggle Egg" />
+	<input name="Diggle Egg" />
+	<input name="Diggle Egg" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft hidden="0" >
+	<output skill="0" name="Cheesy Omelette" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Diggle Egg" />
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+	</craft>
+<craft >
+	<output skill="0" name="Grilled Cheese Sandwich" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Cheese" />
+	<input name="Sliced Bread" />
+	</craft>
+
+<!-- Grinder, meatgrinding -->
+<craft>
+	<output skill="0" name="Ground Meat" amount="3" />
+	<tool tag="grinder" />
+	<input name="Fresh Steak" />	
+	</craft>
+<craft>
+	<output skill="0" name="Ground Meat" amount="2" />
+	<tool tag="grinder" />
+	<input name="Steak" />	
+	</craft>
+<craft>
+	<output skill="0" name="Ground Meat" amount="2" />
+	<tool tag="grinder" />
+	<input name="Aged Steak" />	
+	</craft>
+<craft>
+	<output skill="0" name="Ground Meat" amount="2" />
+	<tool tag="grinder" />
+	<input name="Offal" />	
+	</craft>
+<craft>
+	<output skill="0" name="Ground Meat" amount="2" />
+	<tool tag="grinder" />
+	<input name="Cube of Flesh" />	
+	</craft>
+<craft>
+	<output skill="0" name="Ground Meat" amount="4" />
+	<tool tag="grinder" />
+	<input name="Grilled Steak" />	
+	</craft>
+
+<!-- Grinder, cheesegrating -->
+<craft>
+	<output skill="0" name="Grated Cheese" amount="2" />
+	<tool tag="grinder"/>
+	<input name="Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="3" />
+	<tool tag="grinder"/>
+	<input name="Aged Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="4" />
+	<tool tag="grinder"/>
+	<input name="Aged Blue Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="3" />
+	<tool tag="grinder"/>
+	<input name="Cheese Round"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="4" />
+	<tool tag="grinder"/>
+	<input name="Brie Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="4" />
+	<tool tag="grinder"/>
+	<input name="Parmigiano Reggiano Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="5" />
+	<tool tag="grinder"/>
+	<input name="Smoked Applewood Cheddar Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="3" />
+	<tool tag="grinder"/>
+	<input name="Mini Gouda Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="4" />
+	<tool tag="grinder"/>
+	<input name="Chevre Log Cheese"/>
+	</craft>
+<craft>
+	<output skill="0" name="Grated Cheese" amount="4" />
+	<tool tag="grinder"/>
+	<input name="Havarti"/>
+	</craft>
+
+<!-- wands -->
+
+<craft hidden="1">
+   <output skill="2" name="Handy Wand"/>
+	<tool tag="lathe" />
+	<input name="Burnt Out Wand"/>
+   <input name="Zinc Ingot"/>
+   <input name="Amethyst"/>
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Bony Wand"/>
+	<tool tag="lathe" />
+	<input name="Burnt Out Wand"/>
+	<input name="Bone Club"/>
+	<input name="Sewer Brew"/>
+	</craft>
+<craft>
+	<output skill="3" name="Stony Wand"/>
+	<tool tag="lathe" />
+	<input name="Burnt Out Wand"/>
+	<input name="Salt"/>
+	<input name="Hematite" />
+	<input name="Malachite" />
+	</craft>
+<craft>
+	<output skill="2" name="Wand of Tesla"/>
+	<tool tag="lathe" />
+	<input name="Burnt Out Wand"/>
+	<input name="Copper Wire"/>
+	<input name="Plastic Ingot" />
+	<input name="Amber"/>
+	</craft>
+
+<!-- 1.0.10 crafts -->
+<!-- Gaslamp thanks Zaratustra once more for crafting fun. -->
+
+<!-- weapons -->
+<craft>
+   <output skill="2" name="Warhammer" />
+   <tool tag="smithing" />
+   <input name="Hefty Stick" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+	</craft>
+
+<craft>
+   <output skill="4" name="Broadsword" />
+   <tool tag="smithing" />
+   <input name="Steel Sword" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	</craft>
+
+<!-- belts -->
+<craft >
+	<output skill="1" name="Swashbuckling Belt" />
+	<tool tag="still" />
+	<input name="Grog" />
+	<input name="Leather Belt" />
+	</craft>
+
+<craft>
+	<output skill="1" name="Leather Girdle" />
+	<tool tag="smithing" />
+	<input name="Leather Belt" />
+	<input name="Leather Belt" />
+	<input name="Leather Belt" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="1" name="Belt of Champions" />
+	<tool tag="smithing" />
+	<input name="Leather Belt" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	</craft>
+<craft>
+	<output skill="2" name="Belt of Iron Plates" />
+	<tool tag="smithing" />
+	<input name="Leather Belt" />
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	<input name="Iron Ingot" />
+	</craft>
+<craft>
+	<output skill="4" name="Girdle of Shiny Steel Plates" />
+	<tool tag="smithing" />
+	<input name="Leather Girdle" />
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	</craft>
+
+<craft>
+	<output skill="4" name="Trapper's Toolbelt" />
+	<tool tag="tinkerer" />
+	<input name="Tinkerer Parts" />
+	<input name="Leather Girdle" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<!-- gloves -->
+
+<craft>
+	<output skill="1" name="Thick Leather Work Gloves" />
+	<tool tag="smithing" />
+	<input name="Adventuring Gloves" />
+	<input name="Adventuring Gloves" />
+	</craft>
+<craft>
+   <output skill="1" name="Supple Leather Gloves" />
+   <tool tag="alchemy" />
+   <input name="Adventuring Gloves" />
+   <input name="Aqua Fortis" />
+	</craft>
+<craft>
+   <output skill="2" name="Thieving Gloves" />
+   <tool tag="alchemy" />
+   <input name="Supple Leather Gloves" />
+   <input name="Bituminous Coal" />
+	</craft>
+<craft>
+	<output skill="3" name="Platemail Gauntlets" />
+	<tool tag="smithing" />
+	<input name="Thick Leather Work Gloves"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft hidden="1" >
+	<output skill="5" name="Pyromancer's Gauntlets" />
+	<tool tag="smithing" />
+	<input name="Supple Leather Gloves" />
+	<input name="Ruby" />
+	<input name="Gold Ingot" />
+	<input name="Gold Ingot" />
+	</craft>
+
+<!-- pants -->
+<craft>
+   <output skill="1" name="Cutoffs" />
+   <tool tag="tinkerer" />
+   <input name="Adventuring Pants" />
+	</craft>
+<craft>
+   <output skill="1" name="Lederhosen" />
+   <tool tag="tinkerer" />
+   <input name="Adventuring Pants" />
+   <input name="Leather Belt" />
+   <input name="Leather Belt" />
+	</craft>
+<craft>
+	<output skill="0" name="Pirate Training Breeches" />
+	<tool tag="still" />
+	<input name="Adventuring Pants" />
+	<input name="Grog" />
+	</craft>
+<craft hidden="1">
+	<output skill="3" name="Rubber Pants" />
+	<tool tag="alchemy" />
+	<input name="Adventuring Pants" />
+	<input name="Plastic Ingot" />
+	<input name="Brimstone" />
+	<input name="Bituminous Coal" />
+	</craft>
+	
+<craft >
+	<output skill="4" name="Pants of Shiny Steel Plates" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	</craft>
+
+<!-- armour -->
+<craft>
+   <output skill="3" name="Armored Mage's Robe" />
+   <tool tag="smithing" />
+   <input name="Magician's Robe" />
+   <input name="Steel Breastplate" />
+   <input name="Potion of Mana" />
+	</craft>
+<craft>
+   <output skill="5" name="Armored Archmage's Robe" />
+   <tool tag="smithing" />
+   <input name="Armored Mage's Robe" />
+   <input name="Aluminum Ingot" />
+   <input name="Ruby" />
+   <input name="Potion of Steeling" />
+	</craft>
+
+<craft>
+   <output skill="1" name="Iron Breastplate" />
+   <tool tag="smithing" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+   <input name="Iron Ingot" />
+</craft>
+<craft>
+   <output skill="2" name="Steel Breastplate" />
+   <tool tag="smithing" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+   <input name="Steel Ingot" />
+	</craft>
+<craft hidden="1">
+   <output skill="4" name="Mail Hauberk" />
+   <tool tag="smithing" />
+   <input name="Iron Ring" />
+   <input name="Iron Ring" />
+   <input name="Iron Ring" />
+   <input name="Iron Ring" />
+	</craft>
+
+<!-- shields -->
+<craft>
+	<output skill="3" name="Cybernetic Orb" />
+	<tool tag="tinkerer" />
+	<input name="Cracked Orb" />
+	<input name="Voltaic Cell" />
+	<input name="Copper Wire" />
+	</craft>
+
+<!-- bolts -->
+
+
+<!-- throwns -->
+
+<!-- potions -->
+
+<craft>
+	<output skill="5" name="Potion of Alchemical Inspiration" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Replenishment"/>
+	<input name="Potion of Purity"/>
+	<input name="Potion of Clear Vision"/>
+	<input name="Spatial Instability Infusion" />
+	</craft>
+
+<!-- meta-crafts for 1.0.11 -->
+
+<craft>
+	<output skill="4" name="Aetheric Power Cylinder" />
+	<tool tag="tinkerer"/>
+	<input name="Electrum Ingot" />
+	<input name="Platinum Ingot" />
+	<input name="Aqua Regia" />
+	<input name="Diamond" />
+   </craft>
+
+<craft>
+	<output skill="4" name="Slotted Bronze Discs"/>
+	<tool tag="tinkerer"/>
+	<input name="Bronze Ingot" />
+	<input name="Bronze Ingot" />
+	<input name="Bronze Ingot" />
+   </craft>
+
+<craft>
+	<output skill="4" name="Self-sealing Stem Bolt" />
+	<tool tag="tinkerer"/>
+	<input name="Aluminum Tube" />
+	<input name="Brass Mechanisms" />
+	<input name="Copper Wire" />
+	<input name="Brass Piping" />
+   </craft>
+
+<!-- daggers and polearms -->
+<!-- Thank you Zara! Gaslamp Games should send you some lutefisk in thanks. -->
+
+<craft>
+	<output skill="0" name="Shiv"/>
+	<tool tag="smithing"/>
+	<input name="Aluminum Tube"/>
+	</craft>
+<!--<craft>
+	<output skill="0" name="Crude Knife"/>
+	<tool tag="smithing"/>
+	<input name="Iron Ingot"/>
+	</craft> DUPE -->
+<craft>
+	<output skill="1" name="Iron Dirk"/>
+	<tool tag="smithing"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft>
+	<output skill="1" name="Spear"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Bronze Ingot"/>
+	<input name="Bronze Ingot"/>
+	</craft>
+<craft>
+	<output skill="2" name="Very Long Morningstar"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Rough Iron Mace"/>
+	</craft>
+<craft>
+	<output skill="2" name="Trident"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Bronze Ingot"/>
+	<input name="Bronze Ingot"/>
+	</craft>
+<craft>
+	<output skill="4" name="Naginata"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Katana"/>
+	</craft>
+<craft>
+	<output skill="4" name="Partizan"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Steel Axe"/>
+	</craft>
+<craft>
+	<output skill="5" name="Halberd"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Steel Ingot"/>
+	<input name="Fine Steel Axe"/>
+	</craft>
+<craft>
+	<output skill="5" name="Guan Dao"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Steel Ingot"/>
+	<input name="Ruby"/>
+	<input name="Fine Steel Sword"/>
+	</craft>
+
+	<!-- deconstructions -->
+	
+<craft>
+	<output skill="1" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Spear"/>
+	</craft>
+<craft>
+	<output skill="1" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Very Long Morningstar"/>
+	</craft>
+<craft>
+	<output skill="2" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Trident"/>
+	</craft>
+<craft>
+	<output skill="3" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Naginata"/>
+	</craft>
+<craft>
+	<output skill="4" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Partizan"/>
+	</craft>
+<craft>
+	<output skill="5" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Halberd"/>
+	</craft>
+<craft>
+	<output skill="5" name="Hefty Stick"/>
+	<tool tag="smithing"/>
+	<input name="Guan Dao"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rust" amount="1"/>
+	<tool tag="grinder"/>
+	<input name="Rusty Bardiche"/>
+	</craft>
+<craft>
+	<output skill="2" name="Studded Leather Coat"/>
+	<tool tag="smithing"/>
+	<input name="Leather Cuirass"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft>
+	<output skill="5" name="Sabatons"/>
+	<tool tag="smithing"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	</craft>
+
+	
+<!-- More New Expansion3 patch stuff -->
+
+<craft hidden="1">
+	<output skill="5" name="Thermite Lance"/>
+	<tool tag="alchemy"/>
+	<input name="Hefty Stick" />
+	<input name="Powdered Aluminum" />
+	<input name="Rust" />
+	<input name="Molten Orb" />
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Acidspitter"/>
+	<tool tag="tinkerer"/>
+	<input name="Hefty Stick" />
+	<input name="Acidic Rhizome Trap" />
+	<input name="Acidic Rhizome Trap" />
+	<input name="Acidum Salis" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Clockwork Piezoblade"/>
+	<tool tag="tinkerer"/>
+	<input name="Whirling Hunter's Dagger" />
+	<input name="Slotted Bronze Discs" />
+	<input name="Spring-loaded Power Core" />
+	</craft>
+	
+</craftDB>

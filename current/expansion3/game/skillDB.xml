@@ -1,0 +1,352 @@
+<skillDB>
+
+<!-- daggers and polearms moved to core -->
+   
+<!-- Bankster -->
+<!-- start with a gold ring, a tailored suit, and some stock options -->
+
+<skill name="Bankster" id="47" type="rogue" achievement="ACHIEVEMENT_BANKSTER_MASTERY" description="There's nothing an adventurer can't face with a bunch of derivatives, a diversified stock portfolio, and absolutely no morals whatsoever." >
+   <art icon="skills/bankster64.png"/>
+   <loadout type="component" subtype="Rearden Metal Ingot" amount=" 3" always="1" />
+   </skill>
+<ability name="Bankster" icon="skills/bankster64.png" skill="47" startSkill="1">
+   <description text="There's nothing an adventurer can't face with a bunch of derivatives, a diversified stock portfolio, and absolutely no morals whatsoever."/>
+   </ability>
+
+<ability name="High Interest Loan" icon="skills/high_interest_loan64.png" skill="47" level="0" >
+   <description text="Take out a new line of credit from the First International Bank of Diggle today!"/>
+   <spell name="High Interest Loan" />
+   </ability>
+<ability name="Dump Toxic Assets" icon="skills/toxic_assets64.png" skill="47" level="1" >
+   <spell name="Dump Toxic Assets" />
+   <description text="Some investments are simply no good - make them someone else's responsibility! This dumps any Bankster-related penalties onto your target and deals toxic damage based on your Caddishness."/>
+   </ability>
+<ability name="Insurance Fraud" icon="skills/insurance_fraud64.png" skill="47" level="2" >
+   <spell name="Insurance Fraud" />
+   <description text="Insurance, gambling... what's the difference? Take out a policy on yourself, or an enemy, and profit! The payout scales to your Savvy."/>
+   </ability>
+<ability name="Hire Contractor" icon="skills/hire_contractor64.png" skill="47" level="3" >
+   <description text="Hire one of Dredmor's minions as a 'contractor' for 50 turns. ('Bribery' is such an ugly word.)"/>
+   <spell name="Hire Contractor" />
+   </ability>
+<ability name="Fiscal Hedge" icon="skills/zorkmid64.png" skill="47" level="4" >
+   <description text="Make an investment in your own safety; trade your hard 'earned' zorkmids for damage mitigation of up to half of all damage done to you."/>
+   <spell name="Fiscal Hedge" />
+   </ability>
+<ability name="Bailout" icon="skills/bailout64.png" skill="47" level="5" >
+   <description text="You're too big to fail now! Get a bailout to remove all the consequences of your fiscal irresponsibility."/>
+   <spell name="Bailout" />
+   </ability>
+<!--
+<ability name="Bad Investment" icon="skills/bankster64.png" skill="47" level="6" >
+   <description text="NOT Makin' Bank; THIS IS FOR TESTING"/>
+   <spell name="Bad Investment" />
+   </ability>
+-->
+<!--
+Buy-off
+Credit Default Swap
+Bribe
+Bailout
+Hostile Takeover : destroy store - get money?
+Dissolve Assets : acidic attack
+Money Laundering
+Insider Trading
+
+-->   
+
+<!-- Communism -->
+<!-- start with hammer, sickle, and a bottle of vodka -->
+
+<skill name="Communist" id="48" type="warrior" achievement="ACHIEVEMENT_COMMUNISM_MASTERY" description="Workers Unite!" >
+   <art icon="skills/communist64.png"/>
+   <loadout type="weapon" subtype="Sickle" always="1"/>
+   <loadout type="weapon" subtype="Hammer" always="1"/>
+   <loadout type="weapon" subtype="Mosolov Cocktail" always="1" amount="3" />
+   <loadout type="food" subtype="Vodka" always="1" amount="3" />
+   </skill>
+<ability name="Communist" icon="skills/communist64.png" skill="48" startSkill="1">
+   <description text="Workers Unite!"/>
+   </ability>
+
+<ability name="Guerrilla Attack" icon="skills/guerrilla64.png" skill="48" level="0" >
+   <description text="Popular front to be sneak attackink imperialists, then is disappearing before caught!"/>
+   <spell name="Guerrilla Attack" />
+   <secondaryBuff id="12" amount="5" />
+   <!-- Foco? People's War? Attack and vanish? -->
+   </ability>
+<ability name="Socialized Healthcare" icon="skills/socialized_healthcare64.png" skill="48" level="1" >
+  <description text="Glorious Socialist Health Care of Kanadian comrades closes wounds at the steady bureaucratic pace."/>
+  <spell name="The Public Option" />
+   <secondaryBuff id="0" amount="5" /> <!-- hp -->
+   <secondaryBuff id="13" amount="1" /> <!-- regen -->
+   </ability>
+<ability name="General Winter" icon="skills/general_winter64.png" skill="48" level="2" giveItem="Communist Ushanka" >
+   <description text="General Winter will defendink revolution! When you are attack, winter strike down enemies for you." />
+   <resistBuff hyperborean="1" />
+   <playerHitEffectBuff percentage="20" name="General Winter" />
+   <!-- <spell name="General Winter" /> -->
+   <!-- when you get hit: AOE cold spell + cold resist buff  -->
+   </ability>
+<ability name="Dialectical Materialism" icon="skills/dialectical_materialism64.png" skill="48" level="3" >
+   <description text="Revolutionary Science will sweep away the irrationality and superstitions of old! (Removes one random curse and replaces it with a random Communism effect.)"/>
+   <spell name="Dialectical Materialism" />
+   <!-- target other: apply internal contradiction! debuff? -->
+   <!-- target self: remove random curse, replace with minor communism-related debuff? -->
+   </ability>
+<ability name="Vanguard Party" icon="skills/vanguard_party64.png" skill="48" level="4" learnrecipe="Communist Power Ushanka" >
+  <description text="Join Vanguard Party and lead Workink Class to Glorious Victory! (Certain foul Revisionist Anarchists suggest that there is a possibility of negative effects resulting from joinink the Vanguard Party. Ignore enemies of Party, forward revolution at any cost!)"/>
+   <spell name="Vanguard Party" />
+   </ability>
+<ability name="Iron Curtain" icon="skills/iron_curtain64.png" skill="48" level="5" learnrecipe="Communist Power Armour" >
+   <description text="Superior power of Iron Curtain to be protektink the Revolution! (Not by keeping danger OUT, but by keeping Communism IN.)"/>
+   <secondaryBuff id="10" amount="5" /> <!-- armour -->
+   <primaryBuff id="4" amount="5" /> <!-- STU -->
+   <resistBuff hyperborean="2" />
+   </ability>
+<ability name="They've got The Bomb!" icon="skills/the_bomb64.png" skill="48" level="6" giveItem="The Bomb" learnrecipe="The Bomb" >
+   <resistBuff transmutative="3" />
+   <description text="Only by splitting the thaumaturgon and harnessing its power can you keep the Revolution safe." />
+   </ability>
+<!--
+<ability name="Apparatchick" icon="skills/communist64.png" skill="48" level="5" >
+   <description text=" "/>
+   </ability>-->
+<!--
+They've got the bomb!
+Socialized Healthcare
+-->
+
+<!--
+Great Leap Forward
+Juche
+Vanguard Party
+Cult of Personality
+General Winter
+Iron Curtain : Wall to be keeping socialism in.
+Five Turn Plan
+-->
+
+<!-- Egyptian Magic -->
+<!-- heck if I know. It's egyptian stuff! -->
+
+<skill name="Egyptian Magic" id="49" type="wizard" achievement="ACHIEVEMENT_EGYPT_MAGIC_MASTERY" description="Ignore what the guy in the Astrology skill tree says - it's up to YOU to harness pyramid power!" >
+   <art icon="skills/egyptian_magic64.png"/>
+   </skill>
+<ability name="Egyptian Magic" icon="skills/egyptian_magic64.png" skill="49" startSkill="1">
+   <description text="Ignore what the guy in the Astrology skill tree says - it's up to YOU to harness pyramid power!"/>
+   </ability>
+
+<ability name="Glyph of the Asp" icon="skills/asp64.png" skill="49" level="0" >
+   <!-- poison-touch attack; hit then kite -->
+   <description text="Call upon the poisonous power of poisonous snakes. (Why did it have to be snakes!?)"/>
+   <spell name="Glyph of the Asp" />
+   </ability>
+<ability name="Glyph of Imhotep" icon="skills/imhotep64.png" skill="49" level="1" >
+   <!-- traps, healing -->
+   <description text="Call upon the powers of Imhotep, the great physician / architect / chancellor / priest / engineer / etc. ...just think of him as the Egyptian Fonz."/>
+   <spell name="Glyph of Imhotep" />
+   </ability>
+<ability name="Call the Sandstorm" icon="skills/sandstorm64.png" skill="49" level="2" >
+   <!-- vaguely AOE targeted dot -->
+   <description text="Channel the fury of nature and the Ruin of Time to blast away your enemies. The Sandstorm becomes more powerful with each Egyptian Glyph you have active."/>
+   <spell name="Call the Sandstorm" />
+   </ability>
+<ability name="Glyph of Anubis" icon="skills/anubis64.png" skill="49" level="3" >
+   <!-- Death/Undead themed -->
+   <description text="The god Anubis is responsible for death, mummies, and the care and feeding of Ammit, the Eater of Hearts. It's best to stay on his good side."/>
+   <spell name="Glyph of Anubis" />
+   </ability>
+<ability name="Call the Nile" icon="skills/nile64.png" skill="49" level="4">
+   <!-- Giant AOE/push/asphyx : regrowth properties; aesthetic? -->
+   <description text="Call upon the fertile waters of the great Nile!"/>
+   <spell name="Call the Nile" />
+   </ability>
+<ability name="Glyph of the Eye of Ra" icon="skills/eye_of_ra64.png" skill="49" level="5" >
+   <!-- Like giant eye-lasers.-->
+   <description text="Call upon the terrifying burning Eye of Ra!"/>
+   <spell name="Glyph of the Eye of Ra" />
+   </ability>
+
+   <!--
+   hot in here or just me!
+   mummies
+   summon mummies
+   poison snakes
+   sandstorm
+   sands of time
+   time something something
+   traps!
+   life & death : ankh ; ka
+   seducing julius caesar
+   heiroglyphs : mines
+   spell cost in kills
+   entombing
+   canoptic jars
+   scarabs
+   anubis
+   walking like an egyptian
+   ra
+   stargates
+   thoth
+   papyrus
+   the nile
+   fractions? -> mathemagic
+   cats
+   -->
+   
+
+<!-- Magical Law -->
+<!-- like MTG's blue -->
+
+<skill name="Magical Law" id="50" type="wizard" achievement="ACHIEVEMENT_MAGICAL_LAW_MASTERY" description="When crimes are committed by Wizards, only Wizards can bring them to Magical Justice.">
+   <art icon="skills/magical_law64.png"/>
+   </skill>
+<ability name="Magical Law" icon="skills/magical_law64.png" skill="50" startSkill="1">
+   <description text="When crimes are committed by Wizards, only Wizards can bring them to Magical Justice."/>
+   </ability>
+   
+<ability name="Confiscate Evidence" icon="skills/confiscate_evidence64.png" skill="50" level="0">
+   <description text="Cast on items far away to shove them in your inventory. Nothing exceeds the reach of the law!"/>
+   <spell name="Confiscate Evidence" />
+   </ability>
+<ability name="Polymorphic Injunction" icon="skills/polymorphic_injunction64.png" skill="50" level="1">
+   <description text="Using powerful legalese, obtain an injunction against a monster for transformation plus damages."/>
+   <spell name="Polymorphic Injunction" />
+   </ability>
+<ability name="Gag Order" icon="skills/gag_order64.png" skill="50" level="2">
+   <description text="Mutes spellcasting and causes asphyxiative damage, scaling slightly to your lawyerly Savvy."/>
+   <spell name="Gag Order" />
+   </ability>
+<ability name="Rune of Objection" icon="skills/objection64.png" skill="50" level="3">
+   <description text="Overturn a random debuff, forcing it onto your target instead."/>
+   <spell name="Rune of Objection" />
+   </ability>
+<ability name="Writ of Counterspelling" icon="skills/writ_of_counterspelling64.png" skill="50" level="4">
+   <description text="As advertised on late-night TV, obtain a Writ of Counterspelling to reflect dangerous spells back at your foes."/>
+   <spell name="Writ of Counterspelling"/>
+</ability>
+<ability name="Wright's Irrefutable Argument" icon="skills/magical_law64.png" skill="50" level="5">
+   <description text="Your honour, by lack of ex post facto mens rea in extremis, sine qua non the gravamen of the plaintiff's case plumbeus est and the plaintiff non compos mentis, I motion that one of my client's cooldowns be reset, at random."/>
+   <spell name="Wright's Irrefutable Argument"/>
+</ability>
+
+<!-- Paranormal Investigator -->
+<!-- "the truth is in there, somewhere" -->
+
+<skill name="Paranormal Investigator" id="51" type="rogue" achievement="ACHIEVEMENT_PARANORMAL_INVESTIGATOR_MASTERY" description="The truth is in here, somewhere.">
+   <art icon="skills/paranormal_investigator64.png"/>
+   </skill>
+<ability name="Paranormal Investigator" icon="skills/paranormal_investigator64.png" skill="51" startSkill="1">
+   <description text="The truth is in here, somewhere."/>
+   </ability>
+   
+<ability name="There Must Be A Rational Explanation" icon="skills/rational_explanation64.png" skill="51" level="0">
+   <description text="Raise your resistance to magic. The downside? You will also be unable to cast spells. But why should it matter? Magic is a hoax!"/>
+   <spell name="Rational Explanation" />
+   <secondarybuff id="11" amount="2" /> <!-- resist -->
+   </ability>
+   
+<ability name="Close Encounter" icon="skills/close_encounter64.png" skill="51" level="1">
+   <description text="Flip switches, operate doors, open chests all at a distance with your strange, new powers. They did this to you for a reason. This means something."/>
+   <spell name="Close Encounter" />
+   <primarybuff id="1" amount="1" /> <!-- sagacity -->
+   <secondarybuff id="11" amount="1" /> <!-- resist -->
+   </ability>
+
+<ability name="Skepticism" icon="skills/skepticism64.png" skill="51" level="2">
+   <description text="You're going to bust this conspiracy wide open, and expose this monster for what it really is!"/>
+   <spell name="Skepticism" />
+   <resistbuff existential="1" />
+   </ability>
+
+<ability name="Xenochemistry" icon="skills/xenochemistry64.png" skill="51" level="3">
+   <description text="Transmute one potion into another using experimental alien compounds. WARNING: exposure to experimental substances may result in super powers and/or death."/>
+   <spell name="Xenochemistry" />
+   <resistbuff toxic="3" transmutative="1" />
+   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+</ability>   
+
+<ability name="Alien Autopsy" icon="skills/alien_autopsy64.png" skill="51" level="4">
+   <description text="Occasionally discover crafting recipes from the bodies of fallen monsters. The secrets of alien technology can be yours!"/>
+   <targetKillBuff name="Alien Autopsy" percentage="2" />
+</ability>
+   
+<ability name="Alien Weapon" icon="skills/alien_weapon64.png" skill="51" level="5">
+   <description text="Employ alien biomagnetic technology to pull meteors from the heavens and onto a monster. (It is strongly recommended you do not stand next to them while doing this.)"/>
+   <spell name="Alien Weapon" />
+</ability>
+   
+   
+<!-- Tourist -->
+<!--  -->
+
+<skill name="Tourist" id="52" type="wizard" achievement="ACHIEVEMENT_TOURISM_MASTERY" description="Look, Martha! It's a dungeon full of quaint folksy crafting items and charming native monster populations! Let me get the camera...">
+   <art icon="skills/tourist64.png"/>
+  <!-- tourists start with a camera-->
+  <loadout type="wand" subtype="Camera" always="1"/>
+</skill>
+  
+<ability name="Tourist" icon="skills/tourist64.png" skill="52" startSkill="1">
+   <description text="You had such a lovely time last year vacationing in another dungeon, you thought you'd try the Dungeons of Dredmor this year. Such a lovely place and what beautiful scenery!"/>
+</ability>
+   
+<ability name="Relax and Unwind" icon="skills/relax_and_unwind64.png" skill="52" level="0">
+   <description text="Escape the rat-race, and let the relaxing atmosphere of your vacation refresh your body and mind, boosting your natural health and mana regeneration."/>
+   <secondaryBuff id="13" amount="1" /> <!-- life regen -->
+   <secondaryBuff id="14" amount="1" /> <!-- mana regen -->
+   </ability>
+<ability name="See the Sights" icon="skills/see_the_sights64.png" skill="52" level="1">
+   <description text="Increase your range of vision. Seeing further will help you pick out those interesting bits of local culture. The downside? You stick out like a sore thumb, gawking like that."/>
+   <spell name="See the Sights" />
+   <secondaryBuff id="16" amount="1" /> <!-- trap sense -->
+   </ability>
+<ability name="Handle Strange Foreign Currencies" icon="skills/foreign_currency64.png" skill="52" level="2">
+   <description text="Receive more Zorkmids from pickups due to the exchange rate. Why is the money so weird in foreign parts?"/>
+   <zorkmidbuff percent="0.1" />
+</ability>
+<ability name="Meet Interesting People" icon="skills/meet_people64.png" skill="52" level="3">
+   <description text="Say hello to the locals by welcoming a random dungeon denizen into your midst. I hope they're friendly!"/>
+   <spell name="Meet Interesting People" />
+   </ability>
+<ability name="Sample the Local Cuisine" icon="skills/sample_cuisine64.png" skill="52" level="4">
+   <description text="In foreign parts, people eat all kinds of things! Use this on any item to consume it."/>
+   <spell name="Sample the Local Cuisine" />
+   <resistbuff toxic="1" />
+   </ability>
+<ability name="Get Away from It All" icon="skills/get_away64.png" skill="52" level="5">
+   <description text="Tired of grinding for experience amidst mortal danger? Whisk yourself up a dungeon level to safety. (The management is not responsible for any lost luggage.)"/>
+   <spell name="Get Away from It All" />
+   </ability>
+
+<!-- Electric Warrior -->
+<!-- like some kind of magical bard warrior -->
+<!--
+<skill name="Electric Warrior" id="51" type="warrior" description="For those about to Rock.">
+   <art icon="skills/electric_warrior64.png"/>
+   </skill>
+<ability name="Electric Warrior" icon="skills/electric_warrior64.png" skill="51" startSkill="1">
+   <description text="For those about to rock."/>
+   </ability>
+   
+<ability name="Axe Smasher" icon="skills/electric_warrior64.png" skill="51" level="0">
+   <description text="Rock out with a brutal attack that gets stronger as you get drunker."/>
+   </ability>
+<ability name="Power Chord" icon="skills/electric_warrior64.png" skill="51" level="1">
+   <description text="You've got the power. Boost your attack power at the expense of your defence."/>
+   </ability>
+<ability name="Turn It Up" icon="skills/electric_warrior64.png" skill="51" level="2">
+   <description text=""/>
+   </ability>
+<ability name="Heavy Metal" icon="skills/electric_warrior64.png" skill="51" level="3">
+   <description text="A balls-to-the-wall dashing power attack, fast as a shark."/>
+   </ability>
+<ability name="Set the Stage" icon="skills/electric_warrior64.png" skill="51" level="4">
+   <description text="Shock and burn your enemies with stage lights and pyrotechnics. You're really good live."/>
+   </ability>
+<ability name="Power Ballad" icon="skills/electric_warrior64.png" skill="51" level="5">
+   <description text="This heart-wrenching, lighter-waving ballad from the depths of your soul inflicts massive existential damage. It may, however, put some listeners to sleep."/>
+   </ability>
+-->
+
+</skillDB>
