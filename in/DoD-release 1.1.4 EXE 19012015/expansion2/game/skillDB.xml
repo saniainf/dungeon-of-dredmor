@@ -1,0 +1,204 @@
+﻿<skillDB>
+	
+<!-- Clockwork Knights by Ruigi-->
+
+<skill name="Заводной рыцарь" id="41" type="warrior" achievement="ACHIEVEMENT_CLOCKWORK_KNIGHT_MASTERY" description="Вы вооружены последними разработками паровой военной техники. Слава Империи! Изобретательство и кузнечное дело положительно влияют на ваши механические атаки.">
+  <art icon="skills/clockwork_knight64.png"/>
+  <loadout type="armour" subtype="Кожаная шапка с символом Шестерни" always="1"/>
+</skill>
+<ability name="Заводной рыцарь" icon="skills/clockwork_knight64.png" skill="41" startSkill="1">
+  <description text="Вы вооружены последними разработками паровой военной техники. Слава Империи! Навык изобретательства положительно влияет на ваши механические атаки."/>
+</ability>
+
+<ability name="Собиратель хлама" icon="skills/tech_scavenger64.png" skill="41" level="0" learnrecipe="Очки изобретателя">
+  <targetKillBuff name="Сбор хлама" taxa="Механизм" percentage="25" />
+  <description text="Вследствие близкого знакомства с механической технологией, ваш глаз намётан на поиск ценных запчастей в грудах мусора и останках поверженных механических противников." />
+</ability>
+<!-- TODO on levelup, gain Clockwork Harpoon recipe -->
+<ability name="Ракетный кулак" icon="skills/rocket_fist64.png" skill="41" level="1" learnrecipe="Цепкий заводной болт">
+  <spell name="Ракетный кулак"/>
+  <secondarybuff id="19" amount="1" />
+  <!-- smith -->
+  <description text="Вы можете время от времени выстреливать кулакообразной ракетой из пушки, установленной на руке, чтобы дать встреченным негодяям понюшку имперского кулака." />
+</ability>
+<!-- TODO on levelup, gain Clockwork Rocket recipe -->
+<ability name="Ракетный прыжок" icon="skills/rocket_jump64.png" skill="41" level="2" learnrecipe="Паровой ракетный болт" >
+  <description text="Умение выстреливать своё тело в воздух, взрывая у себя под ногами заряд взрывчатки в момент, когда ноги отрываются от земли. Эта смелая атака может изрядно удивить противника, особенно если приземлиться ему на голову. Изобретательство увеличивает силу взрыва. Работает только по прямой."/>
+  <spell name="Ракетный прыжок"/>
+  <secondarybuff id="20" amount="1" />
+  <!-- tinkering -->
+</ability>
+<ability name="Аугментированные конечности" icon="skills/augmented_limbs64.png" skill="41" level="3" learnrecipe="Заводная механическая конечность">
+  <description text="Вы оснащены паровыми конечностями, которые могут автоматически перейти в разрушительный автономный режим, разрывая противников поблизости."/>
+  <targetHitEffectBuff percentage="5" name="Заводное буйство" />
+</ability>
+<ability name="Параболический меха-прыжок" icon="skills/mecha_stomp64.png" skill="41" level="4" learnrecipe="Заводной привод">
+  <description text="Вы взмываете в воздух и обрушиваетесь обратно на землю. Мощь ваших механических конечностей сотрясает подземелье как буря, швыряющая крохотную лодчонку в суровом море метафор."/>
+  <spell name="Параболический меха-прыжок"/>
+</ability>
+<ability name="Волшебномехакинетический гаситель" icon ="skills/damper64.png" skill="41" level="5" learnrecipe="Имперский заводной шлем" >
+  <description text="Ваш костюм производит мощное поле, гасящее инерцию. Оно помогает защититься от взрывов и снарядов, однако будучи энергетическим полем, требует большого объёма энергии для поддержания." />
+  <spell name="Волшебномехакинетический гаситель"/>
+  <secondarybuff id="19" amount="1" />
+  <!-- smith -->
+</ability>
+<ability name="Атака паровой бригады" icon="skills/steam_charge64.png" skill="41" level="6" learnrecipe="Имперский заводной нагрудник">
+  <spell name="Eruption Slam"/>
+  <description text="Реактивные двигатели в обуви запускают вас прямиком в гущу схватки! Сокрушите врагов славой Империи! За королеву и страну! Естественно, работает только по прямой."/>
+  <secondarybuff id="20" amount="1" />
+  <!-- tinkering -->
+</ability>
+
+<!-- Clockwork Rogue by Ruigi -->
+
+<skill name="Лихой ученый" id="42" type="rogue" achievement="ACHIEVEMENT_SCIENCE_ROGUE_MASTERY"  description="Ваши разработки в магомеханике и алхимии слегка чересчур революционны для своего времени. Изобретательство, знание волшебных палочек и алхимия делают ваши научные атаки сильнее.">
+	<art icon="skills/clockwork_rogue64.png"/>
+	<loadout type="wand" subtype="Звуковой жезл" always="1"/>
+	<loadout type="weapon" subtype="Колба кислоты" amount="2" always="1"/>
+	<loadout type="weapon" subtype="Колба яда" amount="2" always="1"/>
+	</skill>
+<ability name="Лихой ученый" icon="skills/clockwork_rogue64.png" skill="42" startSkill="1">
+	<description text="Ваши разработки в магомеханике и алхимии слегка чересчур революционны для своего времени. Изобретательство, знание волшебных палочек и алхимия делают ваши научные атаки сильнее."/>
+	</ability>
+
+<ability name="Химический расхититель" icon="skills/chemic_pilferer64.png" skill="42" level="0" giveitem="Алхимическая слизь">
+	<targetKillBuff name="Добыча слизи" taxa="Нечто странное" percentage="20" />
+	<description text="Вы научились экстрагировать любопытную слизь из некоторых видов монстров, которая, путём патентованного преобразования, может быть превращена в ценные алхимические реагенты. Внимание: Слизь из подземелья токсична и не даст, повторяю, не даст вам никаких суперспособностей при употреблении внутрь."/>
+	<resistbuff toxic="1" />
+	</ability>
+<ability name="Бароматический пульсатор" icon="skills/sonic_cannon64.png" skill="42" level="1" >
+	<spell name="Sonic Blast"/>
+	<description text="Звуковой проецирующий прибор собственного изобретения позволяет вам выстреливать фокусированный звуковой заряд, оглушающий одного противника. Чем выше ваш навык изобретательства, тем больше повреждений наносит заряд."/>
+	</ability>
+<ability name="Кислотный распылитель" icon="skills/acidical_projector64.png" skill="42" level="2" >
+	<description text="Вы изобрели это устройство, чтобы, будь у вас такое желание, распылять на противника кошмарную кислоту. Состав кислоты усложняется, а её коррозивность растёт с ростом ваших познаний в алхимии."/>
+	<spell name="Кислотный распылитель"/>
+	<resistbuff acidic="1" />
+	</ability>
+<ability name="Заводные рефлексы" icon="skills/clockwork_reflexes64.png" skill="42" level="3" >
+	<description text="Заводные механизмы улучшают ваши рефлексы придавая им холодную, механическую точность. При каждой контратаке ваши конечности с некоторым шансом нанесут рефлекторную атаку во всех направлениях сразу." />
+	<counterBuff percentage="20" name="Заводные рефлексы" />
+	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	</ability>
+<ability name="Баллон алхимических токсинов" icon="skills/gas_canister64.png" skill="42" level="4" >
+	<description text="Алхимическая граната при попадании выпускает алхимические субстанции боевой концентрации. Избегайте запуска непосредственно в противника - граната может отскочить. Газ становится более действенным с ростом навыка алхимии. Избегайте попадания на слизистые оболочки." />
+	<spell name="Баллон алхимических токсинов"/>
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	</ability>
+<ability name="Магомеханический дыхательный аппарат" icon="skills/rebreather_mask64.png" skill="42" level="5" learnrecipe="Механомагический респиратор" giveitem="Механомагический респиратор" >
+	<description text="Герметичная маска защищает вас от агрессивных воздействий среды. Поддержание функциональности маски требует затрат магической энергии."/>
+	<spell name="Магомеханический дыхательный аппарат"/>
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	</ability>
+<ability name="Бароматический циклон" icon="skills/baromatic_vortex64.png" skill="42" level="6">
+	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	<description text="Механизм пульсатора был улучшен для выстреливания мощным циклонным зарядом, проходящим сквозь тела множественных противников. Это устройство наносит больше повреждений с ростом навыка изобретательства."/>
+	<spell name="Baromatic Vortex Blast"/>
+	<resistbuff blasting="1" />
+	</ability>
+<ability name="Эфирный луч смерти" icon="skills/aetheric_death_ray64.png" skill="42" level="7" >
+	<spell name="Эфирный луч смерти"/>
+	<secondarybuff id="23" amount="2" /> <!-- wandlore -->
+	<description text="Вершина вашей изобретательской деятельности, этот луч столь очевидно смертелен, что заставляет войну, с её неотъемлемой смертельностью, выглядеть нерационально. Нас ждёт эпоха мира! Но сначала - демонстрация прибора..."/>
+	</ability>
+
+
+<!-- Practical Geology by Null -->
+ 
+<skill name="Боевая геология" id="43" type="warrior" achievement="ACHIEVEMENT_GEOLOGY_MASTERY"  description="Подобно всем геологам, вы можете вызывать землетрясения, облачать себя в камень и превращать врагов в окаменелости.">
+  <art icon="skills/geology64.png"/>
+</skill>
+<ability name="Боевая геология" icon="skills/geology64.png" startskill="1" skill="43" >
+  <description text="Подобно всем геологам, вы можете вызывать землетрясения, облачать себя в камень и превращать врагов в окаменелости."/>
+</ability>
+
+<ability name="Плутонический кулак" icon="skills/stone_fist64.png" level="0" skill="43" >
+  <description text="Вы можете превратить руку, или лапшеобразную конечность (в том числе свою, при наличии) в камень, подобно тому, что составляет землистое ядро самой Земли. Улучшает показатели ближнего боя за счёт ухудшения боевых навыков и подвижности. Стиль боя, умный как камень."/>
+  <secondarybuff id="7" amount="2"/> <!-- block -->
+  <!-- block -->
+  <spell name="Плутонический кулак"/>
+</ability>
+<ability name="Секрет камня" icon="skills/stone_toughness64.png" level="1" skill="43" >
+  <description text="Знание той тайны, которую нашёптывают камни, даёт вам каменистое покрытие, коим большинство камней обладает изначально."/>
+  <resistbuff crushing="1" piercing="1" conflagratory="1"/>
+  <secondarybuff id="7" amount="2"/> <!-- block -->
+  <!-- block -->
+  <blockBuff percentage="50" name="Секрет камня"/>
+  <!-- Nerf: cut to half -->
+</ability>
+<ability name="Сейсмический апперкот" icon="skills/seismic_uppercut64.png" level="2" skill="43" >
+  <description text="С помощью одной лишь мысли вы вызываете сейсмическую волну, вырывающуюся из земли под противником. Последующее небольшое землетрясение служит для оглушения оставшихся врагов."/>
+  <secondarybuff id="7" amount="1"/> <!-- block -->
+  <!-- block -->
+  <spell name="Сейсмический апперкот"/>
+</ability>
+<ability name="Базальтовая кожа" icon="skills/rock_armour64.png" level="3" skill="43" >
+  <description text="Ваша кожа подобна камню с низким содержанием кремния. Это помогает защититься от клыков, когтей, клинков и тёмных деловых предложений, которые могут обратить против вас встреченные монстры подземелий."/>
+  <spell name="Базальтовая кожа"/>
+  <resistbuff slashing="1"/>
+  <secondarybuff id="7" amount="3"/> <!-- block -->
+  <!-- block -->
+</ability>
+<ability name="Окаменение" icon="skills/petrification64.png" level="4" skill="43" >
+  <description text="Заточает одну (1) цель в каменный панцирь, полностью парализуя и со временем удушая её."/>
+  <spell name="Окаменение"/>
+</ability>
+<ability name="Дрожь" icon="skills/quake64.png" level="5" skill="43" >
+  <description text="Основания самой земли задрожат и сотрясутся под ногами ваших врагов! Оглушает всех противников поблизости. Эффект сильнее возле эпицентра."/>
+  <spell name="Дрожь"/>
+</ability>
+
+<!-- Warlock by Essence -->
+
+<skill name="Боевая магия" id="44" type="wizard" achievement="ACHIEVEMENT_WARLOCK_MASTERY"  description="Чародеи с волшебниками только и мечтают, что стать воинами. Или разбойниками. Или торговцами сыром. Чем угодно кроме волшебников и чародеев, честное слово.">
+  <loadout type="armour" subtype="Алюминиевая волшебническая шляпа" always="1" /> <!-- check this --> 
+  <art icon="skills/warlockery64.png" /> 
+  </skill>
+
+<ability name="Боевая магия" icon="skills/warlockery64.png" skill="44" startSkill="1">
+	<description text="Чародеи с волшебниками только и мечтают, что стать воинами. Или разбойниками. Или торговцами сыром. Чем угодно кроме волшебников и чародеев, честное слово." /> 
+	</ability>
+
+<ability name="Могучее касание" icon="skills/puissant_touch64.png" skill="44"  level="0" polymorphedOnly="0" polymorphTag="Warlock Battle Form">
+	<description text="Зачем копаться во всех этих заклинаниях, жестах и вонючих порошках? Просто введите пылающую магическую энергию в тело противника одним прикосновением пальца."/> 
+	<secondaryBuff id="7" amount="2"/> <!-- block -->
+	<spell name="Могучее касание"/> 
+	</ability>
+
+<ability name="Одеяние маны" icon="skills/battle_form64.png" skill="44" level="1">
+	<description text="Делайте как волшебники! Облекайте свои чресла в магические щиты, дабы смертоносные враги не смогли вас достать. Каждый удар, получаемый магическим одеянием, расходует вашу ману." />
+	<spell name="Одеяние маны" /> 
+   </ability>
+
+<ability name="Испытание боевого мага" icon="skills/warlocks_challenge64.png" skill="44"  level="2">
+	<description text="Несколько волшебных слов и пара магических жестов без проблем притянут всех окрестных монстров в область ближнего боя. В буквальном смысле притянут. Будучи боевым магом, вам, вероятно, только этого и нужно."/>
+	<spell name="Испытание боевого мага"/>
+	<secondaryBuff id="7" amount="3"/> <!-- block -->
+	</ability>
+
+<ability name="Воплощение битвы" icon="skills/supercharged64.png" skill="44" level="3">
+	<description text="Напрямую заряжая свою физическую оболочку чистой магической энергией, вы становитесь бескомпромиссной боевой машиной." /> 
+	<spell name="Воплощение битвы"/> 
+	</ability>
+
+<ability name="Хрономантическое вмешательство" icon="skills/chronomantic_twist64.png" skill="44"  level="4">
+	<description text="Манипулируя чистой магической энергией вы можете изменить ткань пространства-времени вокруг своего тела, что даёт вам возможность в течении некоторого времени перемещаться, пока остальные стоят неподвижно. Однако, будьте осторожны, ведь время, которое вы заняли у вселенной нужно будет отдать обратно немедля по истечению действия заклинания."/> 
+	<spell name="Хрономантическое вмешательство"/> 
+	</ability>
+
+<ability name="Пелена могущества" icon="skills/puissant_field64.png" skill="44"  level="5">
+	<description text="Вы овладели опасным навыком, позволяющим вам поддерживать нестабильную защитную пелену, сотканную из пылающей магической энергии. Её сила изжарит эфирной энергией каждого, кто осмелится атаковать вас вблизи."/>
+	<!-- because bloody blockbuff doesn't work, let's do it this way -->
+	<playerHitEffectBuff percentage="100" name="Puissant Discharge"/> 
+	</ability>
+	<!-- til it works -->
+<ability name="Эфирный конденсатор" icon="skills/arcane_capacitor64.png" skill="44" level="6">
+	<description text="Открывая врата на 11 план реальности вы заряжаете своё оружие (или ботинок) устрашающе мощной смесью эфирных энергий, готовых обрушить на противника магическое разрушение. Внимательно следите за уровнем заряда: слишком ранняя атака будет слаба, но слишком большой заряд может выйти из-под контроля." /> 
+	<spell name="Эфирный конденсатор" /> 
+	</ability>
+<ability name="Manacalypse " icon="skills/manacalypse64.png" skill="44" level="7">
+	<description text="Высвобождая сразу всю вашу ману вы обрушиваете поток магической энергии на всех и вся вокруг, одновременно выходя из заряженной формы. Также, ваша заряженная форма становится сильнее и полнее маной." /> 
+	<spell name="Манапокалипс" /> 
+	</ability>
+
+</skillDB>

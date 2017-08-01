@@ -1,0 +1,277 @@
+﻿<!-- Dredmor free DLC crafts -->
+
+<craftDB>
+	
+<craft hidden="0">
+	<output skill="2" name="Звуковой жезл" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Латунный слиток"/>
+	<input name="Латунные механизмы"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="3" name="Жемчужносияющий жезл" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Слиток электрума" />
+	<input name="Чёрный жемчуг" />
+	</craft>
+<!-- this totally needs art 
+<craft hidden="1">
+	<output skill="3" name="Жезл Ван де Граафа" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Алюминиевый слиток" />
+	<input name="Медная проволока" />
+	<input name="Энергетический элемент" />
+	</craft>
+-->
+ 
+<craft>
+	<output skill="6" name="Жезл трансперевоплощения" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Стальной слиток" />
+	<input name="Бирюза" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Заводной опустошитель" />
+	<tool tag="tinkerer"/>
+	<input name="Заводной цепной топор" />
+	<input name="Заводной цепной топор" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Шлицованные бронзовые диски" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Заводной рельсотрон" />
+	<tool tag="tinkerer"/>
+	<input name="Заводной болтомёт" />
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Шлицованные бронзовые диски" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Заводной громохлоп" />
+	<tool tag="tinkerer"/>
+	<input name="Великий боевой молот" />
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Латунные механизмы" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="2" name="Паровой ракетный болт" amount="1"/>
+	<output skill="4" name="Паровой ракетный болт" amount="2"/>
+	<output skill="6" name="Паровой ракетный болт" amount="3"/>
+	<output skill="8" name="Паровой ракетный болт" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	<input name="Порох" />
+	<input name="Стальной слиток" />
+	</craft>
+<craft hidden="1" >
+	<output skill="1" name="Цепкий заводной болт" amount="1"/>
+	<output skill="2" name="Цепкий заводной болт" amount="2"/>
+	<output skill="3" name="Цепкий заводной болт" amount="3"/>
+	<output skill="4" name="Цепкий заводной болт" amount="4"/>
+	<output skill="5" name="Цепкий заводной болт" amount="5"/>
+	<output skill="6" name="Цепкий заводной болт" amount="6"/>
+	<output skill="7" name="Цепкий заводной болт" amount="7"/>
+	<output skill="8" name="Цепкий заводной болт" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Стальной слиток" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	</craft>
+<!-- 
+<craft hidden="1" >
+	<output skill="3" name="Зажигательная граната" amount="1"/>
+	<output skill="5" name="Зажигательная граната" amount="2"/>
+	<output skill="7" name="Зажигательная граната" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Стальной слиток" />
+	<input name="Алюминиевый порошок" />
+	<input name="Ржавчина" />
+	<input name="Латунные механизмы" />
+	</craft>	
+	-->
+	
+<craft hidden="1" >
+	<output skill="3" name="Заводной пиломеч" amount="1"/>
+	<output skill="5" name="Заводной пиломеч" amount="2"/>
+	<output skill="7" name="Заводной пиломеч" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Стальной слиток" />
+	<input name="Стальной слиток" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="3" name="Заводная дрелевая бомба" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Заводной буроболт" />
+	<input name="Медная проволока" />
+	<input name="Латунные механизмы" />
+	<input name="Железная бомба" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Заводной отражатель" />
+	<tool tag="tinkerer"/>
+	<input name="Варяжский щит" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	</craft>
+	
+<craft hidden="1" >
+	<output skill="5" name="Заводное сверлокопьё" />
+	<tool tag="tinkerer"/>
+	<input name="Нагината" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Заводной тесла-жезл" />
+	<tool tag="tinkerer"/>
+	<input name="Качественная стальная булава" />
+	<input name="Энергетический элемент" />
+	<input name="Медная проволока" />
+	<input name="Медная проволока" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Заводной цепной меч" />
+	<tool tag="tinkerer"/>
+	<input name="Качественный стальной меч" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	</craft>
+
+<craft hidden="1">
+	<output name="Заводной привод" skill="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Штаны из сияющих стальных пластин"/>
+	<input name="Пружинный силовой механизм"/>
+	<input name="Энергетический элемент"/>
+	<input name="Латунные механизмы"/>
+	</craft>
+
+<craft hidden="1">
+	<output name="Заводной регулирующий пояс" skill="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Пояс с сияющими стальными пластинами"/>
+	<input name="Меднокабельный пояс"/>
+	<input name="Энергетический элемент"/>
+	<input name="Латунные механизмы"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Имперский заводной нагрудник" />
+	<tool tag="tinkerer"/>
+	<input name="Латный доспех" />
+	<input name="Латунный слиток" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Шлицованные бронзовые диски" />
+   </craft>
+
+<craft hidden="1">
+	<output skill="6" name="Имперский заводной шлем" />
+	<tool tag="tinkerer"/>
+	<input name="Рыцарский шлем" />
+	<input name="Очки изобретателя" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Латунный слиток" />
+   </craft>
+
+<craft hidden="1">
+	<output skill="6" name="Механомагический респиратор" />
+	<tool tag="tinkerer"/>
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Очки изобретателя" />
+	<input name="Изумруд" />
+	<input name="Латунный слиток" />
+   </craft>
+	
+<craft hidden="0">
+	<output skill="3" name="Меднокабельный пояс"/>
+	<tool tag="tinkerer"/>
+	<input name="Медный слиток"/>
+	<input name="Медная проволока"/>
+	<input name="Медная проволока"/>
+	<input name="Медная проволока"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Железный слиток" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Железные обломки"/>
+   <input name="Железные обломки"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Стальной слиток" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Стальные обломки"/>
+   <input name="Стальные обломки"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Медный слиток" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Обломки медных труб"/>
+   <input name="Обломки медных труб"/>
+	</craft>
+
+<craft>
+	<output skill="1" name="Алюминиевый слиток" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Обломки алюминиевых труб"/>	
+	<input name="Обломки алюминиевых труб"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="4" name="Заводная сфера" amount="1"/>
+	<tool tag="tinkerer" />
+	<input name="Треснувшая сфера" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	</craft>
+
+<craft hidden="0">
+	<output skill="1" name="Соль" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Алхимическая слизь" />
+	<input name="Алхимическая слизь" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Селитра" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Алхимическая слизь" />
+	<input name="Алхимическая слизь" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Сера" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Алхимическая слизь" />
+	<input name="Алхимическая слизь" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Пластмассовый слиток" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Алхимическая слизь" />
+	<input name="Алхимическая слизь" />
+	</craft>
+
+</craftDB>

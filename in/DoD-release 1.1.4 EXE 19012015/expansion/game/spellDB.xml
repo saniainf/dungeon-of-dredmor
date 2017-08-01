@@ -1,0 +1,1172 @@
+﻿<spellDB>
+
+  <!--BIG GAME HUNTER-->
+  
+<!-- Butcher should be passive -->
+<!--can butcher animal corpses for food -->
+	<!--Unfinished
+<spell name="Мясник" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+	-->
+<spell name="Мясник" type="target" icon="skills/butcher32.png" wand="0">
+	<!-- <effect type="damage" slashing="5"/> # no point; on-death effect -->
+	<!-- spawn some meats -->
+	<effect affectsCorpses="0" type="spawnitemfromlist">
+		<option name="Потроха"/>
+		<option name="Кубик мяса"/>
+		<option name="Потроха"/>
+		<option name="Кубик мяса"/>
+		<option name="Свежий стейк"/>
+		<option name="Фарш"/>
+		<option name="Фарш"/>
+		<option name="Стейк"/>
+		<option name="Выдержанный стейк"/>    
+		</effect>
+	<description text="Вы разделываете животных, ведь вы так любите их свежую, кровоточащую плоть. Это выходит у вас неосознанно, прямо во время битвы, благодаря заложенным в мускульную память мясницким рефлексам." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+ </spell>
+
+<!-- For tracker -->
+
+<spell name="Заманен" type="target" icon="skills/tracker32.png" wand="1" >
+   <buff useTimer="1" time="30" self="0" allowstacking="0" icon="skills/tracker64.png" smallicon="skills/tracker32.png" >
+      <halo name="sprites/sfx/rage/rage" first="0" num="3" frameRate="100"/>
+      <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+      <secondarybuff id="10" amount="-2"/> <!-- armor -->
+      <secondarybuff id="2" amount="-2"/> <!-- melee power -->
+      <resistbuff crushing="-1" slashing="-1" />
+      </buff>
+   <description text="Этот монстр был приманен к вам."/>
+   <anim sprite="sprites/sfx/hero_glow/hero_glow" frames="3" framerate="60" sfx="magic" centerEffect="1"/>
+   </spell>
+
+<spell name="Охотничья приманка" type="template" templateID="10" icon="skills/tracker32.png" downtime="24" >
+	<effect affectsCorpses="0" type="shout" />
+	<effect affectsCorpses="0" type="trigger" spell="Заманен" />
+	<description text="Вы имитируете крики разных видов монстров, подманивая их к себе. В частности, вы в совершенстве овладели имитацией брачного клича буррней, который вы делаете, сжимая ладони определённым образом и быстро-быстро шевеля пальцами, одновременно продувая воздух сквозь всё это безобразие." />
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	</spell>
+
+	<!--summon a pack of hunting diggles for X turns s(short) after which they disappear.  something about duck hunt, or diggles not actually having noses. -->
+	<!--Unfinished-->
+
+<spell name="Summon Hunting Diggle" type="targetemptyfloor" icon="skills/release_the_hounds32.png" >
+	<requirements mp="1" />
+	<effect type="summon" monsterType="Обученный охотничий буррень" amount="4" />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="100" sfx="blast" centerEffect="1"/>
+	<description text="Summon a Hunting Diggle." />
+	</spell>
+
+<spell name="Спустить гончих" downtime="60" anchored="1" type="template" templateID="09" icon="skills/release_the_hounds32.png" wand="0">
+	<description text="Release the Trained Hunting Diggles!" />
+	<effect type="trigger" spell="Summon Hunting Diggle" />
+	<!-- turn this into a template thing to summon 3 of 'em -->
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	</spell>
+	
+
+<spell name="Ужасный трофей" type="self" icon="skills/trophy_collector32.png" wand="0">
+	<effect affectsCorpses="0" type="grantxp" amount="16"/>
+	<description text="Вырезайте трофеи и получайте непонятные, жуткие награды. (Иными словами, вы получаете дополнительный опыт, убивая животных)" />
+	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="fleshbore" centerEffect="0"/>
+	</spell>
+<!-- killing placeholder
+<spell name="Самая опасная дичь" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+-->
+  <!--KILLER VEGAN-->
+
+<!-- Green Harvest should be passive -->
+<!--can harvest food from veggie corpses -->
+<spell name="Зелёный урожай" type="target" icon="skills/green_harvest32.png" wand="0">
+	<effect type="damage" slashing="5"/>
+	<effect affectsCorpses="0" type="spawnitemfromlist">
+		<option name="Тофу"/>
+		<option name="Груша"/>
+		<option name="Слива"/>
+		<option name="Яблоко"/>
+		</effect>
+	<description text="The streets shall run green!" />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Веганская гордость" type="self" icon="skills/killer_vegan32.png" wand="0">
+	<effect type="grantxp" amount="12"/>
+	<description text="Вы получаете опыт за убиение овощей, эхей!" />
+	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="fleshbore" centerEffect="0"/>
+	</spell>
+  
+<!--charms animals or makes you invisible to animals -->
+<spell name="Make Animal Friend" downtime="54" type="missile" icon="skills/animal_friend32.png" wand="0">
+	<effect type="charm" turns="100" taxa="Животное" />
+	<description text="Your animal friend will fight for you because they love you sooo much. (Go animal friend, fight for me!)" />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+<!--Stat bonus due to clean living  Unfinished
+  <spell name="Чистая жизнь" downtime="1" type="missile" icon="skills/mystic_missile32.png" wand="0">
+    <effect type="damage" existential="1"/>
+    <description text="Placeholder." />
+    <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+    <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+  </spell>
+-->
+
+<spell name="Падший веган" type="self" icon="skills/fallen_vegan32.png" wand="0">
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="darkmagic" />
+   <effect type="damage" existential="1" self="1" />
+   <buff useTimer="1"
+			time="200"
+         stackable="1" stacksize="3"
+         icon="skills/fallen_vegan64.png"
+         smallicon="skills/fallen_vegan32.png"
+         bad="1" >
+      <halo name="sprites/sfx/glintA/glintA" first="0" num="5" frameRate="100"/>
+		<secondarybuff id="13" amount="-5" /> <!-- hp regen -->
+		<secondarybuff id="14" amount="-5" /> <!-- mp regen -->
+		<primarybuff id="0" amount="-5"/> 
+		<primarybuff id="1" amount="-5"/> 
+      <primarybuff id="2" amount="-5"/>
+		<primarybuff id="3" amount="-5"/> 
+		<primarybuff id="4" amount="-5"/> 
+		<primarybuff id="5" amount="-5"/> 
+      <sightbuff amount="-1" />
+      </buff>
+   <description text="Вы потеряли свою веганскую силу, потому что преступили Грань Вегана. Вы ослаблены тёмной энергией мяса, молока и/или мёда (если вы не пчеган, конечно), до тех пор, пока ваше тело и дух не будут должным образом очищены."/>
+	</spell>
+
+<!--passive holy damage of shame to nearby monsters-->
+<!--
+<spell name="Self-Righteous Aura" downtime="1" type="missile" icon="skills/mystic_missile32.png" wand="0">
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="magic" />
+	<buff useTimer=""
+	<effect type="damage" righteous="6"/>
+	
+	<description text="Placeholder." />
+	
+	</spell>
+  -->
+<!-- Vegan Shame ; debuff -->
+<spell name="Позор вегана" type="self" icon="skills/vegan_shame32.png" wand="0" >
+	<effect type="damage" existential="1" />
+	<anim sprite="sprites/sfx/curse_loop/curse_loop" frames="7" framerate="100" sfx="naughty" /> 
+	<buff useTimer="1" time="53" stackable="1" stacksize="3"
+		icon="skills/vegan_shame64.png" smallicon="skills/vegan_shame32.png"
+		bad="1" >
+		<primarybuff id="5" amount="-2" />
+		<primarybuff id="4" amount="-2" />
+		<primarybuff id="3" amount="-2" />
+		<resistbuff existential="-1" />
+	</buff>
+	<description text="Вы опорочили само имя веганов! Какой позор! Но однажды вам удастся отмыть его." />	
+	</spell>
+
+<!-- Vegan Purging ; debuff -->
+<spell name="Очищение вегана" type="self" icon="skills/vegan_purging32.png" wand="0" >
+	<effect type="damage" existential="1" />
+	<buff useTimer="1" time="53" stackable="1" stacksize="3"
+		icon="skills/vegan_purging64.png" smallicon="skills/vegan_purging32.png"
+		bad="1" >
+		<primarybuff id="0" amount="-2" />
+		<primarybuff id="1" amount="-2" />
+		<primarybuff id="2" amount="-2" />
+		<resistbuff existential="-1" />
+	</buff>
+	<description text="Ваше тело осквернено нечистыми продуктами! Рано или поздно это пройдёт, но... Позор вам!" />	
+	</spell>
+  
+<spell name="Разрыв круговорота жизни" downtime="120" type="self" icon="skills/level5vegan32.png" wand="0">
+	<effect type="removebuffbyname" name="Очищение вегана" amount="1" />
+	<effect type="removebuffbyname" name="Позор вегана" amount="1" />
+	<effect type="removebuffbyname" name="Падший веган" amount="1" />
+	<description text="Вы познали веганский секрет о разрыве круговорота жизни: теперь вам по силам очистить свои тело с разумом одной лишь силой воли." />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="choir" />
+	</spell>
+
+  <!--DEMONOLOGIST-->
+
+<spell name="Turn Demon Hit" type="template" templateID="11" icon="skills/turn_demon32.png">
+	<effect type="damage" righteous="1"  />
+	<effect type="damage" taxa="Демон" burn="1" righteous="5" righteousF="0.15" />
+	<effect type="fear" taxa="Демон" amount="12" turns="12" />
+	<effect type="knock" affectsCorpses="0" taxa="Демон" amount="2"/>
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90"  centerEffect="0" sfx="choir" />
+	</spell>
+
+<spell name="Изгнание демона" downtime="21" type="missile" icon="skills/turn_demon32.png" wand="0">
+	<effect type="trigger" spell="Turn Demon Hit" taxa="Демон" />
+	<description text="The power of Krong compells you - get OUT demons, I saayyyy get OUT!" />
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<impact sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Рвение флагеллянта" type="self" icon="skills/flagellant32.png" wand="0" >
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+	<buff useTimer="1" time="10" stacksize="4" icon="skills/flagellant64.png" smallicon="skills/flagellant32.png" >
+		<resistbuff crushing="1" necromantic="1" />
+		<damagebuff righteous="1" />
+		<secondarybuff id="0" amount="-2" />
+		<secondarybuff id="2" amount="1" /> <!-- melee pow -->
+      </buff>
+	<description text="Пока вас продолжают избивать, ваш боевой дух растёт." />
+	</spell>
+	
+<!-- I'm unconvinced there needs to be a spell for this one ; And I'm liable to agree -dgb
+<spell name="Eternal Warrior" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	Unfinished
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell> -->
+
+<spell name="Огонь Геенны" downtime="42" type="self" icon="skills/demon_fire32.png" wand="0">
+	<!--adds fire (unholy?) to your attacks, fire aura-->
+	<!-- test -->
+   <anim sprite="sprites/sfx/pyre_loop/pyre_loop" frames="4" sfx="flame" framerate="100" centerEffect="1"/>
+   <buff useTimer="0" attacks="5" removable="1" stacksize="1" stackable="0" icon="skills/demon_fire64.png" smallicon="skills/demon_fire32.png">
+      <damagebuff conflagratory="2"/>
+      <resistbuff conflagratory="4"/>
+      <targetHitEffectBuff percentage="51" name="Ignition Bolt"/>
+		<targetHitEffectBuff percentage="49" name="Flamefield 1" />
+   </buff>
+   <description text="Заставьте ваших врагов страдать, медленно коптя их над адским огнём." />
+	</spell>
+
+	<!--Creates a special tile that when someone (the player) is standing on it, makes them more powerful.-->
+	<!--Unfinished; needs code to target tile-->
+
+<!--
+<spell name="Божественный круг" downtime="1" type="targetfloor"
+		icon="skills/celestial_circle32.png"
+		wand="0"
+		mineTimer="32" 
+		mineSpritePNGSeries="sprites/sfx/arcA/arcA" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+      mineSpriteDrawOrder="0"
+		minePermanent="1" >	
+   <effect type="damage" righteous="10" affectscaster="1" />
+   <anim sprite="sprites/sfx/fireburst/fireburst" frames="7" sfx="flame" centerEffect="1"/>
+   <description text="You put your demonologist hand in, you put your demonologist hand out and shake it all about." />
+ </spell>
+-->
+
+<spell name="Божественный круг" type="self" icon="skills/celestial_circle32.png" wand="0">
+	<requirements mincost="5" mp="15" savvyBonus="0.15" />
+	<buff useTimer="0" destroyonmove="1" stacksize="1" manaUpkeep="3" allowstacking="0" icon="skills/celestial_circle64.png" smallicon="skills/celestial_circle32.png">
+		<halo name="sprites/sfx/conflux/conflux" first="0" num="3" frameRate="100"/>
+		<primarybuff id="4" amount="10"/> <!-- Stubborness -->
+		<primarybuff id="2" amount="-12"/> <!-- Nimbleness -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="7" amount="45"/> <!-- block -->
+		<secondarybuff id="11" amount="70"/> <!-- resist --> 
+		<secondarybuff id="13" amount="5"/> <!-- hp regen -->
+		<resistbuff conflagratory="9" necromantic="9" aethereal="9" transmutative="9" />
+	</buff>
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
+	<description text="Вы достаёте из широких, демонологических штанин... мелок! До тех пор, пока вы остаётесь в пределах нарисованного им круга, никакое зло не должно быть способно вам повредить." />
+   </spell>
+
+<!--
+<spell name="" downtime="1" type="missile" icon="skills/demonic_contract32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="This deal is getting worse all the time." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+-->
+
+<spell name="Summon Swarmy" type="targetemptyfloor" icon="skills/demonic_contract32.png" >
+	<requirements mp="1" />
+	<effect type="summon" monsterType="Демонический иммигрант" amount="4" />
+	<anim sprite="sprites/sfx/black_ritual/black_ritual" frames="10" framerate="100" sfx="naughty" centerEffect="1"/>
+	<description text="Summon a Swarmy." />
+	</spell>
+	
+<spell name="Инфернальный контракт" downtime="66" type="template" anchored="1" templateID="09" icon="skills/demonic_contract32.png" wand="0">
+	<description text="Только представьте себе всё то могущество, что может оказаться у вас в руках! Призовите стайку жителей преисподней, готовую исполнить любое ваше приказание. Стоит, однако, следить за условиями контракта, которые постоянно норовят ущемить ваши права." />
+	<effect type="trigger" spell="Summon Swarmy" />
+	<!-- turn this into a template thing to summon 3 of 'em -->
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<effect type="trigger" amount="3" spell="Небольшой кровавый долг" />
+	<effect type="trigger" amount="2" spell="Длительное ослабление" />
+	<effect type="trigger" amount="7" spell="Плата душой" />
+   <effect type="trigger" amount="3" spell="Длительная бестолковость" />
+	</spell>
+
+
+
+<!--demonic powers buff-->
+  <!--Unfinished-->
+  <!--
+<spell name="No, You are the Demons" downtime="1" type="missile" icon="skills/eternal_warrior32.png" wand="0">
+  
+  <effect type="damage" existential="1"/>
+  <description text="The abyss has looked back into you and taken up residence on your couch. It doesn't even take out the trash." />
+  <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+-->
+<spell name="Форма демона" type="self" icon="skills/demon32.png" wand="0">
+  <!--Assume the form of a demon, possibly when inconvenient -->
+  <buff useTimer="1" time="13" stacksize="1" self="1"  icon="skills/you_are_the_demons64.png" smallicon="skills/you_are_the_demons32.png" bad="1" >    
+		
+		<!-- FIXME This stuff. -->
+		<polymorph name="Красный здоровяк"/>
+		<primarybuff id="0" amount="10"/><!-- Bur -->
+		<primarybuff id="1" amount="-15"/><!--Sag -->
+		<primarybuff id="5" amount="-15"/><!--Sav -->
+		<secondarybuff id="2" amount="5"/><!-- melee -->
+		<secondarybuff id="10" amount="5"/><!-- armour -->
+		<secondarybuff id="1" amount="-20" /> <!-- mana -->
+		<secondarybuff id="3" amount="-10" /> <!-- magpow -->
+		<secondarybuff id="14" amount="-10" /> <!-- mana regen -->
+		<damagebuff crushing="3" />
+		<resistbuff righteous="-3" hyperborean="-3" />
+	</buff>
+
+  <description text="Ты и есть демоны." />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	<!-- trigger some bad stuff -->
+	<!-- TODO -->
+</spell>
+
+<spell name="Инфернальное осквернение" type="self" >
+	<anim sprite="sprites/sfx/evil_pact/evil_pact" frames="16" framerate="80" centerEffect="1" sfx="darkmagic" />
+	<buff useTimer="1" stackable="1" stacksize="8" time="99" icon="skills/demonic_contract64.png" smallicon="skills/demonic_contract32.png" >
+		<primarybuff id="0" amount="-4" />
+		<primarybuff id="1" amount="-4" />
+		<primarybuff id="2" amount="-4" />
+		<primarybuff id="3" amount="-4" />
+		<primarybuff id="4" amount="-4" />
+		<primarybuff id="5" amount="-4" />      
+		</buff>
+	
+	<description text="Осквернённая тёмными силами, ваша вечная душа горит в адском огне... Будем надеяться, оно того стоило." />
+	</spell>
+
+  <spell name="Flames of the Heckforge" type="item" downtime="72" icon="skills/heckforge32.png">
+    <description text="Rebuild your artifact in the Flames of the Heckforge."/>
+    <effect type="cleanseartifact"/>
+    <effect type="trigger" spell="Инфернальное осквернение" amount="1" percent="50"/>
+    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_damage"/>
+  </spell>
+
+  <!--WEREDIGGLE-->
+  
+<spell name="Обличье обурротня" downtime="50" type="self" icon="skills/werediggle_form32.png" wand="0">
+
+  <!--Assume the form of a werediggle!  better abilities, can't use non-werediggle attacks.  Perhaps the transformation is temporary?-->
+
+  <buff useTimer="1" time="33" stacksize="1" self="1"  icon="skills/werediggle_form64.png" smallicon="skills/werediggle_form32.png">    
+		
+		<!-- FIXME This stuff. -->
+		<polymorph name="Буррень"/>
+		<primarybuff id="0" amount="1"/><!-- Bur -->
+		<primarybuff id="3" amount="1"/><!-- Cad -->
+		<secondarybuff id="2" amount="2"/><!-- melee -->
+		<secondarybuff id="10" amount="2"/><!-- armour -->
+		<secondarybuff id="6" amount="5" /> <!-- dodge -->
+		<damagebuff piercing="3" />
+	</buff>
+
+  <description text="Вы - буррень!" />
+  <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+
+<spell name="Буррневая чума" type="target" icon="skills/diggle_plague32.png" >
+	<buff useTimer="1" time="24"
+		allowstacking="0"
+    stacksize="1"
+		self="0"
+		icon="skills/diggle_plague64.png" 
+		smallicon="skills/diggle_plague32.png" 
+      bad="1" >
+      <primarybuff id="0" amount="-3"/> <!-- Burliness -->
+      <primarybuff id="1" amount="-3"/> <!-- Sagacity -->
+      <primarybuff id="2" amount="-3"/> <!-- Nimbleness -->
+      <secondarybuff id="0" amount="-5"/> <!-- hp -->
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<resistbuff crushing="-1" hyperborean="-1" toxic="-1" />
+		<!-- oh yes, it'll get nasty -->
+		<targetHitEffectBuff percentage="10" name="Буррневая чума" />
+		<playerHitEffectBuff percentage="5" name="Буррневая чума" />
+<!--		<effect type="dot" spell="Diggle Plague Hit" affectsCorpses="0" affectsCaster="1" amount="44" self="1"/> -->    
+   </buff>
+	<description text="Это же жуткая буррневая чума! Скорей бегите бросая огненные шары на ходу. Иначе кто знает, что может произойти." />
+	</spell>
+	
+<spell name="Diggle Plague Hit" type="target" icon="skills/diggle_plague32.png" >
+   <effect type="damage" putrefying="1" percent="30" affectsCaster="1" />
+	<effect type="damage" putrefying="2" percent="20" affectsCaster="1" />
+	<effect type="damage" putrefying="3" percent="10" affectsCaster="1" />
+	<effect type="trigger" spell="Small Weak Poison Cloud" percent="5" affectsCaster="1" />
+	</spell>	
+
+<spell name="Коммандо" type="self" downtime="33" icon="skills/going_commando32.png" >
+	<description text="Лучше буррня может быть только невидимый буррень, которым ты не ещё бывал."/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open"/>
+		<buff useTimer="1" time="10" icon="skills/going_commando64.png" smallicon="skills/going_commando32.png" stacksize="1" self="1" >
+		<invisible />
+	</buff>
+   </spell>
+
+<!--
+option 1: Drill a Diggle egg into your enemy!  Causes damage over time, and when it dies you gain a limited-time diggle friend.  Diggle egg required, and sold separately.
+option 2: Lay an egg, hatch it or eat it
+-->
+
+<spell name="Откуда-откуда?" downtime="27" type="self" icon="skills/diglet32.png" wand="0">
+  <effect type="spawnitematlocation" itemName="Яйцо буррня"/>
+  <description text="Вы не очень-то хотите знать, как именно работает этот навык. Ну, по крайней мере, без завтрака вы не останетесь."/>
+</spell>
+
+	<spell name="Могучий буравчик" downtime="2" type="adjacentwall" icon="skills/mighty_auger32.png" wand="0">
+  <effect type="dig" regengfx="1"/>
+  <anim sprite="sprites/sfx/digging_ray_hit/digging_ray_hit" frames="9" framerate="90" sync="1" sfx="magic" centerEffect="0"/>
+	<description text="Smash through an adjacent wall with your mighty drilling-proboscis." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	</spell>
+  
+<spell name="Удар архибуррня" downtime="7" type="adjacent" icon="skills/archdiggle_smash32.png" attack="1" >
+   <description text="Strike with the strength of the Diggle Masters! Damage scales to your Caddishness."/>
+   <effect type="damage" piercing="5" piercingF="0.25" primaryScale="3" blasting="6" /> <!-- scales to caddishness -->
+   <effect type="bleed" />
+   <effect type="trigger" spell="Blast Effect A" />
+   <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+</spell>
+
+	<!--hp recovery?  diggle rage?-->
+	<!--Unfinished-->
+  <!--
+<spell name="Доктор Буррень и мистер Хайд" downtime="1" type="missile" icon="skills/doctor_diggle32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+  -->
+  <!--Piracy-->
+
+<!-- Plundering will be passive, methinks -->
+    <!--loot or gold bonus-->
+  <!--Unfinished-->
+  <!--
+  <spell name="Грабёж" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+
+  <effect type="damage" existential="1"/>
+  <description text="Placeholder." />
+  <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+-->
+<spell name="Мародёрство" type="targetfloor" icon="skills/plunder32.png" >
+	<!-- <effect type="spawnitematlocation" itemname="zorkmids" /> -->
+	<effect affectsCorpses="0" type="spawnitemfromlist">
+		<option name="Янтарь"/>
+		<option name="Аметист"/>
+		<option name="Аквамарин"/>
+		<option name="Сердолик"/>
+		<option name="Цитрин"/>
+		<option name="Изумруд"/>
+		<option name="Пиритовый диск" />
+		<option name="Чёрный жемчуг" />
+		<option name="Рубин" />
+		<option name="Сапфир" />
+		<option name="Бирюза" />
+		<option name="Бриллиант" />
+	</effect>
+	</spell>
+
+<!--Combat Skill-->
+<spell name="Головорезность" downtime="44" type="self" icon="skills/swashbuckling32.png" wand="0">
+	<buff useTimer="1" time="4" stacksize="1" stackable="0" icon="skills/swashbuckling64.png" smallicon="skills/swashbuckling32.png">
+		<secondarybuff id="8" amount="75"/> <!-- counter -->
+		</buff>
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="metal_get" />
+	<description text="Грязная техника боя, которую вы выучили в вашу бытность океанским головорезом. Она позволяет вам парировать несколько последующих атак, направленных против вас." />
+	</spell>
+  
+<!-- Escape Skill; combine confusing mists w/ short sneak/invis? buff -->
+
+<spell name="Корсарский туман" downtime="80" type="self" icon="skills/corsair32.png" wand="0">
+	<!-- <effect type="trigger" spell="Секундная невидимость" /> -->
+	<effect type="trigger" spell="Corsair Mists Effect" />
+	<buff useTimer="1" time="8" stacksize="1" stackable="0" icon="skills/corsair64.png" smallicon="skills/corsair32.png">
+		<secondarybuff id="12" amount="50" /> <!-- sneak -->
+		<secondarybuff id="6" amount="20" /> <!-- dodge -->
+	</buff>
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<description text="Призван скрывать любые пиратские действия от глаз властей. Может весьма пригодиться для отступления из опасной ситуации. К сожалению, может быть призван не так уж и часто." />
+	</spell>
+
+<spell name="Corsair Mists Effect" 
+		type="targetfloor" 
+		icon="skills/corsair32.png" 
+		mineTimer="32" 
+		mineUseGlints="1" 
+		mineGlintDensity="8" 
+		mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="8" 
+		mineSpritePNGRate="150" 
+		mine="1"
+      mineSpriteDrawOrder="1"
+		mineradius="2"
+		wand="0">
+	<effect type="pacify" />
+	<effect type="confuse" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="blast" centerEffect="1"/>
+   <description text="It's a confusing piratical mist."/>
+   </spell>
+
+<!-- For the corsair to make their getaway -->
+<spell name="Секундная невидимость" type="self" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open" />
+	<buff useTimer="1" time="1" icon="skills/rogue/skill_stealth0_64.png" smallicon="skills/rogue/skill_stealth0_32.png" stackable="0" self="1" >
+		<invisible amount="1" />
+      <sightbuff amount="-3" />
+	</buff>
+	<description text="На мгновение вас здесь будто бы никогда и не было."/>
+   </spell>
+
+<!-- Mega debuff? kills resistance, armour, attack -->
+<spell name="Чёрная метка" downtime="50" type="target" icon="skills/black_spot32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Каждый, кто получил чёрную метку, может надеяться лишь на быструю смерть. Ну, или на её аналог: двойной гамбургер с беконом и картошкой. Суть в том, что отмеченная цель обречена без всякой надежды, так что пользуйтесь этой штукой осторожно." />
+	<anim sprite="sprites/sfx/hex_orb/hex_orb" frames="6" framerate="100" sfx="hex_missile" />
+	<buff useTimer="1"
+			time="20"
+			stacksize="1"
+			self="0"
+			stackable="0"
+			icon="skills/black_spot64.png"
+			smallicon="skills/black_spot32.png"
+			bad="1">
+		<halo name="sprites/sfx/hex_orb/hex_orb" first="0" framerate="100" num="6" />
+		<secondarybuff id="6" amount="-20"/> <!-- counter -->
+		<secondarybuff id="7" amount="-20"/> <!-- block -->
+		<secondarybuff id="8" amount="-20"/> <!-- dodge -->
+      <secondarybuff id="2" amount="-5"/> <!-- melee power -->
+      <secondarybuff id="10" amount="-5"/> <!-- armour -->
+		<resistbuff crushing="-4" piercing="-4" slashing="-4" existential="-10" />
+      </buff>
+   </spell>	
+
+<!-- Fire a cannon shot -->
+<!-- Adapted from Ruigi's enhanced broadside spell -->
+
+<spell name="Залп" type="targetfloor" downtime="44" icon="skills/broadside32.png" wand="0">
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" framerate="10" sfx="broadside" centerEffect="1"/>
+	<!--<effect type="trigger" spell="Broadside Report"/>-->
+	<effect type="trigger" spell="Broadside Smoke"/>
+	<effect type="trigger" spell="Broadside Volley"/>
+	<!--<effect type="trigger" spell="Broadside Leftovers" after="1" />-->
+	<description text="Give 'em the broadside, me hearties! (And don't ask where the cannon is hidden.)" />
+	</spell>
+	<!-- cannon firing flash -->
+<spell name="Broadside Report" type="template" templateID="30" anchored="1" icon="skills/broadside32.png" wand="0">
+	<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="60" centerEffect="1" sfx="explosion" sync="1"/>
+	<effect type="damage" conflagratory="4" blasting="6" blastingF=".15" primaryscale="3" /> <!-- cad? -->
+	</spell>
+	<!-- cannon firing smoke --> 
+<spell name="Broadside Smoke" type="template" templateID="04" anchored="1" icon="skills/broadside32.png" wand="0">
+	<effect type="trigger" spell="Mini Harmless Steam Cloud" />
+	</spell>
+	<!-- cannon volley impact! -->
+<spell name="Broadside Volley" type="template" templateID="10" anchored="0" icon="skills/broadside32.png" wand="0">
+	<effect type="trigger" spell="Cannon Projectile" />
+	</spell>
+<spell name="Cannon Beam Damage" type="beam" >
+	<effect type="trigger" spell="Cannon Beam Damage" />
+	<effect type="damage" blasting="4" crushing="4" />
+	<effect type="knock" amount="1" self="0" after="1" />
+	<anim sprite="sprites/sfx/smokepuffA/smokepuffA" frames="8" framerate="40" centerEffect="0" sfx="blast" sync="1" />
+	</spell>
+<spell name="Cannon Projectile" type="missile" icon="skills/broadside32.png" wand="0">
+	<effect type="damage" affectsCaster="1" blastingF="0.25" crushingF="0.15" primaryscale="3" crushing="8" blasting="8" /> <!-- cad -->
+	<effect type="trigger" spell="One Tile Cannon Hit Blast" percent="50" />
+	<anim sprite="items/thrown_solid_shot.png" sfx="explosion" sync="1" />
+	<impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="50" centerEffect="0" sfx="explosion" />
+	<effect type="trigger" spell="Broadside Report" amount="0"/>
+	<effect type="trigger" spell="Spawn Cannon Shot" percentage="55" />
+	</spell> 
+ 
+	<!-- cannon shot items -->
+	<!--
+<spell name="Broadside Leftovers" type="template" templateID="10" anchored="0" icon="skills/broadside32.png" wand="0">
+	<effect type="trigger" spell="Spawn Cannon Shot" percentage="55" />
+	</spell> -->
+<spell name="Spawn Cannon Shot" type="target" icon="skills/broadside32.png" wand="0" >
+	<effect type="spawnitemfromlist">
+		<option name="Пушечное ядро"/>
+		</effect>
+	<impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="50" centerEffect="0" sfx="explosion" />
+	</spell>
+
+<spell name="One Tile Cannon Hit Blast" type="target" >
+   <effect type="damage" blasting="6" affectscaster="1" />
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="50" centerEffect="1" sfx="blast"/>
+   <effect type="knock" amount="1" self="0"/>
+   </spell>
+
+
+
+<!--
+
+<spell name="Залп" downtime="44" type="missile" icon="skills/broadside32.png" wand="0">
+   <effect type="damage" affectsCaster="1" crushing="8" blasting="4" />
+	<effect type="damage" blasting="4" affectscaster="1" />
+   <effect type="knock" amount="2" self="0"/>
+	<effect type="spawnitematlocation" percent="75" itemname="Пушечное ядро" amount="1"/>
+	<description text="Give 'em the broadside, me hearties! (And don't ask where the cannon is hidden.)" />
+	<anim sprite="items/thrown_solid_shot.png" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" centerEffect="0" sfx="explosion" />
+	<effect type="trigger" spell="Broadside Shot" percent="25" />
+	<effect type="trigger" spell="Broadside Shot" percent="15" />
+	<effect type="trigger" spell="Broadside North" />
+	<effect type="trigger" spell="Broadside South" />
+	<effect type="trigger" spell="Broadside West" />
+	<effect type="trigger" spell="Broadside East" />
+	</spell>
+
+<spell name="Broadside Shot" type="missile" >
+   <effect type="damage" affectsCaster="1" blastingF="0.35" crushingF="0.25" primaryscale="3" crushing="8" blasting="8" />
+   <effect type="trigger" spell="One Tile Concussion Blast" percent="50" />
+	<effect type="spawnitematlocation" percent="75" itemname="Пушечное ядро" amount="1"/>
+	<description text="Give 'em the broadside, me hearties! (And don't ask where the cannon is hidden.)" />
+	<anim sprite="items/thrown_solid_shot.png" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" centerEffect="0" sfx="explosion" />
+	</spell>
+--> 
+<!--
+<spell name="Buccannering" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+<spell name="Mutineering" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+<spell name="Skullduggery" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	<effect type="damage" existential="1"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell> -->
+
+  <!--Emomancy-->
+
+<!--Reverse blink (blinks monster away from you)-->
+<spell name="Нас растелепортирует любовь" type="target" icon="skills/emo_blink32.png" wand="0">
+	<requirements mp="6" savvyBonus="0.1" mincost="3" />
+	<effect type="displace" affectsCorpses="0" />  
+	<description text="You can't be together any more." />
+	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+
+<!--Negative buff-->
+<!-- Possibly boring; backburner this
+<spell name="Spell of Weeping" downtime="1" type="missile" icon="skills/placeholder64.png" smallicon="skills/mystic_missile32.png" wand="0">
+	<requirements mp="6" savvyBonus="0.1"/>
+	<effect type="damage" existential="5"/>
+	<description text="Placeholder." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+-->
+
+<!--We could use another healing spell-->
+<!-- add a negative effect to this -->
+<spell name="Лекарство" type="self" icon="skills/the_cure32.png" wand="0">
+	<requirements mp="16" savvyBonus="0.1" mincost="6" />
+	<effect type="randomuncurse" amount="1" />
+	<effect type="heal" amount="7" amountF="0.2"/>
+	<effect type="trigger" spell="Проклятье эмо" amount="1" />
+	<description text="Лекарство The Cure излечит вашу душу, но вам придётся заплатить страшную цену, которая навсегда останется запечатлена в школьном фотоальбоме." />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="emo_buff" />
+	</spell>
+
+<spell name="Проклятье эмо" type="self" >
+   <anim sprite="sprites/sfx/evil_pact/evil_pact" frames="16" framerate="80" centerEffect="1" sfx="emo_debuff" />
+   <buff useTimer="1" self="1"  stackable="1" stacksize="8" time="99" icon="skills/emomancy64.png" smallicon="skills/emomancy32.png" >
+      <primarybuff id="0" amount="-1" />
+		<primarybuff id="1" amount="-1" /> 
+		<primarybuff id="2" amount="-1" />
+		<resistbuff existential="-1" />
+      </buff>
+   <description text="Контакт с потоками эмомагии оставил на вас неизгладимый след неудовлетворённости бытием и необъяснимое желание покрасить волосы. Эффект невозможно удалить обычными методами снятия проклятий." />
+   </spell>
+
+<!--acid missile-->
+<spell name="Мой химический взрыв" type="missile" icon="skills/chemical_explosion32.png" wand="0">
+	<requirements mp="24" savvyBonus="0.15" mincost="8" />
+	<effect type="damage" acidic="5"/>
+	<effect type="trigger" spell="Chemical Explosion" />
+	<description text="Chemical Explosion." />
+	<impact sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="70" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/acid_ball/acid_ball" frames="4" framerate="90" centerEffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Chemical Explosion" 
+		type="targetfloor" 
+		icon="skills/chemical_explosion32.png" 
+		mine="1" 
+		mineradius="2"
+		minePermanent="0" 
+		mineTimer="16" 
+		mineUseGlints="1" 
+		mineGlintDensity="6"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/acid_puff/acid_puff"
+		mineSpritePNGFirst="0" mineSpritePNGNum="6" mineSpritePNGRate="120" >
+	<requirements mp="28" savvyBonus="0.28" mincost="9" />
+	<effect type="damage" acidic="2" acidicF="0.15" asphyxiative="2" asphyxiativeF="0.10" putrefying="2" putrefyingF="0.05" affectscaster="1" />
+	<effect type="trigger" spell="Умеренный кислотный ожог" />
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="100" centerEffect="1" sfx="magic" />
+	<description text="Chemical Explosion. Don't breathe this." />
+   </spell>
+
+<!--As long as it lasts, magic in its radius will cease to be-->
+	<!--Unfinished-->
+<spell name="Вязкое поле ангста" type="missile" icon="skills/dampening32.png" wand="0">
+	<requirements mp="16" savvyBonus="0.2" mincost="8" />
+	<effect type="damage" existential="2"/>
+	<effect type="trigger" spell="Depressing Antimagic Cloud" />
+	<description text="До тех пор пока существует это тёмное облако, оно будет подавлять магию в своей области действия." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="emo_debuff" />
+	</spell>
+
+<spell name="Знак чего-то" type="targetfloor" icon="skills/whatever32.png" wand="0"
+      mine="1" 
+      mineradius="1"
+		mineTimer="20"
+      minePermanent="1"
+      mineSpriteDrawOrder="0"
+      mineSpritePNGSeries="sprites/sfx/whatever/whatever" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="4" 
+      mineSpritePNGRate="100" >  
+	<!--Does existential damage? -->
+	<effect type="damage" existential="2" existentialF="0.1" />
+	<effect type="pacify" />
+	<effect type="paralyze" turns="1" affectscaster="0" percent="25"/>
+	<effect type="trigger" spell="Апатия" />
+	<requirements mp="18" savvyBonus="0.15" mincost="8"/>
+	<description text="This sigil saps the ability to care about stuff or do anything useful. It is commonly found inscribed in the locale of those incessant bohemian youths." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="rune_set" />
+	<ai hint="mine" />
+</spell>
+
+<!--Some sort of resistance buff -->
+<spell name="Знак чёрной туши" type="self" icon="skills/black_eyeliner32.png" wand="0">
+	<requirements mp="24" savvyBonus="0.3" mincost="8" />
+	<effect type="damage" existential="1"/>
+	<description text="Чёрная тушь (не туша!) знак битых, но не сломанных и размалёванных, но не накрашенных. Что-то вроде того." />
+	<anim sprite="sprites/sfx/curse_loop/curse_loop" frames="7" framerate="90"  centerEffect="0" sfx="emo_buff" />
+   <buff useTimer="0" removable="1" stackable="0" stacksize="1" manaUpkeep="5" icon="skills/black_eyeliner64.png" smallicon="skills/black_eyeliner32.png">
+      <secondarybuff id="10" amount="2"/> <!-- armour -->
+      <secondarybuff id="11" amount="12"/> <!-- resist -->
+      <resistbuff necromantic="1"/>
+      <resistbuff aethereal="1"/>
+      <resistbuff transmutative="2"/>
+      <resistbuff righteous="2"/>
+		<resistbuff existential="3" />
+   </buff>	
+	</spell>
+
+<!-- leave some fun behind? debuff? -->
+<!-- large existential weepy weepy damage field -->
+
+<spell name="Depressing Elemental Hit" type="target" >
+	<effect type="damage" existential="2" existentialF="0.2" />
+	<effect type="pacify" amount="1" />
+	</spell>
+
+<spell name="Депрессивный стихийный удар" type="beam" icon="skills/depressing_blast32.png" wand="0" >
+	<requirements mp="32" savvyBonus="0.30" mincost="12" />
+	<effect type="damage" existential="8" existentialF="0.2" />
+	<effect type="pacify" amount="1" />
+	<description text="Depressing. So very, VERY depressing. Anyone hit by this beam will be struck with existential despair and passivity." />
+	<anim sprite="sprites/sfx/curse_loop/curse_loop" frames="7" framerate="90"  centerEffect="0" sfx="emo_debuff" />
+	</spell>
+
+
+<!-- Tome Effects -->
+
+<spell name="Праведная искра" type="self" icon="skills/spells/blinding_goodness32.png" downtime="24" >
+	<effect type="trigger" spell="Righteous Sparkle Area Hit" amount="0" />
+	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" framerate="60" centerEffect="0" sfx="magic_damage" />
+	<description text="Dazzles your enemies, leaving them stunned by your spooky, sparkly vampire glamour.  This also saps some of their life-force. Because seriously." />
+   </spell>
+<spell name="Righteous Sparkle Area Hit" type="template" templateID="13" >
+   <effect type="damage" righteous="2" righteousF="0.10" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="magic_open" />
+   </spell>
+
+<!-- Thrown effects -->
+
+<spell name="Blink Dust Hit" type="target" icon="skills/emo_blink32.png" wand="0">
+	<effect type="displace" affectsCorpses="0" />
+	<description text="And away!" />
+	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+
+<spell name="Ibn Ghazi Cloud"
+      type="targetfloor"
+      icon="skills/spells/lethian_mist32.png"
+      mineTimer="26"
+      mineUseGlints="1"
+      mineGlintDensity="8"
+      mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA"
+      mineSpritePNGFirst="0"
+      mineSpritePNGNum="8"
+      mineSpritePNGRate="120"
+      mine="1"
+      mineradius="3" >
+    <description text="Создает облака дезориентирующих токсичных спор."/>
+    <effect type="removeinvisibility"/>
+    <effect type="damage" necromantic="2" affectscaster="1" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="darkmagic" centerEffect="1"/>
+  </spell>
+
+  <!-- monster spells -->
+
+	<!-- Fish Warrior spells -->
+<spell name="Mini Lutefisk Smite" type="missile" icon="skills/placeholder32.png" wand="0">
+	<effect type="damage" blasting="3" righteous="3" />
+	<description text="Pew pew, zap!" monsterText="взывает к праведной ярости своего бога!"/>
+   <anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="80" sfx="elec" />
+   <impact sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="choir" framerate="70" centerEffect="0"/>
+   </spell>
+<spell name="Lutefisk Smite" type="missile" icon="skills/placeholder32.png" wand="0">
+	<effect type="damage" blasting="6" righteous="10" />
+	<description text="Pew pew, zap!" monsterText="взывает к священной ярости своего бога!"/>
+   <anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="80" sfx="elec" />
+   <impact sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="choir" framerate="70" centerEffect="0"/>
+   </spell>
+<spell name="Major Lutefisk Smite" type="missile" icon="skills/placeholder32.png" wand="0">
+	<effect type="damage" blasting="12" righteous="20" />
+	<description text="Pew pew, zap!" monsterText="взывает к апокалиптической ярости своего бога!"/>
+   <anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="80" sfx="elec" />
+   <impact sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="choir" framerate="70" centerEffect="0"/>
+   </spell>
+
+  <spell name="Spawn Meat" type="target" >
+    <effect type="spawnitemfromlist">
+      <option name="Потроха"/>
+      <option name="Кубик мяса"/>
+    </effect>
+    <anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="80" sfx="elec" />
+    <impact sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="choir" framerate="70" centerEffect="0"/>
+  </spell>
+  
+<spell name="Meatwand Effect" type="target" >
+	<effect type="trigger" affectsCorpses="0" spell="Spawn Meat" />
+	<effect type="trigger" affectsCorpses="0" spell="Spawn Meat" percent="75" />
+	<effect type="trigger" affectsCorpses="0" spell="Spawn Meat" percent="50" />
+	<effect type="trigger" affectsCorpses="0" spell="Spawn Meat" percent="25" />
+	<effect type="trigger" affectsCorpses="0" spell="Мясобур" />
+	<effect type="damage" affectsCorpses="0" secondaryScale="23" slashing="1" slashingF="2.00" /> 
+	</spell>
+<spell name="Icicly Wand Effect" type="target" >
+	<effect type="trigger" affectsCorpses="0" spell="Арктический смерч" />
+	<effect type="trigger" spell="Small Snowstorm" />
+	<effect type="damage" secondaryScale="23" hyperborean="1" hyperboreanF="3.00" />
+	</spell>
+<spell name="Deciduous Wand Effect" type="target" >
+	<effect type="trigger" affectsCorpses="0" spell="Корни Скаты" />
+	<effect type="trigger" spell="Small Weak Poison Cloud" />
+	<effect type="trigger" affectsCorpses="0" spell="Гнусный яд" />
+	<effect type="damage" secondaryScale="23" crushing="1" asphyxiative="1" crushingF="2.00" asphyxiativeF="2.00" />
+	</spell>
+
+<spell name="Auger Effect" downtime="1" type="adjacentwall" icon="skills/mighty_auger32.png" wand="0">
+	<effect type="dig" regengfx="1"/>
+	<anim sprite="sprites/sfx/digging_ray_hit/digging_ray_hit" frames="9" framerate="90" sync="1" sfx="magic" centerEffect="0"/>
+	<description text="Smash through an adjacent wall with your mighty drilling-proboscis." />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	</spell>
+
+<spell name="Deathly Putrefaction" 
+		type="targetfloor" 
+		icon="skills/spells/conjure_miasma32.png" 
+		mineTimer="16" 
+		mineUseGlints="1" 
+		mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/skullpuffD/skullpuffD" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="10" 
+		mineSpritePNGRate="140" 
+		mine="1" 
+		mineradius="2"
+		minePermanent="0" >
+	<effect type="damage" necromantic="7" toxic="7" asphyxiative="7" putrefying="7" affectscaster="1" />
+	<anim sprite="sprites/sfx/ichorsplatA/ichorsplatA" frames="4" framerate="100" centerEffect="1" sfx="naughty" />
+	<description text="Deathly death." />
+   </spell>
+
+<spell name="Картофельный паралич" type="target" >
+	<effect type="lockdown" amount="5" />
+   <buff useTimer="1" time="5" allowstacking="0" icon="skills/potato_root64.png" smallicon="skills/potato_root32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-8"/> <!-- dodge -->
+      </buff>
+   <description text="Вас приковали к месту картофельные корни! Уклонение затруднено, перемещение невозможно." monsterText="использует ужасающую атаку корнями!"/>
+	<anim sprite="sprites/sfx/skathas_roots/skathas_roots" frames="6" centerEffect="0"/>
+   </spell>
+
+  <!-- support skills, uesd for Diggle Gods -->
+
+<spell name="Благословение буррневого бога смерти." type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="undead_hit" />
+	<buff useTimer="0" stacksize="1" icon="skills/digglegod_death64.png" smallicon="skills/digglegod_death32.png" digglegod="1">
+    <primarybuff id="1" amount="10"/>
+    <!-- Sag -->
+    <secondarybuff id="18" amount="-2"/>
+	 <secondarybuff id="13" amount="-25" />
+	 <secondarybuff id="14" amount="-25" />
+    <!-- sight -->
+    <damagebuff putrefying="5" necromantic="5" />
+    <resistbuff necromantic="15" toxic="15" asphyxiative="15" putrefying="15" hyperborean="5" />
+    <targetHitEffectBuff name="Deathly Putrefaction" percentage="33" />
+    <playerHitEffectBuff name="Deathly Putrefaction" percentage="33" />
+  </buff>
+  <description text="Вы чувствуете ледяное, замогильное прикосновение буроподобного клюва бога смерти буррней. Облака смерти витают вокруг вас." monsterText="ЯРОСТНО атакует!"/>
+  <ai hint="buff"/>
+</spell>
+
+<spell name="Благословение буррневого бога войны" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="large_hit" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_war64.png" smallicon="skills/digglegod_war32.png"  digglegod="1">
+      <primarybuff id="0" amount="7"/><!-- Bur -->
+      <primarybuff id="3" amount="7"/><!-- Cad -->
+      <secondarybuff id="2" amount="10"/><!-- melee -->
+      <secondarybuff id="10" amount="8"/><!-- armour -->
+		<playerHitEffectBuff percentage="33" name="Чудовищная ярость" />
+		<targetHitEffectBuff percentage="33" name="Мясобур" />
+    </buff>
+    <description text="Буррневый бог войны требует ПОБЕДЫ!" monsterText="ЯРОСТНО атакует!"/>
+    <ai hint="buff"/>
+  </spell>
+
+<spell name="Благословение буррневого бога плодородия." type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+	<buff useTimer="0" stacksize="1" icon="skills/digglegod_fertility64.png" smallicon="skills/digglegod_fertility32.png"  digglegod="1">
+		<primarybuff id="4" amount="10"/><!-- stub -->
+		<secondarybuff id="0" amount="22"/><!-- hp -->
+		<secondarybuff id="13" amount="12"/><!-- regen -->
+		<playerHitEffectBuff percentage="33" name="Малая регенерация" />
+  </buff>
+  <description text="Буррневый бог плодородия наблюдает за вами, пытаясь высидеть вас как яйцо." monsterText="ЯРОСТНО атакует!"/>
+  <ai hint="buff"/>
+</spell>
+
+<spell name="Благословение буррневого бога тайн" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="wight_die" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_secrets64.png" smallicon="skills/digglegod_secrets32.png"  digglegod="1">
+		<secondarybuff id="12" amount="50"/><!-- sneak -->
+		<secondarybuff id="18" amount="-2"/><!-- sight-->
+		<secondarybuff id="19" amount="2"/><!-- smith -->
+		<secondarybuff id="20" amount="2"/><!-- tink -->
+		<secondarybuff id="21" amount="2"/><!-- alch -->
+		<secondarybuff id="23" amount="2"/><!-- wand -->
+		<secondarybuff id="16" amount="3"/><!-- trap -->
+		<secondarybuff id="17" amount="3"/><!-- trapsight -->
+		</buff>
+	<description text="Буррневый бог тайн что-то нашёптывает вам во тьме. Прям мурашки по коже!" monsterText="ЯРОСТНО атакует!"/>
+	<ai hint="buff"/>
+	</spell>
+
+<spell name="Благословение Буррневого Бога Бурения" type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+	<buff useTimer="0" stacksize="1" icon="skills/digglegod_digging64.png" smallicon="skills/digglegod_digging32.png"  digglegod="1">
+		<primarybuff id="0" amount="1"/><!-- Bur -->
+		<primarybuff id="3" amount="1"/><!-- Cad -->
+		<secondarybuff id="2" amount="2"/><!-- melee -->
+		<secondarybuff id="10" amount="2"/><!-- armour -->
+		<damagebuff piercing="10" blasting="6" />
+		<targetHitEffectBuff percentage="50" name="Мясобур" />
+		</buff>
+	<description text="Вы не имеете ни малейшего представления, что случилось, но на вас почему-то снизошло благословение. Не так уж и плохо, а?" monsterText="ЯРОСТНО атакует!"/>
+	<ai hint="buff"/>
+	</spell>
+
+  <digglegod name="Diggle God of Death" description="Dark and skeletal, the Diggle God of Death relaxes in his? stylish coffin." art="dungeon/diggle_god_death.png" spell="Благословение буррневого бога смерти."/>
+  <digglegod name="Diggle God of War" description="It is a statue of the Diggle God of War! Or possibly Battyman." art="dungeon/diggle_god_war.png" spell="Благословение буррневого бога войны"/>
+  <digglegod name="Diggle God of Fertility" description="The Diggle God of Fertility gazes upon his? egg with a look of mild constipation." art="dungeon/diggle_god_fertility.png" spell="Благословение буррневого бога плодородия."/>
+  <digglegod name="Diggle God of Digging" description="The Diggle God of Digging mainly has his statues created by out-of-work visual arts students." art="dungeon/diggle_god_digging.png" spell="Благословение Буррневого Бога Бурения"/>
+  <digglegod name="Diggle God of Secrets" description="Congratulations, you found a statue of the Diggle God of Secrets. Now scamper." art="dungeon/diggle_god_secrets.png" spell="Благословение буррневого бога тайн"/>
+
+<!-- expansion trap effects -->
+
+<spell name="Bolt of Ennui" type="missile" >
+   <effect type="damage" blasting="10" existential="10" affectsCaster="1" />
+   <anim sprite="sprites/sfx/hex_orb/hex_orb" frames="6" framerate="100" sfx="naughty" />
+   <effect type="trigger" spell="Blast Effect A" />
+	<effect type="trigger" spell="Апатия" />
+   </spell>
+
+<spell name="Toxic Blinding Dart" type="missile" >
+   <anim sprite="sprites/sfx/toxic_dart0000.png" sfx="missile" />
+   <effect type="trigger" spell="Blast Effect A" />
+	<effect type="trigger" spell="Замутнённое зрение" />
+	<effect type="trigger" spell="Гнусный яд" />
+   <effect type="damage" toxic="20" piercing="10" affectsCaster="1" />
+	</spell>
+
+<spell name="Rune of Burning" type="targetfloor"
+      icon="skills/spells/rune_of_exploding32.png"
+      mineTimer="96"  
+      mineSpritePNGSeries="sprites/sfx/rune_burning/rune_burning" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="4" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="0"
+      minePermanent="0" >
+   <effect burn="1" type="damage" conflagratory="2" conflagratoryF="0.05" affectscaster="1" />
+   <effect type="trigger" spell="Flamefield 0" amount="1" />
+   <effect type="trigger" spell="Thermite Burn" amount="0" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="rune_set" centerEffect="0"/>
+   <description text="This spell inscribes a magical burning rune into the floor. Watch your step!" />
+   </spell>
+
+<spell name="Rune of Greater Burning" type="targetfloor"
+      icon="skills/spells/rune_of_exploding32.png"
+      mineTimer="96"  
+      mineSpritePNGSeries="sprites/sfx/rune_exploding/rune_exploding" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="3" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="0"
+      minePermanent="0" >
+   <effect type="damage" conflagratory="15" conflagratoryF="0.05" blasting="5" blastingF="0.1" affectscaster="1" />
+   <effect type="trigger" spell="Flamefield 0" amount="1" />
+   <effect type="trigger" spell="Греческий огонь" amount="0" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="rune_set" centerEffect="0"/>
+   <description text="This spell inscribes a magical burning rune into the floor. Watch your step!" />
+   </spell>
+
+<spell name="Fiery Surprise 1" type="target" >
+	<effect type="trigger" spell="Rune of Burning" percent="50" amount="0" />
+	<effect type="trigger" spell="Rune of Burning" percent="60" amount="1" />
+	<effect type="trigger" spell="Rune of Burning" percent="70" amount="2" />
+	<effect type="trigger" spell="Rune of Burning" percent="80" amount="3" />
+	<effect type="trigger" spell="Rune of Burning" percent="70" amount="4" />
+	<effect type="trigger" spell="Rune of Burning" percent="60" amount="5" />
+	<effect type="trigger" spell="Rune of Burning" percent="50" amount="6" />
+	</spell>
+
+<spell name="Fiery Surprise 2" type="target" >
+	<effect type="trigger" spell="Rune of Greater Burning" percent="50" amount="0" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="60" amount="1" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="70" amount="2" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="80" amount="3" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="70" amount="4" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="60" amount="5" />
+	<effect type="trigger" spell="Rune of Greater Burning" percent="50" amount="6" />
+	</spell>
+
+<spell name="Acid Trail" type="target" >
+	<effect type="trigger" spell="Сильный кислотный ожог" />
+	<effect type="trigger" spell="Сильный кислотный ожог" amount="8" />
+	<effect type="trigger" spell="Сильный кислотный ожог" amount="16" />
+	<effect type="trigger" spell="Acid Pool" amount="1" />
+	<effect type="trigger" spell="Acid Pool" amount="2" percent="90"/>
+	<effect type="trigger" spell="Acid Pool" amount="3" percent="80"/>
+	<effect type="trigger" spell="Acid Pool" amount="4" percent="70"/>
+	<effect type="trigger" spell="Acid Pool" amount="5" percent="60"/>
+	<effect type="trigger" spell="Acid Pool" amount="6" percent="50"/>
+	<effect type="trigger" spell="Acid Pool" amount="7" percent="40"/>
+	<effect type="trigger" spell="Acid Pool" amount="8" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="9" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="10" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="11" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="12" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="13" percent="30"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="14" percent="20"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="15" percent="20"/>
+	<effect type="trigger" spell="Weak Acid Pool" amount="16" percent="10"/>
+	</spell>
+
+<spell name="Мерцающее проклятие" type="target" icon="skills/transdimensional_dodge32.png" >
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" sfx="ping" />
+	<buff useTimer="1" time="78" self="0" stackable="0" removable="0" bad="0" stacksize="1" icon="skills/transdimensional_dodge64.png" smallicon="skills/transdimensional_dodge32.png" >
+		</buff>
+	<description text="Цилиндрические измерения кружатся вокруг вас, не совсем уверенные в том, где им положено быть."/>
+   <effect type="trigger" spell="Monster Blink" percent="50" amount="1" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="2" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="4" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="6" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="10" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="16" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="26" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="52" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="78" />
+   <effect type="trigger" spell="Monster Blink" percent="50" amount="3" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="5" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="7" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="9" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="11" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="17" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="19" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="31" />
+	<effect type="trigger" spell="Monster Blink" percent="50" amount="66" />
+   </spell>
+
+	<!-- 1.0.10 -->
+<spell name="Удар охотника" type="target" icon="skills/rogue/skill_assassination1_32.png" >
+	<effect type="damage" piercing="3" piercingF="0.33" secondaryScale="12" bleed="1" affectsCorpses="0" />
+	<description text="The Hunter strikes to kill."/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="shing"/>
+   </spell>
+
+	<!-- 1.0.11 -->
+	<!-- Apparently this is broken? - missing anchor tag?
+<spell name="Broadside North" type="template" templateID="701" >
+	<effect type="trigger" spell="Broadside Shot" percent="75" />
+	<anim sprite="sprites/sfx/null" frames="1" framerate="80" centerEffect="0" sfx="blast" />
+	</spell>
+<spell name="Broadside South" type="template" templateID="702" >
+	<effect type="trigger" spell="Broadside Shot" percent="75" />
+	<anim sprite="sprites/sfx/null" frames="1" framerate="80" centerEffect="0" sfx="blast" />
+	</spell>
+<spell name="Broadside West" type="template" templateID="703" >
+	<effect type="trigger" spell="Broadside Shot" percent="75" />
+	<anim sprite="sprites/sfx/null" frames="1" framerate="80" centerEffect="0" sfx="blast" />
+	</spell>
+<spell name="Broadside East" type="template" templateID="704" >
+	<effect type="trigger" spell="Broadside Shot" percent="75" />
+	<anim sprite="sprites/sfx/null" frames="1" framerate="80" centerEffect="0" sfx="blast" />
+	</spell> --> 
+
+<spell name="Naarwhaand Effect" type="target" >
+	<effect type="trigger" affectsCorpses="0" spell="Молния Тора" />
+	<effect type="trigger" spell="Small Snowstorm" />
+	<effect type="damage" secondaryScale="23" voltaic="1" voltaicF="3.50" />
+	</spell>
+	
+</spellDB>

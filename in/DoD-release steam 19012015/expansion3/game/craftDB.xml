@@ -1,0 +1,90 @@
+﻿<craftDB>
+
+<craft>
+	<output skill="0" name="Реарденовый слиток" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Железный слиток"/>
+	<input name="Пластмассовая руда"/>
+	<input name="Живая вода"/>
+	</craft>
+
+<craft>
+	<output skill="0" name="Водка" amount="1" />
+	<tool tag="still"/>
+	<input name="Картофель"/>
+	<input name="Картофель"/>
+	<input name="Картофель"/>    
+	</craft>
+
+<!-- so non-commies can craft the Atom-smasher -->
+<craft>
+   <output skill="1" name="Молот"/>
+	<tool tag="smithing" />
+   <input name="Железный слиток"/>
+   <input name="Внушительная палка"/>
+   </craft>
+
+<craft hidden="1">
+	<output skill="7" name="Гномий атомолом" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Молот"/>
+	<input name="Водка"/>
+	<input name="Эфирный силовой цилиндр"/>
+	<input name="Болт массового поражения"/>    
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Бомба" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Эфирный силовой цилиндр"/>
+	<input name="Болт массового поражения"/>
+	<input name="Водка"/>
+	<input name="Сфера ничего"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Янтарное кольцо нескончаемого времени"/>
+	<tool tag="smithing"/>
+	<input name="Золотое кольцо"/>
+	<input name="Алюминиевое кольцо"/>
+	<input name="Янтарь"/>
+	<input name="Перстень маны"/>
+	</craft>
+  
+<craft hidden="1">
+	<output skill="7" name="Чёрное жемчужное кольцо спящих тайн"/>
+	<tool tag="smithing"/>
+	<input name="Чёрный жемчуг"/>
+	<input name="Чёрный жемчуг"/>
+	<input name="Углеэлектронное кольцо"/>
+	<input name="Перстень маны"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Сапфирное кольцо глубочайших небес"/>
+	<tool tag="smithing"/>
+	<input name="Сапфир"/>
+	<input name="Сапфир"/>
+	<input name="Кольцо с железными шипами"/>
+	<input name="Перстень маны"/>
+	</craft>
+  
+<craft hidden="1">
+	<output skill="7" name="Коммунистическая броня власти"/>
+	<tool tag="smithing"/>
+	<input name="Молот"/>
+	<input name="Серп"/>
+	<input name="Водка"/>
+	<input name="Гравированный латный доспех"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Коммунистическая ушанка власти"/>
+	<tool tag="smithing"/>
+	<input name="Молот"/>
+	<input name="Серп"/>
+	<input name="Ушанка коммуниста"/>
+	<input name="Великий шлем"/>
+	</craft>
+
+</craftDB>

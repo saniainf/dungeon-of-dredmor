@@ -1,0 +1,1712 @@
+﻿<skillDB>
+  
+  <!--
+  SkillDB.xml contains three different types of entries.  
+  
+  The first, contained within the "skill" tag, allocates to each skill
+  a name, a description, an image, a type (warrior, rogue, or wizard), a unique id, and possibly a "loadout" (an item given to
+  the player at the start of the game should they take that skill).
+  
+  While initially loadouts would not always yield the item, we found that this randomness wasn't fun, so every loadout is given
+  an always="1" tag.  At this point we're not sure exactly what would happen if this weren't there, but feel free to find out!
+  
+  After the skill entries, there are two types of ability entries.  There are ability entries for a skill tree, and for skills within them.
+  Here is an example of a skill tree entry:
+  
+  <ability name="Кровавое волшебство" icon="skills/skill_bloodmagic.png" skill="23" startSkill="1">
+  <description text="Извлекайте магическую эссенцию из крови ваших врагов. Грязное, отвратительное волшебство и не самая лучшая тема для разговора."/>
+  </ability>
+  
+  Each skill tree entry has a unique skill number, name, icon, description, and importantly startSkill="1".  The name isn't very descriptive anymore, but
+  it is necessary that each skill tree have this entry in order for it to show up in the character skill sheet from within the main game.
+  
+  Additionally, each "ability" skill tree entry has several corresponding "ability" skills.  Here is one which belongs to the "Кровавое волшебство"
+  skill tree in the example above:
+  
+  <ability name="Магия крови" icon="skills/wizard/bloodmagic1_64.png" skill="23" level="0">
+  <description text="You know how to take magic from the blood of your enemies and gain mana after each kill."/>
+  </ability>
+  
+  [[where is sanguinista hooked up?]] 
+  
+  -->
+
+<skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Читали ли вы ''Как закалялась сталь''? Вряд ли, но зато вам доступны различные бонусы и специальные атаки при использовании мечей.">
+   <art icon="skills/skill_sword.png"/>
+  <tag level="0" name="Slasher"/>
+  <tag level="3" name="Fencer"/>
+  <tag level="5" name="Swordwielder"/>
+  <tag level="7" name="Swordmaster"/>
+  
+   <loadout type="weapon" subtype="Деревянный меч" always="1"/>    
+</skill>
+
+<skill name="Daggers" id="45" type="rogue" achievement="ACHIEVEMENT_DAGGER_MASTERY" description="Кинжалы: больше, чем просто ''маленькие мечи''." >
+    <art icon="skills/daggery64.png"/>
+    <loadout type="weapon" subtype="Заточка" always="1" />
+</skill>
+
+<skill name="Axes" id="1" type="warrior" achievement="ACHIEVEMENT_AXE_MASTERY" description="Вам доступны различные бонусы и специальные атаки при использовании топоров.">
+   <art icon="skills/skill_axe.png"/>
+   <loadout type="weapon" subtype="Грубый каменный топор" always="1"/>
+</skill>
+
+<skill name="Maces" id="2" type="warrior" achievement="ACHIEVEMENT_MACE_MASTERY" description="Вам доступны различные бонусы и специальные атаки при использовании булав.">
+   <art icon="skills/skill_mace.png"/>
+   <loadout type="weapon" subtype="Шишковатая дубина" always="1"/>
+   </skill>
+
+  <skill name="Polearms" id="46" type="warrior" achievement="ACHIEVEMENT_POLEARMS_MASTERY" description="Зачем тащиться через всё подземелье лишь для того, чтобы кого-то заколоть? Копье - вот выбор лентяя!" >
+    <art icon="skills/polearming64.png"/>
+    <loadout type="weapon" subtype="Крестьянские вилы" always="1" />
+  </skill>
+
+  <skill name="Staves" id="3" type="warrior" achievement="ACHIEVEMENT_STAFF_MASTERY" description="Вам доступны различные бонусы и специальные атаки при использовании посохов.">
+   <art icon="skills/skill_staff.png"/>
+   <loadout type="weapon" subtype="Внушительная палка" always="1"/>
+   </skill>
+
+<skill name="Archery" id="4" type="rogue" achievement="ACHIEVEMENT_BOW_MASTERY" description="Вам доступны различные бонусы и специальные атаки при использовании арбалетов.">
+   <art icon="skills/skill_crossbow.png"/>
+   <loadout type="weapon" subtype="Маленький арбалет" always="1"/>
+   <loadout type="weapon" subtype="Деревянный болт" amount="18" always="1"/>
+   <loadout type="weapon" subtype="Болт с ампулой яда" amount="6" always="1"/>
+   <loadout type="weapon" subtype="Огненный болт" amount="6" />
+   <!-- <loadout type="armour" subtype="Штаны-парашюты" always="1"/> U can't have this -->
+   </skill>
+
+<skill name="Thrown Weaponry" id="5" type="rogue" achievement="ACHIEVEMENT_THROWN_MASTERY" description="Вам доступны различные бонусы и специальные атаки при использовании метательного оружия.">
+   <art icon="skills/skill_thrown.png"/>
+   <loadout type="weapon" subtype="Гномий бумеранг" amount="16" always="1"/>
+   <loadout type="weapon" subtype="Колба кислоты" amount="3" always="1"/>
+   <loadout type="weapon" subtype="Оглушающая бомба" amount="5" />
+   </skill>
+
+<skill name="Unarmed Combat" id="6" type="warrior" achievement="ACHIEVEMENT_UNARMED_MASTERY" description="Вам доступны различные бонусы и специальные атаки при сражении без оружия.">
+   <art icon="skills/skill_unarmed.png"/>
+   <loadout type="armour" subtype="Хатимаки"/>
+   </skill>
+
+<skill name="Dual Wielding" id="7" type="warrior"  achievement="ACHIEVEMENT_DUAL_WIELD_MASTERY" description="Вы способны сражаться сразу двумя видами оружия, по одному в каждой руке.">
+   <art icon="skills/skill_dualwield.png"/>
+   </skill>
+
+<skill name="Щитоносец" id="8" type="warrior" achievement="ACHIEVEMENT_SHIELD_MASTERY"  description="Вам доступны различные бонусы и специальные атаки при использовании щитов.">
+   <art icon="skills/skill_shieldbearer.png"/>
+   <loadout type="armour" subtype="Деревянный щит"/>
+   </skill>
+
+<skill name="Ярость берсерка" id="9" type="warrior" achievement="ACHIEVEMENT_BERSERKER_MASTERY" description="При нападении или при получении урона, вы накапливаете ярость, повышающую силу вашей атаки.">
+   <art icon="skills/skill_berserker.png"/>
+   </skill>
+
+<skill name="Искусный ловкач" id="10" type="rogue" achievement="ACHIEVEMENT_DODGE_MASTERY" description="Вам значительно проще уворачиваться от атак врага.">
+   <art icon="skills/skill_dodging.png"/>
+    <loadout type="armour" subtype="Шлёпающие шлёпанцы"/>
+   </skill>
+
+<skill name="Латник" id="11" type="warrior" achievement="ACHIEVEMENT_MASTER_OF_ARMS_MASTERY" description="Вы пользуетесь броней значительно эффективнее и получаете доступ к специальным защитным техникам.">
+   <art icon="skills/skill_armour.png"/>
+   <loadout type="armour" subtype="Железный нагрудник"/>
+   </skill>
+
+<skill name="Снайпер" id="12" type="warrior" deprecated="1" achievement="ACHIEVEMENT_DEADSHOT_MASTERY" description="Вы меньше мажете, а при попаданиях увеличиваются шансы нанести ужасающие повреждения.">
+   <art icon="skills/skill_deadshot.png"/>
+   <loadout type="armour" subtype="Очки"/>
+   <flags deprecated="1"/>
+</skill>
+
+<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="Ваше здоровье не восстанавливается само, а пища стала бесполезной... Зато вы можете пить кровь ваших врагов и выглядеть сногсшибательно!">
+   <art icon="skills/skill_vampirism.png"/>
+   <flags noFood="1" />
+   </skill>
+
+<skill name="Големантия" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="Големы: собери их всех!">
+   <art icon="skills/skill_golemancer.png"/>
+   <loadout type="armour" subtype="Шапка големанта"/>
+   </skill>
+
+<skill name="Плотековка" id="15" type="wizard" achievement="ACHIEVEMENT_FLESHSMITHING_MASTERY" description="Другие люди работают с глиной, сталью или деревом. Они слишком брезгливы для подобного ремесла.">
+   <art icon="skills/skill_fleshshaper.png"/>
+   <loadout type="food" subtype="Потроха" amount="3" />
+   </skill>
+
+<skill name="Матемагика" id="16" type="wizard" achievement="ACHIEVEMENT_MATHEMAGIC_MASTERY" description="Арифманты всей вселенной, объединяйтесь!">
+   <art icon="skills/skill_mathemagic.png"/>
+   <loadout type="armour" subtype="Твидовый костюм"/>
+   </skill>
+
+<skill name="Псионика" id="17" type="wizard" achievement="ACHIEVEMENT_PSIONICS_MASTERY"  description="Нет, только не мозговой зонд!">
+   <art icon="skills/skill_psionicist.png"/>
+   </skill>
+
+<skill name="Некрономикономика" type="wizard" id="18" achievement="ACHIEVEMENT_NECRONOMICONOMICS_MASTERY" description="Некрономикономика: экономика мертвецов">
+   <art icon="skills/skill_necronomiconomics.png"/>
+   </skill>
+
+<skill name="Чародейство викингов" type="wizard" id="19" achievement="ACHIEVEMENT_VIKING_WIZARD_MASTERY"  description="Хайль Один!">
+   <art icon="skills/skill_vikingwizard.png"/>
+   </skill>
+
+<skill name="Астрология" id="20" type="wizard" achievement="ACHIEVEMENT_ASTROLOGY_MASTERY" description="Когда вас спрашивают, где вы родились, вы тыкаете пальцем в Сатурн.">
+   <art icon="skills/skill_astrologer.png"/>
+   <loadout type="armour" subtype="Шляпа астролога"/>
+   </skill>
+
+<skill name="Прометеева магия" type="wizard" id="21" achievement="ACHIEVEMENT_PROMETHEAN_MASTERY" description="Прометеева магия: область волшебства, призванная даровать людям огонь, любыми средствами!">
+   <art icon="skills/skill_prometheanmagic.png"/>
+   </skill>
+
+<skill name="Магическое образование" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="Годы учебы в Школе волшебников сделали ваши заклинания и использование маны более эффективными.">
+   <art icon="skills/skill_magictraining.png"/>
+   <loadout type="armour" subtype="Треснувшая сфера" />
+   </skill>
+
+<skill name="Кровавая магия"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="Вы восполняете очки маны убивая врагов. Не жалейте никого, маны многое не бывает!">
+   <art icon="skills/skill_bloodmagic.png"/>
+   <loadout type="weapon" subtype="Жертвенный кинжал" />
+   </skill>
+
+<skill name="Идущий по линиям" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="Вы способны уловить тончайшие линии невидимой силы, чтобы быстро восстановить магическую энергию.">
+  <art icon="skills/skill_leylines.png"/>
+  </skill>
+
+  <skill name="Восприятие" id="25"  type="rogue" achievement="ACHIEVEMENT_PERCEPTION_MASTERY" description="У вас отличное зрение и вы значительно легче обнаруживаете ловушки и поражаете врагов.">
+  <art icon="skills/skill_perception.png"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   </skill>
+
+  <skill name="Burglary" id="26" type="rogue" achievement="ACHIEVEMENT_BURGLARY_MASTERY" description="Вы умеете красться по подземельям, избегая внимания монстров, и прибирая к рукам всё, до чего можете дотянуться.">
+  <art icon="skills/skill_stealth.png"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   </skill>
+
+<skill name="Искусство ассасина" id="27" type="rogue" achievement="ACHIEVEMENT_ASSASSINATION_MASTERY" description="Вы наносите критические удары намного чаще.">
+   <art icon="skills/skill_assassination.png"/>
+   </skill>
+
+<skill name="Грибоведенье" id="28" type="rogue" achievement="ACHIEVEMENT_FUNGUS_MASTERY"  description="Вы выращиваете странные грибы и имеете большую сопротивляемость ядам и гниению.">
+   <art icon="skills/skill_mushroomlore.png"/>
+   <loadout type="mushroom" always="1" amount="3"/>
+   <loadout type="mushroom" always="1" amount="2"/>
+   <loadout type="mushroom" always="1" amount="1"/>
+   </skill>
+
+<skill name="Алхимия" id="29" type="wizard" achievement="ACHIEVEMENT_ALCHEMY_MASTERY" description="Вы умеете варить зелья и вообще чрезвычайно умны. А иногда вы выпиваете парочку литров ртути, чтобы расслабиться.">
+   <art icon="skills/skill_alchemy.png"/>
+   <loadout type="potion"  always="1" />
+   <loadout type="reagent" amount="1"  always="1" />
+   <loadout type="reagent" amount="2"  always="1" />
+   <loadout type="reagent" amount="3"  always="1" />
+   <loadout type="potion" subtype="Живая вода" amount="3"  always="1"/>
+   <loadout type="potion" subtype="Царская водка" amount="3" always="1" />
+   <loadout type="toolkit" subtype="Составная алхимическая установка"  always="1"/>
+   <loadout type="toolkit" subtype="Перегонный аппарат"  always="1"/>
+   <loadout type="toolkit" subtype="Эльфийский металлургический измельчитель" always="1"/>
+</skill>
+
+  <!-- these may look wrong. But sadly, they're right. There was a bit of a mess around version 1.0.2 or so which Oldbies will remember. -->
+  
+<skill name="Волшебные палочки" id="30" type="wizard" achievement="ACHIEVEMENT_ARCHAEOLOGY_MASTERY" description="Вы обращаетесь с волшебными палочками гораздо более эффективно.">
+   <art icon="skills/skill_wandlore.png"/>
+   <loadout type="wand" always="1" />
+   <loadout type="wand" always="1" />
+   <loadout type="wand" always="1" />
+    <loadout type="toolkit" subtype="n-мерный станок"  always="1"/>
+</skill>
+
+<skill name="Археология" id="31" type="rogue" achievement="ACHIEVEMENT_SMITHING_MASTERY"  description="Вы начинаете игру с фетровой шляпой и вообще смелы и энергичны. Быть может, вам даже когда-нибудь вкатают срок.">
+  <art icon="skills/skill_archaeology.png"/>
+  <loadout type="armour" subtype="Фетровая шляпа" always="1" />
+  </skill>
+
+<skill name="Кузнечное дело" id="32" type="warrior" achievement="ACHIEVEMENT_TINKERING_MASTERY"  description="Кузнечное дело: для тех, кто любит делать всё самостоятельно. Также, занимаясь ковкой вы становитесь сильнее.">
+  <art icon="skills/skill_smithing.png"/>
+  <loadout type="toolkit" subtype="Моя маленькая наковальня: Детский набор" always="1" />
+  <loadout type="toolkit" subtype="Одноразовый металлургический пресс" always="1" />
+  </skill>
+
+<skill name="Изобретательство" id="33" type="rogue" achievement="ACHIEVEMENT_REALLY_TINKERING_MASTERY"  description="Вы можете мастерить различные приспособления и ловушки из шестерёнок, частей механизмов и прочего хлама.">
+   <art icon="skills/skill_tinkerer.png"/>
+   <loadout type="toolkit" subtype="Набор изобретателя" always="1" />
+   <loadout type="toolkit" subtype="Одноразовый металлургический пресс" always="1" />
+   <loadout type="component" amount="3" always="1"/>
+   <loadout type="component" amount="3" always="1"/>
+   <loadout type="component" amount="3" always="1"/>
+   </skill>
+  
+  
+  
+<ability name="Фехтование" icon="skills/skill_sword.png" skill="0" startSkill="1">
+  <description text="Мечи! Острый конец нужно направлять в сторону неприятеля."/>
+  </ability>
+<ability name="Владение топором" icon="skills/skill_axe.png" skill="1" startSkill="1">
+  <description text="Топоры: идеально подходят для расчленения тел."/>
+  </ability>
+<ability name="Владение булавой" icon="skills/skill_mace.png" skill="2" startSkill="1">
+  <description text="Булавы: эффективно вышибают мозги. Если хотите, можете даже носить их с собой в сумке."/>
+  </ability>
+<ability name="Мастерство посоха" icon="skills/skill_staff.png" skill="3" startSkill="1">
+  <description text="Посохи! Незаменимы в любой ситуации."/>
+  </ability>
+<ability name="Арбалеты" icon="skills/skill_crossbow.png" skill="4" startSkill="1">
+  <description text="Поражайте врага издалека своей меткой стрельбой! (Эту способность спонсирует Совет Застрельщиков. Вступайте в него сегодня или завтра обнаружите в своей постели кальмара)."/>
+</ability>
+  
+<ability name="Thrown Weaponry" icon="skills/skill_thrown.png" skill="5" startSkill="1">
+  <description text="Бросайте паниковать! Ещё лучше - бросайте что-нибудь с острыми краями. Или даже что-нибудь разрывающееся на мелкие осколки!"/>
+</ability>
+  
+<ability name="Искусство безоружного боя" icon="skills/skill_unarmed.png" skill="6" startSkill="1">
+  <description text="Оружие для слабаков. Уничтожайте врагов вашими великолепными ногами."/>
+  </ability>
+<ability name="Dual Wielding" icon="skills/skill_dualwield.png" skill="7" startSkill="1">
+  <description text="Одно оружие хорошо, а два - лучше."/>
+  </ability>
+<ability name="Владение щитом" icon="skills/skill_shieldbearer.png" skill="8" startSkill="1">
+  <description text="Вернуться с щитом - или на нём? Для тех, кто знает толк в защите."/>
+  </ability>
+<ability name="Ярость берсерка" icon="skills/skill_berserker.png" skill="9" startSkill="1">
+  <description text="Сделай это! Сделай это во имя Кхорна!"/>
+  </ability>
+<ability name="Искусное уклонение" icon="skills/skill_dodging.png" skill="10" startSkill="1">
+  <description text="Лучшая защита - это быть где-нибудь в другом месте."/>
+  </ability>
+<ability name="Латник" icon="skills/skill_armour.png" skill="11" startSkill="1">
+  <description text="Суть искусства ношения брони - как наиболее элегантно крепить здоровенные куски металла к своему телу."/>
+  </ability>
+<ability name="Снайпер" icon="skills/skill_deadshot.png" skill="12" startSkill="1">
+  <description text="Aim deadly and true. You'd think it was common sense that hitting your target would enhance combat performance, right?"/>
+  </ability>
+
+  <!-- Spooky, sparkly -->
+
+  <ability name="Vampirism" icon="skills/skill_vampirism.png" skill="13" startSkill="1">
+    <description text="Утоляйте жажду ароматной кровью ваших врагов, напейтесь сполна! Но остерегайтесь солнечного света, под его лучами ваша смерть будет быстрой. Будучи вампиром вы можете восстанавливать здоровье только неестественным путем."/>
+  </ability>
+  <!-- Core Magic School Skills -->
+
+<ability name="Големантия" icon="skills/skill_golemancer.png" skill="14" startSkill="1">
+  <description text="Старшая и Младшая Големантия позволяет одушевлять и затем приводить в движение базовую материю (другими словами, вы сможете оживлять неодушевлённые предметы)."/>
+  </ability>
+<ability name="Обработка плоти" icon="skills/skill_fleshshaper.png" skill="15" startSkill="1">
+  <description text="Вы придаёте форму плоти! Можете заживлять свои раны, разрывать плоть врагов и заказывать высококачественную мясную продукцию из элементального плана мясных деликатесов."/>
+  </ability>
+<ability name="Матемагика" icon="skills/skill_mathemagic.png" skill="16" startSkill="1">
+  <description text="Используя силу матемагики, вы можете умножать мощь, отнимать надежду и возводить в куб мечты человека. Это странный, абстрактный раздел магии, способный свести изучающего с ума."/>
+  </ability>
+<ability name="Псионика" icon="skills/skill_psionicist.png" skill="17" startSkill="1">
+  <description text="Вы способны парализовать врага, крошить кости, поджигать, душить и разрывать его органы усилием мысли..."/>
+  </ability>
+<ability name="Некрономикономика" icon="skills/skill_necronomiconomics.png" skill="18" startSkill="1">
+  <description text="Некрономикономика: изучение основ экономики нежити с помощью книги, переплетённой странной кожей. Действительно, весьма сомнительная магия."/>
+  </ability>
+<ability name="Чародейство викингов" icon="skills/skill_vikingwizard.png" skill="19" startSkill="1">
+  <description text="В холодных Северных Землях испокон веков использовались грубые, но эффективные заклинания, особенно полезные в ближнем бою."/>
+  </ability>
+<ability name="Астрология" icon="skills/skill_astrologer.png" skill="20" startSkill="1">
+  <description text="Небо, испещрённое магическими точками, укажет путь к Истинному Знанию! Вообще говоря, это мирное волшебство, однако если дать волю воображению..."/>
+  </ability>
+<ability name="Прометеева магия" icon="skills/skill_prometheanmagic.png" skill="21" startSkill="1">
+  <description text="Пользуйтесь мощью Негасимого - говорили мудрецы, делая шашлык из пустоты, связывающей миры. Эта магия целиком и полностью посвящена поджиганию всего вокруг."/>
+  </ability>
+
+  <!-- Miscellaneous Magic skills -->
+
+<ability name="Магическое образование" icon="skills/skill_magictraining.png" skill="22" startSkill="1">
+  <description text="(вставьте сюда цитату Поттера)"/>
+  </ability>
+<ability name="Кровавое волшебство" icon="skills/skill_bloodmagic.png" skill="23" startSkill="1">
+  <description text="Извлекайте магическую эссенцию из крови ваших врагов. Грязное, отвратительное волшебство и не самая лучшая тема для разговора."/>
+  </ability>
+<ability name="Линии силы" icon="skills/skill_leylines.png" skill="24" startSkill="1">
+  <description text="Позволяет вам черпать энергию из таинственных линий, чей принцип работы точно известен лишь хранителям магических тайн и торговым агентам."/>
+  </ability>
+
+  <!-- Rogue Tricks -->
+
+<ability name="Восприятие" icon="skills/skill_perception.png" skill="25" startSkill="1">
+  <description text="По крайней мере, вы будете знать, что вас убило. Увеличивает радиус обзора, вероятность обнаружения ловушек, количество находимых предметов и шанс уклонения."/>
+  </ability>
+<ability name="Burglary" icon="skills/skill_stealth.png" skill="26" startSkill="1">
+  <description text="Они даже не узнают, кто их ограбил. Крадемся, воруем и... убиваем."/>
+  </ability>
+<ability name="Искусство ассасина" icon="skills/skill_assassination.png" skill="27" startSkill="1">
+  <description text="Итак, ваше кредо... Черт с ним, вы попросту лучше убиваете."/>
+  </ability>
+
+  <!-- More generically adventurer rogue-skills -->
+
+<!-- TODO: change this to "Грибоведенье" -->
+<ability name="Грибоведенье" icon="skills/skill_mushroomlore.png" skill="28" startSkill="1">
+  <description text="Вы собираете плесень, споры и мицелий, а после высаживаете их на трупах своих врагов, чтобы посмотреть, что полезного вырастет. Фу."/>
+  </ability>
+<ability name="Алхимия" icon="skills/skill_alchemy.png" skill="29" startSkill="1">
+  <description text="Вы можете разливать по колбам известность, варить славу, и даже закупорить саму смерть."/>
+  </ability>
+<ability name="Волшебные палочки" icon="skills/skill_wandlore.png" skill="30" startSkill="1">
+  <description text="Умение ухаживать за волшебными палочками позволяет продлить срок их службы и использовать с большей эффективностью."/>
+  </ability>
+<ability name="Археология" icon="skills/skill_archaeology.png" skill="31" startSkill="1">
+  <description text="Доктор Джонс, сейчас не время для любви! Вы настоящий искатель приключений, никогда не теряющий самообладания."/>
+  </ability>
+<ability name="Кузнечное дело" icon="skills/skill_smithing.png" skill="32" startSkill="1">
+  <description text="Куй железо, пока горячо! Выкуйте себе оружие для сражений с монстрами! Станьте силачом!"/>
+  </ability>
+<ability name="Изобретательство" icon="skills/skill_tinkerer.png" skill="33" startSkill="1">
+  <description text="Вы проводите всё время в вашем сарае, мастеря различные механизмы во благо человечества."/>
+  </ability>
+
+  <!-- Wizard Skills -->
+  
+<ability name="Магия крови" icon="skills/wizard/bloodmagic1_64.png" skill="23" level="0">
+  <description text="Вы умеете превращать кровь в ману! За каждое убийство вы получите некоторое её количество. У овощей, техники и мертвецов нет крови, поэтому..."/>
+  <targetKillBuff percentage="100" name="Кровавая мана" />
+  <resistbuff righteous="-1" />
+  </ability>
+<ability name="Высасывание жизни" icon="skills/vital_siphon64.png" skill="23" level="1" >
+   <description text="Воспользуйтесь тёмным искусством высасывания жизни и получите шанс похищать жизненную энергию врагов при ударе." />
+   <targetHitEffectBuff percentage="30" name="Высасывание жизни" />
+   <resistbuff righteous="-1" />
+   </ability>
+<ability name="Похититель душ" icon="skills/wizard/bloodmagic2_64.png" skill="23" level="2">
+   <description text="Взаимодействуя с душой павшего врага (если она у него есть), вы можете увеличить свою магическую силу и если повезет, то и захватить душу."/>
+   <targetKillBuff percentage="50" name="Кража духа"/>
+   <resistbuff righteous="-1" />  
+   </ability>
+<ability name="Кровяной амулет" icon="skills/haematic_phylactery64.png" skill="23" level="3" >
+   <description text="Заключите немного вашей крови и частичку души в некий потаенный предмет и воспользуйтесь им в самый необходимый момент. Или когда просто замучает жажда."/>
+   <resistbuff righteous="-1" />
+	<spell name="Create Haematic Phylactery" />
+   </ability>
+<ability name="Собиратель душ" icon="skills/wizard/bloodmagic3_64.png" skill="23" level="4">
+   <description text="Вы научились усиливать свои заклинания душами павших врагов, если вам конечно удалось заполучить таковую. И не забывайте, у роботов, мертвецов и овощей нет души."/>
+   <!-- doesn't work on vegetables or construct -->
+   <targetKillBuff percentage="50" name="Кража души"/>
+   <resistbuff righteous="-1" />
+   </ability>
+
+<ability name="Линиеходец" icon="skills/wizard/leylines0_64.png" skill="24" level="0">
+  <description text="Вы научились цепляться за тонкие грани невидимой силы, связующей наш и потусторонний мир. С их помощью вы быстрее регенерируете ману и можете восстановить ее во время произнесения заклинаний."/>
+  <secondarybuff id="14" amount="1"/> <!-- mana regen -->
+  <triggeroncast percent="25" name="Regen Mana 1"/>
+  </ability>
+<ability name="Высасывание энергии" icon="skills/magic_tap64.png" skill="24" level="1">
+  <spell name="Энергия линий" />
+  <description text="Используя свое знание линий cилы, вы можете периодически переноситься в эфирное измерение, чтобы восстановить ваши жизненные силы." />   
+  </ability>
+<ability name="Проводник" icon="skills/wizard/leylines1_64.png" skill="24" level="2">
+  <description text="Сквозь ваше тело свободно струится магическая энергия. Это дает вам еще большую скорость регенерации маны."/>
+  <secondarybuff id="14" amount="1"/> <!-- mana regen -->
+  <secondarybuff id="1" amount="3"/> <!-- mana -->
+  </ability>
+<ability name="Медиум" icon="skills/wizard/leylines2_64.png" skill="24" level="3">
+  <description text="Теперь вы такой же источник магической энергии, как и линии Силы. Знаете, что это значит? Еще больше маны!"/>
+  <secondarybuff id="14" amount="1"/> <!-- mana regen -->
+  <secondarybuff id="1" amount="10"/> <!-- mana -->
+  <triggeroncast percent="5" name="Тауматургическое слияние" />
+</ability>
+<ability name="Невидимая геометрия" icon="skills/invisible_geometries64.png" skill="24" level="4" >
+   <spell name="Невидимая геометрия" />
+   <description text="Линиеходцы-мастера могут использовать невидимую геометрию, чтобы двигаться-без-движений - но только в определенном направлении. Но знайте, передвижение через потусторонний мир невероятно истощает вашу магическую мощь."/>
+   </ability>
+  
+<ability name="Дипломированный маг" icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
+  <description text="Обучение в Школе волшебников не прошло даром - сила ваших заклинаний и объем маны увеличены."/>
+  <primarybuff id="5" amount="1" /> <!-- savvy -->
+  <secondarybuff id="3" amount="1"/> <!-- spellpower -->
+  <secondarybuff id="1" amount="5"/> <!-- mana -->
+  </ability>
+<ability name="Лицензия на волшебство" icon="skills/magic_license64.png" skill="22" level="1" >
+   <description text="У вас есть лицензия на волшебство и право отбирать её. Каждый монстр, на которого будет применена эта способность потеряет возможность пользоваться заклинаниями на короткое время."/>
+   <secondarybuff id="3" amount="1"/> <!-- spellpower -->
+   <primarybuff id="5" amount="1" /> <!-- savvy -->
+   <spell name="Thaumoentropic Missile" />
+   </ability>
+<ability name="Профсоюз волшебников" icon="skills/wizard/magictraining1_64.png"  skill="22" level="2">
+  <description text="Как исправно платящий взносы член профсоюза волшебников, вы получаете 5% скидку на посещение конференций и бесплатный членский билет профсоюза волшебников, который неплохо было бы заламинировать."/>
+  <secondarybuff id="1" amount="10"/> <!-- mana -->
+  <primarybuff id="5" amount="1" /> <!-- savvy -->
+  </ability>
+<ability name="Экстрапланарная концентрация" icon="skills/extraplanar_concentration64.png" skill="22" level="3" >
+   <spell name="Экстрапланарная концентрация" />
+   <description text="Необычайно высокая концентрация позволяет вам значительно увеличить скорость регенерации маны на короткий период. Позволяет вам на короткое время забыть, что вы находить в подземелье, наполненном кровожадными чудовищами, так что будьте благоразумны при выборе окружения, когда входите в это состояние." />
+   <primarybuff id="5" amount="1" /> <!-- savvy -->   
+   </ability>
+<ability name="Мастер волшебства" icon="skills/wizard/magictraining2_64.png"  skill="22" level="4">
+  <description text="Когда-то вы только учились, теперь же вы настоящий волшебник."/>
+  <primarybuff id="1" amount="5"/> <!-- sagacity -->
+  <primarybuff id="5" amount="5"/> <!-- savvy -->
+  <secondarybuff id="11" amount="5" /> <!-- resist -->
+  </ability>
+
+<ability name="Вампирическая атака" icon="skills/skill_vampirism.png" skill="13" level="0">
+  <targetHitEffectBuff percentage="100" name="Vampirism Attack" />
+  <description text="Ваши рукопашные атаки сильнее и высасывают жизнь из ваших врагов."/>
+  <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
+  </ability>
+<ability name="Дегустатор смерти" icon="skills/wizard/vampirism1_64.png" skill="13" level="1">
+  <spell name="Corpse Drain" />
+  <description text="Осушайте трупы, чтобы восполнить вашу (не)жизнь. Пейте до дна!"/>
+  </ability>
+<ability name="Блеск!" icon="skills/wizard/vampirism2_64.png" skill="13" level="2">
+  <spell name="Блестящий гламур"/>
+  <description text="Враги слепнут, очарованные вашим бесконечным вампирским гламуром. Они с радостью расстанутся с частью своей жизненной силы. Серьезная штука."/>
+  </ability>
+<ability name="Биовампиризм" icon="skills/psychic_vampire64.png" skill="13" level="3" >
+   <targetHitEffectBuff percentage="50" name="Биовампиризм" />
+   <description text="Жуткие способности вашего вампирского разума дают вам шанс при ударе похитить ману у врага и оглушить его." />
+   <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
+   </ability>
+<ability name="Трансильвация" icon="skills/batty64.png" skill="13" level="4" >
+   <description text="Вы можете превратится в Мыша, чтобы сделать ноги (ноги?). Й-И-И-и-ии! (Это звук, который испускает Мыш)"/>
+   <spell name="Обличье мыша" />   
+   </ability>
+  
+  <!-- Wizard Spells -->
+  
+<!-- NEW spell school spells -->
+
+	<!-- Flesh spells -->
+	
+<ability name="Зомбификация" icon="skills/spells/zombyfycation64.png" skill="15" level="0">
+  <spell name="Зомбификация"/>
+  <description text="Преобразовывайте, перерабатывайте, применяйте: после преобразования вашего врага в окровавленный труп, верните их к жизни в виде 'условно мертвого' прислужника, который будет защищать вас, пока снова не умрет."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  </ability>	
+<ability name="Сшивание тканей" icon="skills/spells/restoration64.png" skill="15" level="1">
+  <spell name="Сшивание тканей"/>
+  <description text="Это заклинание сошьет вместе рваные, колотые, резаные, рубленые и прочие раны. Просто месиво, а не лечение."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  </ability>
+<ability name="Мясобур" icon="skills/spells/fleshbore64.png" skill="15" level="2">
+  <spell name="Мясобур"/>
+  <description text="Ужасное кровавое проклятье, которое раздирает и разрывает плоть врага."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  </ability>
+<ability name="Мясной щит" icon="skills/spells/meatshield64.png" skill="15" level="3">
+  <spell name="Мясной щит"/>
+  <description text="Мясной щит увеличивает ваши жизненные силы и способность к регенерации здоровья."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  <resistbuff slashing="1" crushing="1" />
+  </ability>
+<ability name="Взрыв трупа" icon="skills/spells/corpus_burst64.png" skill="15" level="4">
+  <spell name="Взрыв трупа"/>
+  <description text="Это заклинание заставляет трупы взрываться! Кто же не любит взрывающиеся трупы? Да почти все, честно говоря."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  </ability>
+<ability name="Миазматическое гниение" icon="skills/spells/conjure_miasma64.png" skill="15" level="5">
+  <spell name="Миазматическое гниение"/>
+  <description text="После применения этого заклинания, ваши враги задохнутся от ужасных токсичных трупных газов. Правда забавно? Легко сводится на нет освежителем воздуха."/>
+  <secondarybuff id="0" amount="1" /> <!-- hp -->
+  <resistbuff toxic="1" putrefying="1" />
+  </ability>
+
+  <!-- Golemancy Spells -->
+
+<ability name="Живая мясорубка" icon="skills/spells/blade_being64.png" skill="14" level="0">
+  <spell name="Живая мясорубка"/>
+  <description text="Призывает злобное серебряное существо, целью которого является вращаться на месте и ранить каждого, кто на него наступит. Оно не настолько умно, чтобы самостоятельно двигаться"/>
+  </ability>
+<ability name="Призванный усач" icon="skills/spells/mustache64.png" skill="14" level="1">
+  <spell name="Призванный усач"/>
+  <description text="Вызывает к жизни маленького усатого голема, сражающегося на вашей стороне. Интересно, откуда растут усы?"/>
+  </ability>
+<ability name="Неодушевленная стена" icon="skills/spells/summon_wall64.png" skill="14" level="2">
+  <spell name="Неодушевленная стена"/>
+  <description text="Впервые изобретённое чокнутым зодчим Монтрессором, это заклинание выращивает прямо из пола стену, сокрушающую всё на своем пути. Восхитительно неестественно."/>
+  </ability>
+<ability name="Таумитоинфекция" icon="skills/spells/thaumite_swarm64.png" skill="14" level="3">
+  <spell name="Таумитозаражение"/>
+  <description text="Облако таумитов пожирает всё, до чего может добраться, до тех пор, пока не насытит свой безумный голод. Насытившись, они покидают тело жертвы, в поисках нового носителя."/>
+  </ability>
+<ability name="Смертельный механизм" icon="skills/spells/animate_robot64.png" skill="14" level="4">
+  <spell name="Grant Machine Mortality"/>
+  <description text="Призывает дружественного вам робота-компаньона, разрывающего врагов на части."/>
+  </ability>
+
+<!-- Digging ray.-->
+<ability name="Буролазер" icon="skills/spells/montresors_wall64.png" skill="14" level="5">
+  <spell name="Буролазер"/>
+  <description text="То, что было построено, может быть разрушено. Уничтожает стены и вообще имба."/>
+  </ability>
+
+  <!-- Mathemagical Formulae -->
+<ability name="Дисконтинуумный прыжок Фроды" icon="skills/spells/blink64.png" skill="16" level="0">
+  <spell name="Дисконтинуумный прыжок Фроды"/>
+  <description text="Этот прототип телепортирующего заклинания был разработан Фродой, как часть его диссертации по волшебству 'Исследование сверхплоского моментума в тауматогенной области столкновения равной 200 GeV'. Его действие признано нестабильным. Случайно вас телепортирует."/>
+  </ability>
+<ability name="Сокращающее исчисление Бэклэма" icon="skills/spells/weakness64.png" skill="16" level="1">
+  <spell name="Сокращающее исчисление Бэклэма"/>
+  <description text="Можете ли вы вычитать жизнь? Великий Бэклэм нашел способ, на собственную погибель. Это проклятие чрезвычайно ослабляет врага, оставляя его абсолютно немощным."/>
+  </ability>
+<ability name="Проклятие золотой пропорции" icon="skills/spells/curse_of_midas64.png" skill="16" level="2">
+  <spell name="Проклятие золотой пропорции"/>
+  <description text="Проклятие золотой пропорции было впервые использовано великим матемагом Ксеуклидом для превращения плоти врагов оного в очень, очень полезное золото. Просто пните противника, чтобы привести его в действие. Работает, как и описано - довольно прибыльное проклятие."/>
+  </ability>
+<ability name="Зензизензизензик" icon="skills/spells/zenziz64.png" skill="16" level="3">
+  <spell name="Зензизензизензик"/>
+  <description text="Увеличение собственной магической силы есть всего-навсего функция правильно примененной магической силы. Этот эффект складывается."/>
+  </ability>
+<ability name="Перевод Ксеуклида" icon="skills/spells/zephyric_transport64.png" skill="16" level="4">
+  <spell name="Перевод Ксеуклида"/>
+  <description text="Усовершенствованная (более точная), но более затратная версия прыжка Фроды. Мы уверены, что плотоядных телепортационных червей не бывает."/>
+  </ability>
+<ability name="Рекурсивное проклятие" icon="skills/spells/recursive_curse64.png" skill="16" level="5">
+  <spell name="Рекурсивное проклятие"/>
+  <description text="Это проклятие, которое не перестает проклинать - ваш враг еще пожалеет, что вообще родился."/>
+  </ability>
+
+  <!-- Psionics -->
+  
+<ability name="Наркосоматическая индукция" icon="skills/spells/sleep64.png" skill="17" level="0">
+  <spell name="Наркосоматическая индукция"/>
+  <description text="Засни, сейчас же. Погружает врага в болезненный, удушающий сон."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+<ability name="Психокинетический толчок" icon="skills/spells/psychokinetic_shove64.png" skill="17" level="1">
+  <spell name="Психокинетический толчок"/>
+  <description text="Отвали, сейчас же. Отталкивайте от себя врагов (и другие предметы) с неистовой силой."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+<ability name="Лечение кристаллами" icon="skills/spells/crystal_healing64.png" skill="17" level="2">
+  <spell name="Лечение кристаллами"/>
+  <description text="Излечивает вас силой кристаллов. О-о-ох! Хорошенько потопчитесь на них, чтобы насладиться их целительным эффектом."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+<ability name="Сшивание нервов" icon="skills/spells/nerve_staple64.png" skill="17" level="3">
+  <spell name="Сшивание нервов"/>
+  <description text="Наносит калечащий экзистенциальный урон вашей цели. Неблагоразумное применение может повлечь за собой экономические санкции."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+<!--
+<ability name="Бессознательное осознание" icon="skills/spells/unconscious_precognition64.png" skill="17" level="3">
+  <spell name="Бессознательное осознание"/>
+  <description text="Вы двигаетесь так же, как они! Кто они? Кто знает. Суть в том, что ваши рефлексы и тому подобные вещи работают лучше."/>
+  </ability>
+  -->
+<ability name="Пирокинез" icon="skills/spells/pyrokinesis64.png" skill="17" level="4">
+  <spell name="Пирокинез"/>
+  <description text="Огонь, батарея! Огонь, батальон! Вы не комбат, но жжёте не по-детски."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+<ability name="Безоговорочное обожание" icon="skills/spells/unconditional_love64.png" skill="17" level="5">
+  <spell name="Безоговорочное обожание"/>
+  <description text="Волшебным образом очаровывает монстра, заставляя его отказаться от своих злых помыслов и стать вашим союзником... на время. Потом они снова ударят вас в спину."/>
+  <secondarybuff id="11" amount="1"/>
+  </ability>
+
+  <!-- Necronomiconomist -->
+
+<ability name="Смертоносный сглаз" icon="skills/spells/deathly_hex64.png" skill="18" level="0">
+  <spell name="Смертоносный сглаз"/>
+  <description text="Это проклятье обволакивает ваших врагов некромантической энергией и высасывает их жизненные силы, если вы достаточно сильны. Однако будьте осторожны - это заклинание может навлечь на использовавшего Выжигание Нервов, Сокрушающую Боль и Всякие Смертоносные Штучки."/>
+  </ability>
+<ability name="Кошмарное проклятие" icon="skills/spells/nightmare_curse64.png" skill="18" level="1">
+  <spell name="Кошмарное проклятие"/>
+  <description text="Это наводящее трепет шобастианское кошмарное проклятие погружает ваших врагов в умиротворенную дремоту, после чего их мозгом овладевают Потусторонние Исчадия, коварно подменяющие подсознание Жуткими Видениями. Осторожно: подвергая противника действию жутких видений, вы навлекаете на себя побочный эффект в виде интоксикации."/>
+  </ability>
+<ability name="Метка Хтона" icon="skills/spells/mark_of_chthon64.png" skill="18" level="2">
+  <spell name="Метка Хтона"/>
+  <description text="Это заклинание пометит вас меткой Хтона, которая делает людей могущественнее простых смертных на короткое время. Но какой ценой!"/>
+  </ability>
+<ability name="Договор о скоротечной жизни" icon="skills/spells/fleeting_life64.png" skill="18" level="3">
+  <spell name="Договор о скоротечной жизни"/>
+  <description text="В обмен на получение способности красть жизненные силы у ваших врагов, вы обязуетесь передать часть срока вашей жизни некоему высшему существу. Подобные сделки не для слабаков."/>
+  <resistbuff necromantic="1"/>
+  </ability>
+<ability name="Потусторонняя одержимость" icon="skills/spells/eldritch_pillar64.png" skill="18" level="4">
+  <spell name="Потусторонняя одержимость"/>
+  <description text="Это заклинание вселяет в вашу цель существо не из нашей реальности, оно сразу же будет пытаться вырваться наружу, причиняя ужасающий урон носителю."/>
+  <resistbuff necromantic="1"/>
+  </ability>
+<ability name="Мрачный разлом" icon="skills/spells/tenebrous_rift64.png" skill="18" level="5">
+  <spell name="Мрачный разлом"/>
+  <description text="Открывает ужасную воронку Зла, которая пожирает всё, до чего может дотянуться."/>
+  <resistbuff necromantic="1"/>
+  </ability>	
+
+  <!-- Viking Wizard -->
+  
+<ability name="Сила заговорённой стали" icon="skills/spells/magic_steel64.png" skill="19" level="0">
+  <spell name="Заговорённая сталь"/>
+  <description text="Гром и молния будут сопровождать триумф вашей зачарованной стали! Это заклинание придаёт вашим атакам силу молний (и позволяет вам защищаться от них же)."/>
+  </ability>
+<ability name="Корни Скаты" icon="skills/spells/skathas_roots64.png" skill="19" level="1">
+  <spell name="Корни Скаты"/>
+  <description text="Увидев эти призванные корни, ваши враги остановятся как вкопанные. Потому, что будут вкопаны, да ещё и со сломанными шеями."/>
+  </ability>
+<ability name="Арктический смерч" icon="skills/spells/arctic_vortex64.png" skill="19" level="2">
+  <spell name="Арктический смерч"/>
+  <description text="Призовите ледяные Ветра Севера на вашего врага и посмотрите как его замороженная плоть отделится от костей."/>
+  </ability>
+   <!-- TODO: Odin's Barter -->
+<ability name="Нечестивый боевой клич" icon="skills/spells/unholy_warcry64.png" skill="19" level="3">
+  <spell name="Нечестивый боевой клич"/>
+  <description text="Ваш нечестивый боевой клич пробуждает страх и слабость в сердцах врагов, понижая их боевой дух и, что важно, способность защищаться."/>
+  </ability>
+<ability name="Рука Белимоура" icon="skills/spells/firehand64.png" skill="19" level="4">
+  <spell name="Рука Белимоура"/>
+  <description text="Рука Белимоура - рука пылающая. Она дает вам способность обжигать своими атаками и защищаться от огня. Также она потребляет ману в таких количествах, которые вам даже и не снились."/>
+  </ability>
+<ability name="Молния Тора" icon="skills/spells/fulminaric_bolt64.png" skill="19" level="5">
+  <spell name="Молния Тора"/>
+  <description text="Призывает ярость Тора в виде разряда молнии. Берегитесь!"/>
+  </ability>
+
+  <!-- Asrologer -->
+
+<ability name="Лучезарная аура" icon="skills/spells/radiant_aura64.png" skill="20" level="0">
+  <spell name="Лучезарная аура"/>
+  <description text="Вас окружает ореол света, который освещает тьму (и придает вам внутренние силы). Те, кто осмелятся напасть, столкнутся с ослепляющей и оглушающей вспышкой света. Эта аура может поглотить несколько ударов до того как рассеется."/>
+  <resistbuff aethereal="1"/>  
+  </ability>
+<ability name="Солнечные письмена" icon="skills/spells/divine_inscription64.png" skill="20" level="1">
+  <spell name="Солнечные письмена"/>
+  <description text="Эта волшебная руна наделена пылающей мощью солнца и поможет остановить ваших врагов. Ну, хотя бы ненадолго."/>
+  <resistbuff aethereal="1"/>  
+  </ability>
+<ability name="Ослепительная вспышка света" icon="skills/spells/blinding_light64.png" skill="20" level="2">
+  <spell name="Ослепительная вспышка света"/>
+  <description text="Ослепляет всех, кто вас окружает вспышкой обжигающего света, вызывающего боль, паралич и лёгкую тошноту."/>
+  <resistbuff aethereal="1"/>  
+  </ability>
+<ability name="Cизигия" icon="skills/spells/syzygy64.png" skill="20" level="3">
+  <spell name="Cизигия"/>
+  <description text="Выстраивает планеты в ряд, чтобы наделить вас сверхъестественной ловкостью, силой и умом! Требует маны для поддержания."/>
+  <resistbuff aethereal="1"/> 
+  </ability>
+<ability name="Небесный щит" icon="skills/spells/celestial_aegis64.png" skill="20" level="4">
+  <spell name="Небесный щит"/>
+  <description text="Благодаря этому щиту, наделенному могуществом звезд, космические силы будут оберегать вас. В большинстве случаев. Этот эффект рассеивается при ударе и требует маны для поддержания."/>
+  <resistbuff aethereal="1"/>
+  </ability>
+<ability name="Парад звезд" icon="skills/spells/stars_aligned64.png" skill="20" level="5">
+  <spell name="Парад звезд"/>
+  <description text="Во время этого астрономического явления ужасающая мощь небес низвергается на все, что вас окружает."/>
+  <resistbuff aethereal="1"/>
+  </ability>
+
+  <!-- Promethean Magic -->
+
+<ability name="Дыхание дракона" icon="skills/spells/dragons_breath64.png" skill="21" level="0">
+  <spell name="Дыхание дракона"/>
+  <description text="Вы можете испустить изо рта струю пламени. Примерно так, как в той истории с пари о бочке гномьего рома. Пламя поджигает всё на своем пути, включая пол." />
+  </ability>
+   <!-- TODO: Blazetrailing -->
+<ability name="Руна взрыва" icon="skills/spells/rune_of_exploding64.png" skill="21" level="1">
+  <spell name="Руна взрыва"/>
+  <description text="Начертайте волшебную взрывающуюся руну на полу. Только не наступите!" />
+  <resistbuff conflagratory="1"/>  
+  </ability>
+<ability name="Огненный дракончик" icon="skills/spells/summon_wyrmling64.png" skill="21" level="2">
+  <spell name="Огненный дракончик"/>
+  <description text="Этот огненный ритуал призывает дружественного дракона, который с радостью подожжет парочку людишек и наступит в ловушку вместо вас. Как и большинство заклинаний Прометея, процесс призыва имеет побочный эффект в виде воспламенения всего вокруг вас."/>
+  <resistbuff conflagratory="1"/>  
+  </ability>
+<ability name="Банальный огненный шар." icon="skills/spells/fireball64.png" skill="21" level="3">
+  <spell name="Банальный огненный шар."/>
+  <description text="Это файрболл. Он делает БА-БАХ. И поджигает. Что же вам еще нужно?" />
+  <resistbuff conflagratory="1"/>  
+  </ability>
+<ability name="Греческий огонь" icon="skills/spells/tactical_pyre64.png" skill="21" level="4">
+  <spell name="Греческий огонь"/>
+  <description text="Призывает стену огня из Элементального Плана Стен Огня. Зажигается несколько раз, пока потустороннее топливо не кончается в результате недостатка маны. При наличии большого магического таланта произносить заклинания становится проще, а его пламя становится еще горячее."/>
+  <resistbuff conflagratory="1"/>  
+  </ability>
+<ability name="Круг адского пламени" icon="skills/spells/infernal_torus64.png" skill="21" level="5">
+  <spell name="Круг адского пламени"/>
+  <description text="Выполнив несколько очаровательных танцевальных движений, вы добавите огня в вечеринку, эффектно воспламенив всех вокруг. А огня всё прибавляется, повсюду начинается хаос! Чем больше сила вашего волшебства - тем жарче пламя."/>
+  <resistbuff conflagratory="1"/>  
+  </ability>
+
+
+<!-- WARRIORING -->
+
+
+
+<ability name="Боевой лесоруб" icon="skills/warrior/axemanship0_64.png" skill="1" level="0">
+  <description text="Облачитесь в Клетчатое. Станьте одним из одетых в Клетчатое. Эта способность закладывает основы владения топором."/>
+  <secondarybuff id="9" amount="1"/> <!-- EDR -->
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff slashing="2"/>
+  </ability>
+<ability name="Удар викинга" icon="skills/warrior/axemanship1_64.png" skill="1" level="1">
+  <description text="Присоединитесь к церкви Одина! Научитесь ненавидеть! Эта способность дает вам шанс выполнить 'удар викинга' во время рукопашного боя."/>
+  <!-- <spell name="Удар викинга"/> -->
+  <targetHitEffectBuff percentage="20" name="Удар викинга" />
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+   </ability>
+<ability name="Тренировки с топором" icon="skills/skill_axe.png" skill="1" level="2">
+  <description text="Упорные тренировки с топором сделали ваши удары более точными и смертоносными. Трепещите, деревья! Также вы иногда можете нанести калечащее ранение."/>
+  <damagebuff slashing="1" />
+  <targetHitEffectBuff percentage="8" name="Калечащее ранение" />
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  </ability>
+<ability name="Норвежское Секиррнадо" icon="skills/warrior/axemanship2_64.png" skill="1" level="3">
+  <description text="Уничтожайте своих врагов с помощью приемов, описанных в древних сагах! С помощью этой способности вы можете нанести удар всем окружающих вас врагам."/>
+  <spell name="Норвежское Секиррнадо"/>
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Мантра секиры" icon="skills/warrior/axe_mantra64.png" skill="1" level="4" >
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <description text="Духовное приобщение к искусству боя топором позволило раскрыть его секреты: у вас есть шанс выполнить особенно убийственную атаку при использовании топоров." />
+  <targetHitEffectBuff percentage="16" name="Потеря крови" />
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  </ability>
+<ability name="Философия топоров" icon="skills/warrior/axemanship3_64.png" skill="1" level="5">
+  <description text="На самом высоком уровне, бой топором перестает быть лишь боевым искусством. Теперь это целое мировоззрение, стиль жизни. Увеличивает ваши боевые способности при использовании топоров и позволяет применять ужасающую римскую атаку."/>
+  <spell name="Cogito Ergo Splat"/>
+  <secondarybuff id="4" amount="5"/> <!-- Crit -->
+  <secondarybuff id="9" amount="14"/> <!-- EDR -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <damagebuff slashing="3"/>
+  </ability>
+
+
+<ability name="Ученик фехтования" icon="skills/warrior/swordplay0_64.png" skill="0" level="0">
+  <description text="Запомните раз и навсегда: острый кончик меча должен втыкаться в тело вашего противника. Это первый шаг на пути к мастерству владения мечом и поэтому дает лишь небольшие боевые бонусы."/>
+  <secondarybuff id="8" amount="2"/> <!-- Counter -->
+  <damagebuff slashing="1" />
+  </ability>
+<ability name="Выпад Лейхтенауэра" icon="skills/warrior/swordplay1_64.png" skill="0" level="1">
+  <description text="Что же из себя представляет выпад Лейхтенауэра? Рад, что спросили: это в высшей степени тевтонская (и в высшей степени болезненная) атака, которую вы имеете шанс выполнить вместе с каждым ударом после изучения данной способности. Урон зависит от вашей упитанности."/>
+  <!-- <spell name="Выпад Лейхтенауэра"/> -->
+  <targetHitEffectBuff percentage="20" name="Выпад Лейхтенауэра" />
+  <secondarybuff id="8" amount="2"/> <!-- Counter -->
+  <secondarybuff id="9" amount="2" /> <!-- EDR -->
+  <damagebuff slashing="1"/>
+  </ability>
+<ability name="Упражнения с мечом" icon="skills/skill_sword.png" skill="0" level="2">
+  <description text="После долгих часов фехтования с мухами, ваши навыки в обращении с мечом значительно выросли. Порой вы можете нанести калечащее ранение."/>
+  <damagebuff piercing="1" />
+  <secondarybuff id="8" amount="2"/> <!-- Counter -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <targetHitEffectBuff percentage="8" name="Калечащее ранение" />
+  </ability>
+<ability name="Рывок Тибальта" icon="skills/warrior/swordplay2_64.png" skill="0" level="3">
+  <description text="Зачем обходить если можно атаковать прямо сквозь вашего врага? Эта способность позволяет атаковать сразу несколько квадратов, выстроенных в линию за противником. Урон зависит от вашей проворности."/>
+  <spell name="Рывок Тибальта"/>
+  <damagebuff piercing="2"/>
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Знаток мечей" icon="skills/warrior/sword_lore64.png" skill="0" level="4" >
+  <secondarybuff id="9" amount="1"/> <!-- EDR -->
+  <description text="Прилежные исследования в области применения мечей позволили открыть ужасные тайны: вы сможете наносить особенно убийственные атаки мечами." />
+  <targetHitEffectBuff percentage="16" name="Потеря крови" />
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Поэт меча" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
+  <description text="Говорят, перо ранит сильнее меча, но для настоящего воина - меч и есть перо. Позволяет достичь совершенства во владении мечом и контратаках."/>
+  <secondarybuff id="8" amount="4"/> <!-- Counter -->
+  <secondarybuff id="9" amount="13"/> <!-- EDR -->
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff piercing="1"/>
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <playerHitEffectBuff percentage="20" name="Я не левша"/>
+  <!-- todo : add NIM based attack -->
+  </ability>
+
+  
+<ability name="Подмастерье-молотобоец" icon="skills/warrior/macery0_64.png" skill="2" level="0">
+  <description text="Будь у вас молот, вы бы молотили с утра пораньше. Эта базовая тренировка увеличивает сокрушающий урон, наносимый в бою."/>
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff crushing="2"/>
+  </ability>
+<ability name="Гномье приветствие" icon="skills/warrior/macery1_64.png" skill="2" level="1">
+  <targetHitEffectBuff percentage="20" name="Гномье приветствие" />
+  <description text="Заставит врага держать дистанцию. Даёт шанс нанести особенно разрушительную отбрасывающую атаку в рукопашном бою при использовании булавы."/>
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <damagebuff piercing="1"/>
+  </ability>
+<ability name="Уход за булавой" icon="skills/skill_mace.png" skill="2" level="2">
+  <description text="Важно всегда поддерживать вашу булаву в хорошем состоянии, чтобы в случае чего задать кому-то хорошую взбучку. Дает шанс нанести калечащее ранение."/>
+  <damagebuff crushing="1" />
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <targetHitEffectBuff percentage="8" name="Раздробленные кости" />
+  </ability>
+<ability name="Метеор Рагнара" icon="skills/warrior/macery2_64.png" skill="2" level="3">
+  <spell name="Метеор Рагнара"/>
+  <description text="Обрушьте удар, полный воистину сокрушающей жестокости на область перед вами!"/>
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff crushing="1" />
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Знание булав" icon="skills/warrior/mace_knowledge64.png" skill="2" level="4" >
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <description text="Взвешенные размышления о сути булав позволили вам открыть тёмные секреты, содержащиеся внутри такого оружия. Дает вам шанс выполнить особо убийственную атаку при использовании булавы." />
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <targetHitEffectBuff percentage="6" name="Потеря крови" />
+  <targetHitEffectBuff percentage="10" name="Калечащее ранение" />
+  </ability>
+<ability name="Молотобоец-чемпион" icon="skills/warrior/macery3_64.png" skill="2" level="5">                
+  <description text="Размер молота не имеет значения, главное - умение попасть по шляпке. Ваши удары булавами усилились, а также вы имеете шанс нанести точечный удар, который оглушает врагов и наносит урон, зависящей от вашей упитанности."/>
+  <targetHitEffectBuff percentage="15" name="Pedantic Beating" />
+  <secondarybuff id="9" amount="14"/> <!-- EDR -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <damagebuff piercing="1" crushing="1"/>
+  </ability>
+
+
+
+<ability name="Новичок с посохом" icon="skills/warrior/staff-fighting0_64.png" skill="3" level="0">
+  <description text="Просто не прекращайте заниматься и вы всему научитесь. Базовые тренировки с посохом позволяют вам лучше блокировать атаки."/>
+  <secondarybuff id="7" amount="2"/> <!-- Block -->
+  <secondarybuff id="8" amount="1"/> <!-- Counter -->
+  <damagebuff crushing="1" />
+  </ability>
+<ability name="Духовный переход" icon="skills/warrior/staff-fighting1_64.png" skill="3" level="1">
+  <description text="Эта способность даёт вам шанс наносить особо мощные атаки, которые частично выполняются в небесном измерении. Также, дополнительные тренировки увеличили урон, наносимый посохами."/>
+  <secondarybuff id="9" amount="1"/> <!-- EDR -->
+  <secondarybuff id="5" amount="2"/> <!-- Haywire -->
+  <secondarybuff id="7" amount="1"/> <!-- Block -->
+  <targetHitEffectBuff percentage="20" name="Духовный переход" />
+  <damagebuff crushing="1"/>
+  </ability>
+<ability name="Изучение посоха" icon="skills/skill_staff.png" skill="3" level="2">
+  <description text="Вы придаёте большое значение чувству посоха и поэтому используете обе руки. Даёт шанс выполнить чрезвычайно неприятный удар, ломающий кости."/>
+  <damagebuff crushing="1" />
+  <targetHitEffectBuff percentage="8" name="Раздробленные кости" />
+  <secondarybuff id="7" amount="1"/> <!-- Block -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  </ability>
+<ability name="Каскадный удар Ки" icon="skills/warrior/staff-fighting2_64.png" skill="3" level="3">     
+  <description text="Почерпнув много полезного в разговоре с бывшим гладиатором, ныне хозяином сырной лавки, вы выучили новый приём, позволяющий наносить удар сразу нескольким врагам. Позволяет выполнять атаку по области."/>
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff crushing="1"/>
+  <secondarybuff id="3" amount="1"/> <!-- magic power -->
+  <spell name="Каскадный удар Ки"/>
+  </ability>
+<ability name="Тайны посоха" icon="skills/warrior/staff_secrets64.png" skill="3" level="4" >
+  <secondarybuff id="9" amount="1"/> <!-- EDR -->
+  <description text="Глубокое погружение в бездонные пучины искусства владения посохом привело вас к поразительным откровениям. Теперь вы имеете шанс нанести особо убийственную атаку в рукопашном бою при использовании посохов." />
+  <targetHitEffectBuff percentage="6" name="Потеря крови" />
+  <targetHitEffectBuff percentage="10" name="Калечащее ранение" />
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Мудрец с посохом" icon="skills/warrior/staff-fighting3_64.png" skill="3" level="5">
+  <description text="Народная мудрость гласит, что боевые посохи не лишены фаллического символизма. В таком случае, в совершенстве овладев этим искусством, вы овладели собой. Дает множество боевых и магических бонусов."/>
+  <secondarybuff id="9" amount="12"/> <!-- EDR -->
+  <secondarybuff id="7" amount="5"/> <!-- Block -->
+  <secondarybuff id="3" amount="3"/> <!-- Magic Power -->
+  <secondarybuff id="5" amount="4"/> <!-- Haywire -->
+  <secondarybuff id="11" amount="5"/> <!-- Magic resistance -->
+  <damagebuff crushing="2" aethereal="2"/>
+  </ability>      
+
+  
+<ability name="Скромный новичок" icon="skills/warrior/unarmed_art0_64.png" skill="6" level="0">
+  <description text="Где же вы так набили руку? В Чечне? В Афганистане? Эта способность делает вас сильнее, быстрее, крепче и лучше. Ваши безоружные атаки могут пробивать броню."/>
+  <secondarybuff id="7" amount="2"/> <!-- Block -->
+  <secondarybuff id="8" amount="3"/> <!-- Counter -->
+  <secondarybuff id="6" amount="2"/> <!-- Dodge -->
+  <damagebuff piercing="1" crushing="1" />
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <secondarybuff id="3" amount="1"/> <!-- magic power -->
+  </ability>
+<ability name="Техника метания быков" icon="skills/warrior/unarmed_art1_64.png" skill="6" level="1">       
+  <description text="Усиленные тренировки позволяют вам отталкивать крупный рогатый скот с поразительной силой. Есть у этой техники и другие области применения. Дает шанс выполнить специальную отбрасывающую атаку в рукопашном бою."/>
+  <spell name="Техника метания быков"/>
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <secondarybuff id="7" amount="3"/> <!-- Block -->
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <secondarybuff id="6" amount="3"/> <!-- Dodge -->
+  <damagebuff crushing="1"/>
+  </ability>
+<ability name="Работа ногами" icon="skills/warrior/footwork64.png" skill="6" level="2">
+  <description text="Нога в нужном месте в нужное время может творить чудеса. Дает шанс выполнять чрезвычайно неприятную атаку, ломающую кости."/>
+  <secondarybuff id="7" amount="1"/> <!-- Block -->
+  <secondarybuff id="9" amount="1" /> <!-- EDR -->
+  <secondarybuff id="6" amount="1"/> <!-- Dodge -->
+  <damagebuff piercing="1" />
+  <targetHitEffectBuff percentage="8" name="Раздробленные кости" />
+  </ability>
+<ability name="Взлёт серой цапли" icon="skills/warrior/unarmed_art2_64.png" skill="6" level="3">
+  <spell name="Взлёт серой цапли"/>
+  <description text="Вихрь ударов уж точно развеет ваших врагов по ветру. Эта способность позволяет наносить атаку по области"/>
+  <secondarybuff id="9" amount="3"/> <!-- EDR -->
+  <secondarybuff id="7" amount="2"/> <!-- Block -->
+  <secondarybuff id="8" amount="4"/> <!-- Counter -->
+  <secondarybuff id="6" amount="2"/> <!-- Dodge -->
+  <damagebuff piercing="2"/>
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Каменная ступня" icon="skills/skill_unarmed.png" skill="6" level="4" >
+  <secondarybuff id="9" amount="1"/> <!-- EDR -->
+  <description text="После того как вы прошагали милю по лицам других людей, ваши ступни стали такими же сильными как и ваш характер. У вас есть шанс выполнить особо убийственную атаку без оружия." />
+  <secondarybuff id="3" amount="1"/> <!-- magic power -->
+  <targetHitEffectBuff percentage="10" name="Stone Sole Pummeling" />
+  <damagebuff crushing="2" />
+  </ability>
+<ability name="Мастер техники Драконьей ступни" icon="skills/warrior/unarmed_art3_64.png" skill="6" level="5">
+   <description text="На этом уровне ученик становится учителем. Ваши атаки наделены небесной энергией."/>
+   <secondarybuff id="7" amount="4"/> <!-- Block -->
+   <secondarybuff id="8" amount="6"/> <!-- Counter -->
+   <secondarybuff id="4" amount="4"/> <!-- Crit -->
+   <secondarybuff id="9" amount="11"/> <!-- EDR -->
+   <damagebuff aethereal="4"/>
+   <targetHitEffectBuff percentage="25" name="Nice Combo!" />
+   <secondarybuff id="2" amount="1"/> <!-- melee power -->
+   </ability>
+
+   
+<ability name="Болтомёт" icon="skills/warrior/crossbow0_64.png" skill="4" level="0">
+  <description text="Чтобы научиться, нужно потрудиться. Базовые тренировки с арбалетом немного увеличили вашу меткость и силу выстрела. Шанс сохранить стрелу при выстреле также увеличен."/>
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <recoverybuff amount="15" />
+  <!-- <crossbowShotBuff percentage="20" name="Под наблюдением ЦСБ"/> a bit crazy -->
+  <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
+   </ability>
+<ability name="Разрывной выстрел" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
+  <description text="Эта техника, обросшая слухами и сплетнями, позволяет выстрелить с гораздо большей, чем обычно, силой, отбрасывая врага и нанося тому огромный урон. Но она сложна в исполнении, поэтому вы можете применять её только изредка." />
+  <damagebuff piercing="1"/>
+  <recoverybuff amount="10" />
+  <crossbowShotBuff name="Разрывной выстрел" percentage="20" />
+  </ability>
+<ability name="В яблочко" icon="skills/warrior/crossbow1_64.png" skill="4" level="2">
+  <description text="Вы промахиваетесь очень редко, а урон, наносимый арбалетом, незначительно увеличился. Шанс подобрать стрелу после выстрела также увеличен."/>
+  <secondarybuff id="9" amount="8"/> <!-- EDR -->
+  <secondarybuff id="4" amount="1"/> <!-- Crit -->
+  <damagebuff piercing="1"/>
+  <recoverybuff amount="5" />
+  </ability>
+<ability name="Скиталец" icon="skills/maverick64.png" skill="4" level="3">
+  <description text="Хотите убить - цельтесь в сердце. У вас есть шанс загнать стрелу глубоко в плоть вашей цели." />
+  <damagebuff piercing="1"/>
+  <recoverybuff amount="5" />
+  <crossbowShotBuff name="Мясобур" percentage="22" />
+  <!-- and give some relevent stat buffs -->
+  <!--<playerHitEffectBuff percentage="15" name="Maverick Counterattack" />-->
+  </ability>
+<!-- Put this off 'til later.
+<ability name="Impossible Shot" icon="skills/impossible_shot64.png" skill="4" level="4">
+  <description text="fire a bolt through enemies 'til it hits a wall" />
+  <secondarybuff id="9" amount="2"/>
+  <recoverybuff amount="5" />
+  <spell name="Impossible Shot" />
+  </ability> -->
+<ability name="Принц арбалета" icon="skills/skill_crossbow.png" skill="4" level="4">
+  <description text="Представьте, что вы троюродный брат Робина Гуда. Неплохо, верно? Эта способность увеличивает урон, наносимый арбалетами. Шанс подобрать стрелу после выстрела также увеличен."/>
+  <secondarybuff id="4" amount="4"/> <!-- Crit -->
+  <secondarybuff id="9" amount="6" /> <!-- EDR -->
+  <damagebuff piercing="3"/>
+  <recoverybuff amount="10" />
+  <crossbowShotBuff percentage="15" name="Потеря крови" />
+  </ability>
+
+
+
+<ability name="Хитрец" icon="skills/skill_thrown.png" skill="5" level="0">
+  <description text="Вы неплохо освоили броски, но записываться в баскетбольную команду пока еще рано. Незначительно увеличивает урон, наносимый метательным оружием. Шанс подобрать брошенное оружие увеличен."/>
+  <secondarybuff id="9" amount="2"/>
+  <secondarybuff id="4" amount="1"/>
+  <recoverybuff amount="10" />
+  <thrownBuff name="Beaned" percentage="20"/>
+  </ability>
+<ability name="Метание монстров" icon="skills/monster_toss64.png" skill="5" level="1" >
+  <description text="Не нравится вон тот монстр? Ну и отшвырните его!" />
+  <recoverybuff amount="5" />
+  <spell name="Метание монстров" />
+  <secondarybuff id="2" amount="" /> <!-- melee -->
+  </ability>
+<ability name="Пельтаст" icon="skills/warrior/thrown1_64.png" skill="5" level="2">
+  <description text="Вы достаточно искусны в исполнении тактики пельтастов 'брось-и-беги'. Впрочем, в беге вы как раз таки не очень искусны, но по крайней мере вы стараетесь уклоняться. Шанс подобрать брошенное оружие увеличен."/>
+  <secondarybuff id="9" amount="2"/> 
+  <secondarybuff id="6" amount="2"/> 
+  <damagebuff crushing="1"/>
+  <recoverybuff amount="5" />
+  <!-- <thrownBuff name="Laser Blast" percentage="100"/> -->
+   </ability>
+<!--
+<ability name="Dual Pitcher" icon="skills/dual_pitcher64.png" skill="5" level="2" >
+  <description text="two shots in one turn" />
+  <recoverybuff amount="5" />
+  <spell name="Dual Pitch" />
+  </ability>-->
+<ability name="Австралийская техника" icon="skills/australian64.png" skill="5" level="3" >
+  <description text="Австралийская техника довольно сложна, но успешное исполнение приведет к тому, что ваше оружие войдет глубоко в плоть вашей жертвы (или что там у неё вместо плоти), нанося огромный урон. Исключительные метательные традиции Южного континента." />
+  <recoverybuff amount="5" />
+  <thrownBuff name="Мясобур" percentage="20"/>
+  </ability>
+<!--<ability name="Trap Throw" icon="skills/trap_throw64.png" skill="5" level="4" >
+  <description text="throw a trap like a thrown weapon; also gives trap disarm" />
+  <recoverybuff amount="5" />
+  <spell name="Trap Throw" />
+  </ability>-->
+<ability name="Архипринц Бросания Всяких Вещей в Людей" icon="skills/warrior/thrown2_64.png" skill="5" level="4">
+  <description text="Несмотря на то, что метание оружия в людей обычно не причисляется к благородным боевым искусствам, вам удалось придать ему определенную аристократичность. В некотором роде. В основном благодаря тому, что ваши броски действительно страшной силы. Шанс подобрать брошенное оружие увеличен."/>
+  <secondarybuff id="4" amount="4"/> <!-- Crit -->
+  <secondarybuff id="9" amount="2" /> <!-- EDR -->
+  <damagebuff crushing="3"/>
+  <recoverybuff amount="15" />
+  <thrownBuff percentage="15" name="Раздробленные кости" />
+  </ability>
+
+
+<ability name="Толстокожесть" icon="skills/warrior/armourer0_64.png" skill="11" level="0">
+  <description text="Получив удар вы лишь становитесь сильнее! Увеличивает ваши жизненные силы и шанс блокировать атаку."/>
+  <secondarybuff id="7" amount="6"/> <!-- block -->
+  <secondarybuff id="0" amount="5"/> <!-- hitpoints -->
+  </ability>
+<ability name="Проверка экипировки" icon="skills/warrior/armourer1_64.png" skill="11" level="1">
+  <description text="Чтобы забронироваться, сначала нужно представить, что вы хорошо бронированы. Эта способность позволяет затянуть ремни ваших доспехов, что повышает эффективность использования брони. Этот бонус пропадает после некоторого количества ударов."/>
+  <secondarybuff id="7" amount="1"/> <!-- block -->
+  <resistbuff piercing="1"/>
+  <spell name="Проверка экипировки" />
+  </ability>
+<ability name="Само заживёт" icon="skills/stat_con64.png" skill="11" level="2">
+   <description text="Это всего лишь царапина, само заживёт. С некоторой вероятностью увеличивает регенерацию и упрямство после получения удара." />
+   <secondarybuff id="0" amount="5"/> <!-- hp -->
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+   <playerHitEffectBuff percentage="20" name="Само заживёт" />
+   </ability>
+<ability name="Это лишь делает меня сильнее" icon="skills/stat_str64.png" skill="11" level="3">
+   <description text="Опыт побоев, переломов и порезов дал вам незаменимые знания об этих вещах. Получив удар вы с некоторой вероятностью увеличите ваши здоровье, упитанность и сопротивляемость колющему урону." />
+   <secondarybuff id="10" amount="1"/> <!-- armor_absorption -->
+   <playerHitEffectBuff percentage="15" name="Это лишь делает меня сильнее" />
+   </ability>
+<ability name="Латник" icon="skills/skill_armour.png" skill="11" level="4">
+  <description text="Вы спите в кирасе, плаваете в кольчуге и танцуете в сабатонах. Увеличивает вашу защиту и дает шанс выполнить 'Проверку экипировки' при получении удара."/>
+  <secondarybuff id="7" amount="7"/> <!-- block -->
+  <secondarybuff id="10" amount="2"/> <!-- armor_absorption -->
+  <resistbuff piercing="2"/>
+  <playerHitEffectBuff percentage="10" name="Проверка экипировки" />
+  </ability>
+
+
+<ability name="Младший щитоносец" icon="skills/skill_shieldbearer.png" skill="8" level="0">
+  <description text="Вы перетаскали столько чужих щитов, что обращаетесь с собственным на порядок лучше."/>
+  <secondarybuff id="7" amount="8"/> <!-- block -->
+  </ability>
+<ability name="Пригнись и накройся!" icon="skills/warrior/shieldbearer1_64.png" skill="8" level="1">
+  <description text="Сражайся с умом! Может увеличить вашу защиту на некоторое время после получения удара."/>
+  <playerHitEffectBuff percentage="20" name="Пригнись и накройся!" />
+  <secondarybuff id="7" amount="2"/> <!-- block -->
+  </ability>
+<ability name="Защитный удар" icon="skills/warrior/shieldbearer2_64.png" skill="8" level="2">
+  <description text="Иногда лучшая защита - это хорошенько стукнуть другого парня щитом по башке. Наносит большой сокрушающий урон врагу, быть может даже оглушая его. Урон зависит от вашего упрямства." />
+  <secondarybuff id="7" amount="1"/> <!-- block -->
+  <spell name="Защитный удар" />
+  </ability>
+<ability name="Построение 'черепахой'" icon="skills/warrior/shieldbearer3_64.png" skill="8" level="3">
+  <description text="Этим боевым порядком вряд ли кого-то напугаешь. Скорее всего потому, что вы просто накрываетесь своим щитом с головой. Однако это позволит вам выжить чуть дольше. Использование этой способности увеличивает вашу защиту до тех пор, пока вы не получите некоторое количество ударов."/>
+  <spell name="Построение 'черепахой'" />
+  <secondarybuff id="7" amount="1"/> <!-- block -->
+  </ability>
+<ability name="Эксперт по щитам" icon="skills/warrior/shieldbearer4_64.png" skill="8" level="4">
+  <description text="Отныне щит - часть вас. Та, крепкая, часть, которой не больно при ударе. А еще вы держите её между собой и плохими парнями. В общем, вы чертовски хороши в обращении с щитами. Даёт шанс выполнить 'Защитный удар' в бою."/>
+  <secondarybuff id="7" amount="8"/> <!-- block -->
+  <primarybuff id="4" amount="1"/> <!-- Stubborness -->
+  <secondarybuff id="10" amount="1"/> <!-- armour -->
+  <resistbuff piercing="2"/>
+  <targetHitEffectBuff percentage="10" name="Защитный удар"/>
+  </ability>
+
+	
+<!-- Dual Wield : Dextrous Warrior -->
+
+<ability name="Умелые ручки" icon="skills/skill_dualwield.png" skill="7" level="0">
+  <description text="Быстрее, убивайте, убивайте! Базовые тренировки позволяют вам эффективнее использовать два оружия одновременно."/>
+  </ability>
+<ability name="Наступательная тактика" icon="skills/warrior/dualwield1_64.png" skill="7" level="1">
+  <description text="А теперь всем оружием одновременно! Ваши атакующие способности увеличены на некоторое время. Вы автоматически используете эту способность как только представляется возможность."/>
+  <targetHitEffectBuff percentage="12" name="Наступательная тактика" />
+  <secondarybuff id="8" amount="3"/> <!-- Counter -->
+  </ability>
+<ability name="Защита амбидекстра" icon="skills/warrior/dualwield2_64.png" skill="7" level="2">
+  <description text="Ваш блокирующий потенциал удвоен! Теперь защищаться стало ещё проще!"/>
+  <secondarybuff id="8" amount="2"/> <!-- Counter -->
+  <secondarybuff id="7" amount="4"/> <!-- block -->
+  </ability>
+<ability name="Скорость боя" icon="skills/momentum64.png" skill="7" level="3" >
+  <description text="Продолжайте в том же духе для увеличения ваших боевых способностей. Вонзайте и рассекайте!" />
+  <targetHitEffectBuff percentage="100" name="Скорость боя" />
+  </ability>
+<!-- defer this.
+<ability name="Inverse Minion Law" icon="skills/inverse_minion64.png" skill="7" level="4" >
+  <description text="bonus based on # of adjacent enemies" />
+  </ability> -->
+<ability name="Явно не Дзирт" icon="skills/warrior/dualwield3_64.png" skill="7" level="4">
+  <description text="Вас часто не понимают другие люди, но ведь это значит, что вы особенный. Значительно увеличивает шанс контратаки."/>
+  <secondarybuff id="8" amount="10"/> <!-- Counter -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+
+	
+ <!-- die die die! -->
+<ability name="Beginner's Luck" icon="skills/warrior/deadshot0_64.png" skill="12" level="0">
+  <secondarybuff id="9" amount="5"/> <!-- edr -->
+  <secondarybuff id="4" amount="1"/> <!-- crit -->
+  <description text="With some basic training, you don't miss as much in combat as linear mathematics would suggest."/>
+  </ability>
+<ability name="True Aim" icon="skills/warrior/deadshot1_64.png" skill="12" level="1">
+  <secondarybuff id="9" amount="5"/> <!-- edr -->
+  <secondarybuff id="4" amount="1"/> <!-- crit -->
+  <targetHitEffectBuff percentage="14" name="Потеря крови" />
+  <description text="You miss even less in combat of all kinds, and hit even better. You have a chance to score a bleeding-out wound on your enemies."/>
+  </ability>
+<ability name="Искусный стрелок" icon="skills/skill_deadshot.png" skill="12" level="2">
+  <secondarybuff id="9" amount="5"/> <!-- edr -->
+  <secondarybuff id="4" amount="2"/> <!-- crit -->
+  <targetHitEffectBuff percentage="16" name="Калечащее ранение" />
+  <description text="Вдобавок к тому, что вы не промахиваетесь и попадаете в уязвимые точки на теле противника, появляется вероятность нанести ему калечащее ранение."/>
+  </ability>
+
+  
+<ability name="Никудышный самоконтроль" icon="skills/warrior/berserker0_64.png" skill="9" level="0">
+  <description text="Когда вы атакуете у вас есть шанс по-настоящему разъяриться! Увеличивает ваши атакующие способности."/>
+  <targetHitEffectBuff percentage="25" name="Ярость берсерка" />
+  </ability>
+<ability name="Северный темперамент" icon="skills/warrior/berserker1_64.png" skill="9" level="1">
+  <description text="При сдерживании вражеских атак, вы можете прийти в неистовую ярость! Это увеличит ваш боевой потенциал."/>
+  <playerHitEffectBuff percentage="25" name="Возмездие берсерка" />
+  </ability>
+<ability name="Фамильная боевая раскраска" icon="skills/body_paint64.png" skill="9" level="2">
+  <description text="Метки ваших предков будут оберегать вас в битве."/>
+  <secondarybuff id="11" amount="10" /> <!-- magic resist -->
+  <secondarybuff id="22" amount="5" /> <!-- magic reflect -->
+  <resistbuff aethereal="1" transmutative="1" conflagratory="1" hyperborean="1" />
+  </ability>
+<ability name="Ярость берсерка" icon="skills/skill_berserker.png" skill="9" level="3">
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <targetHitEffectBuff percentage="13" name="Пылающая ярость берсерка" />
+  <playerHitEffectBuff percentage="12" name="Пылающая ярость берсерка" />
+  <description text="У вас есть склонность к приступам чрезмерной ярости берсерка в ближнем бою! Еще больше ярости! Из-за всего этого гнева, переполняющего вас, вы бьете гораздо сильнее."/>
+  </ability>
+<ability name="Убийственный удар" icon="skills/killing_blow64.png" skill="9" level="4">
+  <description text="Ваш следующий удар точно произведет фурор."/>
+  <spell name="Убийственный удар" />
+  </ability>
+
+  
+<ability name="Неугомонный малый" icon="skills/skill_dodging.png" skill="10" level="0">
+   <description text="Увеличивает ваш шанс уклониться."/>
+   <primarybuff id="2" amount="2"/> <!-- nim -->
+   <secondarybuff id="6" amount="5"/> <!-- dodge -->
+   <!-- test <triggerondodge percent="50" name="Тауматургическое слияние" /> -->
+   </ability>
+<ability name="Айкидо для искателей приключений" icon="skills/aikido64.png" skill="10" level="1" >
+   <description text="''ПриключенецЪ'' недавно писал об этом. Что ж, посмотрим, как это выходит на практике... (Теоретически, позволяет контратаковать после уклонения.)"/>
+   <triggerondodge percent="30" name="Adventurer Aikido" />
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   </ability>
+<ability name="Рыцарский прыжок" icon="skills/rogue/leap64.png" skill="10" level="2">
+  <description text="С помощью этой способности, вы можете как выпрыгнуть, так и впрыгнуть в заварушку."/>
+  <secondarybuff id="6" amount="3"/> <!-- dodge -->
+  <spell name="Рыцарский прыжок" />
+  </ability>
+<ability name="Межпространственное уклонение" icon="skills/transdimensional_dodge64.png" skill="10" level="3" >
+   <description text="Иногда вы можете уклониться настолько, что попадаете в другое измерение (а затем обратно). Хорошо ли это кончается? Каждый раз по-разному. Вы можете активировать эту способность когда захотите." />
+   <secondarybuff id="6" amount="3"/> <!-- dodge -->
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <spell name="Межизмеренческое уклонение" />
+   </ability>
+<ability name="Необычайно увертливый ловкач" icon="skills/rogue/sidestepper64.png" skill="10" level="4">
+  <description text="Вы постоянно увёртываетесь! Вообще удивительно, что по вам иногда попадают."/>
+  <primarybuff id="2" amount="2"/> <!-- nim -->
+  <secondarybuff id="6" amount="8"/> <!-- dodge -->
+  </ability>
+
+  
+<!-- ROGUERY -->
+
+
+<ability name="Разоритель торговых автоматов" icon="skills/rogue/vending_machine_looter64.png" skill="26" level="0">
+   <description text="Возьмите один предмет из торгового автомата бесплатно. Не пойман - не вор!" />
+   <primarybuff id="2" amount="1"/> 
+   <secondarybuff id="16" amount="1"/>
+   <flags vmtheft="1"/>
+   </ability>
+<ability name="Счастливая отмычка" icon="skills/rogue/skill_burglary0_64.png" skill="26" level="1">
+   <flags opendoors="1" />
+   <description text="Закрытые двери - не препятствие для вашей счастливой отмычки."/>
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+   </ability>
+<ability name="Кандалы" icon="skills/rogue/skill_burglary2_64.png" skill="26" level="2">
+   <spell name="Кандалы"/>
+   <description text="Приковывает врага к месту. Между делом вы также выучили кое-что о ловушках." />
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <secondarybuff id="16" amount="1"/> <!-- trap level -->
+   </ability>
+<ability name="Неуловимый ниндзя" icon="skills/rogue/skill_burglary1_64.png" skill="26" level="3">
+   <spell name="Неуловимый ниндзя"/>
+   <description text="Позволяет вам скрыться во мраке, дабы спастись бегством."/>
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+   </ability>
+<ability name="Скидка своими руками" icon="skills/rogue/skill_burglary3_64.png" skill="26" level="4">
+   <flags storetheft="1"/>
+   <description text="Украдите предмет при первом визите в магазин. Какой русский не любит халявы?"/>
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <secondarybuff id="16" amount="1"/> <!-- trap level -->
+   </ability>
+<ability name="Загадочные движения" icon="skills/rogue/skill_stealth3_64.png" skill="26" level="5">
+   <spell name="Загадочные движения"/>
+   <primarybuff id="2" amount="1"/> <!-- nim -->
+   <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+   <description text="Да-да, вы двигаетесь странным образом. Отлично подходит для того, чтобы смыться с места преступления не привлекая внимания."/>
+   </ability>
+
+
+<!-- Alchemy sub-abilities -->
+
+<ability name="Зелья 101" icon="skills/rogue/alchemy0_64.png" skill="29" level="0">
+  <description text="С помощью базовых познаний в алхимии, вы можете варить несложные зелья более-менее правильно." />
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <resistbuff acidic="1" />
+  </ability>
+<ability name="Очистка" icon="skills/rogue/alchemy1_64.png" skill="29" level="1">
+  <description text="Ваши зелья стали больше, лучше и чище." />
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <resistbuff putrefying="1" />
+  </ability>
+<ability name="Трансмутационист" icon="skills/rogue/alchemy2_64.png" skill="29" level="2">
+  <description text="Усиленные занятия алхимией позволяют вам преобразовывать драгоценные камни случайным образом." />
+  <spell name="Gem Transmutation"/>
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <resistbuff acidic="1" />
+  </ability>
+<ability name="Заслуженный зельевар" icon="skills/rogue/alchemy3_64.png" skill="29" level="3">
+  <description text="Вы можете комбинировать всевозможные зелья в опасные смеси." />
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <resistbuff conflagratory="1" />
+  </ability>
+<ability name="Сверхэнергичный алхимик" icon="skills/skill_alchemy.png" skill="29" level="4">
+  <description text="Ох, какую же мощь вы можете закупорить в бутылке!" />
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <resistbuff acidic="2" />
+  </ability>
+<ability name="Мастер зелий" icon="skills/alchemical_inspiration64.png" skill="29" level="5">
+  <description text="Тот эликсир, что течет в ваших жилах, больше чем просто человеческая кровь." />
+  <primarybuff id="1" amount="2" /> <!-- sag -->
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <secondarybuff id="13" amount="1" /> <!-- hp regen -->
+  <secondarybuff id="14" amount="1" /> <!-- mp regen -->
+  <resistbuff aethereal="2" />
+  </ability>
+
+
+<!-- old alch skills
+	<ability name="Gem Transmutation" icon="skills/rogue/skill_alchemy0_64.png" skill="33" level="0">
+		<draw x="168" y="160" page="5"/>
+		
+		<description text="The million years of heat and pressure needed to produce a unique and beautiful gem can be changed in but an instant!"/>
+	</ability>
+	<ability name="Mushroom Transmutation" icon="skills/rogue/skill_alchemy1_64.png" skill="33" level="1">
+		<draw x="168" y="248" page="5"/>
+		
+		<description text="Make a mushroom not the mushroom you thought it was."/>
+	</ability>
+	<ability name="Potion Mastery" icon="skills/rogue/skill_alchemy2_64.png" skill="33" level="2">
+		<draw x="168" y="336" page="5"/>
+		<spell name="Potion Mastery"/>
+		<description text="You are the new potions master."/>
+	</ability>
+-->
+
+
+<ability name="Затрещина" icon="skills/rogue/skill_assassination0_64.png" skill="27" level="0">
+  <targetHitEffectBuff percentage="18" name="Затрещина" after="1" />
+  <description text="Вы набили один из своих носков дробью и можете врезать им плохому парню, ошеломив того запахом ваших ног. Эта способность автоматически используется как только представляется возможность."/>
+  <secondarybuff id="4" amount="1"/> <!-- crit -->
+  </ability>
+<ability name="Скользкий тип" icon="skills/rogue/skill_stealth3_64.png" skill="27" level="1">
+   <description text="Они не должны спускать с вас с глаз - вы проворный и скрытный мерзавец." />
+   <secondarybuff id="12" amount="3"/> <!-- sneak -->
+   <secondarybuff id="4" amount="1"/> <!-- crit -->
+   <primarybuff id="2" amount="1" /> <!-- NIM -->
+   </ability>
+<ability name="Ядовитый настой" icon="skills/attack_poison64.png" skill="27" level="2" >
+   <description text="Смажьте ваше оружие (или ботинок) смертельным ядом. Действует лишь несколько ударов, так что рассчитывайте тщательно." />
+   <spell name="Ядовитый настой" />
+   </ability>
+<ability name="Спрятанная финка" icon="skills/rogue/skill_assassination1_64.png" skill="27" level="3">
+  <targetHitEffectBuff percentage="21" name="Спрятанная финка" />
+  <description text="Оттачивая свое мастерство сидя в тюрьме для искателей приключений, вы не удержались и смастерили это скрытное оружие из бытовых предметов. Вы можете использовать его для нанесения незаметных ударов, на которые ваша цель даже не обратит внимания... пока не будет слишком поздно. Эта способность автоматически используется когда представляется возможность."/>
+  <secondarybuff id="4" amount="1"/> <!-- crit -->
+  </ability>
+<ability name="И ты, Брут!" icon="skills/rogue/skill_assassination2_64.png" skill="27" level="4">
+  <targetHitEffectBuff percentage="21" name="И ты, Брут!" />
+  <description text="Усиленно занимаясь вероломными убийствами, вы сделали свои атаки еще более смертельными."/>
+  <secondarybuff id="4" amount="5"/> <!-- crit -->
+  </ability>
+<!-- figure this one out later.
+<ability name="Sneak Attack" icon="skills/sneak_attack64.png" skill="27" level="4" >
+   <description text="You are a deadly shadow - perform a sneak attack from nowhere and everywhere." />
+   <spell name="Sneak Attack" />
+   </ability>
+-->
+
+
+<!--
+<lockpickingSkills>
+<ability name="Счастливая отмычка" icon="skills/rogue/skill_lockpicking0_64.png" skill="32" level="0">
+  <draw x="688" y="160" page="4"/>
+  <spell name="Счастливая отмычка"/>
+  <description text="That lockpick just keeps turning up!"/>
+</ability>
+
+<ability name="Кандалы" icon="skills/rogue/skill_lockpicking1_64.png" skill="32" level="1">
+  <draw x="688" y="248" page="4"/>
+  <spell name="Кандалы"/>
+  <description text="Target is locked into place permanently (doesn't work on bosses).  Requires lock pick."/>
+</ability>
+
+<ability name="Blast Key" icon="skills/rogue/skill_lockpicking2_64.png" skill="32" level="2">
+  <draw x="688" y="336" page="4"/>
+  <spell name="Blast Key"/>
+  <description text="Ranged attack targets locked objects, causes them to explode dealing damage to everything nearby and rendering their contents (if any) accessible.  Requires lock pick."/>
+</ability>
+</lockpickingSkills>
+
+-->
+
+
+
+<ability name="Грибной фермер" icon="skills/skill_mushroomlore.png" skill="28" level="0">
+  <description text="Вы собираете плесень, споры и грибы. Вам нравится выращивать их на телах ваших врагов. Иногда это полезно, иногда - просто странно. У вас есть шанс автоматически посадить споры на тело врага после его смерти."/>
+  <!-- <spell name="Тайник со спорами"/>-->
+  <targetKillBuff name="Спорификация" percentage="16" />
+  <resistbuff toxic="1"/>
+  </ability>
+<ability name="Слизнепас" icon="skills/rogue/fungus1_64.png" skill="28" level="1">
+  <description text="Изучая традиции пастухов слизней из грибных джунглей Смомма вы обрели способность призывать до безумия преданного вам грибного зверя. Также вы можете выращивать больше грибов."/>
+  <spell name="Призыв слизня"/>
+  <targetKillBuff name="Огрибение" percentage="14" />
+  <resistbuff toxic="1"/>
+  </ability>
+<ability name="Кузнец плесени" icon="skills/rogue/fungus2_64.png" skill="28" level="2">
+  <description text="Вы можете преобразовывать один гриб в другой, случайный, если у вас вдруг возникнет такой каприз. Вы также можете выращивать больше грибов."/>
+  <resistbuff toxic="1"/>
+  <spell name="Mushroom Transmutation"/>
+  <targetKillBuff name="Спорификация" percentage="10" />
+  </ability>
+<ability name="Боевая микология" icon="skills/rogue/fungus3_64.png" skill="28" level="3">
+  <targetHitEffectBuff percentage="15" name="Mini Toxic Spore Cloud" />
+  <description text="Расширив свои знания о грибах вы приобрели способность сопровождать некоторые свои атаки выбросом облаков токсичных спор, сбивающих с толку. Также вы стали выращивать еще больше грибов, они сыплются точно из какого-то микологического рога изобилия."/>
+  <resistbuff toxic="1"/>
+  <targetKillBuff name="Огрибение" percentage="9" />
+  </ability>
+<ability name="Знаток грибов с Юггота" icon="skills/rogue/fungus4_64.png" skill="28" level="4" >
+  <description text="Подобно Ми-Го, которые однажды уже сделали это (и сделают вновь), вы можете призвать живое грибологическое оружие и заставить его служить вашей воле. Также вы можете приказать грибам прорасти из трупа противника." />
+  <resistbuff toxic="1" />
+  <spell name="Summon Mushroom Beast" />
+  <targetKillBuff name="Fungal Bloom 1" percentage="5" />
+  <targetKillBuff name="Fungal Bloom 2" percentage="5" />
+  </ability>
+
+  
+<ability name="Сверхъестественное восприятие" icon="skills/skill_perception.png" skill="25" level="0" >
+  <description text="Вы отлично видите в темноте - соответственно, меньше промахиваетесь. И находите больше предметов." />
+  <secondarybuff id="9" amount="5" /> <!-- edr -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <targetKillBuff percentage="5" name="Lucky Find"/>
+  </ability> 
+<ability name="Всегда начеку" icon="skills/rogue/perception1_64.png" skill="25" level="1" >
+  <description text="Вы превосходно замечаете всякие ловушки и прочие штуковины, которые могут вам навредить. И разные предметы." />
+  <secondarybuff id="6" amount="5"/> <!-- dodge -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <targetKillBuff percentage="5" name="Lucky Find"/>
+  </ability>
+<ability name="Чутьё на ловушки" icon="skills/rogue/perception2_64.png" skill="25" level="2" >
+  <description text="Вы лучше уворачиваетесь от чужих атак и умело обнаруживаете ловушки. И разные предметы." />
+  <secondarybuff id="6" amount="5" /> <!-- dodge -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="16" amount="2"/> <!-- trap level -->
+  <targetKillBuff percentage="5" name="Счастливейшая находка"/>
+  </ability> 
+<ability name="Глаза на затылке" icon="skills/rogue/perception3_64.png" skill="25" level="3" >
+  <spell name="Глаза на затылке" />
+  <description text="Используя ваш третий, четвертый и, изредка, пятый глаз вы можете предсказывать ближайшее будущее. Это бывает полезно в потасовках. И нахождении предметов." />
+  <secondarybuff id="9" amount="5" /> <!-- edr -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <targetKillBuff percentage="5" name="Счастливейшая находка"/>
+  </ability>
+<ability name="Второе зрение" icon="skills/see_invisible64.png" skill="25" level="4" >
+  <description text="Покажет всё, что скрыто. В особенности, разные предметы." />
+  <secondarybuff id="9" amount="5" /> <!-- edr -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <targetKillBuff percentage="5" name="Самая счастливая находка"/>
+  <spell name="Второе зрение" />
+  </ability>
+<ability name="Глаза-лазеры" icon="skills/eye_lasers64.png" skill="25" level="5" >
+  <description text="Да, это то, что вы думаете: убиваем всё что видим одним взглядом. Более того: чем дальше вы видите, тем больше урона наносите." />
+  <spell name="Eye Laser Blast" />
+  </ability>
+
+
+<ability name="Подзарядка палочки" icon="skills/wizard/wands0_64.png" skill="30" level="0" >
+   <description text="Вы перестали ковыряться в ушах волшебными палочками. Самое время, а то ушей осталось не так много." />
+   <primarybuff id="1" amount="1" /> <!-- sag -->
+   <secondarybuff id="23" amount="1"/>
+   </ability>
+<ability name="Полировка скипетра" icon="skills/wizard/wands1_64.png" skill="30" level="1" >
+   <description text="Каждый волшебник должен периодически полировать волшебную палочку. Но не злоупотребляйте, а то ваши ладони покроются волосами." />
+   <primarybuff id="1" amount="1" /><!-- sag -->
+   <secondarybuff id="23" amount="1"/>
+   <secondarybuff id="11" amount="2" /> <!-- resist -->
+   </ability>
+<ability name="Взломщик жезлов" icon="skills/wizard/wands2_64.png" skill="30" level="2" >
+   <description text="Нормальному человеку незачем тратить свое время на взмахи и рассекание воздуха." />
+   <primarybuff id="1" amount="1" /> <!-- sag -->
+   <secondarybuff id="23" amount="1"/>
+   <secondarybuff id="11" amount="2" /> <!-- resist -->
+   </ability>
+<ability name="Адепт-крутоверт" icon="skills/skill_wandlore.png" skill="30" level="3" >
+   <description text="Запомни, главное - не размер, а то, в кого из неё стрелять." />
+   <primarybuff id="1" amount="1" /> <!-- sag -->
+   <secondarybuff id="23" amount="1"/>
+   <damagebuff aethereal="1"/>
+   <secondarybuff id="11" amount="3" /> <!-- resist -->
+   </ability>
+<ability name="Мощь жезла" icon="skills/power_of_the_rod64.png" skill="30" level="4" >
+   <description text="Ваша палочка вибрирует от переизбытка магической энергии. По крайней мере до тех пор, пока та не кончается." />
+   <primarybuff id="1" amount="1" /><!-- sag -->
+   <secondarybuff id="23" amount="1"/>
+   <damagebuff aethereal="2"/>
+   <secondarybuff id="11" amount="3" /> <!-- resist -->
+   </ability>
+<ability name="Ткач эфира" icon="skills/aetherweaver64.png" skill="30" level="5" >
+   <description text="Вы можете заряжать стержень противоречий вашей палочки нищетой с изобилием, гордыней со стыдом, и великим множеством прочих абстрактных понятий." />
+   <primarybuff id="1" amount="2" /><!-- sag -->
+   <secondarybuff id="23" amount="1"/> <!-- wand -->
+   <damagebuff aethereal="3"/>
+   <secondarybuff id="11" amount="5" /> <!-- resist -->
+   </ability>
+<!--
+<ability name="Rodmaster" icon="skills/skill_wandlore.png" skill="30" level="4" >
+  <description text="YOU are the rodmaster. YOU have the power in your hands." />
+  <primarybuff id="1" amount="1" />
+  <secondarybuff id="15" amount="1"/> 
+  </ability>
+  -->
+
+<ability name="Удалой археолог" icon="skills/skill_archaeology.png" skill="31" level="0">
+  <description text="Дело не во времени, дело в пробеге. Будучи таким удалым археологом вы многому научились. Например тому, как избегать ловушек и выпутываться из неприятных ситуаций."/>
+  <primarybuff id="2" amount="1" /> <!-- nim -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  </ability>
+<ability name="Это принадлежит музею" icon="skills/rogue/skill_archaeology0_64.png" skill="31" level="1">
+  <spell name="Это принадлежит музею"/>
+  <description text="Отправьте артефакт в гигантский тайный правительственный склад, заполненный ящиками, и получите опыт в зависимости от его ценности."/>
+  <primarybuff id="2" amount="1" /> <!-- nim -->
+  </ability>
+<ability name="Вспомни Священное Писание" icon="skills/rogue/charlemagne64.png" skill="31" level="2" >
+   <description text="'И армия моя - и камни, и деревья, и птицы в небесах...'" />
+   <spell name="Вспомни Священное Писание" />
+   </ability>
+<ability name="Это совершенно неверный перевод!" icon="skills/rogue/skill_archaeology2_64.png" skill="31" level="3">
+  <spell name="This Translation Is All Wrong!"/>
+  <description text="Вы можете доказать, что этот артефакт представлял из себя совершенно не то, за что его принимали."/>
+  <primarybuff id="2" amount="1" /> <!-- nim -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  </ability>
+<ability name="Древний ритуал Кронга" icon="skills/rogue/skill_archaeology1_64.png" skill="31" level="4">
+  <spell name="Древний ритуал Кронга"/>
+  <description text="Восстанавливает наковальню Кронга. Всё, что вам нужно сделать - это посидеть возле наковальни с бутылочкой пива, предаваясь печальным размышлениям, почему вам никак не удается раздобыть Древних Женщин Кронга."/>
+  <primarybuff id="2" amount="1" /> <!-- nim -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  </ability>
+
+
+<ability name="Стажер-оружейник" icon="skills/rogue/smithing0_64.png" skill="32" level="0" >
+  <description text="После множества ожогов и отбитых пальцев, вы наконец постигли основы ковки разных вещей из металла." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <primarybuff id="0" amount="1" /> <!-- BUR -->
+  </ability>
+<ability name="Постигающий выплавку" icon="skills/rogue/smithing1_64.png" skill="32" level="1" >
+  <description text="Это искусство отколоть кусок породы и придать ему вид слитка. Вы также немного разбираетесь в ловушках." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <primarybuff id="0" amount="1" /> <!-- BUR -->
+  </ability>
+<ability name="Практикующий металлург" icon="skills/rogue/smithing2_64.png" skill="32" level="2" >
+  <description text="Вы практикующий и практичный металлург." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <primarybuff id="0" amount="1" /> <!-- BUR -->
+  <resistbuff conflagratory="1"/>
+  </ability>
+<ability name="Владелец кузницы" icon="skills/rogue/smithing3_64.png" skill="32" level="3" >
+  <description text="Вы любите погорячее." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <primarybuff id="0" amount="1" /> <!-- BUR -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <damagebuff crushing="1"/>
+  </ability>
+<ability name="Избранный Кронгом" icon="skills/skill_smithing.png" skill="32" level="4" >
+  <description text="Работайте своим могучим молотом на славу, ведь кузнечное дело это ваше божественное призвание." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <primarybuff id="0" amount="1" /> <!-- BUR -->
+  <resistbuff conflagratory="2"/>
+  <damagebuff crushing="1"/>
+  </ability>
+<ability name="Великий Молот" icon="skills/forge_lord64.png" skill="32" level="5" >
+  <description text="Чего только не выковали эти руки! Даже сам Лорд-Кузнец Ульма завидует вашим успехам." />
+  <secondarybuff id="19" amount="1" /> <!-- smith -->
+  <primarybuff id="0" amount="2" /> <!-- BUR -->
+  <resistbuff transmutative="1"/>
+  <damagebuff crushing="1"/>
+  </ability>
+
+  
+<ability name="Капканник-любитель" icon="skills/rogue/trappist64.png" skill="33" level="0" >
+  <description text="Вы проявляете интерес к изготовлению и обезвреживанию ловушек. Просто чудо, что у вас все еще остались пальцы." />
+  <primarybuff id="5" amount="1" /> <!-- sav -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+<ability name="Механик" icon="skills/rogue/mechanicker64.png" skill="33" level="1" >
+  <description text="Есть ещё надежда сделать карьеру в ремонте гномьих гриль-прессов, известных своей ненадёжностью." />
+  <primarybuff id="5" amount="1" /> <!-- sav -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+<ability name="Винт-жокей" icon="skills/rogue/cog-jockey64.png" skill="33" level="2" >
+  <description text="Теперь вы знаете разницу между ходовой пружиной и ходовым колесом, а также можете заставить шестерёнки крутиться с тем передаточным числом, какое нужно вам." />
+  <primarybuff id="5" amount="1" /> <!-- sav -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="16" amount="2"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+<ability name="Изобретатель" icon="skills/rogue/inventor64.png" skill="33" level="3" >
+  <description text="Вы настолько гениальный ученый, что крестьяне с вилами могут представлять серьезную угрозу." />
+  <primarybuff id="5" amount="1" /> <!-- sav -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+<ability name="Старший механик" icon="skills/skill_tinkerer.png" skill="33" level="4" >
+  <description text="У вас докторская степень по механической философии. Вы видите, как работают механизмы мироздания и как вращается шестерни Бытия. Этого вполне достаточно, чтобы все обзавидовались." />
+  <primarybuff id="5" amount="1" /> <!-- sav -->
+  <secondarybuff id="16" amount="2"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+<ability name="Музыка шестеренок" icon="skills/music_of_the_gears64.png" skill="33" level="5" >
+  <description text="Каждая шестеренка на месте, каждый поршень работает в нужном ритме. Вы слышите?" />
+  <primarybuff id="5" amount="2" /> <!-- sav -->
+  <primarybuff id="2" amount="2" /> <!-- nim -->
+  <secondarybuff id="16" amount="3"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  </ability>
+
+
+<!-- the hidden skills -->
+<!-- are very well hidden, evidently. -->
+
+  <!-- oh wait, we found them.  -->
+
+<!-- Daggery -->
+<!-- generic weapon skill; but make it use movement and sneakiness -->
+
+
+<ability name="Daggers" icon="skills/daggery64.png" skill="45" startSkill="1">
+   <description text="Кинжалы малы!"/>
+   </ability>
+
+<ability name="Оборот Лейхтенауэра" icon="skills/switcheroo64.png" skill="45" level="0" >
+   <description text="Обведите соседнего противника вокруг пальца, поменявшись с ним местами, чтобы нанести дополнительный удар кинжалом." />
+   <spell name="Оборот Лейхтенауэра" />
+   <primarybuff id="2" amount="1" /> <!-- NIM -->
+   </ability>   
+<ability name="Кинжал один, удара два!" icon="skills/daggery64.png" skill="45" level="1" >
+   <targetHitEffectBuff percentage="30" name="Кинжал один, удара два!" />
+   <damagebuff piercing="1" />
+   <description text="С помощью этой способности у вас есть шанс нанести дополнительный подлый удар вашим кинжалом, который наносит дополнительный подлый урон, зависящий от вашей скрытности." />
+   <secondarybuff id="8" amount="2" /> <!-- counter -->
+   </ability>
+<ability name="Тихая, скрытная поза со смертоносным кинжалом" icon="skills/dagger_offensive64.png" skill="45" level="2" >
+   <description text="Что может быть смертельнее удара, который никто не заметит? Эта боевая стойка увеличивает вашу скрытность и шанс нанести критический урон за счет снижения силы ваших ударов." />
+   <spell name="Тихая, скрытная поза со смертоносным кинжалом" />
+   <secondarybuff id="12" amount="6" /> <!-- sneak -->
+   </ability>
+<ability name="Кровавый фонтан" icon="skills/blood_geyser_strike64.png" skill="45" level="3" >
+   <description text="Если у вашего врага есть вены, то этот удар заставит хлынуть драгоценную жидкость, циркулирующую внутри. Чертовски неэффективно против механической нежити, сделанной из дерева. Урон зависит от проворности." />
+   <spell name="Кровавый фонтан" />
+   <damagebuff piercing="1" />
+   <secondaryBuff id="9" amount="2" /> <!-- EDR -->
+   </ability>
+<ability name="Стойка 'Очень острая стена лезвий'" icon="skills/dagger_defensive64.png" skill="45" level="4" >
+   <description text="Никто не осмелится попытаться проникнуть за стену, сделанную из очень острых и быстрых клинков. Эта поза увеличивает вашу способность блокировать и парировать удары за счет уменьшения силы ваших атак." />
+   <spell name="Стойка 'Очень острая стена лезвий'" />
+   <damagebuff piercing="1" />
+   <secondaryBuff id="9" amount="3" /> <!-- EDR -->
+   </ability>
+<ability name="Техника поглощающего ранения" icon="skills/thaumitic_strike64.png" skill="45" level="5" >
+   <description text="Всего одно ранение, нанесенное этой ужасной техникой, заставит врага затянуть самого себя вовнутрь. Этот способ боя считается весьма бесчестным, что бы там не думали по этому поводу Монахи убийств. Урон зависит от наглости." />
+   <spell name="Техника поглощающего ранения" />
+   <secondaryBuff id="9" amount="5" /> <!-- EDR -->
+   </ability>
+
+<!-- Polearmoire -->
+<!-- generic weapon skill; but make it use self/target-pushing and positioning -->
+
+<ability name="Polearms" icon="skills/polearming64.png" skill="46" startSkill="1">
+   <description text="Когда жизнь дает вам алебарду... стоп, что?"/>
+   </ability>
+
+   
+<ability name="Выпад-удар Талхоффера" icon="skills/polearm_longrange64.png" skill="46" level="0">
+   <description text="Чтобы жизнь была легка - бейте всех издалека. Вы начинаете понимать, почему Талхоффер прожил так долго." />
+   <spell name="Выпад-удар Талхоффера" />
+   <primarybuff id="0" amount="1" /> <!-- BUR -->
+   </ability>
+<ability name="Благоразумная швейцарская защитная стойка" icon="skills/polearm_defensive64.png" skill="46" level="1" >
+   <description text="Если нейтралитет не работает, станьте в чрезвычайно благоразумную защитную стойку, чтобы держать врагов подальше! Увеличивает защитные способности и позволяет отражать больше атак за счет уменьшения наносимого вами урона." />
+   <spell name="Благоразумная швейцарская защитная стойка" />
+   <secondaryBuff id="7" amount="2" /> <!-- block -->
+   </ability>
+<ability name="Боевая тренировка с длинными палками" icon="skills/polearm_damage64.png" skill="46" level="2" >
+   <description text="Размер алебарды не имеет значения, важно то, как вы бьете ей чудовищ!" />
+   <secondarybuff id="2" amount="4" /> <!-- melee power -->
+   <secondaryBuff id="4" amount="-2" /> <!-- crit -->
+   </ability>
+<ability name="Стойка неминуемой победы Валлентайна" icon="skills/polearm_offensive64.png" skill="46" level="3" >
+   <description text="Увеличьте урон и наносите особо сокрушающие удары, благодаря стойке неминуемой победы. Концентрация только на нападении несколько уменьшает шансы блока, критического удара и контратаки, но кому они вообще нужны?" />
+   <spell name="Стойка неминуемой победы Валлентайна" />
+   <!--<secondarybuff id="2" amount="1" />--> <!-- melee power -->
+   <secondaryBuff id="9" amount="2" /> <!-- EDR -->
+   </ability>
+<ability name="Дальнобойная бомбардировка пикой графа Тилли" icon="skills/polearm_linear64.png" skill="46" level="4" >
+   <description text="Когда граф Тилли прикажет вам напасть на парня на другом конце улицы, вы будете знать, что делать. Это дальнобойная атака по прямой может оглушить врага." />
+   <spell name="Дальнобойная бомбардировка пикой графа Тилли" />
+   <!--<secondarybuff id="2" amount="1" />--> <!-- melee power -->
+   <secondaryBuff id="9" amount="3" /> <!-- EDR -->
+   </ability>
+<ability name="Сметающая техника Патриарха копья" icon="skills/polearm_sweep64.png" skill="46" level="5" >
+   <spell name="Сметающая техника Патриарха копья" />
+   <description text="Расшвыряйте ваших врагов по подземелью как грязь, которой они в сущности и являются. Оглушающая и отбрасывающая атака по площади."/>
+   <secondaryBuff id="9" amount="5" /> <!-- EDR -->
+   </ability> 
+
+
+</skillDB>

@@ -1,0 +1,1190 @@
+﻿<!-- The EncrustDB stores all encrusting information -->
+<encrustDB>
+
+<unstableEffect name="Exploder" spell="Grenade Self" />
+<unstableEffect name="Missing" spell="Нестабильность легкой цели" />
+<unstableEffect name="Necromanticula" spell="Некроболь" />
+<unstableEffect name="Tentacles" spell="Щупальцевое самообречение" />
+<unstableEffect name="Twitchiness" spell="Дисконтинуумный прыжок Фроды" />
+<unstableEffect name="Impoisoning" spell="Жуткий яд" />
+<unstableEffect name="Weakening" spell="Проклятие слабости" />
+<unstableEffect name="Sucker" spell="Easy Target Sucker Curse" />
+<unstableEffect name="Sanguinous Misappropriation" spell="Кровавый долг" />
+<unstableEffect name="Foul Lich-magic" spell="Кровяное осушение" />
+<unstableEffect name="Immolation" spell="Pyromatic Implosion" />
+<unstableEffect name="Darkening" spell="Самозамутнение зрения" />
+<unstableEffect name="Seeing What Should Not Be Seen" spell="Некромантическая слепота" />
+<unstableEffect name="Thaumoentropic Vexation" spell="Большое некроиссушение" />
+<unstableEffect name="Draining" spell="Necrodrain" />
+<unstableEffect name="Hunger" spell="Голодный герой" />
+
+<!-- Hand Weapon Crusts -->
+  <encrust name="Полимерная оболочка">
+	<description text="Гордость гномьих кузнецов пластика, эта вызывающая полимерная оболочка вряд ли сделает ваше оружие смертоносней, но зато облегчит блокирование ударов." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	<input name="Каменный уголь" />
+	
+	<skill level="0" />
+	
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	
+	<encrustwith name="hideous, brightly coloured plastics" />
+	
+	<instability amount="3" />
+  </encrust>
+
+  <encrust name="Поросль">
+	<description text="Венок из непослушного плюща лениво покачивается. Это ведь просто ветер, да?" />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Зелье оживлённой регенерации" />
+	<input name="Яблоко" />
+	<input name="Деревянный меч" />
+	
+	<skill level="1" />
+	
+	<damagebuff toxic="2" />
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	
+	<encrustwith name="menacing vines" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Богохульственное покрытие">
+	<description text="На проклятой железной обшивке корчатся и извиваются отвратительные образы, творя насилия и... особо, по-взрослому обнимаясь." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Зелье жуткого усиления" />
+	<input name="Железный слиток" />
+	<input name="Железный слиток" />
+	<input name="Костяная дубина" />
+	
+	<skill level="2" />
+	
+	<damagebuff necromantic="3" />
+	<resistbuff righteous="-1" />
+	<encrustwith name="profane images" />
+	
+	<instability amount="8" />
+  </encrust>
+  
+  <encrust name="Паровой двигатель">
+	<description text="Освойте неостановимую силу пара! Это позволит вам достигнуть такого же эффекта, как если бы вашего врага сбил локомотив, но без утомительного прокладывания километров железной дороги." />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Латунные трубки" />
+	<input name="Латунные трубки" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Порох" />
+	
+	<skill level="2" />
+	
+	<damagebuff blasting="3" />
+	
+	<encrustwith name="pipes" />
+	<encrustwith name="gauges" />
+	
+	<instability amount="8" />
+  </encrust>
+  
+  
+  <encrust name="Реарденовый налёт">
+    <description text="Мощь Свободной Торговли переполняет вас! Да-да, фонтаны, поезда и всё такое. Будьте осторожны: неконтролируемое покрытие нелицензированными металлами может привести к внезапным вспышкам эффективности свободного рынка."/>
+    <tool tag="smithing" />
+    <slot type="weapon" />
+
+    <input name="Реарденовый слиток" />
+    <input name="Реарденовый слиток" />
+    <input name="Реарденовый слиток" />
+
+    <skill level="2" />
+
+    <!-- nim -->
+    <damagebuff existential="3" />
+
+    <encrustwith name="Rearden metal" />
+    <encrustwith name="trains" />
+
+    <instability amount="7" />
+  </encrust>
+
+  <encrust name="Оружие-улей">
+	<description text="Превратите любое непримечательное оружие в гнездо голодных таумитов." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Зелье маны" />
+	<input name="Зелье маны" />
+	<input name="Живая вода" />
+	<input name="Магический жезл" />
+	
+	<skill level="2" />
+
+	<power name="Таумитозаражение" chance="0.10" />
+	
+	<encrustwith name="wickedly gleaming barbs" />
+	
+	<instability amount="12" />
+  </encrust>
+  
+  <encrust name="Губительное покрытие">
+	<description text="Это оружие пожирает кости и портит плоть. Буэ." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Зелёный яд" />
+	<input name="Зелёный яд" />
+	<input name="Колба кислоты" />
+	<input name="Бронзовый кинжал" />
+	
+	<skill level="3" />
+	
+	<damagebuff acidic="3" putrefying="3" />
+	
+	<encrustwith name="wickedly gleaming barbs" />
+	
+	<instability amount="8" />
+  </encrust>
+
+  <encrust name="Очень плохая идея" hidden="1">
+	<description text="Внимание: ваша страховка жизни перестает действовать при использвании гранат таким образом." />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Ручная граната" />
+	<input name="Ручная граната" />
+	<input name="Ручная граната" />
+	<input name="Медная проволока" />
+	
+	<skill level="3" />
+
+	<power name="Grenadier"/>
+	
+	<encrustwith name="grenades" />
+	
+	<instability amount="24" />
+  </encrust>
+
+  <encrust name="Сапфировая инкрустация">
+	<description text="В блеске сапфиров видна гиперборейская мощь." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Сапфир" />
+	<input name="Сапфир" />
+	<input name="Гиперборейское зелье" />
+	
+	<skill level="4" />
+	
+	<damagebuff hyperborean="6" />
+	
+	<encrustwith name="sapphires" />
+	
+	<instability amount="8" />
+  </encrust>
+
+  <encrust name="Рубиновая инкрустация">
+	<description text="Каждый алхимик, хоть немного уважащий себя и соляную кислоту, знает, что рубины красные потому что содержат элементальный огонь. Так выпустите его наружу!" />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Рубин" />
+	<input name="Рубин" />
+	<input name="Инфернальное зелье" />
+	
+	<skill level="4" />
+	
+	<damagebuff conflagratory="6" />
+	
+	<encrustwith name="rubies" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Концентрированный реарденовый налёт">
+    <description text="Когда-то это было просто оружие, но после обработки Свободной Торговлей, он создает зормкиды свободного оборота!"/>
+    <tool tag="smithing" />
+    <slot type="weapon" />
+
+    <input name="Реарденовый слиток" />
+    <input name="Реарденовый слиток" />
+    <input name="Серебряный слиток" />
+    <input name="Золотой слиток" />
+
+    <skill level="4" />
+    
+    <power name="Midas" />
+    <!-- nim -->
+    <damagebuff existential="5" />
+    <resistbuff existential="4" />
+
+    <encrustwith name="Essence of Pon Raul" />
+    <encrustwith name="fiat currency" />
+
+    <instability amount="40" />
+  </encrust>
+
+  <encrust name="Руническое оружие">
+	<description text="Пульсирующие руны покрывают поверхность вашего оружия" />
+	<tool tag="lathe" />
+	<slot type="weapon" />
+	
+	<input name="Сера" />
+	<input name="Сердолик" />
+	<input name="Сфера Мрака" />
+	
+	<skill level="5" />
+	
+	<secondarybuff id="1" amount="8" /> <!-- mana -->
+	<secondarybuff id="3" amount="4" /> <!-- magic power -->
+	<secondarybuff id="11" amount="-2" /> <!-- m resist -->
+		
+	<encrustwith name="glowing runes" />
+	
+	<instability amount="11" />
+  </encrust>
+  
+  <encrust name="Изумрудная инкрустация">
+	<description text="Налёт сверкающих изумрудов раскрывает потенциал природных электрохимических энергий человеческого организма. Шок!" />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Изумруд" />
+	<input name="Изумруд" />
+	<input name="Гальваническое зелье" />
+	
+	<skill level="5" />
+	
+	<damagebuff voltaic="8" />
+	<resistbuff voltaic="-2" />
+	
+	<encrustwith name="emeralds" />
+	
+	<instability amount="13" />
+  </encrust>
+
+  <encrust name="Рекурсивная инкрустация">
+	<description text="На вашем оружии располагает оружие поменьше, на нём - совсем маленькое, а на этом совсем маленьком... а, просто не думайте об этом." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Стальной меч" />
+	<input name="Стальной топор" />
+	<input name="Стальная булава" />
+	
+	<skill level="6" />
+	
+	<damagebuff crushing="4" slashing="4" existential="4" />
+	<secondarybuff id="9" amount="-2" />
+	
+	<power name="Bleeding" />
+	
+	<encrustwith name="a dizzying array of weaponry" />
+	
+	<instability amount="18" />
+  </encrust>
+  
+<!-- Ranged Weapon Crusts -->
+  <encrust name="Внешне бесполезные механизмы">
+	<description text="Как они вообще работают? Они даже ни с чем не соединены." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Латунные механизмы" />
+	<input name="Латунные механизмы" />
+	<input name="Латунные трубки" />
+	<input name="Медная проволока" />
+	
+	<skill level="1" />
+	
+	<damagebuff piercing="2" />
+	<secondarybuff id="9" amount="-2" />
+	
+	<encrustwith name="doodads" />
+	<encrustwith name="gizmos" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Грибной пушок">
+	<description text="Как будто кто-то забыл этот арбалет в холодильнике." />
+	<tool tag="alchemy" />
+	<slot type="ranged" />
+	
+	<input name="Пушистник гадкий" />
+	<input name="Грязевик жирный" />
+	<input name="Свирепый трюфель" />
+	
+	<skill level="1" />
+	
+	<damagebuff toxic="2" />
+	
+	<encrustwith name="sickening mold" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Экспериментальная система охлаждения">
+	<description text="Это не вышедшая на рынок система охлаждения эффективна для чересчур перегревающихся арбалетов. Внимание: это устройство не одобрено Центром Сертификации Болтов, и поэтому его использование может аннулировать вашу гарантию/жизнь." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Латунные трубки" />
+	<input name="Энергетический элемент" />
+	<input name="Шлицованные бронзовые диски" />
+	
+	<skill level="3" />
+	
+	<damagebuff hyperborean="5" />
+	<resistbuff hyperborean="-1" />
+	
+	<encrustwith name="pipes" />
+	<encrustwith name="fans" />
+	<encrustwith name="frost" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Опасно нестабильный реактор" hidden="1">
+	<description text="Как думаете, хорошая ли идея прицепить что-либо подобное к арбалету? Давайте выясним." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Самоуплотняющийся шток-болт" />
+	<input name="Гальваническое зелье" />
+	
+	<skill level="5" />
+	
+	<damagebuff piercing="2" transmutative="2" aethereal="4" />
+	<resistbuff transmutative="-2" />
+	
+	<encrustwith name="high-tech reactors" />
+	
+	<instability amount="18" />
+  </encrust>
+
+  <encrust name="Вызывающая расфуфыренность">
+	<description text="Убьет не убьет, но ослепит." />
+	<tool tag="tinkerer" />
+	<slot type="ranged" />
+	
+	<input name="Бриллиант" />
+	<input name="Рубин" />
+	<input name="Платиновый слиток" />
+	<input name="Платиновый слиток" />
+	
+	<skill level="6" />
+
+	<damagebuff righteous="5" aethereal="5" />
+	<power name="Blind"/>
+	
+	<encrustwith name="an embarrassing display of wealth" />
+	
+	<instability amount="12" />
+  </encrust>
+  
+<!-- Armour Crusts -->
+  <encrust name="Каменная корочка">
+	<description text="Наполовину искатель приключений - наполовину здание."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Гематит" />
+	<input name="Боксит" />
+	<input name="Касситерит" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	
+	<encrustwith name="stone" />
+	
+	<instability amount="4" />
+  </encrust>
+
+  <encrust name="Мешковатость">
+	<description text="То, что так ненавидят миловидные вихрастые герои. Почему бы не носить всё на ремнях?"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Кожаный пояс" />
+	<input name="Кожаный пояс" />
+	<input name="Пояс головореза" />
+	
+	<skill level="0" />
+
+	<resistbuff asphyxiative="-1" slashing="1" />
+	
+	<encrustwith name="random, pointless belts" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Кисломолочная защита" hidden="1">
+	<description text="Слой липкого расплавленного сыра замедляет вражеские атаки. А еще вы вкусно пахнете."/>
+	<tool tag="ingot" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Выдержанный сыр" />
+	<input name="Сыр Бри" />
+	<input name="Хаварти" />
+	<input name="Пармезан" />
+	
+	<skill level="0" />
+	
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<resistbuff crushing="2" />
+	
+	<encrustwith name="a blend of fine cheeses" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Ошестерёнивание" >
+	<tool tag="tinkerer"/>
+	<slot type="chest" />
+	<description text="Пришла пора выйти в люди, вырядившись под стать современной молодежи. Найдите какую-то броню и пришпандорьте к ней шестерёнку!"/>
+	<input name="Латунные механизмы"/>
+	<skill level="0"/>
+	<secondarybuff id="12" amount="-1" /> <!-- sneak -->
+	<secondarybuff id="6" amount="-1"/> <!-- dodge  -->
+	<secondarybuff id="7" amount="1"/> <!-- block  -->
+	<encrustwith name="pointless cogs" />
+	<encrustwith name="useless cogs" />
+	<encrustwith name="unnecessary cogs" />
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Моряцкая инкрустация" >
+	<description text ="During the rainy season, ancient sailors would often treat their trousers with fish to... wait, why are you snickering?" />
+	<tool tag="alchemy" />
+	<slot type="legs" />
+	
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	<input name="Lutefisk" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<secondarybuff id="7" amount="1"/> <!-- block  -->
+	
+	<encrustwith name="lutefisk" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Медная обшивка">
+	<description text="Медь податлива, однако колено от попадания болта защитит. Вы же в курсе, сколько сейчас платят простым стражникам?" />
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Медный слиток" />
+	<input name="Медный слиток" />
+	<input name="Медный слиток" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-1"/> <!-- sneakiness -->
+	<resistbuff voltaic="1" />
+	
+	<encrustwith name="copper plates" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Железная обшивка">
+	<description text="Обшить снаряжение железными листами - отличное решение для тех, кто больше тяготеет к защите, чем к маневрированию."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Железный слиток" />
+	<input name="Железный слиток" />
+	<input name="Железный слиток" />
+	
+	<skill level="2" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<resistbuff voltaic="-1" />
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	
+	<encrustwith name="iron plates" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Медикрытие">
+	<description text="Вы любите обмазываться успокаивающими бальзамами и повышать этим сопротивляемость ядам, кислоте и прочим органическим напастям. А еще вы пахнете больницей и пенсионерами."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="hands" />
+	
+	<input name="Зелье здоровья" />
+	<input name="Зелье здоровья" />
+	<input name="Зелье восстановления" />
+	<input name="Зелье очищения" />
+	
+	<skill level="2" />
+
+	<resistbuff acidic="2" toxic="2" putrefying="2" />
+	
+	<encrustwith name="curative reagents" />
+	
+	<instability amount="7" />
+  </encrust>
+
+  <encrust name="Стальная обшивка">
+	<description text="Значит так, по-вашему, закалялась сталь?"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Стальной слиток" />
+	<input name="Стальной слиток" />
+	<input name="Зелье закалки" />
+	
+	<skill level="3" />
+	
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<resistbuff voltaic="-1" />
+	
+	<encrustwith name="steel plates" />
+	
+	<instability amount="4" />
+  </encrust>
+
+  <encrust name="Огнеупорное покрытие">
+	<description text="Огнезащитное снаряжение - суровая необходимость для всех спускающихся в недра земли."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Инфернальное зелье" />
+	<input name="Зелье закалки" />
+	
+	<skill level="3" />
+
+	<resistbuff conflagratory="4" />
+	<secondarybuff id="6" amount="1" /> <!-- dodge -->
+	
+	<encrustwith name="rough, blackened material" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Рефракционное покрытие">
+	<description text="Это продвинутое покрытие искажает свет вокруг вас. В нём вы особенно неотразимы - наверное потому, что вас просто не видно."/>
+	<tool tag="alchemy" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Зелье невидимости" />
+	<input name="Алюминиевый слиток" />
+	<input name="Алюминиевый слиток" />
+	<input name="Пиритовый диск" />
+	
+	<skill level="3" />
+
+	<secondarybuff id="12" amount="4"/> <!-- sneak -->
+	<secondarybuff id="6" amount="-1"/> <!-- dodge -->
+	
+	<encrustwith name="transparent aluminum" />
+	
+	<instability amount="9" />
+  </encrust>
+
+  <encrust name="Инкрустация черным жемчугом">
+	<description text="Некоторые утверждают, что в черном жемчуге заключены души моряков, погибших в море. Это дорогое удовольствие защитит вас от беспощадных приливов."/>
+	<tool tag="tinkerer" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Чёрный жемчуг" />
+	<input name="Чёрный жемчуг" />
+	<input name="Серебряный слиток" />
+	<input name="Золотой слиток" />
+	
+	<skill level="4" />
+
+	<resistbuff hyperborean="3" asphyxiative="2" />
+	<secondarybuff id="12" amount="-1"/> <!-- sneak -->
+	
+	<encrustwith name="black pearls" />
+	<encrustwith name="a filigree of precious metals" />
+	
+	<instability amount="10" />
+  </encrust>
+
+  <encrust name="Алмазная инкрустация">
+	<description text="Говорят, что алмазы вечны. Возможно, это будет вам утешением - особенно если учесть тот факт, что ваше снаряжение скорее всего вас переживет."/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Бриллиант" />
+	<input name="Бриллиант" />
+	<input name="Бриллиант" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	<secondarybuff id="12" amount="-3"/> <!-- sneak -->
+	<resistbuff piercing="5" slashing="3" />
+	
+	<encrustwith name="diamonds" />
+	
+	<instability amount="11" />
+  </encrust>
+
+  <encrust name="Руническая броня">
+	<description text="Пульсирующие руны украшают поверхность вашей брони."/>
+	<tool tag="lathe" />
+	<slot type="chest" />
+	
+	<input name="Сера" />
+	<input name="Сердолик" />
+	<input name="Сфера Мрака" />
+	
+	<skill level="5" />
+
+	<secondarybuff id="11" amount="6"/> <!-- magic resist -->
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="12" amount="-4"/> <!-- sneak -->
+	
+	<encrustwith name="glowing runes" />
+	
+	<instability amount="11" />
+  </encrust>
+
+  <encrust name="Концептуальное укрепление" hidden="1">
+	<description text="Границы между реальной безопасностью и концептуальной безопасностью должны быть как можно более прозрачными - иначе никто не поймет где же что. Препояшьте же свои чресла венцом защитного идеализма!"/>
+	<tool tag="lathe" />
+	<slot type="head" />
+	
+	<input name="Ледерхозе" />
+	<input name="Звёздная сфера" />
+	<input name="Абсент" />
+	<input name="Абсент" />
+	
+	<skill level="5" />
+
+	<secondarybuff id="11" amount="4"/> <!-- magic resist -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<resistbuff existential="6" />
+	
+	<encrustwith name="Hegel" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Безумная галантерея" hidden="1">
+	<description text="Некоторые люди сомневаются в целесообразности крепления арсенала магического оружия к вашей голове, однако чем дольше вы дышите ртутными парами, тем больше вам нравится эта идея."/>
+	<tool tag="lathe" />
+	<slot type="head" />
+	
+	<input name="Огненный жезл" />
+	<input name="Лазерный жезл" />
+	<input name="Тесла-жезл" />
+	
+	<skill level="6" />
+
+	<secondarybuff id="3" amount="8"/> <!-- magic power -->
+	<secondarybuff id="5" amount="8"/> <!-- haywire -->
+	<secondarybuff id="11" amount="4"/> <!-- magic resist -->
+	
+	<encrustwith name="barely restrained magicks" />
+  <encrustwith name="blatant stupidity"/>
+    
+	<instability amount="29" />
+  </encrust>
+  
+<!-- Shield Crusts -->
+  <encrust name="Экран Фарадея">
+	<description text="Это тщательно заземлённое приспособление защищает вас от электрических разрядов. Как от случайных, так и от намеренных."/>
+	<tool tag="tinkerer" />
+	<slot type="shield" />
+	
+	<input name="Медная проволока" />
+	<input name="Медная проволока" />
+	<input name="Медная проволока" />
+	<input name="Медная проволока" />
+	
+	<skill level="1" />
+
+	<resistbuff voltaic="2" />
+	
+	<encrustwith name="a fine wire mesh" />
+	
+	<instability amount="5" />
+  </encrust>
+
+  <encrust name="Щит незнания">
+	<description text="Запатентованное звуко- и светонепроницопаемое покрытие поможет вам оставаться в блаженном неведении всего окружающего. То, чего вы не знаете, не может вам навредить."/>
+	<tool tag="alchemy" />
+	<slot type="shield" />
+	
+	<input name="Зелье невидимости" />
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	<input name="Аква фортис" />
+	
+	<skill level="2" />
+
+	<secondarybuff id="11" amount="2"/> <!-- magic resist -->
+	
+	<encrustwith name="willful ignorance" />
+	
+	<instability amount="6" />
+  </encrust>
+
+  <encrust name="Действительно святой щит" hidden="1">
+	<description text="Это запутанное собрание идеологических сюжетов освещает почти все стороны деятельности Божественного департамента."/>
+	<tool tag="lathe" />
+	<slot type="shield" />
+	
+	<input name="Слиток электрума" />
+	<input name="Слиток электрума" />
+	<input name="Зелье сияния" />
+	
+	<skill level="3" />
+
+	<resistbuff righteous="5" necromantic="5" />
+	
+	<encrustwith name="every deity imaginable" />
+	
+	<instability amount="10" />
+  </encrust>
+
+  <encrust name="Агрессивное покрытие">
+	<description text="Смешение грубых слов и острых предметов. Безвкусно и ОЧЕНЬ опасно."/>
+	<tool tag="smithing" />
+	<slot type="shield" />
+	
+	<input name="Железный кортик" />
+	<input name="Бронзовый кинжал" />
+	<input name="Гладиус" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<secondarybuff id="4" amount="5"/> <!-- critical chance -->
+	<secondarybuff id="6" amount="-2" /> <!-- dodge -->
+	
+	<encrustwith name="harmful stuff" />
+	
+	<instability amount="12" />
+  </encrust>
+
+  <encrust name="Отреставрированная рукопись">
+	<description text="Таинственные руны современными средствами"/>
+	<tool tag="lathe" />
+	<slot type="shield" />
+	
+	<input name="Серебряный слиток" />
+	<input name="Серебряный слиток" />
+	<input name="Бриллиант" />
+	<input name="Лазерный жезл" />
+	
+	<skill level="4" />
+
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire chance -->
+	<secondarybuff id="11" amount="4"/> <!-- magic resistance -->
+	
+	<encrustwith name="fancy script" />
+	
+	<instability amount="18" />
+  </encrust>
+
+<encrust name="Скалистое покрытие">
+	<description text="Просто приклейте к оружию парочку булыжников. Искусство инкрустации такого еще не знало."/>
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Гематит" />
+	<input name="Боксит" />
+	<input name="Касситерит" />
+	
+	<skill level="2" />
+	
+	<damagebuff crushing="3" piercing="-3" slashing="-3"/>
+	
+	<encrustwith name="rock" />
+	
+	<instability amount="4" />
+	</encrust>
+
+<encrust name="Вычурное кольцевание">
+	<description text="Полоски разноцветной ткани сделают вашу броню: 1) эфироустойчивой 2) превосходно выглядящей."/>
+	<tool tag="smithing" />
+	<slot type="waist" />
+	<slot type="chest" />
+	
+	<input name="Кушак лазурных магов" />
+	<input name="Шарф повелителя времени" />
+	
+	<skill level="4" />
+	
+	<resistbuff aethereal="5" transmutative="5"/>
+	
+	<encrustwith name="fabulous sashes" />
+	
+	<instability amount="18" />
+	</encrust>
+
+<encrust name="Закрученная филигрань">
+	<description text="Знаете ли вы, что драгоценными металлами можно украсить что угодно не нарушая композиции."/>
+	<tool tag="smithing" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	<slot type="hands" />
+	
+	<input name="Серебряный слиток" />
+	<input name="Золотой слиток" />
+	<input name="Платиновый слиток" />
+	
+	<skill level="5" />
+	
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<resistbuff piercing="1"/>
+	
+	<encrustwith name="intricate filigree" />
+	
+	<instability amount="6" />
+</encrust>
+
+<encrust name="Железные шипы">
+	<description text="Зачарование для бедных: просто добавь гвоздей."/>
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	<slot type="hands" />
+	
+	<input name="Железный слиток" />
+	
+	<skill level="1" />
+	
+	<damagebuff piercing="1" />
+	
+	<encrustwith name="spikes" />
+	
+	<instability amount="9" />
+	</encrust>
+
+<encrust name="Смазка для швов">
+	<description text="Эта графитовая смесь придаст металлической броне гибкость ткани. Представьте, что же она сделает с самой тканью!"/>
+	<tool tag="smithing" />
+	<slot type="chest" />
+	
+	<input name="Каменный уголь" />
+	<input name="Алхимическая слизь" />
+	
+	<skill level="2" />
+	
+	<primarybuff id="2" amount="3"/>
+	
+	<encrustwith name="oil" />
+	
+	<instability amount="9" />
+	</encrust>
+
+<encrust name="Цитрусовое покрытие">
+	<description text="Усильте ваше оружие бодрящим и живительным лимонным соком." />
+	<tool tag="smithing" />
+	<slot type="weapon" />
+	
+	<input name="Цитрин" />
+	<input name="Цитрин" />
+	<input name="Колба кислоты" />
+	
+	<skill level="4" />
+	
+	<damagebuff acidic="6" />
+	
+	<encrustwith name="citrus" />
+	
+	<instability amount="8" />
+	</encrust>
+
+<encrust name="Блистерная упаковка">
+	<description text="Оградите ваши предметы от повреждения элементальными силами с помощью этого неуничтожимого кусочка пластмассы. Неясно, правда, как это оружие потом использовать." />
+	<tool tag="ingot" />
+	<slot type="ring" />
+	<slot type="neck" />
+	
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	<input name="Пластмассовый слиток" />
+	
+	<skill level="4" />
+	
+	<primarybuff id="2" amount="-3"/>
+	<!-- nim -->
+	<encrustwith name="clear plastic" />
+	
+	<instability amount="-5" />
+	</encrust>
+
+<encrust name="Неэвклидова геометрия">
+	<description text="Закрутите ваше оружие под совершенно невозможным углом - ваши враги его даже не заметят."/>
+	<tool tag="lathe" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	
+	<input name="Зелье цилиндрической нестабильности" />
+	<input name="Пыль исчезновения" />
+	
+	<skill level="3" />
+	
+	<secondarybuff id="9" amount="2" />
+	<!-- edr -->
+	<power name="Boot"  chance="0.10"/>
+	
+	<encrustwith name="impossible angles" />
+	
+	<instability amount="19" />
+	</encrust>
+
+<encrust name="Кровавый ручей">
+	<description text="Таинственная руна, позволяющая высасывать из врагов жизненные силы. По правде говоря, почти всё оружие это делает, но вот вам передают её единицы. Это - в их числе."/>
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	
+	<input name="Кожемятник прожорливый" />
+	<input name="Сердолик" />
+	<input name="Цинковый слиток" />
+	<input name="Зелье оживлённой регенерации" />
+	
+	<skill level="4" />
+	
+	<resistbuff righteous="-2" />
+	
+	<power name="Vampirism Attack"  chance="0.25"/>
+	
+	<encrustwith name="blood (ooo)" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Пакет обновлений">
+	<description text="Обновление, необходимое для защиты ваших предметов от самых распространенных факторов риска."/>
+	<tool tag="alchemy" />
+	<slot type="ring" />
+	<slot type="neck" />
+	
+	<input name="Рубин" />
+	<input name="Сапфир" />
+	<input name="Изумруд" />
+	<input name="Цитрин" />
+	
+	<skill level="6" />
+	
+	<resistbuff conflagratory="2" hyperborean="2" voltaic="2" crushing="2" />
+	
+	<encrustwith name="cracked gems" />
+	
+	<instability amount="24" />
+	</encrust>
+
+<encrust name="Электростатический модуль">
+	<description text="Бьет врагов током и взъерошивает шерсть вашего кота" />
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Энергетический элемент" />
+	<input name="Медная проволока" />
+	<input name="Медный слиток" />
+	
+	<skill level="3" />
+	
+	<damagebuff voltaic="3" />
+	
+	<encrustwith name="electric wiring" />
+	
+	<instability amount="6" />
+	</encrust>
+
+<encrust name="Прикреплённый фонарик">
+	<description text="Это потрясающая инновация - ведь до вас все бродили с факелами в руке даже не догадываясь о таком!" />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	<slot type="weapon" />
+	
+	<input name="Алюминиевая труба" />
+	<input name="Эфирный силовой цилиндр" />
+	<input name="Пластмассовый слиток" />
+	
+	<skill level="2" />
+	
+	<secondarybuff id="18" amount="1" />
+	<!-- sight radius -->
+	
+	<encrustwith name="tasteful indirect lighting" />
+	
+	<instability amount="6" />
+	</encrust>
+
+<encrust name="Френологический массажёр">
+	<description text="Тщательно расположенные микропоршни перекраивают ваш череп в оптимальную конфигурацию." />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	
+	<input name="Латунный слиток" />
+	<input name="Шлицованные бронзовые диски" />
+	<input name="Нажимная плита" />
+	<input name="Самоуплотняющийся шток-болт" />
+	
+	<skill level="3" />
+	
+	<primarybuff id="1" amount="3" /> <!-- sagacity -->
+	
+	<encrustwith name="screws" />
+	
+	<instability amount="13" />
+	</encrust>
+
+<encrust name="Лицевой дисплей">
+	<description text="Это устройство на шлеме проецирует информацию о препятствиям, ловушках и уровнях мощи прямо на сетчатку." />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	
+	<input name="Энергетический элемент" />
+	<input name="Медная проволока" />
+	<input name="Рубин" />
+	<input name="Пластмассовый слиток" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="9" amount="3" /> <!-- edr -->
+	<secondarybuff id="18" amount="1" /> <!-- sight radius -->
+	<secondarybuff id="17" amount="2"/> <!-- trap sight -->
+	<secondarybuff id="16" amount="1"/> <!-- trap level -->
+	
+	<encrustwith name="global positioning" />
+	
+	<instability amount="10" />
+	</encrust>
+
+<encrust name="Реактивные ускорители">
+	<description text="Усильте убойную мощь ваших ударов благодаря РЕАКТИВНЫМ КУЛАКАМ." />
+	<tool tag="tinkerer" />
+	<slot type="hands" />
+	
+	<input name="Железный слиток" />
+	<input name="Алюминиевая труба" />
+	<input name="Алюминиевая труба" />
+	<input name="Порох" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="2" amount="3"/>
+	<!-- melee power -->
+	
+	<encrustwith name="rocket power" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Реактивные ускорители">
+	<description text="А что, если запихнуть всё необходимое вам в... РЕАКТИВНЫЙ БОТИНОК?" />
+	<tool tag="tinkerer" />
+	<slot type="feet" />
+	
+	<input name="Железный слиток" />
+	<input name="Алюминиевая труба" />
+	<input name="Алюминиевая труба" />
+	<input name="Порох" />
+	
+	<skill level="4" />
+	
+	<secondarybuff id="6" amount="5"/>
+	<!-- dodge -->
+	
+	<encrustwith name="rocket power" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Заострённая цепь">
+	<description text="Заводная цепь из лезвий приходит в действие когда вы дёргаете за ниточку. Подгадайте момент - и от ваших врагов останутся одни ошмётки."/>
+	
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Стальной слиток" />
+	<input name="Пружинный силовой механизм" />
+	<input name="Латунные механизмы" />
+	<input name="Шлицованные бронзовые диски" />
+	
+	<skill level="4" />
+	
+	<damagebuff slashing="3"/>
+	<secondarybuff id="4" amount="5"/> <!-- critical chance -->
+	
+	<encrustwith name="nasty spinning blades" />
+	
+	<instability amount="12" />
+	</encrust>
+
+<encrust name="Прикид Гаги" hidden="1">
+	<description text="Покрывает вашу броню вкусным мясцом, так что зловредные монстры вряд ли догрызутся до более важного мяса чуть пониже. Да-да, первой это сделала Стербак."/>
+	<tool tag="ingot" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Свежий стейк" />
+	<input name="Стейк" />
+	<input name="Выдержанный стейк" />
+	<input name="Прожаренный стейк" />
+	
+	<skill level="0" />
+	
+	<secondarybuff id="0" amount="5"/>
+	<!-- hp -->
+	
+	<encrustwith name="oozing meat" />
+	
+	<instability amount="9" />
+	</encrust>
+  
+</encrustDB>

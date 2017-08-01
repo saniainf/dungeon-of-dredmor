@@ -1,0 +1,31 @@
+﻿<!-- the quest database. -->
+
+<questDB>
+  <item name="Вещица" sprite="items/wad.png" />
+  <item name="Символ" sprite="items/quest_sigil.png" />
+  <item name="Шарф властелина времени" sprite="items/quest_timelord_scarf.png" />
+  <item name="Крошечный милый котёнок" sprite="items/quest_kitten.png" />
+  <item name="Статуэтка козы" sprite="items/quest_goat_figurine.png" />
+  <item name="Перчатка" sprite="items/quest_glove.png" />
+  <!-- <item name="Tendril" sprite="items/root_of_tchar.png" /> -->
+  <item name="Мозг" sprite="items/quest_brain.png" />
+  <item name="Рукав волшебника" sprite="items/wizards_sleeve.png" />
+  <item name="Ужасный лютефиск" sprite="items/quest_fell_lutefisk.png" />
+  <item name="Галстук" sprite="items/quest_cravat.png"/>
+  <item name="Кристальная свеча" sprite="items/quest_crystal_candle.png"/>
+  
+<!--  <item name="Bread" sprite="items/bread.spr"/> -->
+<!--
+  <item name="Monstrous Egg" sprite="items/egg1.spr"/>
+  <item name="Eldritch Rune" sprite="sprites/sfx/rune1.spr"/>
+  <item name="Otherworldly Rune" sprite="sprites/sfx/rune2.spr"/>
+  <item name="Netherworldly Rune" sprite="sprites/sfx/rune3.spr"/>
+  <item name="Unnatural Rune" sprite="sprites/sfx/rune4.spr"/>
+  <item name="Dire Asparagus" sprite="items/dire_asparagus.spr"/>
+-->
+
+  <blocker name="Монолит" sprite="dungeon/monolith.spr" text="Монолит зловеще на вас смотрит."/>
+  <blocker name="Глазастое святилище" sprite="dungeon/shrine1.spr" text="Глазастое святилище пристально наблюдает за вами миллионами своих жутких крошечных глаз."/>
+  <blocker name="Святилище спокойствия" sprite="dungeon/shrine2.spr" text="При виде святилища спокойствия хочется расслабиться и всё такое."/>
+  
+</questDB>

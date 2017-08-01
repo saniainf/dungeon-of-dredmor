@@ -1,0 +1,352 @@
+﻿<skillDB>
+
+<!-- daggers and polearms moved to core -->
+   
+<!-- Bankster -->
+<!-- start with a gold ring, a tailored suit, and some stock options -->
+
+<skill name="Банкстер" id="47" type="rogue" achievement="ACHIEVEMENT_BANKSTER_MASTERY" description="Нет на свете ничего такого, с чем не справился бы искатель приключений, вооруженный пачкой деривативов, диверсифицированным портфелем акций, и полным отсутствием какой-либо морали." >
+   <art icon="skills/bankster64.png"/>
+   <loadout type="component" subtype="Реарденовый слиток" amount=" 3" always="1" />
+   </skill>
+<ability name="Банкстер" icon="skills/bankster64.png" skill="47" startSkill="1">
+   <description text="Нет на свете ничего такого, с чем не справился бы искатель приключений, вооруженный пачкой деривативов, диверсифицированным портфелем акций, и полным отсутствием какой-либо морали."/>
+   </ability>
+
+<ability name="Заём под высокий процент" icon="skills/high_interest_loan64.png" skill="47" level="0" >
+   <description text="Попробуйте новую линейку кредитов от Первого Международного Банка Буррней!"/>
+   <spell name="Заём под высокий процент" />
+   </ability>
+<ability name="Ликвидация токсичных активов" icon="skills/toxic_assets64.png" skill="47" level="1" >
+   <spell name="Ликвидация токсичных активов" />
+   <description text="Некоторые инвестиции не принесут плода, так пусть они будут чужой головной болью! Этот навык сваливает на цель все штрафы банкстера и наносит дополнительный токсичный урон на основе вашей грубости."/>
+   </ability>
+<ability name="Страховое мошенничество" icon="skills/insurance_fraud64.png" skill="47" level="2" >
+   <spell name="Страховое мошенничество" />
+   <description text="Страховка, азартные игры, в чём разница? Застрахуйте себя или противника и... Прибыль! Размер выплат зависит от вашей характеристики благоразумия."/>
+   </ability>
+<ability name="Найм субконтрактора" icon="skills/hire_contractor64.png" skill="47" level="3" >
+   <description text="Наймите одного из слуг Дредмора в качестве ''субконтрактора'' на 50 ходов. Ведь ''взятка'', это такое некрасивое слово."/>
+   <spell name="Найм субконтрактора" />
+   </ability>
+<ability name="Фискальная преграда" icon="skills/zorkmid64.png" skill="47" level="4" >
+   <description text="Инвестируйте в собственную безопасность! Обменяйте заработанные потом и кровью деньги на защиту, снимающую вплоть до половины урона."/>
+   <spell name="Фискальная преграда" />
+   </ability>
+<ability name="Откуп" icon="skills/bailout64.png" skill="47" level="5" >
+   <description text="Вы слишком крупны чтобы провалиться. Специальная комиссия поможет вам ликвидировать последствия вашей финансовой безответственности."/>
+   <spell name="Откуп" />
+   </ability>
+<!--
+<ability name="Bad Investment" icon="skills/bankster64.png" skill="47" level="6" >
+   <description text="NOT Makin' Bank; THIS IS FOR TESTING"/>
+   <spell name="Bad Investment" />
+   </ability>
+-->
+<!--
+Buy-off
+Credit Default Swap
+Bribe
+Bailout
+Hostile Takeover : destroy store - get money?
+Dissolve Assets : acidic attack
+Money Laundering
+Insider Trading
+
+-->   
+
+<!-- Communism -->
+<!-- start with hammer, sickle, and a bottle of vodka -->
+
+<skill name="Коммунизм" id="48" type="warrior" achievement="ACHIEVEMENT_COMMUNISM_MASTERY" description="Пролетарии, объединяйтесь!" >
+   <art icon="skills/communist64.png"/>
+   <loadout type="weapon" subtype="Серп" always="1"/>
+   <loadout type="weapon" subtype="Молот" always="1"/>
+   <loadout type="weapon" subtype="Коктейль Мосолова" always="1" amount="3" />
+   <loadout type="food" subtype="Водка" always="1" amount="3" />
+   </skill>
+<ability name="Коммунизм" icon="skills/communist64.png" skill="48" startSkill="1">
+   <description text="Пролетарии, объединяйтесь!"/>
+   </ability>
+
+<ability name="Партизанская атака" icon="skills/guerrilla64.png" skill="48" level="0" >
+   <description text="Популярная тактика нападения на империалистов и либералов из засады, с последующим исчезновением с места происшествия."/>
+   <spell name="Партизанская атака" />
+   <secondaryBuff id="12" amount="5" />
+   <!-- Foco? People's War? Attack and vanish? -->
+   </ability>
+<ability name="Социализированное здравоохранение" icon="skills/socialized_healthcare64.png" skill="48" level="1" >
+  <description text="Щедрый подарок наших канадских товарищей, социализированное здравоохранение закрывает раны скорыми, бюрократическими темпами."/>
+  <spell name="Страховой полис" />
+   <secondaryBuff id="0" amount="5" /> <!-- hp -->
+   <secondaryBuff id="13" amount="1" /> <!-- regen -->
+   </ability>
+<ability name="Генерал Мороз" icon="skills/general_winter64.png" skill="48" level="2" giveItem="Ушанка коммуниста" >
+   <description text="Генерал Мороз защитит революцию в отдельно взятом подземелье. Когда вы атакуете противника, зима поражает его за вас." />
+   <resistBuff hyperborean="1" />
+   <playerHitEffectBuff percentage="20" name="Генерал Мороз" />
+   <!-- <spell name="Генерал Мороз" /> -->
+   <!-- when you get hit: AOE cold spell + cold resist buff  -->
+   </ability>
+<ability name="Диалектический материализм" icon="skills/dialectical_materialism64.png" skill="48" level="3" >
+   <description text="Революционная наука сметёт отголоски племенных суеверий! Наугад снимает одно проклятие, заменяя его произвольным коммунистическим эффектом."/>
+   <spell name="Диалектический материализм" />
+   <!-- target other: apply internal contradiction! debuff? -->
+   <!-- target self: remove random curse, replace with minor communism-related debuff? -->
+   </ability>
+<ability name="Революционный авангард" icon="skills/vanguard_party64.png" skill="48" level="4" learnrecipe="Коммунистическая ушанка власти" >
+  <description text="Время воплотить в жизнь теорию диктатуры пролетариата! Пусть злые языки говорят о негативных последствиях авангардизма, наше дело - продвигать дело революции любой ценой!"/>
+   <spell name="Революционный авангард" />
+   </ability>
+<ability name="Железный занавес" icon="skills/iron_curtain64.png" skill="48" level="5" learnrecipe="Коммунистическая броня власти" >
+   <description text="Мощь железного занавеса защитит дело революции. Не пускает опасности снаружи, сохраняя Коммунизм внутри!"/>
+   <secondaryBuff id="10" amount="5" /> <!-- armour -->
+   <primaryBuff id="4" amount="5" /> <!-- STU -->
+   <resistBuff hyperborean="2" />
+   </ability>
+<ability name="У них есть бомба!" icon="skills/the_bomb64.png" skill="48" level="6" giveItem="Бомба" learnrecipe="Бомба" >
+   <resistBuff transmutative="3" />
+   <description text="Лишь разделяя атомы и используя их силу можем мы сберечь революцию." />
+   </ability>
+<!--
+<ability name="Аппаратчик" icon="skills/communist64.png" skill="48" level="5" >
+   <description text=" "/>
+   </ability>-->
+<!--
+They've got the bomb!
+Socialized Healthcare
+-->
+
+<!--
+Great Leap Forward
+Juche
+Vanguard Party
+Cult of Personality
+General Winter
+Iron Curtain : Wall to be keeping socialism in.
+Five Turn Plan
+-->
+
+<!-- Egyptian Magic -->
+<!-- heck if I know. It's egyptian stuff! -->
+
+<skill name="Египетская магия" id="49" type="wizard" achievement="ACHIEVEMENT_EGYPT_MAGIC_MASTERY" description="Не слушайте парня, которые описывает навык Астрологии. Сила пирамид по праву принадлежит вам!" >
+   <art icon="skills/egyptian_magic64.png"/>
+   </skill>
+<ability name="Египетская магия" icon="skills/egyptian_magic64.png" skill="49" startSkill="1">
+   <description text="Не слушайте парня, которые описывает навык Астрологии. Сила пирамид по праву принадлежит вам!"/>
+   </ability>
+
+<ability name="Иероглиф Аспида" icon="skills/asp64.png" skill="49" level="0" >
+   <!-- poison-touch attack; hit then kite -->
+   <description text="Призовите себе на помощь ядовитую силу ядовитых змей! Аааа, змеи!"/>
+   <spell name="Иероглиф Аспида" />
+   </ability>
+<ability name="Иероглиф Имхотепа" icon="skills/imhotep64.png" skill="49" level="1" >
+   <!-- traps, healing -->
+   <description text="Призовите силы Имхотепа, величайшего из врачей / архитекторов / советников / жрецов / инженеров / так далее. У них в Египте явно свирепствовал дефицит имён."/>
+   <spell name="Иероглиф Имхотепа" />
+   </ability>
+<ability name="Призыв песчаной бури" icon="skills/sandstorm64.png" skill="49" level="2" >
+   <!-- vaguely AOE targeted dot -->
+   <description text="Направьте на врагов ярость природы и гибель времени. Каждый активный иероглиф делает песчаную бурю сильнее."/>
+   <spell name="Призыв песчаной бури" />
+   </ability>
+<ability name="Иероглиф Анубиса" icon="skills/anubis64.png" skill="49" level="3" >
+   <!-- Death/Undead themed -->
+   <description text="Анубис отвечает за смерть, за мумий, а ещё он ухаживает за Амат, пожирательницей сердец. В общем, лучше его не злить понапрасну."/>
+   <spell name="Иероглиф Анубиса" />
+   </ability>
+<ability name="Призыв Нила" icon="skills/nile64.png" skill="49" level="4">
+   <!-- Giant AOE/push/asphyx : regrowth properties; aesthetic? -->
+   <description text="Взовите к плодородным водам Нила!"/>
+   <spell name="Призыв Нила" />
+   </ability>
+<ability name="Иероглиф Ока Ра" icon="skills/eye_of_ra64.png" skill="49" level="5" >
+   <!-- Like giant eye-lasers.-->
+   <description text="Призовите ужасное, пылающее око Ра!"/>
+   <spell name="Иероглиф Ока Ра" />
+   </ability>
+
+   <!--
+   hot in here or just me!
+   mummies
+   summon mummies
+   poison snakes
+   sandstorm
+   sands of time
+   time something something
+   traps!
+   life & death : ankh ; ka
+   seducing julius caesar
+   heiroglyphs : mines
+   spell cost in kills
+   entombing
+   canoptic jars
+   scarabs
+   anubis
+   walking like an egyptian
+   ra
+   stargates
+   thoth
+   papyrus
+   the nile
+   fractions? -> mathemagic
+   cats
+   -->
+   
+
+<!-- Magical Law -->
+<!-- like MTG's blue -->
+
+<skill name="Магический закон" id="50" type="wizard" achievement="ACHIEVEMENT_MAGICAL_LAW_MASTERY" description="Когда волшебники совершают преступления, лишь волшебники могут восстановить магическую справедливость.">
+   <art icon="skills/magical_law64.png"/>
+   </skill>
+<ability name="Магический закон" icon="skills/magical_law64.png" skill="50" startSkill="1">
+   <description text="Когда волшебники совершают преступления, лишь волшебники могут восстановить магическую справедливость."/>
+   </ability>
+   
+<ability name="Конфискация улик" icon="skills/confiscate_evidence64.png" skill="50" level="0">
+   <description text="Накладывается на предметы, для запихивания их к себе в карман. У магического закона длинные руки!"/>
+   <spell name="Конфискация улик" />
+   </ability>
+<ability name="Полиформное постановление" icon="skills/polymorphic_injunction64.png" skill="50" level="1">
+   <description text="Используя могучие юридические шуры-муры, вы можете постановить монстру выплатить штраф за его собственное превращение в монстра, плюс штраф за нанесённый ущерб."/>
+   <spell name="Полиформное постановление" />
+   </ability>
+<ability name="Подписка о неразглашении" icon="skills/gag_order64.png" skill="50" level="2">
+   <description text="Заглушает все произносимые заклинания и наносит удушающие повреждения, немного зависящие от вашей адвокатской характеристики благоразумия."/>
+   <spell name="Подписка о неразглашении" />
+   </ability>
+<ability name="Апелляционная руна" icon="skills/objection64.png" skill="50" level="3">
+   <description text="Оспаривает случайное проклятие, перенакладывая его с вас на вашу цель."/>
+   <spell name="Апелляционная руна" />
+   </ability>
+<ability name="Контрзаклинательное предписание" icon="skills/writ_of_counterspelling64.png" skill="50" level="4">
+   <description text="В точности как и рекламировалось передачей ''Товары почтой'', получите ваше Контрзаклинательное предписание, позволяющее отражать опасные заклинания обратно врагам."/>
+   <spell name="Контрзаклинательное предписание"/>
+</ability>
+<ability name="Неопровержимый аргумент" icon="skills/magical_law64.png" skill="50" level="5">
+   <description text="Ваша честь, принимая во внимание очевидное отсутствие экс пост-факто менс реа ин экстремис в ситуации истца и его же нон компос ментис, я обращаюсь к суду с просьбой произвольно обнулить таймеры перезарядки для моего клиента."/>
+   <spell name="Неопровержимый аргумент"/>
+</ability>
+
+<!-- Paranormal Investigator -->
+<!-- "the truth is in there, somewhere" -->
+
+<skill name="Парапсихология" id="51" type="rogue" achievement="ACHIEVEMENT_PARANORMAL_INVESTIGATOR_MASTERY" description="Истина совсем рядом, за углом.">
+   <art icon="skills/paranormal_investigator64.png"/>
+   </skill>
+<ability name="Парапсихология" icon="skills/paranormal_investigator64.png" skill="51" startSkill="1">
+   <description text="Истина совсем рядом, за углом."/>
+   </ability>
+   
+<ability name="Этому должно быть рациональное объяснение" icon="skills/rational_explanation64.png" skill="51" level="0">
+   <description text="Поднимает вашу сопротивляемость магии. В чём же проблема? Вы также не сможете пользоваться магией, но разве это плохо? Ведь магия - это выдумка!"/>
+   <spell name="Рациональное объяснение" />
+   <secondarybuff id="11" amount="2" /> <!-- resist -->
+   </ability>
+   
+<ability name="Близкий контакт" icon="skills/close_encounter64.png" skill="51" level="1">
+   <description text="Активируйте переключатели, открывайте сундуки и двери на расстоянии. Это ваша новая способность. Она дана вам с какой-то целью. Это должно что-то означать."/>
+   <spell name="Близкий контакт" />
+   <primarybuff id="1" amount="1" /> <!-- sagacity -->
+   <secondarybuff id="11" amount="1" /> <!-- resist -->
+   </ability>
+
+<ability name="Скептицизм" icon="skills/skepticism64.png" skill="51" level="2">
+   <description text="Вы полностью раскроете этот заговор и покажете всем, какие чудовища на самом деле его затеяли!"/>
+   <spell name="Скептицизм" />
+   <resistbuff existential="1" />
+   </ability>
+
+<ability name="Ксенохимия" icon="skills/xenochemistry64.png" skill="51" level="3">
+   <description text="Трансмутируйте одно зелье в другое с помощью странных составов инопланетного происхождения. Внимание: контакт с инопланетными субстанциями может привести к появлению суперспособностей и/или смерти."/>
+   <spell name="Ксенохимия" />
+   <resistbuff toxic="3" transmutative="1" />
+   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+</ability>   
+
+<ability name="Вскрытие пришельцев" icon="skills/alien_autopsy64.png" skill="51" level="4">
+   <description text="Временами вы можете найти рецепты для изготовления вещей в теле поверженного монстра. Секрет технологий пришельцев может стать вашим!"/>
+   <targetKillBuff name="Вскрытие пришельцев" percentage="2" />
+</ability>
+   
+<ability name="Оружие пришельцев" icon="skills/alien_weapon64.png" skill="51" level="5">
+   <description text="Биомагнитная технология пришельцев позволяет притягивать метеоры с неба на голову противнику. Строго рекомендуется не стоять рядом с противником во время притягивания метеора."/>
+   <spell name="Оружие пришельцев" />
+</ability>
+   
+   
+<!-- Tourist -->
+<!--  -->
+
+<skill name="Турист" id="52" type="wizard" achievement="ACHIEVEMENT_TOURISM_MASTERY" description="Смотри, Марта! Это же подземелье полное необычных предметов местного быта и очаровательных представителей кровожадной фауны! Сейчас только достану камеру...">
+   <art icon="skills/tourist64.png"/>
+  <!-- tourists start with a camera-->
+  <loadout type="wand" subtype="Фотоаппарат" always="1"/>
+</skill>
+  
+<ability name="Турист" icon="skills/tourist64.png" skill="52" startSkill="1">
+   <description text="В прошлом году вы провели отпуск в другом подземелье и это было незабываемо! В этом году вы решили посетить подземелье лорда Дредмора. Очаровательное место, здесь так красиво!"/>
+</ability>
+   
+<ability name="Расслабьтесь и развейтесь" icon="skills/relax_and_unwind64.png" skill="52" level="0">
+   <description text="Сбегите от суеты и позвольте расслабляющей атмосфере отпуска овладеть вашим телом и духом, увеличивая ваш запас здоровья и скорость регенерации маны."/>
+   <secondaryBuff id="13" amount="1" /> <!-- life regen -->
+   <secondaryBuff id="14" amount="1" /> <!-- mana regen -->
+   </ability>
+<ability name="Посетите достопримечательности" icon="skills/see_the_sights64.png" skill="52" level="1">
+   <description text="Расширяет радиус видимости. Больший радиус позволит вам сфотографировать больше элементов местного быта и культуры. Единственный минус в том, что глазея по сторонам вы выглядите странно."/>
+   <spell name="Посетите достопримечательности" />
+   <secondaryBuff id="16" amount="1" /> <!-- trap sense -->
+   </ability>
+<ability name="Воспользуйтесь необычной инвалютой" icon="skills/foreign_currency64.png" skill="52" level="2">
+   <description text="Получайте больше денег вследствие разницы курса валют. Почему за рубежом деньги всегда такие странные?"/>
+   <zorkmidbuff percent="0.1" />
+</ability>
+<ability name="Познакомьтесь с интересными людьми" icon="skills/meet_people64.png" skill="52" level="3">
+   <description text="Поприветствуйте местных жителей, пригласив одного из них пообщаться с вами. Надеюсь, они не кусаются!"/>
+   <spell name="Познакомьтесь с интересными людьми" />
+   </ability>
+<ability name="Опробуйте местную кухню" icon="skills/sample_cuisine64.png" skill="52" level="4">
+   <description text="За рубежом люди едят всё, что угодно. Используйте на любом предмете, чтобы съесть его."/>
+   <spell name="Опробуйте местную кухню" />
+   <resistbuff toxic="1" />
+   </ability>
+<ability name="В гостях хорошо, дома - лучше" icon="skills/get_away64.png" skill="52" level="5">
+   <description text="Надоело гриндить опыт в окружении смертоносных чудовищ? Вытащите себя на один уровень подземелья выше, в безопасность. Внимание: за потерянный багаж администрация ответственности не несет!"/>
+   <spell name="В гостях хорошо, дома - лучше" />
+   </ability>
+
+<!-- Electric Warrior -->
+<!-- like some kind of magical bard warrior -->
+<!--
+<skill name="Electric Warrior" id="51" type="warrior" description="For those about to Rock.">
+   <art icon="skills/electric_warrior64.png"/>
+   </skill>
+<ability name="Electric Warrior" icon="skills/electric_warrior64.png" skill="51" startSkill="1">
+   <description text="For those about to rock."/>
+   </ability>
+   
+<ability name="Axe Smasher" icon="skills/electric_warrior64.png" skill="51" level="0">
+   <description text="Rock out with a brutal attack that gets stronger as you get drunker."/>
+   </ability>
+<ability name="Power Chord" icon="skills/electric_warrior64.png" skill="51" level="1">
+   <description text="You've got the power. Boost your attack power at the expense of your defence."/>
+   </ability>
+<ability name="Turn It Up" icon="skills/electric_warrior64.png" skill="51" level="2">
+   <description text=""/>
+   </ability>
+<ability name="Heavy Metal" icon="skills/electric_warrior64.png" skill="51" level="3">
+   <description text="A balls-to-the-wall dashing power attack, fast as a shark."/>
+   </ability>
+<ability name="Set the Stage" icon="skills/electric_warrior64.png" skill="51" level="4">
+   <description text="Shock and burn your enemies with stage lights and pyrotechnics. You're really good live."/>
+   </ability>
+<ability name="Power Ballad" icon="skills/electric_warrior64.png" skill="51" level="5">
+   <description text="This heart-wrenching, lighter-waving ballad from the depths of your soul inflicts massive existential damage. It may, however, put some listeners to sleep."/>
+   </ability>
+-->
+
+</skillDB>

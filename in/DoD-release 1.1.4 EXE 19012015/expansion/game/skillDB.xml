@@ -1,0 +1,315 @@
+﻿<skillDB>
+
+<!--
+skill selection defs,
+parent skill line defs
+individual skill defs
+-->
+
+<!-- Hunter -->
+  
+<skill name="Охотник на крупную дичь" id="34" type="warrior" achievement="ACHIEVEMENT_BIG_GAME_HUNTER_MASTERY" description="Сезон охоты открыт.">
+   <art icon="skills/hunter64.png"/>
+</skill>
+  
+<ability name="Охотник на крупную дичь" icon="skills/hunter64.png" skill="34" startSkill="1">
+  <description text="Сезон охоты открыт."/>
+</ability>
+
+   <ability name="Собиратель трофеев" icon="skills/trophy_collector64.png" skill="34" level="0">
+   <description text="Вырезайте трофеи и получайте непонятные, жуткие награды. (Иными словами, вы получаете дополнительный опыт, убивая животных)" />
+   <!-- <spell name="Ужасный трофей" /> for testing -->
+   <targetKillBuff percentage="50" name="Ужасный трофей" taxa="Животное" />
+   <secondarybuff id="9" amount="3" /> <!-- edr -->
+   </ability>
+<ability name="Мясник" icon="skills/butcher64.png" skill="34" level="1">
+   <description text="Вы разделываете животных, ведь вы так любите их свежую, кровоточащую плоть. Это выходит у вас неосознанно, прямо во время битвы, благодаря заложенным в мускульную память мясницким рефлексам." />
+   <targetKillBuff percentage="49" name="Мясник" taxa="Животное" />    
+   </ability>
+<ability name="Охотничья приманка" icon="skills/tracker64.png" skill="34" level="2">
+   <description text="Вы имитируете крики разных видов монстров, подманивая их к себе. В частности, вы в совершенстве овладели имитацией брачного клича буррней, который вы делаете, сжимая ладони определённым образом и быстро-быстро шевеля пальцами, одновременно продувая воздух сквозь всё это безобразие." />
+   <secondarybuff id="9" amount="5" /> <!-- edr -->
+   <secondarybuff id="4" amount="2" /> <!-- crit -->
+   <secondarybuff id="18" amount="1" />  <!-- sight -->
+   <spell name="Охотничья приманка" />
+   </ability>
+<ability name="Самая опасная дичь" icon="skills/most_dangerous_game64.png" skill="34" level="3">
+   <description text="Если кто-то истекает кровью, мы убьём его. Если не истекает, мы дадим ему крови для истечения, а потом убьём его. Этот навык увеличивает вознаграждение за сбор жутких трофеев и навыки мясника." />
+   <damagebuff piercing="2" />
+   <targetHitEffectBuff percentage="15" name="Мясник" taxa="Животное" />
+   <targetKillBuff percentage="50" name="Удар охотника" taxa="Животное" />
+   <secondarybuff id="18" amount="1" /> <!-- sight -->
+   <secondarybuff id="12" amount="5" /> <!-- sneak -->
+   <secondarybuff id="9" amount="8" /> <!-- edr -->
+   </ability>
+<ability name="Спустить гончих" icon="skills/release_the_hounds64.png" skill="34" level="4">
+   <spell name="Спустить гончих"/>
+   <description text="Призывает стаю хищных охотничьих буррней." />
+   </ability>
+
+
+
+<!-- Emomancy -->
+<skill name="Эмомантия" id="35" type="wizard" achievement="ACHIEVEMENT_EMOMANCY_MASTERY"  description="Используйте силу чёрных полосочек, которые в сочетании с розовыми полосочками могут привести к взрывам и тому подобному.">
+   <art icon="skills/emomancy64.png"/>
+   </skill>
+<ability name="Эмомантия" icon="skills/emomancy64.png" skill="35" startSkill="1">
+  <description text="Используйте силу чёрных и розовых полосочек."/>
+  </ability>
+
+  
+<ability name="Нас растелепортирует любовь" icon="skills/emo_blink64.png" skill="35" level="0">
+	<spell name="Нас растелепортирует любовь" />
+	<description text="Потому, что мы больше не можем быть вместе!" />
+	</ability>
+<ability name="Лекарство" icon="skills/the_cure64.png" skill="35" level="1">
+	<spell name="Лекарство" />
+	<description text="Лекарство The Cure излечит вашу душу, но вам придётся заплатить страшную цену, которая навсегда останется запечатлена в школьном фотоальбоме." />
+	</ability>
+<ability name="Мой химический взрыв" icon="skills/chemical_explosion64.png" skill="35" level="2">
+	<spell name="Мой химический взрыв"/>
+	<description text="Покажите миру, как же это больно, воспользуйтесь гадким шаром депрессивной, жгучей кислоты." />
+	</ability>
+<ability name="Вязкое поле ангста" icon="skills/dampening64.png" skill="35" level="3">
+	<spell name="Вязкое поле ангста" />
+	<description text="До тех пор пока существует это тёмное облако, оно будет подавлять магию в своей области действия." />
+	</ability>
+<ability name="Знак чего-то" icon="skills/whatever64.png" skill="35" level="4">
+   <spell name="Знак чего-то" />
+   <description text="Любой, кто наступит на знак чего-то, сразу почувствует, что ему внезапно как-то всё равно вообще." />
+   </ability>
+<ability name="Знак чёрной туши" icon="skills/black_eyeliner64.png" skill="35" level="5">
+   <spell name="Знак чёрной туши" />
+   <description text="Чёрная тушь (не туша!) знак битых, но не сломанных и размалёванных, но не накрашенных. Что-то вроде того." />
+   </ability>
+<ability name="Депрессивный стихийный удар" icon="skills/depressing_blast64.png" skill="35" level="6">
+   <spell name="Депрессивный стихийный удар" />
+   <description text="Это очень, ОЧЕНЬ грустный стихийный удар. Каждый, кого коснётся этот луч, тут же погрузится в пассивные размышления о своём месте во вселенной." />
+   </ability>
+
+
+<!-- Werediggle -->
+<skill name="Проклятье обурротня" id="36" type="rogue" achievement="ACHIEVEMENT_WEREDIGGLE_MASTERY" description="Обурротней обурревает жажда буррения.">
+   <art icon="skills/werediggle64.png"/>
+   </skill>
+<ability name="Проклятье обурротня" icon="skills/werediggle64.png" skill="36" startSkill="1">
+  <description text="Обурротней обурревает жажда буррения."/>
+  </ability>
+
+
+<ability name="Обличье обурротня" icon="skills/werediggle_form64.png" skill="36" level="0" >
+   <spell name="Обличье обурротня"/>
+   <description text="Примите обличье обурротня! В этом обличье ваши атаки становятся сильнее. В противовес, вы не можете использовать не-обурротневые навыки до окончания превращения."/>
+   </ability>
+  
+<ability name="Буррневая чума" icon="skills/diggle_plague64.png" skill="36" level="1" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="Находясь в обличье обурротня вы можете заразить противников страшной буррневой чумой."/>
+   <resistbuff putrefying="2" toxic="1" />
+   <damagebuff putrefying="1" toxic="1" />
+   <spell name="Буррневая чума"/>
+   </ability>
+
+<ability name="Лондонский обурротень" icon="skills/werediggles_of_london64.png" skill="36" level="2" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="В обличье обурротня вы становитесь ещё сильнее. Теперь с увеличенной сопротивляемостью урону! В комплект не входит только чоу-мейн с говядиной."/>
+   <secondarybuff id="10" amount="2"/><!-- armour -->
+   <secondarybuff id="7" amount="4"/><!-- block -->
+   <secondarybuff id="0" amount="5"/><!-- hp -->
+   <secondarybuff id="13" amount="4"/><!-- health regen -->
+   <resistbuff conflagratory="1" hyperborean="1" voltaic="1" />
+   </ability>
+
+<ability name="Коммандо" icon="skills/going_commando64.png" skill="36" level="3" polymorphedOnly="1" polymorphTag="Буррень">    
+   <description text="Лучше буррня может быть только невидимый буррень, которым ты не ещё бывал."/>
+   <secondarybuff id="12" amount="5" /> <!-- sneak -->
+   <spell name="Коммандо" />
+   </ability>
+
+<ability name="Откуда-откуда?" icon="skills/diglet64.png" skill="36" level="4" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="Отложите яйцо! Ну да, вам бы и в голову не пришло."/>
+   <spell name="Откуда-откуда?" />
+   </ability>
+
+<ability name="Могучий буравчик" icon="skills/mighty_auger64.png" skill="36" level="5" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="Есть куда спешить? Нужно выбраться из пробки? Почему бы не задействовать ваш массивный нос и не пробурить стену?"/>
+   <damagebuff piercing="3" />
+   <resistbuff piercing="1" crushing="1" />
+   <spell name="Могучий буравчик" />
+   </ability>
+
+<ability name="Удар архибуррня" icon="skills/archdiggle_smash64.png" skill="36" level="6" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="Сильнейшие из буррней знают, как правильно использовать свой устрашающий нос для выполнения разрушительных атак."/>
+   <spell name="Удар архибуррня" />
+   </ability>
+
+<ability name="Доктор Буррень и мистер Хайд" icon="skills/doctor_diggle64.png" skill="36" level="7" polymorphedOnly="1" polymorphTag="Буррень">
+   <description text="Инстинкты буррня захватывают ваше сознание. В человеческой форме вы только и думаете, что про гнёзда и бурение. Вам совершенно не с кем об этом поговорить, однако мощь, какая мощь!"/>
+   <primarybuff id="0" amount="2"/><!-- Bur -->
+   <primarybuff id="3" amount="2"/><!-- Cad -->
+   <secondarybuff id="2" amount="2"/><!-- melee -->
+   <secondarybuff id="10" amount="2"/><!-- armour -->
+   <secondarybuff id="6" amount="5" /> <!-- dodge -->
+   <resistbuff conflagratory="1" hyperborean="1" voltaic="1" />
+</ability>
+  
+
+
+<!-- Veganism -->
+<skill name="Веган-убийца" id="38" type="warrior" achievement="ACHIEVEMENT_VEGAN_MASTERY"  description="Сила чистой жизни, морального превосходства и живительной клейковины.">
+   <art icon="skills/killer_vegan64.png"/>
+   <loadout type="food" subtype="Тофу" amount="5" always="1" />
+   <flags nofood="1" veganism="1" friendlyTaxa="Животное"/>
+</skill>
+  
+<ability name="Веган-убийца" skill="38" type="warrior" icon="skills/killer_vegan64.png" startSkill="1">
+   <description text="Сила чистой жизни, морального превосходства и живительной клейковины." />
+  <flags veganism="1" friendlyTaxa="Животное"/>
+</ability>
+
+
+<ability name="Зелёный урожай" icon="skills/green_harvest64.png" skill="38" level="0">
+   <targetHitEffectBuff name="Падший веган" taxa="Животное" percentage="50" /> <!-- If you attack an animal, you get fallen vegan. -->
+   <description text="Улицы окрасятся зелёной кровью (соком?) овощей, грибов, камней, роботов, гомункулов, прочих демонов, и в общем любых неживых созданий, но в основном всё-таки овощей, ибо их плоть вы сможете собирать для своего вегетарианского питания." />
+   <targetKillBuff name="Зелёный урожай" taxa="Овощ" percentage="50" />
+   <primarybuff id="0" amount="1" />
+   <primarybuff id="2" amount="1" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <flags  friendlyTaxa="Животное"/>
+   </ability>
+  
+<ability name="Друг животных" icon="skills/animal_friend64.png" skill="38" level="1">
+   <description text="Дружественная зверюшка будет сражаться на вашей стороне, стоит только попросить, ведь звери та-а-ак вас любят! &quot;Вперёд, звери! Умрите за меня!&quot; Однако стоит быть настороже, ведь ваше увлечение вегетарианством означает более серьёзные негативные последствия в случае, если вы будете обижать милых зверюшек." />
+   <spell name="Make Animal Friend" />
+   <primarybuff id="0" amount="1" />
+   <primarybuff id="2" amount="1" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <targetHitEffectBuff name="Позор вегана" taxa="Животное" percentage="50" />
+</ability>
+  
+<ability name="Чистая жизнь" icon="skills/clean_living64.png" skill="38" level="2">
+   <description text="Тщательный подход к питанию положительно сказывается на вашем здоровье (а убийство овощей даёт дополнительный опыт). Однако стоит быть настороже, ведь ваше увлечение вегетарианством означает более серьёзные негативные последствия в случае, если вы будете обижать милых зверюшек." />
+   <primarybuff id="0" amount="2" />
+   <primarybuff id="2" amount="2" />
+   <secondarybuff id="0" amount="10" /> <!-- hp -->
+   <secondarybuff id="13" amount="1" /> <!-- health regen -->
+   <targetHitEffectBuff name="Очищение вегана" taxa="Животное" percentage="50" />
+   <targetKillBuff name="Веганская гордость" percentage="100" taxa="Овощ" />
+</ability>
+  
+<ability name="Аура самодовольства" icon="skills/selfrighteous_aura64.png" skill="38" level="3">
+   <description text="Этические принципы наделяют ваши атаки силой пылающей уверенности в своей правоте! Во время атаки, эта уверенность может ослепить противника сиянием вашего морального превосходства." />
+   <primarybuff id="0" amount="2" />
+   <primarybuff id="2" amount="2" />
+   <secondarybuff id="0" amount="3" /> <!-- hp -->
+   <damagebuff righteous="5" />
+   <resistbuff righteous="1" />
+   <playerHitEffectBuff name="Ослепительная вспышка света" percentage="8" />
+   <targetHitEffectBuff name="Ослепительная вспышка света" percentage="8" />
+</ability>
+  
+<ability name="Вегетарианец пятого уровня" icon="skills/level5vegan64.png" skill="38" level="4">
+   <description text="Достигнув чистоты и совершенства, доступного только вегетарианцам пятого уровня, вы теперь посвящены в сокровенные тайны Вегетарианского общества и познали его секретные методики ." />
+   <spell name="Разрыв круговорота жизни" />
+   <primarybuff id="0" amount="3" />
+   <primarybuff id="2" amount="3" />
+   <secondarybuff id="0" amount="5" /> <!-- hp -->
+   <secondarybuff id="13" amount="4" /> <!-- health regen -->
+</ability>
+  
+
+
+<!-- Piracy -->
+<skill name="Пиратство" id="39" type="rogue" achievement="ACHIEVEMENT_PIRACY_MASTERY" description="Йо-хо-хо и бутылка рома.">
+   <art icon="skills/piracy64.png"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   <loadout type="misc" subtype="lockpick" always="1"/>
+   </skill>
+
+<ability name="Пиратство" skill="39" type="rogue" icon="skills/piracy64.png" startSkill="1">
+   <description text="Йо-хо-хо и бутылка рома."/>
+   </ability>
+
+   
+<ability name="Грабёж" icon="skills/plunder64.png" skill="39" level="0">
+   <description text="Ярр! Мы грабим всю добычу, что есть! И ту, что нет! И ту, что не существует до тех пор, пока мы её не ограбим, что делает её материализацией нашей собственной жадности, вопрос существования которой вопросом не является. Ярр..." />
+   <targetKillBuff percentage="10" name="Мародёрство" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Головорезность" icon="skills/swashbuckling64.png" skill="39" level="1">
+   <description text="Грязная техника боя, которую вы выучили в вашу бытность океанским головорезом. Она позволяет вам парировать несколько последующих атак, направленных против вас." />
+   <spell name="Головорезность" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Корсарский туман" icon="skills/corsair64.png" skill="39" level="2">
+   <description text="Призван скрывать любые пиратские действия от глаз властей. Может весьма пригодиться для отступления из опасной ситуации. К сожалению, может быть призван не так уж и часто." />
+   <spell name="Корсарский туман" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Чёрная метка" icon="skills/black_spot64.png" skill="39" level="3">
+   <description text="Каждый, кто получил чёрную метку, может надеяться лишь на быструю смерть. Ну, или на её аналог: двойной гамбургер с беконом и картошкой. Суть в том, что отмеченная цель обречена без всякой надежды, так что пользуйтесь этой штукой осторожно." />
+   <spell name="Чёрная метка" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+<ability name="Залп" icon="skills/broadside64.png" skill="39" level="4">
+   <description text="Угостите их залпом с борта! Только не спрашивайте, где прячутся пушки." />
+   <spell name="Залп" />
+   <primaryBuff id="3" amount="1" />
+   </ability>
+  
+
+
+<!-- Demonology -->
+
+<skill name="Демонология" id="40" type="rogue"  achievement="ACHIEVEMENT_DEMONOLOGY_MASTERY" description="Церковь демонологии - это наковальня, сломавшая множество молотов. По силам ли вам встать на праведный путь, или вам также суждено сломаться?">
+   <art icon="skills/demonologist64.png" />
+   </skill>
+<ability name="Демонология" skill="40" type="rogue" icon="skills/demonologist64.png" startSkill="1">
+   <description text="Церковь демонологии - это наковальня, сломавшая множество молотов."/>
+   </ability>
+
+  
+<ability name="Изгнание демона" icon="skills/turn_demon64.png" skill="40" level="0">
+   <spell name="Изгнание демона" />
+   <description text="Силой Кронга заклинаю тебя - Проваливай! Я говорю... КЫШ ОТСЮДА!" />
+   <resistbuff righteous="1" />
+   </ability>
+<ability name="Рвение флагеллянта" icon="skills/flagellant64.png" skill="40" level="1">
+   <description text="Вы продолжаете пропускать удары, а настроение только улучшается. В бою с демонами у вас есть шанс войти в состояние праведной концентрации, что положительно сказывается на возможности изничтожать зло. Что плохо, это на самом деле больно." />
+   <playerHitEffectBuff percentage="35" name="Рвение флагеллянта"  />
+   <targetHitEffectBuff percentage="35" name="Рвение флагеллянта" taxa="Демон" />
+   <!-- <playerHitEffectBuff percentage="50" name="Рвение флагеллянта" /> -->
+   <resistbuff righteous="1" />   
+   </ability>
+<ability name="Божественный круг" icon="skills/celestial_circle64.png" skill="40" level="2">
+   <spell name="Божественный круг" />
+   <description text="Вы достаёте из широких, демонологических штанин... мелок! До тех пор, пока вы остаётесь в пределах нарисованного им круга, никакое зло не должно быть способно вам повредить." />   
+   <resistbuff righteous="1" />
+   </ability>
+<ability name="Огонь Геенны" icon="skills/demon_fire64.png" skill="40" level="3">
+   <spell name="Огонь Геенны" />
+   <description text="Опалите врагов пламенем адского гриля, заодно облачив себя в языки демонического пламени." />   
+   <resistbuff righteous="-3" />   
+   </ability>
+<ability name="Инфернальный контракт" icon="skills/demonic_contract64.png" skill="40" level="4">
+   <description text="Только представьте себе всё то могущество, что может оказаться у вас в руках! Призовите стайку жителей преисподней, готовую исполнить любое ваше приказание. Стоит, однако, следить за условиями контракта, которые постоянно норовят ущемить ваши права." />
+   <resistbuff righteous="-2" />
+   <spell name="Инфернальный контракт" />
+   </ability>
+<ability name="Аццкое пламя" icon="skills/heckforge64.png" skill="40" level="5">
+   <spell name="Flames of the Heckforge"/>
+   <description text="Теперь вы можете обрушить пламя преисподней на собственное снаряжение, очищая его от скверны. К счастью, пламя Ацца не достаточно жаркое, чтобы нанести снаряжению какие-либо повреждения." />
+   <resistbuff righteous="-6" conflagratory="3" />
+   </ability> 
+<ability name="&quot;Нет, ты и есть демоны&quot;" icon="skills/you_are_the_demons64.png" skill="40" level="6">
+   <description text="Вы смотрели в бездну и наконец-то бездна взглянула на вас. После чего удобно расположилась у вас на диване и даже не выносит мусор. Но иногда... она вас захлёстывает." />
+   <resistbuff righteous="-4" conflagratory="4" transmutative="1" aethereal="1" />
+   <damagebuff conflagratory="4" />
+   <triggeroncast percent="1" name="Форма демона" />
+   <playerHitEffectBuff percentage="1" name="Форма демона" />
+   <targetHitEffectBuff percentage="1" name="Форма демона" /> 
+   <spell name="Форма демона"/>
+   </ability>
+
+  
+</skillDB>

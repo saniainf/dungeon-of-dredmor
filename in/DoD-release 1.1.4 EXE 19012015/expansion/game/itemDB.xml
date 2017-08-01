@@ -1,0 +1,957 @@
+﻿<itemDB>
+  
+<!-- tomes -->
+
+<item name="Маленькая черная книга" iconFile="items/tome_little_black_book.png" overrideClassName="Гримуар" >
+   <price amount="112" />
+   <armour level="1" type="shield" />
+   <description text="Наполнена цитатами Лорда Дредмора на повседневные темы. Не слишком полезна, но по крайней мере, извиваясь сквозь рунические заголовки, тут и там временами проглядывают полезные советы для некромантов." />
+   <damagebuff necromantic="2" />
+   <resistbuff necromantic="1" />
+   </item>
+
+<item name="Горящий фолиант" iconFile="items/tome_burning.png" overrideClassName="Гримуар" >
+   <price amount="1033" />
+   <armour level="2" type="shield" />
+   <description text="'Contains this season's top-10 hottest invocations!'" />
+   <damagebuff conflagratory="1" />
+   <resistbuff conflagratory="1" />
+	<targetHitEffectBuff percentage="100" name="Ignition Bolt" />
+   </item>
+
+<item name="Дневник Кукаса" iconFile="items/tome_whills.png" overrideClassName="Гримуар" >
+   <price amount="1552" />
+   <armour level="4" type="shield" />
+   <description text="Повествует о каких-то звёздах и каких-то войнах. К сожалению, понять о чём идет речь достаточно сложно, так как автор, очевидно сошедший с ума от своего магического богатства, постоянно переписывал содержимое в результате чего, теперь книга полна белиберды и несостыковок." />
+   <damagebuff transmutative="2" />
+   <resistbuff transmutative="-2" />
+	<targetHitEffectBuff percentage="100" name="Midas" />
+   </item>
+
+<item name="Универсальные принципы" iconFile="items/tome_universal.png" overrideClassName="Гримуар" artifact="1" >
+	<artifact quality="8" />
+   <price amount="16033" />
+   <armour level="10" type="shield" />
+   <description text="The pages are blank. And yet... " />
+   <damagebuff aethereal="6" existential="6" />
+   <resistbuff aethereal="4" existential="4" />
+	<targetHitEffectBuff percentage="50" name="Mage's Circle Effect" />
+	</item>
+
+<item name="Король в жёлтом" iconFile="items/tome_king_in_yellow.png" overrideClassName="Гримуар" artifact="1" >
+	<artifact quality="6"/>
+	<price amount="8008"/>
+	<armour level="13" type="shield" />
+	<damagebuff acidic="6"/>
+	<resistbuff acidic="6"/>
+	<description text="Всё, что вы хотели знать о желтизне, королях и потерянном городе Каркоса. Начинается довольно муторно."/>
+	<targetHitEffectBuff percentage="100" name="Zalgo1" />
+	</item>
+
+<item name="Путеводитель по миру призраков Дж. Х. Тобина" iconFile="items/tome_universal.png" overrideClassName="Гримуар">
+	<price amount="3035"/>
+	<armour level="4" type="shield" />
+	<damagebuff righteous="1"/>
+	<resistbuff righteous="1"/>
+	<description text="Помните, дети: встретив призрачный кошмар из другого измерения, самое главное - это ни о чём не думать. Совсем."/>
+	<targetHitEffectBuff percentage="50" name="Праведная искра" />
+	</item>
+
+<item name="Маллеус Малефикариум" iconFile="items/tome_maleficarium.png" overrideClassName="Гримуар" >
+	<artifact quality="6"/>
+	<price amount="13120"/>
+	<armour level="9" type="shield" />
+	<damagebuff acidic="8"/>
+	<resistbuff acidic="8" righteous="-8"/>
+	<description text="Всеобъемлющий путеводитель по ведьмовству, определению ведьм и их забиванию молотком."/>
+	<targetHitEffectBuff percentage="100" name="Lutefisk Smite" />
+	<targetHitEffectBuff percentage="100" name="Flamefield 0" />
+	<targetHitEffectBuff percentage="100" name="Fire 1" />
+	</item>
+
+<item name="Таблица коэффициентов ржавления Капитана Монкхауза" iconFile="items/tome_rusty.png" overrideClassName="Гримуар" >
+	<artifact quality="6"/>
+	<price amount="8730"/>
+	<armour level="6" type="shield"/>
+	<targetHitEffectBuff percentage="50" name="Mini Toxic Spore Cloud" />
+	<damagebuff toxic="4"/>
+	<resistbuff toxic="4"/>
+	<description text="И вот, когда вам нужно будет высчитать время ржавления какого-нибудь совершенно обыденного предмета, тогда-то вы и вспомните Капитана Монкхауза с благодарностью."/>
+	</item>
+
+<item name="Формы облаков и другие сверхъестественные феномены" iconFile="items/tome_cloudy.png" overrideClassName="Гримуар" >
+	<price amount="4503"/>
+	<targetHitEffectBuff percentage="25" name="Invive Lethian Mist" />
+	<armour level="4" type="shield"/>
+	<damagebuff hyperborean="3"/>
+	<resistbuff hyperborean="3"/>
+	<description text="Облачная магия очень могущественна, но абсолютно бесполезна в подземелье без окон... Что поделать..."/>
+	</item>
+
+<item name="Практический справочник пчелиной культуры" iconFile="items/tome_bees.png" overrideClassName="Гримуар" >
+	<price amount="10130"/>
+	<targetHitEffectBuff percentage="33" name="Таумитоинфекция" />
+	<armour level="7" type="shield"/>
+	<damagebuff piercing="3"/>
+	<resistbuff piercing="3"/>
+	<description text="К сожалению, всё, что есть в этой книге - это фраза ''О нет! Только не пчелы!'' повторяющаяся раз за разом на каждой странице."/>
+	</item>
+
+<item name="Книга излишних знаний" iconFile="items/tome_of_tmi.png" overrideClassName="Гримуар" >
+	<price amount="14130"/>
+	<targetHitEffectBuff percentage="30" name="Апатия" />
+	<armour level="8" type="shield"/>
+	<damagebuff existential="3"/>
+	<resistbuff existential="3"/>
+	<description text="Вам это гарантировано не пригодится."/>
+	</item>
+
+<item name="Гримуар Эйкра" iconFile="items/tome_universal.png" overrideClassName="Гримуар" artifact="1" >
+	<price amount="18130"/>
+	<artifact quality="6" />
+	<targetHitEffectBuff percentage="25" name="Буррневая чума" />
+	<armour level="9" type="shield"/>
+	<damagebuff putrefying="5"/>
+	<resistbuff putrefying="3" toxic="3"/>
+	<description text="Страницы заполнены рисунками, таблицами и диаграммами, раскрывающими нам совершенно развращенное сознание автора. Оторваться можно только сделав над собой усилие."/>
+	</item>
+
+<!-- core bolts -->
+
+
+	
+<!-- helms and hats -->
+
+<item name="Шлем Трипвуда" iconFile="items/helm_threepwood.png" artifact="1" >
+	<price amount="250"/>
+	<armour level="1" type="head"/>
+	<artifact quality="1" />
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<resistbuff crushing="1" />
+	<description text="Этот шлем (ну или в точности такой же) использовался тем самым легендарным пиратом, мастером импровизации и оскорблений."/>
+	</item>
+
+<item name="Кошачьи ушки" iconFile="items/helm_cat_ears.png" artifact="1" >
+	<price amount="450"/>
+	<artifact quality="2" />
+	<armour level="4" type="head"/>
+	<primarybuff id="2" amount="4" /> <!-- nim -->
+	<description text="Нъя!"/>
+	</item>
+
+<item name="Гномий колпак" iconFile="items/helm_gnomish.png" artifact="1" >
+	<price amount="10050"/>
+	<armour level="8" type="head"/>
+	<artifact quality="10" />
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<resistbuff transmutative="1" />
+	<targetHitEffectBuff percentage="10" name="Monster Blink" /> <!-- blink! But is it player or monster? -->
+	<description text="На удивление удобная вещь. Главное - ненароком не увидеть себя в зеркало. И не показывайтесь в нем гномам. Просто не показывайтесь."/>
+	</item>
+
+<item name="Маска врача времен Чумы" iconFile="items/helm_plague_doctor.png" artifact="1" >
+   <price amount="1250"/>
+	<armour level="6" type="head"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<resistbuff toxic="3" asphyxiative="3" putrefying="3" />
+   <description text="Скорее всего полагалось, что эта жуткая маска распугает все болезни."/>
+	</item>
+
+<item name="Железный терновый венок" iconFile="items/helm_crown_iron_thorns.png" artifact="1" >
+	<price amount="16000" />
+	<armour level="11" type="head"/>
+	<artifact quality="3" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<secondarybuff id="8" amount="5"/> <!-- counter -->
+	<secondarybuff id="0" amount="-10"/> <!-- hp -->
+	<resistbuff piercing="10" />
+	<description text="На ощупь как боль. Зато её испытываете не только вы, но и все, кто пожелали вас атаковать." />
+	<playerHitEffectBuff percentage="100" name="Spiky Hit" />
+	</item>
+
+<item name="Стальная корона" iconFile="items/helm_steel_crown.png" artifact="1" >
+	<price amount="18000" />
+	<armour level="12" type="head"/>
+	<artifact quality="3" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<primarybuff id="0" amount="5" /> <!-- BUR -->
+	<primarybuff id="1" amount="5" /> <!-- SAG -->
+	<resistbuff conflagratory="2" crushing="4" />
+	<description text="Во времена давно, давно, давно, очень уж давно забытые, эта корона украшала собой гномьих правителей. Теперь же они сидят на своих тронах, отлитых из чистого пластика; подпирая бровями короны, отлитые из чистого пластика; и вообще ведут убогое и изможденное существование с приходом Эры Человека." />
+	</item>
+
+<item name="Смертоносный череп смерти" iconFile="items/helm_deathly_skull.png" artifact="1" >
+	<price amount="24653" />
+	<armour level="13" type="head"/>
+	<artifact quality="3" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<resistbuff necromantic="5" righteous="-5" aethereal="2" piercing="4" />
+	<description text="Однажды Лорд Дредмор призвал повелителей тени из земли мёртвых, чтобы те возглавили его армии. Однако повелителей больше интересовал черный лак для ногтей и постеры эмо-групп на стенах подземелья. Что говорить, Дредмор их весьма покарал, только пустые шлемы и остались." />
+	</item>
+
+<item name="Маска Золотого бога" iconFile="items/helm_mask_golden.png" artifact="1" >
+	<price amount="30000" />
+	<armour level="13" type="head"/>
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="10" amount="5"/> <!-- armour absorption -->
+	<secondarybuff id="11" amount="5"/> <!-- resist -->
+   <secondarybuff id="18" amount="-1" /> <!-- vision radius -->
+	<resistbuff righteous="1" necromantic="1" transmutative="2" />
+	<!-- TODO:  on attack : cast midas effect -->
+	<description text="Внемлите! Золотой бог вступает в земли смертных! Правда в этой маске ничего толком не видно, но... Трудно быть богом." />
+	<artifact quality="4"/>
+	</item>
+
+<item name="Киберконус" iconFile="items/helm_cybercone.png" artifact="1">
+  <artifact quality="2" />
+  <price amount="2000"/>
+  <armour level="2" type="head"/>
+  <secondarybuff id="6" amount="3"/> <!-- dodge -->
+  <resistbuff voltaic="1" aethereal="1" />
+  <damagebuff voltaic="3" />
+  <description text="Надев такой на голову, вы можете быть уверены, что вас никто не задавит на информационной супермагистрали. Что-что? --Взломай уже наконец Гибсона."/>
+  </item>
+
+<!-- armours -->
+
+<item name="Джинсовый плащ" iconFile="items/armour_denim.png" >
+	<price amount="150"/>
+	<armour level="2" type="chest"/>
+	<secondarybuff id="7" amount="2"/> <!-- Block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<resistbuff slashing="1" existential="1" />
+	<description text="Такие джинсовые плащи обычно носят барды из глубинки - те, кто овладел искусством боффо."/>    
+	</item>
+
+<item name="Джинсовый плащ со стразами" iconFile="items/armour_denim_rhinestones.png" artifact="1">
+	<price amount="950"/>
+	<armour level="4" type="chest"/>
+	<secondarybuff id="7" amount="3"/> <!-- Block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<resistbuff slashing="2" existential="1" />
+	<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+   <secondarybuff id="5" amount="5"/> <!-- haywire -->
+   <artifact quality="2"/>
+	<description text="Джинсовый плащ, покрытый важнейшим продуктом экспорта Тевтонского народа. Такие плащи носятся бардами, которые кружат головы песней и магией."/>    
+	</item>
+
+
+<item name="Мантия Бежевого чародея" iconFile="items/armour_robe_beige.png" >
+   <price amount="2050"/>
+   <armour level="3" type="chest" />
+   <secondarybuff id="7" amount="1"/> <!-- block -->
+   <secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<resistbuff existential="1" putrefying="1" transmutative="1" righteous="1" /> 
+	<description text="Своим вопиющим отсутствием воображения Бежевый чародей вызывал ужас граничащий с восторгом."/>
+   </item>
+
+<item name="Жилет контрабандиста" iconFile="items/armour_vest_smugglers.png" >
+   <price amount="550"/>
+   <armour level="4" type="chest" />
+   <secondarybuff id="6" amount="3"/> <!-- Dodge -->
+   <secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<secondarybuff id="12" amount="3" /> <!-- sneak -->
+	<description text="Топорщатся карманы? Не понимаю о чём вы." />
+	</item>
+
+<item name="Шикарный красный жилет" iconFile="items/armour_vest_red.png" >
+   <price amount="850"/>
+   <armour level="5" type="chest" />
+   <secondarybuff id="6" amount="5"/> <!-- dodge -->
+   <secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="3" amount="1" /> <!-- CAD, for whatever reason -->
+	<description text="Он багровый, розовый или цвета страсти и новой эпохи? Что бы это ни было, он великолепен."/>
+   </item>
+
+<item name="Чешуйчатый рыбий хауберк" iconFile="items/armour_lutefisk.png" artifact="1" >
+   <price amount="4550"/>
+	<artifact quality="2" />
+   <armour level="7" type="chest" />
+	<secondarybuff id="7" amount="7"/> <!-- Block -->
+	<secondarybuff id="10" amount="6"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<secondarybuff id="12" amount="-4"/> <!-- sneak --> 
+	<resistbuff piercing="3"/>
+	<description text="Как будто вас проглотила большая металлическая рыба с рукавами. С запахом придётся смириться."/>   
+   </item>
+
+<item name="Магнетронный пластинчатый доспех" iconFile="items/armour_magnetic.png" >
+	<price amount="32550" />
+	<armour level="11" type="chest" />
+	<secondarybuff id="6" amount="-50" /> <!-- dodge -->
+	<secondarybuff id="10" amount="16"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="18"/> <!-- block -->
+	<secondarybuff id="3" amount="-12"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-4"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-6" /> <!-- nim -->
+	<secondarybuff id="12" amount="-6"/> <!-- sneak --> 
+	<resistbuff piercing="10" voltaic="10" />
+	<!-- TODO: some crazy spell effect? -->
+	<description text="Некоторые школы боя учат, что лучше всего вообще никогда не попадать под удар. Эта броня следует диаметрально противоположной философии. Её применение в современных армиях имеет ограниченный характер." />
+	</item>
+
+<!-- pants -->
+
+<item name="Изумительно полосатые штаны" iconFile="items/pants_striped.png" >
+   <price amount="350" />
+   <armour level="2" type="legs" />
+   <secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+   <description text="Полоски, эти очаровательные полоски!" />
+   </item>
+
+<item name="Гравированные латные поножи" iconFile="items/pants_serpentine_plate.png" >
+   <price amount="18760" />
+   <armour level="10" type="legs" />
+   <description text="Однажды жил на свете человек, который смотрел на металл упавший с неба и думал, ''а ведь из него можно сделать годные штаны''. Так и вышло." />
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="10" amount="5"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-4"/> <!-- nim -->
+	<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<resistbuff piercing="3"/>   
+	</item>
+
+<!-- gloves -->
+
+<item name="Заводные латные перчатки" iconFile="items/gloves_clockwork_gauntlets.png" >
+   <price amount="4794" />
+   <armour level="6" type="hands" />
+	<primarybuff id="1" amount="-2" /> <!-- Nimbleness -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="9" amount="-5" /> <!-- EDR -->
+	<secondarybuff id="2" amount="6"/> <!-- melee power -->
+   <description text="Эти неуклюжие перчатки увеличат урон ваших атак в ближнем бою за счет холодной мощи Машины." />
+   </item>
+
+<item name="Гравированные латные перчатки" iconFile="items/gloves_serpentine.png" >
+   <price amount="6500" />
+   <armour level="10" type="hands" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+   <secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+   <primarybuff id="2" amount="-1"/> <!-- nim -->
+   <secondarybuff id="9" amount="-2"/> <!-- minus EDR -->
+   <description text="Эти перчатки наверняка были выкованы из звездного металла, упавшего в тот час, когда небесные тела были выстроены особым образом. Наверняка. При этом освещении трудно сказать. Но похожи." /> 
+   </item>
+
+<item name="Варежки Гиперборейского иерофанта" iconFile="items/gloves_mittens_of_hyperborea.png" artifact="1" overrideClassName="Варежки" >
+   <price amount="27000" />
+   <artifact quality="2" />
+	<armour level="12" type="hands" />
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+   <secondarybuff id="9" amount="-3"/> <!-- minus EDR -->
+   <resistbuff hyperborean="9" />
+	<thrownBuff name="Icebolt" percentage="100" />
+	<targetHitEffectBuff percentage="100" name="Small Snowstorm" />
+   <description text="В Гиперборейско-Канадской войне, главный жрец Гипербореи носил именно эти перчатки, обретая с их помощью всевозможные ледяные атаки." />
+   </item>
+
+<!-- boots -->
+
+<item name="Скрытные сандалии" iconFile="items/boots_slippers_sneaky.png">
+	<price amount="1111"/>
+	<armour level="4" type="feet"/>
+	<primarybuff id="2" amount="1" /> <!-- nim -->
+	<secondarybuff id="12" amount="5" /> <!-- sneak -->
+	<description text="Скрытные сандалии содействуют секретному стаскиванию, скрытному снованию и сумасшедшему самолюбию."/>
+	</item>
+
+<item name="Ботинки со стилетом" iconFile="items/boots_stiletto.png">
+	<price amount="1403"/>
+	<armour level="4" type="feet"/>
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armor absorption -->
+	<damagebuff piercing="4" /> <!-- apply this to unarmed ONLY -->
+	<description text="Оправдывая ожидания любого мало-мальски продвинутого знатока обуви, эти ботинки таят в себе десятисантиметровые лезвия, выдвигающиеся из носков."/>
+	</item>
+
+<item name="Гравированные сабатоны" iconFile="items/boots_serpentine_plated.png">
+	<price amount="8400"/>
+	<armour level="10" type="feet"/>
+	<secondarybuff id="7" amount="7"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="3" amount="-3"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-5"/> <!-- sneak -->
+	<resistbuff piercing="3"/>		
+	<description text="Облачите свои ноги в таинственный звёздный металл. Чувствуете запах? Пахнет... бесконечностью!"/>
+	</item>
+
+<!-- expansion belts -->
+
+<item name="Пояс из патронов" iconFile="items/belt_bullets.png" >
+   <price amount="400" />
+   <armour level="3" type="waist" />
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<primarybuff id="3" amount="1"/> <!-- CAD, just 'cause -->
+   <description text="Может эти пули и симпатичные, но им ни за что не прорваться на рынок, который плотно держит в своих тёмных щупальцах Министерство болтов." />
+   </item>
+
+<item name="Победоносно царственный пояс" iconFile="items/belt_regal.png" >
+   <price amount="830" />
+   <armour level="6" type="waist" />
+	<primarybuff id="3" amount="3" /> <!-- cad -->
+	<primarybuff id="5" amount="3" /> <!-- sav -->
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+   <description text="Подойдёт и королю! Ну, подойдет королю для поддержки его королевских штанов, как минимум." />
+   </item>
+
+<item name="Анемоновый пояс" iconFile="items/belt_anemone.png" >
+   <price amount="8500" />
+   <armour level="10" type="waist" />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<resistbuff toxic="3" />
+	<playerHitEffectBuff percentage="75" name="Anemone Hit" />
+   <description text="Этот пояс ощетинился ядовитыми шипами. Любой враг, задумавший полакомиться вашими филейными частями получит полную морду боли." />
+   </item>
+
+<!-- expansion shields -->
+
+<item name="Грубый серебряный щит" iconFile="items/shield_silver_rough.png" >
+	<price amount="530" />
+	<armour level="3" type="shield" />
+	<description text="Выглядит так, будто он кулаками и пинками был изваян из куска серебра." />
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="22" amount="5"/> <!-- magic reflection -->
+	<secondarybuff id="11" amount="2"/> <!-- magic resist -->
+	<resistbuff piercing="1"/>
+	</item>
+
+<item name="Закручивающийся серебряный щит" iconFile="items/shield_silver_circinated.png" >
+	<price amount="1508" />
+	<armour level="5" type="shield" />
+	<description text="Спиральная гравировка притягивает и концентрирует свободные магические частицы из эфира." />
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="22" amount="15"/> <!-- magic reflection -->
+	<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+	<resistbuff piercing="1" transmutative="1" aethereal="1" />	
+	</item>
+
+<item name="Филигранный серебряный щит" iconFile="items/shield_silver_filigreed.png" >
+	<price amount="4400" />
+	<armour level="8" type="shield" />
+	<description text="Надёжные серебряные нити закручены в пространстве от восьми до одиннадцати невидимых измерений. По крайней мере, так утверждает надпись на ярлычке сзади." />
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="22" amount="25"/> <!-- magic reflection -->
+	<secondarybuff id="11" amount="10"/> <!-- magic resist -->
+	<resistbuff piercing="2" transmutative="2" aethereal="2" />	
+	</item>
+
+<item name="Зеркальный щит" iconFile="items/shield_mirror.png" >
+	<price amount="16030" />
+	<armour level="8" type="shield" />
+	<description text="Этот восхитительно отражающий щит поможет вам не только отражать магические атаки обратно, но и наводить красоту." />
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="22" amount="49"/> <!-- magic reflection -->
+	<resistbuff piercing="2"/>
+	</item>
+
+<item name="Магнетронный щит" iconFile="items/shield_magnetic.png" >
+	<price amount="22000" />
+	<armour level="11" type="shield" />
+	<secondarybuff id="6" amount="-25" /> <!-- dodge -->
+	<secondarybuff id="10" amount="6"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="14"/> <!-- block -->
+	<secondarybuff id="3" amount="-8"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-4" /> <!-- nim -->
+	<secondarybuff id="12" amount="-5"/> <!-- sneak --> 
+	<resistbuff piercing="4" voltaic="4" />
+	<description text="Этот щит наверняка возьмёт на себя огромное количество ударов. Насколько вам вообще нужны все эти удары - вам решать."/>
+	</item>
+
+<item name="Щит черной геометрии" iconFile="items/shield_black_geometry.png" >
+	<price amount="20000" />
+	<armour level="12" type="shield" />
+	<secondarybuff id="10" amount="5"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="12"/> <!-- block -->
+	<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<primarybuff id="2" amount="-5" /> <!-- nim -->
+	<secondarybuff id="12" amount="-4"/> <!-- sneak --> 
+	<resistbuff necromantic="4" />
+	<description text="Эти углы отражают черные мысли его создателя."/>
+	</item>
+
+
+
+<!-- expansion axes -->
+
+<item name="Колуний, топор мясной пасты" iconFile="items/axe_cleavus.png" level="7" type="1" artifact="1" >
+	<price amount="7440"/>
+	<weapon slashing="11"/>
+	<artifact quality="2"/>
+	<targetKillBuff percentage="50" name="Spawn Meat" taxa="Животное" />
+	<description text="Созданный порочным Веганом, топор мясной пасты превращает животных в небольшие вкусные кучки мясной стружки."/>
+	</item>
+	 
+<item name="Топор Дингленита" iconFile="items/axe_dinglenit.png" level="8" type="1" >
+	 <price amount="7200"/>
+	<weapon slashing="10" piercing="2" />
+	<!-- TODO : make this more interesting -->
+	<description text="Топор Дингленита, отец Блорка. У него куча братьев и сестёр по всему свету." />
+	</item>
+
+<item name="Шестнадцатопор повелителей волшебных топоров" iconFile="items/axe_hex.png" level="12" type="1" artifact="1" >
+	<price amount="17003" />
+	<weapon slashing="36" />
+	<artifact quality="5" />
+	<targetKillBuff percentage="100" name="Убийственный удар" after="1" />
+	<description text="Повелители волшебных топоров наполнили этот топор своей могучей топоромагией; ощутив вкус победы, он наполняется силой совершить смертоноснейшую из атак." />
+	</item>
+
+<!-- expansion swords -->
+
+<!-- TODO: adjust all these stats -->
+
+<item name="Бритвомеч" iconFile="items/sword_razor.png" level="3" type="0" >
+	<price amount="250"/>
+	<weapon slashing="5" />
+	<description text="Остёр как бритва; если враг и выживет, то останется без бороды."/>
+	</item>
+  
+<item name="Женский бритвомеч" iconFile="items/sword_razor_hers.png" level="4" type="0" >
+	<price amount="500"/>
+	<weapon slashing="5" />
+	<description text="По факту, обычный бритвомеч. Вот только он розовый и стоит в два раза дороже."/>
+	</item>
+
+<item name="Дуобритвомеч" iconFile="items/sword_razor_double.png" level="6" type="0" >
+	<price amount="800"/>
+	<weapon slashing="8" />
+	<description text="Остёр как бритва; бреет в два раза лучше."/>
+	</item>
+
+<item name="Квадробритвомеч" iconFile="items/sword_razor_quad.png" level="7" type="0" >
+	<price amount="3120"/>
+	<weapon slashing="12" />
+	<description text="Остёр как бритва; четырежды подумайте, а нужно ли вам настолько чисто побриться. С увлажняющей полоской."/>
+	</item>
+
+<item name="Виброквадробритвомеч" iconFile="items/sword_razor_vibro.png" level="9" type="0" craftoutput="1">
+	<price amount="7200"/>
+	<weapon slashing="16"/>
+	<description text="Остёр как бритва; обладание им вызывает странное удовлетворение."/>
+	</item>
+
+<item name="Гномий армейский меч" iconFile="items/sword_dwarven_army.png" level="11" type="0" artifact="1">
+	<price amount="23820"/>
+	<weapon slashing="8" piercing="8" crushing="2" />
+	<secondarybuff id="9" amount="4"/> <!-- EDR -->
+	<secondarybuff id="16" amount="1"/> <!-- trap level -->
+	<secondarybuff id="2" amount="1"/> <!-- melee power -->
+	<secondarybuff id="22" amount="2"/> <!-- magic reflection -->
+	<artifact quality="3" />
+	<description text="Гномьи армейские мечи можно много для чего использовать, да только они мало в чём хороши."/>
+	</item>  
+
+<item name="Меч некротического касания" iconFile="items/sword_necropoking.png" level="12" type="0" artifact="1">
+	<price amount="27000"/>
+	<weapon slashing="14" piercing="4" necromantic="8" putrefying="6" />
+	<artifact quality="4"/>
+	<resistbuff righteous="-3" />
+	<description text="Мрачный, костистый меч из костей нежити оскверняет всё, чего касается."/>
+</item>
+
+<item name="Саввариус, великий меч клана Страшишинов" iconFile="items/sword_savvarius.png" level="13" type="0" artifact="1">
+	<price amount="31000"/>
+	<weapon slashing="25" piercing="10" />
+	<artifact quality="7"/>
+	<secondarybuff id="4" amount="5" /> <!-- crit -->
+	<description text="Передаваемый из поколения в поколение, из рук в ласты и из щупалец в руки, этот меч хорошо знаком с внутренностями многих странных созданий, от Оцелота-оборотня до Древней твари."/>
+  </item>
+
+
+
+
+<!-- expansion maces -->
+
+
+<!-- artifacts -->
+
+<item name="Убиван Кеноби" iconFile="items/mace_windu.png" level="11" type="2" artifact="1">
+	<price amount="17600"/>
+	<weapon crushing="9" piercing="9" aethereal="13" />
+	<artifact quality="6" />
+	<resistbuff existential="4" />
+	<description text="С этой, светящейся фиолетовым, булавой может управиться лишь обладатель огромной выдержки."/>
+	</item>
+<item name="Асгардский молот бури" iconFile="items/mace_asgaardian_stormhammer.png" artifact="1" level="12" type="2" >
+	<price amount="9400"/>
+	<weapon crushing="16" piercing="8" voltaic="8"/>
+	<artifact quality="6"/>
+	<resistbuff voltaic="3" hyperborean="3" />
+	<description text="Молот богов, блаблабла, блаблабла, РАГНАРОК!"/>
+	<!-- TODO description + lightning hit effect -->
+	</item>
+<item name="Гномий пластомолот" iconFile="items/mace_wifflemaul.png" level="5" type="2" artifact="1">
+	<price amount="200"/>
+	<artifact quality="1" />
+	<weapon crushing="1" blasting="5" />
+	<description text="Вот так вот гномы и проиграли последнюю Эльфийскую войну."/>
+	</item>
+
+<!-- expansion staves / staffs -->
+
+<item name="Яркий посох Годвина" iconFile="items/staff_godewijn.png" level="11" type="3">
+	<price amount="29000"/>
+	<weapon crushing="10" voltaic="10" righteous="2" />
+	<secondarybuff id="3" amount="6"/> <!-- magic power -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	<targetHitEffectBuff percentage="25" name="Ослепительная вспышка света" />
+	<description text="Никому особо не известный ученик великого волшебника Теслы, Годвин был озарён вспышкой просветления в момент создания этого блистательного посоха, который и по сей день служит ярким маяком магического прогресса, освещающим тьму неведения и бездарности. А ещё, он светится!"/>
+	</item>
+
+<!-- these are now polearms! -->
+	
+<item name="Копьё священной жертвы" iconFile="items/staff_holy_sacrifice.png" artifact="1" level="12" type="8">
+	<price amount="35090"/>
+	<weapon slashing="1" piercing="15" righteous="15" />
+	<targetHitEffectBuff percentage="50" name="Lutefisk Smite" />
+	<playerHitEffectBuff percentage="25" name="Ослепительная вспышка света" />
+	<artifact quality="6"/>
+	<description text="Главное убедиться, что жертвует собой кто-то на той стороне копья, верно?"/>
+	</item>
+<item name="Лирпа" iconFile="items/staff_lirpa.png"  level="10" type="8">
+	<price amount="14170"/>
+	<weapon slashing="13" crushing="13"/>
+	<secondarybuff id="9" amount="8"/> <!-- EDR -->
+	<primarybuff id="5" amount="5" /> <!-- saavy -->
+	<description text="Самое рациональное оружие во вселенной. Пусть эти нелогичные варвары и не могут понять, почему приделать шишку на один конец палки и полукруглую бритву на другой есть самое что ни на есть целесообразное решение."/>
+	</item> 
+
+
+<!-- expansion bolts -->
+
+<item name="Болт-штопор" iconFile="items/bolt_corkscrew.png" level="4" type="6">
+	<price amount="4" />
+	<weapon slashing="2" piercing="4" />
+	<description text="Вам доводилось видеть стрелка, открывавшего этой деткой бутылку портвейна с пятидесяти шагов."/>
+	</item>
+<item name="Чумной болт" iconFile="items/bolt_plague.png" level="5" type="6" >
+	<price amount="30" />
+	<weapon slashing="1" toxic="10" hit="Буррневая чума" />
+	<description text="Он просто чумовой!" />
+	</item>
+<item name="Каменный болт" iconFile="items/bolt_stone.png" level="6" type="6">
+	<price amount="150"/>
+	<weapon crushing="2" hit="Неодушевленная стена"/>
+	<description text="У него на конце камень, будто он прилетел к вам из тёмных веков цивилизации, когда человечество было не более чем паразитом в тени древней цивилизации, обитавшей на грозных плато далеко на юге."/>
+   </item>
+<item name="Потусторонний болт" iconFile="items/bolt_eldritch.png" level="7" type="6">
+	<price amount="100"/>
+	<weapon slashing="1" necromantic="8" hit="Zalgo1" />
+	<description text="Поражает врага мощью потусторонних кошмаров."/>
+   </item>
+<item name="Болт сомнения" iconFile="items/bolt_doubt.png" level="9" type="6">
+	<price amount="120"/>
+	<weapon slashing="1" hit="Сшивание нервов"/>
+	<description text="Поражает саму душу."/>
+</item>
+
+<!-- thrown -->
+
+<item name="Пушечное ядро" iconFile="items/thrown_solid_shot.png" level="3" type="5" special="1" >
+	<price amount="132"/>
+	<weapon crushing="5" thrown="items/thrown_solid_shot.png"/>
+	<description text="Как будто ваша рука, это пушка! Целься! За-а-алп!"/>
+	</item>
+<item name="Пыль исчезновения" iconFile="items/thrown_blink_dust.png" level="4" type="5" maxstack="3" >
+	<price amount="133" />
+	<weapon blasting="1" thrown="items/thrown_blink_dust.png" hit="Blink Dust Hit" />
+	<description text="Отлично работает в ситуации, когда вы оказались в обществе кого-то, чьё общество вам совершенно ни к чему." />
+	</item>
+<item name="Бомба бонзай" iconFile="items/thrown_bonzai_bomb.png" level="6" type="5" maxstack="2" >
+	<price amount="320" />
+	<weapon slashing="2" thrown="items/thrown_bonzai_bomb.png" hit="Deciduous Wand Effect" />
+	<description text="Маленькое деревце извивающееся в бутылке. Оно явно очень хочет наружу." />
+	</item>
+<item name="Порошок Ибн-Гази" iconFile="items/thrown_powder_of_ibn_ghazi.png" level="8" type="5" maxstack="3" >
+	<price amount="643" />
+	<weapon blasting="1" thrown="items/thrown_powder_of_ibn_ghazi.png" hit="Ibn Ghazi Cloud" canTargetFloor="1" />  	
+	<description text="Порошок, дающий вам способность видеть невидимые вещи, которые не только не хотят, чтобы их видели но и вообще не должны быть никем увидены." />
+	</item>
+
+
+
+<!-- expansion rings -->
+
+<item name="Оловянное кольцо" iconFile="items/ring_tin.png" >
+	<price amount="383"/>
+	<armour type="ring" level="3" randoms="1" />
+	<description text="Это оловянное кольцо! Защищает палец, на который надето, тонким слоем олова."/>
+	<resistbuff acidic="1" />
+	</item>
+<item name="Цинковое кольцо" iconFile="items/ring_zinc.png" >
+	<price amount="432"/>
+	<armour type="ring" level="4" randoms="0" />
+	<description text="Судя по слухам, цинк наделяет силой и здоровьем ваш палец. Ну да, только палец."/>
+	<secondarybuff id="0" amount="1"/> <!-- health -->
+	</item>
+<item name="Грубое оловянное кольцо" iconFile="items/ring_tin_blocky.png" >
+	<price amount="1883"/>
+	<armour type="ring" level="7" randoms="0" />
+	<description text="Это неуклюжее кольцо покрыто симпатичной квадратной гравировкой."/>
+	<resistbuff acidic="2" />
+	</item>
+<item name="Триангулонное цинковое кольцо" iconFile="items/ring_zinc_triangulonic.png" >
+	<price amount="2432"/>
+	<armour type="ring" level="9" randoms="1" />
+	<description text="Волшебник Триангулон изобрёл это кольцо, дабы тесселизировать друзей и врагов без разбора. К сожалению, его магические эффекты достаточно произвольны."/>
+	<secondarybuff id="0" amount="2"/> <!-- health -->
+	</item>
+<item name="Древнее кольцо" iconFile="items/ring_elder_runes.png" >
+	<price amount="2530"/>
+	<armour type="ring" level="10" />
+	<description text="Что если бы вы свили кольцо из чистого безумия? Это было бы странно. Тем не менее, это кольцо какое-то жутковатое."/>
+	</item>
+<item name="Кольцо древних рун" iconFile="items/ring_elder_runes.png" >
+	<price amount="4530"/>
+	<armour type="ring" level="11" />
+	<description text="Руны на этом древнем кольце шепчут ваше имя."/>
+	</item>
+
+<item name="Кольцо сорокопута" iconFile="items/ring_shrikes.png" >
+   <price amount="18560"/>
+   <armour type="ring" level="13" randoms="0" />
+   <description text="Оно испещрено злобными шипами, которые взывают в унисон, словно передают чью-то боль."/>
+   <secondarybuff id="8" amount="11"/> <!-- counter -->
+   <secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="0" amount="-5"/> <!-- hp -->
+   <damagebuff piercing="6" />
+	<playerHitEffectBuff percentage="100" name="Weak Spiky Hit" />
+   </item>
+
+<!-- expansion amulets -->
+
+<item name="Шипованный кожаный ошейник" iconFile="items/gorget_spiked_collar.png" overrideClassName="Ошейник" >
+   <price amount="240" />
+   <armour level="3" type="neck" randoms="0" />
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<playerHitEffectBuff percentage="50" name="Weak Spiky Hit" />
+   <description text="Выглядит круто, а еще им можно потыкать противника, который совсем уж глубоко залез в ваши дела." />
+   </item>
+
+<item name="Стальной латный воротник" iconFile="items/gorget_plate.png" overrideClassName="Горжет" >
+   <price amount="2300" />
+   <armour type="neck" level="7" randoms="0" />
+   <description text="Ну уж если это не спасёт от этих чёртовых вампиров, тогда вряд ли что-то вообще спасёт." />
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-5"/> <!-- sneak -->
+	<resistbuff piercing="1" asphyxiative="-2" />
+   </item>
+
+<item name="Шарф повелителя времени" iconFile="items/gorget_timelord_scarf.png" overrideClassName="Шарф" artifact="1">
+   <price amount="18240" />
+	<artifact quality="15" />
+   <armour level="10" type="neck" randoms="1" />
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<resistbuff hyperborean="10" />
+	<!-- <playerHitEffectBuff percentage="10" name="Дисконтинуумный прыжок Фроды" /> People seem to hate this. --> 
+   <description text="Согреет шею через годы и расстояния." />
+   </item>
+
+
+<item name="Окно четырёх элементов" iconFile="items/amulet_window.png">
+   <price amount="14034"/>
+   <armour type="neck" level="10"/>
+   <description text="Сквозь это окно, сделанное из четырёх самоцветов, вы можете увидеть зелёные луга и разноцветные поля, красота которых немного скрадывается дефектами самоцветов."/>
+	<resistbuff conflagratory="3" hyperborean="3" voltaic="3" crushing="3" />
+   </item>
+
+
+
+<item name="Коронный Аддендум" iconFile="items/amulet_crownstar_addendum.png" artifact="1" special="1" >
+	<price amount="1000000" />
+	<armour type="neck" level="14"/>
+	<artifact quality="27" />
+	<description text="Самое драгоценное ювелирное изделие во всей солнечной системе." />
+	</item>
+
+<!-- crossbows -->
+
+
+<item name="Золотой арбалет" iconFile="items/crossbow_golden.png" level="10" type="4" artifact="1">
+	<price amount="15600"/>
+	<artifact quality="3" />
+	<weapon piercing="1"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<description text="Всего одно попадание из золотого арбалета обрекает цель на неминуемую гибель."/>
+	<crossbowShotBuff percentage="100" name="Inevitable Doom" />
+	</item>
+<item name="Извергатель болтов" iconFile="items/crossbow_hot.png" type="4" level="11" >
+	<price amount="19277" />
+	<weapon piercing="10" conflagratory="10" />
+	<secondarybuff id="9" amount="5"/> <!-- edr -->
+	<description text="Эта горячая штучка может неслабо подпалить противника. Удостовериться - это единственный способ убедиться, и тут извергатель болтов вам пригодится."	/>
+	<crossbowShotBuff percentage="100" name="Ignition Bolt"/>
+	<crossbowShotBuff percentage="100" name="Flamefield 1" />	
+	</item>
+<item name="Арбалет древнего ужаса" iconFile="items/crossbow_eldritch.png" type="4" level="12" craftoutput="1">
+	<price amount="25652" />
+	<weapon piercing="1" necromantic="9" />
+	<resistbuff righteous="-5" />
+	<description text="Это кошмарное оружие оскверняет выпущенные болты, пропуская их сквозь невообразимые измерения, наполненные кровожадными тварями, чуждыми нашему рассудку."	/>
+	<crossbowShotBuff percentage="40" name="Потусторонняя одержимость" />	
+	</item>
+
+<!-- gorget -->
+<!-- collar -->
+
+<!-- potions -->
+
+<!-- wands -->
+
+<item name="Наарвалороог" iconFile="items/wand_naarwaand.png" >
+	<price amount="3580" />
+	<wand spell="Naarwhaand Effect" mincharge="4" maxcharge="6" />
+	<description text="Закалённый в ледяных водах северных морей, этот жезл проводит через себя ярость Гиперборейских небес."/>
+   </item>
+<!-- :( wands can't target walls yet
+<item name="Жезл буррня" iconFile="items/wand_diggle.png" >
+	<price amount="5500" />
+	<wand spell="Auger Effect" mincharge="5" maxcharge="26" />
+	<description text="Просто направьте его на ближайшую стену и-и... ''Оппа Буррень-стайл!''"/>
+   </item> -->
+<item name="Сосульчатый жезл" iconFile="items/wand_icicly.png" >
+	<price amount="4000" />
+	<wand spell="Icicly Wand Effect" mincharge="6" maxcharge="9" />
+	<description text="Этот холодный, безответный магический жезл..."/>
+   </item>
+<item name="Желатиновый жезл" iconFile="items/wand_gelatinous.png" >
+	<price amount="1800" />
+	<wand spell="Мой химический взрыв" mincharge="8" maxcharge="12" />
+	<description text="Довольно жиденький и разъедает всё, чего касается."/>
+   </item>
+<item name="Лиственный жезл" iconFile="items/wand_deciduous.png" >
+	<price amount="3730" />
+	<wand spell="Deciduous Wand Effect" mincharge="7" maxcharge="10" />
+	<description text="Окружен пышной кроной и полон жажды выдавливать жизнь из мясных созданий."/>
+   </item> 
+<item name="Мясожезл" iconFile="items/wand_meat.png" >
+	<price amount="500" />
+	<wand spell="Meatwand Effect" mincharge="6" maxcharge="8" />
+	<description text="По праву являясь одной из самых омерзительных волшебных палочек, мясожезл, впрочем, ограничен в спектре своих воздействий до мясопродуктов и некоторых видов консервов."/>
+   </item> 
+
+<!-- For those who buy DLC, we salute you -->
+<item name="Конская броня" iconFile="items/horse_armour.png" overrideClassName="Конская броня" >
+	<price amount="25000" />
+	<armour level="11" type="sleeve" />
+	<secondarybuff id="10" amount="20" />
+	<resistbuff piercing="20" />
+	<description text="Роскошная вещь для тех, кому не впервой выбрасывать деньги на ветер." />
+	</item>
+
+<!-- Expansion traps -->
+
+<item name="Невзрачная нажимная плита" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/deep_slot.png" originFacing="south" originMount="wall" trigger="always" casts="Bolt of Ennui" level="10"/>
+	<description text="На такую никто не взглянет дважды. Да и не нужно. Продолжайте движение. Нет, не сворачивайте."/>
+	<price amount="500" />
+	</item>
+
+<item name="Ловушка с токсичными ослепляющими кинжалами" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/deep_slot.png" originFacing="south" originMount="wall" trigger="always" casts="Toxic Blinding Dart" level="11"/>
+	<description text="Наиподлейшая ловушка. Министерство болтов производит эти ловушки только для демонстрационных целей и никаким образом не поощряет их распространение в рамках принятых соглашений, клятв и магических конвенций."/>
+	<price amount="600" />
+	</item>
+
+<item name="Ловушка с пламенным сюрпризом" iconFile="dungeon/trap_magic1.png" >
+	 <trap trigger="once" casts="Fiery Surprise 1" level="10"/>
+	<description text="С пламенным приветом, всем в радиусе действия."/>
+	<price amount="900" />
+	</item>
+
+<item name="Очень горячая ловушка с пламенным сюрпризом" iconFile="dungeon/trap_magic1.png" >
+	 <trap trigger="once" targetIsCaster="1" casts="Fiery Surprise 2" level="11"/>
+	<description text="С пламенным приветом, всем в радиусе действия."/>
+	<price amount="1300" />
+	</item>
+
+<item name="Ловушка с проклятием исчезновения" iconFile="dungeon/trap_portal0.png" >
+	<trap trigger="once" targetIsCaster="1" casts="Мерцающее проклятие" level="12"/>
+	<description text="Иногда, хорошие телепорты становятся плохими. Это может вызвать всевозможный кавардак, но эта ловушка хотя бы не выпустит в наш мир деток Шуб-Ниггурата."/>
+	<price amount="1200" />
+	</item>
+
+<item name="Ловушка кислотных следов" iconFile="dungeon/trap_slime0.png" >
+	 <trap trigger="once" casts="Acid Trail" level="12"/>
+	<description text=""/>
+	<price amount="1400" />
+	</item>
+
+<!-- 1.0.10 items -->
+
+<item name="Тёмно-зеркальный щит" iconFile="items/shield_mirror_dark.png" >
+	<price amount="25137" />
+	<armour level="10" type="shield" />
+	<description text="Всё, что увидено в этом зеркале остаётся в вашей голове навсегда. Отчасти благодаря выводку светящихся червей, открывающих свой балаган в ваших глазницах, извиваясь в семи забытых измерениях. Щит отражает магические атаки, добавляя к ним кое-что еще в качестве зловещих процентов." />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="22" amount="50"/> <!-- magic reflection -->
+	<resistbuff piercing="3" righteous="-3" necromantic="-3" />
+	<playerHitEffectBuff percentage="75" name="Zalgo1" />
+	</item>
+
+<!-- 1.1.0 items -->
+
+<item name="Шлём эфирнавта" iconFile="items/helm_aethernaut.png" special="1">
+	<price amount="19052"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="10" amount="5"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="3" amount="-3"/> <!-- magic power -->
+	<primarybuff id="2" amount="-2" /> <!-- NIM -->
+	<resistbuff piercing="3" asphyxiative="20" toxic="10" aethereal="5" />
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<description text="Одеваемый лучшими из лучших в Ордене эфирнавтов, этот шлем надёжно защищает от буйства пустоты между мирами." />
+	</item>
+
+<item name="Имперская котельная броня" iconFile="items/armour_imperial_boilerplate.png" >
+	<price amount="28000"/>
+	<armour level="10" type="chest"/>
+	<secondarybuff id="10" amount="12"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="15"/> <!-- block -->
+	<secondarybuff id="3" amount="-10"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-4" /> <!-- nim -->
+	<secondarybuff id="12" amount="-8"/> <!-- sneak --> 
+	<resistbuff piercing="6" asphyxiative="2" toxic="2" acidic="2" conflagratory="2" />
+	<description text="Броню такого типа носили заводные рыцари первой тяжёлой пехотной бригады имени её императорского величества. К своему позору, бригада была полностью уничтожена при штурме крепости секты почитателей Серого червя, пронзающего небеса. Это, однако никак не отражается на качестве брони, скорее это урок о том, что войскам талассократии не следует вырываться слишком далеко за линии наземного снабжения при сражении с древними чудовищами." />
+	</item>
+   
+<item name="Имперский котельный шлем" iconFile="items/helm_imperial_boilerplate.png">
+	<price amount="14000"/>
+	<armour level="10" type="head"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="9"/> <!-- block -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-2" />
+	<resistbuff piercing="4" asphyxiative="4" toxic="1" conflagratory="1" />
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<description text="Броню такого типа носили заводные рыцари первой тяжёлой пехотной бригады имени её императорского величества. Да здравствует Королева! Да здравствует Империя! Пусть хаос чахнет в её тени!" />
+	</item>
+	
+</itemDB>

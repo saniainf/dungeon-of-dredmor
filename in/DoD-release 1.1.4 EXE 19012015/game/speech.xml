@@ -1,0 +1,57 @@
+﻿<!-- monsters now talk.
+
+give them a speech profile, and so on and so forth.
+
+speech types:
+
+insult - monster taunts
+injured - monsters are injured
+dead - monsters are dying
+
+-->
+<speeches>
+  
+  <profile name="default">
+
+    <speech type="idle" text="Мне та-а-ак скучно."/>
+    <speech type="idle" text="Книга лучше!"/>
+    <speech type="idle" text="Никогда не любил магниты!"/>
+
+    <speech type="search" text="Я иду за тобой..."/>
+    <speech type="search" text="Я знаю где ты живешь!"/>
+    
+    <speech type="insult" text="У тебя смешная одежда!"/>
+    <speech type="insult" text="Твоя мать - редиска!"/>
+    <speech type="insult" text="Твой отец - дрожащий кусок телятины!"/>
+    <speech type="insult" text="У тебя страшная болезнь!"/>
+    <speech type="insult" text="Ты подлый трусишка и убийца!"/>
+    <speech type="insult" text="На твоих руках кровь моих друзей!"/>
+    <speech type="insult" text="Ты дрожащая лужица блевотины!"/>
+    <speech type="insult" text="Ты - мелкая, мелкая картошка!"/>
+    <speech type="insult" text="Я разорву тебя на тысячу маленьких медвежат!"/>
+
+    <speech type="injured" text="Это больно!"/>
+    <speech type="injured" text="Ох, моя голова!"/>
+    <speech type="injured" text="Я не могу поверить, ты бьёшь меня?"/>
+
+    <speech type="dead" text="Я вижу свет!"/>
+    <speech type="dead" text="Я отправляюсь в лучшее место!"/>
+    <speech type="dead" text="Мои предки зовут меня!"/>
+    
+  </profile>
+
+  <profile name="blobby">
+
+    <speech type="insult" text="*хлюп-хлюп*"/>
+    <speech type="insult" text="*буль-буль*"/>
+    <speech type="insult" text="*кап-кап*"/>
+    <speech type="insult" text="*чавк*"/>
+
+    <speech type="injured" text="*чпоок*"/>
+    <speech type="injured" text="*шмяк*"/>
+
+    <speech type="dead" text="*шлёп*"/>
+
+  </profile>
+
+</speeches>

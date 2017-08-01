@@ -1,0 +1,1252 @@
+﻿<text>
+  
+  <!-- 
+  
+  The text database contains (almost) every piece of text that appears in the game.  It is used to generate artifact names and descriptions as well as room names,
+  it contains the descriptive text found within the character panel for stats, as well as main user interface.  It contains the various insults that the monsters
+  say to the player.  
+    
+  -->
+
+  <!-- Gameplay Config Panel -->
+
+  <questionblock panel="config" name="Переключиться в клик-режим" x="168" y="16" w="16" h="16" text="Включение данной настройки меняет местами функции левой кнопки мыши и той же кнопки с зажатой клавишей Shift. Нажав Shift и левую кнопку мыши, вы будете поднимать предмет в руки, обычное нажатие левой кнопки будет отправлять предметы на ваш пояс или в инвентарь."/>
+  <questionblock panel="config" name="Двигаться/сражаться/использовать с помощью клавиатуры" x="168" y="36" w="16" h="16" text="Активация этого пункта позволит вам взаимодействовать с предметами и атаковать врагов с помощью клавиш движения (WASD по умолчанию)"/>
+  <questionblock panel="config" name="Активировать автосбор" x="168" y="56" w="16" h="16" text="Включение режима автосбора добычи позволит вашему персонажу поднимать все, что окажется под его ногами. Для детальной настройки параметров воспользуйтесь опцией автосбора."/>
+  <questionblock panel="config" name="Отключить кликай-и-ходи" x="396" y="56" w="16" h="16" text="Отключение функции передвижения по щелчку мыши. Используйте клавиши WASD для управления персонажем."/>
+
+  <!-- Gameplay Bottom Bar -->
+  <questionblock panel="bottomthing" x="123" y="43" w="12" h="12" name="Справка о поясе" text="Это ваш пояс. Прикрепите к нему аммуницию, начиная от стрел и метательных ножей, заканчивая магическими палочками и пузырьками с кислотой. Используйте правую кнопку мыши для их активации. Вы также можете поместить сюда любой другой предмет. Для быстрого использования воспользуйтесь комбинацией клавиши Shift и номера слота." />
+  <questionblock panel="bottomthing" x="624" y="33" w="12" h="12" name="Справка о заклинаниях" text="Это панель навыков и заклинаний. Здесь вы можете разместить выученные способности(иконкой [+]) для их использования (обычно они помещаются сюда автоматически после их изучения). Чтобы использовать способность, достаточно нажать на неё левой кнопкой мыши, после чего иконка окажется в золотом квадритике, слева от панели, это означает, что способность готова к использованию, осталось навести курсор на врага, объект или что-то другое и нажать правую кнопку мыши." />
+  
+<!-- Char Panel -->
+
+  <tooltip panel="damages" name="crushing" text="Дробящий урон наносится булавами, тупыми предметами, ногами, камням и окаменевшими котлетами. Наносимый урон зависит от брони противника."/>
+  <tooltip panel="damages" name="slashing" text="Режущий урон наносится тогда, когда вы пытаетесь лезвием вашего оружия разрезать плоть другого парня. Наносимый урон зависит от брони противника."/>  
+  <tooltip panel="damages" name="blasting" text="Взрывчатый урон, впервые открытый Альфредом Нобелем, можно нанести любым предметом с псевдоэлементального плана динамита. Он зависит от брони противника."/>
+  <tooltip panel="damages" name="piercing" text="Пронзающий урон наносится тогда, когда вам удается вонзить острый кончик вашего оружия в плоть другого парня. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="conflagratory" text="Воспламеняющий урон наносится в тех случаях, когда вам удается поджечь вашего противника. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="hyperborean" text="Гиперборейский урон наносится отмороженными конечностями, морозными демонами и снежными великанами. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="voltaic" text="Гальванический урон - это любой урон, имеющий электрическую природу. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="toxic" text="Токсичный урон наносится всеми мерзкими, гадкими и ядовитыми вещами. Особенно часто его наносят крохотные бразильские лягушки. К слову сказать, вы не очень-то нравитесь лягушкам, так что не вздумайте привязывать их к вашему снаряжению. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="righteous" text="Праведный урон наносится священным оружием, смазливыми эльфийскими девицами, ангелоподобными сущностями, некоторыми видами магических и святых кристаллов, а также минеральной водой. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="necromantic" text="Некромантический урон наносится, не поверите, некромантией, что обычно проявляется в том, что ваш меч высасывает жизнь из врагов, превращает их в зомби и подобные вещи. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="acidic" text="Кислотный урон - главная причина, почему вы всегда должны быть осторожны во время попыток соорудить действующий вулкан из уксуса и соды. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="putrefying" text="Разлагающий урон наносится любыми атаками, которые заставляют плоть вашего противника увядать и гнить, например овощным отделом вашего холодильника (когда вы открывали его в последний раз?). Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="transmutative" text="Трансмутационный урон наносится тогда, когда ваш удар превращает цель во что-либо другое, например чистую белую рубашку в немалый счет из прачечной. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="aethereal" text="Эфирный урон наносит тогда, когда ваши атаки наделяются силой звезд. У нас нет никаких шуток по этому поводу, потому что к астрономии мы относимся серьёзно. И вам советуем. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="asphyxiative" text="Удушающий урон чрезвычайно сложно нанести. Удушение начинается тогда, когда после вашего удара противник внезапно перестает дышать. Обычно это достигается путем выпускания воздуха из комнаты и заполнения её газом, ароматом гнилой капусты или вонючим одеколоном. Наносимый урон не зависит от брони противника."/>
+  <tooltip panel="damages" name="existential" text="Экзистенциалистический урон: существует ли он или нет? Мы не знаем, но ваше оружие кому-то его наносит... если этот кто-то существует. Наносимый урон не зависит от брони противника, если таковая существует. Знаете, даже это окошко сейчас призадумалось, а существует ли оно? После чего отправилось читать Мартина Хайдеггера, глотая слезы и Новомодный пилснер доктора Санина."/>
+
+  <tooltip panel="resistances" name="crushing" text="Сопротивление дробящему урону позволяет вам успешно игнорировать удары тупыми предметами, например кирпичами."/>
+  <tooltip panel="resistances" name="slashing" text="Сопротивление режущему урону защищает вас от ударов заостренных лезвий. Также оно помогает избавиться от ощущения жжения после бритья."/>
+  <tooltip panel="resistances" name="blasting" text="Сопротивление взрывчатому урону позволяем вам уходить не оборачиваясь на взрывы."/>
+  <tooltip panel="resistances" name="piercing" text="Сопротивление пронзающему урону позволяем вам ничего чувствовать в тот момент, когда вас будут жалить двести тысяч пчел! Ну ладно, небольшой дискомфорт все-таки будет."/>
+  <tooltip panel="resistances" name="conflagratory" text="Сопротивляемость воспламеняющему урону необычайно полезна если вы ведьма, или же постоянно работаете с ведьмами и горючими материалами. Гномздрав предупреждает: длительное использование асбестовой брони вызывает рак легких, гниение бороды и различные странные желания."/>
+  <tooltip panel="resistances" name="hyperborean" text="Сопротивляемость гиперборейскому урону, особо широко распространенная среди варварских народов Севера, она помогает вам пережить даже самые суровые и морозные из зим."/>
+  <tooltip panel="resistances" name="voltaic" text="Лучший способ повысить сопротивляемость гальваничесскому урону - это с ног до головы обвязаться жабами. Их крупные, толстые и не проводящие электричества тельца помогут вам защититься от электричества в любых его проявлениях. Если жабы не сработают, мы рекомендуем всякие волшебные кольца и тому подобную чепуху."/>
+  <tooltip panel="resistances" name="toxic" text="Сопротивляемость токсичному урону высоко ценится среди гурманов, желающих поближе познакомиться с национальной гоблинской кухней."/>
+  <tooltip panel="resistances" name="righteous" text="Сопротивляемость праведному урону помогает вам защититься от гнева Высших Сил. А если и не защитит, то по крайней мере вас не съедят те медведи, которые растерзали сорок двух детей, насмехавшихся над пророком Елисеем."/>
+  <tooltip panel="resistances" name="necromantic" text="Сопротивляемость некромантии очень полезна при контактах с мертвецами любого рода, ну или телевизором."/>
+  <tooltip panel="resistances" name="acidic" text="Лучший способ достичь полной сопротивляемости кислоте - полностью погрузиться в раствор гидрокарбоната натрия. Ладно, мы шутим, запасной вариант - снова раздобыть где-то волшебных колец."/>
+  <tooltip panel="resistances" name="putrefying" text="Сопротивляемость разлагающему урону поможет вам пережить те атаки, которые заставляют вашу кожу гнить и отваливаться."/>
+  <tooltip panel="resistances" name="transmutative" text="Сопротивляемость трансмутационному урону поможет вам лучше защищаться от трансмутации. Чем бы она ни была."/>
+  <tooltip panel="resistances" name="aethereal" text="Сопротивляемость эфирному урону защищает вас от атак, наделенных мощью звезд, влияния небесных тел на ваше бренное тело и всего такого. Внимание: смотреть на Небесный Щит можно только два раза. Сначала левым глазом, потом правым."/>
+  <tooltip panel="resistances" name="asphyxiative" text="Сопротивляемость удушающему урону: надавить на живот и похлопать по спине. Действенно вот уже одиннадцать веков."/>
+  <tooltip panel="resistances" name="existential" text="Сопротивляемость экзистенциальному урону: вы мыслите, а следовательно сопротивляетесь."/>
+
+  <!-- Primary Stats -->
+<tooltip panel="equip" x="101" y="331" w="40" h="16" name="Упитанность" text="Упитанность - это главная черта Воина, с которой тесно связаны шансы попадания в липкие ситуации, избиения других людей, а также вероятность получить по шее каким-либо крупным объектом/конечностью/щупальцем. От неё зависит количество здоровья, сила удара, а также шанс блока."/>
+<tooltip panel="equip" x="101" y="349" w="40" h="16" name="Смекалка" text="Смекалка - это главная черта Мага, суть которой состоит в постоянном накоплении знаний. От неё зависит количество маны и волшебная мощь."/>
+<tooltip panel="equip" x="101" y="367" w="40" h="16" name="Проворность" text="Проворность - это главная черта Разбойника, влияющая на степень вашей ловкости, легкости в движениях и шанс уклониться от удара. От неё зависит скрытность, шанс неуклонения врага, а также шанс уклонения и нанесения контр-удара. Быть проворным просто великолепно."/>
+<tooltip panel="equip" x="101" y="385" w="40" h="16" name="Грубость" text="Грубость - главная черта Пирата, определяющая степень наплевательского отношения к чувствам окружающих. От неё зависит шанс критического удара и шанс нанесения контр-удара."/>
+<tooltip panel="equip" x="101" y="403" w="40" h="16" name="Благоразумие" text="Благоразумие - это главная черта Барда, включающая в себя недюжинную изобретательность в попытках обойти опасность. От неё зависит шанс магического резонанса и скрытность."/>
+<tooltip panel="equip" x="101" y="421" w="40" h="16" name="Упорство" text="Упорство - это главная черта Монаха, которая увеличивает самоуверенность и способность пропускать мимо ушей те подлые колкости, которые говорят люди за вашей спиной. От неё зависит сопротивляемость волшебству и шанс блока."/>
+
+<!-- Secondary Stats, col 1 -->
+<tooltip panel="equip" x="150" y="328" w="40" h="16" name="Сила удара" text="От силы удара зависит то, насколько тяжело вы бьете вашим оружием (или ногами, если у вас нет ничего другого). Также от этого зависит, с какой силой вы бросайте всякие вещи. Урон, наносимый арбалетом, не увеличивается, потому что это было бы странно."/>
+<tooltip panel="equip" x="150" y="346" w="40" h="16" name="Шанс критического удара" text="Шанс критического удара - это то, с какой вероятностью вы сможете особо удачно замахнуться и нанести двойной урон."/>
+<tooltip panel="equip" x="150" y="364" w="40" h="16" name="Шанс контр-удара" text="Шанс контр-удара влияет на вероятность выполнения в ближнем бою акта возмездия, заключающегося в возвращении врагу его же удара вдобавок в вашему собственному."/>
+<tooltip panel="equip" x="150" y="382" w="40" h="16" name="Магическая мощь" text="От уровня мощности волшебства зависит сила ваших заклинаний."/>
+<tooltip panel="equip" x="150" y="400" w="40" h="16" name="Шанс резонанса" text="Шанс резонанса влияет на то, с какой вероятностью ваше заклинание вызывает чрезвычайно нестабильный каскадный резонанс."/>
+<tooltip panel="equip" x="150" y="418" w="40" h="16" name="Сопротивляемость магии" text="Сопротивляемость магии позволяет интуитивно (почти) сводить на нет магическую атаку, направленную против вас."/>
+
+<!-- Secondary Stats, col 2 -->
+<tooltip panel="equip" x="196" y="328" w="40" h="16" name="Поглощение урона" text="Поглощение урона - это то, насколько хорошо ваша броня защищает вас от неизбежного. Каждое очко поглощения урона уменьшает наносимый вам физический урон (дробящий, режущий и взрывчатый) на одну единицу."/>
+<tooltip panel="equip" x="196" y="346" w="40" h="16" name="Шанс блока" text="От шанса блока зависит то, с какой вероятностью вы можете блокировать то, что заслуживаете. В частности, физические атаки."/>
+<tooltip panel="equip" x="196" y="364" w="40" h="16" name="Шанс уклонения" text="Шанс уклонения влияет на то, насколько часто вы можете избегать последствий ваших необдуманных действий, например физических атак."/>
+<tooltip panel="equip" x="196" y="382" w="40" h="16" name="Шанс неуклонения врага" text="От этого шанса зависит то, с какой вероятностью враг не сможет уклониться от ваших ударов. Потому что герои никогда не промахиваются - просто иногда от их атак уклоняются."/>
+<tooltip panel="equip" x="196" y="400" w="40" h="16" name="Скрытность" text="Скрытность - это насколько вы хороши в том, чтобы прокрасться мимо опасности, не навлекая её на себя. Помогает оставаться незамеченным врагами, не будить спящих врагов и избегать ловушек."/>
+<tooltip panel="equip" x="196" y="418" w="40" h="16" name="Радиус обзора" text="Радиус обзора - это насколько далеко вы видите в темном подземелье."/>
+
+<!-- Secondary Stats, col 3 -->
+<tooltip panel="equip" x="242" y="328" w="40" h="16" name="Дальность обнаружения ловушек" text="От дальности обнаружения ловушек зависит расстояние, на которым вы можете заметить и определить ловушку."/>
+<tooltip panel="equip" x="242" y="346" w="40" h="16" name="Обращение с ловушками" text="От уровня обращения с ловушками зависит ваша способность их избегать и обезвреживать."/>
+<tooltip panel="equip" x="242" y="364" w="40" h="16" name="Уровень создания волшебных палочек" text="Это показатель того, насколько вы хороши в создании волшебных палочек."/>
+<tooltip panel="equip" x="242" y="382" w="40" h="16" name="Уровень кузнечного дела" text="Это показатель того, насколько вы хороши в кузнечестве."/>
+<tooltip panel="equip" x="242" y="400" w="40" h="16" name="Уровень алхимии" text="Это показатель того, насколько вы хороши в алхимическом ремесле."/>
+<tooltip panel="equip" x="242" y="418" w="40" h="16" name="Уровень изобретательства" text="Это показатель того, насколько хороший из вас изобретатель."/>
+
+<!-- Life and Mana -->
+<tooltip panel="equip" x="82" y="446" w="68" h="16" name="Здоровье" text="Это число показывает, сколько вам осталось жить. Если оно достигнет нуля, вы протянете ноги. Попытайтесь этого не допустить."/>
+<tooltip panel="equip" x="194" y="446" w="68" h="16" name="Мана" text="Это число определяет вашу готовность произносить заклинания, каждое из которых требует маны в том или ином количестве."/>
+<tooltip panel="equip" x="108" y="464" w="40" h="16" name="Регенерация здоровья" text="Слушайте внимательно, тут все хитро: это число показывает бонус к регенерации вашего здоровья. Оно прибавляется к базовой скорости регенерации здоровья и определяет, сколько шагов вам нужно сделать чтобы восполнить одну единицу здоровья. Чем больше это число, тем лучше." />
+<tooltip panel="equip" x="220" y="464" w="40" h="16" name="Регенерация маны" text="Слушайте внимательно, тут все хитро: это число показывает бонус к регенерации вашей маны. Оно прибавляется к базовой скорости регенерации маны и определяет, сколько шагов вам нужно сделать чтобы восполнить одну единицу маны. Чем больше это число, тем лучше." />
+
+<!-- Char Panel question block tooltip hotspots -->
+<questionblock panel="equip" x="25" y="331" text="Это ваши главные характеристики. Каждая отвечает за определенный аспект."/>
+<questionblock panel="equip" x="35" y="271" text="Справа показано количество умений из категории каждого героического архетипа, которые вы выучили. За каждое выученное умение вы получаете соответствующий уровень архетипа."/>
+  
+<!-- Toolkit tooltips -->
+<questionblock panel="lutefisk" name="Хорадрический лютефисковый куб" x="111" y="25" w="16" h="16" text="Вначале был лютефиск. Вы можете преобразовывать ваши несъедобные предметы в еще более несъедобный лютефиск. Shift+Alt чтобы делать это автоматически. Skol! Приятного аппетита!"/>
+  
+  <!-- and now here are the actually funny strings you were looking for -->
+
+  <quality text="aristocratic"/>
+  <quality text="awe-inspiring"/>
+  <quality text="beautiful"/>
+  <quality text="charred"/>
+  <quality text="cheap"/>
+  <quality text="cheerful"/>
+  <quality text="clean"/>
+  <quality text="cracked"/>
+  <quality text="crumbling"/>
+  <quality text="damaged"/>
+  <quality text="dark"/>
+  <quality text="delicate"/>
+  <quality text="delightful"/>
+  <quality text="dreadfully plain"/>
+  <quality text="eldritch"/>
+  <quality text="ethereal"/>
+  <quality text="excellent"/>
+  <quality text="fabulous"/>
+  <quality text="fearful"/>
+  <quality text="fishy"/>
+  <quality text="foreign-looking"/>
+  <quality text="gloomy"/>
+  <quality text="gratuitous"/>
+  <quality text="grooved"/>
+  <quality text="heavy"/>
+  <quality text="high quality"/>
+  <quality text="indescribable"/>
+  <quality text="just enough"/>
+  <quality text="knobbly"/>
+  <quality text="light"/>
+  <quality text="lovely"/>
+  <quality text="meticulously-formed"/>
+  <quality text="military grade"/>
+  <quality text="multi-faceted"/>
+  <quality text="museum grade"/>
+  <quality text="old"/>
+  <quality text="opalescent"/>
+  <quality text="oscillating"/>
+  <quality text="pedestrian"/>
+  <quality text="pitted"/>
+  <quality text="portentious-looking"/>
+  <quality text="quivering"/>
+  <quality text="rather unfortunate"/>
+  <quality text="resilient"/>
+  <quality text="ridged"/>
+  <quality text="shimmering"/>
+  <quality text="shining"/>
+  <quality text="shoddy"/>
+  <quality text="simple"/>
+  <quality text="solid"/>
+  <quality text="sparkling"/>
+  <quality text="sturdy"/>
+  <quality text="surplus"/>
+  <quality text="tarnished"/>
+  <quality text="tawdry"/>
+  <quality text="timeworn"/>
+  <quality text="too little"/>
+  <quality text="too much"/>
+  <quality text="tortured"/>
+  <quality text="twisted"/>
+  <quality text="used"/>
+  <quality text="veined"/>
+  <quality text="well-crafted"/>
+  <quality text="well-worn"/>
+  <quality text="worn"/>
+  
+  <material text="aluminum"/>
+  <material text="billon"/>
+  <material text="birchbark"/>
+  <material text="black iron"/>
+  <material text="bonded moon-powder"/>
+  <material text="bone"/>
+  <material text="brass"/>
+  <material text="carbon fibre"/>
+  <material text="carborundum"/>
+  <material text="cast iron"/>
+  <material text="ceramic"/>
+  <material text="chromium"/>
+  <material text="circuit board"/>
+  <material text="copper"/>
+  <material text="crystal"/>
+  <material text="damascus steel"/>
+  <material text="diamond phase carbon-14"/>
+  <material text="diamond"/>
+  <material text="driftwood"/>
+  <material text="electrum"/>
+  <material text="elerium-115"/>
+  <material text="elk bone"/>
+  <material text="fibreboard"/>
+  <material text="frozen sunlight"/>
+  <material text="glass"/>
+  <material text="gold"/>
+  <material text="illudium fosdex, the shaving cream atom"/>
+  <material text="iron"/>
+  <material text="ivory"/>
+  <material text="jet"/>
+  <material text="lead"/>
+  <material text="liquid metal"/>
+  <material text="magic ice"/>
+  <material text="magic steel"/>
+  <material text="mythril"/>
+  <material text="narwhal ivory"/>
+  <material text="neutronium"/>
+  <material text="nickel"/>
+  <material text="oak"/>
+  <material text="obsidian"/>
+  <material text="orichalcum"/>
+  <material text="pewter"/>
+  <material text="pig iron"/>
+  <material text="pine"/>
+  <material text="pitchblende"/>
+  <material text="reinforced concrete"/>
+  <material text="rose gold"/>
+  <material text="rubber"/>
+  <material text="silicon steel"/>
+  <material text="silver"/>
+  <material text="solder"/>
+  <material text="spring steel"/>
+  <material text="sterling silver"/>
+  <material text="superconductor"/>
+  <material text="thorium"/>
+  <material text="thorns"/>
+  <material text="tin"/>
+  <material text="tusk"/>
+  <material text="unobtanium"/>
+  <material text="uranium"/>
+  <material text="white gold"/>
+  <material text="wootz steel"/>
+  <material text="wrought iron"/>
+
+  <decor text="agate"/>
+  <decor text="aremthicite crystals"/>
+  <decor text="bacon"/>
+  <decor text="bad poems"/>
+  <decor text="bands of ancient runes"/>
+  <decor text="beads"/>
+  <decor text="bolts"/>
+  <decor text="bones of undead elk"/>
+  <decor text="coconut"/>
+  <decor text="cuneiform pronouncements"/>
+  <decor text="dead flowers"/>
+  <decor text="diamonds"/>
+  <decor text="dwarf bones"/>
+  <decor text="ebony"/>
+  <decor text="engravings"/>
+  <decor text="equations"/>
+  <decor text="exaltations to Krom"/>
+  <decor text="Ferrari logos"/>
+  <decor text="foreign coins"/>
+  <decor text="fringe"/>
+  <decor text="gaudy feathers"/>
+  <decor text="glitter"/>
+  <decor text="glue"/>
+  <decor text="greenish colors"/>
+  <decor text="ground meat"/>
+  <decor text="herd of oxen"/>
+  <decor text="illegible script"/>
+  <decor text="jimmies"/>
+  <decor text="leopard print"/>
+  <decor text="lumps"/>
+  <decor text="maribu"/>
+  <decor text="meat products"/>
+  <decor text="mercury"/>
+  <decor text="mosaic"/>
+  <decor text="onyx"/>
+  <decor text="pebbles"/>
+  <decor text="pewter"/>
+  <decor text="pimples"/>
+  <decor text="pistachios"/>
+  <decor text="plaid"/>
+  <decor text="polka dots"/>
+  <decor text="post-it notes"/>
+  <decor text="rings made of leather"/>
+  <decor text="rivets"/>
+  <decor text="rubber bands"/>
+  <decor text="rubies"/>
+  <decor text="ruching"/>
+  <decor text="sagas about viking warriors"/>
+  <decor text="sand paintings"/>
+  <decor text="sapphires"/>
+  <decor text="scrawled double entendres"/>
+  <decor text="sequins"/>
+  <decor text="sigils"/>
+  <decor text="sputum"/>
+  <decor text="square embossing"/>
+  <decor text="triangular carvings"/>
+  <decor text="turtle shell"/>  
+  <decor text="two-headed eagles"/>
+  <decor text="velvet"/>
+  <decor text="woven reeds"/>
+  <decor text="zebra stripes"/>
+  
+  <startPhoneme text="Ach"/>
+  <startPhoneme text="Arg"/>
+  <startPhoneme text="Bang"/>
+  <startPhoneme text="Bin"/>
+  <startPhoneme text="Bit"/>
+  <startPhoneme text="Bla"/>
+  <startPhoneme text="Chr"/>
+  <startPhoneme text="Cor"/>
+  <startPhoneme text="Corp"/>
+  <startPhoneme text="Cro"/>
+  <startPhoneme text="Cyr"/>
+  <startPhoneme text="Dar"/>
+  <startPhoneme text="Den"/>
+  <startPhoneme text="Ey"/>
+  <startPhoneme text="Fo"/>
+  <startPhoneme text="Fri"/>
+  <startPhoneme text="Fw"/>
+  <startPhoneme text="In"/>
+  <startPhoneme text="Iz"/>
+  <startPhoneme text="Ka"/>
+  <startPhoneme text="Kan"/>
+  <startPhoneme text="Korp"/>
+  <startPhoneme text="Krom"/>
+  <startPhoneme text="Krunk"/>
+  <startPhoneme text="Ky"/>
+  <startPhoneme text="Lk"/>
+  <startPhoneme text="Llwe"/>
+  <startPhoneme text="Mas"/>
+  <startPhoneme text="Mlo"/>
+  <startPhoneme text="Mut"/>
+  <startPhoneme text="Na"/>
+  <startPhoneme text="Neg"/>
+  <startPhoneme text="Nog"/>
+  <startPhoneme text="Pak"/>
+  <startPhoneme text="Pil"/>
+  <startPhoneme text="Pl"/>
+  <startPhoneme text="Pnu"/>
+  <startPhoneme text="Pos"/>
+  <startPhoneme text="Pow"/>
+  <startPhoneme text="Pu"/>
+  <startPhoneme text="Sap"/>
+  <startPhoneme text="Tog"/>
+  <startPhoneme text="Twy"/>
+  <startPhoneme text="U"/>
+  <startPhoneme text="Val"/>
+  <startPhoneme text="Wk"/>
+  <startPhoneme text="Zan"/>
+  <startPhoneme text="Zoo"/>
+  <startPhoneme text="Zp"/>
+
+  <phoneme text="ak"/>
+  <phoneme text="arp"/>
+  <phoneme text="ba"/>
+  <phoneme text="bel"/>
+  <phoneme text="cha"/>
+  <phoneme text="chooie"/>
+  <phoneme text="cra"/>
+  <phoneme text="ewn"/>
+  <phoneme text="fro"/>
+  <phoneme text="fur"/>
+  <phoneme text="gor"/>
+  <phoneme text="it"/>
+  <phoneme text="iz"/>
+  <phoneme text="jaf"/>
+  <phoneme text="jalla"/>
+  <phoneme text="jo"/>
+  <phoneme text="kii"/>
+  <phoneme text="kol"/>
+  <phoneme text="kull"/>
+  <phoneme text="lech"/>
+  <phoneme text="lioo"/>
+  <phoneme text="mag"/>
+  <phoneme text="ng"/>
+  <phoneme text="nu"/>
+  <phoneme text="nus"/>
+  <phoneme text="om"/>
+  <phoneme text="po"/>
+  <phoneme text="po"/>
+  <phoneme text="por"/>
+  <phoneme text="rah"/>
+  <phoneme text="rho"/>
+  <phoneme text="see"/>
+  <phoneme text="twe"/>
+  <phoneme text="u"/>
+  <phoneme text="unf"/>
+  <phoneme text="uum"/>
+  <phoneme text="wa"/>
+  <phoneme text="zar"/>
+  <phoneme text="zar"/>
+  <phoneme text="zuk"/>
+
+  <noun text="Altar" plural="Altars" statue="dungeon/pedestal_empty.spr" />
+  <noun text="Anvils" plural="Anvils" statue="dungeon/statue_anvil.spr" />
+  <noun text="Block" plural="Blocks" statue="dungeon/pile_of_stones.spr" />
+  <noun text="Blood" plural="Blood" floor="dungeon/blood.spr" />
+  <noun text="Books" plural="Books" statue="dungeon/statue_book.spr"/>
+  <noun text="Cake" plural="Cakes" statue="dungeon/statue_cake.spr" painting="dungeon/painting_cake.spr"/>
+  <noun text="Clockwork" plural="Clockworks" statue="dungeon/statue_gears.spr" />
+  <noun text="Cod" plural="Codfishes" painting="dungeon/painting_fish.spr" />
+  <noun text="Coffee" plural="Coffees" statue="dungeon/statue_coffee.spr" />
+  <noun text="Death" plural="Deaths" statue="dungeon/skull_pile.spr" />
+  <noun text="Engine" plural="Engines" statue="dungeon/statue_gears.spr" />
+  <noun text="Fork" plural="Forks" statue="dungeon/statue_fork.spr" />
+  <noun text="Fruit" plural="Fruits" statue="dungeon/statue_fruit.spr" />
+  <noun text="Gaslamp" plural="Gaslamps" statue="dungeon/gaslamp.spr" />
+  <noun text="Gear" plural="Gears" statue="dungeon/statue_gears.spr" />
+  <noun text="Молот" plural="Hammers" statue="dungeon/statue_hammer.spr" />
+  <noun text="Lava" plural="Lava" floor="dungeon/grate_lava.spr" />
+  <noun text="Lutefisk" plural="Lutefisk" painting="dungeon/painting_fish.spr" />
+  <noun text="Magma" plural="Magma" floor="dungeon/grate_lava.spr" />
+  <noun text="Mandrill" plural="Mandrills" statue="dungeon/statue_mandrill.spr" />
+  <noun text="Mechanism" plural="Mechanisms" statue="dungeon/statue_gears.spr" />
+  <noun text="Moon" plural="Moons" painting="dungeon/tapestry_moon.spr" />
+  <noun text="Ore" plural="Ores" statue="dungeon/pile_of_stones.spr" />
+  <noun text="Penguin" plural="Penguins" statue="dungeon/statue_penguin.spr" />
+  <noun text="Pillar" plural="Pillars" statue="dungeon/basic_pillar.spr" />
+  <noun text="Plinth" plural="Plinths" statue="dungeon/pedestal_empty.spr" />
+  <noun text="Portal" plural="Portals" statue="dungeon/portal1_broken.spr" />
+  <noun text="Queen" plural="Queens" painting="dungeon/painting1.spr" />
+  <noun text="Shock" plural="Shocks" painting="dungeon/tapestry_lightningbolt.spr" />
+  <noun text="Skull" plural="Skulls" statue="dungeon/skull_pile.spr" />
+  <noun text="Spike" plural="Spikes" statue="dungeon/spike_cluster.spr" />
+  <noun text="Storm" plural="Storms" painting="dungeon/tapestry_lightningbolt.spr" />
+  <noun text="Tapestry" plural="Tapestries" painting="dungeon/tapestry_blank.spr" />
+  <noun text="Гримуар" plural="Tomes" statue="dungeon/statue_book.spr"/>
+
+  <noun text="Aardvark" plural="Aardvarks"/>
+  <noun text="Aether" plural="Aether"/>
+  <noun text="Aethership" plural="Aetherships" />
+  <noun text="Ale" plural="Ales"/>  
+  <noun text="Apology" plural="Apologies"/>
+  <noun text="Armadillo" plural="Armadillos"/>
+  <noun text="Armoire" plural="Armoires"/>  
+  <noun text="Bane" plural="Bane"/>
+  <noun text="Baron" plural="Barons"/>
+  <noun text="Beating" plural="Beatings"/>
+  <noun text="Bee" plural="Bees"/>
+  <noun text="Beginning" plural="Beginnings"/>
+  <noun text="Birth" plural="Births"/>
+  <noun text="Bolting" plural="Bolting"/>
+  <noun text="Bookshelf" plural="Bookshelves"/>
+  <noun text="Booze" plural="Boozes"/>
+  <noun text="Breadfruit" plural="Breadfruits"/>
+  <noun text="Breakfast Cereal" plural="Breakfast Cereals"/>
+  <noun text="Cabinet" plural="Cabinets"/>
+  <noun text="Calendar" plural="Calendars"/>
+  <noun text="Canadian" plural="Canadians"/>
+  <noun text="Caribou" plural="Caribou"/>
+  <noun text="Carving" plural="Carvings"/>
+  <noun text="Cave" plural="Caves" />
+  <noun text="Сыр" plural="Cheeses"/>
+  <noun text="Cinderblock" plural="Cinderblocks"/>
+  <noun text="Codpiece" plural="Codpieces"/>
+  <noun text="Communism" plural="Communism"/>
+  <noun text="Constitution" plural="Constitutions"/>
+  <noun text="Corn" plural="Corn"/>
+  <noun text="Crowbar" plural="Crowbars"/>
+  <noun text="Defenestration" plural="Defenestrations"/>
+  <noun text="Despair" plural="Despairs"/>
+  <noun text="Disease" plural="Diseases"/>
+  <noun text="Divinity" plural="Divinities"/>
+  <noun text="Doom" plural="Doom"/>
+  <noun text="Dragon" plural="Dragons"/>
+  <noun text="Drill" plural="Drills" />
+  <noun text="Duke" plural="Dukes"/>
+  <noun text="Dwarf" plural="Dwarves"/>
+  <noun text="Ear" plural="Ears"/>
+  <noun text="Earthquake" plural="Earthquakes"/>
+  <noun text="Egg" plural="Eggs"/>
+  <noun text="Eggplant" plural="Eggplants"/>
+  <noun text="Elder Sign" plural="Elder Signs" />
+  <noun text="Elephant" plural="Elephants"/>
+  <noun text="Elf" plural="Elves"/>
+  <noun text="Elk" plural="Elk"/>  
+  <noun text="Ending" plural="Endings"/>
+  <noun text="Envy" plural="Envies"/>
+  <noun text="Eye" plural="Eyes"/>
+  <noun text="Fate" plural="Fates"/>
+  <noun text="Feast" plural="Feasts"/>
+  <noun text="Fibre Art" plural="Fibre Arts" />
+  <noun text="Fiend" plural="Fiends"/>
+  <noun text="Fishmonger" plural="Fishmongers"/>
+  <noun text="Fjord" plural="Fjords"/>  
+  <noun text="Foe" plural="Foes"/>
+  <noun text="Fort" plural="Forts"/>
+  <noun text="Friend" plural="Friends"/>
+  <noun text="Galaxy" plural="Galaxies"/>
+  <noun text="Gemstone" plural="Gemstones"/>
+  <noun text="Giraffe" plural="Giraffes"/>
+  <noun text="Grammar" plural="Grammars" />
+  <noun text="Greed" plural="Greed"/>
+  <noun text="Grimoire" plural="Grimoires" />
+  <noun text="Grinding" plural="Grindings"/>
+  <noun text="Guacamole" plural="Guacamole"/>
+  <noun text="Hawk" plural="Hawks"/>
+  <noun text="Heresy" plural="Heresies"/>
+  <noun text="Holiday" plural="Holidays"/>
+  <noun text="Inferno" plural="Infernos"/>  
+  <noun text="King" plural="Kings"/>
+  <noun text="Kumquat" plural="Kumquats"/>
+  <noun text="Latinum" plural="Latinum"/>
+  <noun text="Leaf" plural="Leaves"/>
+  <noun text="Leather" plural="Leathers"/>  
+  <noun text="Leg" plural="Legs"/>
+  <noun text="Lever" plural="Levers"/>
+  <noun text="Loan" plural="Loans"/>
+  <noun text="Loathing" plural="Loathing"/>
+  <noun text="Lobster" plural="Lobsters"/>
+  <noun text="Loin" plural="Loins"/>
+  <noun text="Lord" plural="Lords"/>
+  <noun text="Lotus" plural="Lotuses"/>
+  <noun text="Lust" plural="Lusts"/>
+  <noun text="Lychee" plural="Lychee"/>
+  <noun text="Mafipulation" plural="Mafipulation"/>
+  <noun text="Manuscript" plural="Manuscripts" />
+  <noun text="Marriage" plural="Marriages" />
+  <noun text="Mouth" plural="Mouths"/>
+  <noun text="Muffin" plural="Muffins" />
+  <noun text="Nail" plural="Nails"/>
+  <noun text="Nature" plural="Natures"/>
+  <noun text="News" plural="News"/>
+  <noun text="Newt" plural="Newts"/>   
+  <noun text="Noise" plural="Noises"/>
+  <noun text="Offering" plural="Offerings"/>
+  <noun text="Ooze" plural="Ooze"/>
+  <noun text="Ostrich" plural="Ostriches"/>
+  <noun text="Owl" plural="Owls"/>
+  <noun text="Party" plural="Parties" />
+  <noun text="Philosophy" plural="Philosophies"/>
+  <noun text="Poison" plural="Poisons"/>
+  <noun text="Poodle" plural="Poodles"/>
+  <noun text="Pork" plural="Pork"/>
+  <noun text="Porpoise" plural="Porpoises"/>
+  <noun text="Portent" plural="Portents"/>
+  <noun text="Pride" plural="Pride"/>  
+  <noun text="Prongs" plural="Prongs"/>
+  <noun text="Pruning" plural="Prunings"/>
+  <noun text="Radish" plural="Radishes"/>
+  <noun text="Razor" plural="Razors"/>
+  <noun text="Remittance" plural="Remittances"/>
+  <noun text="Revelation" plural="Revelations"/>
+  <noun text="Rhinestone" plural="Rhinestones"/>
+  <noun text="River" plural="Rivers"/>
+  <noun text="Root Vegetable" plural="Root Vegetables"/>
+  <noun text="Sacrifice" plural="Sacrifices"/>
+  <noun text="Sausage Roll" plural="Sausage Rolls"/>
+  <noun text="Sausage" plural="Sausages"/>
+  <noun text="Shaving" plural="Shavings"/>
+  <noun text="Shibboleth" plural="Shibboleth" />
+  <noun text="Shoggoth" plural="Shoggoths"/>
+  <noun text="Sin" plural="Sins"/>
+  <noun text="Sneeze" plural="Sneezes"/>
+  <noun text="Sock" plural="Socks"/>
+  <noun text="Soiree" plural="Soiree" />
+  <noun text="Star" plural="Stars"/>
+  <noun text="Statue" plural="Statues"/>
+  <noun text="Strength" plural="Strength"/>
+  <noun text="Sun" plural="Suns"/>
+  <noun text="Synechdoche" plural="Synechdoches" />
+  <noun text="Tavern" plural="Taverns"/>  
+  <noun text="Tentacle" plural="Tentacles" />
+  <noun text="Testament" plural="Testaments"/>
+  <noun text="Throne" plural="Thrones"/>
+  <noun text="Tongue" plural="Tongues"/>
+  <noun text="Tonic" plural="Tonics"/>
+  <noun text="Torrent" plural="Torrents" />
+  <noun text="Torso" plural="Torsos"/>
+  <noun text="Trousers" plural="Trousers"/>
+  <noun text="Trunk" plural="Trunks"/>
+  <noun text="Turnip" plural="Turnips"/>
+  <noun text="Tweezer" plural="Tweezers"/>
+  <noun text="Usurper" plural="Usurpers"/>
+  <noun text="Vainglory" plural="Vainglories"/>
+  <noun text="Vein" plural="Veins"/>
+  <noun text="Vessel" plural="Vessels"/>
+  <noun text="Vomit" plural="Vomit"/>
+  <noun text="Waffle" plural="Waffles"/>
+  <noun text="Warlock" plural="Warlocks"/>
+  <noun text="Whale" plural="Whales"/>
+  <noun text="Wheel" plural="Wheels"/>
+  <noun text="Will" plural="Wills"/>
+  <noun text="Wisdom" plural="Wisdom"/>
+  <noun text="Worm" plural="Worms"/>
+  <noun text="Wrath" plural="Wrath"/>
+
+  <adjective text="Abhuman"/>
+  <adjective text="Abnormal" />
+  <adjective text="Absconded"/>
+  <adjective text="Abyssal"/>
+  <adjective text="Adorable"/>
+  <adjective text="Aesthetically Pleasing"/>
+  <adjective text="Algebraic"/>
+  <adjective text="Amorphous" />
+  <adjective text="Antique" />
+  <adjective text="Arboreal" />
+  <adjective text="Arcane"/>
+  <adjective text="Awkward"/>
+  <adjective text="Beknighted"/>
+  <adjective text="Bewitched"/>
+  <adjective text="Bilious"/>
+  <adjective text="Bitter" />
+  <adjective text="Bloated"/>
+  <adjective text="Bloody"/>
+  <adjective text="Brined"/>
+  <adjective text="Briney" />
+  <adjective text="Brooding"/>
+  <adjective text="Calming"/>
+  <adjective text="Canadian"/>
+  <adjective text="Cantankerous"/>
+  <adjective text="Charitable"/>
+  <adjective text="Charnel" />
+  <adjective text="Cheese-based"/>
+  <adjective text="Choleric"/>
+  <adjective text="Confused" />
+  <adjective text="Corpulent"/>
+  <adjective text="Cosmopolitan"/>
+  <adjective text="Covetous"/>
+  <adjective text="Crab-Like"/>
+  <adjective text="Creative"/>
+  <adjective text="Crepuscular"/>
+  <adjective text="Crushing"/>
+  <adjective text="Cthonic"/>
+  <adjective text="Curt"/>
+  <adjective text="Cyclopean" />
+  <adjective text="Daemoniac" />
+  <adjective text="Dancing"/>
+  <adjective text="Dank" />
+  <adjective text="Disquieting"/>
+  <adjective text="Effulgent"/>
+  <adjective text="Elder"/>
+  <adjective text="Enormous"/>
+  <adjective text="Epic"/>
+  <adjective text="Extra-planar" />
+  <adjective text="Feline" />
+  <adjective text="Fertile"/>
+  <adjective text="Festering"/>
+  <adjective text="Flaky"/>
+  <adjective text="Fleeting"/>
+  <adjective text="Foetid" />
+  <adjective text="Fruity" />
+  <adjective text="Fungoid" />
+  <adjective text="Generic"/>
+  <adjective text="Gibbous" />
+  <adjective text="Glimmering"/>
+  <adjective text="Gnarled"/>
+  <adjective text="Greedy"/>
+  <adjective text="Harmful"/>
+  <adjective text="Heirloom"/>
+  <adjective text="Hidden"/>
+  <adjective text="Holy"/>
+  <adjective text="Ignoble"/>
+  <adjective text="Ill-conceived"/>
+  <adjective text="Immeasurable"/>
+  <adjective text="Immemorial" />
+  <adjective text="Imperial"/>
+  <adjective text="Impotent"/>
+  <adjective text="Incandescent"/>
+  <adjective text="Inefficient"/>
+  <adjective text="Ingrained"/>
+  <adjective text="Irradiated" />
+  <adjective text="Jittery"/>
+  <adjective text="Jocular"/>
+  <adjective text="Kelpish" />
+  <adjective text="Lachrymose" />
+  <adjective text="Laughing"/>
+  <adjective text="Lengthy"/>
+  <adjective text="Loathsome"/>
+  <adjective text="Lonely"/>
+  <adjective text="Lugubrious"/>
+  <adjective text="Lusty"/>
+  <adjective text="Maddening"/>
+  <adjective text="Magical"/>
+  <adjective text="Magisterial"/>
+  <adjective text="Martial" />
+  <adjective text="Mathematical"/>
+  <adjective text="Mechanistic"/>
+  <adjective text="Melancholic"/>
+  <adjective text="Memorial"/>
+  <adjective text="Mercurial"/>
+  <adjective text="Miscalibrated"/>
+  <adjective text="Monstrous"/>
+  <adjective text="Mordant"/>
+  <adjective text="Murderous"/>
+  <adjective text="Musical"/>
+  <adjective text="Mysterious" />
+  <adjective text="Mystic"/>
+  <adjective text="Mystical"/>
+  <adjective text="Natural"/>
+  <adjective text="Nebulous" />
+  <adjective text="Neo-Cubist"/>
+  <adjective text="Neptunian" />
+  <adjective text="Non-Euclidean" />
+  <adjective text="Oblong" />
+  <adjective text="Off-balance"/>
+  <adjective text="Oncoming"/>
+  <adjective text="Oozing"/>
+  <adjective text="Outcast"/>
+  <adjective text="Overworked"/>
+  <adjective text="Pelagic" />
+  <adjective text="Phantasmagoric"/>
+  <adjective text="Phlegmatic"/>
+  <adjective text="Pickled"/>
+  <adjective text="Pitiful"/>
+  <adjective text="Plutonic" />
+  <adjective text="Ponderous" />
+  <adjective text="Portly"/>
+  <adjective text="Postmodern"/>
+  <adjective text="Potent"/>
+  <adjective text="Proud"/>
+  <adjective text="Provocative"/>
+  <adjective text="Puny"/>
+  <adjective text="Radiant"/>
+  <adjective text="Rampant"/>
+  <adjective text="Restful"/>
+  <adjective text="Reverant"/>
+  <adjective text="Revered"/>
+  <adjective text="Rhomboid"/>
+  <adjective text="Rotten"/>
+  <adjective text="Rumbustious"/>
+  <adjective text="Sandy" />
+  <adjective text="Sanguine"/>
+  <adjective text="Saturnine" />
+  <adjective text="Scuttling"/>
+  <adjective text="Shadowy"/>
+  <adjective text="Shockingly Small"/>
+  <adjective text="Slothful"/>
+  <adjective text="Small"/>
+  <adjective text="Sobering"/>
+  <adjective text="Somnambulant" />
+  <adjective text="Spectral" />
+  <adjective text="Spicy"/>
+  <adjective text="Spongiferous"/>  
+  <adjective text="Squamous"/>
+  <adjective text="Stately"/>
+  <adjective text="Stout"/>
+  <adjective text="Striking"/>
+  <adjective text="Stygian" />
+  <adjective text="Swarthy"/>
+  <adjective text="Tainted"/>
+  <adjective text="Tenebrous" />
+  <adjective text="Tentacular"/>
+  <adjective text="Teutonic" />
+  <adjective text="Thoughtful"/>
+  <adjective text="Thoughtless"/>
+  <adjective text="Tingly"/>
+  <adjective text="Tributory"/>
+  <adjective text="Tropical" />
+  <adjective text="Twisted"/>
+  <adjective text="Unappetizing"/>
+  <adjective text="Unbridled"/>
+  <adjective text="Undone"/>
+  <adjective text="Unholy"/>
+  <adjective text="Unimpressive"/>  
+  <adjective text="Unsettling"/>
+  <adjective text="Untouchable"/>
+  <adjective text="Unwanted"/>
+  <adjective text="Upright" />
+  <adjective text="Valiant"/>
+  <adjective text="Vile"/>
+  <adjective text="Violent"/>
+  <adjective text="Waiting"/>
+  <adjective text="Warped"/>
+  <adjective text="Wizardly"/>
+  <adjective text="Wrathful"/>
+  <adjective text="Wrinkly"/>
+  
+  <!-- ichors. mmm, ichors. -->
+
+  <ichor text="barf"/>
+  <ichor text="bile"/>
+  <ichor text="bits"/>
+  <ichor text="blood"/>
+  <ichor text="bone chips"/>
+  <ichor text="boogers"/>
+  <ichor text="chunks"/>
+  <ichor text="chunky chunks"/>
+  <ichor text="crust"/>
+  <ichor text="dead"/>
+  <ichor text="defeat"/>
+  <ichor text="dung"/>
+  <ichor text="fail"/>
+  <ichor text="flatulence"/>
+  <ichor text="flecks"/>
+  <ichor text="flek"/>
+  <ichor text="fluid"/>
+  <ichor text="flutz"/>
+  <ichor text="gack"/>
+  <ichor text="gibs"/>
+  <ichor text="guano"/>
+  <ichor text="ichor"/>
+  <ichor text="ketchup"/>
+  <ichor text="love filled with pain"/>
+  <ichor text="miasma"/>
+  <ichor text="murk"/>
+  <ichor text="pain filled with love"/>
+  <ichor text="pewl"/>
+  <ichor text="phlegm"/>
+  <ichor text="pus"/>
+  <ichor text="quanta"/>
+  <ichor text="red mist"/>
+  <ichor text="sewer brew"/>
+  <ichor text="slime"/>
+  <ichor text="spew"/>
+  <ichor text="sprecht"/>
+  <ichor text="squirts of squirt"/>
+  <ichor text="vomit"/>
+  <ichor text="win"/>
+  <ichor text="yuk"/>
+
+  <insult text="..." />
+  <insult text="Зоркмид за его голову"/>
+  <insult text="Думаешь, удача на твоей стороне, подонок?"/>
+  <insult text="Бойся моей мощи"/>
+  <insult text="Из пылающих недр ада я пришёл за тобой"/>
+  <insult text="ФУС РО ДА!" />
+  <insult text="Убирайся отсюда"/>
+  <insult text="Подожди, у меня позвонок защемило"/>
+  <insult text="Привет"/>
+  <insult text="Эй, подлый трус, выходи"/>
+  <insult text="Его имя роберт полсон" />
+  <insult text="Посигналь, если любишь дредмора"/>
+  <insult text="Я переполнен ненавистью"/>
+  <insult text="Как же я тебя ненавижу"/>
+  <insult text="У меня плохие предчувствия" />
+  <insult text="Мне встречались буррни пострашнее тебя"/>
+  <insult text="Надеюсь, они понерфили твои заклинания"/>
+  <insult text="Надеюсь, у тебя был ужасный день"/>
+  <insult text="Я потерялся! помогите"/>
+  <insult text="Пришлите подкрепление"/>
+  <insult text="Чувствую, меня повысят"/>
+  <insult text="Из твоего языка выйдет отличная жвачка"/>
+  <insult text="Пойду вздремну" />
+  <insult text="Я вообще не должен был выходить сегодня на работу"/>
+  <insult text="Это ловушка!" />
+  <insult text="Закрой дверь с другой стороны"/>
+  <insult text="Убейте бровастого"/>
+  <insult text="Я на колчаковских фронтах ранен" />
+  <insult text="Оставь меня в покое"/>
+  <insult text="Мой врач говорит, что это полезно для кожи"/>
+  <insult text="Без обид"/>
+  <insult text="Еще один искатель приключений и я наконец выйду на пенсию"/>
+  <insult text="Сделай бочку"/>
+  <insult text="Кыш! Кыш!"/>
+  <insult text="Коооооооооооооооооооосмос!"/>
+  <insult text="Помните, парни, сила в количестве"/>
+  <insult text="Твои брови не спасут тебя на этот раз"/>
+  <insult text="Это очень странно"/>
+  <insult text="Сегодня должен был быть мой выходной"/>
+  <insult text="Профурсетка"/>
+  <insult text="Ты всего лишь жалкий червяк в этом подземелье"/>
+  <insult text="Ты похотливый овцелюб"/>
+  <insult text="Ты страшно болен"/>
+  <insult text="Твоя ученая степень в поиске приключений ничего не значит"/>
+  <insult text="Время причинять боль"/>
+  <insult text="На убой"/>
+  <insult text="У нас есть способы развязать тебе язык"/>
+  <insult text="Что, опять ты?"/>
+  <insult text="Почему меня никто не любит"/>
+  <insult text="Может просто уйдешь подобру-поздорову"/>
+  <insult text="Трусливый убийца"/>
+  <insult text="Гнойный прыщ"/>
+  <insult text="А ты знал, что я на 5 уровней тебя выше?"/>
+  <insult text="Прыщавый трус"/>
+  <insult text="Ты жалкий раб"/>
+  <insult text="От тебя так и несет страхом и лютефиском"/>
+  <insult text="Ты воняешь мочой буррней"/>
+  <insult text="Ты ходишь как мертвая индюшка"/>
+  <insult text="Ты явно ни на что не годишься"/>
+  <insult text="Ты выглядишь отвратительно" />
+  <insult text="Ты ни на что не годишься"/>
+  <insult text="Твой отец - дрожащий кусок телятины"/>
+  <insult text="Твоя мать - редиска!"/>
+  <insult text="Абырвалг"/>
+  <insult text="Я нигилист и ни во что не верю"/>
+
+  <random text="Подземелья Дредмора напоминают вам, что сегодня тот день, когда вы можете привести на работу дочь. Это отличный способ... хотя нет, не стоит."/>
+  <random text="Наверное не стоило есть тот лютефиск..."/>
+  <random text="Требуются рабы."/>
+  <random text="Пахнет жареным. Ммм, арахис."/>
+  <random text="Пахнет чем-то очень и очень вкусным."/>
+  <random text="Внезапно вы почувствовали, будто забыли что-то очень важное. Что бы это могло быть?"/>
+  <random text="Замогильный рёв гориллы-зомби гулко отдаётся от стен подземелья."/>
+  <random text="Едкий запах плесени исходит от влажных стен подземелья."/>
+  <random text="Вы не можете урезать финансирование! Вы еще пожалеете об этом!" />
+  <random text="Внезапно вы почувствовали острое, щемящее чувство сожаления."/>
+  <random text="Вы прекрасно себя чувствуете."/>
+  <random text="Недостаточно пищи. Постройте зиккурат."/>
+  <random text="Вы слышите вдалеке колокольный звон."/>
+  <random text="Вы слышите зловещее мычание."/>
+  <random text="Вы слышите отголоски пира Лордов гномов."/>
+  <random text="Вы слышите вопль банши."/>
+  <random text="Вы слышите, как человек пытается отпилить свою прикованную ногу."/>
+  <random text="Вы слышите бульканье сточных труб."/>
+  <random text="Вы слышите бренчание арф."/>
+  <random text="Вы чуть не наступили на кучку слизи."/>
+  <random text="Вы наступили на что-то липкое."/>
+  <random text="Вы просто великолепны! Возьмите с полки пирожок."/>
+  <random text="Соберите группу прежде чем идти дальше."/>
+  
+  <!-- this section of the database reveals the true horror of all romantic languages -->
+  
+  <verb text="Blaspheme" past="Blasphemed" continuous="Blaspheming" />
+  <verb text="Choke" past="Choked" continuous="Choking" />
+  <verb text="Conquer" past="Conquered" continuous="Conquering" />
+  <verb text="Cope" past="Coped" continuous="Coping" />
+  <verb text="Crunch" past="Crunched" continuous="Crunching"/>
+  <verb text="Crush" past="Crushed" continuous="Crushing"/>
+  <verb text="Curse" past="Cursed" continuous="Cursing" />
+  <verb text="Dance" past="Danced" continuous="Dancing" />
+  <verb text="Delve" past="Delved" continuous="Delving" />
+  <verb text="Dig" past="Dug" continuous="Digging" />
+  <verb text="Буррень" past="Diggled" continuous="Diggling" />
+  <verb text="Dread" past="Dreaded" continuous="Dreading" />
+  <verb text="Eat" past="Ate" continuous="Eating" />
+  <verb text="Faff" past="Faffed" continuous="Faffing" />
+  <verb text="Fail" past="Failed" continuous="Failing" />
+  <verb text="Faint" past="Fainted" continuous="Fainting" />
+  <verb text="Fight" past="Fought" continuous="Fighting"/>
+  <verb text="Leap" past="Leapt" continuous="Leaping"/>
+  <verb text="Loathe" past="Loathed" continuous="Loathing" />
+  <verb text="Love" past="Loved" continuous="Loving" />
+  <verb text="Masticate" past="Masticated" continuous="Masticating" />
+  <verb text="Mince" past="Minced" continuous="Mincing" />
+  <verb text="Mine" past="Mined" continuous="Mining" />
+  <verb text="Ponder" past="Pondered" continuous="Pondering" />
+  <verb text="Pounce" past="Pounced" continuous="Pouncing"/>
+  <verb text="Pound" past="Pounded" continuous="Pounding" />
+  <verb text="Process" past="Processed" continuous="Processing" />
+  <verb text="Pulse" past="Pulsed" continuous="Pulsating"/>
+  <verb text="Shiver" past="Shivered" continuous="Shivering" />
+  <verb text="Shoot" past="Shot" continuous="Shooting"/>
+  <verb text="Soar" past="Soared" continuous="Soaring"/>
+  <verb text="Spin" past="Spun" continuous="Spinning" />
+  <verb text="Stomp" past="Stomped" continuous="Stomping" />
+  <verb text="Tear" past="Tore" continuous="Tearing"/>
+  <verb text="Venture" past="Ventured" continuous="Venturing" />
+  
+  <architecture text="Abattoir" plural="Abattoirs"/>
+  <architecture text="Amphitheatre" plural="Amphitheatres"/>
+  <architecture text="Annex" plural="Annexes"/>
+  <architecture text="Anvil" plural="Anvils"/>
+  <architecture text="Apse" plural="Apses"/>  
+  <architecture text="Arcade" plural="Arcades"/>
+  <architecture text="Arena" plural="Arenas"/>
+  <architecture text="Armory" plural="Armories"/>
+  <architecture text="Arsenal" plural="Arsenals"/>
+  <architecture text="Bakery" plural="Bakeries"/>
+  <architecture text="Bank" plural="Banks"/>
+  <architecture text="Barracks" plural="Barracks"/>
+  <architecture text="Bath" plural="Baths"/>
+  <architecture text="Bawdy House" plural="Bawdy Houses"/>
+  <architecture text="Bay" plural="Bays"/>
+  <architecture text="Binary Space Partition" plural="Binary Space Partitions"/>
+  <architecture text="Block" plural="Blocks"/>
+  <architecture text="Bog" plural="Bogs"/>
+  <architecture text="Bordello" plural="Bordellos"/>
+  <architecture text="Bowel" plural="Bowels"/>
+  <architecture text="Brewery" plural="Breweries"/>  
+  <architecture text="Buttress" plural="Buttresses"/>
+  <architecture text="Capitol" plural="Capitols"/>
+  <architecture text="Casino" plural="Casinos"/>
+  <architecture text="Castle" plural="Castles"/>
+  <architecture text="Cathouse" plural="Cathouses"/>
+  <architecture text="Cavern" plural="Caverns"/>
+  <architecture text="Cellar" plural="Cellars"/>
+  <architecture text="Chamber" plural="Chambers"/>
+  <architecture text="Chasm" plural="Chasms"/>
+  <architecture text="Citadel" plural="Citadels"/>
+  <architecture text="Clerestory" plural="Clerestories"/>
+  <architecture text="Coffer" plural="Coffers"/>
+  <architecture text="Concordat" plural="Concordats"/>
+  <architecture text="Confessional" plural="Confessionals"/>
+  <architecture text="Corner" plural="Corners"/>
+  <architecture text="Corridor" plural="Corridors"/>
+  <architecture text="Crack" plural="Cracks"/>
+  <architecture text="Crescent" plural="Crescents"/>
+  <architecture text="Crux" plural="Cruces"/>
+  <architecture text="Crypt" plural="Crypts"/>
+  <architecture text="Cube" plural="Cubes"/>
+  <architecture text="Den" plural="Dens"/>
+  <architecture text="Dome" plural="Domes"/>
+  <architecture text="Dry Dock" plural="Dry Docks"/>
+  <architecture text="Eave" plural="Eaves"/>
+  <architecture text="Fjord" plural="Fjords"/>
+  <architecture text="Floggery" plural="Floggeries"/>
+  <architecture text="Folly" plural="Follies"/>  
+  <architecture text="Forest" plural="Forests"/>
+  <architecture text="Forge" plural="Forges"/>
+  <architecture text="Fortress" plural="Fortresses"/>
+  <architecture text="Fountain" plural="Fountains"/>
+  <architecture text="Gentlemen's Club" plural="Gentlemen's Clubs"/>
+  <architecture text="Glacier" plural="Glaciers"/>
+  <architecture text="Grove" plural="Groves"/>
+  <architecture text="Gymnasium" plural="Gymnasiums"/>
+  <architecture text="Hall" plural="Halls"/>
+  <architecture text="Haus" plural="Hausen"/>
+  <architecture text="Heart" plural="Hearts"/>
+  <architecture text="Hole" plural="Holes"/>
+  <architecture text="Hollow" plural="Hollows"/>
+  <architecture text="Home" plural="Homes"/>
+  <architecture text="House" plural="Houses"/>
+  <architecture text="Jail" plural="Jails"/>
+  <architecture text="Kitchen" plural="Kitchens"/>
+  <architecture text="Laboratory" plural="Laboratories"/>
+  <architecture text="Legislature" plural="Legislatures"/>
+  <architecture text="Little Shed" plural="Little Sheds"/>
+  <architecture text="Manse" plural="Manses"/>
+  <architecture text="Marsh" plural="Marshes"/>
+  <architecture text="Maw" plural="Maws"/>  
+  <architecture text="Maze" plural="Mazes"/>
+  <architecture text="Mine" plural="Mines"/>
+  <architecture text="Moat" plural="Moats"/>
+  <architecture text="Motel" plural="Motels"/>
+  <architecture text="Mouth" plural="Mouths"/>
+  <architecture text="Nook" plural="Nooks"/>
+  <architecture text="Orbit" plural="Orbits"/>
+  <architecture text="Oubliette" plural="Oubliettes"/>
+  <architecture text="Passage" plural="Passages"/>
+  <architecture text="Pillar" plural="Pillars"/>
+  <architecture text="Pit" plural="Pits"/>
+  <architecture text="Place" plural="Places"/>
+  <architecture text="Portico" plural="Porticos"/>
+  <architecture text="Processing Plant" plural="Processing Plants"/>
+  <architecture text="Quadrangle" plural="Quadrangles"/>
+  <architecture text="Redoubt" plural="Redoubts"/>
+  <architecture text="Reservoir" plural="Reservoirs"/>
+  <architecture text="Resting-place" plural="Resting-places"/>
+  <architecture text="Rhombus" plural="Rhombi"/>
+  <architecture text="River" plural="Rivers"/>
+  <architecture text="Room" plural="Rooms"/>
+  <architecture text="Root" plural="Roots"/>
+  <architecture text="Rotunda" plural="Rotundas"/>
+  <architecture text="Sanctum" plural="Sanctums"/>
+  <architecture text="Sewer" plural="Sewers"/>
+  <architecture text="Shaft" plural="Shafts"/>
+  <architecture text="Shore" plural="Shores"/> 
+  <architecture text="Sitting Room" plural="Sitting Room"/>
+  <architecture text="Sphere" plural="Spheres"/>
+  <architecture text="Stack" plural="Stacks"/>
+  <architecture text="Stash" plural="Stashes"/>
+  <architecture text="Stockade" plural="Stockades"/>
+  <architecture text="Swamp" plural="Swamps"/>
+  <architecture text="Test Chamber" plural="Test Chambers"/>
+  <architecture text="Theatre" plural="Theatres"/>
+  <architecture text="Throne Room" plural="Throne Rooms"/>
+  <architecture text="Tomb" plural="Tombs"/>
+  <architecture text="Tower" plural="Towers"/>
+  <architecture text="Trench" plural="Trenches"/>
+  <architecture text="Triangle" plural="Triangles"/>
+  <architecture text="Tube" plural="Tubes"/>
+  <architecture text="Valley" plural="Valleys"/>
+  <architecture text="Vessel" plural="Vessels"/>
+  <architecture text="Vestibule" plural="Vestibules"/>
+  <architecture text="Well" plural="Wells"/>
+  <architecture text="Workshop" plural="Workshops"/>
+  <architecture text="Wormhole" plural="Wormholes"/>
+  <architecture text="Yurt" plural="Yurts"/>
+
+  <firstname text="Alistair"/>
+  <firstname text="Bart"/>
+  <firstname text="Blast"/>
+  <firstname text="Bold"/>
+  <firstname text="Bolt"/>
+  <firstname text="Buck"/>
+  <firstname text="Buff"/>
+  <firstname text="Butch"/>
+  <firstname text="Charles"/>
+  <firstname text="Citizen"/>
+  <firstname text="Dave"/>
+  <firstname text="Fish"/>  
+  <firstname text="Fist"/>
+  <firstname text="Flint"/>
+  <firstname text="Fridge"/>
+  <firstname text="Joe"/>
+  <firstname text="Lump"/>
+  <firstname text="Moe"/>
+  <firstname text="Punch"/>  
+  <firstname text="Punt"/>
+  <firstname text="Razor"/>
+  <firstname text="Shrimp"/>
+  <firstname text="Slab"/>
+  <firstname text="Smash"/>
+  <firstname text="Splint"/>
+  <firstname text="Stump"/>
+  <firstname text="Stump"/>    
+  <firstname text="Thick"/>
+  <firstname text="Toad"/>
+  <firstname text="Trunk"/>
+
+
+  <title text="Ales of"/>
+  <title text="Badly Dressed"/>
+  <title text="Bearer of"/>
+  <title text="Birth of"/>
+  <title text="Blasted"/>
+  <title text="Bringer of"/>
+  <title text="Captain of"/>
+  <title text="Charlatan"/>
+  <title text="Cowardly"/>
+  <title text="Creation of"/>
+  <title text="Cycle of"/>
+  <title text="Dance of"/>
+  <title text="Daughter of"/>  
+  <title text="Dawning of"/>
+  <title text="Death of"/>
+  <title text="Destiny of"/>
+  <title text="Destroyer of"/>
+  <title text="Diabolic"/>
+  <title text="Drinker of"/>
+  <title text="Eater of"/>
+  <title text="Exultation of"/>
+  <title text="Father of"/>
+  <title text="Forgotten"/>
+  <title text="Gnashing"/>
+  <title text="Harbinger of"/>
+  <title text="Host of"/>
+  <title text="Incarnation of"/>
+  <title text="Incoming"/>
+  <title text="Insignificant"/>
+  <title text="Knives of"/>
+  <title text="Lord of"/>
+  <title text="Mangler of"/>
+  <title text="Mid-afternoon's"/>
+  <title text="Mockery of"/>
+  <title text="Morning's"/>
+  <title text="Mother of"/>
+  <title text="Mountain of"/>
+  <title text="Nails of"/>
+  <title text="Night's"/>
+  <title text="Nordic"/>
+  <title text="Opera of"/>
+  <title text="Poetry of"/>
+  <title text="Portent of"/>
+  <title text="President of"/>
+  <title text="Prisoner of"/>  
+  <title text="Queen of"/>
+  <title text="Quest of"/>
+  <title text="Saga of"/>
+  <title text="Setting of"/>
+  <title text="Smoker of"/>
+  <title text="Son of"/>
+  <title text="Song of"/>
+  <title text="Sonnets of"/>
+  <title text="Sufferer of"/>
+  <title text="Thoughtless"/>
+  <title text="Warmaster of"/>
+  <title text="Word of"/>
+  <title text="Zodiacal"/>
+
+	<wizardname text = "Tobar" />
+	<wizardname text = "Meatro" />
+	<wizardname text = "Flindalon" />
+	<wizardname text = "Vesidoe" />
+	<wizardname text = "Blanbor" />
+	<wizardname text = "Digdug" />
+	<wizardname text = "Montag" />
+	<wizardname text = "Grimgar" />
+	<wizardname text = "Wizdov" />
+	<wizardname text = "Pendor" />
+	<wizardname text = "Rodan" />
+	<wizardname text = "Minrat" />
+	<wizardname text = "Bicklebock" />
+	<wizardname text = "Wormlid" />
+	<wizardname text = "Sneezy" />
+	<wizardname text = "Zandoz" />
+	<wizardname text = "Sardoriam" />
+	<wizardname text = "Wonkdonkler" />
+	<wizardname text = "Rick" />
+	<wizardname text = "Nobfron" />
+	<wizardname text = "Kramfrut" />
+	<wizardname text = "Caladaz" />
+	<wizardname text = "Diziet" />
+	<wizardname text = "Neckron" />
+	<wizardname text = "Mordred" />
+	<wizardname text = "Jeff" />
+	<wizardname text = "Flimflam" />
+	<wizardname text = "Zardoz" />
+	<wizardname text = "Triangulon" />
+	<wizardname text = "Moraivic (not to be confused with Moravic)" />
+	<wizardname text = "Moravic (not to be confused with Moraivic)" />
+<!--	<wizardname text = "" /> -->
+
+	<wizardtitle text = " the Mad" />
+	<wizardtitle text = " the Bad" />
+	<wizardtitle text = " the Rad" />
+	<wizardtitle text = " the Sleepy" />
+	<wizardtitle text = " BWz., MSc." />
+	<wizardtitle text = " the Seer" />
+	<wizardtitle text = " the Worldweaver" />
+	<wizardtitle text = ", Wandbender" />
+	<wizardtitle text = ", Highly Desirable Dinner Guest" />
+	<wizardtitle text = ", Patron of the Dark Arts" />
+	<wizardtitle text = ", Master Caseomancer" />
+	<wizardtitle text = ", Runewriter" />
+	<wizardtitle text = ", Famous Drunk" />
+	<wizardtitle text = ", Chocoholic" />
+	<wizardtitle text = " the Octarine" />
+	<wizardtitle text = " the Taupe" />
+	<wizardtitle text = " the Mauve" />
+	<wizardtitle text = ", Saucier" />
+	<wizardtitle text = ", Mystery Guest #2" />
+  <wizardtitle text = ", the Potions Master"/>
+  <wizardtitle text=", Master Warlock"/>
+  <wizardtitle text=" the Fabulous"/>
+  <wizardtitle text=" the Glamorous"/>
+  <wizardtitle text=" the Maleficent"/>
+  <wizardtitle text=" the Senile"/>
+  <wizardtitle text=" the Forkbender"/>
+  <wizardtitle text=" the Alchemist"/>
+  <wizardtitle text=" the Golemancer"/>
+  <wizardtitle text=" the Fleshsmith"/>
+  <wizardtitle text=" the Viking Wizard"/>
+  <wizardtitle text=" the Necronomico... er, whatever"/>
+  <wizardtitle text=" the Astrologer"/>
+  <wizardtitle text=" the Promethean"/>
+  <wizardtitle text=" the Emomancer"/>
+  <wizardtitle text=" the Psionicist"/>
+  <wizardtitle text=", Magical Lawyer"/>
+  <wizardtitle text=", Magical Lawyer to the Stars"/>
+  <wizardtitle text=", Magical Lawyer to the Diggles"/>
+  <wizardtitle text=", Egyptologist"/>
+
+	<wizardspiel text = "Available for parties and bar mitzvahs." />
+	<wizardspiel text = "Available for pub crawls and seniors' buffet lunches." />
+	<wizardspiel text = "Currently lecturing in East Zardonia." />
+	<wizardspiel text = "Professionally afraid of spoons." />
+	<wizardspiel text = "Handy with a wand." />
+	<wizardspiel text = "Has wands for hands." />
+	<wizardspiel text = "Mad with power." />
+  <wizardspiel text = "Why yes, our owl is artificial."/>  
+	<wizardspiel text = "Obsessed with achieving immortality." />
+	<wizardspiel text = "As seen on TV." />
+	<wizardspiel text = "Accept no substitutes." />
+	<wizardspiel text = "Wizardly deeds done." />
+	<wizardspiel text = "Wizardry while you wait." />
+	<wizardspiel text = "Really absurdly tall." />
+	<wizardspiel text = "Wands lengthened." />
+	<wizardspiel text = "Staffs oiled." />
+	<wizardspiel text = "Orbs polished." />
+	<wizardspiel text = "Amateur wine-tasting enthusiast." />
+  <wizardspiel text = "Not allowed to do parties anymore."/>
+  <wizardspiel text = "Magical drycleaning done in the comfort of your own dungeon."/>
+  <wizardspiel text = "Banned by the Geneva Convention."/>
+               
+
+
+	<wizardtag text = "Rates reasonable." />
+	<wizardtag text = "Rates unreasonable." />
+	<wizardtag text = "Rates astronomical." />
+	<wizardtag text = "Rates unbounded by conventional mathematics." />
+	<wizardtag text = "Will work for booze." />
+	<wizardtag text = "Specializing in new and used dimensions." />
+	<wizardtag text = "Prices so low they're crazy." />
+	<wizardtag text = "Prices driven mad by eldritch horrors." />
+	
+</text>
