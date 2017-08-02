@@ -21,23 +21,23 @@
   
 <!-- Char Panel -->
 
-  <tooltip panel="damages" name="crushing" text="Crushing damage is caused by maces, blunt objects, feet, rocks, and elderly gravy. It is affected by your opponent's armour."/>
-  <tooltip panel="damages" name="slashing" text="Slashing damage is caused when you manage to get the sharp bit of the weapon to cut through the flesh of the other guy. It is affected by your opponent's armour."/>  
-  <tooltip panel="damages" name="blasting" text="Blasting damage, first discovered by Alfred Nobel, refers to any damage projected from the quasi-elemental plane of dynamite. It is affected by your opponent's armour."/>
-  <tooltip panel="damages" name="piercing" text="Piercing damage is caused when you manage to get the pointy bit of the weapon to stick into the other guy's flesh. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="conflagratory" text="Conflagratory damage is inflicted upon your opponent when you manage to set any part of them on fire. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="hyperborean" text="Hyperborean damage is inflicted by frostbite, frost demons, frost weapons, Frost Brand, and frost giants. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="voltaic" text="Voltaic damage is any damage of an electrical nature. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="toxic" text="Toxic damage is everything icky, nasty, and poisonous. It is often inflicted by tiny Brazilian frogs. The frogs do not like you very much, and we do not recommend strapping them to your equipment. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="righteous" text="Righteous damage is inflicted by holy weaponry, really pretty elven maidens, angelic beings, certain sorts of very mystical and holy crystals, and mineral water. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="necromantic" text="Necromantic damage is inflicted by necromancy, which usually means that you have a sword that drains life or turns people into zombies or something. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="acidic" text="Acidic damage is why you should always be careful when attempting to make a really large baking-soda-and-vinegar volcano. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="putrefying" text="Putrefying damage is inflicted by any attacks that cause your opponent's flesh to decay and rot, such as by attacking them with the vegetable crisper in a refrigerator. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="transmutative" text="Transmutative damage is inflicted when your attack changes something into something else, like clean white linens into a very large dry-cleaning bill. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="aethereal" text="Aethereal damage is inflicted when your attack damages using the power of the stars. We have absolutely nothing funny to say about this, because we take astronomy very seriously. So should you. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="asphyxiative" text="Asphyxiative damage is very hard to spell, and is inflicted upon your opponent when your attack suddenly causes them to stop breathing. This is usually accomplished by removing air from the room, and replacing it with gas, cabbage scents, or noxious cologne. It is not affected by your opponent's armour."/>
-  <tooltip panel="damages" name="existential" text="Existential damage: does it exist or not? We don't know, but your weapon may inflict it on somebody... if they exist. It is not affected by your opponent's armour, if it exists. This tooltip is now going to go off and question its existence, read Heidegger, and weep piteously into a bottle of Dr. Sanin's New-Age Pilsner."/>
-
+  <tooltip panel="damages" name="crushing" text="Дробящий урон наносится булавами, тупыми предметами, ногами, камням и старыми котлетами. Наносимый урон зависит от брони противника."/>
+  <tooltip panel="damages" name="slashing" text="Режущий урон наносится, когда вы пытаетесь лезвием вашего оружия разрезать плоть вашего недруга. Наносимый урон зависит от брони противника."/>  
+  <tooltip panel="damages" name="blasting" text="Взрывчатый урон, впервые открытый Альфредом Нобелем, можно нанести любым предметом из квазичастиц динамита. Наносимый урон зависит от брони противника."/>
+  <tooltip panel="damages" name="piercing" text="Проникающий урон наносится, когда вам удается вонзить острый кончик вашего оружия в плоть ващего недруга. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="conflagratory" text="Воспламеняющий урон наносится в тех случаях, когда вам удается поджечь вашего противника. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="hyperborean" text="Гиперборейский урон наносится обмороженными конечностями, ледяным оружием и снежными великанами. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="voltaic" text="Вольтажный урон наносится всем имеющим электрическую природу. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="toxic" text="Токсичный урон наносится всем мерзким, гадким и ядовитым. Особенно часто его наносят крохотные бразильские лягушки. Лягушки вам не нравятся, так что не вздумайте привязывать их к вашему снаряжению. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="righteous" text="Праведный урон наносится священным оружием, смазливыми эльфийскими девами, ангелоподобными существами, некоторыми видами очень мистических и святых кристаллов, а также минеральной водой. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="necromantic" text="Некромантический урон наносится, не поверите, некромантией, это означает что у вас есть меч высасывающий жизнь из врагов, превращающий их в зомби или что-то в этом роде. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="acidic" text="Кислотный урон - главная причина, почему вы всегда должны быть осторожны во время попыток соорудить действительно большой вулкан из уксуса и соды. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="putrefying" text="Разлагающий урон наносится любыми атаками, которые заставляют плоть вашего недруга увядать и гнить, например атака овощным отделом вашего холодильника (когда вы открывали его в последний раз?). Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="transmutative" text="Трансмутационный урон наносится тогда, когда ваш удар превращает цель во что-либо другое, например чистую белую рубашку в немалый счет из прачечной. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="aethereal" text="Эфирный урон наносит тогда, когда ваши атаки наделяются силой звезд. И мы абсолютно не шутим по этому поводу, потому что к астрономии мы относимся серьёзно. И вам советуем. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="asphyxiative" text="Удушающий урон чрезвычайно сложно нанести. Удушение происходит если после вашей атаки противник внезапно перестает дышать. Обычно это достигается путем удаления воздуха из комнаты и заполнения её газом, ароматом гнилой капусты или вонючим одеколоном. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="existential" text="Экзистенциальный урон: существует ли он или нет? Мы не знаем, но ваше оружие кому-то его наносит... если этот кто-то существует. Наносимый урон НЕ зависит от брони противника, если таковая существует. Знаете, даже эта подсказка сейчас призадумалась, а существует ли оно? После чего отправилось читать Мартина Хайдеггера, глотая слезы и Новомодный Pilsner Dr. Sanin's."/>
+  
   <tooltip panel="resistances" name="crushing" text="Crushing resistance allows you to successfully resist the impact of large, blunt objects like bricks."/>
   <tooltip panel="resistances" name="slashing" text="Slashing resistance protects you from attacks with bladed edges. It also helps reduce razor burn."/>
   <tooltip panel="resistances" name="blasting" text="Blasting resistance lets you go out with a bang."/>
@@ -56,51 +56,52 @@
   <tooltip panel="resistances" name="existential" text="Existential resistance: you think, therefore you resist."/>
 
   <!-- Primary Stats -->
-<tooltip panel="equip" x="101" y="331" w="40" h="16" name="Burliness" text="Burliness. А потом описание на русском. Burliness is the primary attribute of the Warrior and pertains to getting into trouble, hitting one's head on other people, and getting hit by large objects/limbs/pseudopods. It affects life points, melee power, and block chance."/>
-<tooltip panel="equip" x="101" y="349" w="40" h="16" name="Sagacity" text="Sagacity is the primary attribute of the Wizard, and is mostly about being a know-it-all. It affects mana points and magic power."/>
-<tooltip panel="equip" x="101" y="367" w="40" h="16" name="Nimbleness" text="Nimbleness is the primary attribute of the Rogue and is the quality of swiftness, grace, and not getting hit by things. It affects dodge chance, sneakiness, enemy dodge reduction, and counter-attack chance. Nimbleness is pretty great."/>
-<tooltip panel="equip" x="101" y="385" w="40" h="16" name="Caddishness" text="Caddishness is the primary attribute of the Pirate and revolves around not caring about the feelings of others. It affects critical hit and counter-attack chance."/>
-<tooltip panel="equip" x="101" y="403" w="40" h="16" name="Savvy" text="Savvy is the primary attribute of the Bard and involves being clever while avoiding trouble. It affects magical haywire chance and sneakiness."/>
-<tooltip panel="equip" x="101" y="421" w="40" h="16" name="Stubbornness" text="Stubbornness is the primary attribute of the Monk and enhances self-righteousness and the ability to ignore mean things other people say about you. It affects magical resistance and block chance."/>
+<tooltip panel="equip" x="101" y="331" w="40" h="16" name="Burliness" text="Ваша Могучесть. Это главный атрибут Воина и вероятность куда-нить влипнуть, надавать по голове недругу или получить по шее крупным предметом / конечностью / тентаклем. Влияет на количество здоровья, сила удара, а также шанс блока."/>
+<tooltip panel="equip" x="101" y="349" w="40" h="16" name="Sagacity" text="Ваша Мозговитость. Это главный атрибут Мага, позволяет много знать и много умничать. Влияет на количество маны и магическую силу."/>
+<tooltip panel="equip" x="101" y="367" w="40" h="16" name="Nimbleness" text="Ваша Проворность. Это главный атрибут Вора. Ваша ловкость и гибкость. Вероятность не получить удара по своей тушке. Влияет на вашу скрытность, шанс того что вы уклонитесь от удара а враг нет, а также шанс контрудара. Быть проворным это отлично."/>
+<tooltip panel="equip" x="101" y="385" w="40" h="16" name="Caddishness" text="Ваша Наглость. Это главный атрибут Пирата, определяющий степень пофигизма по отношению к окружающим. Влияет на шанс критического удара и шанс контрудара."/>
+<tooltip panel="equip" x="101" y="403" w="40" h="16" name="Savvy" text="Ваша Сообразительность. Это главный атрибут Барда, включающий в себя недюжинную изобретательность в умении избегать опасности Влияет на шанс магического резонанса и скрытность."/>
+<tooltip panel="equip" x="101" y="421" w="40" h="16" name="Stubbornness" text="Ваша Непреклонность. Это главный атрибут Монаха, который увеличивает уверенность в себе и позволяет пропускать мимо ушей те подлые колкости, которые говорят люди за вашей спиной. Влияет на сопротивляемость магии и шанс блока."/>
 
 <!-- Secondary Stats, col 1 -->
-<tooltip panel="equip" x="150" y="328" w="40" h="16" name="Melee Power" text="Melee Power affects how hard you hit with your weapons (or feet, if you don't have any). It's also how hard you throw stuff, but not how hard you shoot your crossbow bolts because that wouldn't make sense."/>
-<tooltip panel="equip" x="150" y="346" w="40" h="16" name="Critical Chance" text="Critical Chance affects how likely you are to land a particularly effective blow in combat, dealing double damage."/>
-<tooltip panel="equip" x="150" y="364" w="40" h="16" name="Counter Chance" text="Counter Chance affects how likely you are to commit a vindictive act in melee combat by returning an enemy's attack with one of your own."/>
-<tooltip panel="equip" x="150" y="382" w="40" h="16" name="Magic Power" text="Magic Power affects the power of your spells."/>
-<tooltip panel="equip" x="150" y="400" w="40" h="16" name="Haywire Chance" text="Haywire Chance affects how likely your spells are to trigger a highly unstable resonance cascade event."/>
-<tooltip panel="equip" x="150" y="418" w="40" h="16" name="Magic Resistance" text="Magic Resistance affects how intuitively you can (mostly) nullify a magical attack against you."/>
+<tooltip panel="equip" x="150" y="328" w="40" h="16" name="Melee Power" text="Влияет на силу удара оружием ближнего боя (или ногами, если у вас нет ничего другого). Также от этого зависит с какой силой вы бросайте всякие вещи, но не на урон наносимый арбалетом, это было бы странно."/>
+<tooltip panel="equip" x="150" y="346" w="40" h="16" name="Critical Chance" text="Влияет на шанс нанести особо эффективный удар в бою, с двойным уроном."/>
+<tooltip panel="equip" x="150" y="364" w="40" h="16" name="Counter Chance" text="Влияет на шанс контрудара в ближнем бою чтобы совершить акт возмездия, вернув недругу его удар вдобавок в вашему собственному."/>
+<tooltip panel="equip" x="150" y="382" w="40" h="16" name="Magic Power" text="Влияет на магическую силу ваших заклинаний."/>
+<tooltip panel="equip" x="150" y="400" w="40" h="16" name="Haywire Chance" text="Влияет на шанс магического резонанса вашего заклинания который вызовет чрезвычайно нестабильный магический каскад."/>
+<tooltip panel="equip" x="150" y="418" w="40" h="16" name="Magic Resistance" text="Влияет на сопротивляемость магии позволяющей интуитивно (почти) сводить на нет магическую атаку, направленную против вас."/>
 
 <!-- Secondary Stats, col 2 -->
-<tooltip panel="equip" x="196" y="328" w="40" h="16" name="Armour Absorption" text="Armour Absorption is how good your armor is at standing between you and inevitability. Each point of Armour Absorption removes one point of mundane damage types (eg. crushing, slashing, and blasting)."/>
-<tooltip panel="equip" x="196" y="346" w="40" h="16" name="Block Chance" text="Block Chance affects how likely you are to (mostly) block what you deserve, at least so far as physical attacks go."/>
-<tooltip panel="equip" x="196" y="364" w="40" h="16" name="Dodge Chance" text="Dodge Chance affects how likely you are to avoid the consequences of your actions and physical attacks."/>
-<tooltip panel="equip" x="196" y="382" w="40" h="16" name="Enemy Dodge Reduction" text="Enemy Dodge Reduction affects how likely an enemy is to not dodge your attacks. Because heroes never miss - but sometimes their attacks are dodged."/>
-<tooltip panel="equip" x="196" y="400" w="40" h="16" name="Sneakiness" text="Sneakiness is how good you are at tip-toeing around your problems rather than facing them. Helps with sneaking by enemies, not waking sleeping enemies, and with avoiding traps."/>
-<tooltip panel="equip" x="196" y="418" w="40" h="16" name="Visual Sight Radius" text="Visual Sight Radius is how far you can see in the dark dungeon."/>
+<tooltip panel="equip" x="196" y="328" w="40" h="16" name="Armour Absorption" text="Влияет на показатель защиты вас от неизбежного. Каждое очко поглощения урона уменьшает наносимый вам физический урон (дробящий, режущий и взрывчатый) на одну единицу."/>
+<tooltip panel="equip" x="196" y="346" w="40" h="16" name="Block Chance" text="Влияет на шанс блокирования того, что вы заслуживаете. В частности, физические атаки."/>
+<tooltip panel="equip" x="196" y="364" w="40" h="16" name="Dodge Chance" text="Влияет на шанс уклонится от последствий ваших необдуманных действий и физических атак."/>
+<tooltip panel="equip" x="196" y="382" w="40" h="16" name="Enemy Dodge Reduction" text="Влияет на шанс не позволить недругу уклонится от вашей атаки. Потому что герои никогда не промахиваются - просто иногда от их атак уклоняются."/>
+<tooltip panel="equip" x="196" y="400" w="40" h="16" name="Sneakiness" text="Влияет на шанс проскользнуть мимо опасности не навлекая ее на себя. Помогает оставаться незамеченным врагами, не будить спящих врагов и избегать ловушек."/>
+<tooltip panel="equip" x="196" y="418" w="40" h="16" name="Visual Sight Radius" text="Влияет на вашу дальность обзора в темном подземелье."/>
 
 <!-- Secondary Stats, col 3 -->
-<tooltip panel="equip" x="242" y="328" w="40" h="16" name="Trap Sight Radius" text="Trap Sight Radius determines the distance at which you can spot and identify traps."/>
-<tooltip panel="equip" x="242" y="346" w="40" h="16" name="Trap Affinity" text="Trap Affinity is a rating of your ability to avoid and disarm traps."/>
-<tooltip panel="equip" x="242" y="364" w="40" h="16" name="Wandcrafting Level" text="This is a rating of how good you are at wandcraft."/>
-<tooltip panel="equip" x="242" y="382" w="40" h="16" name="Smithing Level" text="This is a rating of how good you are at smithery."/>
-<tooltip panel="equip" x="242" y="400" w="40" h="16" name="Alchemy Level" text="This is a rating of how good you are at alchemizing."/>
-<tooltip panel="equip" x="242" y="418" w="40" h="16" name="Tinkerer Level" text="This is a rating of how good you are at tinkering."/>
+<tooltip panel="equip" x="242" y="328" w="40" h="16" name="Trap Sight Radius" text="Дальность обнаружения ловушек, на котором вы можете ее заметить и определить."/>
+<tooltip panel="equip" x="242" y="346" w="40" h="16" name="Trap Affinity" text="Уровень обращения с ловушками, чтобы их избегать и обезвреживать."/>
+<tooltip panel="equip" x="242" y="364" w="40" h="16" name="Wandcrafting Level" text="Это показатель того, насколько вы хороши в создании волшебных палочек."/>
+<tooltip panel="equip" x="242" y="382" w="40" h="16" name="Smithing Level" text="Это показатель того, насколько вы хороши в кузнечном деле."/>
+<tooltip panel="equip" x="242" y="400" w="40" h="16" name="Alchemy Level" text="Это показатель того, насколько хороший из вас алхимик."/>
+<tooltip panel="equip" x="242" y="418" w="40" h="16" name="Tinkerer Level" text="Это показатель того, насколько хороший из вас изобретатель."/>
 
 <!-- Life and Mana -->
-<tooltip panel="equip" x="82" y="446" w="68" h="16" name="Life Points" text="This number shows how not-dead you are. When it hits zero you cease to live. Try not to let this happen."/>
-<tooltip panel="equip" x="194" y="446" w="68" h="16" name="Mana Points" text="This number shows your capacity to cast magic spells, all of which cost mana to some degree or other."/>
-<tooltip panel="equip" x="108" y="464" w="40" h="16" name="Health Regeneration Bonus" text="Listen up, this one is tricky: This number is your health regeneration bonus. It is subtracted from the base health regeneration rate to determine the number of steps it takes for you to regenerate one point of health. A higher number is better." />
-<tooltip panel="equip" x="220" y="464" w="40" h="16" name="Mana Regeneration Bonus" text="Listen up, this one is tricky: This number is your mana regeneration bonus. It is subtracted from the base mana regeneration rate to determine the number of steps it takes for you to regenerate one point of mana. A higher number is better." />
+
+<tooltip panel="equip" x="82" y="446" w="68" h="16" name="Life Points" text="Это число показывает, сколько вам осталось жить. Если оно достигнет нуля, вы протянете ноги. Попытайтесь этого не допустить."/>
+<tooltip panel="equip" x="194" y="446" w="68" h="16" name="Mana Points" text="Это число определяет вашу готовность произносить заклинания, каждое из которых требует маны в том или ином количестве."/>
+<tooltip panel="equip" x="108" y="464" w="40" h="16" name="Health Regeneration Bonus" text="А вот это интересно: это число показывает бонус к регенерации вашего здоровья. Оно прибавляется к базовой регенерации здоровья и определяет, сколько шагов вам нужно сделать чтобы восполнить одну единицу здоровья. Чем больше это число, тем лучше." />
+<tooltip panel="equip" x="220" y="464" w="40" h="16" name="Mana Regeneration Bonus" text="А вот это интересно: это число показывает бонус к регенерации вашей маны. Оно прибавляется к базовой регенерации маны и определяет, сколько шагов вам нужно сделать чтобы восполнить одну единицу маны. Чем больше это число, тем лучше." />
 
 <!-- Char Panel question block tooltip hotspots -->
-<questionblock panel="equip" x="55" y="331" text="Почитай это ))) These are your primary statistics. Each one represents a certain primariness."/>
-<questionblock panel="equip" x="75" y="271" text="И это тоже )) To the right are the number of skills you've learned in the category of each Heroic Archetype. For every skill learned, you gain a corresponding Archetype level."/>
+<questionblock panel="equip" x="25" y="331" text="Это ваши главные характеристики. Каждая отвечает за определенный аспект."/>
+<questionblock panel="equip" x="35" y="271" text="Справа показано количество умений из категории каждого героического архетипа, которые вы выучили. За каждое выученное умение вы получаете соответствующий уровень архетипа."/>
   
 <!-- Toolkit tooltips -->
-<questionblock panel="lutefisk" name="Horadric Lutefisk Cube" x="111" y="25" w="16" h="16" text="Before the Lutefisk God, all is fisk to the lut. Place your inedible items into the cube to transform them into possibly even less edible Lutefisk. SHIFT+ALT click them to do so automagically. Skol!"/>
-  
-  <!-- and now here are the actually funny strings you were looking for -->
+<questionblock panel="lutefisk" name="Horadric Lutefisk Cube" x="111" y="25" w="16" h="16" text="Вначале был Лютефиск. Вы можете преобразовывать ваши несъедобные предметы в еще более несъедобный лютефиск. SHIFT+ALT чтобы делать это автоматически. Skol! Приятного аппетита!"/>  
+
+<!-- and now here are the actually funny strings you were looking for -->
 
   <quality text="aristocratic"/>
   <quality text="awe-inspiring"/>
