@@ -10,14 +10,15 @@
 
   <!-- Gameplay Config Panel -->
 
-  <questionblock panel="config" name="Switch Click Mode" x="168" y="16" w="16" h="16" text="Enabling this setting reverses the behaviour of the click and SHIFT-click operations. SHIFT-clicking will pick items up into your hand; clicking will put items in your belt or inventory."/>
-  <questionblock panel="config" name="Move as Combat/Use" x="168" y="36" w="16" h="16" text="Enabling this setting will let you attack things, interact with objects, and open doors by moving to objects with the move keys (WASD by default.)"/>
-  <questionblock panel="config" name="Use Autoloot" x="168" y="56" w="16" h="16" text="Turning on auto-loot lets your character pick up items by stepping on them. You can control which items get picked up by using the auto-loot settings to your right."/>
-  <questionblock panel="config" name="Disable Click-To-Move" x="396" y="56" w="16" h="16" text="If click-to-move is disabled, the player will not walk anywhere when you click on empty ground. Instead, you must use the movement keys (WASD by default) to maneuver."/>
-
+  <questionblock panel="config" name="Switch Click Mode" x="168" y="16" w="16" h="16" text="Включение данной настройки меняет местами функции левой кнопки мыши и той же кнопки с зажатой клавишей SHIFT. Нажав SHIFT и левую кнопку мыши, вы будете поднимать предмет в руки, обычное нажатие левой кнопки будет отправлять предметы на ваш пояс или в инвентарь."/>
+  <questionblock panel="config" name="Move as Combat/Use" x="168" y="36" w="16" h="16" text="Активация этого пункта позволит вам взаимодействовать с предметами и атаковать врагов с помощью клавиш движения (WASD по умолчанию)"/>
+  <questionblock panel="config" name="Use Autoloot" x="168" y="56" w="16" h="16" text="Включение режима автосбора добычи позволит вашему персонажу поднимать все, что окажется под его ногами. Для детальной настройки параметров воспользуйтесь опцией автосбора."/>
+  <questionblock panel="config" name="Disable Click-To-Move" x="396" y="56" w="16" h="16" text="Отключение функции передвижения по щелчку мыши. Используйте клавиши для управления персонажем (WASD по умолчанию)."/>  
+  
   <!-- Gameplay Bottom Bar -->
-  <questionblock panel="bottomthing" x="123" y="43" w="12" h="12" name="Belt Help" text="This is your belt bar. Crossbow ammunition, thrown weapons, and wands must be placed here to be used with a right-click. Other items can also be held in your belt for convenient access. Any slot in your belt with an item can be used by pressing shift and the number of the belt slot." />
-  <questionblock panel="bottomthing" x="624" y="33" w="12" h="12" name="Spell Help" text="This is your spell and skill bar. Icons representing all spells or skills can be placed here using the [+] button (and are placed automatically upon learning the appropriate spell or skill). To use a spell or skill, left click to select it and you will see the icon placed into the gold active skill slot which is to the left of your spellbar. You can then right click on the dungeon to use the spell or skill on something." />
+
+  <questionblock panel="bottomthing" x="123" y="43" w="12" h="12" name="Belt Help" text="Это ваш пояс. Прикрепите к нему стрелы, метательное оружие, магические палочки и пузырьки. Используйте правую кнопку мыши для их активации. Вы также можете поместить сюда любой другой предмет. Для быстрого использования воспользуйтесь комбинацией клавиши SHIFT и номера слота." />
+  <questionblock panel="bottomthing" x="624" y="33" w="12" h="12" name="Spell Help" text="Это панель навыков и заклинаний. Здесь вы можете разместить выученные способности(иконкой [+]) для их использования (обычно они помещаются сюда автоматически после их изучения). Чтобы использовать способность, достаточно нажать на неё левой кнопкой мыши, после чего иконка окажется в золотом квадратике, слева от панели, это означает, что способность готова к использованию, осталось навести курсор на недруга, объект или что-то другое и нажать правую кнопку мыши." />
   
 <!-- Char Panel -->
 
@@ -27,10 +28,10 @@
   <tooltip panel="damages" name="piercing" text="Проникающий урон наносится, когда вам удается вонзить острый кончик вашего оружия в плоть ващего недруга. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="conflagratory" text="Воспламеняющий урон наносится в тех случаях, когда вам удается поджечь вашего противника. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="hyperborean" text="Гиперборейский урон наносится обмороженными конечностями, ледяным оружием и снежными великанами. Наносимый урон НЕ зависит от брони противника."/>
-  <tooltip panel="damages" name="voltaic" text="Вольтажный урон наносится всем имеющим электрическую природу. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="voltaic" text="Вольтамперный урон наносится всем, имеющим электрическую природу. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="toxic" text="Токсичный урон наносится всем мерзким, гадким и ядовитым. Особенно часто его наносят крохотные бразильские лягушки. Лягушки вам не нравятся, так что не вздумайте привязывать их к вашему снаряжению. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="righteous" text="Праведный урон наносится священным оружием, смазливыми эльфийскими девами, ангелоподобными существами, некоторыми видами очень мистических и святых кристаллов, а также минеральной водой. Наносимый урон НЕ зависит от брони противника."/>
-  <tooltip panel="damages" name="necromantic" text="Некромантический урон наносится, не поверите, некромантией, это означает что у вас есть меч высасывающий жизнь из врагов, превращающий их в зомби или что-то в этом роде. Наносимый урон НЕ зависит от брони противника."/>
+  <tooltip panel="damages" name="necromantic" text="Некромантский урон наносится, не поверите, некромантией, это означает что у вас есть меч высасывающий жизнь из врагов, превращающий их в зомби или что-то в этом роде. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="acidic" text="Кислотный урон - главная причина, почему вы всегда должны быть осторожны во время попыток соорудить действительно большой вулкан из уксуса и соды. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="putrefying" text="Разлагающий урон наносится любыми атаками, которые заставляют плоть вашего недруга увядать и гнить, например атака овощным отделом вашего холодильника (когда вы открывали его в последний раз?). Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="transmutative" text="Трансмутационный урон наносится тогда, когда ваш удар превращает цель во что-либо другое, например чистую белую рубашку в немалый счет из прачечной. Наносимый урон НЕ зависит от брони противника."/>
@@ -38,23 +39,23 @@
   <tooltip panel="damages" name="asphyxiative" text="Удушающий урон чрезвычайно сложно нанести. Удушение происходит если после вашей атаки противник внезапно перестает дышать. Обычно это достигается путем удаления воздуха из комнаты и заполнения её газом, ароматом гнилой капусты или вонючим одеколоном. Наносимый урон НЕ зависит от брони противника."/>
   <tooltip panel="damages" name="existential" text="Экзистенциальный урон: существует ли он или нет? Мы не знаем, но ваше оружие кому-то его наносит... если этот кто-то существует. Наносимый урон НЕ зависит от брони противника, если таковая существует. Знаете, даже эта подсказка сейчас призадумалась, а существует ли оно? После чего отправилось читать Мартина Хайдеггера, глотая слезы и Новомодный Pilsner Dr. Sanin's."/>
   
-  <tooltip panel="resistances" name="crushing" text="Crushing resistance allows you to successfully resist the impact of large, blunt objects like bricks."/>
-  <tooltip panel="resistances" name="slashing" text="Slashing resistance protects you from attacks with bladed edges. It also helps reduce razor burn."/>
-  <tooltip panel="resistances" name="blasting" text="Blasting resistance lets you go out with a bang."/>
-  <tooltip panel="resistances" name="piercing" text="Piercing resistance allows you to be stung by twenty thousand bees and not feel a thing! (Well, very little.)"/>
-  <tooltip panel="resistances" name="conflagratory" text="Conflagratory resistance is very useful if you're a witch, or are likely to be working near witches or other flammable objects. Caution: asbestos armour has been determined by the Dwarven Mountainhomes to cause an increase in lung cancer, beard rot, and Strange Moods."/>
-  <tooltip panel="resistances" name="hyperborean" text="Hyperborean resistance, common amongst the savage Viking hordes, helps you survive even the chilliest of winters or wintery attacks."/>
-  <tooltip panel="resistances" name="voltaic" text="Voltaic resistance is best achieved by strapping frogs to your body. Their tough, thick, insulating hides will help protect you from any electrical encounters. Failing that, we recommend magic rings or something."/>
-  <tooltip panel="resistances" name="toxic" text="Toxic resistance is highly praised by those gourmands wishing to dine on the finest in Goblin cuisine."/>
-  <tooltip panel="resistances" name="righteous" text="Righteous resistance helps protect you from being smote by Divine Powers. It will not, however, protect you from being eaten by bears, as befell the children who mocked the prophet Elisha."/>
-  <tooltip panel="resistances" name="necromantic" text="Necromantic resistance is very useful when dealing with any members of the undead, and the occasional politican."/>
-  <tooltip panel="resistances" name="acidic" text="Acidic resistance is best achieved by covering yourself, head to toe, in baking soda. Failing that, we suggest the adventurer's fallback: magic rings, again."/>
-  <tooltip panel="resistances" name="putrefying" text="Putrefying resistance lets you survive attacks which try to rot your skin off."/>
-  <tooltip panel="resistances" name="transmutative" text="Transmutative resistance helps you resist transmutation. Whatever that is."/>
-  <tooltip panel="resistances" name="aethereal" text="Aethereal resistance protects you from attacks fuelled by the power of the stars, the universe, and the influences of the Celestial Bodies upon your more earthly body. Caution: do not stare directly into the Celestial Aegis."/>
-  <tooltip panel="resistances" name="asphyxiative" text="Asphyxiative resistance: the Heimlich Maneuver of the tenth century."/>
-  <tooltip panel="resistances" name="existential" text="Existential resistance: you think, therefore you resist."/>
-
+  <tooltip panel="resistances" name="crushing" text="Сопротивление дробящему урону позволяет вам успешно игнорировать удары большими тупыми предметами, например кирпичами."/>
+  <tooltip panel="resistances" name="slashing" text="Сопротивление режущему урону защищает вас от ударов заостренных лезвий. Также оно помогает избавиться от ощущения жжения после бритья."/>
+  <tooltip panel="resistances" name="blasting" text="Сопротивление взрывчатому урону позволяем вам уходить не оборачиваясь на взрывы."/>
+  <tooltip panel="resistances" name="piercing" text="Сопротивление проникающему урону позволяем вам ничего чувствовать в тот момент, когда вас будут жалить двести тысяч пчел! Ну ладно, небольшой дискомфорт все-таки будет."/>
+  <tooltip panel="resistances" name="conflagratory" text="Сопротивляемость воспламеняющему урону необычайно полезна если вы ведьма, или же вам нравится работать с ведьмами или горючими материалами. Dwarven Mountainhomes предупреждает: длительное использование асбестовой брони вызывает рак легких, гниение бороды и различные странные желания."/>
+  <tooltip panel="resistances" name="hyperborean" text="Сопротивляемость гиперборейскому урону, особо широко распространенная среди варварских народов Севера, она помогает вам выжить даже в самые суровые и морозные зимы."/>
+  <tooltip panel="resistances" name="voltaic" text="Сопротивляемость вольтамперному урону проше всего повысить обвязавшись жабами с ног до головы. Их крупные, толстые и не проводящие электричества тельца помогут вам защититься от электричества в любых его проявлениях. Если жабы не сработают, мы рекомендуем всякие волшебные кольца и тому подобную чепуху."/>
+  <tooltip panel="resistances" name="toxic" text="Сопротивляемость токсичному урону высоко ценится среди гурманов, желающих поближе познакомиться с национальной гоблинской кухней."/>
+  <tooltip panel="resistances" name="righteous" text="Сопротивляемость праведному урону помогает вам защититься от гнева Высших Сил. Впрочем это не защитит вас от участи быть съеденным двумя медведями, которые растерзали смеявшихся над пророком Елисеем детей."/>
+  <tooltip panel="resistances" name="necromantic" text="Сопротивляемость некромантскому очень полезна при контактах с мертвецами любого рода, ну или телевизором."/>
+  <tooltip panel="resistances" name="acidic" text="Сопротивляемость кислоте можно получить посыпав голову содой. Ладно, мы шутим, запасной вариант - снова раздобыть где-то волшебных колец."/>
+  <tooltip panel="resistances" name="putrefying" text="Сопротивляемость разлагающему урону поможет вам пережить атаки, заставляющие вашу кожу гнить и отваливаться."/>
+  <tooltip panel="resistances" name="transmutative" text="Сопротивляемость трансмутационному урону поможет вам лучше защищаться от трансмутации. Чем бы она ни была."/>
+  <tooltip panel="resistances" name="aethereal" text="Сопротивляемость эфирному урону защищает вас от атак, наделенных мощью звезд, влияния небесных тел на ваше бренное тело и всего такого. Внимание: не глазейте прямо на Celestial Aegis."/>
+  <tooltip panel="resistances" name="asphyxiative" text="Сопротивляемость удушающему урону: надавить на живот и похлопать по спине. Действенно вот уже одиннадцать веков. Вы же не пропускали ОБЖ?"/>
+  <tooltip panel="resistances" name="existential" text="Сопротивляемость экзистенциальному урону: вы мыслите, а следовательно сопротивляетесь."/>
+  
   <!-- Primary Stats -->
 <tooltip panel="equip" x="101" y="331" w="40" h="16" name="Burliness" text="Ваша Могучесть. Это главный атрибут Воина и вероятность куда-нить влипнуть, надавать по голове недругу или получить по шее крупным предметом / конечностью / тентаклем. Влияет на количество здоровья, сила удара, а также шанс блока."/>
 <tooltip panel="equip" x="101" y="349" w="40" h="16" name="Sagacity" text="Ваша Мозговитость. Это главный атрибут Мага, позволяет много знать и много умничать. Влияет на количество маны и магическую силу."/>
@@ -65,18 +66,18 @@
 
 <!-- Secondary Stats, col 1 -->
 <tooltip panel="equip" x="150" y="328" w="40" h="16" name="Melee Power" text="Влияет на силу удара оружием ближнего боя (или ногами, если у вас нет ничего другого). Также от этого зависит с какой силой вы бросайте всякие вещи, но не на урон наносимый арбалетом, это было бы странно."/>
-<tooltip panel="equip" x="150" y="346" w="40" h="16" name="Critical Chance" text="Влияет на шанс нанести особо эффективный удар в бою, с двойным уроном."/>
-<tooltip panel="equip" x="150" y="364" w="40" h="16" name="Counter Chance" text="Влияет на шанс контрудара в ближнем бою чтобы совершить акт возмездия, вернув недругу его удар вдобавок в вашему собственному."/>
+<tooltip panel="equip" x="150" y="346" w="40" h="16" name="Critical Chance" text="Влияет на шанс нанести особо эффективный удар с двойным уроном."/>
+<tooltip panel="equip" x="150" y="364" w="40" h="16" name="Counter Chance" text="Влияет на шанс контрудара чтобы совершить акт возмездия, вернув недругу его удар вдобавок в вашему собственному."/>
 <tooltip panel="equip" x="150" y="382" w="40" h="16" name="Magic Power" text="Влияет на магическую силу ваших заклинаний."/>
 <tooltip panel="equip" x="150" y="400" w="40" h="16" name="Haywire Chance" text="Влияет на шанс магического резонанса вашего заклинания который вызовет чрезвычайно нестабильный магический каскад."/>
 <tooltip panel="equip" x="150" y="418" w="40" h="16" name="Magic Resistance" text="Влияет на сопротивляемость магии позволяющей интуитивно (почти) сводить на нет магическую атаку, направленную против вас."/>
 
 <!-- Secondary Stats, col 2 -->
 <tooltip panel="equip" x="196" y="328" w="40" h="16" name="Armour Absorption" text="Влияет на показатель защиты вас от неизбежного. Каждое очко поглощения урона уменьшает наносимый вам физический урон (дробящий, режущий и взрывчатый) на одну единицу."/>
-<tooltip panel="equip" x="196" y="346" w="40" h="16" name="Block Chance" text="Влияет на шанс блокирования того, что вы заслуживаете. В частности, физические атаки."/>
+<tooltip panel="equip" x="196" y="346" w="40" h="16" name="Block Chance" text="Влияет на шанс блокирования неизбежного. В частности, физических атак."/>
 <tooltip panel="equip" x="196" y="364" w="40" h="16" name="Dodge Chance" text="Влияет на шанс уклонится от последствий ваших необдуманных действий и физических атак."/>
-<tooltip panel="equip" x="196" y="382" w="40" h="16" name="Enemy Dodge Reduction" text="Влияет на шанс не позволить недругу уклонится от вашей атаки. Потому что герои никогда не промахиваются - просто иногда от их атак уклоняются."/>
-<tooltip panel="equip" x="196" y="400" w="40" h="16" name="Sneakiness" text="Влияет на шанс проскользнуть мимо опасности не навлекая ее на себя. Помогает оставаться незамеченным врагами, не будить спящих врагов и избегать ловушек."/>
+<tooltip panel="equip" x="196" y="382" w="40" h="16" name="Enemy Dodge Reduction" text="Влияет на вероятность недруга уклонится от вашей атаки. Потому что герои никогда не промахиваются - просто иногда от их атак уклоняются."/>
+<tooltip panel="equip" x="196" y="400" w="40" h="16" name="Sneakiness" text="Влияет на шанс проскользнуть мимо опасности не навлекая ее на себя. Помогает оставаться незамеченным, не будить спящих недругов и избегать ловушек."/>
 <tooltip panel="equip" x="196" y="418" w="40" h="16" name="Visual Sight Radius" text="Влияет на вашу дальность обзора в темном подземелье."/>
 
 <!-- Secondary Stats, col 3 -->
@@ -805,19 +806,19 @@
   <ichor text="yuk"/>
 
   <insult text="..." />
-  <insult text="a zorkmid for his head"/>
-  <insult text="do you feel lucky, punk?"/>
-  <insult text="fear my martial prowess"/>
-  <insult text="from hell's heart, i stab at thee"/>
+  <insult text="zorkmid за его голову"/>
+  <insult text="думаешь, тебе повезло сопляк?"/>
+  <insult text="бойся моей боевой мощи"/>
+  <insult text="из глубины преисподней наношу тебе удар"/>
   <insult text="FUS RO DAH!" />
-  <insult text="get thee away"/>
-  <insult text="hang on, i have a cramp"/>
-  <insult text="hello"/>
-  <insult text="hero -- come out to play --"/>
-  <insult text="his name is robert paulson" />
-  <insult text="honk if you love dredmor"/>
-  <insult text="i breathe defiance"/>
-  <insult text="i hate you so much"/>
+  <insult text="вали отсюда"/>
+  <insult text="погоди, ногу свело"/>
+  <insult text="привет"/>
+  <insult text="герой -- выходи, станцуем --"/>
+  <insult text="его имя robert paulson" />
+  <insult text="посигналь если любишь dredmor"/>
+  <insult text="я переполнен ненавистью"/>
+  <insult text="я тебя терпеть не могу"/>
   <insult text="i have a bad feeling about this" />
   <insult text="i have battled diggles more fearsome than thee"/>
   <insult text="i hope they nerfed your spells"/>

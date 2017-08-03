@@ -12,24 +12,22 @@
   -->
   
   <tutorial>
-    <info name="Movement" description="Learn how to move your character around." icon="skills/stat_chr64.png"/>
+    <info name="Movement" description="Научитесь перемещать своего персонажа." icon="skills/stat_chr64.png"/>
     <room name="Tutorial Chamber: Movement" playerStartX="4" playerStartY="3"/>
-    <script
-      text="Welcome to Dungeons of Dredmor! We've got a lot to cover today, so let's get started."/>
-    <script text="The object of Dungeons of Dredmor is not necessarily to beat the game. Beating the game is very, very, very, hard. Instead, go into the game seeing if you can do just a little bit better than you did last time. Eventually, you will win!"/>
-    <script text="First, however, the Hero Certification Board requires us to explain to you how to play the game so that you can die appropriately at the hands of your enemies. First, let's learn how to move the hero."/>
-    <script      
-      text="Moving in Dungeons of Dredmor is easy. The W, A, S, and D keys on the keyboard will move your hero up, left, down, and right respectively."/>
-    <script text="Try walking over to the first lever and flipping it. To activate an object in Dungeons of Dredmor, simply click on it." trigger="fliplever"/>
+    <script text="Добро пожаловать в Подземелья Дредмора! Сегодня у нас ещё много дел, так что начнем."/>
+    <script text="Целью игры не является её полное прохождение. Пройти её целиком очень, очень и очень сложно. Вместо этого вы можете попробовать пройти её немного дальше, чем в прошлый раз. В конце концов, вы сможете выиграть!"/>
+    <script text="Однако, Комитет по лицензированию героев требует, чтобы мы объяснили вам основы этой игры, чтобы вы могли погибнуть подобающим образом. Сперва мы научим вас перемещать своего героя."/>
+    <script text="Передвигаться по Подземельям Дредмора проще простого. Кнопки W, A, S, D перемещают вашего героя вверх, влево, вниз и вправо соответственно."/>
+    <script text="Попробуйте подойти к первому рычагу и нажать его. Чтобы использовать любой из объектов в Подземельях Дредмора, просто нажмите на него левой клавишей мыши." trigger="fliplever"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Very good - the Dwarven Educational Grate has opened, and you may now proceed to the Very Small Watery Maze section of the tutorial."/>
-    <script text="If you don't want to use the keyboard, you can also click on the floor. Your hero will then move to the appropriate square."/>
-    <script text="Try using the mouse to move your way through the watery maze below. Note that you can just click on an object, like the lever, to move directly to it." trigger="fliplever"/>
-    <script text="Well done! This completes the first tutorial."/>
+    <script text="Великолепно - Dwarven Educational Grate открыта, и мы можем продолжить обучение в Very Small Watery Maze."/>
+    <script text="Если вы не хотите использовать клавиатуру, можете просто нажать на клетку пола. Ваш герой тут же туда переместится."/>
+    <script text="Попробуйте пробраться через водный лабиринт внизу, используя мышь. Помните, что можете просто нажимать на объекты вроде рычага, чтобы переместиться непосредственно к ним." trigger="fliplever"/>
+    <script text="Отлично! Первый этап обучения завершён."/>
   </tutorial>
 
   <tutorial>
-    <info name="Combat" description="Beat the ever-lovin' poop out of a Diggle."  icon="skills/warrior/macery2_64.png"/>
+    <info name="Combat" description="Надерите зад Diggle."  icon="skills/warrior/macery2_64.png"/>
     <room name="Tutorial Chamber: Combat" playerStartX="7" playerStartY="7"/>
     <equip name="Wooden Sword"/>
     <equip name="Leather Cuirass"/>
@@ -37,14 +35,14 @@
     <skill id="1"/>
     <skill id="2"/>
     <skill id="3"/>
-    <script text="Every time you move or perform an action in Dungeons of Dredmor, you and the monsters alternate taking turns. You move, then they move, then you can move, et cetera."/>
-    <script text="To demonstrate this principle, let's kill something. This little fellow here is the Tutorial Diggle, one of many Diggles that you will encounter. Let's kill it, quick."/>
-    <script text="To attack a monster, simply move next to it - either with the WASD buttons, or with the mouse - and click on him to attack." trigger="killmonster" value="Tutorial Diggle"/>
-    <script text="Well, you sure beat him into a bloody pulp. Congratulations!"/>
+    <script text="После того как вы выполняете какое-то действие или передвигаетесь монстры делают свои ходы. Ваш ход, их ход, снова ваш ход и т.д."/>
+    <script text="Чтобы продемонстрировать это наглядно, давайте кого-нибудь убьём. Вот это маленькое существо - учебный Diggle, один из множества Diggle которых вы убьете. Давайте-ка быстренько его убьём."/>
+    <script text="Чтобы атаковать монстра, подойдите к нему вплотную, а затем просто нажмите на него." trigger="killmonster" value="Tutorial Diggle"/>
+    <script text="Чтож, вы превратили его в кровавое месиво. Наши поздравления!"/>
   </tutorial>
 
   <tutorial>
-    <info name="Combat Skills" description="Learn to solve the Riddle of Steel with our easy home-study course." icon="skills/unskilled_dualwield.png" />
+    <info name="Combat Skills" description="Узнайте загадку стали в нашем небольшом обучающем курсе." icon="skills/unskilled_dualwield.png" />
     <room name="Tutorial Chamber: Combat Skills" playerStartX="4" playerStartY="18"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -57,21 +55,21 @@
     <equip name="Leather Cuirass"/>
     <ability name="Norwegian Axenado"/>
     
-    <script text="No man ever became a great warrior by merely clicking on his enemy. You must apply combat skills and magic if you wish to survive the dungeon."/>
-    <script text="This level contains four mighty Diggle Warriors. Look at them thirsting for your blood. If you simply charge in and try clicking on them, you'll get slaughtered!"/>
-    <script text="Fortunately, there is an easier way. In your skill belt, on the right hand side of the screen, you have access to a skill. The skills you can access depend on your initial career choices that you make at the start of the game."/>
-    <script text="In this case, you are a mighty Axe wielder, and as such have access to the mighty Norwegian Axenado. Click on the Axenado icon to equip it." trigger="equipability" value="Norwegian Axenado"/>
+    <script text="Никто не станет великим воином, просто жмякая по врагам. Чтобы выжить в подземельях, вам придётся использовать боевые навыки и магию."/>
+    <script text="На этом уровне обитают четыре могучих война Diggle. Они прямо-таки жаждут вашей крови. Если вы попытаетесь просто их закликать, то вас прирежут!"/>
+    <script text="К счастью, есть способ попроще. В правой нижней части экрана расположена панель ваших навыков. Их набор зависит от выбранной вами в начале игры профессии."/>
+    <script text="В данном примере, вы могучий мастер Топора, и посему имеете доступ к Norwegian Axenado. Нажмите на иконку Norwegian Axenado, чтобы выбрать его." trigger="equipability" value="Norwegian Axenado"/>
     <script action="removeblocker" value="Diggle Pen Bars"/>
-    <script text="Excellent. Now, we can kill some Diggles."/>
-    <script text="Notice how the Axenado icon now appears in the small gold box at the bottom of the screen. This means that it is active, and can be executed by RIGHT-clicking on a square with your mouse."/>
-    <script text="Move up to the Diggle. Hold down RIGHT-click to see the squares that you can target. Release RIGHT-click to fire the Axenado. Now go kill that Diggle." trigger="killmonster" value="Diggle"/>
-    <script text="You do your Viking ancestors proud! Notice that some numbers have now appeared on top of the skill, and how it appears to be disabled. This is because your skill has a cooldown period, and you must wait before you can use it again."/>
+    <script text="Превосходно. Пора бы убить парочку Diggle."/>
+    <script text="Обратите внимание, что иконка Norwegian Axenado появилась в золотом квадратике в нижней части экрана. Это означает, что умение активно и может быть использовано по нажатию правой клавиши мыши."/>
+    <script text="Подойдите к Diggle. Зажмите правую клавишу мыши, чтобы увидеть зону поражения навыка. Отпустите клавишу, чтобы использовать Norwegian Axenado. Теперь убейте этого Diggle." trigger="killmonster" value="Diggle"/>
+    <script text="Ваши предки-викинги могут гордиться! Обратите внимание, что рядом с иконкой навыка появились цифры, означающие сколько ходов понадобится навыку для перезарядки."/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="We've opened up a chamber to the Diggle Nests. You can hit SPACE to pass your turn, and they will advance on your position. Wait for them to have you surrounded, then attack with your Norwegian Axenado!"/>
+    <script text="Теперь открылась комната с гнёздами Diggle. Вы можете нажать ПРОБЕЛ, чтобы пропустить свой ход, и они сами к вам придут. Подождите пока вас окружат и атакуйте Norwegian Axenado!"/>
     <script trigger="killmonster" value="Diggle"/>
     <script trigger="killmonster" value="Diggle"/>
     <script trigger="killmonster" value="Diggle"/>
-    <script text="This completes the Combat ability section of the tutorial. Combat abilities do different things - try them and find out!"/>
+    <script text="На этом боевая секция обучения завершена. Разные боевые навыки действуют по-разному - попробуйте их все!"/>
 
   </tutorial>
 
