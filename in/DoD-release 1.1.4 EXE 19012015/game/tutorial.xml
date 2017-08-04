@@ -44,7 +44,7 @@
   </tutorial>
 
   <tutorial>
-    <info name="Боевые навыки" description="Научитесь решать проблемы при помощи оружия в нашем небольшом обучающем курсе." icon="skills/unskilled_dualwield.png" />
+    <info name="Боевые навыки" description="Узнайте загадку стали в нашем небольшом обучающем курсе." icon="skills/unskilled_dualwield.png" />
     <room name="Tutorial Chamber: Combat Skills" playerStartX="4" playerStartY="18"/>
     <skill id="0"/>
     <skill id="1"/>
