@@ -14,15 +14,15 @@
   <tutorial>
     <info name="Movement" description="Научитесь перемещать своего персонажа." icon="skills/stat_chr64.png"/>
     <room name="Tutorial Chamber: Movement" playerStartX="4" playerStartY="3"/>
-    <script text="Добро пожаловать в Подземелья Дредмора! Сегодня у нас ещё много дел, так что начнем."/>
-    <script text="Целью игры не является её полное прохождение. Пройти её целиком очень, очень и очень сложно. Вместо этого попробуйте пройти её чуть дальше, чем в прошлый раз. В конце концов, вы сможете выиграть!"/>
-    <script text="Однако, Комитет по Лицензированию Героев требует объяснить вам основы этой игры, чтобы вы могли погибнуть подобающим образом. Сначала научим вас перемещать своего героя."/>
+    <script text="Добро пожаловать в Подземелья Дредмора! Сегодня у нас ещё много работы, так что начнем."/>
+    <script text="Ваш герой не должен обязательно пройти всю игру. Пройти её целиком очень, очень и очень сложно. Вместо этого попробуйте пройти её чуть дальше, чем в прошлый раз. В конце концов, вы сможете выиграть!"/>
+    <script text="Однако, Департамент по Лицензированию Героев требует объяснить вам основы игры, чтобы герой мог погибнуть подобающим образом. Сначала научим вас перемещению."/>
     <script text="Передвигаться по Подземельям Дредмора проще простого. Кнопки W, A, S, D перемещают вашего героя вверх, влево, вниз и вправо соответственно."/>
-    <script text="Попробуйте подойти к первому рычагу и нажать его. Чтобы использовать любой из объектов в Подземельях Дредмора, просто кликните на него левой кнопкой мыши." trigger="fliplever"/>
+    <script text="Подойдите к первому рычагу и нажмите его. Чтобы использовать любой объект в Подземельях Дредмора, просто кликните на него левой кнопкой мыши." trigger="fliplever"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
     <script text="Великолепно - Dwarven Educational Grate открыта, и мы можем продолжить обучение в Very Small Watery Maze."/>
-    <script text="Если вы не хотите использовать клавиатуру, можете просто кликнуть мышкой на клетку пола и ваш герой сам туда пойдет."/>
-    <script text="Используя мышь пройдите водный лабиринт внизу. Помните, что можете просто кликать на объекты вроде рычага, чтобы переместиться непосредственно к ним." trigger="fliplever"/>
+    <script text="Если вы не хотите использовать клавиатуру, можете просто кликнуть мышкой на клетку пола по курсором и ваш герой сам туда пойдет."/>
+    <script text="Используя мышку пройдите Very Small Watery Maze внизу. Помните, что можете просто кликать на объекты вроде рычага, чтобы дойти до них." trigger="fliplever"/>
     <script text="Отлично! Первый этап обучения завершён."/>
   </tutorial>
 
@@ -35,14 +35,14 @@
     <skill id="1"/>
     <skill id="2"/>
     <skill id="3"/>
-    <script text="После того как вы выполняете какое-то действие или передвигаетесь, монстры делают свои ходы. Ваш ход, их ход, снова ваш ход, снова их ход и т.д."/>
-    <script text="Чтобы продемонстрировать это наглядно, давайте кого-нибудь убьём. Вот это маленькое существо - учебный Diggle, один из множества Diggle которых вы убьете. Давайте-ка быстренько его убьём."/>
+    <script text="После вашего действия или передвижения, монстры делают свой ход. Ваш ход, их ход, снова ваш ход, снова их ход и т.д."/>
+    <script text="Чтобы продемонстрировать это наглядно, давайте кого-нибудь убьём. Вот это маленькое существо — учебный Diggle, один из множества Diggle которых вы убьете."/>
     <script text="Чтобы атаковать монстра, подойдите к нему вплотную, а затем просто кликните на него." trigger="killmonster" value="Tutorial Diggle"/>
     <script text="Чтож, вы превратили его в кровавое месиво. Наши поздравления!"/>
   </tutorial>
 
   <tutorial>
-    <info name="Combat Skills" description="Узнайте загадку стали в нашем небольшом обучающем курсе." icon="skills/unskilled_dualwield.png" />
+    <info name="Combat Skills" description="Разгадайте загадку стали в нашем небольшом обучающем курсе." icon="skills/unskilled_dualwield.png" />
     <room name="Tutorial Chamber: Combat Skills" playerStartX="4" playerStartY="18"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -57,19 +57,19 @@
     
     <script text="Никто не станет великим воином, просто кликая по врагам. Чтобы выжить в подземельях, вам надо использовать боевые навыки и магию."/>
     <script text="На этом уровне обитают четыре могучих война Diggle. Они прямо-таки жаждут вашей крови. Если вы попытаетесь их просто закликать, они вас прирежут!"/>
-    <script text="К счастью, есть способ попроще. В правой нижней части экрана расположена панель ваших навыков. Их набор зависит от выбранной вами в начале игры профессии."/>
-    <script text="В данном примере, вы могучий мастер Топора, и посему имеете доступ к Norwegian Axenado. Кликните на иконку Norwegian Axenado, чтобы выбрать его." trigger="equipability" value="Norwegian Axenado"/>
+    <script text="К счастью, есть способ победить. В правой нижней части экрана расположена панель ваших навыков. Их набор зависит от выбранных в начале игры способностей."/>
+    <script text="В данном примере вы могучий мастер Топора, поэтому имеете доступ к Norwegian Axenado. Кликните на иконку Norwegian Axenado, чтобы выбрать его." trigger="equipability" value="Norwegian Axenado"/>
     <script action="removeblocker" value="Diggle Pen Bars"/>
     <script text="Превосходно. Пора бы убить парочку Diggle."/>
-    <script text="Обратите внимание, что иконка Norwegian Axenado появилась в золотом квадратике в нижней части экрана. Это означает, что умение активно и может быть использовано по клику правой кнопки мыши."/>
+    <script text="Обратите внимание, что иконка Norwegian Axenado появилась в золотом квадратике в нижней части экрана. Это означает, что навык активен и может быть использован по клику правой кнопки мыши."/>
     <script text="Подойдите к Diggle. Зажмите правую кнопку мыши, чтобы увидеть зону поражения навыка. Отпустите кнопку, чтобы использовать Norwegian Axenado. Теперь убейте этого Diggle." trigger="killmonster" value="Diggle"/>
-    <script text="Ваши предки-викинги могут гордиться вами! Обратите внимание, что рядом с иконкой навыка появились цифры, означающие сколько ходов нужно навыку для перезарядки."/>
+    <script text="Ваши предки-викинги могут вами гордиться! Обратите внимание на цифры, которые появились на иконке навыка, они показывают сколько ходов нужно для перезарядки."/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Теперь открылась комната с гнёздами Diggle. Вы можете нажать ПРОБЕЛ, чтобы пропустить свой ход, и они сами к вам придут. Подождите пока вас окружат и атакуйте Norwegian Axenado!"/>
+    <script text="Теперь открылась комната с гнёздами Diggle. Вы можете нажать ПРОБЕЛ, чтобы пропустить свой ход, и они сами к вам придут. Подождите пока вас окружат и атакуйте с помощью Norwegian Axenado!"/>
     <script trigger="killmonster" value="Diggle"/>
     <script trigger="killmonster" value="Diggle"/>
     <script trigger="killmonster" value="Diggle"/>
-    <script text="На этом боевая часть обучения завершена. Разные боевые навыки действуют по-разному - попробуйте их все!"/>
+    <script text="На этом боевая часть обучения завершена. Разные боевые навыки действуют по-разному — попробуйте их все!"/>
 
   </tutorial>
 
@@ -85,13 +85,13 @@
     <skill id="6"/>
     <equip name="Crude Stone Axe"/>
     <equip name="Leather Cuirass"/>
-    <script text="Пожалуй, начнём с убийства Diggle. Вы вы на этом собаку съели." trigger="killmonster" value="Diggle"/>
+    <script text="Пожалуй, начнём с убийства Diggle. Ведь вы на этом собаку съели." trigger="killmonster" value="Diggle"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Посмотрите как вы наловчились убивать Diggle! Кровища повсюду, красота!."/>
-    <script text="Возможно, сейчас вы обратите внимание, что у вас осталось мало здоровья. Здоровье отображается КРАСНОЙ полосой внизу экрана. Если здоровье упадёт до нуля - вы умрете и текущая игра завершится."/>
-	<script text="Восполнить здоровье можно несколькими способами. Во-первых, можно просто подождать, исследуя подземелье или пропуская ходы клавишей ПРОБЕЛ. Здоровье тем временем будет медленно восстанавливаться."/>
-    <script text="Если ваш герой поест, то здоровье будет восполняться скорее - по единичке за ход. Мы для вас кое-что припрятали в подземелье - идите и съешьте это."/>
-    <script text="Чтобы съесть предмет, поднимите его и переместите на свой пояс. Затем кликните правой кнопкой мыши, чтобы съесть его." trigger="eatfood" value="Dire Sandwich"/>
+    <script text="Посмотрите как вы наловчились убивать Diggle! Кровища повсюду, красота!"/>
+    <script text="Обратите внимание, что у героя уменьшилось здоровье. Оно отображается КРАСНОЙ полосой внизу экрана. Если здоровье уменьшится до нуля — герой умрет и текущая игра завершится."/>
+	<script text="Восполнить здоровье можно несколькими способами. Можно просто подождать, исследуя подземелье или пропуская ходы клавишей ПРОБЕЛ. Здоровье тем временем будет медленно восстанавливаться."/>
+    <script text="Но если ваш герой поест, то здоровье будет восполняться скорее — по единичке за ход. Мы для вас кое-что припрятали в подземелье — идите и съешьте это."/>
+    <script text="Чтобы съесть предмет, поднимите его и поместите на свой пояс. Затем кликните правой кнопкой мыши, чтобы его съесть." trigger="eatfood" value="Dire Sandwich"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
     <script text="Теперь убейте ещё одного Diggle." trigger="killmonster" value="Diggle"/>    
   </tutorial>
@@ -108,17 +108,17 @@
     <skill id="6"/>
     <equip name="Crude Stone Axe"/>
     <equip name="Leather Cuirass"/>
-    <script text="Самое забавное в Подземельях Дредмора то, что никогда не известно заранее, каким эффектом обладают предметы. Вы можете пробовать, умирать и начинать заново."/>
+    <script text="Самое забавное в Подземельях Дредмора то, что никогда не известно заранее, каким эффектом обладают предметы. Вы можете пробовать, убивать своего героя и начинать заново."/>
     <script text="Нажмите &quot;I&quot;, чтобы открыть инвентарь, или нажмите кнопку &quot;Инвентарь&quot;." trigger="openinventory"/>
-    <script text="Это ваш рюкзак. В нём можно хранить предметы. Чтобы закрыть его, вновь нажмите кнопку &quot;Инвентарь&quot; или клавишу &quot;I&quot;. Также вы можете закрыть его, нажав на маленький золотой крестик."/>
+    <script text="Это ваш рюкзак. В нём хранятся предметы. Чтобы его закрыть, опять нажмите кнопку &quot;Инвентарь&quot; или клавишу &quot;I&quot;. Также вы можете нажать на маленький золотой крестик в верхнем правом углу."/>
     <script text="Рюкзак можно передвинуть в любое место на экране, просто зажав левую кнопку мыши на его верхушке и перетащив."/>
     <script text="Поднимите зелье Aqua Regia и положите его в инвентарь." trigger="putitemininventory" value="Aqua Regia"/>
-    <script text="Теперь кликните на нём правой кнопкой мыши и выпейте его." trigger="drinkpotion" value="Aqua Regia"/>
-    <script text="Кислота прожгла вас насквозь и отправила из этого мира прямо в следующий этап обучения."/>
+    <script text="Теперь выпейте его кликнув на нём правой кнопкой мыши." trigger="drinkpotion" value="Aqua Regia"/>
+    <script text="Кислота прожгла вашего героя насквозь и отправила из этого мира прямо в следующий этап обучения."/>
   </tutorial>
   
   <tutorial>
-    <info name="Equipment Maintenance" description="Ваше снаряжение. Только не надевайте башмаки на голову. Ведь тогда вам некуда будет надеть дорожный конус." icon="skills/warrior/armourer1_64.png" />
+    <info name="Equipment Maintenance" description="Поговорим о снаряжении. На голову одевают не башмак, а дорожный конус." icon="skills/warrior/armourer1_64.png" />
     <room name="Tutorial Chamber: Equipment Maintenance" playerStartX="4" playerStartY="17"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -130,25 +130,25 @@
     <skill id="6"/>
     <skill id="7"/>
 
-    <script text="Путешествуя по подземельям, вы будете находить множество разного оружия и брони. Большинство будет лучше чем те, с которыми вы начали игру и ключ к победе - улучшать своё снаряжение при любой возможности."/>
+    <script text="Путешествуя по Подземельям, вы будете находить множество разного оружия и брони. Большинство будет лучше чем те, с которыми вы начали игру. Ключ к победе - улучшать своё снаряжение при любой возможности."/>
     <script text="Рядом с вами лежит булава. Поднимите её." trigger="pickupitem" value="Iron Mace"/>
-    <script text="Теперь у вас есть булава и хорошо бы взять её в руки. Откройте панель персонажа клавишей &quot;C&quot; либо нажмите кнопку &quot;Персонаж&quot; внизу экрана." trigger="opencharactersheet"/>
-    <script text="Это панель персонажа, здесь вы можете посмотреть атрибуты вашего героя, выбрать оружие и броню. Чтобы надеть броню или вооружиться, просто поместите нужный предмет в соответствующую ячейку."/>
-    <script text="В самом низу панели, вы можете видеть вашу статистику. Статистика делится на два типа: основные и вспомогательные атрибуты."/>
-    <script text="Основные атрибуты - Burliness, Sagacity, Caddishness, Nimbleness, Stubbornness и Savvy - напрямую на вас не влияют и используются для расчета вспомогательных атрибутов. Например, Critical Chance зависит от Nimbleness и Caddishness."/>
-    <script text="Ваши вспомогательные атрибуты включают... да много всего. Наведите курсор на любой и увидите что он дает"/>
-    <script text="Хотя знать что все они дают и не обязательно. Просто запомните - чем больше цифры, тем лучше! Поэтому старайтесь их повышать, а не понижать."/>
+    <script text="Теперь у вас есть булава и хорошо бы взять её в руки. Откройте панель персонажа клавишей &quot;C&quot; или нажмите кнопку &quot;Персонаж&quot; внизу экрана." trigger="opencharactersheet"/>
+    <script text="Это панель персонажа, здесь вы можете посмотреть характеристики вашего героя, выбрать оружие и броню. Чтобы надеть броню или вооружиться, просто поместите нужный предмет в соответствующую ячейку."/>
+    <script text="В низу панели находится раздел с атрибутами. Атрибуты делится на два типа: основные и вспомогательные."/>
+    <script text="Основные атрибуты — Burliness, Sagacity, Caddishness, Nimbleness, Stubbornness и Savvy — напрямую на вас не влияют и используются для расчета вспомогательных атрибутов. Например, Critical Chance зависит от Nimbleness и Caddishness."/>
+    <script text="Ваши вспомогательные атрибуты включают... да много всего. Наведите курсор на любой и увидите что он дает."/>
+    <script text="Хотя знать что все они дают и не обязательно. Просто запомните — чем больше цифры, тем лучше! Поэтому старайтесь их повышать, а не понижать."/>
     <script text="Теперь поместите булаву в подходящую ячейку." trigger="equipitem" value="Iron Mace"/>
     <script text="Уберите булаву из своего снаряжения. Она выполнила свою задачу." trigger="deequipitem" value="Iron Mace"/>
     <script action="removeblocker" value="Wooden Gate"/>
-    <script text="Когда мы создали этого героя, мы выбрали ему мечи и топоры. Поищите, может вы найдете что-то более подходящее." trigger="pickupitem" value="Wooden Sword"/>
+    <script text="Когда мы создали этого героя, то выбрали ему мечи и топоры. Поищите, может вы найдете что-то более подходящее." trigger="pickupitem" value="Wooden Sword"/>
     <script text="Отлично! Теперь возьмите меч в руки." trigger="equipitem" value="Wooden Sword"/>
     <script action="removeblocker" value="Wooden Gate"/>
-    <script text="Теперь осталось найти броню. Найдите что то подходящее." trigger="pickupitem" value="Traffic Cone"/>
+    <script text="Теперь нужна броня. Найдите что то подходящее." trigger="pickupitem" value="Traffic Cone"/>
     <script text="Это дорожный конус. Шлем из него не очень, но мы потратили все деньги на булаву, которую вы не можете использовать... так что это всё, на что хватило. Наденьте его на голову." trigger="equipitem" value="Traffic Cone"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Вот вы и готовы. Теперь убейте монстра." trigger="killmonster" value="Diggle"/>
-    <script text="Ещё один Diggle мертв, ещё один этап обучения завершён. Вы быстро справились - так держать!"/>
+    <script text="Теперь вы готовы. Идите и убейте монстра." trigger="killmonster" value="Diggle"/>
+    <script text="Ещё один Diggle мертв, ещё один этап обучения завершён. Вы быстро справились — так держать!"/>
          
   </tutorial>
   
@@ -164,13 +164,13 @@
     <skill id="6"/>
     <equip name="Crude Stone Axe"/>
     <equip name="Leather Cuirass"/>
-    <script text="А вы знаете, что такое веселье? Убивать Diggle. К сожалению, они становятся умнее. Вот этот окружил себя водой. А в конце останется только один, кто покинет это обучение живым."/>
-    <script text="Арбалеты используются для убийства монстров на дальней дистанции. Для их использования необходимы две вещи: арбалет и немного болтов. Давайте оглядимся и найдем болты." trigger="pickupitem" value="Wooden Bolts"/>
+    <script text="А вы знаете, что такое веселье? Убивать Diggle. К сожалению, они становятся умнее. Вот этот окружил себя водой. Но в конце останется только один, кто покинет это обучение живым."/>
+    <script text="Арбалеты используются для убийства врагов на дальней дистанции. Для их использования необходимы две вещи: арбалет и немного болтов. Давайте оглядимся и найдем болты." trigger="pickupitem" value="Wooden Bolts"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>    
-    <script text="Теперь у вас есть арбалет, давайте найдем для него болты." trigger="pickupitem" value="Simple Iron Crossbow"/>    
-    <script text="Отлично. Откройте панель персонажа нажав клавишу &quot;C&quot; или кнопку &quot;Персонаж&quot;. Давайте пристроим этот арбалет куда-нибудь." trigger="opencharactersheet"/>
+    <script text="Теперь у вас есть болты, давайте найдем арбалет." trigger="pickupitem" value="Simple Iron Crossbow"/>    
+    <script text="Отлично. Откройте панель персонажа нажав клавишу &quot;C&quot; или кнопку &quot;Персонаж&quot;. Давайте пристроим этот арбалет на место." trigger="opencharactersheet"/>
     <script text="На панели персонажа есть слот для арбалетов. Кликните на арбалет, чтобы забрать его из инвентаря, и перетащите в нужный слот." trigger="equipitem" value="Simple Iron Crossbow"/>
-    <script text="Чтобы использовать болты, нужно кликнуть на них правой кнопкой мыши. Болты появятся в золотом квадратике в нижней части экрана. Это значит, что они сейчас используются." trigger="equipability" value="Wooden Bolt"/>
+    <script text="Чтобы использовать болты, нужно кликнуть на них правой кнопкой мыши. Болты появятся в золотом квадратике в нижней части экрана. Это значит, что они сейчас активны." trigger="equipability" value="Wooden Bolt"/>
     <script text="Можете подстрелить того Diggle, наведя на него курсор и кликнув правую кнопку мыши" trigger="killmonster" value="Diggle"/>
   </tutorial>
 
@@ -184,15 +184,15 @@
     <skill id="4"/>
     <skill id="5"/>
     <skill id="6"/>
-    <script text="Этот Diggle окружил себя прекрасным озерцом лавы, а мы оставили арбалет в прошлом этапе обучения. Fortunately, we have explosives."/>
-    <script text="Find the pile of bombs and put them in your belt." trigger="pickupitem" value="Makeshift Bomb"/>
-    <script text="Thrown weaponry - bombs, softballs, boomerangs, shuriken, and so forth - operate in the same way as crossbow bolts do. The main difference is that you don't need a crossbow to use them."/>
-    <script text="Equip the makeshift bombs by RIGHT-clicking on them in your belt." trigger="equipability" value="Makeshift Bomb"/>
-    <script text="You can tell that the bomb has been activated by looking at the gold box at the bottom of your screen that represents the currently active item. Now right click on the Diggle to blow it to kingdom come." trigger="killmonster" value="Diggle"/>
+    <script text="Этот Diggle окружил себя прекрасным озерцом лавы, а мы как на зло оставили арбалет в прошлом этапе обучения. К счастью у нас есть взрывчатка!"/>
+    <script text="Найдите бомбы и разместите их на своем поясе." trigger="pickupitem" value="Makeshift Bomb"/>
+    <script text="Метательное оружие - бомбы, мячи, бумеранги, сюрикены и тому подобное - используется почти так же, как болты. Основное отличие в том, что для них не требуется арбалет."/>
+    <script text="Разместите бомбы на вашем поясе и кликните по ним правой кнопкой мыши." trigger="equipability" value="Makeshift Bomb"/>
+    <script text="Бомбы появились в золотом квадратике в нижней части экрана. Теперь кликните правой кнопкой по Diggle чтобы послать его ко всем чертям." trigger="killmonster" value="Diggle"/>
   </tutorial>
 
   <tutorial>
-    <info name="Resistances" description="Resistance is futile!" icon="skills/spells/celestial_aegis64.png" />
+    <info name="Resistances" description="Сопротивление бесполезно!" icon="skills/spells/celestial_aegis64.png" />
     <room name="Tutorial Chamber: Resistances" playerStartX="4" playerStartY="7"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -203,18 +203,18 @@
     <skill id="6"/>
     <equip name="Rusty Sword"/>
     <equip name="Leather Cuirass"/>
-    <script text="The room next to yours contains a Thermoblobby, who will do his best to kill you with his fiery, gooey attacks. Before you go in there and deliver a Heroic Beatdown, you need to find protection."/>
-    <script text="Open the equipment panel by clicking on the Character button, or by pressing C." trigger="opencharactersheet"/>
-    <script text="Various types of monsters and spells do various types of damages. You can find magical equipment and skills that will help you resist these effects. Not surprisingly, these are called resistances."/>    
+    <script text="В следующей комнате вас ожидает Thermoblobby, который сделает все, чтобы убить вас своей огненой атакой. До того как вы зайдете туда для Героической Битвы, вам надо найти защиту."/>
+    <script text="Откройте панель снаряжения, нажав кнопку &quot;Персонаж&quot; либо клавишу &quot;C&quot;." trigger="opencharactersheet"/>
+    <script text="Разные виды монстров и заклинаний наносят разные типы урона. Вы можете найти магическое снаряжение и получить навыки, которые помогут сопротивляться этому урону. Не удивительно, что это называется сопротивлением."/>    
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Go pick up the Ring of Ash." trigger="pickupitem" value="Ring of Ash"/>
-    <script text="You will see two slots for rings on the left hand side of the character panel. Equip the Ring of Ash in your equipment screen." trigger="equipitem" value="Ring of Ash"/>
-    <script text="You can see that a small fiery circle has appeared in the Resistances panel of the character sheet. Equipping the ring has given you two points of Conflagratory resistance. This means that you can absorb two points of Conflagratory damage before it starts to affect you."/>
-    <script text="For instance, suppose a monster hits you for two crushing, and two conflagratory damage. With the Ring of Ash equipped, you would only receive the two points of crushing damage. That's a 50 percent savings!"/>
+    <script text="Возьмите кольцо Ring of Ash." trigger="pickupitem" value="Ring of Ash"/>
+    <script text="В левой части панели персонажа есть две ячейки для колец. Поместите кольцо Ring of Ash в одну из них." trigger="equipitem" value="Ring of Ash"/>
+    <script text="В разделе &quot;Сопротивление&quot; панели персонажа появился маленький круг с огнем. Кольцо дало вам два очка сопротивления &quot;Conflagratory&quot; (воспламенению). Это означает что вы можете поглотить два очка &quot;Conflagratory&quot; урона прежде чем он на вас повлияет."/>
+    <script text="Например, монстр нанес вам два &quot;crushing&quot; (дробящего) урона и два &quot;conflagratory&quot; (воспламеняющего) урона. С кольцом Ring of Ash, вы получите только два &quot;crushing&quot; урона. Скидка — минус 50%!"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Go kill that Thermoblobby! Show it who's boss." trigger="killmonster" value="Thermoblobby"/>
-    <script text="It is important to understand that normal armour only protects you against crushing, slashing, and blasting damage. Most monsters do one of these three types of damage, but they may have additional special damages on top of that."/>
-    <script text="Managing your resistances - specifically, getting as much of it as you can - is essential to surviving the Dungeon."/>    
+    <script text="Идите убейте Thermoblobby! Покажите кто тут главный." trigger="killmonster" value="Thermoblobby"/>
+    <script text="Важно помнить. Обычная броня защищает только от &quot;crushing&quot; (дробящего), &quot;slashing&quot; (режущего), и &quot;blasting&quot; (взрывчатого) урона. Большинство монстров наносит один тип урона, но некоторые монстры могут иметь способности наносящие дополнительный урон."/>
+    <script text="Следите за сопротивлениями. Старайтесь чтобы они были как можно выше — это залог выживания в Подземельях."/>    
   </tutorial>
 
   <tutorial>
