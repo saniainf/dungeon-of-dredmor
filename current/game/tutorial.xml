@@ -58,7 +58,7 @@
     <script text="Никто не станет великим воином, просто кликая по врагам. Чтобы выжить в подземельях, вам надо использовать боевые навыки и магию."/>
     <script text="На этом уровне обитают четыре могучих война Diggle. Они прямо-таки жаждут вашей крови. Если вы попытаетесь их просто закликать, они вас прирежут!"/>
     <script text="К счастью, есть способ победить. В правой нижней части экрана расположена панель ваших навыков. Их набор зависит от выбранных в начале игры способностей."/>
-    <script text="В данном примере вы могучий мастер Топора, поэтому имеете доступ к Norwegian Axenado. Кликните на иконку Norwegian Axenado, чтобы выбрать его." trigger="equipability" value="Norwegian Axenado"/>
+    <script text="В данном примере у вас есть способность Axes (топоры), поэтому у вас есть навык Norwegian Axenado. Кликните на иконку Norwegian Axenado, чтобы выбрать его." trigger="equipability" value="Norwegian Axenado"/>
     <script action="removeblocker" value="Diggle Pen Bars"/>
     <script text="Превосходно. Пора бы убить парочку Diggle."/>
     <script text="Обратите внимание, что иконка Norwegian Axenado появилась в золотом квадратике в нижней части экрана. Это означает, что навык активен и может быть использован по клику правой кнопки мыши."/>
@@ -109,8 +109,8 @@
     <equip name="Crude Stone Axe"/>
     <equip name="Leather Cuirass"/>
     <script text="Самое забавное в Подземельях Дредмора то, что никогда не известно заранее, каким эффектом обладают предметы. Вы можете пробовать, убивать своего героя и начинать заново."/>
-    <script text="Нажмите &quot;I&quot;, чтобы открыть инвентарь, или нажмите кнопку &quot;Инвентарь&quot;." trigger="openinventory"/>
-    <script text="Это ваш рюкзак. В нём хранятся предметы. Чтобы его закрыть, опять нажмите кнопку &quot;Инвентарь&quot; или клавишу &quot;I&quot;. Также вы можете нажать на маленький золотой крестик в верхнем правом углу."/>
+    <script text="Нажмите I, чтобы открыть инвентарь, или нажмите кнопку Инвентарь." trigger="openinventory"/>
+    <script text="Это ваш рюкзак. В нём хранятся предметы. Чтобы его закрыть, опять нажмите кнопку Инвентарь или клавишу I. Также вы можете нажать на маленький золотой крестик в верхнем правом углу."/>
     <script text="Рюкзак можно передвинуть в любое место на экране, просто зажав левую кнопку мыши на его верхушке и перетащив."/>
     <script text="Поднимите зелье Aqua Regia и положите его в инвентарь." trigger="putitemininventory" value="Aqua Regia"/>
     <script text="Теперь выпейте его кликнув на нём правой кнопкой мыши." trigger="drinkpotion" value="Aqua Regia"/>
@@ -132,7 +132,7 @@
 
     <script text="Путешествуя по Подземельям, вы будете находить множество разного оружия и брони. Большинство будет лучше чем те, с которыми вы начали игру. Ключ к победе - улучшать своё снаряжение при любой возможности."/>
     <script text="Рядом с вами лежит булава. Поднимите её." trigger="pickupitem" value="Iron Mace"/>
-    <script text="Теперь у вас есть булава и хорошо бы взять её в руки. Откройте панель персонажа клавишей &quot;C&quot; или нажмите кнопку &quot;Персонаж&quot; внизу экрана." trigger="opencharactersheet"/>
+    <script text="Теперь у вас есть булава и хорошо бы взять её в руки. Откройте панель персонажа клавишей C или нажмите кнопку Персонаж внизу экрана." trigger="opencharactersheet"/>
     <script text="Это панель персонажа, здесь вы можете посмотреть характеристики вашего героя, выбрать оружие и броню. Чтобы надеть броню или вооружиться, просто поместите нужный предмет в соответствующую ячейку."/>
     <script text="В низу панели находится раздел с атрибутами. Атрибуты делится на два типа: основные и вспомогательные."/>
     <script text="Основные атрибуты — Burliness, Sagacity, Caddishness, Nimbleness, Stubbornness и Savvy — напрямую на вас не влияют и используются для расчета вспомогательных атрибутов. Например, Critical Chance зависит от Nimbleness и Caddishness."/>
@@ -168,7 +168,7 @@
     <script text="Арбалеты используются для убийства врагов на дальней дистанции. Для их использования необходимы две вещи: арбалет и немного болтов. Давайте оглядимся и найдем болты." trigger="pickupitem" value="Wooden Bolts"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>    
     <script text="Теперь у вас есть болты, давайте найдем арбалет." trigger="pickupitem" value="Simple Iron Crossbow"/>    
-    <script text="Отлично. Откройте панель персонажа нажав клавишу &quot;C&quot; или кнопку &quot;Персонаж&quot;. Давайте пристроим этот арбалет на место." trigger="opencharactersheet"/>
+    <script text="Отлично. Откройте панель персонажа нажав клавишу C или кнопку Персонаж. Давайте пристроим этот арбалет на место." trigger="opencharactersheet"/>
     <script text="На панели персонажа есть слот для арбалетов. Кликните на арбалет, чтобы забрать его из инвентаря, и перетащите в нужный слот." trigger="equipitem" value="Simple Iron Crossbow"/>
     <script text="Чтобы использовать болты, нужно кликнуть на них правой кнопкой мыши. Болты появятся в золотом квадратике в нижней части экрана. Это значит, что они сейчас активны." trigger="equipability" value="Wooden Bolt"/>
     <script text="Можете подстрелить того Diggle, наведя на него курсор и кликнув правую кнопку мыши" trigger="killmonster" value="Diggle"/>
@@ -204,21 +204,21 @@
     <equip name="Rusty Sword"/>
     <equip name="Leather Cuirass"/>
     <script text="В следующей комнате вас ожидает Thermoblobby, который сделает все, чтобы убить вас своей огненой атакой. До того как вы зайдете туда для Героической Битвы, вам надо найти защиту."/>
-    <script text="Откройте панель снаряжения, нажав кнопку &quot;Персонаж&quot; либо клавишу &quot;C&quot;." trigger="opencharactersheet"/>
+    <script text="Откройте панель снаряжения, нажав кнопку Персонаж либо клавишу C." trigger="opencharactersheet"/>
     <script text="Разные виды монстров и заклинаний наносят разные типы урона. Вы можете найти магическое снаряжение и получить навыки, которые помогут сопротивляться этому урону. Не удивительно, что это называется сопротивлением."/>    
     <script action="removeblocker" value="Dwarven Educational Grate"/>
     <script text="Возьмите кольцо Ring of Ash." trigger="pickupitem" value="Ring of Ash"/>
     <script text="В левой части панели персонажа есть две ячейки для колец. Поместите кольцо Ring of Ash в одну из них." trigger="equipitem" value="Ring of Ash"/>
-    <script text="В разделе &quot;Сопротивление&quot; панели персонажа появился маленький круг с огнем. Кольцо дало вам два очка сопротивления &quot;Conflagratory&quot; (воспламенению). Это означает что вы можете поглотить два очка &quot;Conflagratory&quot; урона прежде чем он на вас повлияет."/>
-    <script text="Например, монстр нанес вам два &quot;crushing&quot; (дробящего) урона и два &quot;conflagratory&quot; (воспламеняющего) урона. С кольцом Ring of Ash, вы получите только два &quot;crushing&quot; урона. Скидка — минус 50%!"/>
+    <script text="В разделе Сопротивление панели персонажа появился маленький круг с огнем. Кольцо дало вам 2 ед. сопротивления Conflagratory (воспламенению). Это означает что вы можете поглотить 2 ед. Conflagratory урона прежде чем он на вас повлияет."/>
+    <script text="Например, монстр нанес вам 2 ед. crushing (дробящего) урона и 2 ед. conflagratory (воспламеняющего) урона. С кольцом Ring of Ash, вы получите только 2 ед. crushing урона. Скидка — минус 50%!"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
     <script text="Идите убейте Thermoblobby! Покажите кто тут главный." trigger="killmonster" value="Thermoblobby"/>
-    <script text="Важно помнить. Обычная броня защищает только от &quot;crushing&quot; (дробящего), &quot;slashing&quot; (режущего), и &quot;blasting&quot; (взрывчатого) урона. Большинство монстров наносит один тип урона, но некоторые монстры могут иметь способности наносящие дополнительный урон."/>
+    <script text="Важно помнить. Обычная броня защищает только от crushing (дробящего), slashing (режущего), и blasting (взрывчатого) урона. Большинство монстров наносит один тип урона, но некоторые монстры могут иметь способности наносящие дополнительный урон."/>
     <script text="Следите за сопротивлениями. Старайтесь чтобы они были как можно выше — это залог выживания в Подземельях."/>    
   </tutorial>
 
   <tutorial>
-    <info name="Potions" description="Tasty beverages, brewed in unclean wizarding stills." icon="skills/rogue/skill_alchemy2_64.png" />
+    <info name="Potions" description="Зелья. Вкусненькие напитки, приготовленные магами в немытых дистилляторах." icon="skills/rogue/skill_alchemy2_64.png" />
     <room name="Tutorial Chamber: Potions" playerStartX="4" playerStartY="7"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -229,21 +229,21 @@
     <skill id="6"/>
     <equip name="Wooden Sword"/>
     <equip name="Leather Cuirass"/>
-    <script text="Ah, potions. Magic liquids, sorcerous fluids, wizard juices, whatever you want to call them, they're powerful items that you can find in the Dungeons of Dredmor and store in your belt or inventory in case of emergency."/>
+    <script text="Ах, зелья. Магические жидкости, колдовские эликсиры, волшебные нектары, как бы их не называли, это могущественные предметы которые вы найдете в Подземельях Дредмора. Храните их на поясе или в инвентаре на случай крайней необходимости."/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Various potions do different things. You may already have encountered Aqua Regia in a previous tutorial, but most potions are more useful than that. Let's start by finding the Potion of Invisibility." trigger="pickupitem" value="Potion of Invisibility"/>
-    <script text="The Potion of Invisibility makes you invisible. Place it in your belt, and RIGHT-click to drink it." trigger="drinkpotion" value="Potion of Invisibility"/>
-    <script text="Excellent! You will notice that an icon has appeared in the left hand corner of the screen. This is an example of a Buff - an active ability that makes you stronger or weaker. In this case, it makes you invisible."/>
-    <script text="Note that there is a timer in one corner of the icon. When the timer goes to zero, the effect of the potion wears off. In this case, you will return to visibility."/>
+    <script text="Разные зелья обладают разными эффектами. Вы ранее уже сталкивались с Aqua Regia, но большенство зелий более полезно. Найдите Potion of Invisibility (Зелье невидимости)." trigger="pickupitem" value="Potion of Invisibility"/>
+    <script text="Potion of Invisibility делает вас невидимым. Поместите его на пояс и выпейте его, кликнув на нём правой кнопкой мыши." trigger="drinkpotion" value="Potion of Invisibility"/>
+    <script text="Превосходно! Обратите внимание на иконку, появившуюся в левой части экрана. Это активный эффект. Он называется Бафф — если делает вас сильнее или Дебафф — если эффект делает вас слабее. Этот бафф делает вас невидимым."/>
+	<script text="На иконке есть таймер, он показывает сколько ходов действует эффект. Когда он дойдет до нуля, эффект баффа развеется. В данном случае вы опять станете видимым."/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Proceed to the second room and kill the Diggle." trigger="killmonster" value="Diggle"/>
+    <script text="Идите в следующую комнату и убейте Diggle." trigger="killmonster" value="Diggle"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="As you may have noticed, invisibility also wears off when you hit a monster. Proceed to the northern chamber, where you will find a second potion." trigger="pickupitem" value="Voltaic Potion"/>
-    <script text="The Voltaic potion imbues your body with electrical energy, granting you resistance to voltaic attacks and shocking your foes with Deadly Lightning. RIGHT-click it to drink." trigger="drinkpotion" value="Voltaic Potion"/>
+    <script text="Как вы могли заметить, невидимость развеивается, когда вы атакуете врага. Идите в северную комнату - там вы найдете еще одно зелье." trigger="pickupitem" value="Voltaic Potion"/>
+    <script text="Voltaic potion (Вольтамперное зелье) пропитывает ваше тело электричеством, увеличивает ваше сопротивление voltaic (вольтамперному) урону и поражает ваших врагов Смертоносной Молнией. Правая кнопка чтобы выпить." trigger="drinkpotion" value="Voltaic Potion"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Excellent. Prooced to the third room, and kill the Electroblobby." trigger="killmonster" value="Electroblobby"/>
+    <script text="Отлично. Идите в третью комнату, и убейте Electroblobby." trigger="killmonster" value="Electroblobby"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="You're looking pretty beat up after those battles, hero. Why not enjoy a delicious potion of healing?" trigger="drinkpotion" value="Potion of Healing"/>
+    <script text="Ваш герой выглядит довольно помятым после битвы? Стоит насладиться превосходным potion of healing (зельем исцеления)." trigger="drinkpotion" value="Potion of Healing"/>
   </tutorial>
 
   <!--
@@ -253,7 +253,7 @@
   -->
   
   <tutorial>
-    <info name="Magic" description="If you're the Sorceror of Light, why are you casting magic missile?" icon="skills/wizard/magictraining2_64.png"/>
+    <info name="Magic" description="Если ты - волшебник света, что ж кастуется магическая ракета?" icon="skills/wizard/magictraining2_64.png"/>
     <room name="Tutorial Chamber: Magic" playerStartX="2" playerStartY="4"/>
     <skill id="14"/>
     <skill id="15"/>
@@ -264,20 +264,20 @@
     <skill id="20"/>
     <ability name="Xeuclid's Translation"/>
     <ability name="Pyrokinesis"/>
-    <script text="Some heroes choose to fight with steel - or, when times are tough, weapons of wood and occasionally spaghetti. Others have chosen the cerebral, sagely art of magic - and this is the subject of today's tutorial."/>
-    <script text="Magic spells are used in the same way as you use combat skills. Magic can summon pets, transport you in and out of danger, and generally make your life better."/>
-    <script text="For instance, consider the giant moat blocking your progress. By using Xeuclid's Translation, you can move to the other side of the moat."/>
-    <script text="First, equip the spell by clicking on it in your skill belt." trigger="equipability" value="Xeuclid's Translation"/>
-    <script text="Now RIGHT-click on the other side of the moat to teleport, and pull the lever to continue the tutorial." trigger="fliplever"/>
+    <script text="Одни герои сражаются оружием из стали - ну, или если припрет к стенке, то из дерева, или даже из спагетти. Другие выбирают силу разума, искусство магии - именно она станет объектом этого этапа обучения."/>
+	<script text="Заклинания используются так же, как боевые навыки. При помощи магии можно призвать помощников, перенести себя из опасного места (или в него), и вообще, сделать жизнь более легкой и веселой."/>
+    <script text="Перед вами гигантский ров который не дает вам пройти. Используем Xeuclid's Translation, чтобы перенести вас на другую сторону."/>
+    <script text="Сначала активируем заклинание кликнув по нему на панели навыков." trigger="equipability" value="Xeuclid's Translation"/>
+    <script text="Теперь кликните правой кнопкой на другой стороне рва. После телепортации потяните за рычаг, чтобы продолжить обучение." trigger="fliplever"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Spells consume mana. The amount of mana consumed is highlighted on the blue Mana bar at the bottom of the screen."/>
-    <script text="To regain mana, you can either wait by hitting SPACE, or you can drink booze. Go find the Sewer Brew, then place it in your belt and RIGHT-click to drink it." trigger="eatfood" value="Sewer Brew"/>
-    <script text="Sewer Brew is not a high-quality form of alcohol. However, every turn that you still have booze in your system, you will regain mana at a faster rate than you would normally - specifically, one point of mana every turn."/>
-    <script text="The Fuelled by Booze icon indicates how long you will remain refreshed."/>
-    <script text="The next room contains a Diggle. As a wizard, you are weak and puny, and would not survive a direct confrontation. Instead, blow him up with your magical powers."/>
-    <script text="First, equip the Pyrokinesis spell in your skill belt by clicking on it." trigger="equipability" value="Pyrokinesis"/>
+    <script text="Заклинания расходуют ману. Количество маны необходимое для заклинания, подсвечивается на синей полоске маны в нижней части экрана."/>
+    <script text="Восполнить запас маны можно пропуская ходы (нажимая Пробел) или немного выпив. Найдите Sewer Brew, поместите его в свой инвентарь или на пояс. Теперь выпейте его нажав правой кнопкой мыши." trigger="eatfood" value="Sewer Brew"/>
+	<script text="Sewer Brew - это дешевое пойло. Однако, когда вы пьяны, мана восстанавливается быстрее чем обычно - конкретно по одной единичке за ход."/>
+    <script text="Иконка Fuelled by Booze (Заправленный выпивкой) показывает как долго будет действовать эффект."/>
+    <script text="В следующей комнате есть Diggle. Поскольку волшебники слабые и хилые, они не выдерживают лобового столкновения. Сотрите Diggle в порошок своими магическими силами."/>
+    <script text="Сначала активируйте заклинание Pyrokinesis кликнув по нему." trigger="equipability" value="Pyrokinesis"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Next, blow up that Diggle by RIGHT-clicking on it with the mouse." trigger="killmonster" value="Diggle"/>    
+    <script text="Теперь разнесите Diggle кликнув на нем правой кнопкой мыши." trigger="killmonster" value="Diggle"/>    
   </tutorial>
 
   <tutorial>
