@@ -231,14 +231,14 @@
     <equip name="Leather Cuirass"/>
     <script text="Ах, зелья. Магические жидкости, колдовские эликсиры, волшебные нектары, как бы их не называли, это могущественные предметы которые вы найдете в Подземельях Дредмора. Храните их на поясе или в инвентаре на случай крайней необходимости."/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Разные зелья обладают разными эффектами. Вы ранее уже сталкивались с Aqua Regia, но большенство зелий более полезно. Найдите Potion of Invisibility (Зелье невидимости)." trigger="pickupitem" value="Potion of Invisibility"/>
+    <script text="Разные зелья обладают разными эффектами. Ранее вы уже сталкивались с Aqua Regia, но большенство зелий более полезно. Найдите Potion of Invisibility (Зелье невидимости)." trigger="pickupitem" value="Potion of Invisibility"/>
     <script text="Potion of Invisibility делает вас невидимым. Поместите его на пояс и выпейте его, кликнув на нём правой кнопкой мыши." trigger="drinkpotion" value="Potion of Invisibility"/>
     <script text="Превосходно! Обратите внимание на иконку, появившуюся в левой части экрана. Это активный эффект. Он называется Бафф — если делает вас сильнее или Дебафф — если эффект делает вас слабее. Этот бафф делает вас невидимым."/>
 	<script text="На иконке есть таймер, он показывает сколько ходов действует эффект. Когда он дойдет до нуля, эффект баффа развеется. В данном случае вы опять станете видимым."/>
     <script action="removeblocker" value="Dungeon Rubble"/>
     <script text="Идите в следующую комнату и убейте Diggle." trigger="killmonster" value="Diggle"/>
     <script action="removeblocker" value="Dwarven Educational Grate"/>
-    <script text="Как вы могли заметить, невидимость развеивается, когда вы атакуете врага. Идите в северную комнату - там вы найдете еще одно зелье." trigger="pickupitem" value="Voltaic Potion"/>
+    <script text="Как вы могли заметить, невидимость развеивается, когда вы атакуете врага. Идите на верх - там вы найдете еще одно зелье." trigger="pickupitem" value="Voltaic Potion"/>
     <script text="Voltaic potion (Вольтамперное зелье) пропитывает ваше тело электричеством, увеличивает ваше сопротивление voltaic (вольтамперному) урону и поражает ваших врагов Смертоносной Молнией. Правая кнопка чтобы выпить." trigger="drinkpotion" value="Voltaic Potion"/>
     <script action="removeblocker" value="Dungeon Rubble"/>
     <script text="Отлично. Идите в третью комнату, и убейте Electroblobby." trigger="killmonster" value="Electroblobby"/>
