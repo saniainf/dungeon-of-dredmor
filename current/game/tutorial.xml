@@ -264,7 +264,7 @@
     <skill id="20"/>
     <ability name="Xeuclid's Translation"/>
     <ability name="Pyrokinesis"/>
-    <script text="Одни герои сражаются оружием из стали - ну, или если припрет к стенке, то из дерева, или даже из спагетти. Другие выбирают силу разума, искусство магии - именно она станет объектом этого этапа обучения."/>
+    <script text="Одни герои сражаются оружием из стали - ну, или если припрет к стенке, то из дерева, или даже из спагетти. Другие выбирают силу разума, искусство магии - именно оно станет объектом обучения этого этапа."/>
 	<script text="Заклинания используются так же, как боевые навыки. При помощи магии можно призвать помощников, перенести себя из опасного места (или в него), и вообще, сделать жизнь более легкой и веселой."/>
     <script text="Перед вами гигантский ров который не дает вам пройти. Используем Xeuclid's Translation, чтобы перенести вас на другую сторону."/>
     <script text="Сначала активируем заклинание кликнув по нему на панели навыков." trigger="equipability" value="Xeuclid's Translation"/>
@@ -281,7 +281,7 @@
   </tutorial>
 
   <tutorial>
-    <info name="Buffs" description="Let's get powered up." icon="skills/stat_str64.png"/>
+    <info name="Buffs" description="Баффы. Включим овердрайв." icon="skills/stat_str64.png"/>
     <room name="Tutorial Chamber: Buffs" playerStartX="4" playerStartY="4"/>
     <skill id="0"/>
     <skill id="1"/>
@@ -292,13 +292,13 @@
     <skill id="6"/>
 
     <ability name="Power of Magic Steel"/>
-    <script text="Some heroes choose to combine magic and weaponry for potent effects. These wizards often choose to use spells to make their attacks more powerful. These are called 'Buffs'."/>
-    <script text="For instance, the Power of Magic Steel spell, from the school of Viking Magic, infuses your weapon with potent voltaic energies. Click on the Power of Magic Steel spell in your spell belt." trigger="equipability" value="Power of Magic Steel"/>
-    <script text="Now right-click to cast." trigger="useability" value="Power of Magic Steel"/>
-    <script text="The Power of Magic Steel has now infused your weapon with voltaic energy. This spell stays active for up to five attacks, but it also consumes magic as long as it is in effect. If you run out of mana, the spell will dissolve."/>
-    <script text="You can also cancel the spell at any time by pressing the gold X in the buff icon on the left hand side of the screen."/>
+    <script text="Некоторые герои сочетают магию и оружие. Они выбирают заклинания, делающие их атаки более мощными. Такие заклинания называются — Баффы."/>
+    <script text="Например заклинание Power of Magic Steel из школы Viking Magic добавляет вашему оружию вольтамперный урон. Кликните по Power of Magic Steel на панели навыков." trigger="equipability" value="Power of Magic Steel"/>
+    <script text="Теперь кликните правой кнопкой для использования." trigger="useability" value="Power of Magic Steel"/>
+    <script text="Power of Magic Steel добавило вашему оружию вольтамперный урон. Этот бафф действует пять ударов, но при каждом ударе расходует ману. Если мана закончится бафф развеется."/>
+    <script text="Также вы сами можете в любой момент прекратить действие баффа кликнув по золотому крестику на его иконке."/>
     <script action="removeblocker" value="Dungeon Rubble"/>
-    <script text="Now that you are full of lightning, why not take it out on the Enraged Diggle in the other room?" trigger="killmonster" value="Enraged Diggle"/>           
+    <script text="Теперь когда вы наполнены мощью электричества убейте Enraged Diggle в соседней комнате?" trigger="killmonster" value="Enraged Diggle"/>           
   </tutorial>
    
 </tutorialfile>
