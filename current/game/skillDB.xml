@@ -31,7 +31,7 @@
   
   -->
 
-<skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Можете ли вы решить загадку стали? К сожалению, нет - но вы получаете боевые бонусы и специальные атаки при использовании мечей.">
+<skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Держа в руке меч (Sword), вы получаете боевые бонусы, специальные атаки, и непреодолимое желание прочитать &quot;Как закалялась сталь&quot;.">
    <art icon="skills/skill_sword.png"/>
   <tag level="0" name="Slasher"/>
   <tag level="3" name="Fencer"/>
@@ -41,32 +41,32 @@
    <loadout type="weapon" subtype="Wooden Sword" always="1"/>    
 </skill>
 
-<skill name="Daggers" id="45" type="rogue" achievement="ACHIEVEMENT_DAGGER_MASTERY" description="&quot;Daggers: they aren't just small swords anymore.&quot;" >
+<skill name="Daggers" id="45" type="rogue" achievement="ACHIEVEMENT_DAGGER_MASTERY" description="Держа в руке кинжал (Dagger), вы получаете боевые бонусы и специальные атаки. Ведь это не просто &quot;маленький меч&quot;." >
     <art icon="skills/daggery64.png"/>
     <loadout type="weapon" subtype="Shiv" always="1" />
 </skill>
 
-<skill name="Axes" id="1" type="warrior" achievement="ACHIEVEMENT_AXE_MASTERY" description="You get combat bonuses and special attacks when wielding axes.">
+<skill name="Axes" id="1" type="warrior" achievement="ACHIEVEMENT_AXE_MASTERY" description="Держа в руке топор (Axe), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_axe.png"/>
    <loadout type="weapon" subtype="Crude Stone Axe" always="1"/>
 </skill>
 
-<skill name="Maces" id="2" type="warrior" achievement="ACHIEVEMENT_MACE_MASTERY" description="You get combat bonuses and special attacks when wielding maces.">
+<skill name="Maces" id="2" type="warrior" achievement="ACHIEVEMENT_MACE_MASTERY" description="Держа в руке булаву (Mace), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_mace.png"/>
    <loadout type="weapon" subtype="Gnarled Club" always="1"/>
    </skill>
 
-  <skill name="Polearms" id="46" type="warrior" achievement="ACHIEVEMENT_POLEARMS_MASTERY" description="Why walk all the way over to someone to stab them? The polearm is the lazy person's answer to melee combat." >
+  <skill name="Polearms" id="46" type="warrior" achievement="ACHIEVEMENT_POLEARMS_MASTERY" description="Зачем подходить к кому-то, чтобы нанести удар? Копье (Polearms) – выбор ленивого человека для ближнего боя." >
     <art icon="skills/polearming64.png"/>
     <loadout type="weapon" subtype="Peasantly Pitchfork" always="1" />
   </skill>
 
-  <skill name="Staves" id="3" type="warrior" achievement="ACHIEVEMENT_STAFF_MASTERY" description="You get combat bonuses and special attacks when wielding staves.">
+  <skill name="Staves" id="3" type="warrior" achievement="ACHIEVEMENT_STAFF_MASTERY" description="Держа в руке шест (Staff), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_staff.png"/>
    <loadout type="weapon" subtype="Hefty Stick" always="1"/>
    </skill>
 
-<skill name="Archery" id="4" type="rogue" achievement="ACHIEVEMENT_BOW_MASTERY" description="You get combat bonuses and special attacks when wielding crossbows.">
+<skill name="Archery" id="4" type="rogue" achievement="ACHIEVEMENT_BOW_MASTERY" description="При использовании арбалета (Bow), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_crossbow.png"/>
    <loadout type="weapon" subtype="Small Crossbow" always="1"/>
    <loadout type="weapon" subtype="Wooden Bolt" amount="18" always="1"/>
@@ -75,76 +75,76 @@
    <!-- <loadout type="armour" subtype="Parachute Pants" always="1"/> U can't have this -->
    </skill>
 
-<skill name="Thrown Weaponry" id="5" type="rogue" achievement="ACHIEVEMENT_THROWN_MASTERY" description="You get combat bonuses and special attacks when wielding thrown weaponry.">
+<skill name="Thrown Weaponry" id="5" type="rogue" achievement="ACHIEVEMENT_THROWN_MASTERY" description="При использовании метательного оружия (Thrown), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_thrown.png"/>
    <loadout type="weapon" subtype="Dwarven Boomerang" amount="16" always="1"/>
    <loadout type="weapon" subtype="Acid Flask" amount="3" always="1"/>
    <loadout type="weapon" subtype="Concussion Bomb" amount="5" />
    </skill>
 
-<skill name="Unarmed Combat" id="6" type="warrior" achievement="ACHIEVEMENT_UNARMED_MASTERY" description="You get combat bonuses and special attacks when engaged in foot-based unarmed combat.">
+<skill name="Unarmed Combat" id="6" type="warrior" achievement="ACHIEVEMENT_UNARMED_MASTERY" description="При использовании своих ног как оружия (Unarmed), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_unarmed.png"/>
    <loadout type="armour" subtype="Hachimaki"/>
    </skill>
 
-<skill name="Dual Wielding" id="7" type="warrior"  achievement="ACHIEVEMENT_DUAL_WIELD_MASTERY" description="You can effectively wield one weapon in each hand.">
+<skill name="Dual Wielding" id="7" type="warrior"  achievement="ACHIEVEMENT_DUAL_WIELD_MASTERY" description="Вы можете эффективно использовать оружие в обеих руках.">
    <art icon="skills/skill_dualwield.png"/>
    </skill>
 
-<skill name="Shield Bearer" id="8" type="warrior" achievement="ACHIEVEMENT_SHIELD_MASTERY"  description="You get combat bonuses and special attacks when using shields.">
+<skill name="Shield Bearer" id="8" type="warrior" achievement="ACHIEVEMENT_SHIELD_MASTERY"  description="При использовании шитов (Shield), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_shieldbearer.png"/>
    <loadout type="armour" subtype="Wooden Shield"/>
    </skill>
 
-<skill name="Berserker Rage" id="9" type="warrior" achievement="ACHIEVEMENT_BERSERKER_MASTERY" description="As you attack, or are yourself attacked, your berserk rage increases your fighting power.">
+<skill name="Berserker Rage" id="9" type="warrior" achievement="ACHIEVEMENT_BERSERKER_MASTERY" description="Когда вы атакуете или вас атакуют, ваша ярость берсерка увеличивает вашу боевую мощь.">
    <art icon="skills/skill_berserker.png"/>
    </skill>
 
-<skill name="Artful Dodger" id="10" type="rogue" achievement="ACHIEVEMENT_DODGE_MASTERY" description="You can evade enemy attacks more easily, and can leap about the dungeon.">
+<skill name="Artful Dodger" id="10" type="rogue" achievement="ACHIEVEMENT_DODGE_MASTERY" description="Вам значительно проще уклоняться от атак противника.">
    <art icon="skills/skill_dodging.png"/>
     <loadout type="armour" subtype="Flippy Floppies"/>
    </skill>
 
-<skill name="Master of Arms" id="11" type="warrior" achievement="ACHIEVEMENT_MASTER_OF_ARMS_MASTERY" description="You can use armour more effectively, and can employ defensive maneuvers.">
+<skill name="Master of Arms" id="11" type="warrior" achievement="ACHIEVEMENT_MASTER_OF_ARMS_MASTERY" description="Вы эффективней пользуетесь броней и можете использовать защитные навыки.">
    <art icon="skills/skill_armour.png"/>
    <loadout type="armour" subtype="Iron Breastplate"/>
    </skill>
 
-<skill name="Deadshot" id="12" type="warrior" deprecated="1" achievement="ACHIEVEMENT_DEADSHOT_MASTERY" description="You are less likely to miss, and when you hit you have an increased opportunity to deal terrible wounds.">
+<skill name="Deadshot" id="12" type="warrior" deprecated="1" achievement="ACHIEVEMENT_DEADSHOT_MASTERY" description="Вы меньше промахиваетесь по врагу, а при попадании имеете больший шанс нанести ужасную рану.">
    <art icon="skills/skill_deadshot.png"/>
    <loadout type="armour" subtype="Spectacles"/>
    <flags deprecated="1"/>
 </skill>
 
-<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="You do not heal naturally and gain no benefit from food, but instead regain your health by killing things and drinking their blood. Also, sparkles.">
+<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="Ваше здоровье само не восстанавливается и еда стала безвкусной. Зато вы можете лечиться убив кого-то и выпив его кровь, а еще сиять на солнышке">
    <art icon="skills/skill_vampirism.png"/>
    <flags noFood="1" />
    </skill>
 
-<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="You create golems!">
+<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="Вы создаете големов!>
    <art icon="skills/skill_golemancer.png"/>
    <loadout type="armour" subtype="Golemancer's Cap"/>
    </skill>
 
-<skill name="Fleshsmithing" id="15" type="wizard" achievement="ACHIEVEMENT_FLESHSMITHING_MASTERY" description="Other men work in clay, steel, or wood. We call them squeamish.">
+<skill name="Fleshsmithing" id="15" type="wizard" achievement="ACHIEVEMENT_FLESHSMITHING_MASTERY" description="Другие работают с глиной, сталью или деревом. Мы зовем их привередами.">
    <art icon="skills/skill_fleshshaper.png"/>
    <loadout type="food" subtype="Offal" amount="3" />
    </skill>
 
-<skill name="Mathemagic" id="16" type="wizard" achievement="ACHIEVEMENT_MATHEMAGIC_MASTERY" description="Arithmancers of the universe, unite!">
+<skill name="Mathemagic" id="16" type="wizard" achievement="ACHIEVEMENT_MATHEMAGIC_MASTERY" description="Арифмантики вселенной, объединяйтесь!">
    <art icon="skills/skill_mathemagic.png"/>
    <loadout type="armour" subtype="Coat of Tweed"/>
    </skill>
 
-<skill name="Psionics" id="17" type="wizard" achievement="ACHIEVEMENT_PSIONICS_MASTERY"  description="No, not the mind probe!">
+<skill name="Psionics" id="17" type="wizard" achievement="ACHIEVEMENT_PSIONICS_MASTERY"  description="Нет, только не мозговой зонд!">
    <art icon="skills/skill_psionicist.png"/>
    </skill>
 
-<skill name="Necronomiconomics" type="wizard" id="18" achievement="ACHIEVEMENT_NECRONOMICONOMICS_MASTERY" description="Necronomiconomics: the economy of the Undead.">
+<skill name="Necronomiconomics" type="wizard" id="18" achievement="ACHIEVEMENT_NECRONOMICONOMICS_MASTERY" description="Некрономикономика: экономика Нежити.">
    <art icon="skills/skill_necronomiconomics.png"/>
    </skill>
 
-<skill name="Viking Wizardry" type="wizard" id="19" achievement="ACHIEVEMENT_VIKING_WIZARD_MASTERY"  description="Hail Odin!">
+<skill name="Viking Wizardry" type="wizard" id="19" achievement="ACHIEVEMENT_VIKING_WIZARD_MASTERY"  description="Хайль Один!">
    <art icon="skills/skill_vikingwizard.png"/>
    </skill>
 
