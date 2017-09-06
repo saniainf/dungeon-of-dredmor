@@ -28,7 +28,7 @@
   </ability>
   
   [[where is sanguinista hooked up?]] 
-  
+  в начале идут СПОСОБНОСТИ
   -->
 
 <skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Держа в руке меч (Sword), вы получаете боевые бонусы, специальные атаки, и непреодолимое желание прочитать &quot;Как закалялась сталь&quot;.">
@@ -148,30 +148,30 @@
    <art icon="skills/skill_vikingwizard.png"/>
    </skill>
 
-<skill name="Astrology" id="20" type="wizard" achievement="ACHIEVEMENT_ASTROLOGY_MASTERY" description="When they ask you where you're born, you put down Saturn.">
+<skill name="Astrology" id="20" type="wizard" achievement="ACHIEVEMENT_ASTROLOGY_MASTERY" description="Когда вас спрашивают, где вы родились, вы указываете на Сатурн.">
    <art icon="skills/skill_astrologer.png"/>
    <loadout type="armour" subtype="Astrologer's Hat"/>
    </skill>
 
-<skill name="Promethean Magic" type="wizard" id="21" achievement="ACHIEVEMENT_PROMETHEAN_MASTERY" description="Promethean Magic is the branch of magic that deals with giving fire to people, by any means necessary.">
+<skill name="Promethean Magic" type="wizard" id="21" achievement="ACHIEVEMENT_PROMETHEAN_MASTERY" description="Прометеева Магия – это область магии дающая людям огонь, любой ценой.">
    <art icon="skills/skill_prometheanmagic.png"/>
    </skill>
 
-<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="Years of Wizard School has made your spells and use of mana more effective.">
+<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="Годы в Школе Чародейства и Волшебства сделали ваши заклинания более эффективными, а использование маны более экономным.">
    <art icon="skills/skill_magictraining.png"/>
    <loadout type="armour" subtype="Cracked Orb" />
    </skill>
 
-<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="You regain magic points by killing things. Every time you kill something, you regain some mana.">
+<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="Убивая кого-то, вы восстанавливаете ману.">
    <art icon="skills/skill_bloodmagic.png"/>
    <loadout type="weapon" subtype="Sacrificial Dagger" />
    </skill>
 
-<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="You can tap into lines of invisible force to quickly regain magic power.">
+<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="Вы можете использовать потоки невидимой Силы, для восполнения своей магической энергии.">
   <art icon="skills/skill_leylines.png"/>
   </skill>
 
-  <skill name="Perception" id="25"  type="rogue" achievement="ACHIEVEMENT_PERCEPTION_MASTERY" description="You have good eyesight, and are more likely to be able to find traps and hit enemies.">
+  <skill name="Perception" id="25"  type="rogue" achievement="ACHIEVEMENT_PERCEPTION_MASTERY" description="У вас отличное зрение, поэтому вам легче находить ловушки и попадать по врагам.">
   <art icon="skills/skill_perception.png"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
@@ -179,7 +179,7 @@
    <loadout type="misc" subtype="lockpick" always="1"/>
    </skill>
 
-  <skill name="Burglary" id="26" type="rogue" achievement="ACHIEVEMENT_BURGLARY_MASTERY" description="You can sneak around the dungeon, avoiding monster attention and occasionally stealing items.">
+  <skill name="Burglary" id="26" type="rogue" achievement="ACHIEVEMENT_BURGLARY_MASTERY" description="Вы настолько аккуратно передвигаетесь по подземелью, что враги вас не замечают, даже когда ваша рука у них в кармане.">
   <art icon="skills/skill_stealth.png"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
@@ -191,18 +191,18 @@
    <loadout type="misc" subtype="lockpick" always="1"/>
    </skill>
 
-<skill name="Assassination" id="27" type="rogue" achievement="ACHIEVEMENT_ASSASSINATION_MASTERY" description="You deal critical blows to monsters more often.">
+<skill name="Assassination" id="27" type="rogue" achievement="ACHIEVEMENT_ASSASSINATION_MASTERY" description="Вы часто наносите критические удары.">
    <art icon="skills/skill_assassination.png"/>
    </skill>
 
-<skill name="Fungal Arts" id="28" type="rogue" achievement="ACHIEVEMENT_FUNGUS_MASTERY"  description="You grow strange mushrooms and are more resistant to the effects of poison and putrefaction.">
+<skill name="Fungal Arts" id="28" type="rogue" achievement="ACHIEVEMENT_FUNGUS_MASTERY"  description="Вы выращиваете странные грибы и меньше подвержены воздействию яда и гниения.">
    <art icon="skills/skill_mushroomlore.png"/>
    <loadout type="mushroom" always="1" amount="3"/>
    <loadout type="mushroom" always="1" amount="2"/>
    <loadout type="mushroom" always="1" amount="1"/>
    </skill>
 
-<skill name="Alchemy" id="29" type="wizard" achievement="ACHIEVEMENT_ALCHEMY_MASTERY" description="You can create potions, are generally very clever, and occasionally enjoy consuming large quantities of mercury.">
+<skill name="Alchemy" id="29" type="wizard" achievement="ACHIEVEMENT_ALCHEMY_MASTERY" description="Вы можете создавать зелья и очень преуспели в этом. А иногда вам хочется пропустить одину-другую рюмашку ртути.">
    <art icon="skills/skill_alchemy.png"/>
    <loadout type="potion"  always="1" />
    <loadout type="reagent" amount="1"  always="1" />
@@ -217,7 +217,7 @@
 
   <!-- these may look wrong. But sadly, they're right. There was a bit of a mess around version 1.0.2 or so which Oldbies will remember. -->
   
-<skill name="Wand Lore" id="30" type="wizard" achievement="ACHIEVEMENT_ARCHAEOLOGY_MASTERY" description="You can use and manipulate wands more effectively.">
+<skill name="Wand Lore" id="30" type="wizard" achievement="ACHIEVEMENT_ARCHAEOLOGY_MASTERY" description="Ваша палочка слушается вас бесприкословно.">
    <art icon="skills/skill_wandlore.png"/>
    <loadout type="wand" always="1" />
    <loadout type="wand" always="1" />
@@ -225,18 +225,18 @@
     <loadout type="toolkit" subtype="n-Dimensional Lathe"  always="1"/>
 </skill>
 
-<skill name="Archaeology" id="31" type="rogue" achievement="ACHIEVEMENT_SMITHING_MASTERY"  description="You start the game with a fedora, and are generally dashing, rogueish. One day you may even get tenure.">
+<skill name="Archaeology" id="31" type="rogue" achievement="ACHIEVEMENT_SMITHING_MASTERY"  description="Вы начинаете игру в фетровой шляпе и большим процентом авантюризма в крови.">
   <art icon="skills/skill_archaeology.png"/>
   <loadout type="armour" subtype="Fedora" always="1" />
   </skill>
 
-<skill name="Smithing" id="32" type="warrior" achievement="ACHIEVEMENT_TINKERING_MASTERY"  description="Smithing: for the adventurer who likes do-it-yourself projects. Also makes you stronger than usual.">
+<skill name="Smithing" id="32" type="warrior" achievement="ACHIEVEMENT_TINKERING_MASTERY"  description="Кузнечное дело: для подписчиков &quot;Сделай сам&quot;. К тому-же работа с молотом увеличивает вашу силу.">
   <art icon="skills/skill_smithing.png"/>
   <loadout type="toolkit" subtype="My Little Anvil Junior Smithing Kit" always="1" />
   <loadout type="toolkit" subtype="Disposable Ingot Press" always="1" />
   </skill>
 
-<skill name="Tinkering" id="33" type="rogue" achievement="ACHIEVEMENT_REALLY_TINKERING_MASTERY"  description="You can create new devices, especially traps, out of gears, mechanical parts, and other rubbish.">
+<skill name="Tinkering" id="33" type="rogue" achievement="ACHIEVEMENT_REALLY_TINKERING_MASTERY"  description="Вы умеете собирать необычные устройства, главным образом ловушки, из шестеренок, пружинок, частей механизмов и прочего хлама.">
    <art icon="skills/skill_tinkerer.png"/>
    <loadout type="toolkit" subtype="Tinkerer Parts" always="1" />
    <loadout type="toolkit" subtype="Disposable Ingot Press" always="1" />
@@ -245,62 +245,62 @@
    <loadout type="component" amount="3" always="1"/>
    </skill>
   
-  
+  <!-- а вот тут начинаются НАВЫКИ то что будет на панели внизу -->
   
 <ability name="Swordplay" icon="skills/skill_sword.png" skill="0" startSkill="1">
-  <description text="Swords! The pointy bit goes in the other guy."/>
+  <description text="Мечи! Острым концом направлять в сторону неприятеля."/>
   </ability>
 <ability name="Axemanship" icon="skills/skill_axe.png" skill="1" startSkill="1">
-  <description text="Axes: The key to removing all manner of limbs."/>
+  <description text="Топоры – лучший выбор для отсечения конечностей."/>
   </ability>
 <ability name="Macery" icon="skills/skill_mace.png" skill="2" startSkill="1">
-  <description text="Maces: Useful for knocking out creeps. You can even keep them in your handbag if you want to."/>
+  <description text="Булавы эффективно вышибают мозги. Можете даже хранить их в сумке, если хотите."/>
   </ability>
 <ability name="Staff-fighting" icon="skills/skill_staff.png" skill="3" startSkill="1">
-  <description text="Staves! They stave off all kinds of things."/>
+  <description text="Шесты! Держи всех на растоянии."/>
   </ability>
 <ability name="Crossbows" icon="skills/skill_crossbow.png" skill="4" startSkill="1">
-  <description text="Blast your enemies from afar with your snipery skills. (This skill lovingly sponsored by the Bolt Council. Join us today, or we'll put a squid in your bed.)"/>
+  <description text="Порази врага дальностью снайперского выстрела. (Этот навык с любовью спонсирует совет Болтистов. Присоединяйся к нам сегодня или мы подложим вам в постель кальмара.)"/>
 </ability>
   
 <ability name="Thrown Weaponry" icon="skills/skill_thrown.png" skill="5" startSkill="1">
-  <description text="Throw a tantrum. Better yet, throw something with sharp edges. Or maybe even something that explodes into sharp fragments!"/>
+  <description text="Отбросить панику. Лучше бросьте что-то острое или что-то разлетающаяся на сотни осколков!"/>
 </ability>
   
 <ability name="The Unarmed Art" icon="skills/skill_unarmed.png" skill="6" startSkill="1">
-  <description text="Who needs weapons? Destroy your enemies with your mighty feet."/>
+  <description text="Кому нужно это оружие? Уничтожь врагов своими могучими ногами."/>
   </ability>
 <ability name="Dual Wielding" icon="skills/skill_dualwield.png" skill="7" startSkill="1">
-  <description text="What's better than one weapon? Two weapons at the very same time!"/>
+  <description text="Одно оружие хорошо, а два - лучше!"/>
   </ability>
 <ability name="Shield-bearer" icon="skills/skill_shieldbearer.png" skill="8" startSkill="1">
-  <description text="Return with your shield - or under it? For the defense-minded adventurer."/>
+  <description text="Вернуться со щитом или на щите? Для тех, кто знает толк в защите."/>
   </ability>
 <ability name="Berserker Rage" icon="skills/skill_berserker.png" skill="9" startSkill="1">
-  <description text="Do it! Do it for Crom!"/>
+  <description text="Сделай это! Сделай это во имя Крома!"/>
   </ability>
 <ability name="Artful Dodging" icon="skills/skill_dodging.png" skill="10" startSkill="1">
-  <description text="The best defense is to be somewhere else."/>
+  <description text="Лучшая защита от удара, не получать удар."/>
   </ability>
 <ability name="Master of Arms" icon="skills/skill_armour.png" skill="11" startSkill="1">
-  <description text="The Armorial Art revolves around gracefully strapping large chunks of metal to your body."/>
+  <description text="В ношении брони главное придумать как прикрепить к телу большие куски метала."/>
   </ability>
 <ability name="Deadshot" icon="skills/skill_deadshot.png" skill="12" startSkill="1">
-  <description text="Aim deadly and true. You'd think it was common sense that hitting your target would enhance combat performance, right?"/>
+  <description text="Точный и смертельный прицел. Вам кажется это неплохо повысит вашу боевую эффективность, right?"/>
   </ability>
 
   <!-- Spooky, sparkly -->
 
   <ability name="Vampirism" icon="skills/skill_vampirism.png" skill="13" startSkill="1">
-    <description text="Quench that insatiable thirst with the tingly life-fluid of your enemies - but beware the day-star, for your end under its unforgiving gaze would be swift and sparkly. As a vampire, you can only heal by unnatural means."/>
+    <description text="Утолите ненасытную жажду, кровью ваших врагов. Вампиры лечатся только таким чудовищным способом. Но остерегайтесь дневной звезды, под ее пристальным взором ваша жизнь будет быстрой и яркой."/>
   </ability>
   <!-- Core Magic School Skills -->
 
 <ability name="Golemancy" icon="skills/skill_golemancer.png" skill="14" startSkill="1">
-  <description text="The Greater and Lesser Golemantic Arts pertain to the animation and subsequent irritation of base matter. (In other words, you give life to non-living stuff.)"/>
+  <description text="Старшая и Младшая Големантия позволяет одушевлять и заставлять двигаться исходный материал. (Другими словами вы можете вдохнуть жизнь в неживые вещи.)"/>
   </ability>
 <ability name="Flesh-shaping" icon="skills/skill_fleshshaper.png" skill="15" startSkill="1">
-  <description text="You are a fleshsmith! You can heal the wounds of your body, rend the flesh of your enemies, and possibly summon deli meats from the Elemental Plane of Cold Cuts."/>
+  <description text="Вы Мастер Плоти! Вы можете исцелять раны на теле, разрывать плоть врагов и возможность заказывать мясные деликатесы из Колбасного Царства Стихий."/>
   </ability>
 <ability name="Mathemagic" icon="skills/skill_mathemagic.png" skill="16" startSkill="1">
   <description text="Using the power of Mathemagic you can multiply power, subtract hope, and cube-root the dreams of man himself. This is a strange, abstract school of magic that has a way of driving its users insane."/>
