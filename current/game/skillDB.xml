@@ -61,7 +61,7 @@
     <loadout type="weapon" subtype="Peasantly Pitchfork" always="1" />
   </skill>
 
-  <skill name="Staves" id="3" type="warrior" achievement="ACHIEVEMENT_STAFF_MASTERY" description="Держа в руке шест (Staff), вы получаете боевые бонусы и специальные атаки.">
+  <skill name="Staves" id="3" type="warrior" achievement="ACHIEVEMENT_STAFF_MASTERY" description="Держа в руке посох (Staff), вы получаете боевые бонусы и специальные атаки.">
    <art icon="skills/skill_staff.png"/>
    <loadout type="weapon" subtype="Hefty Stick" always="1"/>
    </skill>
@@ -121,7 +121,7 @@
    <flags noFood="1" />
    </skill>
 
-<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="Вы создаете големов!>
+<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="Вы создаете големов!">
    <art icon="skills/skill_golemancer.png"/>
    <loadout type="armour" subtype="Golemancer's Cap"/>
    </skill>
@@ -167,7 +167,7 @@
    <loadout type="weapon" subtype="Sacrificial Dagger" />
    </skill>
 
-<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="Вы можете использовать потоки невидимой Силы, для восполнения своей магической энергии.">
+<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="Вы можете использовать линии невидимой Силы, для восполнения своей магической энергии.">
   <art icon="skills/skill_leylines.png"/>
   </skill>
 
@@ -254,10 +254,10 @@
   <description text="Топоры – лучший выбор для отсечения конечностей."/>
   </ability>
 <ability name="Macery" icon="skills/skill_mace.png" skill="2" startSkill="1">
-  <description text="Булавы эффективно вышибают мозги. Можете даже хранить их в сумке, если хотите."/>
+  <description text="Булавы эффективно вышибают мозги. Можете даже носить их с собой в сумке, если хотите."/>
   </ability>
 <ability name="Staff-fighting" icon="skills/skill_staff.png" skill="3" startSkill="1">
-  <description text="Шесты! Держи всех на растоянии."/>
+  <description text="Посох! Держи всех на растоянии."/>
   </ability>
 <ability name="Crossbows" icon="skills/skill_crossbow.png" skill="4" startSkill="1">
   <description text="Порази врага дальностью снайперского выстрела. (Этот навык с любовью спонсирует совет Болтистов. Присоединяйся к нам сегодня или мы подложим вам в постель кальмара.)"/>
@@ -286,7 +286,7 @@
   <description text="В ношении брони главное придумать как прикрепить к телу большие куски метала."/>
   </ability>
 <ability name="Deadshot" icon="skills/skill_deadshot.png" skill="12" startSkill="1">
-  <description text="Точный и смертельный прицел. Вам кажется это неплохо повысит вашу боевую эффективность, right?"/>
+  <description text="Точный и смертельный прицел. Вам кажется это неплохо повысит вашу боевую эффективность."/>
   </ability>
 
   <!-- Spooky, sparkly -->
@@ -303,94 +303,94 @@
   <description text="Вы Мастер Плоти! Вы можете исцелять раны на теле, разрывать плоть врагов и возможность заказывать мясные деликатесы из Колбасного Царства Стихий."/>
   </ability>
 <ability name="Mathemagic" icon="skills/skill_mathemagic.png" skill="16" startSkill="1">
-  <description text="Using the power of Mathemagic you can multiply power, subtract hope, and cube-root the dreams of man himself. This is a strange, abstract school of magic that has a way of driving its users insane."/>
+  <description text="Используя силу Матемагии вы можете умножить силу, вычесть надежду и извлечь кубический корень из мечты человека. Это странная, абстрактная школа магии, способная свести с ума ученика."/>
   </ability>
 <ability name="Psionics" icon="skills/skill_psionicist.png" skill="17" startSkill="1">
-  <description text="'You will be able to paralyze nerves, shatter bones, set fires, suffocate an enemy or burst his organs...'"/>
+  <description text="Вы можете парализовать, крушить кости, вызывать огонь, душить врага или разрывать его изнутри..."/>
   </ability>
 <ability name="Necronomiconomics" icon="skills/skill_necronomiconomics.png" skill="18" startSkill="1">
-  <description text="Necronomiconomics: The study of economic principles of the dead, taught from the book bound with strange leather. A shady magic indeed."/>
+  <description text="Некрономикономика: Изучение экономических принципов мертвых, по книге в переплете из странной кожи. В самом деле сомнительная магия."/>
   </ability>
 <ability name="Viking Wizardry" icon="skills/skill_vikingwizard.png" skill="19" startSkill="1">
-  <description text="In the cold Northlands they fostered harsh - but fair - magicks particularly useful in close combat."/>
+  <description text="В холодных Северных Землях создали грубую но действенную магию, особенно полезную в ближнем бою."/>
   </ability>
 <ability name="Astrology" icon="skills/skill_astrologer.png" skill="20" startSkill="1">
-  <description text="Magic dots in the sky shall lead the way to True Knowledge! This is a generally nonviolent magic, not that you can't get a little imaginative of course ... "/>
+  <description text="Волшебные точки в небе указывают путь к Истинным Знаниям! Обычно это мирная магия, однако никто не запрещает вам проявить немного фантазии ... "/>
   </ability>
 <ability name="Promethean Magic" icon="skills/skill_prometheanmagic.png" skill="21" startSkill="1">
-  <description text="Harness the power of The Ever-Burning, said by the great sages to gently barbeque the void-which-binds-the-worlds. This is all about setting things on fire - setting *everything* on fire."/>
+  <description text="Воспользуйся мощью Вечногорящего, делая шашлык из пространства связывающего миры – говорили мудрецы. Эта магия поджигает все - абсолютно все."/>
   </ability>
 
   <!-- Miscellaneous Magic skills -->
 
 <ability name="Magic Training" icon="skills/skill_magictraining.png" skill="22" startSkill="1">
-  <description text="(irreverent Potter quote here)"/>
+  <description text="(здесь неуважительная цитата Поттера)"/>
   </ability>
 <ability name="Blood Magic" icon="skills/skill_bloodmagic.png" skill="23" startSkill="1">
-  <description text="Gain magical power through the blood of your enemies. Makes magic a much messier affair. Not a good conversation-starter."/>
+  <description text="Получайте магическую энергию из крови ваших врагов. Магия не для чистоплюев. И не лучшая тема для разговоров."/>
   </ability>
 <ability name="Ley Lines" icon="skills/skill_leylines.png" skill="24" startSkill="1">
-  <description text="Allows you to pulls energy from mysterious magical confluences whose exact mechanisms are known only to the wizened keepers of magical mysteries and retail zoning auditors."/>
+  <description text="Позволяет вытягивать энергию из пересечений таинственных магических потоков, чьи механизмы известны только престарелым хранителям тайн или кладовщикам."/>
   </ability>
 
   <!-- Rogue Tricks -->
 
 <ability name="Perception" icon="skills/skill_perception.png" skill="25" startSkill="1">
-  <description text="Seeing it coming, at least you'll know what hit you. Improves sight distance, trap-finding, actually hitting enemies, loot-finding, and occasionally dodging."/>
+  <description text="По крайней мере вы увидите то что вас поразит. Увеличивает дальность зрения и обнаружения ловушек, количество найденных вещей, шанс попадания и уклонения."/>
   </ability>
 <ability name="Burglary" icon="skills/skill_stealth.png" skill="26" startSkill="1">
-  <description text="They'll never know you were even there! This is a sneaky, stealy skill."/>
+  <description text="Они даже не узнают, что ты там был! Навык ловкой кражи."/>
   </ability>
 <ability name="Assassination" icon="skills/skill_assassination.png" skill="27" startSkill="1">
-  <description text="Something about a creed. Honestly? You just kill better."/>
+  <description text="И так, ваше кредо ... Серьезно? Вы просто лучше убиваете."/>
   </ability>
 
   <!-- More generically adventurer rogue-skills -->
 
 <!-- TODO: change this to "Fungal Arts" -->
 <ability name="Fungal Arts" icon="skills/skill_mushroomlore.png" skill="28" startSkill="1">
-  <description text="You collect molds, spores, and fungus and plant them on the corpses of your enemies to see what useful grows out of it. Icky."/>
+  <description text="Вы собираете плесень, споры и грибки. Потом высаживаете их на трупы врагов, посмотреть, что полезного может вырасти. Буэ."/>
   </ability>
 <ability name="Alchemy" icon="skills/skill_alchemy.png" skill="29" startSkill="1">
-  <description text="You can bottle fame, brew glory, even put a stopper on death."/>
+  <description text="Вы можете разливать по колбам славу, заваривать триумф и даже закупорить смерть."/>
   </ability>
 <ability name="Wand Lore" icon="skills/skill_wandlore.png" skill="30" startSkill="1">
-  <description text="The knowledge of properly polishing a wand may extend its working life and enhance the abilities of the wand beyond the expected."/>
+  <description text="Умение правильно полировать палочку может продлить срок службы и усилить ее способности за пределы ожидаемого."/>
   </ability>
 <ability name="Archaeology" icon="skills/skill_archaeology.png" skill="31" startSkill="1">
-  <description text="No time for love, Dr. Jones? (You're a general rogue with a penchant for trouble.)"/>
+  <description text="Не время для любви Доктор Джонс! (Ты настоящий искатель приключений с тягой к неприятностям.)"/>
   </ability>
 <ability name="Smithing" icon="skills/skill_smithing.png" skill="32" startSkill="1">
-  <description text="Forge iron in fires! Construct weapons to smite your foes! Become more burly!"/>
+  <description text="Куй сталь, пока горячо! Создай оружие карающее твоих врагов! Стань более могучем!"/>
   </ability>
 <ability name="Tinkering" icon="skills/skill_tinkerer.png" skill="33" startSkill="1">
-  <description text="Spend time in a garden shed, building mechanical devices for the betterment of mankind."/>
+  <description text="Вы проводите все свое время в сарае, создавая механические устройства для улучшения человечества."/>
   </ability>
 
   <!-- Wizard Skills -->
   
 <ability name="Sanguinista" icon="skills/wizard/bloodmagic1_64.png" skill="23" level="0">
-  <description text="You know how to take magic from the blood of your enemies and gain mana after each kill. This doesn't work on vegetables, constructs, or undead of course."/>
+  <description text="Вы знаете магию превращения крови убитых врагов в ману. Естественно от растений, механизмов и нежити вы не получите ни того не другого."/>
   <targetKillBuff percentage="100" name="Blood Mana" />
   <resistbuff righteous="-1" />
   </ability>
 <ability name="Vital Siphon" icon="skills/vital_siphon64.png" skill="23" level="1" >
-   <description text="Use of the dark art of vital siphoning enables your melee attacks to have a chance to drain the vital energies of your enemies and transfer them to yourself." />
+   <description text="Используя темное искусство выкачивания жизни, вы имеете шанс восстановить себе часть здоровья, похитив его у врага, при ударе в ближнем бою." />
    <targetHitEffectBuff percentage="30" name="Vital Siphon" />
    <resistbuff righteous="-1" />
    </ability>
 <ability name="Spirit Stealer" icon="skills/wizard/bloodmagic2_64.png" skill="23" level="2">
-   <description text="By robbing the spirit of a slain enemy (who indeed has a spirit in the first place), you can enhance your magical power. You have a chance to steal the spirit of an enemy when they die."/>
+   <description text="Забирая душу убитого врага (конечно если она у него есть), вы усиливаете вашу магическую силу. У вас есть шанс забрать душу врага при его смерти."/>
    <targetKillBuff percentage="50" name="Spirit Steal"/>
    <resistbuff righteous="-1" />  
    </ability>
 <ability name="Haematic Phylactery" icon="skills/haematic_phylactery64.png" skill="23" level="3" >
-   <description text="Pour your blood and soul into a secret hidden thing that you can tap when the need is greatest - or whenever you fancy a nip of forbidden sanguine juices."/>
+   <description text="Поместите немного своей крови и частичку души в потаенную вещь, чтобы воспользоваться ей в самый необходимый момент. Или когда у вас есть капризная причуда выпить глоток запрещенного рубинового напитка."/>
    <resistbuff righteous="-1" />
 	<spell name="Create Haematic Phylactery" />
    </ability>
 <ability name="Soul Collector" icon="skills/wizard/bloodmagic3_64.png" skill="23" level="4">
-   <description text="You can fuel magical acts by using the harvested souls of your fallen foes, if you manage to collect them. Do remember that robots, undead, and vegetables do not have souls."/>
+   <description text="Вы можете усиливать магические способности, используя душу павшего врага. Если сможете завладеть ей. Помните: роботы, нежить и растения бездушны."/>
    <!-- doesn't work on vegetables or construct -->
    <targetKillBuff percentage="50" name="Soul Steal"/>
    <resistbuff righteous="-1" />
