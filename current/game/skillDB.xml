@@ -330,7 +330,7 @@
   <description text="Получайте магическую энергию из крови ваших врагов. Магия не для чистоплюев. И не лучшая тема для разговоров."/>
   </ability>
 <ability name="Ley Lines" icon="skills/skill_leylines.png" skill="24" startSkill="1">
-  <description text="Позволяет вытягивать энергию из пересечений таинственных магических потоков, чьи механизмы известны только престарелым хранителям тайн или кладовщикам."/>
+  <description text="Позволяет вытягивать энергию из пересечений таинственных магических линий, чьи направления известны только престарелым хранителям тайн или кладовщикам."/>
   </ability>
 
   <!-- Rogue Tricks -->
@@ -385,40 +385,40 @@
    <resistbuff righteous="-1" />  
    </ability>
 <ability name="Haematic Phylactery" icon="skills/haematic_phylactery64.png" skill="23" level="3" >
-   <description text="Поместите немного своей крови и частичку души в потаенную вещь, чтобы воспользоваться ей в самый необходимый момент. Или когда у вас есть капризная причуда выпить глоток запрещенного рубинового напитка."/>
+   <description text="Поместите немного своей крови и частичку души в потаенную вещь, чтобы воспользоваться ей в самый необходимый момент. Или когда у вас появится капризная причуда выпить глоток запрещенного рубинового напитка."/>
    <resistbuff righteous="-1" />
 	<spell name="Create Haematic Phylactery" />
    </ability>
 <ability name="Soul Collector" icon="skills/wizard/bloodmagic3_64.png" skill="23" level="4">
-   <description text="Вы можете усиливать магические способности, используя душу павшего врага. Если сможете завладеть ей. Помните: роботы, нежить и растения бездушны."/>
+   <description text="Вы можете усиливать магические способности, используя душу павшего врага. Если сможете ей завладеть. Помните: роботы, нежить и растения бездушны."/>
    <!-- doesn't work on vegetables or construct -->
    <targetKillBuff percentage="50" name="Soul Steal"/>
    <resistbuff righteous="-1" />
    </ability>
 
 <ability name="Linewalker" icon="skills/wizard/leylines0_64.png" skill="24" level="0">
-  <description text="You have the ability to tap theinvisible strands of power which bind the world and the aether together. Increases mana regeneration and grants a chance to regain mana when casting spells."/>
+  <description text="Вы можете использовать невидимые линии силы, связывающие Наш Мир с Эфиром. Увеличивает регенерацию маны и дает шанс восстановить часть манны при использовании заклинаний."/>
   <secondarybuff id="14" amount="1"/> <!-- mana regen -->
   <triggeroncast percent="25" name="Regen Mana 1"/>
   </ability>
 <ability name="Thaumaturgic Tap" icon="skills/magic_tap64.png" skill="24" level="1">
   <spell name="Leyline Siphoning" />
-  <description text="Using your knowledge of leylines, you can occasionally tap the aethereal realm to replenish your vital energies." />   
+  <description text="Используя знания о Мировых Линиях вы иногда можете пользоваться Эфиром для восполнения своей жизненной силы." />   
   </ability>
 <ability name="Conduit" icon="skills/wizard/leylines1_64.png" skill="24" level="2">
-  <description text="The magic flows effortlessly through you! Grants even more mana regeneration."/>
+  <description text="Магические потоки струятся через вас! Мана восполняется быстрее."/>
   <secondarybuff id="14" amount="1"/> <!-- mana regen -->
   <secondarybuff id="1" amount="3"/> <!-- mana -->
   </ability>
 <ability name="Channeller" icon="skills/wizard/leylines2_64.png" skill="24" level="3">
-  <description text="At one with the leylines, you are a font of magical energy. Guess what? More mana!"/>
+  <description text="Вы едины с Мировыми Линиями и сами являетесь источником магии. Что это значит? Больше маны!"/>
   <secondarybuff id="14" amount="1"/> <!-- mana regen -->
   <secondarybuff id="1" amount="10"/> <!-- mana -->
   <triggeroncast percent="5" name="Thaumaturgic Conflux" />
 </ability>
 <ability name="Invisible Geometries" icon="skills/invisible_geometries64.png" skill="24" level="4" >
    <spell name="Invisible Geometries" />
-   <description text="A master of leylines can use invisible geometries to move-without-moving -- but only in cardinal directions. Be warned though, for moving through the aethereal realm greatly saps magical strength."/>
+   <description text="Мастера Мировых Линий могут пользоваться невидимой геометрией для перемещения-без-движения, но только в определенном направлении. Будте осторожны, передвижение через Эфир сильно истощает магическую силу."/>
    </ability>
   
 <ability name="Certified Mage" icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
