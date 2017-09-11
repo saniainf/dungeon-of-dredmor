@@ -418,33 +418,33 @@
 </ability>
 <ability name="Invisible Geometries" icon="skills/invisible_geometries64.png" skill="24" level="4" >
    <spell name="Invisible Geometries" />
-   <description text="Мастера Мировых Линий могут пользоваться невидимой геометрией для перемещения-без-движения, но только в определенном направлении. Будте осторожны, передвижение через Эфир сильно истощает магическую силу."/>
+   <description text="Мастера Мировых Линий могут пользоваться невидимой геометрией для перемещения без движения, но только в определенном направлении. Будте осторожны, передвижение через Эфир сильно истощает магическую силу."/>
    </ability>
   
 <ability name="Certified Mage" icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
-  <description text="Magic Community College is starting to really pay off - your spellpower and mana pool are increased."/>
+  <description text="Обучение в Общественном колледже Магии начинает приносить плоды - ваша магическая сила увеличилась и манны стало больше."/>
   <primarybuff id="5" amount="1" /> <!-- savvy -->
   <secondarybuff id="3" amount="1"/> <!-- spellpower -->
   <secondarybuff id="1" amount="5"/> <!-- mana -->
   </ability>
 <ability name="License To Cast" icon="skills/magic_license64.png" skill="22" level="1" >
-   <description text="You have a license to cast and to take away the right to cast. Any monster hit by this spell will lose their casting ability for a short time."/>
+   <description text="У вас есть лицензия на использование магии и право отбирать ее у других. Любой монстр пораженный этим заклинанием теряет способность пользоваться магией на короткое время."/>
    <secondarybuff id="3" amount="1"/> <!-- spellpower -->
    <primarybuff id="5" amount="1" /> <!-- savvy -->
    <spell name="Thaumoentropic Missile" />
    </ability>
 <ability name="Wizarding Associate" icon="skills/wizard/magictraining1_64.png"  skill="22" level="2">
-  <description text="As a dues-paying member of the Wizarding Association, you receive a 5% discount on conference fees and a complimentary Wizarding Association membership card which you really ought to get laminated."/>
+  <description text="Как член Ассоциации Магов и Чародеев, вы имеете 5% скидку на посещение конференций и великолепный бейдж члена Ассоциации Магов и Чародеев который надо-бы заламинировать."/>
   <secondarybuff id="1" amount="10"/> <!-- mana -->
   <primarybuff id="5" amount="1" /> <!-- savvy -->
   </ability>
 <ability name="Extra-planar Concentration" icon="skills/extraplanar_concentration64.png" skill="22" level="3" >
    <spell name="Extra-planar Concentration" />
-   <description text="Extremely intense concentration allows you to greatly increase your mana regeneration for a short while. Such concentration may cause you to forget that you're in a dungeon filled with murderous monsters, so please be mindful of your surroundings when entering this state of mind." />
+   <description text="Очень сильная концентрация позволяет вам временно увеличивать регенерацию маны. Когда вы достигаете такой сосредоточенности ума вы можете забыть, что находитесь в подземелье с кровожадными монстрами, поэтому внимательно подбирайте место для медитации." />
    <primarybuff id="5" amount="1" /> <!-- savvy -->   
    </ability>
 <ability name="Master of Magic" icon="skills/wizard/magictraining2_64.png"  skill="22" level="4">
-  <description text="When once you were the apprentice, now you are the master."/>
+  <description text="Когда вы начинали свой путь, вы были всего лишь новичком. Теперь же вы Мастер."/>
   <primarybuff id="1" amount="5"/> <!-- sagacity -->
   <primarybuff id="5" amount="5"/> <!-- savvy -->
   <secondarybuff id="11" amount="5" /> <!-- resist -->
@@ -452,24 +452,24 @@
 
 <ability name="Blood Sucker" icon="skills/skill_vampirism.png" skill="13" level="0">
   <targetHitEffectBuff percentage="100" name="Vampirism Attack" />
-  <description text="Your melee attacks are stronger and drain life from your enemies."/>
+  <description text="Ваши атаки ближнего боя сильнее высасывают жизнь из ваших врагов."/>
   <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
   </ability>
 <ability name="Drinker of the Dead" icon="skills/wizard/vampirism1_64.png" skill="13" level="1">
   <spell name="Corpse Drain" />
-  <description text="Drain corpses of their blood to gain (un)life. Bottoms up!"/>
+  <description text="Осушайте тела досуха для восполнения вашей (не)жизни. Пей до дна!"/>
   </ability>
 <ability name="Sparkly" icon="skills/wizard/vampirism2_64.png" skill="13" level="2">
   <spell name="Sparkly Glamour"/>
-  <description text="You can dazzle your enemies to leave them stunned by your spooky, sparkly vampire glamour. This also saps some of their life-force. Because seriously."/>
+  <description text="Вы можете настолько поразить своим великолепием врагов, что их парализует от вашего жутко блестящего вампирского гламура. Также это заберет часть их жизненной силы. Это серьезно."/>
   </ability>
 <ability name="Psychic Vampire" icon="skills/psychic_vampire64.png" skill="13" level="3" >
    <targetHitEffectBuff percentage="50" name="Psychic Vampire" />
-   <description text="Your spooky vampiric mind powers allow your melee attacks a chance to siphon off mana and wreak confusion in your enemies." />
+   <description text="Жуткие силы вашего вампирского разума дают шанс похитить ману и сбить столку вашего врага в ближнем бою." />
    <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
    </ability>
 <ability name="Transylvation" icon="skills/batty64.png" skill="13" level="4" >
-   <description text="You can transform into a batty to make your escape. REEeee! (That's the sound a bat makes.)"/>
+   <description text="Вы можете превратится в летучего мыша чтобы сбежать (улететь). ПИИиииии! (Это звук который издает мышь.)"/>
    <spell name="Batty Form" />   
    </ability>
   
