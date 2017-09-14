@@ -481,34 +481,33 @@
 	
 <ability name="Zombyfycation" icon="skills/spells/zombyfycation64.png" skill="15" level="0">
   <spell name="Zombyfycation"/>
-  <description text="Reduce, re-use, recycle: after reducing your enemy to a bloody corpse, bring them back to life as a 'formerly 
-  dead' servant who will defend you until they die again."/>
+  <description text="Превращай, применяй, преобразовывай: после превращения врага в кровавый труп, верни его к жизни как 'условно живого' слугу. Он будет вас защищать пока снова не умрет."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>	
 <ability name="Knit Tissue" icon="skills/spells/restoration64.png" skill="15" level="1">
   <spell name="Knit Tissue"/>
-  <description text="This spell pieces together pieces of you that have fallen off, torn apart, mangled, punctured, or otherwise smushed. It's a messy sort of healing."/>
+  <description text="Это заклинание соединит вместе ваши кусочки которые отвалились, оторвались, отрезали, отсекли или отделили любым другим способом. Это небрежный вид исцеления."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>
 <ability name="Fleshbore" icon="skills/spells/fleshbore64.png" skill="15" level="2">
   <spell name="Fleshbore"/>
-  <description text="Fleshy, awful debuff that rends and tears the flesh of an enemy."/>
+  <description text="Ужасное проклятие плоти, раздирающие и разрывающие тело врага."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>
 <ability name="Meatshield" icon="skills/spells/meatshield64.png" skill="15" level="3">
   <spell name="Meatshield"/>
-  <description text="The Meatshield enhances your life-force and regenerative powers."/>
+  <description text="Мясозащитный щит увеличивает ваши жизненные силы и регенерацию."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   <resistbuff slashing="1" crushing="1" />
   </ability>
 <ability name="Corpus Burst" icon="skills/spells/corpus_burst64.png" skill="15" level="4">
   <spell name="Corpus Burst"/>
-  <description text="This spell makes corpses explode! Who doesn't like exploding corpses? Pretty much everyone, actually."/>
+  <description text="Это заклинание делает взрывающиеся трупы! Кто-же не любит подрывать трупы? На самом деле почти все."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>
 <ability name="Miasmatic Putrefaction" icon="skills/spells/conjure_miasma64.png" skill="15" level="5">
   <spell name="Miasmatic Putrefaction"/>
-  <description text="This spell just chokes things to death on the horrible, toxic, putrefying gases. Cheerful, isn't it? (Countered mostly by potpourri.)"/>
+  <description text="Это заклинание задушит ваших врагов ужасно токсичным трупным газом. Весело не так ли? (Эффект ликвидируется освежителем воздуха.)"/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   <resistbuff toxic="1" putrefying="1" />
   </ability>
@@ -517,11 +516,11 @@
 
 <ability name="Animate Blade Being" icon="skills/spells/blade_being64.png" skill="14" level="0">
   <spell name="Animate Blade Being"/>
-  <description text="Brings some malevolent silverware to life, at which point it twirls around and stabs anyone who runs into it. It's not smart enough to move on its own."/>
+  <description text="Призывает злобную серебрянную штуку, которая крутится на месте и ранит любого кто проходит через нее. Недостаточно умная, чтобы куда-то перемещаться."/>
   </ability>
 <ability name="Animate Mustache" icon="skills/spells/mustache64.png" skill="14" level="1">
   <spell name="Animate Mustache"/>
-  <description text="Animates a small mustache golem to fight alongside you. (But where does the mustache come from?)"/>
+  <description text="Оживляет маленького усатого голема, чтобы сражаться за вас. (Но откуда берутся усы?)"/>
   </ability>
 <ability name="Unliving Wall" icon="skills/spells/summon_wall64.png" skill="14" level="2">
   <spell name="Unliving Wall"/>
