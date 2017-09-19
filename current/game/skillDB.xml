@@ -461,7 +461,7 @@
   </ability>
 <ability name="Sparkly" icon="skills/wizard/vampirism2_64.png" skill="13" level="2">
   <spell name="Sparkly Glamour"/>
-  <description text="Вы можете настолько поразить своим великолепием врагов, что их парализует от вашего жутко блестящего вампирского гламура. Также это заберет часть их жизненной силы. Это серьезно."/>
+  <description text="Вы поражаете своим великолепием врагов так, что их парализует от вашего жутко блестящего вампирского гламура. Также это заберет часть их жизненной силы. Это серьезно."/>
   </ability>
 <ability name="Psychic Vampire" icon="skills/psychic_vampire64.png" skill="13" level="3" >
    <targetHitEffectBuff percentage="50" name="Psychic Vampire" />
@@ -524,69 +524,69 @@
   </ability>
 <ability name="Unliving Wall" icon="skills/spells/summon_wall64.png" skill="14" level="2">
   <spell name="Unliving Wall"/>
-  <description text="First concocted by the Mad Architect Montresor, this spell grows a wall from the floor (pounding anyone in the way with crushing masonry). Delightfully unnatural."/>
+  <description text="Придуманное безумным зодчим Монтрезором это заклинание поднимает стену прямо из пола (сминающей любого своей кладкой). Уникально неестественно."/>
   </ability>
 <ability name="Invive Thaumite Swarm" icon="skills/spells/thaumite_swarm64.png" skill="14" level="3">
   <spell name="Thaumite Infection"/>
-  <description text="A cloud of thaumaturgons comes alive and consumes any being it touches with thoughtless voracity until sated, at which point it exits the body to await a new host."/>
+  <description text="Ожившие облако чудоклещей поглощает любого кто нему приблизится с ненасытным голодом, покинув тело они ожидают новую жертву."/>
   </ability>
 <ability name="The Mortal Machine" icon="skills/spells/animate_robot64.png" skill="14" level="4">
   <spell name="Grant Machine Mortality"/>
-  <description text="Summons a friendly robot companion to lacerate your enemies."/>
+  <description text="Призывает дружелюбного робота-компаньона, разрывающего ваших врагов."/>
   </ability>
 
 <!-- Digging ray.-->
 <ability name="Digging Ray" icon="skills/spells/montresors_wall64.png" skill="14" level="5">
   <spell name="Digging Ray"/>
-  <description text="What was formed can be un-formed. Busts through walls and is basically game-breaking."/>
+  <description text="То что построено, может быть и сломано. Разрушать стены это вообще чит."/>
   </ability>
 
   <!-- Mathemagical Formulae -->
 <ability name="Froda's Jump Discontinuity" icon="skills/spells/blink64.png" skill="16" level="0">
   <spell name="Froda's Jump Discontinuity"/>
-  <description text="This prototype teleportation spell was developed by Froda as part of a wizarding thesis project, 'A Study of Extra-planar Momentum in the 200 GeV Thaumaturgen Collision Range'. Its effects are considered unstable. Randomly teleports you."/>
+  <description text="Этот прототип заклинания телепортации был придуман Фродой как часть колдовской диссертации, 'Исследование Сверхпланарного импульса при столкновении чудес в диапазоне 200 GeV'. Its effects are considered unstable. Randomly teleports you."/>
   </ability>
 <ability name="Beklam's Diminuating Calculus" icon="skills/spells/weakness64.png" skill="16" level="1">
   <spell name="Beklam's Diminuating Calculus"/>
-  <description text="Can you subtract life itself? The Great Beklam discovered a way, to his undoing. This is a curse which greatly weakens an enemy, leaving them enfeebled."/>
+  <description text="Вы можете вычесть саму жизнь? Виликий Беклам, к его несчастью, придумал способ. Это проклятие сильно истощает силы врага."/>
   </ability>
 <ability name="Curse of the Golden Ratio" icon="skills/spells/curse_of_midas64.png" skill="16" level="2">
   <spell name="Curse of the Golden Ratio"/>
-  <description text="The curse of the Golden ratio was first used by the great Mathemagician Xeuclid to convert the flesh of his enemies into useful, useful gold. You just have to keep poking to be sure it takes. Operates as describes - a rather profitable curse."/>
+  <description text="Проклятие Золотого Сечения впервые было использовано великим Матемагиком Иксклидом для превращения своих врагов в очень полезное и нужное золото. Просто попробуйте чтобы убедиться. Работает как и описано. Довольно выгодное проклятие."/>
   </ability>
 <ability name="Zenzizenzizenzic" icon="skills/spells/zenziz64.png" skill="16" level="3">
   <spell name="Zenzizenzizenzic"/>
-  <description text="The enhancement of one's own magical power is simply a function of correctly applying magical power. This is a stackable effect, naturally."/>
+  <description text="Увеличение собственной магической силы это просто правильное применение функции к магической силе. Эффект является накапливаемым."/>
   </ability>
 <ability name="Xeuclid's Translation" icon="skills/spells/zephyric_transport64.png" skill="16" level="4">
   <spell name="Xeuclid's Translation"/>
-  <description text="A more refined (read: accurate) but more costly version of the Jump Discontinuity. We are assured that flesh-eating teleportation worms do not really exist."/>
+  <description text="Усовершенствованная (точная) но более сложная версия Jump Discontinuity Фроды. Мы гарантируем, что плотоядные телепортационные черви это выдумка."/>
   </ability>
 <ability name="The Recursive Curse" icon="skills/spells/recursive_curse64.png" skill="16" level="5">
   <spell name="The Recursive Curse"/>
-  <description text="This is the Curse that keeps on Cursing - it will make an enemy sorry that they ever lived."/>
+  <description text="Это Проклятие вызывающие Проклятие. Ваши враги пожалеют, что родились на этот свет."/>
   </ability>
 
   <!-- Psionics -->
   
 <ability name="Narcosomatic Induction" icon="skills/spells/sleep64.png" skill="17" level="0">
   <spell name="Narcosomatic Induction"/>
-  <description text="Sleep, now. Puts an enemy into a mildly painful, suffocating sleep."/>
+  <description text="Всем спать. Погружает врага в слегка болезненный, удушающий сон."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Psychokinetic Shove" icon="skills/spells/psychokinetic_shove64.png" skill="17" level="1">
   <spell name="Psychokinetic Shove"/>
-  <description text="Shove, now. Uses violent force to push a mass of enemies (and other things) away from you."/>
+  <description text="Расступитесь. Используй мощную силу, чтобы оттолкнуть врагов (и любые вещи) от себя."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Crystal Healing" icon="skills/spells/crystal_healing64.png" skill="17" level="2">
   <spell name="Crystal Healing"/>
-  <description text="Heals yourself with the power of crystals. Ooooh! Step on the shinies to enjoy their healing effects."/>
+  <description text="Исцеляйте себя энергией кристаллов. Оооооох! Наступите на блестяшку, чтобы насладиться целебным эффектом."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Nerve Staple" icon="skills/spells/nerve_staple64.png" skill="17" level="3">
   <spell name="Nerve Staple"/>
-  <description text="Deals crippling existential damage to one being. Indiscreet use of this spell may provoke economic sanctions."/>
+  <description text="Наносит калечащий экзистенциальный урон одному существу. Неосторожное использование заклинания может спровоцировать экономические санкции."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <!--
@@ -597,12 +597,12 @@
   -->
 <ability name="Pyrokinesis" icon="skills/spells/pyrokinesis64.png" skill="17" level="4">
   <spell name="Pyrokinesis"/>
-  <description text="You're a firestarter, a terrific firestarter. You can set them alight with your mind."/>
+  <description text="Вы Поджигатель, злостный поджигатель. Ваши мысли об огне – материальны."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Unconditional Love" icon="skills/spells/unconditional_love64.png" skill="17" level="5">
   <spell name="Unconditional Love"/>
-  <description text="Magically charms a monster into giving up their evil ways to become your buddy ... for a short time. Then they just stab you in the back again."/>
+  <description text="Магия очарования заставляет монстра забыть, что он злой и стать вашим приятелем ... на какое-то время. Ждите удар в спину, после того как он придет в себя ."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 
@@ -610,11 +610,11 @@
 
 <ability name="Deathly Hex" icon="skills/spells/deathly_hex64.png" skill="18" level="0">
   <spell name="Deathly Hex"/>
-  <description text="Blast your enemies to necromantic ablution with the Bolt of Evil and sap their life-force, if you're powerful enough. Be careful though - use of this spell may curses the caster with Nerve-Searing, Pain-Wracking Death-Thingies."/>
+  <description text="Атакуйте врагов некромантской Стрелой Зла источая их жизненные силы, если вы достаточно сильны. Будьте осторожны - использование этого заклинания может вызвать проклятия Выжигание-Нервов, Разрушительные-Страдания или Смертельные-Фиговины."/>
   </ability>
 <ability name="Nightmare Curse" icon="skills/spells/nightmare_curse64.png" skill="18" level="1">
   <spell name="Nightmare Curse"/>
-  <description text="The dreaded Shobastian Nightmare Curse causes your enemies to fall into a blissful slumber. Meanwhile, their brains are beset by Eldritch Things who cunningly replace their internal thinkmeats with the Bees of Evil. Caution: exposure to Bees of Evil may prove to have toxic side effects to the caster."/>
+  <description text="Опасное кошмарное проклятие Шобастиана погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто которые ловко заменяют их мысли Дьявольскими Пчелами. Caution: exposure to Bees of Evil may prove to have toxic side effects to the caster."/>
   </ability>
 <ability name="Mark of Chthon" icon="skills/spells/mark_of_chthon64.png" skill="18" level="2">
   <spell name="Mark of Chthon"/>
