@@ -614,25 +614,25 @@
   </ability>
 <ability name="Nightmare Curse" icon="skills/spells/nightmare_curse64.png" skill="18" level="1">
   <spell name="Nightmare Curse"/>
-  <description text="Опасное кошмарное проклятие Шобастиана погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто которые ловко заменяют их мысли Дьявольскими Пчелами. Caution: exposure to Bees of Evil may prove to have toxic side effects to the caster."/>
+  <description text="Опасное кошмарное проклятие Шобастиана погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто которые ловко заменяют их мысли Дьявольскими Пчелами. Предостережении: вызов Дьявольских Пчел может вызвать токсичное отравление."/>
   </ability>
 <ability name="Mark of Chthon" icon="skills/spells/mark_of_chthon64.png" skill="18" level="2">
   <spell name="Mark of Chthon"/>
-  <description text="With this spell, you can wear Chthon's Mark (which makes men mightier than mortals) for a short time. Beware the cost, of course."/>
+  <description text="Это заклинание помечает вас меткой Хтона, что делает вас значительно сильнее простого смертного на короткое время. Как всегда, вопрос в цене."/>
   </ability>
 <ability name="Pact of Fleeting Life" icon="skills/spells/fleeting_life64.png" skill="18" level="3">
   <spell name="Pact of Fleeting Life"/>
-  <description text="In exchange for the power to steal the life-force of your enemies, you promise to give some of your life to some elder being. This bartering is not for the faint of heart."/>
+  <description text="В обмен на способность красть жизненные силы врагов, вы обещаете отдать часть своей жизни высшим силам. Сделка не для слабых духом."/>
   <resistbuff necromantic="1"/>
   </ability>
 <ability name="Eldritch Inhabitation" icon="skills/spells/eldritch_pillar64.png" skill="18" level="4">
   <spell name="Eldritch Inhabitation"/>
-  <description text="This spell posseses the target with a being not fit for this reality; it will tear its way back to where it came however it can, with predictably destructive results."/>
+  <description text="Это заклинание заключает в теле врага существо из другой реальности; оно будет рваться назад с предсказуемо губительным результатом для носителя."/>
   <resistbuff necromantic="1"/>
   </ability>
 <ability name="Tenebrous Rift" icon="skills/spells/tenebrous_rift64.png" skill="18" level="5">
   <spell name="Tenebrous Rift"/>
-  <description text="Opens a horrible rift of evil which consumes all in its reach."/>
+  <description text="Открывает ужасающий разлом в ад поглощающий все около себя."/>
   <resistbuff necromantic="1"/>
   </ability>	
 
@@ -780,12 +780,12 @@
 
 
 <ability name="Student of Fencing" icon="skills/warrior/swordplay0_64.png" skill="0" level="0">
-  <description text="Just remember: the pointy bit of the sword goes into the body of your opponent. This is just the first step on the road to good swordsmanship and as such only provides minor combat bonuses."/>
+  <description text="Просто помните: заостренный кончик меча втыкается в тело противника. Это только первый шаг на пути к мастерству фехтования и дает незначительные бонусы."/>
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <damagebuff slashing="1" />
   </ability>
 <ability name="Liechtenauer's Overhau" icon="skills/warrior/swordplay1_64.png" skill="0" level="1">
-  <description text="What exactly IS an Overhau? So glad you asked: it's a particularly teutonic (and particularly painful) attack which you have a chance to execute with each melee attack upon learning this skill. Damage scales to your Burliness."/>
+  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили: это черезвычайно тевтонская (и черезвычайно болезненная) атака, которую вы имеете шанс выполнить вместе с каждым ударом в ближнем бою. Урон зависит от вашей Burliness."/>
   <!-- <spell name="Liechtenauer's Overhau"/> -->
   <targetHitEffectBuff percentage="20" name="Liechtenauer's Overhau" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
@@ -793,14 +793,14 @@
   <damagebuff slashing="1"/>
   </ability>
 <ability name="Sword Practice" icon="skills/skill_sword.png" skill="0" level="2">
-  <description text="With long hours of practice skewering flies, your deft use of the sword has grown defter still. You occasionally deal a Crippling Wound."/>
+  <description text="После многих часов в попытках рассечь мух, ваши навыки фехтования значительно улучшились. В бою вы можете нанести калечащую рану."/>
   <damagebuff piercing="1" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   <targetHitEffectBuff percentage="8" name="Crippling Wound" />
   </ability>
 <ability name="Thibault's Trompement" icon="skills/warrior/swordplay2_64.png" skill="0" level="3">
-  <description text="Why go around when you can attack right through your foe? This skill can be used to attack all the tiles in a line through an opponent. Damage scales to your Nimbleness."/>
+  <description text="Зачем ходить если можно атаковать прямо через своего врага? Этот навык позволяет атаковать сразу линию квадратов с противниками. Урон зависит от вашей Nimbleness."/>
   <spell name="Thibault's Trompement"/>
   <damagebuff piercing="2"/>
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -808,12 +808,12 @@
   </ability>
 <ability name="Sword Lore" icon="skills/warrior/sword_lore64.png" skill="0" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Studious research into the use of swords has unlocked terrible secrets: You have a chance of executing exceptionally grievous attacks in combat while using swords." />
+  <description text="Бриманские ученые открыли страшный секрет о мечах: в бою мечем есть шанс нанести особо тяжелые повреждения." />
   <targetHitEffectBuff percentage="16" name="Bleeding Out" />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Sword Poet" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
-  <description text="The pen is said to be mightier than the sword, but a true warrior uses his sword AS a pen. With this skill, you master the use of the sword and counter-attack."/>
+  <description text="Перо как известно сильнее меча, но настоящие войны пользуются мечем КАК пером. Навык мастерства владения мечем и контратаки."/>
   <secondarybuff id="8" amount="4"/> <!-- Counter -->
   <secondarybuff id="9" amount="13"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
