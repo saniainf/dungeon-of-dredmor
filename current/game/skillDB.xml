@@ -361,7 +361,7 @@
   <description text="Не время для любви Доктор Джонс! (Ты настоящий искатель приключений с тягой к неприятностям.)"/>
   </ability>
 <ability name="Smithing" icon="skills/skill_smithing.png" skill="32" startSkill="1">
-  <description text="Куй сталь, пока горячо! Создай оружие карающее твоих врагов! Стань более могучем!"/>
+  <description text="Куй сталь, пока горячо! Создай оружие карающее твоих врагов! Стань более могучим!"/>
   </ability>
 <ability name="Tinkering" icon="skills/skill_tinkerer.png" skill="33" startSkill="1">
   <description text="Вы проводите все свое время в сарае, создавая механические устройства для улучшения человечества."/>
@@ -785,7 +785,7 @@
   <damagebuff slashing="1" />
   </ability>
 <ability name="Liechtenauer's Overhau" icon="skills/warrior/swordplay1_64.png" skill="0" level="1">
-  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили: это черезвычайно тевтонская (и черезвычайно болезненная) атака, которую вы имеете шанс выполнить вместе с каждым ударом в ближнем бою. Урон зависит от вашей Burliness."/>
+  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили: это очень тевтонская (и очень болезненная) атака, которую вы имеете шанс выполнить вместе с каждым ударом в ближнем бою. Урон зависит от вашей Burliness."/>
   <!-- <spell name="Liechtenauer's Overhau"/> -->
   <targetHitEffectBuff percentage="20" name="Liechtenauer's Overhau" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
@@ -800,7 +800,7 @@
   <targetHitEffectBuff percentage="8" name="Crippling Wound" />
   </ability>
 <ability name="Thibault's Trompement" icon="skills/warrior/swordplay2_64.png" skill="0" level="3">
-  <description text="Зачем ходить если можно атаковать прямо через своего врага? Этот навык позволяет атаковать сразу линию квадратов с противниками. Урон зависит от вашей Nimbleness."/>
+  <description text="Зачем ходить если можно атаковать прямо через своего врага? Этот навык позволяет атаковать линию квадратов с противниками. Урон зависит от вашей Nimbleness."/>
   <spell name="Thibault's Trompement"/>
   <damagebuff piercing="2"/>
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -813,7 +813,7 @@
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Sword Poet" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
-  <description text="Перо как известно сильнее меча, но настоящие войны пользуются мечем КАК пером. Навык мастерства владения мечем и контратаки."/>
+  <description text="Перо как известно сильнее меча, но настоящие войны пользуются мечем КАК пером. Вы достигли мастерства во владении мечем и контратаке."/>
   <secondarybuff id="8" amount="4"/> <!-- Counter -->
   <secondarybuff id="9" amount="13"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
