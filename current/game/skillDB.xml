@@ -1580,27 +1580,27 @@
 
   
 <ability name="Dabbling Trappist" icon="skills/rogue/trappist64.png" skill="33" level="0" >
-  <description text="You dabble in the construction and disarming of traps. It's amazing you've still got most of your fingers." />
+  <description text="Ваше хобби создавать и обезвреживать ловушки. Поразительно, что ваши пальцы еще целы." />
   <primarybuff id="5" amount="1" /> <!-- sav -->
   <secondarybuff id="16" amount="1"/> <!-- trap level -->
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
   </ability>
 <ability name="Mechanicker" icon="skills/rogue/mechanicker64.png" skill="33" level="1" >
-  <description text="There's hope yet for a career in repairing (notoriously unreliable) Dwarven Panini Presses." />
+  <description text="Есть шанс построить карьеру на ремонте (абсолютно ненадежных) прессов Dwarven Panini." />
   <primarybuff id="5" amount="1" /> <!-- sav -->
   <secondarybuff id="17" amount="1"/> <!-- trap sight -->
   <secondarybuff id="16" amount="1"/> <!-- trap level -->
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
   </ability>
 <ability name="Cog-jockey" icon="skills/rogue/cog-jockey64.png" skill="33" level="2" >
-  <description text="Now you know the difference between a mainspring and an escape wheel and can set cogs spinning at separate but complementary gear ratios." />
+  <description text="Теперь вы знаете разницу между ходовой пружиной и ходовым колесом, и можете правильно определить передаточное отношение в шестернях." />
   <primarybuff id="5" amount="1" /> <!-- sav -->
   <secondarybuff id="17" amount="1"/> <!-- trap sight -->
   <secondarybuff id="16" amount="2"/> <!-- trap level -->
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
   </ability>
 <ability name="Inventor" icon="skills/rogue/inventor64.png" skill="33" level="3" >
-  <description text="Your scientific genius is such that pitchfork-wielding peasants may pose a serious hazard." />
+  <description text="Ваш неординарный ум может превратить крестьян с вилами в серьезную угрозу. " />
   <primarybuff id="5" amount="1" /> <!-- sav -->
   <secondarybuff id="16" amount="1"/> <!-- trap level -->
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
