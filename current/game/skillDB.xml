@@ -970,7 +970,7 @@
 
    
 <ability name="Bolt Thrower" icon="skills/warrior/crossbow0_64.png" skill="4" level="0">
-  <description text="'Ability exceeds effort.' Basic crossbow training slightly increases your chance to hit, and hit well. Ammo recovery rate is increased."/>
+  <description text="Как известно 'Терпение и труд ...'. Простые тренировки с арбалетом слегка увеличили вашу меткость и шанс нанести критический удар. Шанс сохранить стрелу увеличен."/>
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <recoverybuff amount="15" />
@@ -978,20 +978,20 @@
   <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
    </ability>
 <ability name="Crossbow Blast" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
-  <description text="This technique, robed in rumour and behatted by hearsay, allows a crossbow bolt to hit with many times the force expected, knocking an enemy back and causing great damage. It's tricky, so you can only pull it off sometimes." />
+  <description text="Эта техника выстрела, обросшая сплетнями и слухами, позволяет стрелку превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон. Это сложно, поэтому использовать ее можно лишь иногда." />
   <damagebuff piercing="1"/>
   <recoverybuff amount="10" />
   <crossbowShotBuff name="Crossbow Blast" percentage="20" />
   </ability>
 <ability name="Bullseye" icon="skills/warrior/crossbow1_64.png" skill="4" level="2">
-  <description text="You only occasionally miss, and damage dealt with crossbows is increased slightly. Ammo recovery rate is increased."/>
+  <description text="Вы промахиваетесь все реже, а урон наносимый выстрелом растет. Шанс сохранить стрелу увеличен."/>
   <secondarybuff id="9" amount="8"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff piercing="1"/>
   <recoverybuff amount="5" />
   </ability>
 <ability name="Maverick" icon="skills/maverick64.png" skill="4" level="3">
-  <description text="'When you shoot to kill, aim for the heart.'; You have a chance to bore a bolt deep into the flesh of your target." />
+  <description text="'Хотите убить – цельтесь в сердце.' У вас есть шанс загнать болт глубоко в тело цели." />
   <damagebuff piercing="1"/>
   <recoverybuff amount="5" />
   <crossbowShotBuff name="Fleshbore" percentage="22" />
@@ -1006,7 +1006,7 @@
   <spell name="Impossible Shot" />
   </ability> -->
 <ability name="Prince of the Crossbow" icon="skills/skill_crossbow.png" skill="4" level="4">
-  <description text="It's like being second-cousin to the King of the Bow. Not bad. This skill enhances your damage dealt when wielding the crossbow. Ammo recovery rate is increased."/>
+  <description text="Это как быть троюродным братом Робин-Гуда. Неплохо. Этот навык значительно увеличивает урон от выстрела из арбалета. Шанс сохранить стрелу увеличен."/>
   <secondarybuff id="4" amount="4"/> <!-- Crit -->
   <secondarybuff id="9" amount="6" /> <!-- EDR -->
   <damagebuff piercing="3"/>
@@ -1064,29 +1064,29 @@
 
 
 <ability name="Thick Skin" icon="skills/warrior/armourer0_64.png" skill="11" level="0">
-  <description text="You like getting hit, it builds character! Increases your life-force and chance to block attacks."/>
+  <description text="Вам нравится получать удары, они закаляют характер! Увеличивает очки здоровья и шанс блока."/>
   <secondarybuff id="7" amount="6"/> <!-- block -->
   <secondarybuff id="0" amount="5"/> <!-- hitpoints -->
   </ability>
 <ability name="Suit Up" icon="skills/warrior/armourer1_64.png" skill="11" level="1">
-  <description text="To be armoured you must project the image of being armoured. This skill allows you to tighten the straps on your armour so that you use it more effectively, but this bonus is lost if you get hit too much."/>
+  <description text="Если вы в доспехах, надо чтобы они и выглядели хорошо. Этот навык позволяет вам затянуть ремни в доспехах, чтобы они стали более эффектными. Но как только вы перетянете, бонус пропадет."/>
   <secondarybuff id="7" amount="1"/> <!-- block -->
   <resistbuff piercing="1"/>
   <spell name="Suit Up" />
   </ability>
 <ability name="Walk It Off" icon="skills/stat_con64.png" skill="11" level="2">
-   <description text="It's only a flesh wound, just walk it off. Has a chance to increase health regeneration and stubborness after getting hit." />
+   <description text="Это всего лишь царапина, просто забудь. Шанс увеличить регенерацию здоровья и stubborness после получения удара." />
    <secondarybuff id="0" amount="5"/> <!-- hp -->
 	<secondarybuff id="7" amount="1"/> <!-- block -->
    <playerHitEffectBuff percentage="20" name="Walk It Off" />
    </ability>
 <ability name="It Only Makes You Stronger" icon="skills/stat_str64.png" skill="11" level="3">
-   <description text="Practice being beaten, crushed and stabbed has made you highly skilled in these activities. When you get hit there is a chance that your health, burliness, and piercing resistance will increase temporarily." />
+   <description text="Полученные синяки, порезы и травмы сделали вас 'спецом' в этом деле. После получения удара есть шанс, что ваше здоровье, burliness и сопротивление проникающему удару временно увеличатся." />
    <secondarybuff id="10" amount="1"/> <!-- armor_absorption -->
    <playerHitEffectBuff percentage="15" name="It Only Makes You Stronger" />
    </ability>
 <ability name="Master of Arms" icon="skills/skill_armour.png" skill="11" level="4">
-  <description text="You sleep in a cuirass, swim in a hauberk, and dance on sabotons. Enhances your defenses and gives a chance to trigger 'Suit Up' when you are hit."/>
+  <description text="Вы спите в кирасе, плаваете в кольчуге и танцуете в сабатонах. Увеличивает ваши защитные способности и дает шанс использовать 'Suit Up' при получении удара."/>
   <secondarybuff id="7" amount="7"/> <!-- block -->
   <secondarybuff id="10" amount="2"/> <!-- armor_absorption -->
   <resistbuff piercing="2"/>
@@ -1126,20 +1126,20 @@
 <!-- Dual Wield : Dextrous Warrior -->
 
 <ability name="Swift Hands" icon="skills/skill_dualwield.png" skill="7" level="0">
-  <description text="Faster, kill, kill! Basic training allows you to effectively use two weapons at once."/>
+  <description text="Быстрее, бей, бей, бей! Простая тренировка обращения с оружием в каждой руке."/>
   </ability>
 <ability name="Offensive Maneuvering" icon="skills/warrior/dualwield1_64.png" skill="7" level="1">
-  <description text="Attack now with all the weapons *at the same time*! Your offensive abilities are increased for a short while. You automatically employ this skill when the chance presents itself."/>
+  <description text="Атака всем оружием одновременно! Ваши боевые качества на некоторое время увеличены. Вы автоматически применяете этот навык, когда предоставляется такая возможность."/>
   <targetHitEffectBuff percentage="12" name="Offensive Maneuvering" />
   <secondarybuff id="8" amount="3"/> <!-- Counter -->
   </ability>
 <ability name="Ambidextrous Defense" icon="skills/warrior/dualwield2_64.png" skill="7" level="2">
-  <description text="You can use twice the blocking power! Increases your ability to defend yourself."/>
+  <description text="Используй силу Двух, чтобы заблокировать атаку врага! Увеличивает защитные способности."/>
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <secondarybuff id="7" amount="4"/> <!-- block -->
   </ability>
 <ability name="Combat Momentum" icon="skills/momentum64.png" skill="7" level="3" >
-  <description text="Keep up the momentum of combat for enhanced combat ability. Rip and tear!" />
+  <description text="Сохраняйте боевой темп для усиления эффективности удара. Рви и мечи!" />
   <targetHitEffectBuff percentage="100" name="Combat Momentum" />
   </ability>
 <!-- defer this.
@@ -1147,7 +1147,7 @@
   <description text="bonus based on # of adjacent enemies" />
   </ability> -->
 <ability name="Not Drizzt" icon="skills/warrior/dualwield3_64.png" skill="7" level="4">
-  <description text="The best part about being misunderstood is that you're also so totally awesome. Greatly increases your ability to counter attacks."/>
+  <description text="Вы часто являетесь непонятым, зато вы особенный. Значительно повышает шанс контратаки."/>
   <secondarybuff id="8" amount="10"/> <!-- Counter -->
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
@@ -1272,38 +1272,38 @@
 <!-- Alchemy sub-abilities -->
 
 <ability name="Potions 101" icon="skills/rogue/alchemy0_64.png" skill="29" level="0">
-  <description text="With basic alchemy knowledge, you can mix small potions more-or-less accurately." />
+  <description text="Базовые знания алхимии позволяют создавать простые простые зелья более-менее правильно." />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff acidic="1" />
   </ability>
 <ability name="Distillistry" icon="skills/rogue/alchemy1_64.png" skill="29" level="1">
-  <description text="You can mix more, better, and purer." />
+  <description text="Вы зелья стали лучше и самое главное чище." />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff putrefying="1" />
   </ability>
 <ability name="Transmutationer" icon="skills/rogue/alchemy2_64.png" skill="29" level="2">
-  <description text="Advanced alchemical training allows you to transmute gems randomly." />
+  <description text="Продвинутый курс алхимии позволяет вам изменять драгоценные камни на случайные другие." />
   <spell name="Gem Transmutation"/>
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff acidic="1" />
   </ability>
 <ability name="Mixologist" icon="skills/rogue/alchemy3_64.png" skill="29" level="3">
-  <description text="You can mix all kinds of potions in alarming combinations." />
+  <description text="Вы можете смешивать всевозможные виды опасных зелий." />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff conflagratory="1" />
   </ability>
 <ability name="High-energy Alchemist" icon="skills/skill_alchemy.png" skill="29" level="4">
-  <description text="Oh, what power you can place in a bottle!" />
+  <description text="Ох какую-же мощь вы можете закупорит в бутылке!" />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff acidic="2" />
   </ability>
 <ability name="Potionmaster" icon="skills/alchemical_inspiration64.png" skill="29" level="5">
-  <description text="It is potion, elixir, and philter which flow in your veins now more than the base blood of men." />
+  <description text="В ваших венах течет не просто кровь, а крепкое алхимическое зелье." />
   <primarybuff id="1" amount="2" /> <!-- sag -->
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <secondarybuff id="13" amount="1" /> <!-- hp regen -->

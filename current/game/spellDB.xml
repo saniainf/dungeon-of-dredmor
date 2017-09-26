@@ -510,7 +510,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<secondarybuff id="0" amount="-3"/> <!-- hp -->
 	</buff>
 	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="impact" centerEffect="0"/>
-   <description text="Massive blood loss decreases strength." />
+   <description text="Сильная кровопотеря лишает сил." />
    <effect type="dot" spell="Bleedout Pain" amount="8" />
    </spell>
 <spell name="Crippling Wound" type="target">
@@ -573,7 +573,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="13" amount="4"/> <!-- hp regen -->
 	</buff>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="metal_get" />
-	<description text="To be armoured you must project the image of being armoured. This skill allows you to boost your defense for a short time." />
+	<description text="Если вы в доспехах, надо чтобы они и выглядели хорошо. Этот навык дает вам бонус защиты на пару-другую ударов." />
    </spell>
 <spell name="Walk It Off" type="self" icon="skills/stat_con64.png" wand="0">
 	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
@@ -581,7 +581,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<primarybuff id="4" amount="2"/> <!-- Stb -->
 		<secondarybuff id="13" amount="10"/> <!-- hp regen -->
       </buff>
-	<description text="It's only a flesh wound, just walk it off. Increases health regeneration and stubbornness for a short time after getting hit." />
+	<description text="Это всего лишь царапина, просто забудь. Шанс увеличить регенерацию здоровья и stubborness, на короткое время, после получения удара." />
    </spell>
 <spell name="It Only Makes You Stronger" type="self" icon="skills/stat_str64.png" wand="0">
 	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
@@ -590,7 +590,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="0" amount="7"/> <!-- hp -->
       <resistbuff piercing="1"/>
       </buff>
-	<description text="Practice being beaten, crushed and stabbed has made you highly skilled in these activities. When you get hit there is a chance that your health, burliness, and piercing resistance will increase temporarily." />
+	<description text="Полученные синяки, порезы и травмы сделали вас 'спецом' в этом деле. После получения удара есть шанс, что ваше здоровье, burliness и сопротивление проникающему удару временно увеличатся." />
    </spell>
 
 <!-- Shieldbearer -->
@@ -653,7 +653,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="4" amount="2"/> <!-- crit -->
    </buff>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blades" />
-   <description text="Attack now with all the weapons *at the same time*! Your offensive abilities are increased -- until you get hit a couple times and your concentration is ruined." />
+   <description text="Атака всем оружием одновременно! Ваши боевые качества увеличены пока вы не получите пару ударов и не пропадет концентрация." />
    </spell>
 
 
@@ -3761,7 +3761,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<damagebuff piercing="1" /> 
       <secondarybuff id="8" amount="2"/> <!-- counter -->
       </buff>
-	<description text="Keep up the momentum of combat for enhanced combat ability. Rip and tear!" />
+	<description text="Сохраняйте боевой темп для усиления эффективности удара. Рви и мечи!" />
    </spell>
 
 <spell name="Invisible Geometries Drain" self="1" icon="skills/invisible_geometries32.png" type="self" wand="0">
