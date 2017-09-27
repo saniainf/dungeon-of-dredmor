@@ -1069,19 +1069,19 @@
   <secondarybuff id="0" amount="5"/> <!-- hitpoints -->
   </ability>
 <ability name="Suit Up" icon="skills/warrior/armourer1_64.png" skill="11" level="1">
-  <description text="Если вы в доспехах, надо чтобы они и выглядели хорошо. Этот навык позволяет вам затянуть ремни в доспехах, чтобы они стали более эффектными. Но как только вы перетянете, бонус пропадет."/>
+  <description text="Надо не только носить броню, но и отлично в ней выглядеть. Этот навык позволяет вам подтянуть лямки, чтобы доспех стал более эффектным. Но как только вы перетянете, бонус пропадет."/>
   <secondarybuff id="7" amount="1"/> <!-- block -->
   <resistbuff piercing="1"/>
   <spell name="Suit Up" />
   </ability>
 <ability name="Walk It Off" icon="skills/stat_con64.png" skill="11" level="2">
-   <description text="Это всего лишь царапина, просто забудь. Шанс увеличить регенерацию здоровья и stubborness после получения удара." />
+   <description text="Это всего лишь царапина, просто забудь. Шанс увеличить регенерацию здоровья и Stubborness после получения удара." />
    <secondarybuff id="0" amount="5"/> <!-- hp -->
 	<secondarybuff id="7" amount="1"/> <!-- block -->
    <playerHitEffectBuff percentage="20" name="Walk It Off" />
    </ability>
 <ability name="It Only Makes You Stronger" icon="skills/stat_str64.png" skill="11" level="3">
-   <description text="Полученные синяки, порезы и травмы сделали вас 'спецом' в этом деле. После получения удара есть шанс, что ваше здоровье, burliness и сопротивление проникающему удару временно увеличатся." />
+   <description text="Полученные синяки, порезы и травмы сделали вас 'спецом' в этом деле. После получения удара есть шанс, что ваше здоровье, Burliness и сопротивление проникающему удару временно увеличатся." />
    <secondarybuff id="10" amount="1"/> <!-- armor_absorption -->
    <playerHitEffectBuff percentage="15" name="It Only Makes You Stronger" />
    </ability>
@@ -1147,7 +1147,7 @@
   <description text="bonus based on # of adjacent enemies" />
   </ability> -->
 <ability name="Not Drizzt" icon="skills/warrior/dualwield3_64.png" skill="7" level="4">
-  <description text="Вы часто являетесь непонятым, зато вы особенный. Значительно повышает шанс контратаки."/>
+  <description text="Вас часто никто не понимает, хотя это делает вас особенным. Значительно повышает шанс контратаки."/>
   <secondarybuff id="8" amount="10"/> <!-- Counter -->
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
@@ -1272,13 +1272,13 @@
 <!-- Alchemy sub-abilities -->
 
 <ability name="Potions 101" icon="skills/rogue/alchemy0_64.png" skill="29" level="0">
-  <description text="Базовые знания алхимии позволяют создавать простые простые зелья более-менее правильно." />
+  <description text="Базовые знания алхимии позволяют создавать простые зелья более-менее правильно." />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff acidic="1" />
   </ability>
 <ability name="Distillistry" icon="skills/rogue/alchemy1_64.png" skill="29" level="1">
-  <description text="Вы зелья стали лучше и самое главное чище." />
+  <description text="Ваши зелья стали лучше и самое главное чище." />
   <primarybuff id="1" amount="1" />
   <secondarybuff id="21" amount="1" /> <!-- alchemy -->
   <resistbuff putrefying="1" />
@@ -1540,38 +1540,38 @@
 
 
 <ability name="Honourary Armourer" icon="skills/rogue/smithing0_64.png" skill="32" level="0" >
-  <description text="After many bruised thumbs and burns, you know the very basics of bashing things out of metal." />
+  <description text="После полученных ожогов и отбитых пальцев, в узнали простые методы ковки метала." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <primarybuff id="0" amount="1" /> <!-- BUR -->
   </ability>
 <ability name="Ingoteer" icon="skills/rogue/smithing1_64.png" skill="32" level="1" >
-  <description text="This is the art of mining cubes then crafting them into useful shapes. You've also picked up something about traps." />
+  <description text="Это мастерство, придавать добытым слиткам искусные формы. Также вы кое-что узнали о ловушках." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <secondarybuff id="16" amount="1"/> <!-- trap level -->
   <primarybuff id="0" amount="1" /> <!-- BUR -->
   </ability>
 <ability name="Metallurgical Practitioner" icon="skills/rogue/smithing2_64.png" skill="32" level="2" >
-  <description text="You're a practical and practiced metallurgist." />
+  <description text="Вы практикующий и практичный металлург." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <primarybuff id="0" amount="1" /> <!-- BUR -->
   <resistbuff conflagratory="1"/>
   </ability>
 <ability name="Forgekeeper" icon="skills/rogue/smithing3_64.png" skill="32" level="3" >
-  <description text="You like it hot." />
+  <description text="Вы любите погорячее, джаз и контрабас." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <primarybuff id="0" amount="1" /> <!-- BUR -->
   <secondarybuff id="16" amount="1"/> <!-- trap level -->
   <damagebuff crushing="1"/>
   </ability>
 <ability name="Chosen of Krong" icon="skills/skill_smithing.png" skill="32" level="4" >
-  <description text="Heft well your mighty hammer, for your metalcraft is a divine calling." />
+  <description text="Замахнитесь посильнее своим могучим молотом, ведь ковка металла ваш божественный дар." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <primarybuff id="0" amount="1" /> <!-- BUR -->
   <resistbuff conflagratory="2"/>
   <damagebuff crushing="1"/>
   </ability>
 <ability name="The World-Hammer" icon="skills/forge_lord64.png" skill="32" level="5" >
-  <description text="What hath these hands wrought? Why, crafts which even the Forge-Lord of Ulm covets." />
+  <description text="Что вытворяют эти руки? Если даже Лорд-Кузнец Ульма завидует их мастерству." />
   <secondarybuff id="19" amount="1" /> <!-- smith -->
   <primarybuff id="0" amount="2" /> <!-- BUR -->
   <resistbuff transmutative="1"/>
@@ -1606,13 +1606,13 @@
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
   </ability>
 <ability name="Chief Artificer" icon="skills/skill_tinkerer.png" skill="33" level="4" >
-  <description text="You're a master of the mechanical philosophies. You see the world's wheels turning and all of Being rotating around. It's enough to make one nauseous." />
+  <description text="Вы достигли мастера в механицизме. Вы видите как вращаются колеса мироздания приводя в движения шестерни бытия. Это может вызвать головокружение." />
   <primarybuff id="5" amount="1" /> <!-- sav -->
   <secondarybuff id="16" amount="2"/> <!-- trap level -->
   <secondarybuff id="20" amount="1" /> <!-- tinkering -->
   </ability>
 <ability name="Music of the Gears" icon="skills/music_of_the_gears64.png" skill="33" level="5" >
-  <description text="Every gear in place, every cam clacking in tune; Do you hear it? " />
+  <description text="Каждая шестеренка на месте, каждая собачка щелкает в такт. Вы слышите это?" />
   <primarybuff id="5" amount="2" /> <!-- sav -->
   <primarybuff id="2" amount="2" /> <!-- nim -->
   <secondarybuff id="16" amount="3"/> <!-- trap level -->
