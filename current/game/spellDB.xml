@@ -257,14 +257,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="60" sfx="elec" />
    <impact sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" framerate="80"/>
    <effect type="trigger" spell="Blast Effect A" />
-   <description text="A smaller, gentler lightning strike. Indoor use only."/>
+   <description text="Тихий и слабый удар молнии. Использовать только в помещении."/>
    </spell>
 <spell name="Small Electrical Strike" type="target" wand="0" icon="skills/spells/magic_steel32.png" >
    <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
    <effect type="paralyze"  amount="3"  affectsCaster="1" turns="1" />
    <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="100" sfx="elect" />
    <effect type="trigger" spell="Blast Effect A" />
-   <description text="A smaller, gentler lightning strike. Indoor use only."/>
+   <description text="Тихий и слабый удар молнии. Использовать только в помещении."/>
    </spell>
 <spell name="Boot to the Head" type="target" >
    <effect type="knock" amount="2" />
@@ -1701,9 +1701,9 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="4" amount="2" /> <!-- crit -->
       <damagebuff voltaic="2" />
       <resistbuff voltaic="2" />
-      <targetHitEffectBuff percentage="55" name="Small Electrical Strike" /> <!-- remember: spell effect must come ABOVE before this line in XML -->
+      <targetHitEffectBuff percentage="55" name="Small Electrical Strike" /> <!-- remember: spell effect must come ABOVE before this line in XML 55 --> 
    </buff>
-   <description text="Thunder and storm with the triumph of your Magick Steele! This spell strengthens your attacks, gives your attacks electrical damage, and gives you a chance to do exceptional electrical attacks which may knock your enemies away. Requires some mana to maintain enchantment." />
+   <description text="Гром и молния сопутствуют триумфу вашей магии стали! Это заклинание усиливает ваши атаки, добавляя электрический урон оружию, а вам шанс провести уникальную атаку молнией. Для поддержания требуется мана." />
    <ai hint="buff"/>
    </spell>
 <!-- <playerHitEffectBuff percentage="10" name="Electrical Strike" /> -->
@@ -1730,7 +1730,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       minesMustBeUnobstructed="0" >
    <!-- <effect type="trigger" spell="Skatha's Roots" /> -->
 	<!-- <anim sprite="sprites/sfx/skathas_roots/skathas_roots" frames="6" framerate="100" sfx="roots" centerEffect="0" /> -->
-   <description text="These summoned roots stop your foes dead in their tracks. Also with the crushing of the throat and all that. Stops movement for a short while, restricts ability to dodge." />
+   <description text="Призванные корни намертво приковывают к земле и наносят периодический урон от своих крепких объятий. Парализуют на некоторое время и уменьшают способность уклоняться." />
    </spell>
    
 <spell name="Skatha's Roots" type="target" icon="skills/spells/skathas_roots32.png" >
@@ -1742,7 +1742,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="5" amount="-5" /> <!-- dodge -->
       <!-- <halo name="sprites/sfx/roots/roots" first="0" num="3" frameRate="100" centereffect="0" /> -->
       </buff>
-	<description text="These summoned roots stop your foes dead in their tracks. Also with the crushing of the throat and all that. Stops movement for a short while, restricts ability to dodge." />
+	<description text="Призванные корни намертво приковывают к земле и наносят периодический урон от своих крепких объятий. Парализуют на некоторое время и уменьшают способность уклоняться." />
    <effect type="trigger" spell="Skatha's Roots Mine" />
    </spell>
    
@@ -1759,7 +1759,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="5" amount="-2" /> <!-- dodge -->
 		<resistbuff hyperborean="-1" />
       </buff>
-	<description text="Summons the cold Winds Of The North to bedevil your foes and chill their flesh from the bone. Does damage over time and decreases their ability to dodge and their resistance to cold." />
+	<description text="Призванные ледяные Ветра Севера промораживают плоть до костей. Наносят урон все время действия и уменьшают способность уклоняться и сопротивляться холоду." />
 	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="magic" centerEffect="1" />
 	<effect type="dot" amount="7" affectsCorpses="0" spell="Arctic Cold" />
 </spell>
@@ -1777,7 +1777,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="2" amount="-3"/> <!-- melee power -->
       <resistbuff crushing="-1" slashing="-1" />
       </buff>
-   <description text="Your unholy warcry drives fear and weakness into the hearts of your enemies, reducing their ability to fight and, more importantly, to fight back."/>
+   <description text="Ваш ужасающий боевой крик вселяет страх и слабость в сердца врагов. Уменьшает их способность сражаться и самое главное сопротивляться."/>
    <anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="60" sfx="magic" centerEffect="1"/>
    </spell>
 <spell name="Hand of Belimawr" type="self" icon="skills/spells/firehand32.png" wand="0" >
@@ -1789,7 +1789,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <resistbuff conflagratory="3"/>
       <targetHitEffectBuff percentage="51" name="Ignition Bolt"/>
    </buff>
-   <description text="The Hand of Belimawr is a fiery one indeed; it grants you fiery defense and fiery attacks and sucks up mana like you wouldn't believe." />
+   <description text="Рука Белимоура действительно огненная. Наделяет ваши атаки силой огня и дает вам защиту от него. А также расходует манну так, что поверить сложно." />
    </spell>
 <spell name="Thor's Fulminaric Bolt" type="targetfloor" icon="skills/spells/fulminaric_bolt32.png" wand="1">
    <requirements mp="17" savvyBonus="0.28" mincost="5" />

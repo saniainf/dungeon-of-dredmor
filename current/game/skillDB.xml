@@ -640,28 +640,28 @@
   
 <ability name="Power of Magic Steel" icon="skills/spells/magic_steel64.png" skill="19" level="0">
   <spell name="Magic Steel"/>
-  <description text="Thunder and storm with the triumph of your magic steel! This spell grants your attacks the power of lightning (and you defense against the same)."/>
+  <description text="Гром и молния сопутствуют триумфу вашей магии стали! Это заклинание наделяет ваши атаки силой молнии и дает вам защиту от нее."/>
   </ability>
 <ability name="Skatha's Roots" icon="skills/spells/skathas_roots64.png" skill="19" level="1">
   <spell name="Skatha's Roots"/>
-  <description text="These summoned roots stop your foes dead ...in their tracks. Also with the crushing of the throat and all that."/>
+  <description text="Призванные корни намертво приковывают ваших врагов к земле и наносят периодический урон от своих крепких объятий."/>
   </ability>
 <ability name="Arctic Vortex" icon="skills/spells/arctic_vortex64.png" skill="19" level="2">
   <spell name="Arctic Vortex"/>
-  <description text="Cast this on your enemy to summon the cold Winds Of The North to bedevil your foes and chill their flesh from the bone."/>
+  <description text="Призовите ледяные Ветра Севера, чтобы проморозить плоть врагов до костей."/>
   </ability>
    <!-- TODO: Odin's Barter -->
 <ability name="Unholy Warcry" icon="skills/spells/unholy_warcry64.png" skill="19" level="3">
   <spell name="Unholy Warcry"/>
-  <description text="Your unholy warcry drives fear and weakness into the hearts of your enemies, reducing their ability to fight and, more importantly, to fight back."/>
+  <description text="Ваш ужасающий боевой крик вселяет страх и слабость в сердца врагов. Уменьшает их способность сражаться и самое главное сопротивляться."/>
   </ability>
 <ability name="Hand of Belimawr" icon="skills/spells/firehand64.png" skill="19" level="4">
   <spell name="Hand of Belimawr"/>
-  <description text="The Hand of Belimawr is a fiery one indeed; it grants you fiery defense and fiery attacks and sucks up mana like you wouldn't believe."/>
+  <description text="Рука Белимоура действительно огненная. Наделяет ваши атаки силой огня и дает вам защиту от него. А также расходует манну так, что поверить сложно."/>
   </ability>
 <ability name="Thor's Fulminaric Bolt" icon="skills/spells/fulminaric_bolt64.png" skill="19" level="5">
   <spell name="Thor's Fulminaric Bolt"/>
-  <description text="Calls down the fury of Thor in the form of a bolt of lightning. Stand back!"/>
+  <description text="Обрушьте яростную мощь молнии Тора на своих врагов!"/>
   </ability>
 
   <!-- Asrologer -->
