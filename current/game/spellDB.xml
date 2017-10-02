@@ -573,7 +573,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="13" amount="4"/> <!-- hp regen -->
 	</buff>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="metal_get" />
-	<description text="Если вы в доспехах, надо чтобы они и выглядели хорошо. Этот навык дает вам бонус защиты на пару-другую ударов." />
+	<description text="Вы превосходно смотритесь в сияющих доспехах. Пока по ним пару раз не попали." />
    </spell>
 <spell name="Walk It Off" type="self" icon="skills/stat_con64.png" wand="0">
 	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
@@ -1865,7 +1865,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="13" savvyBonus="0.32" mincost="3"/>
 	<effect type="trigger" spell="Blinding Area Hit" amount="0" />
 	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" sfx="magic_damage" framerate="60" centerEffect="0" />
-	<description text="Blinds those in a ring around you with a burning flash of light."/>
+	<description text="Ослепляет всех вокруг, обжигающей вспышкой света."/>
    </spell>
 <spell name="Blinding Area Hit" type="template" templateID="20" >
 	<effect type="damage" righteous="2" righteousF="0.32" aethereal="2" aetherealF="0.23" self="0" affectscaster="1" />
@@ -1886,7 +1886,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <damagebuff righteous="1"/>
 		<playerHitEffectBuff percentage="35" name="Blinding Flash" />
 	</buff>
-	<description text="Surrounds you with a halo of light which illuminates the darkness (and your inner strength). Those who dare attack you are occasionally met with a blinding flash which stuns. The aura can only absorb a few hits before it is dissipated."/>
+	<description text="Проявляет силу ауры в сиянии света освещающего тьму подземелья. Тех кто на вас нападет, может может оглушить ослепительной вспышкой. Аура поглощает несколько ударов прежде чем погаснуть."/>
    <ai hint="ally" />
 </spell>
   
@@ -1904,7 +1904,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="trigger" spell="Ignition Bolt" amount="0" />
 	<requirements mp="12" savvyBonus="0.29" mincost="4"/>
    <anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" framerate="80" sfx="rune_set" centerEffect="0"/>
-   <description text="This magic rune uses the burning power of the sun to stop your foes dead ... in their tracks, at least."/>
+   <description text="Магическая руна использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
     <ai hint="mine" />
    </spell>
 <spell name="Syzygy" type="self" icon="skills/spells/syzygy32.png" >
@@ -1918,7 +1918,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="6" amount="5" /> <!-- dodge -->
 		<damagebuff aethereal="2" />
    </buff>
-   <description text="The planets have aligned to grant you extra-ordinary agility, power, and constitution. Requires mana to upkeep."/>     
+   <description text="Выстроенные в ряд Солнце, Земля и Луна, даруют вам необычайные ум и ловкость! Требуется мана для поддержания эффекта."/>     
    </spell>
 <spell name="Celestial Aegis" type="self" icon="skills/spells/celestial_aegis32.png" wand="0">
    <requirements mp="26" savvyBonus="0.45" mincost="5" />
@@ -1931,7 +1931,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <resistbuff transmutative="4"/>
       <resistbuff righteous="3"/>
    </buff>
-   <description text="With this shield of astrological power, the forces of the cosmos protect you. Usually. The effect will dissipate if it must absord too many hits. Requires mana to remain active."/>
+   <description text="Сами звезды защищают вас. Эффект пропадет после нескольких пропущенных ударов. Требуется мана для поддержания эффекта."/>
    </spell>
 
 <spell name="The Stars Aligned" type="template" templateID="100" anchored="1" icon="skills/spells/stars_aligned32.png" wand="1">
@@ -1940,7 +1940,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="paralyze" amount="2" turns="5" self="0" />
    <effect type="bleed" />
    <anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" sfx="magic_damage" framerate="80"  centerEffect="1"/>
-   <description text="With the stars aligned just so, terrible celestial energies are unleashed upon all around you."/>
+   <description text="Парад планет поражает всех вокруг вас, ужасающей мощью звезд."/>
    <!-- add some zalgo crap here? -->
    </spell>
 	
@@ -1950,7 +1950,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="8" savvyBonus="0.25"/>
 	<effect type="damage" crushing="8" slashing="5" blasting="5" affectscaster="1" />
 	<anim sprite="sprites/sfx/rockburst/rockburst" frames="9" sfx="earth" framerate="100"  centerEffect="0"/>  
-	<description text="This spell causes rock to explode from beneath an enemy's feet." />
+	<description text="Взрывает камни под ногами ваших врагов." />
    </spell>
 <spell name="Dragon's Breath" type="template" templateID="30" anchored="1" icon="skills/spells/dragons_breath32.png" wand="1">
 	<requirements mp="10" savvyBonus="0.24" mincost="3" />
@@ -1958,7 +1958,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" spell="Dragon's Breath 1" amount="0" />
 	<effect type="trigger" spell="Dragon's Breath 2" amount="0" />
 	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="7" firstframe="2" framerate="35" sfx="flame" centerEffect="1"/>
-   <description text="You can belch forth a jet of flame, not unlike that incident with the wager involving an entire barrel of Dwarven Rum. It sets anything in the way, including the floor, on fire."/>
+   <description text="Огненное дыхание поджигающие все на свем пути, включая пол."/>
    </spell>
 <spell name="Dragon's Breath 1" type="template" templateID="31" anchored="1" >
 	<effect type="damage" conflagratory="2" conflagratoryF="0.15" blasting="2" blastingF="0.05" />
@@ -2002,14 +2002,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="trigger" spell="Fire 1" amount="0" />
    <requirements mp="18" savvyBonus="0.13" mincost="8" />
    <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="rune_set" centerEffect="0"/>
-   <description text="This spell inscribes a magical fiery-exploding rune into the floor. Watch your step!" />
+   <description text="Наносит на пол магическую руну взрыва. Главное самому не наступить!" />
    </spell>
 <spell name="Summon Wyrmling" type="targetemptyfloor" icon="skills/spells/summon_wyrmling32.png" >
    <requirements mp="23" savvyBonus="0.23"/>
    <effect type="summon" monsterType="Summon Wyrmling" />
    <anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="100" sfx="flame" centerEffect="1"/>
    <effect type="trigger" spell="Hollow Thermite Blast" amount="0" />
-   <description text="This fiery ritual summons a dragony friend who will happily set people alight and trigger traps for you. Like most Promethean spells, the summoning process has the side effect of shooting fire all over the place." />
+   <description text="Ритуал призыва дружелюбного дракончика, который с удовольствием подожжет пару людишек и наступит в ловушки вместо вас. Как и большенство заклинаний Прометеевой школы, при применении стреляет огнем в разные стороны." />
    </spell>
 <spell name="Obvious Fireball" type="missile" icon="skills/spells/fireball32.png" wand="1" >
 	<requirements mp="19" savvyBonus="0.13" mincost="9"/>
@@ -2018,7 +2018,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <impact sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
 	<effect type="trigger" spell="Flamefield 1" amount="0" />
 	<effect type="trigger" spell="Fireball Effect" amount="0" />
-	<description text="It's a giant fireball. It goes BOOM. Then with the burning. Oh god, the burning. What more do you want?" />
+	<description text="Здоровенный фаербол. Который БУУУУУМ и потом все горит. Просто горит. А что вы еще ожидали?" />
    </spell>
 <spell name="Fireball Effect" type="template" templateID="98" anchored="0" >
    <effect type="damage" conflagratory="2" blasting="2" conflagratoryF="0.25" blastingF="0.2" affectscaster="1" />
@@ -2054,7 +2054,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
   <ai hint="mine"/>
    <effect type="damage" conflagratory="8" conflagratoryF="0.45" affectscaster="1" />
    <anim sprite="sprites/sfx/fireburst/fireburst" frames="7" sfx="flame" centerEffect="1"/>
-   <description text="Summons a wall of fire from The Elemental Plane of Walls of Fire. Burns out over several turns as the otherworldly fuel-line succumbs to the Peak Mana crisis. Greater magical ability makes the spell easier to cast and the fire burn hotter." />
+   <description text="Призывает огненную стену из Элементарного Плана Огненных Стен. Продолжает гореть какое-то время, пока не иссякнет подпитываемая маной связь. Чем круче магические способности, тем сильнее горит." />
  </spell>
 	<!-- but does it blend? -->
 <spell name="Infernal Torus" type="self" icon="skills/spells/infernal_torus32.png">
@@ -2065,7 +2065,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="trigger" spell="Torus Blast 3" amount="0" />
    <anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="magic" centerEffect="1"/>
    <impact sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="100" sfx="flame" centerEffect="1"/>
-   <description text="By busting some sweet dance moves, you set the dance floor on fire, effectively setting all enemies around you on fire. Also more fire beyond that, it's really quite a mess. Greater magical power makes the fire all the hotter." />
+   <description text="Выполнив пару отменных движений вы зажигаете танцпол и всех вокруг вас. Еще больше добавляя жара в хаос который творится вокруг. Чем круче магические способности, тем сильнее все горит." />
 </spell>
   
 <spell name="Flamefield 2" 
@@ -3176,25 +3176,25 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    
 
 <!-- fountain effects -->
-  <fountain name="Touch of Midas" text="You find a shiny penny in the fountain."/>
-  <fountain name="Armouring" text="You feel defended."/>
-  <fountain name="Invisibility" text="You feel transparent and at one with the water."/>
-  <fountain name="Medium Burl" text="You feel burly."/>
-  <fountain name="Medium Regen" text="Your body just got a little moister."/>
-  <fountain name="Clear Vision" text="When you gaze into the water, everything seems so clear..."/>
-  <fountain name="Azure Magicks" text="There are little mushrooms growing in the water! How cute. Also, disgusting."/>
-  <fountain name="Regal Vim" text="You feel like a prince."/>
-  <fountain name="Plaid Power" text="The water irradiates you with mystical plaid energy."/>
-  <fountain name="Curse Removal" text="You feel refreshed."/>
-  <fountain name="Dire Empowerment" text="Your mind overflows with dark thoughts."/>
-  <fountain name="Hyperborean Empowerment" text="Brr! This water's cold!"/>
-  <fountain name="Infernal Empowerment" text="Wow, this water's boiling!"/>
+  <fountain name="Touch of Midas" text="Вы нашли блестящую монетку."/>
+  <fountain name="Armouring" text="Вы чувствуете себя защищенным."/>
+  <fountain name="Invisibility" text="Вода сделала вас прозрачным как слеза."/>
+  <fountain name="Medium Burl" text="Вы здорово себя чувствуете."/>
+  <fountain name="Medium Regen" text="Ваше тело стало немного склизким."/>
+  <fountain name="Clear Vision" text="Глядя в воду можно увидеть все яснее..."/>
+  <fountain name="Azure Magicks" text="В воде растут маленькие грибочки! Как мило. И вместе с тем противно."/>
+  <fountain name="Regal Vim" text="Вы чувствуете себя наследником престола."/>
+  <fountain name="Plaid Power" text="Вода наделяет вас мистической энергией шерстяных клеточек."/>
+  <fountain name="Curse Removal" text="Вы чувствуете себя отдохнувшим."/>
+  <fountain name="Dire Empowerment" text="Ваш ум наполняется темными мыслями."/>
+  <fountain name="Hyperborean Empowerment" text="Брррр! Какая холодная водица!"/>
+  <fountain name="Infernal Empowerment" text="Ого, почти кипяток!"/>
 
   
-  <fountain name="Unpleasant Poison" text="The water is poisoned! Curses!"/>
-  <fountain name="Acid Burn" text="The water burns like acid! The water IS acid!"/>
-  <fountain name="Lingering Weakness" text="This water tastes foul! You feel sick."/>
-  <fountain name="Lingering Dullness" text="This water tastes foul! You feel stupid."/>
+  <fountain name="Unpleasant Poison" text="Вода отравлена! Проклятие!"/>
+  <fountain name="Acid Burn" text="Вода бурлит как кислота! Так это и есть кислота!"/>
+  <fountain name="Lingering Weakness" text="Эта вода очень грязная! Вы заболели."/>
+  <fountain name="Lingering Dullness" text="Эта вода очень грязная! А Вы глупый."/>
 
 <!-- 1.0.3 spells -->
 

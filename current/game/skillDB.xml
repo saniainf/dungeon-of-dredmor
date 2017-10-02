@@ -657,7 +657,7 @@
   </ability>
 <ability name="Hand of Belimawr" icon="skills/spells/firehand64.png" skill="19" level="4">
   <spell name="Hand of Belimawr"/>
-  <description text="Рука Белимоура действительно огненная. Наделяет ваши атаки силой огня и дает вам защиту от него. А также расходует манну так, что поверить сложно."/>
+  <description text="Рука Belimawr действительно огненная. Наделяет ваши атаки силой огня и дает вам защиту от него. А также расходует манну так, что поверить сложно."/>
   </ability>
 <ability name="Thor's Fulminaric Bolt" icon="skills/spells/fulminaric_bolt64.png" skill="19" level="5">
   <spell name="Thor's Fulminaric Bolt"/>
@@ -668,32 +668,32 @@
 
 <ability name="Radiant Aura" icon="skills/spells/radiant_aura64.png" skill="20" level="0">
   <spell name="Radiant Aura"/>
-  <description text="Surrounds you with a halo of light which illuminates the darkness (and your inner strength). Those who dare attack you are occasionally met with a blinding flash which stuns. It can only absorb a few hits before the aura is dissipated."/>
+  <description text="Проявляет силу ауры в сиянии света освещающего тьму подземелья. Тех кто на вас нападет, может ослепить обжигающей вспышкой. Сияние поглощает несколько ударов прежде чем погаснуть."/>
   <resistbuff aethereal="1"/>  
   </ability>
 <ability name="Solar Inscription" icon="skills/spells/divine_inscription64.png" skill="20" level="1">
   <spell name="Solar Inscription"/>
-  <description text="This magic rune uses the burning power of the sun to stop your foes dead ... in their tracks, at least."/>
+  <description text="Магическая руна использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
   <resistbuff aethereal="1"/>  
   </ability>
 <ability name="Blinding Flash" icon="skills/spells/blinding_light64.png" skill="20" level="2">
   <spell name="Blinding Flash"/>
-  <description text="Blinds those in a ring around you with a burning flash of light which causes pain and paralysis."/>
+  <description text="Ослепляет всех вокруг обжигающей вспышкой света, вызывающей боль и паралич."/>
   <resistbuff aethereal="1"/>  
   </ability>
 <ability name="Syzygy" icon="skills/spells/syzygy64.png" skill="20" level="3">
   <spell name="Syzygy"/>
-  <description text="Aligns the planets to grant you extra-ordinary agility, power, and constitution! Requires mana to upkeep the effect."/>
+  <description text="Выстраивает в ряд Солнце, Землю и Луну, даруя вам необычайные ум и ловкость! Требуется мана для поддержания эффекта."/>
   <resistbuff aethereal="1"/> 
   </ability>
 <ability name="Celestial Aegis" icon="skills/spells/celestial_aegis64.png" skill="20" level="4">
   <spell name="Celestial Aegis"/>
-  <description text="With this shield of astrological power, the forces of the cosmos protect you. Usually. The effect will dissapate if you are hit, and requires mana to keep active."/>
+  <description text="Могущественные силы всего бесконечного космоса наполняют вас, даруя вам защиту от нескольких ударов противника. Требуется мана для поддержания эффекта."/>
   <resistbuff aethereal="1"/>
   </ability>
 <ability name="The Stars Aligned" icon="skills/spells/stars_aligned64.png" skill="20" level="5">
   <spell name="The Stars Aligned"/>
-  <description text="With the stars aligned just so, terrible celestial energies are unleashed upon all around you."/>
+  <description text="Парад планет поражает всех вокруг вас, ужасающей мощью звезд."/>
   <resistbuff aethereal="1"/>
   </ability>
 
@@ -701,32 +701,32 @@
 
 <ability name="Dragon's Breath" icon="skills/spells/dragons_breath64.png" skill="21" level="0">
   <spell name="Dragon's Breath"/>
-  <description text="You can belch forth a jet of flame, not unlike that incident with the wager involving an entire barrel of Dwarven Rum. It sets anyone in the way, including the floor, on fire." />
+  <description text="Вы можете дышать огнем. В отличие от того случая с пари, на бочку Dwarven Rum. Поджигает все на своем пути, включая пол." />
   </ability>
    <!-- TODO: Blazetrailing -->
 <ability name="Rune of Exploding" icon="skills/spells/rune_of_exploding64.png" skill="21" level="1">
   <spell name="Rune of Exploding"/>
-  <description text="Inscribes a magical exploding rune into the floor. Watch your step!" />
+  <description text="Наносит на пол магическую руну взрыва. Главное самому не наступить!" />
   <resistbuff conflagratory="1"/>  
   </ability>
 <ability name="Summon Wyrmling" icon="skills/spells/summon_wyrmling64.png" skill="21" level="2">
   <spell name="Summon Wyrmling"/>
-  <description text="This fiery ritual summons a dragony friend who will happily set people alight and trigger traps for you. Like most Promethean spells, the summoning process has the side effect of shooting fire all over the place."/>
+  <description text="Ритуал призыва дружелюбного дракончика, который с удовольствием подожжет пару людишек и наступит в ловушки вместо вас. Как и большенство заклинаний Прометеевой школы при применении, стреляет огнем в разные стороны."/>
   <resistbuff conflagratory="1"/>  
   </ability>
 <ability name="Obvious Fireball" icon="skills/spells/fireball64.png" skill="21" level="3">
   <spell name="Obvious Fireball"/>
-  <description text="It's a fireball. It goes BOOM. Then with the burning. What more do you want?" />
+  <description text="Хм... Это Фаербол. Ну типа БУУУУУМ и потом все горит. А что вы еще ожидали?" />
   <resistbuff conflagratory="1"/>  
   </ability>
 <ability name="Gog's Tactical Pyre" icon="skills/spells/tactical_pyre64.png" skill="21" level="4">
   <spell name="Gog's Tactical Pyre"/>
-  <description text="Summons a wall of fire from The Elemental Plane of Walls of Fire. Burns out over several turns as the otherworldly fuel-line reaches the Peak Mana crisis. Greater magical ability makes the spell easier to cast and the fire burn hotter."/>
+  <description text="Призывает огненную стену из Элементарного Плана Огненных Стен. Продолжает гореть какое-то время, пока не иссякнет подпитываемая маной связь. Чем круче магические способности, тем сильнее горит."/>
   <resistbuff conflagratory="1"/>  
   </ability>
 <ability name="Infernal Torus" icon="skills/spells/infernal_torus64.png" skill="21" level="5">
   <spell name="Infernal Torus"/>
-  <description text="By busting some sweet dance moves, you set the dance floor on fire, effectively setting all enemies around you on fire. Also more fire beyond that, it's really quite a mess. Greater magical power makes the fire all the hotter."/>
+  <description text="Выполнив пару отменных движений вы зажигаете танцпол и всех вокруг вас. Еще больше добавляя жара в хаос который творится вокруг. Чем круче магические способности, тем сильнее все горит."/>
   <resistbuff conflagratory="1"/>  
   </ability>
 
@@ -978,7 +978,7 @@
   <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
    </ability>
 <ability name="Crossbow Blast" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
-  <description text="Эта техника выстрела, обросшая сплетнями и слухами, позволяет стрелку превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон. Это сложно, поэтому использовать ее можно лишь иногда." />
+  <description text="Техника выстрела, обросшая сплетнями и слухами, позволяющая превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон. Это сложно, поэтому использовать ее можно лишь иногда." />
   <damagebuff piercing="1"/>
   <recoverybuff amount="10" />
   <crossbowShotBuff name="Crossbow Blast" percentage="20" />
