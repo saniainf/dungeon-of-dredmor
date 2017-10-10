@@ -736,27 +736,27 @@
 
 
 <ability name="Combat Lumberjack" icon="skills/warrior/axemanship0_64.png" skill="1" level="0">
-  <description text="Embrace the Flannel. Become one with the Flannel. This skill forms the foundation of axe-wielding."/>
+  <description text="Вы встали на верный путь последователя канадских лесорубов. Это базовая техника правильного махания топором."/>
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff slashing="2"/>
   </ability>
 <ability name="Viking Strike" icon="skills/warrior/axemanship1_64.png" skill="1" level="1">
-  <description text="Join the Church of Odin! Learn to hate! With this skill, you have a chance to perform the 'Viking Strike' in melee combat."/>
+  <description text="Вступай в ряды Одинцев! Познай ненависть! В ближнем бою есть шанс выполнить 'Viking Strike'."/>
   <!-- <spell name="Viking Strike"/> -->
   <targetHitEffectBuff percentage="20" name="Viking Strike" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
    </ability>
 <ability name="Axe Training" icon="skills/skill_axe.png" skill="1" level="2">
-  <description text="Vigorous training with your axe allows you to chop and cleave more fiercely and accurately. Saplings tremble. You occasionally deal a Crippling Wound."/>
+  <description text="Неустанные тренировки с топором научили вас разрубать все более яростно и точно. Деревца уже трясутся. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
   <damagebuff slashing="1" />
   <targetHitEffectBuff percentage="8" name="Crippling Wound" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Norwegian Axenado" icon="skills/warrior/axemanship2_64.png" skill="1" level="3">
-  <description text="Destroy your foes with the axe-wielding powers described in the ancient sagas! With this skill, you can hit all of the enemies in an area around you."/>
+  <description text="Обрушьте истинную мощь топора на своих врагов, как в легендарных древних сказаниях! Этот удар не пропустит никого вокруг вас."/>
   <spell name="Norwegian Axenado"/>
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -764,13 +764,13 @@
   </ability>
 <ability name="Axe Mantra" icon="skills/warrior/axe_mantra64.png" skill="1" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
-  <description text="Spiritual devotion to the art of the axe has unlocked its secrets: You have a chance of executing exceptionally grievous attacks in combat while using axes." />
+  <description text="Священная преданность исскуству махания топором раскрыло вам все его секреты. Есть шанс нанести топором ужасную рану, от которой тяжело оправиться." />
   <targetHitEffectBuff percentage="16" name="Bleeding Out" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Philosopher of the Axe" icon="skills/warrior/axemanship3_64.png" skill="1" level="5">
-  <description text="At the highest level, axe wielding is not just a combat skill. It is a way of life, and a way of being. Enhances your combat abilities when using axes and allows you to employ a terrifying latin-based attack."/>
+  <description text="Высочайший уровень махания топором — это не просто боевой навык, это образ мысли и жизни. Боевые способности сильно возрастают при использовании топора. А еще вы узнали эффективный прием с непереводимым латинским названием."/>
   <spell name="Cogito Ergo Splat"/>
   <secondarybuff id="4" amount="5"/> <!-- Crit -->
   <secondarybuff id="9" amount="14"/> <!-- EDR -->
@@ -793,7 +793,7 @@
   <damagebuff slashing="1"/>
   </ability>
 <ability name="Sword Practice" icon="skills/skill_sword.png" skill="0" level="2">
-  <description text="После многих часов в попытках рассечь мух, ваши навыки фехтования значительно улучшились. В бою вы можете нанести калечащую рану."/>
+  <description text="После многих часов в попытках рассечь мух, ваши навыки фехтования значительно улучшились. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
   <damagebuff piercing="1" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -825,19 +825,19 @@
 
   
 <ability name="Assistant Hammerer" icon="skills/warrior/macery0_64.png" skill="2" level="0">
-  <description text="If you had a hammer, you'd hammer in the morning. This basic macery training enhances crushing damage dealt in combat."/>
+  <description text="Если у вас есть молот, вы молотите с самого утра. Эта базовая техника увеличивает дробящий урон в ближнем бою."/>
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff crushing="2"/>
   </ability>
 <ability name="Dwarven Handshake" icon="skills/warrior/macery1_64.png" skill="2" level="1">
   <targetHitEffectBuff percentage="20" name="Dwarven Handshake" />
-  <description text="This is the skill of teaching your enemy when to back off. This skill gives you a chance to hit with an especially damaging knockback attack in melee combat when using mace-class weapons."/>
+  <description text="Научите вашего врага не приближаться к вам. Используя оружие типа булавы вы можете так сильно ударить врага, что его отбросит назад."/>
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   <damagebuff piercing="1"/>
   </ability>
 <ability name="Mace Rehearsal" icon="skills/skill_mace.png" skill="2" level="2">
-  <description text="It's important to keep your mace in tune so you can batter beat-perfect on the big day. Grants the chance to deal a Crippling Wound."/>
+  <description text="Содержать булаву в превосходном состоянии очень важно, чтобы в решающий момент показать идеальное крошилово. В ближнем бою есть шанс нанести 'Crushed Bones'."/>
   <damagebuff crushing="1" />
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -845,20 +845,20 @@
   </ability>
 <ability name="Ragnar's Meteor" icon="skills/warrior/macery2_64.png" skill="2" level="3">
   <spell name="Ragnar's Meteor"/>
-  <description text="Drops a veritable meteor of crushing violence everywhere in front of you! This is a special area-effect attack you can perform."/>
+  <description text="Бросает натуральный метеорит, жестко сокрушающий всех перед вами! Необычная техника атаки по области."/>
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff crushing="1" />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Mace Knowledge" icon="skills/warrior/mace_knowledge64.png" skill="2" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
-  <description text="Measured pondering upon the meaning of maces has unlocked the dark secrets held within such weapons: You now have a chance of executing exceptionally grievous attacks in combat while using maces." />
+  <description text="Размеренное изучение важности булавы в славной битве, позволило вам постичь все темные секреты содержащиеся внутри этого славного оружия. Вы можете нанести булавой такой неповторимый удар, о котором будут складывать легенды еще несколько поколений." />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   <targetHitEffectBuff percentage="6" name="Bleeding Out" />
   <targetHitEffectBuff percentage="10" name="Crippling Wound" />
   </ability>
 <ability name="Hammer Champion" icon="skills/warrior/macery3_64.png" skill="2" level="5">                
-  <description text="Oh, it's hammer time. Your mace-based melee attacks are enhanced and you have a chance to deliver a Pedantic Beating which stuns your enemy and deals damage based on your burliness."/>
+  <description text="О да, время крошить, дробить и молотить! Ваши атаки булавой совершенны. А враг может схлопотать 'Pedantic Beating' с оглушением и уроном на основе Burliness."/>
   <targetHitEffectBuff percentage="15" name="Pedantic Beating" />
   <secondarybuff id="9" amount="14"/> <!-- EDR -->
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
@@ -868,13 +868,13 @@
 
 
 <ability name="Trainee Stick Wrangler" icon="skills/warrior/staff-fighting0_64.png" skill="3" level="0">
-  <description text="Just don't let go of the staff and you'll be fine. Basic training with the staff lets you block incoming attacks better."/>
+  <description text="Просто не выпускайте посох из рук и все будет хорошо. Базовая техника боя с посохом, позволяет лучше блокировать атаки врага."/>
   <secondarybuff id="7" amount="2"/> <!-- Block -->
   <secondarybuff id="8" amount="1"/> <!-- Counter -->
   <damagebuff crushing="1" />
   </ability>
 <ability name="Spirit Conduit" icon="skills/warrior/staff-fighting1_64.png" skill="3" level="1">
-  <description text="This ability channels an especially powerful attack that takes place partly in the aetherial realm. Gives a chance to hit with this special power, and the additional training enhances your damage while using staves."/>
+  <description text="Шанс провести мощную атаку, наполненную необычной силой мира духов. В дополнение ваши тренировки увеличивают ваш урон при использовании посохов."/>
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
   <secondarybuff id="5" amount="2"/> <!-- Haywire -->
   <secondarybuff id="7" amount="1"/> <!-- Block -->

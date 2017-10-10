@@ -194,7 +194,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 
 <spell name="Cogito Ergo Splat" downtime="5" type="template" templateID="99" anchored="1"
        icon="skills/warrior/axemanship3_32.png" attack="1">
-   <description text="Damage your opponents with the power of Latin."/>
+   <description text="Атакуй врага силой Латыни."/>
    <effect type="damage" existential="5"/>
    <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0"  sfx="magic" framerate="100" centerEffect="0"/>
    </spell>
@@ -527,7 +527,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="0" amount="-3"/> <!-- hp -->
    </buff>
 	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="impact" centerEffect="0"/>
-   <description text="A crippling wound impairs abilities." />
+   <description text="Глубокая рана вызывает сильное изнеможение." />
    </spell>
 
 <!-- Warrior effects -->
@@ -674,7 +674,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <!-- Axe abilities -->
 
 <spell name="Viking Strike" downtime="7" type="adjacent" icon="skills/warrior/axemanship1_32.png" >
-   <description text="Strike with the strength of your Viking ancestors!"/>
+   <description text="Бей со всей силы, также как предки!"/>
    <effect type="damage" slashing="5" />
    <effect type="bleed" />
    <effect type="trigger" spell="Blast Effect A" />
@@ -682,7 +682,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    </spell>
   
 <spell name="Norwegian Axenado" downtime="13" type="template" templateID="98" anchored="1" icon="skills/warrior/axemanship2_32.png" attack="1">
-   <description text="Destroy all of those who dare to surround you with axe-wielding powers described in the ancient sagas! A circular area-effect attack."/>
+   <description text="Уничтожте всех вокруг мощью своего топора, как в древних сказаниях! Круговая атака."/>
    <effect type="damage" slashing="4" />
    <effect type="bleed" />
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="blades" framerate="100" centerEffect="0"/>
@@ -691,13 +691,13 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <!-- Mace abilities -->
 
 <spell name="Dwarven Handshake" downtime="7" type="adjacent" icon="skills/warrior/macery1_32.png" >
-   <description text="This is the art of teaching your enemy how to back off. Hits an enemy with a blast that knocks them back."/>
+   <description text="Научите вашего врага не приближаться к вам. Взрывной удар отталкивающий врага назад."/>
    <effect type="damage" blasting="4"/>
    <effect type="knock" amount="2" self="0"/>
    <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60"  sfx="blast" centerEffect="0"/>
    </spell>
 <spell name="Ragnar's Meteor" downtime="13" type="template" templateID="89" anchored="1" icon="skills/warrior/macery2_32.png" attack="1">
-	<description text="Drops a veritable meteor of crushing violence everywhere in front of you!"/>
+	<description text="Бросает натуральный метеорит, жестко сокрушающий всех перед вами!"/>
 	<effect type="damage" blasting="4" />
 	<effect type="knock" amount="1" self="0"/>
 	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60"  sfx="blast" centerEffect="0"/>
@@ -706,7 +706,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <!-- Staff Abilities -->
 
 <spell name="Spirit Conduit" downtime="7" type="adjacent" icon="skills/warrior/staff-fighting1_32.png" >
-	<description text="This ability channels some of your mana into an especially powerful attack that takes place partly in the aetherial realm."/>
+	<description text="Умение превратить ману в мощную атаку, наполненную необычной силой мира духов."/>
 	<effect type="damage" aethereal="3" aetherealF="0.15"/>
 	<effect type="paralyze" amount="2" turns="2" /> 
 	<anim sprite="sprites/sfx/summonB/summonB" frames="10" sfx="magic_damage" framerate="70" centerEffect="0"/>
@@ -3391,7 +3391,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Pedantic Beating" type="target" wand="0">
    <effect type="paralyze" amount="2" turns="2" />
    <effect type="damage" crushing="4" crushingF="0.5" primaryScale="0" />
-   <description text="Will they ever learn?" />
+   <description text="Они когда нибуть научатся?" />
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blast" />
    </spell>
 
@@ -4226,7 +4226,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="10" amount="-3"/> <!-- armour -->
    </buff>
 	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="impact" centerEffect="0"/>
-   <description text="Bones have been crushed! This is undeniably unpleasant, to say nothing of the utter inconvenience." />
+   <description text="Кости раздроблены! Это очень неприятно и невероятно неудобно." />
    </spell>
 
 <spell name="Beaned" type="target" >
