@@ -874,7 +874,7 @@
   <damagebuff crushing="1" />
   </ability>
 <ability name="Spirit Conduit" icon="skills/warrior/staff-fighting1_64.png" skill="3" level="1">
-  <description text="Шанс провести мощную атаку, наполненную необычной силой мира духов. В дополнение ваши тренировки увеличивают ваш урон при использовании посохов."/>
+  <description text="Шанс провести мощную атаку, наполненную необычной силой мира духов. А еще ваши тренировки увеличивают урон в бою при использовании посохов."/>
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
   <secondarybuff id="5" amount="2"/> <!-- Haywire -->
   <secondarybuff id="7" amount="1"/> <!-- Block -->
@@ -882,14 +882,14 @@
   <damagebuff crushing="1"/>
   </ability>
 <ability name="Staff Discipline" icon="skills/skill_staff.png" skill="3" level="2">
-  <description text="You believe in staff-control: You use both hands! Grants a chance to perform a spectacularly unpleasant bone-crushing attack."/>
+  <description text="Две руки лучше всего контролируют движение посоха! Шанс выполнить сногсшибательный удар – 'Crushed Bones'."/>
   <damagebuff crushing="1" />
   <targetHitEffectBuff percentage="8" name="Crushed Bones" />
   <secondarybuff id="7" amount="1"/> <!-- Block -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Ki Cascade Strike" icon="skills/warrior/staff-fighting2_64.png" skill="3" level="3">     
-  <description text="Extending your reach by mysterious, secret methods developed by a cheesemonger-turned-gladiator, this maneuver strikes at an entire swath of enemies. Allows you to perform an area-attack."/>
+  <description text="Непостижимый и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг, атакой по области."/>
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff crushing="1"/>
@@ -898,13 +898,13 @@
   </ability>
 <ability name="Staff Secrets" icon="skills/warrior/staff_secrets64.png" skill="3" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Deep questioning into the fathomless depths of the staff have lead to startling epiphanies about their use: You now have a chance of executing exceptionally grievous attacks in combat while using staves." />
+  <description text="Глубокое изучение великого многообразия техник ведения боя с посохом, открыло вам многие его тайны. Ваши атаки могут нанести ужасные раны, которые нескоро заживут." />
   <targetHitEffectBuff percentage="6" name="Bleeding Out" />
   <targetHitEffectBuff percentage="10" name="Crippling Wound" />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Staff Sage" icon="skills/warrior/staff-fighting3_64.png" skill="3" level="5">
-  <description text="Common wisdom has it that the use of staves in wizardly combat has some kind of phallic symbolism. If so, it is a combat you have mastered - and with it, you have mastered yourself. Grants many combat and magical bonuses."/>
+  <description text="Вы часто слышите, что использование посохов в бою имеет некий фаллический символизм, и это не дает вам покоя. Ведь если это так, вы не только мастерски овладели посохом, но и собой. Хотя это дает много физических и магических бонусов."/>
   <secondarybuff id="9" amount="12"/> <!-- EDR -->
   <secondarybuff id="7" amount="5"/> <!-- Block -->
   <secondarybuff id="3" amount="3"/> <!-- Magic Power -->
@@ -915,7 +915,7 @@
 
   
 <ability name="Small Cricket Apprentice" icon="skills/warrior/unarmed_art0_64.png" skill="6" level="0">
-  <description text="Where did you receive your training? Chechnya? Afghanistan? This skill makes you tougher, faster, stronger, better. And your unarmed attacks pierce armour."/>
+  <description text="Где вы только не тренировались, и в китае распивая вино, и в тайланде пиная пальму. Это сделало вас жестче, лучше, быстрее, сильнее. А ваши удары пробивают броню врага."/>
   <secondarybuff id="7" amount="2"/> <!-- Block -->
   <secondarybuff id="8" amount="3"/> <!-- Counter -->
   <secondarybuff id="6" amount="2"/> <!-- Dodge -->
@@ -924,7 +924,7 @@
   <secondarybuff id="3" amount="1"/> <!-- magic power -->
   </ability>
 <ability name="Throwing Buffalo Technique" icon="skills/warrior/unarmed_art1_64.png" skill="6" level="1">       
-  <description text="Intense training allows you to shove large herd-animals with surprising power. This skill has worldly applications, to boot. Grants a chance to perform a special knock-back attack in melee combat."/>
+  <description text="Интенсивные тренировки позволяют вам бить с силой разъяренного рогатого скота. Это искуснейший удар ногой, которым можно отшвырнуть противника."/>
   <spell name="Throwing Buffalo Technique"/>
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="7" amount="3"/> <!-- Block -->
@@ -933,7 +933,7 @@
   <damagebuff crushing="1"/>
   </ability>
 <ability name="Footwork" icon="skills/warrior/footwork64.png" skill="6" level="2">
-  <description text="Have your foot in the right place at the right time will make all the difference. Grants a chance to perform a spectacularly unpleasant bone-crushing attack."/>
+  <description text="Нога приложенная в правильное время, к правильному месту, может в корне изменить ситуацию. Скорее всего вы что нибуть сломаете противнику."/>
   <secondarybuff id="7" amount="1"/> <!-- Block -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   <secondarybuff id="6" amount="1"/> <!-- Dodge -->
@@ -942,7 +942,7 @@
   </ability>
 <ability name="Gray Heron Takes Flight" icon="skills/warrior/unarmed_art2_64.png" skill="6" level="3">
   <spell name="Gray Heron Takes Flight"/>
-  <description text="A gale of flesh shall blow your opponents away. This skill allows you to peform a special area-attack."/>
+  <description text="Неудержимый вихрь ударов разметает ваших врагов."/>
   <secondarybuff id="9" amount="3"/> <!-- EDR -->
   <secondarybuff id="7" amount="2"/> <!-- Block -->
   <secondarybuff id="8" amount="4"/> <!-- Counter -->
@@ -952,13 +952,13 @@
   </ability>
 <ability name="Stone Sole" icon="skills/skill_unarmed.png" skill="6" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Now that you've walked a mile on other people's faces, your feet are as unyielding as your will: You now have a chance of executing exceptionally grievous attacks in combat while using your feet." />
+  <description text="Вы много раз проходились ногами по лицам врагов, и ваши ступни стали тверды как ваш характер. Вы можете так сильно пнуть врага, что все удары, полученные им до этого, покажутся просто щекоткой." />
   <secondarybuff id="3" amount="1"/> <!-- magic power -->
   <targetHitEffectBuff percentage="10" name="Stone Sole Pummeling" />
   <damagebuff crushing="2" />
   </ability>
 <ability name="Master of Dragon Foot Technique" icon="skills/warrior/unarmed_art3_64.png" skill="6" level="5">
-   <description text="At this level, the student has become the master. Your attacks are imbued with celestial energy."/>
+   <description text="Вы достигли уровня, когда ученик становится учителем. Ваши удары благословили небеса."/>
    <secondarybuff id="7" amount="4"/> <!-- Block -->
    <secondarybuff id="8" amount="6"/> <!-- Counter -->
    <secondarybuff id="4" amount="4"/> <!-- Crit -->
