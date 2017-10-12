@@ -742,14 +742,14 @@
   <damagebuff slashing="2"/>
   </ability>
 <ability name="Viking Strike" icon="skills/warrior/axemanship1_64.png" skill="1" level="1">
-  <description text="Вступай в ряды Одинцев! Познай ненависть! В ближнем бою есть шанс выполнить 'Viking Strike'."/>
+  <description text="Вступайте в ряды последователей Одина! Пробудите в себе ярость! В ближнем бою есть шанс выполнить 'Viking Strike'."/>
   <!-- <spell name="Viking Strike"/> -->
   <targetHitEffectBuff percentage="20" name="Viking Strike" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
    </ability>
 <ability name="Axe Training" icon="skills/skill_axe.png" skill="1" level="2">
-  <description text="Неустанные тренировки с топором научили вас разрубать все более яростно и точно. Деревца уже трясутся. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
+  <description text="Неустанные тренировки с топором научили вас рубить яростно и точно. Деревца уже трясутся. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
   <damagebuff slashing="1" />
   <targetHitEffectBuff percentage="8" name="Crippling Wound" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
