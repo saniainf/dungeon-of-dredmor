@@ -322,14 +322,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="heal" amount="3" amountF="1.2"  secondaryScale="13" />
    </spell>
 <spell name="Corpse Drain" downtime="4" type="targetadjacentcorpse" icon="skills/wizard/vampirism1_32.png" >
-	<description text="Drains a corpse of its blood to gain (un)life. Bottoms up!" />
+	<description text="Выпивайте всю кровь, без остатка, для восполнения вашей (не)жизни. Пей до дна!" />
 	<effect type="trigger" spell="Corpse Drain Heal" />
 	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="100" sfx="naughty" centerEffect="0"/>
    </spell>
 <spell name="Sparkly Glamour" type="self" icon="skills/wizard/vampirism2_32.png" downtime="24" >
 	<effect type="trigger" spell="Sparkly Area Hit" amount="0" />
 	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" framerate="60" centerEffect="0" sfx="magic_damage" />
-	<description text="Dazzles your enemies, leaving them stunned by your spooky, sparkly vampire glamour.  This also saps some of their life-force. Because seriously." />
+	<description text="Ваш жутко блестящий, вампирский гламур парализует врагов своим великолепием. Также это заберет часть их жизненной силы. Это серьезно." />
    </spell>
 <spell name="Sparkly Area Hit" type="template" templateID="13" >
    <effect type="drain" righteous="1" righteousF="0.10" />
@@ -481,7 +481,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="14" amount="1"/> <!-- mp regen -->
       </buff>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
-   <description text="The spirit of a slain enemy fuels your magical power for a short time."/>
+   <description text="Душа поверженного врага подпитывает вашу магическую силу какоето время."/>
    </spell>
 
 <spell name="Stolen Soul" type="self" icon="skills/wizard/bloodmagic3_64.png">
@@ -489,7 +489,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <primarybuff id="1" amount="4"/> <!-- sagacity -->
       <secondarybuff id="14" amount="1"/> <!-- mp regen -->
       </buff>
-   <description text="The stolen soul of a slain enemy enhances your arcane abilities."/>
+   <description text="Похищенная душа врага усиливает ваши магические спсобности."/>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
    </spell>
 
@@ -661,7 +661,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 
 <spell name="Liechtenauer's Overhau" downtime="5" type="adjacent" icon="skills/warrior/swordplay1_32.png" >
 	<requirements weapon="0" />
-	<description text="You have a chance to strike your enemies with Teutonic Might! Hits one enemy very hard. Scales to Nimbleness."/>
+	<description text="Очень эффективный, тевтонский удар, наносящий сильный урон врагу! Урон зависит от вашей Burliness."/>
 	<effect type="damage" piercing="1" piercingF="0.25" bleed="1" primaryScale="0" />
 	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0" sfx="fleshbore" framerate="100" centerEffect="0"/>
    </spell>
@@ -682,7 +682,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    </spell>
   
 <spell name="Norwegian Axenado" downtime="13" type="template" templateID="98" anchored="1" icon="skills/warrior/axemanship2_32.png" attack="1">
-   <description text="Уничтожте всех вокруг мощью своего топора, как в древних сказаниях! Круговая атака."/>
+   <description text="Уничтожте всех вокруг мощью своего топора, как в древних легендах! Круговая атака."/>
    <effect type="damage" slashing="4" />
    <effect type="bleed" />
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="blades" framerate="100" centerEffect="0"/>
@@ -1019,7 +1019,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="dot" self="1" amount="6" resistable="0" spell="Knitting Tissue" />
 	<effect type="trigger" spell="Healing Wound" />
 	<anim sprite="sprites/sfx/flesh_heal/flesh_heal" sfx="flesh_heal" frames="7" framerate="100" />
-	<description text="Knit your flesh to make it whole! This is a healing spell, but be warned: casting this will temporarily weaken you as your wounds heal themselves."/>
+	<description text="Зашейте себя если вас ранили! Это заклинание исцеления. Однако оно временно вас ослабит, пока раны не заживут."/>
   <ai hint="ally"/>
 </spell>
   
@@ -1046,7 +1046,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<resistbuff crushing="-1" slashing="-1" blasting="-1"/>
   </buff>
 	<effect type="dot" amount="4" spell="Fleshrun" />
-	<description text="Bores the flesh of your enemies, sapping their strength and life-blood. Makes a bloody awful mess. More magic power makes the spell slightly easier to cast." />
+	<description text="Проламывает тело врага истощая жизненные силы и превращая его в кровавое месиво. Магическая сила делает применение более простым." />
 </spell>
   
 <spell name="Fleshrun" type="target" icon="skills/spells/fleshbore32.png">
@@ -1070,10 +1070,10 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<resistbuff crushing="2" blasting="1" slashing="1"/>
    <ai hint="self"/>
 	</buff>
-	<description text="When the flesh grows weak, grow more flesh! This spell strengthens your body and your life-force. Requires some mana upkeep. Will be torn off if you take too many hits." />
+	<description text="Если тело ослабло, ему надо придать сил! Это заклинание укрепляет ваше тело и увеличивает жизненные силы. Требуется мана для поддержания эффекта. При получении нескольких ударов эффект пропадет." />
    </spell>
 <spell name="Corpus Burst" type="targetcorpse" icon="skills/spells/corpus_burst32.png" wand="0">
-   <description text="This spell makes corpses explode! Who doesn't like exploding corpses? ... Pretty much everyone, as it happens." />
+   <description text="Это заклинание взрывает трупы! Кому это может нравиться? ... На самом деле никому" />
    <requirements mp="12" savvyBonus="0.23" mincost="4" />
    <effect type="damage" blasting="20" blastingF="0.29" toxic="8" toxicF="0.16" putrefying="4" putrefyingF="0.15" />
    <effect type="trigger" spell="Corpse Blast" />
@@ -1111,7 +1111,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="28" savvyBonus="0.28" mincost="9" />
 	<effect type="damage" toxic="4" toxicF="0.18" asphyxiative="4" asphyxiativeF="0.18" putrefying="2" putrefyingF="0.12" affectscaster="1" />
 	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" centerEffect="1" sfx="magic" />
-	<description text="Putrefies the flesh of the world to create clouds of noxious fumes that will cause any living being to become poisoned and choke. This spell essentially summons a cloud of toxic gas." />
+	<description text="Вызывает разложение всего вокруг, создавая облака ядовитых паров, в которых отравится и задохнется любое живое существо. Заклинание, по существу, создает токсичный газ." />
    </spell>
   
 <!-- Golemancy -->
@@ -1131,12 +1131,12 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<!-- <effect bleed="1" /> TODO maybe replace with a very light bleed effect -->
 	<requirements mp="7" savvyBonus="0.20" mincost="3" />
 	<anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="80" sfx="blades" centerEffect="0" />
-	<description text="Summons a small disc of whirling blades whose entire goal in life is to cut something up bad. Real bad. It's not smart enough to move on its own."/>
+	<description text="Призывает маленький вихрь клинков, у которого единственная цель – это кого-нибуть порезать. Сам двигаться неможет."/>
    </spell>
 
 <spell name="Animate Mustache" type="targetfloor" icon="skills/spells/mustache32.png" >
    <requirements mp="30" savvyBonus="0.32" mincost="8" />
-   <description text="Animates a small mustache golem to fight alongside you. (But where does the mustache come from?)" />
+   <description text="Оживляет маленького усатого голема, чтобы сражаться за вас. (Но откуда берутся усы?)" />
    <effect type="summon" monsterType="Animate Mustache" />
    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="90" sfx="small_spell" centerEffect="1" />  
    </spell>
@@ -1163,7 +1163,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="knock" amount="1"/>
 	<effect type="create" turns="48" objectSprite="dungeon/summoned_wall.png" self="0"/>
 	<requirements mp="10" savvyBonus="0.32" mincost="3" />
-	<description text="First concocted by the Mad Architect Montresor, this spell grows a wall from the floor, crushing and moving any who stand in the spot. Delightfully unnatural."/>
+	<description text="Придуманное безумным зодчим Монтрезором, это заклинание, поднимает стену прямо из пола. Стена сминает любого своей кладкой. Выглядит странно."/>
    </spell>
     
   <!-- need friendly petrolblobby in monDB -->
@@ -1198,7 +1198,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Thaumite Infection" type="target" icon="skills/spells/thaumite_swarm32.png" wand="1" >
 	<requirements mp="21" savvyBonus="0.30" mincost="8" />
 	<effect type="damage" putrefying="3" putrefyingF="0.18" affectsCaster="1" />
-	<description text="A cloud of thaumaturgons comes alive and consumes beings it touches with thoughtless voracity."/>
+	<description text="Ожившее облако чудоклещей поглощает любого, кто его коснется, с безумной прожорливостью."/>
 	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
 	<buff useTimer="1" time="8" self="0" allowstacking="0" icon="skills/spells/thaumite_swarm64.png" smallicon="skills/spells/thaumite_swarm32.png" bad="1" >
 		<halo name="sprites/sfx/thaumites/thaumites" framerate="100" first="0" num="4" />
@@ -1231,7 +1231,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    </spell>
 <spell name="Grant Machine Mortality" type="targetfloor" icon="skills/spells/animate_robot32.png" >
    <requirements mp="50" savvyBonus="0.25" mincost="10"/>
-   <description text="It lives! Gives live to a Robo to defend you, to hold you, to kill for you."/>
+   <description text="Оно живое! Оживляет Robo, чтобы защищать вас и убить за вас."/>
    <effect type="summon" monsterType="Mortal Machine"/>
    <anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="100" sfx="magic_damage" centerEffect="1"/>
    </spell>
@@ -1239,7 +1239,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <!-- Digging Ray goes here. Unless we stick it in some other school. -->
 <spell name="Digging Ray" type="diggingbeam" icon="skills/spells/digging_ray32.png" >
    <requirements mp="60" savvyBonus="0.55" mincost="10"/>
-   <description text="What was once formed, can be unformed." />
+   <description text="Что один построил, другой всегда сломает." />
    <effect type="dig"/>
    <anim sprite="sprites/sfx/digging_ray_hit/digging_ray_hit" frames="9" framerate="90" sync="1" sfx="magic" centerEffect="1"/>
    </spell>
@@ -3238,7 +3238,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="3" amount="5"/> <!-- magpow -->
       <secondarybuff id="11" amount="-15"/> <!-- resist -->
       </buff>
-   <description text="Power ... overwhelming. It burns like a chili cookoff!"/>
+   <description text="Сила... абсолютная мощь. Она выжигает как чили!"/>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
    </spell>
 
@@ -3391,7 +3391,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Pedantic Beating" type="target" wand="0">
    <effect type="paralyze" amount="2" turns="2" />
    <effect type="damage" crushing="4" crushingF="0.5" primaryScale="0" />
-   <description text="Они когда нибуть научатся?" />
+   <description text="Когда же они научатся?" />
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blast" />
    </spell>
 
@@ -3477,14 +3477,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="damage" aetherealF="0.25" />
    <effect type="pacify" amount="1" />
    <effect type="trigger" spell="Antimagic Field" />
-   <description text="You have a license to cast and to take away the right to cast. Any monster hit by this spell will lose their casting ability for a short time." />
+   <description text="У вас есть лицензия на использование магии и право отбирать ее у других. Любой монстр пораженный этим заклинанием теряет способность пользоваться магией на короткое время." />
    <anim sprite="sprites/sfx/aetherial_missile/aetherial_missile" frames="6" framerate="100" sfx="aetherial" />
    <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
    </spell>
 
 <spell name="Leyline Siphoning" type="self" downtime="30" icon="skills/magic_tap32.png" >
    <effect type="spellpoints" amount="2" />
-   <description text="Effecting your knowledge of leylines, you are siphoning vital essence from the aethereal realm. Try not to anger any outer beings by doing this too much."/>
+   <description text="Знания о Мировых Линиях позволяют вытягивать жизнь из Эфирного мира для восполнения своей жизненной силы. Не используйте сильно часто, а то разгневаете существ по ту сторону."/>
    <buff
       useTimer="1"
       time="12"
@@ -3499,7 +3499,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 
 <spell name="Extra-planar Concentration" downtime="63" type="self" icon="skills/extraplanar_concentration32.png" >
    <effect type="spellpoints" amount="2" />
-   <description text="Extremely intense concentration allows you to greatly increase your mana regeneration for a short while. Such concentration may cause you to forget that you're in a dungeon filled with murderous monsters, so please be mindful of your surroundings when entering this state of mind."/>
+   <description text="Очень сильная концентрация позволяет вам временно увеличивать регенерацию маны. Однако, когда вы достигаете такой сосредоточенности ума, вы можете забыть, что находитесь в подземелье с кровожадными монстрами. Поэтому внимательно выбирайте место для медитации."/>
    <buff
       useTimer="1"
       time="9"
@@ -3537,7 +3537,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect percent="80" type="spellpoints" amount="1" />
    <effect percent="50" type="spellpoints" amountF="0.1" />
    <effect percent="25" type="spellpoints" amountF="0.05" amount="1" />
-   <description text="Blah!" />
+   <description text="Чушь!" />
    </spell>
 
   <spell name="Enormous Blinding Mist Cloud"
@@ -3689,7 +3689,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <!-- make these more interesting later -->
 
 <spell name="Crossbow Blast" type="target" attack="1" >
-   <description text="This technique, robed in rumour and behatted by hearsay, allows a crossbow bolt to hit with many times the force expected, knocking an enemy back and causing great damage."/>
+   <description text="Техника выстрела в которую мало кто верит. Она позволяет превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон."/>
    <effect type="damage" blasting="2" crushing="2"/>
    <effect type="knock" amount="2" self="0"/>
    <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60"  sfx="impact" centerEffect="0"/>
@@ -3767,11 +3767,11 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Invisible Geometries Drain" self="1" icon="skills/invisible_geometries32.png" type="self" wand="0">
    <effect type="drainCasterMana" amount="75"/>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blast" />
-   <description text="Well, snap. There goes your magic."/>
+   <description text="Хлоп! И нет больше магии."/>
    </spell>
 
 <spell name="Invisible Geometries" type="rook" downtime="3" icon="skills/invisible_geometries32.png">
-   <description text="A master of leylines can use invisible geometries to move-without-moving -- but only in cardinal directions. Be warned though, for moving through the aethereal realm greatly saps magical strength."/>
+   <description text="Мастера Мировых Линий могут пользоваться невидимой геометрией для перемещения без движения, но только в определенном направлении. Будте осторожны, передвижение через Эфир сильно истощает магическую силу."/>
    <effect type="teleport"/>
    <effect type="trigger" spell="Invisible Geometries Drain" self="1" />
    <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="teleport_short" centerEffect="0"/>
@@ -3830,7 +3830,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="12" amount="25" /> <!-- sneak -->
       </buff>
    <effect type="trigger" spell="Batty Companions"/>
-   <description text="You can transform into a batty to make your escape. REEeee! (That's the sound a bat makes.)" />
+   <description text="Вы можете превратится в летучего мыша чтобы сбежать (улететь). ПИИиииии! (Это звук который издает мышь.)" />
    <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
    </spell>
 
@@ -4071,7 +4071,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="I'm Not Left Handed" type="self" >
    <buff usetimer="1" time="2" icon="skills/warrior/swordplay3_64.png" smallicon="skills/warrior/swordplay3_32.png">
       <secondaryBuff id="8" amount="16" /> 
-      <description text="By switching hands unexpectly you are able to launch startling, unsettling counteroffensives." /> 
+      <description text="Неожиданно перекинув меч в другую руку, вы можете начать эффективное контрнаступление." /> 
       </buff>
    </spell>
 
@@ -4348,7 +4348,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="summon" monsterType="Zomby" amount="8" />
 	<!-- <anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="100" sfx="blast" centerEffect="1"/>-->
 	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" sfx="naughty" framerate="100" centerEffect="1" />
-	<description text="Give new life to the rather recently dead - as your undead Zomby minion!" />
+	<description text="Дайте новую жизнь только-что умершему. Пусть будет вашим Зомби миньоном!" />
 	</spell>
 
 <spell name="Burning Blinding Flash" type="targetfloor" icon="skills/spells/blinding_light32.png" wand="0">

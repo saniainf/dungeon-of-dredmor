@@ -116,7 +116,7 @@
    <flags deprecated="1"/>
 </skill>
 
-<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="Ваше здоровье само не восстанавливается и еда стала безвкусной. Зато вы можете лечиться убив кого-то и выпив его кровь, а еще сиять на солнышке">
+<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="Ваше здоровье само не восстанавливается, а еда стала ядом. Зато вы лечитесь выпив кровь врага и сияете на солнышке.">
    <art icon="skills/skill_vampirism.png"/>
    <flags noFood="1" />
    </skill>
@@ -157,12 +157,12 @@
    <art icon="skills/skill_prometheanmagic.png"/>
    </skill>
 
-<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="Годы в Школе Чародейства и Волшебства сделали ваши заклинания более эффективными, а использование маны более экономным.">
+<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description=" За годы проведенные в Школе Чародейства и Волшебства вы научились лучше заклинать и пользоваться маной.">
    <art icon="skills/skill_magictraining.png"/>
    <loadout type="armour" subtype="Cracked Orb" />
    </skill>
 
-<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="Убивая кого-то, вы восстанавливаете ману.">
+<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="Вы превращаете кровь в ману.">
    <art icon="skills/skill_bloodmagic.png"/>
    <loadout type="weapon" subtype="Sacrificial Dagger" />
    </skill>
@@ -248,13 +248,13 @@
   <!-- а вот тут начинаются НАВЫКИ то что будет на панели внизу -->
   
 <ability name="Swordplay" icon="skills/skill_sword.png" skill="0" startSkill="1">
-  <description text="Мечи! Острым концом направлять в сторону неприятеля."/>
+  <description text="Меч! Острым концом направлять в сторону неприятеля."/>
   </ability>
 <ability name="Axemanship" icon="skills/skill_axe.png" skill="1" startSkill="1">
-  <description text="Топоры – лучший выбор для отсечения конечностей."/>
+  <description text="Топор – лучший выбор для отсечения конечностей."/>
   </ability>
 <ability name="Macery" icon="skills/skill_mace.png" skill="2" startSkill="1">
-  <description text="Булавы эффективно вышибают мозги. Можете даже носить их с собой в сумке, если хотите."/>
+  <description text="Булава эффективно вышибает мозги. Можете потом сложить их в сумку."/>
   </ability>
 <ability name="Staff-fighting" icon="skills/skill_staff.png" skill="3" startSkill="1">
   <description text="Посох! Держи всех на растоянии."/>
@@ -292,7 +292,7 @@
   <!-- Spooky, sparkly -->
 
   <ability name="Vampirism" icon="skills/skill_vampirism.png" skill="13" startSkill="1">
-    <description text="Утолите ненасытную жажду, кровью ваших врагов. Вампиры лечатся только таким чудовищным способом. Но остерегайтесь дневной звезды, под ее пристальным взором ваша жизнь будет быстрой и яркой."/>
+    <description text="Утолите ненасытную жажду крови. Вампиры лечатся только таким чудовищным способом. Но остерегайтесь дневной звезды, под ее пристальным взором ваша жизнь будет быстрой и яркой."/>
   </ability>
   <!-- Core Magic School Skills -->
 
@@ -300,13 +300,13 @@
   <description text="Старшая и Младшая Големантия позволяет одушевлять и заставлять двигаться исходный материал. (Другими словами вы можете вдохнуть жизнь в неживые вещи.)"/>
   </ability>
 <ability name="Flesh-shaping" icon="skills/skill_fleshshaper.png" skill="15" startSkill="1">
-  <description text="Вы Мастер Плоти! Вы можете исцелять раны на теле, разрывать плоть врагов и возможность заказывать мясные деликатесы из Колбасного Царства Стихий."/>
+  <description text="Вы Мастер Плоти! Вы можете исцелять раны на теле, разрывать плоть врагов и заказывать мясные деликатесы из Колбасного Царства Стихий."/>
   </ability>
 <ability name="Mathemagic" icon="skills/skill_mathemagic.png" skill="16" startSkill="1">
-  <description text="Используя силу Матемагии вы можете умножить силу, вычесть надежду и извлечь кубический корень из мечты человека. Это странная, абстрактная школа магии, способная свести с ума ученика."/>
+  <description text="Используя силу Матемагии вы можете умножить силу, вычесть надежду и извлечь кубический корень из мечты человека. Это странная, абстрактная школа магии. Изучение которой может свести с ума."/>
   </ability>
 <ability name="Psionics" icon="skills/skill_psionicist.png" skill="17" startSkill="1">
-  <description text="Вы можете парализовать, крушить кости, вызывать огонь, душить врага или разрывать его изнутри..."/>
+  <description text="Вы можете вызывать огонь, парализовать, душить, крушить кости врага или разрывать его изнутри..."/>
   </ability>
 <ability name="Necronomiconomics" icon="skills/skill_necronomiconomics.png" skill="18" startSkill="1">
   <description text="Некрономикономика: Изучение экономических принципов мертвых, по книге в переплете из странной кожи. В самом деле сомнительная магия."/>
@@ -355,13 +355,13 @@
   <description text="Вы можете разливать по колбам славу, заваривать триумф и даже закупорить смерть."/>
   </ability>
 <ability name="Wand Lore" icon="skills/skill_wandlore.png" skill="30" startSkill="1">
-  <description text="Умение правильно полировать палочку может продлить срок службы и усилить ее способности за пределы ожидаемого."/>
+  <description text="Умение правильно полировать палочку может продлить срок ее службы и увеличить ее возможности за пределы ожидаемого."/>
   </ability>
 <ability name="Archaeology" icon="skills/skill_archaeology.png" skill="31" startSkill="1">
   <description text="Не время для любви Доктор Джонс! (Ты настоящий искатель приключений с тягой к неприятностям.)"/>
   </ability>
 <ability name="Smithing" icon="skills/skill_smithing.png" skill="32" startSkill="1">
-  <description text="Куй сталь, пока горячо! Создай оружие карающее твоих врагов! Стань более могучим!"/>
+  <description text="Куй сталь, пока горячо! Создайте оружие и покарайте своих врагов."/>
   </ability>
 <ability name="Tinkering" icon="skills/skill_tinkerer.png" skill="33" startSkill="1">
   <description text="Вы проводите все свое время в сарае, создавая механические устройства для улучшения человечества."/>
@@ -375,29 +375,29 @@
   <resistbuff righteous="-1" />
   </ability>
 <ability name="Vital Siphon" icon="skills/vital_siphon64.png" skill="23" level="1" >
-   <description text="Используя темное искусство выкачивания жизни, вы имеете шанс восстановить себе часть здоровья, похитив его у врага, при ударе в ближнем бою." />
+   <description text="Используя темное искусство выкачивания жизни, вы иногда восстанавливаете себе здоровье, похищая его у врага во время удара." />
    <targetHitEffectBuff percentage="30" name="Vital Siphon" />
    <resistbuff righteous="-1" />
    </ability>
 <ability name="Spirit Stealer" icon="skills/wizard/bloodmagic2_64.png" skill="23" level="2">
-   <description text="Забирая душу убитого врага (конечно если она у него есть), вы усиливаете вашу магическую силу. У вас есть шанс забрать душу врага при его смерти."/>
+   <description text="Иногда вы можете увеличить магическую силу, забрав душу убитого врага. Конечно если она у него есть."/>
    <targetKillBuff percentage="50" name="Spirit Steal"/>
    <resistbuff righteous="-1" />  
    </ability>
 <ability name="Haematic Phylactery" icon="skills/haematic_phylactery64.png" skill="23" level="3" >
-   <description text="Поместите немного своей крови и частичку души в потаенную вещь, чтобы воспользоваться ей в самый необходимый момент. Или когда у вас появится капризная причуда выпить глоток запрещенного рубинового напитка."/>
+   <description text="Поместите немного своей крови и частичку души в потаенную вещь, чтобы воспользоваться ей в самый необходимый момент. Или когда вам придет в голову, выпить глоток запрещенного, рубинового напитка."/>
    <resistbuff righteous="-1" />
 	<spell name="Create Haematic Phylactery" />
    </ability>
 <ability name="Soul Collector" icon="skills/wizard/bloodmagic3_64.png" skill="23" level="4">
-   <description text="Вы можете усиливать магические способности, используя душу павшего врага. Если сможете ей завладеть. Помните: роботы, нежить и растения бездушны."/>
+   <description text="Вы можете усиливать магические способности, используя душу павшего врага. Если сможете ей завладеть. Помните: роботы, нежить и растения – бездушны."/>
    <!-- doesn't work on vegetables or construct -->
    <targetKillBuff percentage="50" name="Soul Steal"/>
    <resistbuff righteous="-1" />
    </ability>
 
 <ability name="Linewalker" icon="skills/wizard/leylines0_64.png" skill="24" level="0">
-  <description text="Вы можете использовать невидимые линии силы, связывающие Наш Мир с Эфиром. Увеличивает регенерацию маны и дает шанс восстановить часть манны при использовании заклинаний."/>
+  <description text="Иногда при использовании заклинаний вы можете восстановить часть маны и увеличить ее регенерацию, благодаря невидимым линиям силы, которые связывают Наш Мир с Эфиром."/>
   <secondarybuff id="14" amount="1"/> <!-- mana regen -->
   <triggeroncast percent="25" name="Regen Mana 1"/>
   </ability>
@@ -422,7 +422,7 @@
    </ability>
   
 <ability name="Certified Mage" icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
-  <description text="Обучение в Общественном колледже Магии начинает приносить плоды - ваша магическая сила увеличилась и манны стало больше."/>
+  <description text="Обучение в Общественном колледже Магии начинает приносить плоды - ваша магическая сила увеличилась и маны стало больше."/>
   <primarybuff id="5" amount="1" /> <!-- savvy -->
   <secondarybuff id="3" amount="1"/> <!-- spellpower -->
   <secondarybuff id="1" amount="5"/> <!-- mana -->
@@ -434,13 +434,13 @@
    <spell name="Thaumoentropic Missile" />
    </ability>
 <ability name="Wizarding Associate" icon="skills/wizard/magictraining1_64.png"  skill="22" level="2">
-  <description text="Как член Ассоциации Магов и Чародеев, вы имеете 5% скидку на посещение конференций и великолепный бейдж члена Ассоциации Магов и Чародеев который надо-бы заламинировать."/>
+  <description text="Как член Ассоциации Магов и Чародеев, вы имеете 5% скидку на посещение конференций и великолепный бейдж который надо-бы заламинировать."/>
   <secondarybuff id="1" amount="10"/> <!-- mana -->
   <primarybuff id="5" amount="1" /> <!-- savvy -->
   </ability>
 <ability name="Extra-planar Concentration" icon="skills/extraplanar_concentration64.png" skill="22" level="3" >
    <spell name="Extra-planar Concentration" />
-   <description text="Очень сильная концентрация позволяет вам временно увеличивать регенерацию маны. Когда вы достигаете такой сосредоточенности ума вы можете забыть, что находитесь в подземелье с кровожадными монстрами, поэтому внимательно подбирайте место для медитации." />
+   <description text="Очень сильная концентрация позволяет вам временно увеличивать регенерацию маны. Однако, когда вы достигаете такой сосредоточенности ума, вы можете забыть, что находитесь в подземелье с кровожадными монстрами. Поэтому внимательно выбирайте место для медитации." />
    <primarybuff id="5" amount="1" /> <!-- savvy -->   
    </ability>
 <ability name="Master of Magic" icon="skills/wizard/magictraining2_64.png"  skill="22" level="4">
@@ -452,20 +452,20 @@
 
 <ability name="Blood Sucker" icon="skills/skill_vampirism.png" skill="13" level="0">
   <targetHitEffectBuff percentage="100" name="Vampirism Attack" />
-  <description text="Ваши атаки ближнего боя сильнее высасывают жизнь из ваших врагов."/>
+  <description text="Ваши атаки ближнего боя высасывают жизнь из ваших врагов."/>
   <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
   </ability>
 <ability name="Drinker of the Dead" icon="skills/wizard/vampirism1_64.png" skill="13" level="1">
   <spell name="Corpse Drain" />
-  <description text="Осушайте тела досуха для восполнения вашей (не)жизни. Пей до дна!"/>
+  <description text="Выпивайте всю кровь, без остатка, для восполнения вашей (не)жизни. Пей до дна!"/>
   </ability>
 <ability name="Sparkly" icon="skills/wizard/vampirism2_64.png" skill="13" level="2">
   <spell name="Sparkly Glamour"/>
-  <description text="Вы поражаете своим великолепием врагов так, что их парализует от вашего жутко блестящего вампирского гламура. Также это заберет часть их жизненной силы. Это серьезно."/>
+  <description text="Ваш жутко блестящий, вампирский гламур, парализует врагов своим великолепием. Также, это заберет часть их жизненной силы. Это серьезно."/>
   </ability>
 <ability name="Psychic Vampire" icon="skills/psychic_vampire64.png" skill="13" level="3" >
    <targetHitEffectBuff percentage="50" name="Psychic Vampire" />
-   <description text="Жуткие силы вашего вампирского разума дают шанс похитить ману и сбить столку вашего врага в ближнем бою." />
+   <description text="Жуткие силы вашего вампирского разума, дают шанс похитить ману и сбить столку вашего врага в ближнем бою." />
    <resistbuff necromantic="1" /> <!-- go for it, Necronomiconomists -->
    </ability>
 <ability name="Transylvation" icon="skills/batty64.png" skill="13" level="4" >
@@ -481,12 +481,12 @@
 	
 <ability name="Zombyfycation" icon="skills/spells/zombyfycation64.png" skill="15" level="0">
   <spell name="Zombyfycation"/>
-  <description text="Превращай, применяй, преобразовывай: после превращения врага в кровавый труп, верни его к жизни как 'условно живого' слугу. Он будет вас защищать пока снова не умрет."/>
+  <description text="Превращай, преобразовывай, применяй. После превращения врага в кровавый труп, верни его к жизни как 'условно живого' слугу. Он будет вас защищать, пока снова не умрет."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>	
 <ability name="Knit Tissue" icon="skills/spells/restoration64.png" skill="15" level="1">
   <spell name="Knit Tissue"/>
-  <description text="Это заклинание соединит вместе ваши кусочки которые отвалились, оторвались, отрезали, отсекли или отделили любым другим способом. Это небрежный вид исцеления."/>
+  <description text="Это заклинание сошьет вместе ваши кусочки которые оторвали, отрезали, отсекли или отделили любым другим способом. Это некрасивый вид исцеления."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>
 <ability name="Fleshbore" icon="skills/spells/fleshbore64.png" skill="15" level="2">
@@ -502,7 +502,7 @@
   </ability>
 <ability name="Corpus Burst" icon="skills/spells/corpus_burst64.png" skill="15" level="4">
   <spell name="Corpus Burst"/>
-  <description text="Это заклинание делает взрывающиеся трупы! Кто-же не любит подрывать трупы? На самом деле почти все."/>
+  <description text="Это заклинание взрывает трупы! Кому это может нравиться? ... На самом деле никому."/>
   <secondarybuff id="0" amount="1" /> <!-- hp -->
   </ability>
 <ability name="Miasmatic Putrefaction" icon="skills/spells/conjure_miasma64.png" skill="15" level="5">
@@ -524,11 +524,11 @@
   </ability>
 <ability name="Unliving Wall" icon="skills/spells/summon_wall64.png" skill="14" level="2">
   <spell name="Unliving Wall"/>
-  <description text="Придуманное безумным зодчим Монтрезором это заклинание поднимает стену прямо из пола (сминающей любого своей кладкой). Уникально неестественно."/>
+  <description text="Придуманное безумным зодчим Монтрезором, это заклинание, поднимает стену прямо из пола. Стена сминает любого своей кладкой. Выглядит странно."/>
   </ability>
 <ability name="Invive Thaumite Swarm" icon="skills/spells/thaumite_swarm64.png" skill="14" level="3">
   <spell name="Thaumite Infection"/>
-  <description text="Ожившие облако чудоклещей поглощает любого кто нему приблизится с ненасытным голодом, покинув тело они ожидают новую жертву."/>
+  <description text="Ожившее облако чудоклещей поглощает любого, кто его коснется, с безумной прожорливостью. Покинув тело они ожидают новую жертву."/>
   </ability>
 <ability name="The Mortal Machine" icon="skills/spells/animate_robot64.png" skill="14" level="4">
   <spell name="Grant Machine Mortality"/>
@@ -538,7 +538,7 @@
 <!-- Digging ray.-->
 <ability name="Digging Ray" icon="skills/spells/montresors_wall64.png" skill="14" level="5">
   <spell name="Digging Ray"/>
-  <description text="То что построено, может быть и сломано. Разрушать стены это вообще чит."/>
+  <description text="Что один построил, другой всегда сломает. Разрушать стены это вообще чит."/>
   </ability>
 
   <!-- Mathemagical Formulae -->
@@ -756,7 +756,7 @@
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Norwegian Axenado" icon="skills/warrior/axemanship2_64.png" skill="1" level="3">
-  <description text="Обрушьте истинную мощь топора на своих врагов, как в легендарных древних сказаниях! Этот удар не пропустит никого вокруг вас."/>
+  <description text="Обрушьте истинную мощь топора на своих врагов, как в древних легендах! Этот удар не пропустит никого вокруг."/>
   <spell name="Norwegian Axenado"/>
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -785,7 +785,7 @@
   <damagebuff slashing="1" />
   </ability>
 <ability name="Liechtenauer's Overhau" icon="skills/warrior/swordplay1_64.png" skill="0" level="1">
-  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили: это очень тевтонская (и очень болезненная) атака, которую вы имеете шанс выполнить вместе с каждым ударом в ближнем бою. Урон зависит от вашей Burliness."/>
+  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили. Это очень эффективный, тевтонский удар, наносящий сильный урон врагу. Жаль, что получается нечасто. Урон зависит от вашей Burliness."/>
   <!-- <spell name="Liechtenauer's Overhau"/> -->
   <targetHitEffectBuff percentage="20" name="Liechtenauer's Overhau" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
@@ -793,7 +793,7 @@
   <damagebuff slashing="1"/>
   </ability>
 <ability name="Sword Practice" icon="skills/skill_sword.png" skill="0" level="2">
-  <description text="После многих часов в попытках рассечь мух, ваши навыки фехтования значительно улучшились. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
+  <description text="Вы долго тренировались рассекая мух и ваши навыки фехтования естественно улучшились. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
   <damagebuff piercing="1" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -808,7 +808,7 @@
   </ability>
 <ability name="Sword Lore" icon="skills/warrior/sword_lore64.png" skill="0" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Бриманские ученые открыли страшный секрет о мечах: в бою мечем есть шанс нанести особо тяжелые повреждения." />
+  <description text="Британские ученые открыли страшный секрет о мечах: в бою мечем есть шанс нанести особо тяжелые раны." />
   <targetHitEffectBuff percentage="16" name="Bleeding Out" />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
@@ -831,7 +831,7 @@
   </ability>
 <ability name="Dwarven Handshake" icon="skills/warrior/macery1_64.png" skill="2" level="1">
   <targetHitEffectBuff percentage="20" name="Dwarven Handshake" />
-  <description text="Научите вашего врага не приближаться к вам. Используя оружие типа булавы вы можете так сильно ударить врага, что его отбросит назад."/>
+  <description text="Научите вашего врага не приближаться к вам. Используя оружие, типа булавы, вы можете так сильно ударить врага, что его отбросит назад."/>
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   <damagebuff piercing="1"/>
@@ -852,7 +852,7 @@
   </ability>
 <ability name="Mace Knowledge" icon="skills/warrior/mace_knowledge64.png" skill="2" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
-  <description text="Размеренное изучение важности булавы в славной битве, позволило вам постичь все темные секреты содержащиеся внутри этого славного оружия. Вы можете нанести булавой такой неповторимый удар, о котором будут складывать легенды еще несколько поколений." />
+  <description text="Подробное изучение использования булавы в славной битве, позволило вам постичь все скрытые секреты этого славного оружия. Вы можете нанести булавой такой неповторимый удар, о котором будут слагать легенды, еще несколько поколений." />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   <targetHitEffectBuff percentage="6" name="Bleeding Out" />
   <targetHitEffectBuff percentage="10" name="Crippling Wound" />
@@ -874,7 +874,7 @@
   <damagebuff crushing="1" />
   </ability>
 <ability name="Spirit Conduit" icon="skills/warrior/staff-fighting1_64.png" skill="3" level="1">
-  <description text="Шанс провести мощную атаку, наполненную необычной силой мира духов. А еще ваши тренировки увеличивают урон в бою при использовании посохов."/>
+  <description text="Наполнив посох необычной силой мира духов, вы можете совершить мощный удар. А еще ваши тренировки увеличивают урон в бою при использовании посохов."/>
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
   <secondarybuff id="5" amount="2"/> <!-- Haywire -->
   <secondarybuff id="7" amount="1"/> <!-- Block -->
@@ -889,7 +889,7 @@
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Ki Cascade Strike" icon="skills/warrior/staff-fighting2_64.png" skill="3" level="3">     
-  <description text="Непостижимый и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг, атакой по области."/>
+  <description text="Непостижимый и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг."/>
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff crushing="1"/>
@@ -952,7 +952,7 @@
   </ability>
 <ability name="Stone Sole" icon="skills/skill_unarmed.png" skill="6" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Вы много раз проходились ногами по лицам врагов, и ваши ступни стали тверды как ваш характер. Вы можете так сильно пнуть врага, что все удары, полученные им до этого, покажутся просто щекоткой." />
+  <description text="Вы много раз проходились ногами по лицам врагов, и ваши ступни стали тверды, как ваш характер. Вы можете так сильно пнуть врага, что все удары, полученные им до этого, покажутся просто щекоткой." />
   <secondarybuff id="3" amount="1"/> <!-- magic power -->
   <targetHitEffectBuff percentage="10" name="Stone Sole Pummeling" />
   <damagebuff crushing="2" />
@@ -978,7 +978,7 @@
   <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
    </ability>
 <ability name="Crossbow Blast" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
-  <description text="Техника выстрела, обросшая сплетнями и слухами, позволяющая превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон. Это сложно, поэтому использовать ее можно лишь иногда." />
+  <description text="Техника выстрела в которую мало кто верит. Она позволяет превысить силу выстрела арбалета, отбросить врага и нанести ему огромный урон. Это сложно, поэтому не всегда получается." />
   <damagebuff piercing="1"/>
   <recoverybuff amount="10" />
   <crossbowShotBuff name="Crossbow Blast" percentage="20" />
@@ -1006,7 +1006,7 @@
   <spell name="Impossible Shot" />
   </ability> -->
 <ability name="Prince of the Crossbow" icon="skills/skill_crossbow.png" skill="4" level="4">
-  <description text="Это как быть троюродным братом Робин-Гуда. Неплохо. Этот навык значительно увеличивает урон от выстрела из арбалета. Шанс сохранить стрелу увеличен."/>
+  <description text="Это как быть троюродным братом Робин-Гуда. Здорово же. Этот навык значительно увеличивает урон от выстрела из арбалета. Шанс сохранить стрелу увеличен."/>
   <secondarybuff id="4" amount="4"/> <!-- Crit -->
   <secondarybuff id="9" amount="6" /> <!-- EDR -->
   <damagebuff piercing="3"/>
