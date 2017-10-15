@@ -1,0 +1,459 @@
+<monDB>
+	 
+<!-- 
+
+Fax Celestis' Monstrous Menagerie
+
+BE WARNED: HERE THERE BE DRAGONS
+
+...and maybe some diggles.
+
+-->
+
+<monster name="Devil's Haircut" level="9" tiny="1" splat="ichor" taxa="Demon">
+    <idleSprite left="sprites/monster/greeny/greeny_run_l.spr"
+    right="sprites/monster/greeny/greeny_run_r.spr"
+    up="sprites/monster/greeny/greeny_run_u.spr"
+    down="sprites/monster/greeny/greeny_run_d.spr"/>
+    <attackSprite left="sprites/monster/greeny/greeny_atk_l.spr"
+    right="sprites/monster/greeny/greeny_atk_r.spr"
+    up="sprites/monster/greeny/greeny_atk_u.spr"
+    down="sprites/monster/greeny/greeny_atk_d.spr"/>
+    <hitSprite left="sprites/monster/greeny/greeny_hit_l.spr"
+    right="sprites/monster/greeny/greeny_hit_r.spr"
+    up="sprites/monster/greeny/greeny_hit_u.spr"
+    down="sprites/monster/greeny/greeny_hit_d.spr"/>
+    <dieSprite name="sprites/monster/greeny/greeny_die.spr"/>
+
+    <stats numFig="5" numRog="10" xpValue="150"/>
+    <palette tint="180" />
+    <sfx attack="small_attack"
+			hit="small_hit"
+			die="small_die"
+			spell="small_spell"/>
+
+	 <info latin="(mustas tonsus)" text="It's on your mind."/>
+	 <secondarybuff id="10" amount="10"/> <!-- armour -->
+	 <secondarybuff id="8" amount="10"/> <!-- counter -->
+	 <secondarybuff id="6" amount="40"/> <!-- dodge -->
+	 <secondarybuff id="7" amount="10"/> <!-- block -->
+	 <damage existential="8" />	
+    
+	 <resistances existential="20" slashing="5" transmutative="10" />
+	 
+	 <ai aggressiveness="8" span="15" />
+	 <sight cone="90" modifier="1.1" />
+	 
+	 <onhit spell="Fleshbore" onechancein="5"/>
+  </monster>
+
+<monster name="Diggle Mage" level="6" tiny="1" splat="blood" taxa="Animal" diggleHell="1">
+	<idleSprite left="sprites/monster/diggle/diggle_run_l.spr"
+	right="sprites/monster/diggle/diggle_run_r.spr"
+	up="sprites/monster/diggle/diggle_run_u.spr"
+	down="sprites/monster/diggle/diggle_run_d.spr"/>
+	<attackSprite left="sprites/monster/diggle/diggle_atk_l.spr"
+	right="sprites/monster/diggle/diggle_atk_r.spr"
+	up="sprites/monster/diggle/diggle_atk_u.spr"
+	down="sprites/monster/diggle/diggle_atk_d.spr"/>
+	<hitSprite left="sprites/monster/diggle/diggle_hit_l.spr"
+	right="sprites/monster/diggle/diggle_hit_r.spr"
+	up="sprites/monster/diggle/diggle_hit_u.spr"
+	down="sprites/monster/diggle/diggle_hit_d.spr"/>
+	<dieSprite name="sprites/monster/diggle/diggle_die_r.spr"/>
+  <castSpellSprite name="sprites/monster/diggle/diggle_wand_r.xml"/>
+	
+	<sfx attack="diggle_attack"
+		  hit="diggle_damage"
+		  die="diggle_die"
+		  spell="diggle_cast"/>
+	
+	 <stats numWiz="8" xpValue="60" />
+	 
+	 <palette tint="150" />
+	 <damage slashing="1" piercing="2"/>
+	 <secondarybuff id="4" amount="-10"/> <!-- crit -->
+	 <secondarybuff id="6" amount="10"/> <!-- dodge -->
+	 <secondarybuff id="0" amount="-10"/> <!-- hp -->
+	 <ai aggressiveness="5" span="24" chicken="1" spellPercentage="40"/>
+	 <sight cone="90" modifier="1.45" />
+	 
+	 <spell name="Aethereal Missile"/>
+	 <spell name="Monster Blink" />
+	 <spell name="Thaumoentropic Missile" />
+	 <spell name="Weak Electrobolt" />
+	 <resistances existential="5" aethereal="3" transmutative="5" voltaic="3" hyperborean="3" />
+
+	<info latin="(Poingus Magus)" text="Having forsaken its nasal heritage, this Diggle has instead focused on arcane pursuits. The better to dig with."/>
+
+	<monster name="Diggle Archmage" level="12"  diggleHell="1">
+    <palette tint="-130"/>
+    <damage voltaic="12" />
+    <stats numWiz="15" numRog="5" xpValue="200"/>
+    <secondarybuff id="4" amount="-10"/>
+    <!-- crit -->
+    <secondarybuff id="6" amount="10"/>
+    <!-- dodge -->
+    <secondarybuff id="0" amount="-20"/>
+    <!-- hp -->
+    <ai aggressiveness="5" span="24" chicken="1" spellPercentage="40"/>
+    <spell name="Monster Blink" />
+    <spell name="Electrobolt" />
+    <spell name="Fairywodger Fungal Healing" />
+    <spell name="Antimagic Cloud" />
+    <spell name="Corruption Missile" />
+    <resistances existential="8" aethereal="5" transmutative="8" voltaic="5" hyperborean="5" />
+
+    <info latin="(Poingus Archmagus)" text="The secret leaders of the secret leaders of Diggle society. This is all getting rather confusing..."/>
+  </monster>
+
+  <monster name="Diggle Harbinger" level="13"  diggleHell="1">
+		  <palette tint="220"/>
+		  <damage slashing="5" voltaic="20" />
+		  <stats numFig="24" xpValue="250"/>
+		  <secondarybuff id="4" amount="10"/> <!-- crit -->
+		  <secondarybuff id="6" amount="20"/> <!-- dodge -->
+		  <secondarybuff id="3" amount="-20"/> <!-- spellpower so the static sphere isn't quite so OMGdead -->
+		  <secondarybuff id="23" amount="5"/> <!-- wands; ITS FOR THE STATIC SPHERE I SWEAR -->
+		  <ai aggressiveness="5" span="24" spellPercentage="15"/>
+		  <spell name="Eye Laser Blast" />
+		  <spell name="Static Sphere" />
+		  <resistances voltaic="5" aethereal="5" />
+		  
+		  <info latin="(Poingus Praenuntius)" text="This Diggle shall establish direct control of your dungeon rampage. It is the beginning - you are the end. Hope is irrelevant. Embrace Diggly perfection."/>
+		  </monster>
+
+	<monster name="Diggle Rocketeer" level="12"  diggleHell="1">
+    <palette tint="65"/>
+    <damage slashing="5" crushing="5" blasting="12" />
+    <stats numFig="22" xpValue="150"/>
+    <secondarybuff id="2" amount="4"/>
+    <!-- Melee power -->
+    <ai aggressiveness="5" span="24" spellPercentage="5" chicken="0"/>
+    <spell name="Rocket-powered Punch" />
+    <resistances blasting="8" />
+
+    <info latin="(Poingus Meteoris)" text="Dear lord, the Diggle has a jetpack. And it's LEAKING."/>
+  </monster>
+
+  <monster name="Deep Diggle Chef" level="9"  diggleHell="1">
+		<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+		<ai aggressiveness="4" span="10" chicken="0" spellPercentage="0" />
+	
+		<stats numFig="7" numRog="7" xpValue="150" />
+		<damage slashing="2" piercing="3" conflagratory="5" />
+		<secondarybuff id="4" amount="-10"/> <!-- crit -->
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<secondarybuff id="0" amount="-2"/> <!-- hp -->
+		<palette tint="250"/>
+		<info latin="(Poingus Culinarius)" text="This Diggle seems to be missing its chef's hat, but you can tell from the air of superiority and the wafts of cheese scent that follow that it is a chef of some fell sort."/>
+		<drop name="Cheese" percent="10"/>
+		<drop name="Merlot" percent="10"/>
+		<drop name="Aged Steak" percent="10"/>
+		<drop name="Sliced Bread" percent="10"/>
+		<drop name="Deep Omelette" percent="10"/>
+		</monster>
+
+	<monster name="Deep Diggle Smith" level="7"  diggleHell="1">
+		<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+		<ai aggressiveness="4" span="10" chicken="0" spellPercentage="0" />
+	
+		<stats numFig="12" xpValue="80" />
+		<damage slashing="3" piercing="5" />
+		<secondarybuff id="2" amount="5"/> <!-- melee -->
+		<palette tint="150"/>
+		<info latin="(Poingus Manufacturus)" text="This soot-covered Diggle appears to have been working the forge."/>
+		<drop name="Iron Ingot" percent="10"/>
+		<drop name="Steel Ingot" percent="10"/>
+		<drop name="Zinc Ingot" percent="10"/>
+		<drop name="Copper Ingot" percent="10"/>
+		<drop name="Bronze Ingot" percent="10"/>
+		</monster>
+
+	<monster name="Deep Fungus Diggle" level="5"  diggleHell="1">
+		<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+		<ai aggressiveness="4" span="10" />
+	
+		<stats numRog="10" xpValue="60" />
+		<damage slashing="2" piercing="3" toxic="5" />
+		<secondarybuff id="4" amount="-10"/> <!-- crit -->
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<secondarybuff id="0" amount="-2"/> <!-- hp -->
+		<palette tint="200"/>
+		<info latin="(Poingus Agriculturus)" text="This earthy, mottled Diggle has mushrooms growing off of its body."/>
+		<ondeath spell="Fungal Death Spawn" percent="45" />
+		</monster>
+
+	<monster name="Diggle Geologist" level="8"  diggleHell="1">
+		<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+		<ai aggressiveness="4" span="10" spellPercentage="15"/>
+				<spell name="Seismic Uppercut" />
+				<spell name="Plutonic Fist " />
+				<spell name="Basalt Skin" />
+				<spell name="Petrification"/>
+		<stats numWiz="12" numFig="6" xpValue="105" />
+		<damage slashing="1" piercing="1" crushing="3" blasting="3" />
+		<secondarybuff id="4" amount="-10"/> <!-- crit -->
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<secondarybuff id="0" amount="-2"/> <!-- hp -->
+		<palette tint="300"/>
+		<info latin="(Poingus Granitus)" text="This Diggle appears to be made of stone."/>
+		<drop name="Bituminous Coal" percent="15"/>
+		</monster>
+
+	<monster name="Rogue Diggle Scientist" level="12"  diggleHell="1">
+		<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+		<ai aggressiveness="4" span="10" spellPercentage="10"/>
+		   <spell name="Diggle Acid Flask" />
+			<spell name="Aetheric Death Ray" />
+			<spell name="Sonic Blast" />
+		<stats numRog="20" xpValue="200" />
+		<damage slashing="1" piercing="1" acidic="5" toxic="5" />
+		<resistances voltaic="5" aethereal="5" />
+		<secondarybuff id="4" amount="-10"/> <!-- crit -->
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<secondarybuff id="0" amount="-2"/> <!-- hp -->
+		<secondarybuff id="23" amount="2"/> <!-- wands; ITS FOR THE DEATH RAY I SWEAR -->
+		<secondarybuff id="20" amount="2"/> <!-- tinker; ITS FOR THE SONIC BLAST I SWEAR -->
+		<secondarybuff id="21" amount="2"/> <!-- alchemy; ITS FOR THE ACID FLASK I SWEAR -->
+		<palette tint="600"/>
+		<info latin="(Poingus Manius Sciencium)" text="Stand back! This Diggle is going to try SCIENCE!"/>
+		</monster>
+	</monster>
+
+<!-- clones -->
+	
+<monster name="Poorly Cloned Hero" level="2" tiny="0" splat="ichor" taxa="Other">
+	<idleSprite left="sprites/hero/hero_run_l.spr"
+	right="sprites/hero/hero_run_r.spr"
+	up="sprites/hero/hero_run_u.spr"
+	down="sprites/hero/hero_run_d.spr"/>
+	<attackSprite left="sprites/hero/hero_atk_unarm_l.spr"
+	right="sprites/hero/hero_atk_unarm_r.spr"
+	up="sprites/hero/hero_atk_unarm_u.spr"
+	down="sprites/hero/hero_atk_unarm_d.spr"/>
+	<hitSprite left="sprites/hero/hero_hit_l.spr"
+	right="sprites/hero/hero_hit_r.spr"
+	up="sprites/hero/hero_hit_u.spr"
+	down="sprites/hero/hero_hit_d.spr"/>
+	<dieSprite name="sprites/hero/hero_die_disintegrated_l.spr"/>
+	
+	<sfx attack="unarmed2"
+		  hit="humanoid_hit"
+		  die="disintegrate"
+		  spell="humanoid_spell"/>
+	
+	<ai aggressiveness="5" span="5" />
+	<sight cone="90" modifier="1.1" />
+	
+	<stats numFig="4" numRog="2" xpValue="24" />
+     
+        <palette tint="-60" />
+	<damage crushing="1" piercing="1" blasting="2" acidic="2"/>
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="0" amount="10"/> <!-- hp -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+        <onhit spell="Weak Acid Pool" onechancein="5" />
+        <resistances acidic="10" />
+	
+	<info latin="(Androclonus Poorus)" text="A clone! It's...not a very good resemblance: it's all goopy, and the eyebrows are too small."/>
+	
+	<monster name="Villainous Doppleganger" level="13" >
+		  <attackSprite left="sprites/hero/hero_atk_swd_l.spr"
+		  right="sprites/hero/hero_atk_swd_r.spr"
+		  up="sprites/hero/hero_atk_swd_u.spr"
+		  down="sprites/hero/hero_atk_swd_d.spr"/>
+		  <palette tint="60" />
+		  <stats numFig="20" numRog="10" xpValue="180" />
+		  <damage slashing="20" piercing="5" acidic="5"/>
+		  <secondarybuff id="6" amount="25"/> <!-- dodge -->
+		  <secondarybuff id="0" amount="50"/> <!-- hp -->
+		  <secondarybuff id="10" amount="10"/> <!-- armour -->
+		  <onhit spell="Strong Acid Pool" onechancein="5" />
+        <resistances acidic="10" />
+		  <info latin="(Androclonus Poorus)" text="This malformed doppleganger has been going about doing foul things in your name - it must be stopped!"/>
+	</monster>
+				
+  </monster>
+
+  <!-- TODO: add villainous Doppleganger to level 11 -->
+
+<monster name="Poorly Cloned Heroine" level="2" tiny="0" splat="ichor" taxa="Other">
+	<idleSprite left="sprites/fhero/hero_run_l.xml"
+	right="sprites/fhero/hero_run_r.xml"
+	up="sprites/fhero/hero_run_u.xml"
+	down="sprites/fhero/hero_run_d.xml"/>
+	<attackSprite left="sprites/fhero/hero_atk_unarm_l.xml"
+	right="sprites/fhero/hero_atk_unarm_r.xml"
+	up="sprites/fhero/hero_atk_unarm_u.xml"
+	down="sprites/fhero/hero_atk_unarm_d.xml"/>
+	<hitSprite left="sprites/fhero/hero_hit_l.xml"
+	right="sprites/fhero/hero_hit_r.xml"
+	up="sprites/fhero/hero_hit_u.xml"
+	down="sprites/fhero/hero_hit_d.xml"/>
+	<dieSprite name="sprites/fhero/hero_die_disintegrated_l.xml"/>
+	
+	<sfx attack="unarmed_female2"
+		  hit="humanoid_hit"
+		  die="disintegrate"
+		  spell="humanoid_spell"/>
+	
+	<ai aggressiveness="5" span="5" />
+	<sight cone="90" modifier="1.1" />
+	
+	<stats numFig="4" numRog="2" xpValue="24" />
+     
+        <palette tint="-60" />
+	<damage crushing="1" piercing="1" blasting="2" acidic="2"/>
+	<secondarybuff id="4" amount="5"/> <!-- crit -->
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="0" amount="10"/> <!-- hp -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+        <onhit spell="Weak Acid Pool" onechancein="5" />
+        <resistances acidic="10" />
+	
+	<info latin="(Gynoclonus Poorus)" text="A clone! It's...not a very good resemblance: it's all goopy, and the eyebrows are too small."/>
+	
+	<monster name="Villainous Dopplegangeress" level="13" >
+		  <attackSprite left="sprites/fhero/hero_atk_swd_l.xml"
+		  right="sprites/fhero/hero_atk_swd_r.xml"
+		  up="sprites/fhero/hero_atk_swd_u.xml"
+		  down="sprites/fhero/hero_atk_swd_d.xml"/>
+		  <palette tint="60" />
+		  <stats numFig="20" numRog="10" xpValue="180" />
+		  <damage slashing="20" piercing="5" acidic="5"/>
+		  <secondarybuff id="6" amount="25"/> <!-- dodge -->
+		  <secondarybuff id="0" amount="50"/> <!-- hp -->
+		  <secondarybuff id="10" amount="10"/> <!-- armour -->
+		  <onhit spell="Strong Acid Pool" onechancein="5" />
+        	<resistances acidic="10" />
+		  <info latin="(Gynoclonus Poorus)" text="This malformed doppleganger has been going about doing foul things in your name - it must be stopped!"/>
+	</monster>
+	
+  </monster>
+
+
+<monster name="Common Cave Raven" level="0" tiny="1" splat="blood" taxa="Animal" terrain="2">
+	<idleSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<attackSprite left="sprites/monster/raven/raven_atk_l.xml"
+	right="sprites/monster/raven/raven_atk_r.xml"
+	up="sprites/monster/raven/raven_atk_u.xml"
+	down="sprites/monster/raven/raven_atk_d.xml"/>
+	<hitSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<dieSprite name="sprites/monster/raven/raven_die.xml"/>
+	<castSpellSprite name="sprites/monster/raven/raven_cast.xml"/>
+	
+	<sfx attack="raven_attack"
+		  hit="raven_damage"
+		  die="raven_die"
+		  spell="raven_cast"/>
+	
+	 <stats numRog="2" xpValue="5" />
+	 <ai span="4" aggressiveness="4" />
+	 <sight cone="270" modifier="1.1" />
+	 
+	 <palette tint="0" />
+	 <damage slashing="1" piercing="1" />
+	 <secondarybuff id="6" amount="20"/> <!-- dodge --> 
+	 <secondarybuff id="0" amount="-2"/>  <!-- hp -->
+	 <resistances necromantic="2" />
+	 <info latin="(Corvus Corvus)" text="It's said they like to rap at doors, but you're skeptical this one could manage a decent rhythm."/>
+
+<monster name="Existential Raven" level="4">
+	<palette tint="0"/>
+	<resistances necromantic="3" existential="10" />
+	<stats numRog="8" xpValue="40"/>
+	<damage slashing="3" existential="4"/>
+	<secondarybuff id="6" amount="25"/> <!-- dodge --> 
+	<info latin="(Corvus Infernus)" text="Hailing from plutonian shores, this raven reminds you of memories long past you wish equally to remember and forget."/>
+        <ai aggressiveness="5" span="5" chicken="0" spellPercentage="7"/>
+        <spell name="Existential Despair Missile"/>
+		  <spell name="Shroud of Darkness"/>
+	 <sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+	 </monster>
+	
+<monster name="Heckraven" level="8">
+	<palette tint="30"/>
+	<resistances necromantic="5" conflagratory="5" piercing="1" slashing="1"/>
+	<stats numRog="24" xpValue="100"/>
+	<damage piercing="2" conflagratory="4" necromantic="8"/>
+	<secondarybuff id="6" amount="30"/> <!-- dodge --> 
+	<info latin="(Corvus Infernus)" text="It's just a raven...FROM HECK (a suburb of Hell about an hour's drive east - it's still a pretty rough place, all told)."/>
+        <ai aggressiveness="5" span="5" chicken="0" spellPercentage="10"/>
+        <spell name="Shroud of Darkness"/>
+	 <sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+   </monster>
+
+<monster name="Abdead Corvid Monarch" level="13">
+	<palette tint="80"/>
+	<resistances necromantic="5" conflagratory="-1" toxic="15" existential="15" asphyxiative="15" />
+	<stats numWiz="5" numRog="30" xpValue="200"/>
+	<damage existential="5" slashing="10" necromantic="5" piercing="5" />
+	<secondarybuff id="6" amount="35"/> <!-- dodge -->
+	<secondarybuff id="0" amount="-10"/>  <!-- hp -->
+	<info latin="(Corvus Rex)" text="And four caws Dredmor gave to the Ravens staid and regal in their tenebrous halls, under the earth, to in the darkness bind them."/>
+        <ai aggressiveness="5" span="5" chicken="0" spellPercentage="18"/>
+        <!--<spell name="Monstrous Rage"/>-->
+        <spell name="Existential Despair Missile"/>
+		  <spell name="Blinding Mist Cloud"/>
+		  <spell name="Shroud of Darkness"/>
+        <onhit spell="Throwing Buffalo Technique" onechancein="3" />
+	 <sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+</monster>
+
+	<!-- add a Deep Crow? -->
+
+  <monster name="Deep Raven" level="14">
+    <palette tint="80"/>
+    <resistances necromantic="7" conflagratory="-2" toxic="20" existential="20" asphyxiative="20" />
+    <stats numWiz="7" numRog="32" xpValue="300"/>
+    <damage existential="10" slashing="5" necromantic="10" piercing="10" />
+    <secondarybuff id="6" amount="40"/> <!-- dodge -->
+    <!-- dodge -->
+    <info latin="(Corvus Rex)" text="The Deep Raven cleverly sits in its abandoned missile silos, plotting cunning copyright infringement. "/>
+    <ai aggressiveness="5" span="5" chicken="0" spellPercentage="18"/>    
+    <spell name="Eye Lasers"/>
+	 <spell name="Existential Despair Missile"/>
+    <spell name="Shroud of Darkness"/>
+    <sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  </monster>
+
+</monster>
+
+<!-- Clockwork Knights madness -->
+
+	<monster name="Gas Canister" level="1" special="1" taxa="Gas Canister" nobenefits="1" splat="goo" >
+		<idleSprite
+			left="sprites/monster/canisterA/canisterA.xml"
+			right="sprites/monster/canisterA/canisterA.xml"
+			up="sprites/monster/canisterA/canisterA.xml"
+			down="sprites/monster/canisterA/canisterA.xml" />
+		<attackSprite
+			left="sprites/monster/canisterA/canisterA.xml"
+			right="sprites/monster/canisterA/canisterA.xml"
+			up="sprites/monster/canisterA/canisterA.xml"
+			down="sprites/monster/canisterA/canisterA.xml" />
+		<hitSprite
+			left="sprites/monster/canisterA/canisterA.xml"
+			right="sprites/monster/canisterA/canisterA.xml"
+			up="sprites/monster/canisterA/canisterA.xml"
+			down="sprites/monster/canisterA/canisterA.xml" />
+		<dieSprite
+			name="sprites/monster/canisterA/canisterA.xml" />
+
+		<info latin="(aeris continentis)" text="It's spewing toxic gas!"/>
+		<resistances acidic="100" toxic="100" piercing="100" asphyxiative="100" hyperborean="100" putrefying="100" conflagratory="100" />
+	</monster>
+
+</monDB>

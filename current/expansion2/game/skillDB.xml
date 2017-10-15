@@ -1,0 +1,204 @@
+<skillDB>
+	
+<!-- Clockwork Knights by Ruigi-->
+
+<skill name="Clockwork Knight" id="41" type="warrior" achievement="ACHIEVEMENT_CLOCKWORK_KNIGHT_MASTERY" description="You're armed with the latest in modern steam-powered military hardware. GLORY TO THE EMPIRE! (Tinkering and Smithing will improve your mechanical attacks.)">
+  <art icon="skills/clockwork_knight64.png"/>
+  <loadout type="armour" subtype="Leather Cap With A Cog On It" always="1"/>
+</skill>
+<ability name="Clockwork Knight" icon="skills/clockwork_knight64.png" skill="41" startSkill="1">
+  <description text="You're armed with the latest in modern steam-powered military hardware. GLORY TO THE EMPIRE! (Tinkering ability will improve your mechanical attacks.)"/>
+</ability>
+
+<ability name="Tech Scavenger" icon="skills/tech_scavenger64.png" skill="41" level="0" learnrecipe="Tinkerer's Goggles">
+  <targetKillBuff name="Tech Scavenge" taxa="Construct" percentage="25" />
+  <description text="Your close affinity with mechanical technology gives you an eye for salvaging quality parts and scrap metal from slain constructs." />
+</ability>
+<!-- TODO on levelup, gain Clockwork Harpoon recipe -->
+<ability name="Rocket-powered Punch" icon="skills/rocket_fist64.png" skill="41" level="1" learnrecipe="Clockwork Grappling Bolt">
+  <spell name="Rocket-powered Punch"/>
+  <secondarybuff id="19" amount="1" />
+  <!-- smith -->
+  <description text="You can periodically launch a fist-shaped rocket from your arm-cannon to give wayward brigands and blaggards what-for." />
+</ability>
+<!-- TODO on levelup, gain Clockwork Rocket recipe -->
+<ability name="Rocket Jump" icon="skills/rocket_jump64.png" skill="41" level="2" learnrecipe="Steam Rocket Bolt" >
+  <description text="You learn to propel yourself by detonating an explosive below your feet just as you jump through the air. This attack is bold and may suprise your enemies-- especially if you jump on their heads. Your Tinkering skill enhances the bomb blast. Only works in cardinal directions."/>
+  <spell name="Rocket Jump"/>
+  <secondarybuff id="20" amount="1" />
+  <!-- tinkering -->
+</ability>
+<ability name="Augmented Limbs" icon="skills/augmented_limbs64.png" skill="41" level="3" learnrecipe="Clockwork Power-limb">
+  <description text="Your steam-powered limbs may automatically go on a destructive rampage in combat and thresh your enemies."/>
+  <targetHitEffectBuff percentage="5" name="Clockwork Threshing" />
+</ability>
+<ability name="Parabolic Mecha-stomp" icon="skills/mecha_stomp64.png" skill="41" level="4" learnrecipe="Clockwork Actuators">
+  <description text="You leap into the air and come crashing down. The power of your mechanical limbs rocks the dugeon floor like a small boat on a stormy sea of metaphor."/>
+  <spell name="Parabolic Mecha-stomp"/>
+</ability>
+<ability name="Thaumecha-kinetic Damper" icon ="skills/damper64.png" skill="41" level="5" learnrecipe="Imperial Clockwork Helm" >
+  <description text="Your suit can emit a powerful inertial dampening field that can protect you from projectiles and explosions. This energy shield requires a lot of energy to operate." />
+  <spell name="Thaumecha-kinetic Damper"/>
+  <secondarybuff id="19" amount="1" />
+  <!-- smith -->
+</ability>
+<ability name="Charge of the Steam Brigade" icon="skills/steam_charge64.png" skill="41" level="6" learnrecipe="Imperial Clockwork Plate">
+  <spell name="Eruption Slam"/>
+  <description text="By steam-powered rocket boot you propel yourself straight into the heart of the enemy to strike with the force of the Empire's glory! FOR QUEEN AND COUNTRY! Only works in cardinal directions, of course."/>
+  <secondarybuff id="20" amount="1" />
+  <!-- tinkering -->
+</ability>
+
+<!-- Clockwork Rogue by Ruigi -->
+
+<skill name="Rogue Scientist" id="42" type="rogue" achievement="ACHIEVEMENT_SCIENCE_ROGUE_MASTERY"  description="No, you don't study rogues. Rather, you employ radical theories of cutting-edge thaumechanics and alchemical engineering. (Tinkering, Wandcrafting and Alchemy will improve your scientific attacks.)">
+	<art icon="skills/clockwork_rogue64.png"/>
+	<loadout type="wand" subtype="Sonic Wand" always="1"/>
+	<loadout type="weapon" subtype="Acid Flask" amount="2" always="1"/>
+	<loadout type="weapon" subtype="Poison Flask" amount="2" always="1"/>
+	</skill>
+<ability name="Rogue Scientist" icon="skills/clockwork_rogue64.png" skill="42" startSkill="1">
+	<description text="No, you don't study rogues. Rather, you employ radical theories of cutting-edge thaumechanics and alchemical engineering. (Tinkering, Wandcrafting and Alchemy will improve your scientific attacks.)"/>
+	</ability>
+
+<ability name="Chemic Pilferer" icon="skills/chemic_pilferer64.png" skill="42" level="0" giveitem="Alchemical Ooze">
+	<targetKillBuff name="Salvage Ooze" taxa="Other" percentage="20" />
+	<description text="You've learned to extract a curious slime from certain monsters which can be turned into useful alchemical reagents through patented processes. Do note: Dungeon slime is toxic and will NOT give you superpowers if you drink it."/>
+	<resistbuff toxic="1" />
+	</ability>
+<ability name="Baromatic Pulse Device" icon="skills/sonic_cannon64.png" skill="42" level="1" >
+	<spell name="Sonic Blast"/>
+	<description text="You've created a sonic projector which allows you to unleash a focused concussing projectile toward a single target. This weapon deals more damage as your tinkering proficiency improves."/>
+	</ability>
+<ability name="Acidical Projector" icon="skills/acidical_projector64.png" skill="42" level="2" >
+	<description text="You've created a device which, if you elect to do so, sprays horrible acids at your enemy. The acids become more sophisticated and corrosive as your alchemy skill improves."/>
+	<spell name="Acidical Projector"/>
+	<resistbuff acidic="1" />
+	</ability>
+<ability name="Clockwork Reflexes" icon="skills/clockwork_reflexes64.png" skill="42" level="3" >
+	<description text="Clockwork mechanisms enhance your reflexes with the cold precision of the machine. Whenever you counterattack there is a chance your limbs will reflexively strike out at enemies in all directions." />
+	<counterBuff percentage="20" name="Clockwork Reflexes" />
+	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	</ability>
+<ability name="Alchemical Toxin Canister" icon="skills/gas_canister64.png" skill="42" level="4" >
+	<description text="You toss a crafted alchemical grenade which releases weaponized alchemical spirits. (Do avoid launching it directly at enemies as the grenade has a tendency to ricochet.) The gas becomes deadlier as your alchemy skill improves. Avoid contact with mucus membranes." />
+	<spell name="Alchemical Toxin Canister"/>
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	</ability>
+<ability name="Thaumomechnical Rebreather" icon="skills/rebreather_mask64.png" skill="42" level="5" learnrecipe="Mechanothaumic Rebreather" giveitem="Mechanothaumic Rebreather" >
+	<description text="You wear a hermetically sealed mask that protects you from various hazardous environments. You have the innate skills to jury-rig a similar, enhanced effect but it requires thaumatic energy to operate."/>
+	<spell name="Thaumomechnical Rebreather"/>
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	</ability>
+<ability name="Baromatic Vortex Upgrade" icon="skills/baromatic_vortex64.png" skill="42" level="6">
+	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	<description text="Your sonic wave projector is upgraded to expell a powerfully overcharged blast which can cascade through the bodies of multiple enemies. This device deals more damage as your tinkering proficiency improves."/>
+	<spell name="Baromatic Vortex Blast"/>
+	<resistbuff blasting="1" />
+	</ability>
+<ability name="Aetheric Death Ray" icon="skills/aetheric_death_ray64.png" skill="42" level="7" >
+	<spell name="Aetheric Death Ray"/>
+	<secondarybuff id="23" amount="2" /> <!-- wandlore -->
+	<description text="Your final work is a weapon so deadly that it is sure to reveal the inherant irrationality of war thus ringing in an age of everlasting peace. But first: a demonstration is required... (Your wandcrafting enhances this weapon) "/>
+	</ability>
+
+
+<!-- Practical Geology by Null -->
+ 
+<skill name="Battle Geology" id="43" type="warrior" achievement="ACHIEVEMENT_GEOLOGY_MASTERY"  description="Like all geologists, you can create earthquakes, armor yourself in stone, and petrify enemies.">
+  <art icon="skills/geology64.png"/>
+</skill>
+<ability name="Battle Geology" icon="skills/geology64.png" startskill="1" skill="43" >
+  <description text="Like all geologists, you can create earthquakes, armor yourself in stone, and petrify enemies."/>
+</ability>
+
+<ability name="Plutonic Fist" icon="skills/stone_fist64.png" level="0" skill="43" >
+  <description text="You can at-will transform the hand / noodly appendage of a creature (including yourself, if thus inclined) into stone such as that cured deep in the Earth's earthy heart. Melee power is improved at the cost of combat skill and finesse. Hit smart like rock."/>
+  <secondarybuff id="7" amount="2"/> <!-- block -->
+  <!-- block -->
+  <spell name="Plutonic Fist"/>
+</ability>
+<ability name="Stone Secret" icon="skills/stone_toughness64.png" level="1" skill="43" >
+  <description text="Your true-knowledge of the secret that rocks whisper provides you with a stony coating which most - but not all - rocks possess naturally."/>
+  <resistbuff crushing="1" piercing="1" conflagratory="1"/>
+  <secondarybuff id="7" amount="2"/> <!-- block -->
+  <!-- block -->
+  <blockBuff percentage="50" name="Stone Secret"/>
+  <!-- Nerf: cut to half -->
+</ability>
+<ability name="Seismic Uppercut" icon="skills/seismic_uppercut64.png" level="2" skill="43" >
+  <description text="With a thought, you compel a seismic wave to erupt through the ground at an enemy. The following mini-quake will also daze your foes."/>
+  <secondarybuff id="7" amount="1"/> <!-- block -->
+  <!-- block -->
+  <spell name="Seismic Uppercut"/>
+</ability>
+<ability name="Basalt Skin" icon="skills/rock_armour64.png" level="3" skill="43" >
+  <description text="Such is your geological skill that your flesh is as stone with low silica content; you can better turn away the fangs / claws / blades / unsound business propositions of the terrible monsters you're sure to meet."/>
+  <spell name="Basalt Skin"/>
+  <resistbuff slashing="1"/>
+  <secondarybuff id="7" amount="3"/> <!-- block -->
+  <!-- block -->
+</ability>
+<ability name="Petrification" icon="skills/petrification64.png" level="4" skill="43" >
+  <description text="Encases one (1) target in a shell of stone, completely paralyzing and suffocating over time."/>
+  <spell name="Petrification"/>
+</ability>
+<ability name="Quake" icon="skills/quake64.png" level="5" skill="43" >
+  <description text="The roots of the earth itself shall tremble and quake to quell your enemies! Stuns and dazes all nearby. Those closest are more affected."/>
+  <spell name="Quake"/>
+</ability>
+
+<!-- Warlock by Essence -->
+
+<skill name="Warlockery" id="44" type="wizard" achievement="ACHIEVEMENT_WARLOCK_MASTERY"  description="Warlocks are wizards that really wish they were warriors. Or rogues. Or cheesemongers. Anything but wizards, really. Their 'spells' (as they are) serve to make them less wizard-like in a variety of ways.">
+  <loadout type="armour" subtype="Aluminum Wizarding Hat" always="1" /> <!-- check this --> 
+  <art icon="skills/warlockery64.png" /> 
+  </skill>
+
+<ability name="Warlockery" icon="skills/warlockery64.png" skill="44" startSkill="1">
+	<description text="Warlocks are wizards that really wish they were warriors. Or rogues. Or cheesemongers. Anything but wizards, really. Their 'spells' (as they are) serve to make them less wizard-like in a variety of ways." /> 
+	</ability>
+
+<ability name="Puissant Touch" icon="skills/puissant_touch64.png" skill="44"  level="0" polymorphedOnly="0" polymorphTag="Warlock Battle Form">
+	<description text="Why mess about with incantations, gesturing, and smelly powders? Just use your hand to inject burning-raw magical energy directly into your enemy's flesh."/> 
+	<secondaryBuff id="7" amount="2"/> <!-- block -->
+	<spell name="Puissant Touch"/> 
+	</ability>
+
+<ability name="Mage's Mana Maille" icon="skills/battle_form64.png" skill="44" level="1">
+	<description text="Do as the wizards do - gird your loins in a shield of mana to protect yourself from deadly foes. Each hit landed on your magical maille will drain mana." />
+	<spell name="Mage's Mana Maille" /> 
+   </ability>
+
+<ability name="Warlock's Challenge" icon="skills/warlocks_challenge64.png" skill="44"  level="2">
+	<description text="A few strong words and a magical gesture are sure to pull nearby monsters into melee range. Literally pull. As a Warlock, this is presumably what you actually want to have happen."/>
+	<spell name="Warlock's Challenge"/>
+	<secondaryBuff id="7" amount="3"/> <!-- block -->
+	</ability>
+
+<ability name="Essence of Battle" icon="skills/supercharged64.png" skill="44" level="3">
+	<description text="By charging raw thaumaturgical puissance directly into empowering your physical form, you are become a fearsome engine of battle." /> 
+	<spell name="Essence of Battle"/> 
+	</ability>
+
+<ability name="Chronomantic Twist" icon="skills/chronomantic_twist64.png" skill="44"  level="4">
+	<description text="Through raw force of magical energy, you can twist the fabric of time itself around your body for several moments, allowing you to move and act while others are still -- beware though, for your time-debt must be repaid in full immediately afterward."/> 
+	<spell name="Chronomantic Twist"/> 
+	</ability>
+
+<ability name="Puissant Veil" icon="skills/puissant_field64.png" skill="44"  level="5">
+	<description text="You've mastered the precarious skill required to maintain a semi-stable defensive aura of raw, burning mana. Its charge will fry anyone whose attack touches you with aetheric energies."/>
+	<!-- because bloody blockbuff doesn't work, let's do it this way -->
+	<playerHitEffectBuff percentage="100" name="Puissant Discharge"/> 
+	</ability>
+	<!-- til it works -->
+<ability name="Arcane Capacitor" icon="skills/arcane_capacitor64.png" skill="44" level="6">
+	<description text="Opens a gate to the 11th realm which charges up your weapon (or boot) with a fearsome melange of energies primed to unleash arcane destruction. Beware - act too soon, and the charge will be weak; act too late, and it cannot be contained." /> 
+	<spell name="Arcane Capacitor" /> 
+	</ability>
+<ability name="Manacalypse " icon="skills/manacalypse64.png" skill="44" level="7">
+	<description text="You can unleash all of your mana in a giant flood, dealing heinous damage to everything in your vicinity and wrenching yourself out of your Empowered form. Also, your Empowered form becomes significantly tougher and more Manaful." /> 
+	<spell name="Manacalypse" /> 
+	</ability>
+
+</skillDB>

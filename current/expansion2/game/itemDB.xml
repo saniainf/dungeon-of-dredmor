@@ -1,0 +1,397 @@
+﻿<?xml version="1.0"?>
+<itemDB>
+
+<!-- helms -->
+
+<item name="Leather Cap With A Cog On It" iconFile="items/helm_leather_cap_cog.png" special="1">
+	<price amount="580"/>
+	<armour level="4" type="head"/>
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<description text="It's got a cog on it. Just wait 'til that pack of steampunks that's always hanging around gets a look at THIS."/>
+	</item>
+
+<item name="Mechanothaumic Rebreather" iconFile="items/helm_rebreather.png" special="1">
+	<price amount="3000"/>
+	<armour level="5" type="head"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<secondarybuff id="17" amount="-1" />
+	<secondarybuff id="18" amount="-1" />
+	<resistbuff toxic="4" asphyxiative="5" putrefying="4" acidic="1" />
+	<description text="With filters built from the finest imperial metaclockwork, this mask confers nigh-immunity to cowardly gas-based attacks."/>
+	</item>
+
+<item name="Aluminum Wizarding Hat" iconFile="items/helm_aluminum_wizard_hat.png" special="1">
+	<price amount="580"/>
+	<armour level="4" type="head"/>
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<description text="Thaumenergon-friendly aluminum shaped in the noble form of the wizard's traditional headgear."/>
+	</item>
+
+<item name="Imperial Clockwork Helm" iconFile="items/helm_clockwork_helm.png">
+	<price amount="15000"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-2" /> <!-- nim -->
+	<resistbuff piercing="4" asphyxiative="1" toxic="1" blasting="1" conflagratory="1" />
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<description text="Helms of this manufacture are worn by the Clockwork Knights of Her Majesty's Third Zeppelinborne Assault Brigade. Long live the Queen! Long live The Empire! May the power of chaos wither in its shadow!" />
+	</item>
+
+<item name="The Hat of Bergstrom" iconFile="items/helm_bergstrom.png" artifact="1">
+	<price amount="1580"/>
+	<armour level="3" type="head"/>
+	<artifact quality="3"/>
+	<primarybuff id="5" amount="3" /> <!-- savvy -->
+	<secondarybuff id="23" amount="1" /> <!-- wandcrafting, for real -->
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<description text="As worn by the milliner-wizard Bergstrom, this fabulous hat is said to enhance ... abilities."/>
+	</item>
+
+<!-- Armor  -->
+
+<item name="Imperial Clockwork Plate" iconFile="items/armour_clockwork_platemail.png" >
+	<price amount="30000"/>
+	<armour level="11" type="chest"/>
+	<secondarybuff id="10" amount="12"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="3" amount="-10"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-3" /> <!-- nim -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<resistbuff piercing="6" conflagratory="2" blasting="4" />
+	<description text="Armour of this manufacture is worn by the Clockwork Knights of Her Majesty's Third Zeppelinborne Assault Brigade. The armor is designed to enhance the aggressive rocket jumping tactics they traditionally employ." />
+	</item>
+
+<item name="Clockwork Orb" iconFile="items/orb_clockwork.png" overrideClassName="Orb">
+	<price amount="5000"/>
+	<armour level="6" type="shield"/>
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+	<secondarybuff id="1" amount="10"/> <!-- mana -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	<secondarybuff id="16" amount="2" /> <!-- trap level -->
+	<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<description text="This sphere is filled with an intricate gear assembly which quietly ticks as you hold it."/>
+	</item>
+
+<!-- belts -->
+
+<item name="Clockwork Regulator Belt" iconFile="items/belt_clockwork_regulator_belt.png" >
+   <price amount="12000" />
+   <armour level="10" type="waist" />
+   <description text="An array of pressure gauges and steam-powered voltage regulators ensures that your armor suit will operate at peak efficiency." />
+	<secondarybuff id="2" amount="3"/> <!-- melee power -->
+	<secondarybuff id="9" amount="5"/> <!-- edr -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<resistbuff piercing="2" conflagratory="1" voltaic="1"/>   
+	</item>
+
+<item name="Copper Cable Belt" iconFile="items/belt_copper_cable.png">
+   <price amount="800" />
+   <armour level="4" type="waist" />
+   <description text="It's a belt made of copper. It helps keep your pants up and is a great conductor." />
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<resistbuff voltaic="2" />
+   </item>
+
+<!-- pants -->
+
+<item name="Clockwork Actuators" iconFile="items/pants_clockwork_actuators.png" >
+   <price amount="18000" />
+   <armour level="11" type="legs" />
+   <description text="Generally favoured by Cyberdemons and Clockwork Knights, these noisy mechanical leg-warmers enhance your potential to self-actualize." />
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-5"/> <!-- nim -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-20"/> <!-- sneak -->
+	<resistbuff piercing="2" blasting="2"/>   
+	</item>
+
+<!-- shields -->
+
+<item name="Clockwork Deflector" iconFile="items/shield_clockwork_deflector.png" artifact="1">
+	<price amount="8500"/>
+	<armour level="9" type="shield"/>
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-4"/> <!-- nim -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
+	<resistbuff piercing="3" voltaic="2"/>
+	<artifact quality="4" />
+	<playerHitEffectBuff percentage="30" name="Clockwork Repulsion" />
+	<description text="Clockwork Mechanisms power a reactive armor system that repels enemies who get too close."/>
+	</item>
+
+
+<!-- Melee Weapons  -->
+<item name="Clockwork Ravager" iconFile="items/axe_clockwork_ravager.png" level="10" artifact="1" type="1">
+	<price amount="30000"/>
+	<weapon slashing="30"/>
+	<artifact quality="6"/>
+	<targetHitEffectBuff percentage="15" name="Clockwork Threshing" />
+	<description text="The ultimate in automated carnage. Sometimes it likes to go on destructive autopilot."/>
+	</item>
+<item name="Clockwork Thunderclap" iconFile="items/mace_clockwork_thunderclap.png" level="10" artifact="1" type="2" special="1">
+	<price amount="30000"/>
+	<weapon crushing="24"/>
+	<artifact quality="6" />
+	<targetHitEffectBuff percentage="35" name="Thunderclap"/>
+	<description text="This terrible weapon strikes with such force that can create a sonic boom."/>
+	</item>
+<!-- changed to polearm -->
+<item name="Clockwork Drill Lance" iconFile="items/staff_clockwork_drill_lance.png" level="9" artifact="1" type="8">
+	<price amount="15000"/>
+	<weapon piercing="8" slashing="8"/>
+	<artifact quality="4" />
+	<targetHitEffectBuff percentage="50" name="Fleshbore" />
+	<description text="Clockwork mechanisms power the drill tip of this flesh-rending terror. This weapon has a high chance to invoke fleshbore."/>
+	</item>
+<item name="Clockwork Tesla Rod" iconFile="items/mace_tesla.png" level="9" artifact="1" type="2">
+	<price amount="15000"/>
+	<weapon crushing="12" voltaic="6"/>
+	<artifact quality="4" />
+	<targetHitEffectBuff percentage="20" name="Clockwork Tesla Rod effect" />
+	<description text="Electroalchemical mechanisms add voltaic potential to this potent pummeler. This weapon has a chance to stun an opponent."/>
+	</item>
+<item name="Clockwork Chainsword" iconFile="items/sword_clockwork_chainsword.png" level="9" artifact="1" type="0">
+  <price amount="15000" />
+  <weapon slashing="20" />
+  <secondarybuff id="4" amount="4" /> <!-- crit -->
+  <artifact quality="4" />
+  <description text="Clockwork mechanisms power the running teeth of this mechanical terror." />
+</item>
+<!-- Wands  -->
+<!-- Note: Sonic wand, Transmogrification, and Van de Graaff are special "technology wands" that get bonus damage from ranks in wandlore/tinkering -->
+<item name="Sonic Wand" iconFile="items/wand_sonic.png" >
+	<price amount="800" />
+	<wand spell="Mini Sonic Blast" mincharge="8" maxcharge="16" />
+	<description text="The tiny transmission dish emits a focused energy wave that causes enemies to drop their defenses."/>
+	</item>
+<item name="Pearlescent Wand" iconFile="items/wand_pearlescent.png" >
+	<price amount="3000" />
+	<wand spell="Pearl Missile" mincharge="6" maxcharge="12" />
+	<description text="This wand twinkles with righteous powers. You know the sort I mean - especially effective on Undead and Daemonic creatures."/>
+	</item>
+<item name="Wand of Transmogrification" iconFile="items/wand_transmogrification.png" >
+	<price amount="12000" />
+	<wand spell="Transmogrify" mincharge="3" maxcharge="5" />
+	<description text="Invented in an uncharacteristic fit of venality, this wand was invented by the Wizard Moraivic to corner the commodity futures market by transforming living creatures into useful and valuable natural resources."/>
+	</item>
+<!-- do if time. - dgb
+<item name="Wand of Van de Graaff" iconFile="items/wand_tesla_bolt.png" >
+	<price amount="2000" />
+	<wand spell="Static Sphere" mincharge="6" maxcharge="12" />
+	<description text="Not to be confused with the wand of Tesla... this wand was invented by Tesla's successor who sought a more agressive use of voltaic powers." />
+	</item> -->
+
+<!-- Components  -->
+<item name="Scrap Iron" iconFile="items/component_parts_iron.png" special="1">
+	<price amount="10"/>
+	<description text="This collection of broken iron widgets and doodads can be melted back down into iron ingots."/>
+	</item>
+<item name="Scrap Steel" iconFile="items/component_parts_steel.png" special="1">
+	<price amount="10"/>
+	<description text="This collection of broken steel gadgets and gizmos can be melted back down into steel ingots. "/>
+	</item>
+<item name="Copper Scrap Piping" iconFile="items/component_piping_copper.png" special="1">
+	<price amount="10"/>
+	<description text="Of no use but as scrap metal. "/>
+	</item>
+<item name="Aluminum Scrap Piping" iconFile="items/component_piping_aluminum.png" special="1">
+	<price amount="10"/>
+	<description text="More evidence of Dredmor's foul plans. Also useful as scrap metal. "/>
+	</item>
+
+<!-- Ranged  -->
+<item name="Clockwork Rail Launcher" iconFile="items/crossbow_clockwork_rail_launcher.png" level="10" type="4" artifact="1">
+	<price amount="30000"/>
+	<artifact quality="6" />
+	<weapon piercing="24"/>
+	<description text="Magnetic rails propel munitions with such force that it can knock back enemies."/>
+	<crossbowShotBuff percentage="100" name="High Impact" />
+	</item>
+<item name="Clockwork Sawblade" iconFile="items/thrown_clockwork_sawblade.png"  level="10" type="5">
+	<price amount="3000"/>
+	<weapon slashing="10" hit="clockwork sawblade hit" thrown="items/thrown_clockwork_sawblade.png"/>
+	<description text="When you're not using it to disassemble your enemies it makes a great pizza slicer."/>
+	</item>
+<item name="Clockwork Drill Bomb" iconFile="items/bolt_explosive_drill.png" level="9" type="6" maxstack="5" >
+	<price amount="999"/>
+	<weapon piercing="8" hit="Ticking Time Bomb" />
+	<description text="The latest in the Bolt Council's ongoing development of long-range armor piercing ordinance."/>
+	</item>
+
+<item name="Clockwork Grappling Bolt" iconFile="items/bolt_grapple.png" level="8" type="6" maxstack="10" >
+	<price amount="500"/>
+	<weapon piercing="8" hit="Clockwork Grapple Hit" />
+	<description text="Clockwork mechanisms engage a rigid chain that pulls your enemy closer. This particular weapon was used with great effect by the Clockwork Knights of the Empire's Third Heavy Infantry brigade against the Lithohedric drone caste during the 4th planar invasion."/>
+	</item>
+
+<item name="Steam Rocket Bolt" iconFile="items/bolt_steam_rocket.png" level="10" type="6" maxstack="7" >
+	<price amount="1250"/>
+	<weapon crushing="1" hit="Steam Rocket Hit" canTargetFloor="1" />
+	<description text="Delivers an explosive charge via steam propellant. For maximum effect, aim at the enemy's feet. Warning: do not use Steam Rocket Bolt as a bludgeoning device." />
+	</item>
+<!-- doesn't have official art 
+<item name="Clockwork Crit Rocket" iconFile="items/bolt_rocket_crit.png" level="10" type="6" maxstack="1" special="1">
+	<price amount="1250"/>
+	<weapon crushing="1" hit="Clockwork Crit Rocket Hit" canTargetFloor="1" />
+	<description text="This can be loaded in to your crossbow. An explosive charge is delivered via steam propellant. For maximum effectiveness, aim for the enemy's feet. This variant is widely sought by launcher-wielding soldiers throughout the empire." />
+	</item>-->
+<!-- doesn't have official art 
+<item name="Incendiary Grenade" iconFile="items/thrown_grenade_fire.png" level="8" type="5" maxstack="2">
+	<price amount="600"/>
+	<weapon crushing="4" thrown="items/thrown_grenade_fire.png" hit="WP Grenade Center" canTargetFloor="1"/>
+	<description text="A specially engineered combustible grenade, designed to burn your enemy's house down."/>
+	</item>	-->
+	
+
+<!-- components -->	
+	
+<item name="Alchemical Ooze" iconFile="items/potion_ooze.png" alchemical="1" special="1" >   
+	<description text="Also known as Base of Ooze. Determined to be the fundamental element of most squishy matter. Odour is unappealing."/>
+	<potion spell="Ooze Poisoning" />
+	<price amount="120" />
+	</item>
+
+	
+	
+<!-- Encyclopedia Magica -->
+<!--
+<item name="The Seventy Maxims of Seriously Effective Mercenaries" iconFile="items/placeholder.png" overrideClassName="Tome" artifact="1">
+	<price amount="5000" /> 
+	<armour level="3" type="shield" /> 
+	<artifact quality="3" /> 
+	<secondarybuff id="2" amount="3" />
+	<damagebuff crushing="3" /> 
+	<resistbuff crushing="3" /> 
+	<description text="Maxim 6: If violence wasn’t your last resort, you failed to resort to enough of it." /> 
+	</item>
+-->
+<item name="Little Red Cookbook" iconFile="items/tome_red_cookbook.png" overrideClassName="Tome" artifact="1">
+	<price amount="212" /> 
+	<armour level="1" type="shield" /> 
+	<artifact quality="1" /> 
+	<damagebuff slashing="1" /> 
+	<resistbuff slashing="1" /> 
+	<thrownBuff name="Butchery" percentage="10" /> 
+	<crossbowShotBuff name="Butchery" percentage="10" /> 
+	<targetHitEffectBuff percentage="10" name="Butchery" /> 
+	<description text="Each page is packed with meaty recipes. And it's... oozing." /> 
+	</item>
+
+
+<!-- Fax Traplestis -->
+
+
+<item name="Rusty Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="10" />
+	<trap trigger="once" casts="Rusty Caltrop Hit" level="1"/>
+	<description text="Augh, painful Tetanus!"/>
+	</item>
+
+<item name="Strong Iron Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="50" />
+	<trap trigger="once" casts="Iron Caltrop Hit" level="3"/>
+	<description text="This step is a doozy."/>
+	</item>
+
+<item name="Plastic Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="150" />
+	<trap trigger="once" casts="Plastic Caltrop Hit" level="5"/>
+	<description text="Also used as four-sided dice."/>
+	</item>
+
+<item name="Steel Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="250" />
+	<trap trigger="once" casts="Steel Caltrop Hit" level="7"/>
+	<description text="Looking at these makes you wish there was some way to levitate."/>
+	</item>
+
+<item name="Cobalt Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="350" />
+	<trap trigger="once" casts="Cobalt Caltrop Hit" level="9"/>
+	<description text="It took a singularly twisted mind to come up with this one. "/>
+	</item>
+
+<item name="Charged Aethereal Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="450" />
+	<trap trigger="once" casts="Charged Aethereal Caltrop Hit" level="11"/>
+	<description text="Why would anyone even make these! They're highly unsafe!"/>
+	</item>
+
+<item name="Quantum Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="550" />
+	<trap trigger="once" casts="Quantum Caltrop Hit" level="13"/>
+	<description text="Do you have to step on it to know if it's real?"/>
+	</item>
+
+<item name="Dragonsbreath Caltrops" iconFile="sprites/sfx/caltrops.png" >
+	<price amount="650" />
+	<trap trigger="once" casts="Dragonsbreath Caltrop Hit" level="15"/>
+	<description text="No one is going to just walk this one off."/>
+	</item>
+
+<item name="Rusty Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="50" />
+	<trap trigger="once" casts="Rusty Caltrop Eruption" level="2"/>
+	<description text="Augh, lots of painful Tetanus!"/>
+	</item>
+
+<item name="Strong Iron Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="150" />
+	<trap trigger="once" casts="Iron Caltrop Eruption" level="4"/>
+	<description text="This step, and the steps around it, is a doozy."/>
+	</item>
+
+<item name="Plastic Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="350" />
+	<trap trigger="once" casts="Plastic Caltrop Eruption" level="6"/>
+	<description text="Also used as four-sided dice."/>
+	</item>
+
+<item name="Steel Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="550" />
+	<trap trigger="once" casts="Steel Caltrop Eruption" level="8"/>
+	<description text="Looking at this makes you wish there was some way to levitate."/>
+	</item>
+
+<item name="Cobalt Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="750" />
+	<trap trigger="once" casts="Cobalt Caltrop Eruption" level="10"/>
+	<description text="It took a singularly twisted committee to come up with this one. "/>
+	</item>
+
+<item name="Charged Aethereal Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="950" />
+	<trap trigger="once" casts="Charged Aethereal Caltrop Eruption" level="12"/>
+	<description text="Why would anyone even make this! It's highly unsafe!"/>
+	</item>
+
+<item name="Quantum Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="1150" />
+	<trap trigger="once" casts="Quantum Caltrop Eruption" level="14"/>
+	<description text="Do you have to step on it to know if it's real?"/>
+	</item>
+
+<item name="Dragonsbreath Caltrop Eruptor" iconFile="dungeon/trap_gearplate.png" >
+	<price amount="1500" />
+	<trap trigger="once" casts="Dragonsbreath Caltrop Eruption" level="16"/>
+	<description text="No one is going to just walk this one off."/>
+	</item>
+
+	</itemDB>

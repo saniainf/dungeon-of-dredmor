@@ -1,0 +1,2122 @@
+<spellDB>
+	
+<!-- Clockwork Knights -->
+
+<spell name="Shield Energy Drain" type="self" icon="skills/damper32.png" >
+   <anim sprite="sprites/sfx/blastB/blastB" frames="3" sfx="blast" framerate="200" centerEffect="0"/>
+   <effect percent="100" type="spellpoints" amount="-2"/> 
+   </spell>
+<spell name="Thaumecha-kinetic Damper" type="self" downtime="40" icon="skills/damper32.png" >
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="4" sfx="psychic_shove" framerate="40" centerEffect="0"/>
+	<buff useTimer="0" removable="1" manaUpkeep="3" allowstacking="0" icon="skills/damper64.png" smallicon="skills/damper32.png">
+		<halo name="sprites/sfx/arcB/arcB" framerate="80" first="0" num="4" />
+		<resistbuff slashing="4" crushing="4" piercing="4" blasting="8"/>
+		<playerHitEffectBuff percentage="100" name="Shield Energy Drain" />
+		<description text="The Thaumecha-kinetic Damper will protect you from most physical projectiles and explosions, but each time an enemy hits you the shield will drain thaumic energy." />
+		</buff>
+	</spell>
+
+	<!-- CK heat debuffs -->
+	
+<spell name="Heat Exhaust" type="self" icon="skills/heat_venting32.png" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="5" sfx="vegetable_spell" framerate="200" centerEffect="0"/>
+   <effect type="spellpoints" amount="-2"/>
+   <effect type="trigger" spell="Harmless Steam Cloud"/>
+   </spell>
+<!-- sonic blast -->
+<spell name="Heat Exhaust " type="self" icon="skills/heat_venting64.png" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="5" sfx="tinkering" framerate="150" centerEffect="0"/>
+   <buff useTimer="2" time="1" removable="0" allowstacking="0" icon="skills/heat_venting64.png" smallicon="skills/heat_venting32.png">
+		<description text="The wave projector must vent hot steam before you can fire it again." />
+		</buff>
+   <effect type="trigger" amount="2" affectsCorpses="0" spell="Heat Exhaust"/>
+   </spell>
+<!-- mega sonic blast -->
+<spell name="Heat Exhaust  " type="self" icon="skills/heat_venting64.png" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="5" sfx="tinkering" framerate="150" centerEffect="0"/>
+   <buff useTimer="1" time="7" removable="0" allowstacking="0" icon="skills/heat_venting64.png" smallicon="skills/heat_venting32.png">
+		<description text="The overcharged blast has overloaded your Baromatic Pulse Device causing you to vent steam." />
+		</buff>
+   <effect type="trigger" amount="2" affectsCorpses="0" spell="Heat Exhaust"/>
+   <effect type="trigger" amount="3" affectsCorpses="0" spell="Heat Exhaust"/>
+   <effect type="trigger" amount="4" affectsCorpses="0" spell="Heat Exhaust"/>
+   <effect type="trigger" amount="5" affectsCorpses="0" spell="Heat Exhaust"/>
+   <effect type="trigger" amount="6" affectsCorpses="0" spell="Heat Exhaust"/>
+   <effect type="trigger" amount="7" affectsCorpses="0" spell="Heat Exhaust"/>
+   </spell>
+
+
+<!-- This tweak introduces the negative effects of the sonic blast as a "dazed" status effect, so that it's function is more obvious. -->
+  	<!-- Sonic Blast set -->
+	
+<spell name="Sonic Boom" type="target">
+   <effect type="damage" blastingF=".34" primaryScale="5" affectsCaster="1" /> <!-- savvy -->
+   <anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="80" centerEffect="1" sfx="blast"/>
+   </spell>
+<spell name="Sonic Boom2" type="target">
+   <effect type="damage" blastingF="5" secondaryScale="20" affectsCaster="1" /> <!-- tinkering -->
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="80" centerEffect="1" sfx="teleport_short"/>
+   </spell>
+<spell name="Sonic Boom3" type="target">
+   <effect type="damage" blastingF="5" secondaryScale="20" affectsCaster="1" /> <!-- tinkering -->
+   <anim sprite="sprites/sfx/boulder_hit/boulder_hit" frames="6" framerate="80" centerEffect="1" sfx="earth"/>
+   <effect type="knock" resistable="0"/>
+   </spell>
+
+<spell name="Sonic Blast" downtime="30" type="missile" icon="skills/sonic_cannon32.png" wand="0">
+   <effect type="trigger" spell="Dazed"/>
+   <effect type="damage" blasting="10" affectsCaster="1" />
+   <anim sprite="sprites/sfx/celestialring/celestialring" frames="6" framerate="20" sfx="hex_missile" centerEffect="1"/>
+   <impact sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="blast" framerate="150"  centerEffect="1"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Boom" />
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Boom2"/>
+   <effect type="knock" amount="2"/>
+   <effect type="trigger" spell="Heat Exhaust "/>
+	<description text="The sonic blast shocks and disorients its victims, reducing their ability to defend themselves against all attacks." />
+   </spell>
+	
+<!--Mega Sonic Blast set -->
+
+<spell name="Mega Sonic Boom" type="targetfloor">
+   <effect type="trigger" spell="Mega Sonic Boom2" />
+   <effect type="damage" blasting="4" blastingF=".34" primaryScale="5" affectsCaster="1" />
+   <effect type="damage" blastingF="6" secondaryScale="20" affectsCaster="0"/>
+   <anim sprite="sprites/sfx/impactB/impactB" frames="5" sfx="explosion" framerate="150" centerEffect="1"/>
+   </spell>
+<spell name="Mega Sonic Boom2" type="template" templateID="11">
+ <effect type="trigger" spell="Dazed"/>
+   <effect type="damage" blasting="4" blastingF=".34" primaryScale="5" affectsCaster="1" />
+   <effect type="damage" blastingF="6" secondaryScale="20" affectsCaster="0"/>
+   <anim sprite="sprites/sfx/miniquake/miniquake" frames="5" sfx="blast" framerate="40" centerEffect="1"/>
+   <effect type="knock" amount="2"/>
+   </spell>
+<spell name="Mega Sonic Beam" type="beammissile" icon="skills/mystic_missile32.png" wand="0">
+ <effect type="trigger" spell="Dazed"/>
+   <effect type="damage" blasting="20" affectsCaster="1" />
+   <anim sprite="sprites/sfx/impactB/impactB" frames="4" framerate="20" sfx="hex_missile" centerEffect="1"/>
+   <impact sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="earth" framerate="180"  centerEffect="1"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Boom" />
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Boom2"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Boom3"/>
+   </spell>
+<spell name="Baromatic Vortex Blast" downtime="90" type="targetfloor" icon="skills/baromatic_vortex32.png" wand="0">
+   <effect type="trigger" spell="Mega Sonic Beam" />
+   <effect type="trigger" spell="Mega Sonic Boom" />
+   <effect type="trigger" spell="Heat Exhaust  "/>
+   <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="disintegrate" framerate="150"  centerEffect="1"/>
+   </spell>
+
+<!-- Acidical Projector set -->
+
+<spell name="Projectorburn" type="target" >
+   <effect type="damage" acidic="2" acidicF="2" secondaryScale="21" affectsCaster="1" />
+</spell>
+
+<spell name="Projector Acid Burn" type="target" icon="skills/acidical_projector32.png" wand="1">
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="8" stacksize="1" allowstacking="0" self="0" icon="skills/acidical_projector64.png" smallicon="skills/acidical_projector32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="10" amount="-10"/> <!-- armor -->
+		<resistbuff crushing="-5" slashing="-5"/>
+	<description text="This powerful acid burns flesh and armour alike." />
+	</buff>
+	<effect type="dot" amount="8" spell="Projectorburn" resistable="0"/>
+</spell>
+
+<spell name="Projector Acid Mist" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   minePermanent="1"       
+   mineUseGlints="1" 
+   mineGlintDensity="8"
+   mineSpritePNGSeries="sprites/sfx/acid_puff/acid_puff" 
+   mineSpriteDrawOrder="0"
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="6" 
+   mineSpritePNGRate="100" >
+   <effect type="damage" acidic="1" acidicF="1" secondaryScale="21" affectsCaster="1"/>
+   <effect type="damage" acidic="1" acidicF="1" secondaryScale="21" affectsCaster="1"/>
+   <ai hint="mine" />
+   <anim sprite="sprites/sfx/impact_acid/impact_acid" frames="5" framerate="70" centerEffect="0" sfx="toxic" />
+   </spell>
+<spell name="Acidical Projector" downtime="60" type="cone" radius="2" icon="skills/acidical_projector32.png">
+	<effect type="damage" acidic="4" acidicF="2" secondaryScale="21"/>
+	<impact sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="70" centerEffect="0" sfx="toxic" />
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="70" centerEffect="0" sfx="toxic" />
+	<effect type="trigger" spell="Projector Acid Mist"/>
+	<effect type="trigger" spell="Projector Acid Burn"/>
+	<description text="You design a high-tech spray bottle that fires corrosive acid at your enemies. The acid deals more damage as your alchemy skill improves."/>
+	</spell>
+
+<!-- Clockwork Reflexes set -->
+
+<spell name="Wired Reflexed" type="template" anchored="0" templateID="09">
+	<anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" framerate="60" centerEffect="0" sfx="chain" />
+   </spell>
+<spell name="Clockwork Reflexes" type="self">
+   <effect type="trigger" spell="Wired Reflexed"/>
+   <anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" framerate="60" centerEffect="0" sfx="chain" />
+   </spell>
+
+	<!-- CK Augmented Limbs effects -->
+
+<spell name="Threshed" type="template" anchored="1" templateID="30">
+	<anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" framerate="60" centerEffect="0" sfx="chain" />
+   </spell> 
+<spell name="Clockwork Threshing" type="self">
+   <effect type="trigger" spell="Threshed"/>
+   <anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" framerate="60" centerEffect="0" sfx="chain" />
+   </spell>
+
+	<!-- CK Clockwork Deflector -->
+<spell name="Clockwork Repulsion" type="target">
+	<effect type="damage" crushing="5"/>
+	<effect type="knock" amount="2"/>
+	<anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="70" centerEffect="1" sfx="metal_drop"/>
+	</spell>
+
+	<!-- CK Tesla Rod -->
+
+<spell name="Clockwork Tesla Rod effect" type="target" >
+	<effect type="trigger" spell="Stunned" />
+	<anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="100" sfx="elec" />
+	</spell>
+ 
+	<!-- CK harpoon bolt -->
+<spell name="Clockwork Grapple Hit" type="beam" >
+	<effect type="paralyze" amount="1" turns="2"/>
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="4" framerate="100" sfx="chain" centerEffect="0"/>
+	<effect type="suction"/>
+	</spell>
+
+<!-- CK clockwork rocket -->
+ <spell name="Crit Rocket effect" type="self" >
+   <effect type="trigger" amount="1" spell="Crit Rocket effect2"/>
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="100" sfx="elec" />
+   </spell>
+<spell name="Crit Rocket effect2" type="self" >
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="100" sfx="elec" />
+   </spell>
+<spell name="Rocket Explosion" type="template" templateID="99" >
+   <effect type="damage" blasting="15" conflagratory="5" affectsCaster="1" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="40" centerEffect="1" sfx="blast"/>
+   </spell>
+<spell name="Super Rocket Explosion" type="template" templateID="99" >
+   <effect type="damage" blasting="30" conflagratory="10" affectsCaster="0" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="blast"/>
+   </spell>   
+ <spell name="Crit Rocket" type="targetfloor" icon="skills/spells/fulminaric_bolt32.png" wand="1">
+   <effect type="damage" blasting="30" conflagratory="10" affectsCaster="1" />
+   <effect type="trigger" amount="0" spell="Super Rocket Explosion"/>
+   <effect type="trigger" amount="0" spell="Crit Rocket effect"/>
+   <anim sprite="sprites/sfx/fireball/fireball" frames="7" sfx="explosion" framerate="100"  centerEffect="1"/>
+   </spell>
+ <spell name="Steam Rocket Hit" type="targetfloor" icon="skills/spells/fulminaric_bolt32.png" >
+   <effect type="trigger" spell="Smoke Ray" />
+   <effect type="trigger" amount="0" spell="Rocket Explosion"/>
+   <effect type="trigger" amount="0" spell="Crit Rocket" percent="10"/>
+   <anim sprite="sprites/sfx/explosion_med/explosion_med" frames="8" framerate="80" centerEffect="1" sfx="explosion"/>
+   </spell>
+<!-- f***in' crit rockets are op --><!-- commentary on tf2? -dgb -->
+ <spell name="Steam Crit Rocket Hit" type="targetfloor" icon="skills/spells/fulminaric_bolt32.png" >
+   <effect type="trigger" spell="Smoke Ray" />
+   <effect type="trigger" amount="0" spell="Rocket Explosion"/>
+   <effect type="trigger" amount="0" spell="Crit Rocket"/>
+   <anim sprite="sprites/sfx/explosion_med/explosion_med" frames="8" framerate="80" centerEffect="1" sfx="explosion"/>
+   </spell>   	  	
+	
+	<!-- CK Railgun effects This is the new rail launcher -->
+<spell name="High Impact" type="target" >
+	<anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="80" centerEffect="1" sfx="blast"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Sonic Bang" />
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Railgun Knockback" percent="15"/>
+	</spell>
+<spell name="Railgun Knockback" type="target">
+  <effect type="trigger" spell="Stunned" />
+  <anim sprite="sprites/sfx/boulder_hit/boulder_hit" frames="6" framerate="80" centerEffect="1" sfx="teleport_short"/>
+  <effect type="knock" amount="1"/>
+  </spell>
+<!--
+<spell name="Railgun Beam" type="beam" >
+  <anim sprite="sprites/sfx/impact_blast/impact_blast" frames="4" framerate="40" sfx="magic" />
+  <effect type="trigger" affectsCorpses="0" amount="1" spell="High Impact"/>
+  <effect type="paralyze"  amount="5" turns="1"/>
+  </spell>
+-->
+<!-- CK Sawblade -->
+
+<spell name="clockwork sawblade hit" type="target">
+   <anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="70" centerEffect="1" sfx="blades"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Mechanical Evisceration"/>
+   <effect type="damage" slashing="12"/>
+   </spell>
+<spell name="Mechanical Evisceration" type="target">
+      <buff
+      useTimer="1"
+      time="6"
+      self="0"
+      stacksize="1"
+      allowstacking="0"
+      icon="skills/mechanical_evisceration64.png"
+      smallicon="skills/mechanical_evisceration32.png"
+      bad="1">
+      	<halo name="sprites/sfx/blood_loop/blood_loop" num="6" frameRate="100" />
+		<primarybuff id="0" amount="-2"/> <!-- Burliness -->
+		<primarybuff id="2" amount="-3"/> <!-- Nimbleness -->
+		<secondarybuff id="7" amount="-10"/> <!-- block -->
+		<secondarybuff id="8" amount="-100"/> <!-- counter -->
+		<secondarybuff id="11" amount="-10"/> <!-- resist -->
+      </buff>
+   <effect type="damage" bleed="1" slashing="6" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="fleshbore" framerate="50" centerEffect="1"/>
+   <effect type="dot" amount="6" spell="Fleshrun" />
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="clockwork sawblade hit2"/>
+   </spell>
+<spell name="clockwork sawblade hit2" type="target" attack="1">
+   <effect type="damage" bleed="1" slashing="6" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="slashing" framerate="50" centerEffect="1"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="clockwork sawblade hit3"/>
+   </spell>
+<spell name="clockwork sawblade hit3" type="target" attack="1">
+   <effect type="damage" bleed="1" slashing="6" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" sfx="piercing" framerate="100" centerEffect="1"/>
+   </spell>
+
+<!-- Incendiary Grenade --><!-- no corresponding item(s) ... yet? - dgb -->
+<spell name="WP hit" type="target" >
+   <effect type="damage" burn="1" conflagratory="6" affectsCaster="1" />
+   </spell>
+<spell name="WP Grenade Center" type="targetfloor">
+   <anim sprite="sprites/sfx/explosion_med/explosion_med" frames="8" sync="1" sfx="explosion" framerate="80" centerEffect="1"/>
+   <effect type="trigger" amount="0" spell="WP Grenade Blast"/>
+   <effect type="damage" blasting="4" blastingF="1" conflagratory="16" conflagratoryF="2" secondaryScale="2" affectsCaster="1"/> <!-- melee power -->
+   </spell>
+<spell name="WP Grenade Blast" 
+		type="targetfloor" 
+		mine="1" 
+		mineradius="2"
+		minePermanent="0" 
+		mineTimer="8" 
+		mineUseGlints="0" 
+		mineGlintDensity="1"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/burnA/burnA"
+		mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="120" >
+	<effect type="trigger" spell="Engulfing Flames" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="fireball" framerate="100" centerEffect="1"/>
+   </spell>
+ <spell name="Engulfing Flames" type="target" icon="skills/wreathofexplosion32.png" wand="1">
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="conflagratory" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="6" stacksize="6" allowstacking="1" self="0" icon="skills/wreathofexplosion64.png" smallicon="skills/wreathofexplosion32.png" bad="1">
+		<halo name="sprites/sfx/burnB/burnB" first="0" num="4" frameRate="100"/>
+   <description text="You are engulfed in painful, burning flames." />
+   </buff>
+   			<effect type="trigger" amount="1" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+			<effect type="trigger" amount="2" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+			<effect type="trigger" amount="3" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+			<effect type="trigger" amount="4" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+			<effect type="trigger" amount="5" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+			<effect type="trigger" amount="6" spell="WP hit" requirebuffontrigger="1" requirebuffontriggername="Engulfing Flames" affectsCorpses="0"/>
+</spell>
+	
+<!-- CK Sonic Wand -->
+
+<spell name="Mini Sonic Blast" type="missile" icon="skills/sonic_cannon32.png" wand="1">
+	<effect type="trigger" spell="Dazed" />
+	<anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="16" sfx="magic" />
+	<impact sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="explosion" framerate="150"  centerEffect="0"/>
+	<effect type="trigger" amount="1" spell="Sonic Bang" />
+	</spell>
+   
+<spell name="Sonic Bang" type="target">
+   <effect type="damage" blasting="2" blastingF=".2" affectscaster="1" />
+   <effect type="damage" blasting="2" blastingF="2" secondaryScale="20" affectscaster="1" /> <!-- tinkering -->
+   <effect type="damage" blasting="2" blastingF="2" secondaryScale="23" affectscaster="1" /> <!-- wandlore -->
+   <anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="70" centerEffect="1" sfx="teleport_short"/>
+   </spell>	
+	
+<!-- Pearlescent wand -->   
+<spell name="Pearl Blast" type="target" icon="skills/placeholder32.png">
+	<effect type="damage" righteous="5" righteousF=".5" conflagratory="5" conflagratoryF=".5" taxa="Demon"/>
+	<effect type="damage" righteous="5" righteousF=".5" conflagratory="5" conflagratoryF=".5" taxa="Undead"/>
+	<anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="magic_damage" framerate="80"/>
+   <effect type="trigger" spell="Fire 1" />
+   </spell>  
+<spell name="Pearl Missile" type="missile" wand="1">
+   <effect type="damage" righteous="10" righteousF="0.20"/>
+   <effect type="trigger" amount="1" spell="Pearl Blast" affectsCorpses="0" taxa="Demon"/>
+   <effect type="trigger" amount="1" spell="Pearl Blast" affectsCorpses="0" taxa="Undead"/>
+   <anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90"  centerEffect="0" sfx="righteous" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="righteous" centerEffect="0"/>
+   <description text="A special version of the aetherial missile that deals divine damage."/>
+   </spell>
+
+<!-- Clockwork Thunderclap -->
+<spell name="Thunderclap Boom" type="target" attack="1">
+   <effect type="damage" blasting="5"/>
+   <effect type="knock" amount="2" self="0"/>
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="teleport_short"/>
+   </spell>
+<spell name="Thunderclap" type="target" icon="skills/impossible_shot32.png">
+  <effect type="trigger" spell="Dazed" />
+  <effect type="trigger" amount="1" spell="Thunderclap Boom" />
+  <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+  </spell>
+
+	<!-- CK rocket jump set -->
+	
+<spell name="Rocket Jump Blast" type="self">
+   <effect type="damage" blasting="15" blastingF="1" conflagratory="5" secondaryScale="10" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+   <effect type="trigger" spell="Rocket Blast2" />
+   <effect type="trigger" spell="Rocket Blast3" />
+   </spell>
+<spell name="Rocket Blast2" type="template" templateID="10" >
+   <effect type="damage" blasting="6" blastingF="4" conflagratory="3" conflagratoryF="2" secondaryScale="20" affectsCaster="0" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="blast"/>
+   </spell>
+<spell name="Rocket Blast3" type="template" templateID="11" >
+   <effect type="damage" blasting="6" blastingF="4" conflagratory="3" conflagratoryF="2" secondaryScale="20" affectsCaster="0" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="blast"/>
+   </spell>
+<spell name="Jump Impact" type="template" templateID="10" >
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="blast" centerEffect="0"/>
+   <effect type="paralyze" amount="1" turns="1" resistable="0" self="0" />
+   </spell>
+<spell name="Rocket Jump" type="rook" downtime="4" icon="skills/rocket_jump32.png">
+	<description text="You learn to propel yourself by detonating an explosive below your feet just as you jump through the air. This attack is bold and may suprise your enemies-- especially if you jump on their heads. Your Tinkering skill enhances the bomb blast. Only works in cardinal directions."/>
+	<effect type="trigger" spell="Rocket Jump Blast"/>
+<!-- <effect type="trigger" spell="Delayed Smoke Ray" /> not working! buggery - dgb I could try to get it to work if you show me the spell - ruigi -->
+<!-- Delayed Smoke Ray can be found in the core game spellDB, if you want to have a look - dgb -->
+	<effect type="teleport" skipanimation="1"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" affectsCaster="0" spell="Jump Impact"/>
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="explosion" centerEffect="0"/>
+	<effect type="damage" crushingF="2" secondaryScale="10" resistable="0"/>
+	<effect type="suction" />
+	</spell>	
+	
+	<!-- CK rocket fist set -->
+	
+<!-- this tweak separates the "stunned" effect to a separate spell so the effects are more obvious to the player. the smoke trail is triggered by the missile rather than the targetfloor -->
+
+<spell name="Power Fist Hit" type="target" attack="1">
+	<effect type="damage" crushing="5"/>
+	<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="blast"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Power Fist Hit2" />
+	</spell>
+<spell name="Power Fist Hit2" type="target" attack="1">
+	<effect type="damage" crushing="5"/>
+	<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="metal_drop"/>
+	</spell>
+   
+<spell name="Rocket-powered Punch " type="missile" icon="skills/rocket_fist32.png" wand="0">
+	<effect type="trigger" spell="Stunned" />
+	<effect type="damage" crushing="5" />
+   <anim sprite="sprites/sfx/flame_buff_loop/flame_buff_loop" frames="6" framerate="50" sfx="metal_drop"/>
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Power Fist Hit" />
+   <effect type="knock" amount="2"/>
+   <effect type="trigger" spell="Smoke Ray" />
+   </spell>
+   
+<spell name="Rocket-powered Punch" downtime="24" type="targetfloor" icon="skills/rocket_fist32.png" wand="0">
+  <effect type="trigger" spell="Rocket-powered Punch " />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="fireball" framerate="200"  centerEffect="1"/>
+  <description text="You can periodically launch a fist-shaped rocket from a cannon mounted on your arm to give wayward brigands and blaggards what-for." />
+  <ai hint="target"/>
+  </spell>
+
+
+	<!-- Eruption Slam AKA Charge of the Steam Brigade set -->
+
+<!-- slight reduction in the amount of damage that the player deals to himself when he casts charge of the steam brigade. for this spell to be useful, the player still needs blast and fire resists -->
+
+<!-- Eruption Slam fix -->
+
+<spell name="Great Blinding Flash" type="target" icon="skills/spells/blinding_light32.png" wand="1">
+	<effect type="trigger" spell="Great Blinding Area Hit"/>
+	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" sfx="magic_damage" framerate="60" centerEffect="0" />
+	<description text="Blinds those in a large ring around you with a burning flash of light."/>
+   </spell>
+<spell name="Great Blinding Area Hit" type="template" templateID="99" >
+	<effect type="damage" righteous="20" aethereal="10" affectsCaster="0" />
+	<effect type="paralyze"  amount="3" turns="5" affectsCaster="0" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" />
+   </spell>
+
+   <spell name="Big Bam" type="template" templateID="98" >
+   <effect type="damage" conflagratory="12" conflagratoryF="2" blasting="12" blastingF="2" secondaryScale="2" affectsCaster="0"/>
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>
+   
+   <spell name="Big Bam2" type="template" templateID="21" >
+   <effect type="damage" conflagratory="6" conflagratoryF="1" blasting="6" blastingF="1" secondaryScale="2" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>
+  
+  <spell name="Big Bam3" type="template" templateID="22" >
+   <effect type="damage" conflagratory="3" conflagratoryF=".5" blasting="3" blastingF=".5" secondaryScale="2" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>
+  
+   <spell name="Big Bam4" type="template" templateID="23" >
+   <effect type="damage" blasting="3" blastingF=".25" conflagratory="3" conflagratoryF=".25" secondaryScale="2" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>
+
+   <spell name="Big Hit" type="template" templateID="99" attack="1">
+   <effect type="damage" crushingF="6" secondaryScale="10" affectsCaster="0"/>
+   <effect type="paralyze" turns="1" self="0"/>
+   <anim sprite="sprites/sfx/rockburst/rockburst" frames="9" sfx="earth" framerate="40" centerEffect="1"/>
+   </spell>
+
+<spell name="Blaze of Glory" type="self" icon="skills/steam_charge32.png" >
+	<buff useTimer="1" time="20" removable="0" allowstacking="0" icon="skills/steam_charge64.png" smallicon="skills/steam_charge32.png">
+		<halo name="sprites/sfx/hero_glow/hero_glow" framerate="300" first="0" num="3" />
+		<resistbuff conflagratory="8" blasting="8"/>
+		<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	    <secondarybuff id="2" amount="8"/> <!-- melee power -->
+		<description text="You can not burn, for your heart is already ablaze with passion. If you die this day you will die in glory, but NO! you will not die this day! It is your enemies who will taste death and defeat! You are a CLOCKWORK KNIGHT! Long live the Queen! Glory to THE EMPIRE! " />
+		<targetHitEffectBuff percentage="20" name="Clockwork Threshing" />
+		<playerHitEffectBuff percentage="25" name="Clockwork Reflexes" />
+		</buff>
+	<effect type="trigger" spell="Imperial Anthem" amount="1" />
+	</spell>
+<spell name="Imperial Anthem" type="self" icon="skills/steam_charge32.png" >
+	<anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="radiant" framerate="40" centerEffect="0"/>
+	</spell>
+
+<spell name="Mini Mass Destruction self" type="self" icon="skills/steam_charge32.png">
+	<effect type="trigger" spell="Mini Mass Destruction" />
+	</spell>
+<spell name="Eruption Boom" type="target" icon="skills/spells/fireball32.png" wand="1" >
+	<effect type="damage" conflagratory="8" blasting="20" blastingF="1" secondaryScale="10" affectsCaster="1" />
+   <anim sprite="sprites/sfx/fireball/fireball" frames="7" sync="1" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
+	<effect type="trigger" spell="Flamefield 2" amount="0" />
+	<effect type="trigger" spell="Big Bam" />
+	<effect type="trigger" spell="Big Bam2" />
+	<effect type="trigger" spell="Big Bam3" />
+	<effect type="trigger" spell="Big Bam4" />
+   </spell>
+<spell name="Mini Mass Destruction" type="target" >
+   <effect type="trigger" spell="Big Hit" />
+   <effect type="trigger" spell="Great Blinding Flash"/>
+   <effect type="trigger" spell="Eruption Boom" />
+   </spell>
+<spell name="Rocket Boot effect" type="template" templateID="629" anchored="1" icon="skills/spells/dragons_breath32.png" wand="1">
+	<effect burn="1" type="damage" conflagratory="4" blasting="2" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="7" firstframe="2" framerate="35" sfx="flame" centerEffect="1"/>
+   </spell>
+<spell name="Rocket Boot effect 1" type="template" templateID="628" anchored="1" >
+	<effect burn="1" type="damage" conflagratory="2" blasting="2" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="8" firstframe="1" framerate="34" sfx="flame_weak" centerEffect="1"/>
+   </spell>
+<spell name="Rocket Boot effect 2" type="template" templateID="627" anchored="1" >
+	<effect burn="1" type="damage" conflagratory="1" blasting="1"  />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" firstframe="0" framerate="34" sfx="flame_weak" centerEffect="1"/>
+   </spell>
+<spell name="Eruption Slam" type="rook" downtime="160" icon="skills/steam_charge32.png">
+<description text="By steam-powered rocket boot you propel yourself straight into the heart of the enemy to strike with the force of the Empire's glory! FOR QUEEN AND COUNTRY!"/>  
+<effect type="trigger" spell="Rocket Boot effect" />
+<effect type="trigger" spell="Rocket Boot effect 1" />
+<effect type="trigger" spell="Rocket Boot effect 2" />
+<effect type="teleport" skipanimation="1"/>
+<effect type="trigger" spell="Mini Mass Destruction self"/>
+<effect type="suction"/>
+<effect type="trigger" spell="Blaze of Glory" />
+<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="rune_set" centerEffect="0"/>
+   </spell>
+
+
+	<!-- CK Rebreather effect -->
+	
+<spell name="Thaumomechnical Rebreather" type="self" downtime="40" icon="skills/rebreather_mask32.png" >
+	<description text="You wear a hermetically sealed mask that protects you from various hazardous environments; requires thaumatic energy to operate."/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="5" sfx="tinkering" framerate="70" centerEffect="0"/>
+	<buff useTimer="0" removable="1" manaUpkeep="3" allowstacking="0" icon="skills/rebreather_mask64.png" smallicon="skills/rebreather_mask32.png">
+	<resistbuff toxic="2" asphyxiative="2" acidic="2" putrefying="2"/>
+	</buff>
+	</spell>
+
+<!-- Wand of Transmogrification -->
+<spell name="Transmogrify" type="target" icon="skills/rogue/skill_antiques_dealer1_32.png" wand="1">
+	<effect type="damage" transmutative="2" transmutativeF=".2" affectsCaster="1" />
+	<effect type="damage" transmutative="2" transmutativeF="4" secondaryScale="20" affectsCaster="1" /> <!-- Tinkering -->
+	<effect type="damage" transmutative="2" transmutativeF="4" secondaryScale="23" affectsCaster="1" /> <!-- Wandlore -->
+	<effect type="spawnitemfromlist">
+		<option name="Malachite"/>
+		<option name="Cassiterite"/>
+		<option name="Zincblende"/>
+		<option name="Bauxite"/>
+		<option name="Hematite"/>
+		<option name="Argentite"/>
+		<option name="Native Gold"/>
+		<option name="Native Platinum"/>
+		<option name="Bituminous Coal"/>
+	</effect>
+	<description text="You transform enemies into natural resources!" />
+	<anim sprite="sprites/sfx/magic_wall/magic_wall" frames="3" framerate="90"  centerEffect="0" sfx="earth" />
+	</spell>
+
+<!-- wand of van de graff --><!-- Item art not drawn .. yet? - dgb -->
+<!-- slight nerf to the stun effect of static sphere so that the monster that uses it in Fax's mondb.xml will not ruin the player quite as easily. -->
+<spell name="Static volt" type="target">
+   <effect type="damage" voltaic="2" voltaicF=".2" blasting="2" blastingF=".2" affectsCaster="1" />
+   <effect type="damage" voltaicF="4" blastingF="4" secondaryScale="23" affectsCaster="1" /> <!--wandlore-->
+   <anim sprite="sprites/sfx/voltaic_loop/voltaic_loop" frames="5" framerate="80" centerEffect="1" sfx="elec"/>
+   </spell>
+<spell name="Static Sphere" downtime="13" type="missile" icon="skills/mystic_missile32.png" wand="0">
+   <effect type="damage" voltaic="10" voltaicF=".2" affectsCaster="1" />
+   <anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="10" sfx="magic" />
+   <impact sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" sfx="teleport_short" framerate="180"  centerEffect="1"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Static volt" />
+   <effect type="paralyze" amount="4" turns="2"/>
+   </spell>	
+
+<!-- CK salvage spells -->
+
+<spell name="Salvage Ooze" type="target" icon="skills/chemic_pilferer32.png" wand="0">
+	<effect type="spawnitemfromlist">
+		<option name="Alchemical Ooze"/>
+		</effect>
+	<description text="You salvage ooze from fallen blobs!" />
+	<anim sprite="sprites/sfx/impact_putrifying/impact_putrifying" frames="6" framerate="90"  centerEffect="0" sfx="organic" />
+	</spell>
+
+<spell name="Tech Scavenge" type="target" icon="skills/tech_scavenger32.png" wand="0">
+	<effect type="trigger" spell="Salvage Scrap" percent="100" />
+	<effect type="trigger" spell="Tech Plunder" percent="50" />
+	<effect type="trigger" spell="Tech Plunder 2" percent="10" />
+	</spell>
+<spell name="Salvage Scrap" type="target" icon="skills/smith_ingot32.png" wand="0">
+	<effect type="damage" voltaic="5"/>
+	<effect type="spawnitemfromlist">
+		<option name="Scrap Iron"/>
+		<option name="Scrap Steel"/>
+		<option name="Copper Scrap Piping"/>
+		<option name="Aluminum Scrap Piping"/>
+	</effect>
+	<description text="You salvage scrap material from fallen constructs!" />
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="90"  centerEffect="0" sfx="tinkering" />
+	</spell>
+<spell name="Tech Plunder" type="target" icon="skills/rogue/skill_antiques_dealer1_32.png" wand="0">
+	<effect type="damage" voltaic="5"/>
+	<effect type="spawnitemfromlist">
+		<option name="Voltaic Cell"/>
+		<option name="Spring-loaded Power Core"/>
+		<option name="Copper Wire"/>
+		<option name="Brass Mechanisms"/>
+		</effect>
+	<description text="You salvage crafting materials from fallen constructs!" />
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="90"  centerEffect="0" sfx="tinkering" />
+	</spell>
+<spell name="Tech Plunder 2" type="target" icon="skills/rogue/skill_antiques_dealer1_32.png" wand="0">
+	<effect type="damage" voltaic="5"/>
+	<effect type="spawnitemfromlist">
+		<option name="Diamond"/>
+		<option name="Aetheric Power Cylinder"/>
+		<option name="Self-sealing Stem Bolt"/>
+		<option name="Slotted Bronze Discs"/>
+		</effect>
+	<description text="You salvage premium crafting materials from fallen constructs!" />
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="90"  centerEffect="0" sfx="tinkering" />
+	</spell>
+
+<!-- Drill Bombs -->
+<!-- this tweak for drill bombs corrects a horrible flaw with the templates -->
+<spell name="Tick Tock" type="target">
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" framerate="70" centerEffect="1" sfx="wait"/>
+	</spell>
+<spell name="Ding" type="target">
+	<anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="70" centerEffect="1" sfx="tutorialquery"/>
+	</spell>
+<spell name="Drill Bomb" type="target">
+	<effect type="damage" blasting="10" conflagratory="5" affectscaster="1" />
+	<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+	<effect type="trigger" spell="Drill Bomb2" />
+	<effect type="trigger" spell="Drill Bomb3" />
+	</spell>
+<spell name="Drill Bomb2" type="template" templateID="10" >
+	<effect type="damage" blasting="8" conflagratory="3" affectscaster="1" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="blast"/>
+	</spell>
+<spell name="Drill Bomb3" type="template" templateID="11" >
+	<effect type="damage" blasting="6" conflagratory="2" affectscaster="1" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="blast"/>
+	</spell>
+ <spell name="Ticking Time Bomb" type="target" >
+  <buff
+      useTimer="1"
+      time="4"
+      self="0"
+      stacksize="5"
+      allowstacking="1"
+      icon="skills/impossible_shot64.png"
+      smallicon="skills/impossible_shot32.png"
+      bad="1">
+		<halo name="sprites/sfx/weakness_loop/weakness_loop" first="0" framerate="70" num="7" />
+		<resistbuff blasting="-10"/>
+      </buff>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Fleshbore"/>
+	<effect type="trigger" amount="2" affectsCorpses="0" spell="Tick Tock" />
+	<effect type="trigger" amount="3" affectsCorpses="0" spell="Tick Tock" />
+	<effect type="trigger" amount="4" affectsCorpses="0" spell="Ding" />
+	<effect type="trigger" amount="4" affectsCorpses="0" spell="Drill Bomb" />
+	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="impact" centerEffect="0"/>
+	</spell>
+ 
+	<!-- Pendulum Slam set -->
+	
+<spell name="Pendulum Slam" type="template" templateID="20" attack="1" icon="skills/mecha_stomp32.png">
+<buff
+      useTimer="1"
+      time="0"
+      self="0"
+      stacksize="1"
+      allowstacking="0"
+      icon="skills/bloody64.png"
+      smallicon="skills/bloody32.png"
+      bad="1">
+      <halo name="sprites/sfx/impact_blast/impact_blast" num="5" frameRate="100" />
+  <secondarybuff id="8" amount="-100"/> <!-- counter -->
+  <secondarybuff id="11" amount="-20"/> <!-- resist -->
+      </buff>
+<anim sprite="sprites/sfx/miniquake/miniquake" frames="5" framerate="90" sfx="blast" centerEffect="0"/>
+<effect type="damage" crushing="10"/>
+</spell>
+<spell name="Pendulum Slam2" type="template" templateID="20" icon="skills/mecha_stomp32.png">
+<buff
+      useTimer="1"
+      time="0"
+      self="0"
+      stacksize="1"
+      allowstacking="0"
+      icon="skills/bloody64.png"
+      smallicon="skills/bloody32.png"
+      bad="1">
+      <halo name="sprites/sfx/impact_blast/impact_blast" num="5" frameRate="100" />
+  <secondarybuff id="8" amount="-100"/> <!-- counter -->
+  <secondarybuff id="11" amount="-20"/> <!-- resist -->
+      </buff>
+<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="40" sfx="blast" centerEffect="0"/>
+<effect type="damage" crushing="10"/>
+<effect type="knock" amount="2"/>
+<effect type="knock" amount="2"/>
+<effect type="knock" amount="2"/>
+</spell>
+<spell name="Pendulum Slam self" type="self" icon="skills/mecha_stomp32.png">
+<effect type="trigger" spell="Pendulum Slam" />
+</spell>
+<spell name="Pendulum Slam2 self" type="self" icon="skills/mecha_stomp32.png">
+<effect type="trigger" spell="Pendulum Slam2" />
+</spell>
+<spell name="Parabolic Mecha-stomp" downtime="50" type="template" templateID="31" anchored="1" icon="skills/mecha_stomp32.png">
+  <description text="You leap into the air and come crashing down. The power of your mechanical limbs rocks the dugeon floor like a small boat on a stormy sea of metaphor."/>
+  <effect type="teleport" skipanimation="1"/>
+  <effect type="damage" crushingF="4" secondaryScale="10" resistable="0"/>
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" sfx="missile" framerate="20" centerEffect="0"/>
+  <effect type="suction"/>
+  <effect type="trigger" spell="Pendulum Slam self" />
+  <effect type="trigger" spell="Pendulum Slam2 self" />
+  </spell>
+
+<!-- Gas Canister set -->
+
+<spell name="Kill Entity" type="target">
+		<buff useTimer="1" time="0" self="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
+			<secondarybuff id="0" amount="-9999" />
+		</buff>
+</spell>
+
+<spell name="Gas Canister Puff" 
+      type="targetfloor" 
+      icon="skills/spells/conjure_miasma32.png" 
+      mineTimer="12"
+      mineUseGlints="1" 
+      mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/skullpuffG/skullpuffG" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="10" 
+      mineSpritePNGRate="140" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" putrefying="1" putrefyingF=".5" acidic="1" acidicF=".5" toxic="1" toxicF=".5" asphyxiative="1" asphyxiativeF=".5" secondaryScale="21" affectscaster="1" />
+   <anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="100" centerEffect="1" />
+   </spell>
+
+<spell name="Canister Toxic Gas" type="target" icon="skills/gas_canister32.png">
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="80" sfx="vasebreak" centerEffect="0"/>
+	<effect type="trigger" spell="Gas Canister Puff" />
+</spell>
+<spell name="Canister Toxic Gas2" type="template" templateID="09" icon="skills/gas_canister32.png">
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="80" sfx="vegetable_spell" centerEffect="0"/>
+	<effect type="trigger" spell="Gas Canister Puff" />
+</spell>
+<spell name="Canister Toxic Gas3" type="template" templateID="15" icon="skills/gas_canister32.png">
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="80" sfx="vegetable_spell" centerEffect="0"/>
+	<effect type="trigger" spell="Gas Canister Puff" />
+</spell>
+<spell name="Canister Toxic Gas4" type="template" templateID="21" icon="skills/gas_canister32.png">
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="80" sfx="vegetable_spell" centerEffect="0"/>
+	<effect type="trigger" spell="Gas Canister Puff" />
+</spell>
+<spell name="Canister Toxic Gas5" type="template" templateID="22" icon="skills/gas_canister32.png">
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="80" sfx="vegetable_spell" centerEffect="0"/>
+	<effect type="trigger" spell="Gas Canister Puff" />
+</spell>
+<spell name="Remove Canister" type="targetcorpse">
+	<effect type="damage" toxic="1" toxicF="1" asphyxiative="1" asphyxiativeF="1" putrefying="1" putrefyingF="1" secondaryScale="21" affectscaster="1" />
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="5" framerate="80" sfx="vegetable_spell" centerEffect="0"/>
+	</spell>
+   
+<spell name="Gas Canister entity" type="targetfloor" icon="skills/gas_canister32.png" wand="0">
+   <effect type="summonhostile" monsterType="Gas Canister" />
+   <effect type="trigger" amount="1" spell="Canister Toxic Gas" taxa="Gas Canister" />
+   <effect type="trigger" amount="2" spell="Canister Toxic Gas2" taxa="Gas Canister" />
+   <effect type="trigger" amount="3" spell="Canister Toxic Gas3" taxa="Gas Canister" />
+   <effect type="trigger" amount="4" spell="Canister Toxic Gas4" taxa="Gas Canister" />
+   <effect type="trigger" amount="5" spell="Canister Toxic Gas5" taxa="Gas Canister" />
+   <effect type="trigger" spell="Kill Entity" taxa="Gas Canister" />
+   <effect type="trigger" amount="6" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="7" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="8" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="9" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="10" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="11" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="12" spell="Remove Canister" taxa="Gas Canister" />
+   <effect type="trigger" amount="13" spell="Remove Canister" taxa="Gas Canister" />
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   </spell>
+	
+<spell name="Gas Canister Shot" type="missile" icon="skills/gas_canister32.png" wand="0">
+   <anim sprite="sprites/sfx/canister_toss/canister_toss" frames="8" framerate="50" centerEffect="1" sfx="vasebreak"/>
+   <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="vasebreak" centerEffect="0"/>
+   <effect type="trigger" spell="Gas Canister entity" />
+   </spell>
+<spell name="Alchemical Toxin Canister" downtime="90" type="targetfloor" icon="skills/gas_canister32.png" wand="0">
+   <effect type="trigger" spell="Gas Canister Shot" />
+   <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="swing" framerate="5"  centerEffect="1"/>
+   <description text="You toss a crafted an alchemical grenade which releases weaponized alchemical spirits. Try to avoid throwing it directly at your enemies as the grenade has a tendancy to ricochet. The gas is deadlier as your alchemy skill improves. Avoid contact with eyes." />
+	</spell>
+	<!-- modders are insane; see above - dgb -->
+	
+	<!-- Death Ray  -->
+	
+<!-- this is a tweak for the mana cost of death ray and includes a buff to damage that scales with savvy and an ai hint for the diggle scientist -->
+<spell name="Disintegrate Corpse" type="targetcorpse">
+	<effect type="damage" conflagratory="6" />
+	<anim sprite="sprites/sfx/disintegration_hit/disintegration_hit" frames="6" framerate="80" sfx="flame_weak" centerEffect="0"/>
+	</spell>
+<spell name="Aetheric Death Ray beam" type="beam" icon="skills/aetheric_death_ray32.png" >
+	<effect type="damage" burn="1" voltaicF=".34" primaryScale="5" affectscaster="1" />
+	<effect type="damage" burn="1" aethereal="10" aetherealF="5" secondaryScale="23" affectscaster="1" />
+	<effect type="trigger" amount="1" spell="Disintegrate Corpse" />
+	<anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="250" centerEffect="0" sfx="deathray" />
+	</spell>
+<spell name="Voltaic Feedback" type="self">
+	<effect type="damage" aethereal="2" voltaic="2" affectscaster="1" />
+	<effect type="spellpoints" amount="-4"/>
+	<anim sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" framerate="90" sfx="elec" />
+	</spell>
+ 
+<spell name="Aetheric Discharge boom" type="self" icon="skills/spells/blinding_goodness32.png" downtime="24" >
+	<anim sprite="sprites/sfx/blastA/blastA" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+	</spell>
+ 
+<spell name="Aetheric Discharge" type="self" icon="skills/spells/blinding_goodness32.png" downtime="24" >
+	<buff
+	  useTimer="1"
+	  time="30"
+	  self="0"
+	  stacksize="1"
+	  allowstacking="0"
+	  icon="skills/aetheric_discharge64.png"
+	  smallicon="skills/aetheric_discharge32.png"
+	  bad="0">
+	<halo name="sprites/sfx/lightningarc/lightningarc" first="0" num="7" frameRate="100" />
+	<mute />
+	<secondarybuff id="14" amount="-16"/> <!-- mana regen -->
+	<description text="It appears that your death ray has a few unresolved design flaws-- ow! that hurts..." />
+	</buff>
+	<effect type="trigger" amount="1" spell="Aetheric Discharge boom" />
+	<effect type="trigger" amount="1" spell="Voltaic Feedback" percent="100" />
+	<effect type="trigger" amount="2" spell="Voltaic Feedback" percent="90" />
+	<effect type="trigger" amount="3" spell="Voltaic Feedback" percent="80" />
+	<effect type="trigger" amount="4" spell="Voltaic Feedback" percent="70" />
+	<effect type="trigger" amount="5" spell="Voltaic Feedback" percent="60" />
+	<effect type="trigger" amount="6" spell="Voltaic Feedback" percent="50" />
+	<effect type="trigger" amount="7" spell="Voltaic Feedback" percent="40" />
+	<effect type="trigger" amount="8" spell="Voltaic Feedback" percent="30" />
+	<effect type="trigger" amount="9" spell="Voltaic Feedback" percent="20" />
+	<effect type="trigger" amount="11" spell="Voltaic Feedback" percent="10" />
+	<effect type="trigger" amount="12" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="13" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="14" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="15" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="16" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="17" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="18" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="19" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="20" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="21" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="22" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="23" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="24" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="25" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="26" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="27" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="28" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="29" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="30" spell="Voltaic Feedback" percent="5" />
+	<effect type="trigger" amount="31" spell="Voltaic Feedback" percent="5" />
+	<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+	</spell>
+	<spell name="Aetheric Death Ray" type="targetfloor" icon="skills/aetheric_death_ray32.png" >
+	<requirements mp="35" savvyBonus="0.25" mincost="15" />
+	<description text="Your final work is a weapon so deadly that it is sure to reveal the inherant irrationality of war thus bringing an age of everlasting peace. In the meantime, a demonstration is required ... (Damage is scaled by your wandcrafting skill.)"/>
+	<effect type="trigger" spell="Aetheric Death Ray beam" />
+	<effect type="trigger" spell="Aetheric Discharge" percent="5" />
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="enchanted" framerate="250"  centerEffect="1"/>
+	<ai hint="target"/>
+	</spell>
+
+<spell name="Aetheric Death Ray" type="targetfloor" icon="skills/aetheric_death_ray32.png" >
+	<requirements mp="35" savvyBonus="0.25" mincost="15" /> 
+	<description text="Your final work is a weapon so deadly that it is sure to reveal the inherant irrationality of war thus bringing an age of everlasting peace. In the meantime, a demonstration is required ... (Damage is scaled by your wandcrafting skill.)"/>
+	<effect type="trigger" spell="Aetheric Death Ray beam" />
+	<effect type="trigger" amount="1" spell="Aetheric Discharge" percent="5" />
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="enchanted" framerate="250"  centerEffect="1"/>
+	<ai hint="target"/>
+	</spell>
+	
+	<!-- end CK -->
+	
+	
+<!-- Practical Geology mod by Null -->
+
+<spell name="Stunned" type="target" icon="skills/stunned64.png">
+	<buff useTimer="1" time="2" self="0" bad="1" stacksize="1" allowStacking="0" icon="skills/stunned64.png" smallicon="skills/stunned32.png">
+		<secondarybuff id="4" amount="-100"/> <!-- crit, doesn't matter really -->
+		<secondarybuff id="6" amount="-100"/> <!-- dodge -->
+		<secondarybuff id="8" amount="-100"/> <!-- counter -->
+		<secondarybuff id="7" amount="-20"/> <!-- block -->
+		<secondarybuff id="11" amount="-20"/> <!-- resist -->
+		<mute /> <!-- paralyzed anyway but consistency with dazed -->
+		<description text="You are temporarily stunned and unable to defend yourself." />
+	</buff>
+	<effect type="paralyze" turns="2" resistable="0" affectsCaster="1"/>
+	</spell>
+
+<spell name="Dazed" type="target" icon="skills/dazed64.png">
+	<buff useTimer="1" time="8" self="0" bad="1" stacksize="1" allowStacking="0" icon="skills/dazed64.png" smallicon="skills/dazed32.png">
+		<secondarybuff id="4" amount="-40"/> <!-- crit -->
+		<secondarybuff id="6" amount="-40"/> <!-- dodge -->
+		<secondarybuff id="8" amount="-30"/> <!-- counter -->
+		<secondarybuff id="7" amount="-20"/> <!-- block -->
+		<secondarybuff id="11" amount="-20"/> <!-- resist -->
+		<mute />
+	</buff>
+	<description text="You are dazed. You can see two of everything and it's really hard to defend yourself." />
+	</spell>
+	
+<!-- Stone Fist -->
+
+<spell name="Plutonic Fist" downtime="6" type="targetfloor" icon="skills/stone_fist32.png">
+	<buff useTimer="0" removable="1" self="0" bad="0" stacksize="1" allowStacking="0" icon="skills/stone_fist64.png" smallicon="skills/stone_fist32.png">
+		<secondarybuff id="2" amount="5"/> <!-- melee power -->
+		<secondarybuff id="4" amount="-70"/> <!-- crit -->
+		<secondarybuff id="8" amount="-35"/> <!-- counter -->
+	</buff>
+	<description text="You can at-will transform the hand / noodly appendage of a creature (including yourself, if thus inclined) into stone such as that cured deep in the Earth's earthy heart. Melee power is improved at the cost of combat skill and finesse. Hit smart like rock.."/>
+	<ai hint="self"/>
+	</spell>
+	
+<!-- Diggle Geologist debuff -->
+<spell name="Plutonic Fist " type="targetfloor" icon="skills/stone_fist32.png">
+	<buff useTimer="1" time="10" self="0" bad="1" stacksize="1" allowStacking="0" icon="skills/stone_fist64.png" smallicon="skills/stone_fist32.png">
+		<secondarybuff id="2" amount="5"/> <!-- melee power -->
+		<secondarybuff id="4" amount="-70"/> <!-- crit -->
+		<secondarybuff id="8" amount="-35"/> <!-- counter -->
+	</buff>
+	<description text="You can at-will transform the hand / noodly appendage of a creature (including yourself, if thus inclined) into stone such as that cured deep in the Earth's earthy heart. Melee power is improved at the cost of combat skill and finesse. Hit smart like rock.."/>
+	<ai hint="target"/>
+	</spell>
+
+<!-- Seismic Uppercut -->
+	
+<spell name="Seismic Uppercut" downtime="12" type="targetfloor" icon="skills/seismic_uppercut32.png" attack="1">
+	<effect type="trigger" spell="Seismic Quake Line"/>
+	<effect type="trigger" spell="Stunned"/>
+	<effect type="trigger" amount="1" spell="Seismic Uppercut Damage" affectsCorpses="0"/>
+	<anim sprite="sprites/sfx/rockburst/rockburst" frames="9" sfx="earth" framerate="100"  centerEffect="0"/>
+	<description text="With a thought, you compel a seismic wave to erupt through the ground at an enemy. The following mini-quake will also daze your foes."/>
+	<ai hint="target"/>
+	</spell>
+	
+<spell name="Seismic Quake Line" type="beam">
+	<effect type="damage" blasting="1" blastingF="0.25" secondaryScale="2" /> <!-- w/ melee power -->
+	<effect type="trigger" spell="Dazed"/>
+	<anim sprite="sprites/sfx/miniquake/miniquake" frames="5" firstframe="0" framerate="60" sfx="earth" centerEffect="0"/>
+	</spell>
+	
+<spell name="Seismic Uppercut Damage" type="target" attack="1">
+	<effect type="damage" crushing="5" crushingF="0.5" secondaryScale="2" affectsCaster="1"/> <!-- melee power -->
+	<!-- needs to hit while stunned so its not countered, of course one could say they like stomped it back -->
+	<!-- also affectsCaster="1" because if you're stupid enough to hit yourself with this... -->
+	</spell>
+	
+	<!-- Petrification -->
+	
+<spell name="Petrification" downtime="48" type="targetfloor" icon="skills/petrification32.png">
+	<buff useTimer="1" time="14" self="0" bad="0" stacksize="1" allowStacking="0" icon="skills/petrification64.png" smallicon="skills/petrification32.png">
+		<secondarybuff id="6" amount="-300"/> <!-- dodge -->
+		<secondarybuff id="8" amount="-300"/> <!-- counter -->
+		<secondarybuff id="10" amount="35"/> <!-- armor -->
+		<secondarybuff id="11" amount="50"/> <!-- resist -->
+		<resistbuff piercing="25" putrefying="25" acidic="25" conflagratory="25" hyperborean="25" voltaic="25" transmutative="25" asphyxiative="25" righteous="5" necromantic="5" aethereal="5" toxic="5" existential="5"/>
+		<effect type="trigger" amount="0" spell="Petrification Tick 0" affectsCorpses="0"/>
+		<effect type="trigger" amount="1" spell="Petrification Tick 1" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="2" spell="Petrification Tick 2" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="3" spell="Petrification Tick 2" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="4" spell="Petrification Tick 3" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="5" spell="Petrification Tick 3" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="6" spell="Petrification Tick 4" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="7" spell="Petrification Tick 4" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="9" spell="Petrification Tick 5" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="10" spell="Petrification Tick 6" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="11" spell="Petrification Tick 6" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="12" spell="Petrification Tick 7" requirebuff="1" affectsCorpses="0"/>
+		<effect type="trigger" amount="13" spell="Petrification Tick 7" requirebuff="1" affectsCorpses="0"/>
+		<effect type="paralyze" turns="14" resistable="0" affectsCaster="1"/>
+		<effect type="dot" amount="13" spell="Delayed Petrification" requirebuff="1" resistable="0" affectsCorpses="0"/> 
+		<effect type="trigger" amount="14" spell="Monster Petrification Visual" affectsCorpses="0"/>
+	</buff>
+	<effect type="create" turns="2" objectSprite="dungeon/summoned_wall.png" self="0"/> <!-- appears only on the first turn without a monster to avoid issues with animation-->
+	<!-- <effect type="damage" crushing="3" crushingF="0.50" secondaryScale="24" affectsCaster="0"/> --> <!-- w/ warrior levels--> <!-- no tag for warrior levels -dgb -->
+	<effect type="damage" crushing="3" crushingF="0.30" primaryScale="4" affectsCaster="0"/> <!-- scale to STUB -->
+	<description text="Encases one (1) target in a shell of stone, completely paralyzing and suffocating over time, though if you use this on yourself, you tend to remember to leave a breathing hole."/>
+	<anim sprite="sprites/sfx/magic_wall/magic_wall" sync="1" frames="11" framerate="80" sfx="earth" centerEffect="0"/>
+	<ai hint="self"/>
+	</spell>
+	
+<spell name="Delayed Petrification" type="target">
+	<effect type="create" turns="2" objectSprite="dungeon/summoned_wall.png" self="0"/>
+	</spell>
+
+<spell name="Monster Petrification Visual" type="targetmonster">
+	<effect type="create" turns="2" objectSprite="dungeon/summoned_wall.png" self="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 0" type="target">
+	<effect type="damage" asphyxiative="1" affectsCaster="0"/>
+	<ai hint="target"/>
+	</spell>
+	
+<spell name="Petrification Tick 1" type="target">
+	<effect type="damage" asphyxiative="26" affectsCaster="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 2" type="target">
+	<effect type="damage" asphyxiative="26" affectsCaster="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 3" type="target">
+	<effect type="damage" asphyxiative="27" affectsCaster="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 4" type="target">
+	<effect type="damage" asphyxiative="28" affectsCaster="0"/>
+	</spell>
+		
+<spell name="Petrification Tick 5" type="target">
+	<effect type="damage" asphyxiative="30" affectsCaster="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 6" type="target">
+	<effect type="damage" asphyxiative="33" affectsCaster="0"/>
+	</spell>
+	
+<spell name="Petrification Tick 7" type="target">
+	<effect type="damage" asphyxiative="38" affectsCaster="0"/>
+	</spell>
+
+<spell name="Stone Secret" type="self">
+	<buff useTimer="1" time="0" icon="skills/stone_toughness64.png" smallicon="skills/stone_toughness32.png">
+	<!-- yes the time is zero, it takes place only on the very turn it is triggered -->
+		<resistbuff slashing="1" crushing="1" piercing="2" acidic="1" conflagratory="1" asphyxiative="1"/>
+		<secondarybuff id="11" amount="20"/> <!-- resist, for those procs or spells if you want -->
+	</buff>
+	</spell>
+
+<spell name="Basalt Skin Effect" type="target">
+	<effect type="damage" crushing="1" crushingF="0.20" secondaryScale="7"/> <!-- w/ block -->
+	</spell>
+
+<spell name="Basalt Skin" type="self" downtime="30" icon="skills/rock_armour32.png">
+	<buff useTimer="1" time="7" brittle="4" icon="skills/rock_armour64.png" smallicon="skills/rock_armour32.png">
+		<playerHitEffectBuff percentage="100" name="Basalt Skin Effect"/>
+		<resistbuff slashing="2" crushing="2" piercing="2" acidic="2" conflagratory="2" asphyxiative="1"/>
+		<secondarybuff id="7" amount="15"/> <!-- block -->
+		<secondarybuff id="11" amount="10"/> <!-- resist -->
+	</buff>
+	<description text="Such is your geological skill that your flesh is as stone with low silica content; you can better turn away the fangs / claws / blades / unsound business propositions of the terrible monsters you're sure to meet."/>
+	<ai hint="self"/>
+	</spell>
+	
+<!-- Earthquake -->
+
+<spell name="Quake" downtime="96" type="adjacent" icon="skills/quake32.png" >
+	<effect type="trigger" spell="Earthquake Self"/>
+	<description text="The roots of the earth itself shall tremble and quake to quel your enemies! Stuns and dazes all nearby. Those closest are more affected."/>
+	<ai hint="target"/>
+	</spell>
+	
+<spell name="Earthquake Self" type="self">
+	<effect type="trigger" spell="Earthquake Stun Area"/>
+	<effect type="trigger" spell="Earthquake Daze Area"/>
+	</spell>
+
+<spell name="Earthquake Stun Area" type="template" templateID="100" >
+	<effect type="damage" crushing="9" crushingF="0.50" secondaryScale="2" /> <!-- melee -->
+	<effect type="trigger" spell="Stunned"/>
+	<anim sprite="sprites/sfx/miniquake/miniquake" frames="5" firstframe="0" framerate="100" sfx="earth" centerEffect="0"/>
+	</spell>
+	
+<spell name="Earthquake Daze Area" type="template" templateID="101">
+	<effect type="damage" crushing="5" crushingF="0.30" blasting="2" blastingF="0.20" secondaryScale="2" /> <!-- scale by melee -->
+	<effect type="trigger" spell="Dazed"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="earth" centerEffect="0"/>
+	</spell>
+	
+<spell name="Paralyze Self 1" type="self">
+	<effect type="paralyze" amount="1" resistable="0" affectsCaster="1"/>
+	</spell>
+
+
+<!-- Encyclopedia Magica -->
+<!-- I forget if these are used anywhere -dgb -->
+
+<spell name="Harsh Vacuum" type="template" templateID="100" anchored="1" icon="skills/spells/stars_aligned32.png" wand="0">
+	<effect type="damage" asphyxiative="10" asphyxiativeF="0.5" /> 
+	<effect type="lockdown" amount="5" /> 
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" sfx="toxic" framerate="80" centerEffect="1" /> 
+	<description text="Sometimes it just all takes your breath away, doesn't it?" /> 
+	</spell>
+
+<spell name="Antimagic Buff" type="self" icon="skills/conflux64.png" wand="0">
+	<anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="cursed" centerEffect="1" /> 
+	<effect type="dot" amount="10" spell="Building Magic Shield" resistable="0" /> 
+	<effect type="trigger" spell="Antimagic Field" /> 
+	</spell>
+
+<spell name="Building Magic Shield" type="self" icon="skills/conflux64.png" wand="0">
+	<buff useTimer="1" time="10" self="1" stackable="1" stacksize="10" resistable="0" icon="skills/conflux64.png" smallicon="skills/conflux32.png">
+	<secondarybuff id="11" amount="5" /> <!--  resist --> 
+	<resistbuff aethereal="1" necromantic="1" conflagratory="1" hyperborean="1" voltaic="1" /> 
+	</buff>
+</spell>
+
+<!-- Warlock by Essence -->
+
+	
+<!-- note use of spells with space after name for polymorphed form -->
+
+<spell name="Essence Effect" type="self" >
+	<anim sprite="sprites/sfx/manafount/manafont" frames="5" firstframe="0" framerate="50" centerEffect="0"/>
+	</spell>
+
+<!-- Puissant Touch set -->
+
+<spell name="Puissant Hit Normal" type="target" icon="skills/puissant_touch32.png" >
+	<effect type="damage" aethereal="1" aetherealF=".13" secondaryScale="1"/> <!-- scale to mp --> 
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centereffect="0" sfx="blast"/>
+	</spell>
+<spell name="Puissant Hit Empowered" type="target" icon="skills/puissant_touch32.png"> 
+	<effect type="damage" aethereal="2" aetherealF=".23" secondaryScale="1"/> <!-- scale to mp --> 
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centereffect="0" sfx="blast" />
+	<effect type="trigger" spell="Essence Effect" />
+	</spell>
+<spell name="Puissant Touch" type="adjacent" icon="skills/puissant_touch32.png" attack="1">
+	<requirements mp="4" mincost="1" savvyBonus="0.2"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Puissant Hit Empowered"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Puissant Hit Normal"/>
+	<description text="Why mess about with incantations, gesturing, and smelly powders? Just use your hand to inject burning raw magical energy directly into your enemy's flesh."/>
+	</spell>
+
+	
+<spell name="Puissant Discharge Normal" type="target" icon="skills/puissant_touch32.png" >
+	<effect type="damage" aethereal="1" aetherealF=".04" secondaryScale="1"/> <!-- scale to mp --> 
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centereffect="0" sfx="blast"/>
+	</spell>
+<spell name="Puissant Discharge Empowered" type="target" icon="skills/puissant_touch32.png"> 
+	<effect type="damage" aethereal="2" aetherealF=".09" secondaryScale="1"/> <!-- scale to mp --> 
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centereffect="0" sfx="blast" />
+	<effect type="trigger" spell="Essence Effect" />
+	</spell>
+<spell name="Puissant Discharge" type="target" icon="skills/puissant_touch32.png" attack="1"> <!-- sounds like a rather unpleasant condition, doesn't it -->
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Puissant Discharge Empowered"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Puissant Discharge Normal"/>
+	</spell>
+	
+<!-- Mana Maille set -->
+
+<spell name="Mana Maille Effect Normal" type="self" icon="skills/battle_form32.png" wand="0"> 
+	<effect type="spellpoints" amount="-2"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	</spell>
+
+<spell name="Mana Maille Effect Empowered" type="self" icon="skills/battle_form32.png" wand="0">
+	<effect type="spellpoints" amount="-1"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	<effect type="trigger" spell="Essence Effect" />
+	</spell>
+
+<spell name="Mana Maille Fork" type="self" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Mana Maille Effect Empowered"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Mana Maille Effect Normal"/>
+	<anim sprite="sprites/sfx/blastA/blastA" frames="4" sfx="hex_missile" framerate="100" centerEffect="0"/>
+	</spell>
+
+<spell name="Mage's Mana Maille" type="self" icon="skills/battle_form32.png" wand="0">
+	<anim sprite="sprites/sfx/chargeA/chargeA" first="0" framerate="120" num="6" sfx="magic"/>
+	<buff usetimer="0" removable="1" allowstacking="0" stacksize="1" icon="skills/battle_form64.png" smallicon="skills/battle_form32.png">
+		<resistbuff aethereal="1" acidic="1" asphyxiative="1" blasting="1" conflagratory="1" crushing="1" existential="1" hyperborean="1" necromantic="1" piercing="1" putrefying="1" righteous="1" slashing="1" toxic="1" transmutative="1" voltaic="1"/>
+		<secondarybuff id="10" amount="1"/> <!-- armour -->
+		<playerHitEffectBuff percentage="100" name="Mana Maille Fork"/>
+		<description text="Do as the wizards do - gird your loins in a shield of mana to protect yourself from deadly foes. Each hit landed on your magical maille will drain mana." />
+<!--		<description text="This spell produces a begrudgingly necessary exchange of mana for staying alive. Most - but not all - wizards choose life."/> -->
+		</buff>
+	</spell>
+
+<!-- Warlock's Challenge set -->
+	
+<spell name="Warlock's Challenge 1" type="targetmonster" >
+	<effect type="damage" aethereal="2" aetherealF=".15"/>
+	<effect type="paralyze" turns="2" />
+	<effect type="suction" resistable="0"/>
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="magic" />
+	</spell>
+
+<spell name="Warlock's Challenge 2" type="targetmonster" >
+	<effect type="damage" aethereal="2" aetherealF=".30"/>
+	<effect type="paralyze" turns="3" />
+	<effect type="suction" resistable="0"/>
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="magic" />
+	<effect type="trigger" spell="Essence Effect" />
+	</spell>
+	
+<spell name="Warlock's Challenge" type="targetmonster" icon="skills/warlocks_challenge32.png" wand="0" >
+	<requirements mp="5" savvybonus=".1" mincost="2"/>
+	<!-- need anim? -->
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Warlock's Challenge 2"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Warlock's Challenge 1"/>
+	<description text="A few strong words and a magical gesture are sure to pull nearby monsters into melee range. Literally pull. As a Warlock, this is presumably what you actually want to have happen."/>
+	</spell>
+
+<!-- Essence of the Battlemage -->
+
+<!--
+<spell name="Essence of Battle" type="self" downtime="64" icon="skills/supercharged32.png" wand="0">
+	<requirements mp="6" savvybonus="0.25" mincost="3" />
+	<buff manaupkeep="1" useTimer="0" allowstacking="0" self="1" icon="skills/supercharged64.png" smallicon="skills/supercharged32.png">
+		<halo name="sprites/sfx/hero_glow/hero_glow" first="0" framerate="70" num="3" />
+		<primarybuff id="0" amount="4" /> 
+		<primarybuff id="2" amount="4" />
+		<primarybuff id="3" amount="4" /> 
+		<secondarybuff id="10" amount="3" />  
+		<damagebuff aethereal="2" /> 
+		</buff>
+	<description text="Your body, charged with raw thaumaturgical puissance, is become a fearsome engine of destruction." /> 
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90" centerEffect="0" sfx="magic" /> 
+</spell> -->
+
+<!-- Essence of the Battlemage redux -->
+
+<spell name="Remove ALL The Mana!" type="self">
+	<effect type="drainCasterMana" amount="100"/>	
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	</spell>
+
+<spell name="Essence Removal Trigger" type="self">
+        <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Essence Removal Trigger" amount="2"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Remove ALL The Mana!" amount="2"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
+	</spell>
+
+<spell name="Essence of Battle" type="self" downtime="64" icon="skills/supercharged32.png" wand="0">
+	<requirements mp="6" savvybonus="0.25" mincost="3" />
+	<buff manaupkeep="1" removable="1" useTimer="0" allowstacking="0" self="1" icon="skills/supercharged64.png" smallicon="skills/supercharged32.png">
+		<halo name="sprites/sfx/hero_glow/hero_glow" first="0" framerate="70" num="3" />
+		<primarybuff id="0" amount="4" /> <!--  Bur  --> 
+		<primarybuff id="2" amount="4" /> <!--  Nim  --> 
+		<primarybuff id="3" amount="4" /> <!--  Cad  --> 
+		<secondarybuff id="10" amount="3" /> <!--  armour --> 
+		<damagebuff aethereal="2" /> 
+		</buff>
+	<description text="Your body, charged with raw thaumaturgical puissance, is become a fearsome engine of destruction." /> 
+	<effect type="trigger" amount="2" spell="Essence Removal Trigger"/>
+	<!--<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />-->
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90" centerEffect="0" sfx="magic" /> 
+	</spell>
+
+<!-- Chronomantic Twist set -->
+	
+<spell name="Time Stop" type="area" radius="12">
+	<effect type="paralyze" turns="1" resistable="0"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="white" centerEffect="0"/>
+	</spell>
+<spell name="Time Stopped" type="self">
+	<effect type="paralyze" turns="2" affectsCaster="1" resistable="0"/>
+	</spell>
+ 
+<spell name="Chronomantic Twist 2" type="self" icon="skills/chronomantic_twist32.png">
+	<effect type="dot" amount="3" spell="Time Stop" resistable="0"/>
+	<effect type="trigger" affectsCorpses="0" amount="3" spell="Time Stopped" resistable="0"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	</spell>
+<spell name="Chronomantic Twist 1" type="self" icon="skills/chronomantic_twist32.png">
+	<effect type="dot" amount="4" spell="Time Stop" resistable="0"/>
+	<effect type="trigger" affectsCorpses="0" amount="4" spell="Time Stopped" resistable="0"/>
+	<effect type="trigger" spell="Essence Effect" resistable="0" />
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	</spell>
+ 
+<spell name="Chronomantic Twist" type="self" icon="skills/chronomantic_twist32.png">
+	<requirements mp="20" savvybonus=".2" mincost="12"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Chronomantic Twist 1" resistable="0"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Chronomantic Twist 2" resistable="0"/>
+	</spell> 
+
+<!-- Arcane Capacitor spells -->
+	
+<!-- ARCANE DAMAGE DEALERS --> 
+
+<spell name="Acidic Smackdown" type="target">
+	<effect type="damage" acidic="1" acidicF=".05" percent="50"/>
+	<effect type="damage" acidic="1" acidicF=".05" percent="50"/>
+	<effect type="damage" acidic="1" acidicF=".05" percent="50"/>
+	<effect type="damage" acidic="1" acidicF=".05" percent="50"/>
+	</spell>
+
+<spell name="Aethereal Smackdown" type="target">
+	<effect type="damage" aethereal="1" aetherealF=".05" percent="50"/>
+	<effect type="damage" aethereal="1" aetherealF=".05" percent="50"/>
+	<effect type="damage" aethereal="1" aetherealF=".05" percent="50"/>
+	<effect type="damage" aethereal="1" aetherealF=".05" percent="50"/>
+	</spell>
+
+<spell name="Blasting Smackdown" type="target">
+	<effect type="damage" blasting="2" blastingF=".1" percent="50"/>
+	<effect type="damage" blasting="2" blastingF=".1" percent="50"/>
+	<effect type="damage" blasting="2" blastingF=".1" percent="50"/>
+	<effect type="damage" blasting="2" blastingF=".1" percent="50"/>
+	</spell>
+
+<spell name="Conflagratory Smackdown" type="target">
+	<effect type="damage" conflagratory="1" conflagratoryF=".05" percent="50"/>
+	<effect type="damage" conflagratory="1" conflagratoryF=".05" percent="50"/>
+	<effect type="damage" conflagratory="1" conflagratoryF=".05" percent="50"/>
+	<effect type="damage" conflagratory="1" conflagratoryF=".05" percent="50"/>
+	</spell>
+
+<spell name="Hyperborean Smackdown" type="target">
+	<effect type="damage" hyperborean="1" hyperboreanF=".05" percent="50"/>
+	<effect type="damage" hyperborean="1" hyperboreanF=".05" percent="50"/>
+	<effect type="damage" hyperborean="1" hyperboreanF=".05" percent="50"/>
+	<effect type="damage" hyperborean="1" hyperboreanF=".05" percent="50"/>
+	</spell>
+
+<spell name="Putrefying Smackdown" type="target">
+	<effect type="damage" putrefying="1" putrefyingF=".05" percent="50"/>
+	<effect type="damage" putrefying="1" putrefyingF=".05" percent="50"/>
+	<effect type="damage" putrefying="1" putrefyingF=".05" percent="50"/>
+	<effect type="damage" putrefying="1" putrefyingF=".05" percent="50"/>
+	</spell>
+
+<spell name="Righteous Smackdown" type="target">
+	<effect type="damage" righteous="1" righteousF=".05" percent="50"/>
+	<effect type="damage" righteous="1" righteousF=".05" percent="50"/>
+	<effect type="damage" righteous="1" righteousF=".05" percent="50"/>
+	<effect type="damage" righteous="1" righteousF=".05" percent="50"/>
+	</spell>
+
+<spell name="Transmutative Smackdown" type="target">
+	<effect type="damage" transmutative="1" transmutativeF=".05" percent="50"/>
+	<effect type="damage" transmutative="1" transmutativeF=".05" percent="50"/>
+	<effect type="damage" transmutative="1" transmutativeF=".05" percent="50"/>
+	<effect type="damage" transmutative="1" transmutativeF=".05" percent="50"/>
+	</spell>
+
+<spell name="Voltaic Smackdown" type="target">
+	<effect type="damage" voltaic="1" voltaicF=".05" percent="50"/>
+	<effect type="damage" voltaic="1" voltaicF=".05" percent="50"/>
+	<effect type="damage" voltaic="1" voltaicF=".05" percent="50"/>
+	<effect type="damage" voltaic="1" voltaicF=".05" percent="50"/>
+	</spell>
+
+<spell name="Arcane Capacitor Damage Dealer" type="target">
+	<effect type="triggerfromlist">
+		<option name="Acidic Smackdown"/>
+		<option name="Aethereal Smackdown"/>
+		<option name="Blasting Smackdown"/>
+		<option name="Conflagratory Smackdown"/>
+		<option name="Hyperborean Smackdown"/>
+		<option name="Putrefying Smackdown"/>
+		<option name="Righteous Smackdown"/>
+		<option name="Transmutative Smackdown"/>	
+		<option name="Voltaic Smackdown"/>
+		</effect>
+	</spell>
+
+
+<!-- ARCANE BACKLASHES --> 
+
+<spell name="No Arcane Charge For You!" type="target" >
+	<effect type="removebuffbyname" name="Arcane Capacitor" resistable="0"/>
+	<effect type="removebuffbyname" name="Uncharged Arcane Capacitor" resistable="0"/>
+	<effect type="removebuffbyname" name="Almost Charged Arcane Capacitor" resistable="0"/>
+	<effect type="removebuffbyname" name="Charged Arcane Capacitor" resistable="0"/>
+	<effect type="removebuffbyname" name="Unstable Arcane Capacitor" resistable="0"/>
+	<effect type="removebuffbyname" name="Overloading Arcane Capacitor" resistable="0"/>
+</spell>
+
+<spell name="Capacitative Blowout" type="self">
+	<effect type="trigger" spell="Makeshift Bomb Center"/>
+	<buff usetimer="1" time="55" bad="1" self="1" smallicon="skills/magic_burnout32.png" icon="skills/magic_burnout64.png">
+		<description text="You've blown out your Arcane Capacitator! It needs time to repair itself."/>
+		</buff>
+	<effect type="dot" amount="55" spell="No Arcane Charge For You!" requirebuff="1" resistable="0"/>
+	</spell>
+
+<spell name="Acidic Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/acidic_magic_inversion64.png" smallicon="skills/acidic_magic_inversion32.png">
+		<resistbuff acidic="-2"/>
+		<description text="Your arcane capacitor is leaking negative Acidic energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Aethereal Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/aethereal_magic_inversion64.png" smallicon="skills/aethereal_magic_inversion32.png">
+		<resistbuff aethereal="-2"/>
+		<description text="Your arcane capacitor is leaking negative Aethereal energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Blasting Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/blasting_magic_inversion64.png" smallicon="skills/blasting_magic_inversion32.png">
+		<resistbuff blasting="-4"/>
+		<description text="Your arcane capacitor is leaking negative kinetic energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Conflagratory Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/conflagratory_magic_inversion64.png" smallicon="skills/conflagratory_magic_inversion32.png">
+		<resistbuff conflagratory="-2"/>
+		<description text="Your arcane capacitor is leaking negative Conflagratory energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Hyperborean Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/hyperborean_magic_inversion64.png" smallicon="skills/hyperborean_magic_inversion32.png">
+		<resistbuff hyperborean="-2"/>
+		<description text="Your arcane capacitor is leaking negative Hyperborean energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Putrefying Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/putrefying_magic_inversion64.png" smallicon="skills/putrefying_magic_inversion32.png">
+		<resistbuff putrefying="-2"/>
+		<description text="Your arcane capacitor is leaking negative (and rather yucky!) energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Righteous Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/righteous_magic_inversion64.png" smallicon="skills/righteous_magic_inversion32.png">
+		<resistbuff righteous="-2"/>
+		<description text="Your arcane capacitor is leaking negative Divine energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Transmutative Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/transmutative_magic_inversion64.png" smallicon="skills/transmutative_magic_inversion32.png">
+		<resistbuff transmutative="-2"/>
+		<description text="Your arcane capacitor is leaking negative Transmutative energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Voltaic Debuff" type="self">
+	<buff usetimer="1" time="3" allowstacking="1" stacksize="55" bad="1" self="1" icon="skills/voltaic_magic_inversion64.png" smallicon="skills/voltaic_magic_inversion32.png">
+		<resistbuff voltaic="-2"/>
+		<description text="Your arcane capacitor is leaking negative Voltaic energy over you!"/>
+		</buff>
+	</spell>
+
+<spell name="Random Energy Weaknesses" type="target">
+	<effect type="triggerfromlist">
+		<option name="Acidic Debuff"/>
+		<option name="Aethereal Debuff"/>
+		<option name="Blasting Debuff"/>
+		<option name="Conflagratory Debuff"/>
+		<option name="Hyperborean Debuff"/>
+		<option name="Putrefying Debuff"/>
+		<option name="Righteous Debuff"/>
+		<option name="Transmutative Debuff"/>
+		<option name="Voltaic Debuff"/>
+		<option name="Eldritch Inhabitation"/>
+		</effect>
+	</spell>
+
+<spell name="No Arcane Charge For You! Trigger" type="self">
+	<effect type="trigger" spell="No Arcane Charge For You!" amount="1" requirebuffontrigger="1" requirebuffontriggername="Rippling Weakness"/>
+	<effect type="trigger" spell="No Arcane Charge For You! Trigger" amount="2" requirebuffontrigger="1" requirebuffontriggername="Rippling Weakness"/>
+	</spell>
+
+<spell name="Random Energy Weaknesses Trigger" type="self">
+	<effect type="trigger" spell="Random Energy Weaknesses" amount="1" requirebuffontrigger="1" requirebuffontriggername="Rippling Weakness"/>
+	<effect type="trigger" spell="Random Energy Weaknesses Trigger" amount="2" requirebuffontrigger="1" requirebuffontriggername="Rippling Weakness"/>
+	</spell>
+
+
+<spell name="Rippling Weakness" type="target">
+	<effect type="trigger" spell="Makeshift Bomb Center"/>
+	<buff usetimer="1" time="55" bad="1" self="1" smallicon="skills/magic_deform32.png" icon="skills/magic_deform64.png">
+		<description text="You've blown out your Arcane Capacitor, and it's leaking negative energies all over you! It needs time to repair itself, and until it does, you're going to be vulnerable to assorted and sundry energies!"/>
+		</buff>
+	<effect type="trigger" spell="No Arcane Charge For You! Trigger"/>
+	<effect type="trigger" spell="Random Energy Weaknesses Trigger"/>
+	</spell>
+
+<spell name="You're Borken, Homie!" type="self">
+	<!-- seriously, could this even work? This is no ordinary buff, people. - dgb --> 
+	<!--<effect type="removebuffbyname" name="Well Fed"/> 
+	<effect type="removebuffbyname" name="Fuelled by Booze"/> -->
+	<!--<effect type="drainCasterMana" amount="2"/>--> <!-- doesn't work? --> 
+	<effect type="drainMana" amount="7" /> <!-- this works. is percent -->
+	</spell>
+
+<spell name="Manafueled" type="self">
+	<buff usetimer="1" time="66" bad="1" self="1" smallicon="skills/magic_form32.png" icon="skills/magic_form64.png">
+		<!-- <description text="Your arcane capacitor has backwashed into your own aura, transforming you temporarily into a creature that consumes it's own mana, but cannot survive on food or (gulp) alcohol!"/> -->
+		<description text="Your arcane capacitor has backwashed into your own aura and now you're leaking mana all over. How embarrassing!"/>
+		</buff>
+	<effect type="dot" amount="66" spell="You're Borken, Homie!" requirebuff="1"/>
+	</spell>
+
+<spell name="Tick...tick..." type="target">
+	<effect type="trigger" amount="1" spell="Mass Destruction"/>
+	</spell> 
+
+<spell name="Uh Oh!" type="self">
+	<buff usetimer="1" time="3" bad="1" self="1" smallicon="skills/arcane_rift32.png" icon="skills/arcane_rift64.png">
+		<description text="Your arcane capacitor is cracked. You have about 2 seconds to fix it before it explodes in righteous (or rather, you know, conflagratory-and-blasting) fashion, taking out pretty much everything in your vicinity, possibly including yourself. Zodiacal wand? Potion of Purity? Arcane Capacitors are magic, after all, so any kind of curse-removal should do it..."/>
+		</buff>
+	<effect type="trigger" amount="4" spell="Tick...tick..." requirebuffontrigger="1" requirebuffontriggername="Uh Oh!" resistable="0" />
+	</spell>
+
+<spell name="Arcane Capacitor Backlash" type="self">
+	<effect type="triggerfromlist">
+		<option name="Capacitative Blowout"/>
+		<option name="Capacitative Blowout"/>
+		<option name="Capacitative Blowout"/>
+		<option name="Rippling Weakness"/>
+		<option name="Manafueled"/>
+		<option name="Uh Oh!"/>
+		</effect>
+	</spell>
+
+<!-- ARCANE HITS -->
+
+<spell name="Complete Arcane Fizzle" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="dizzy_noises" centerEffect="1"/>
+	</spell>
+
+<spell name="Wussy Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	</spell>
+
+<spell name="Lame Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	</spell>
+
+<spell name="Weak Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	</spell>
+
+<spell name="OK Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="knock" percent="20"/>
+	</spell>
+
+<spell name="Decent Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="knock" percent="34"/>
+	</spell>
+
+<spell name="Full-On Arcane Hit" type="target">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="knock" percent="50"/>
+	</spell>
+
+<spell name="Overcharged Arcane Hit" type="template" templateID="88" anchored="1">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="paralyze" turns="2" percent="34"/>
+	<effect type="knock" percent="50"/>
+	<effect type="trigger" spell="Arcane Capacitor Backlash" percent="5"/>
+	</spell>
+
+<spell name="Backlashing Arcane Hit" type="template" templateID="88" anchored="1">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="confuse" amount="6" percent="75"/>
+	<effect type="paralyze" turns="2" percent="34"/>
+	<effect type="knock" percent="50"/>
+	<effect type="trigger" spell="Arcane Capacitor Backlash" percent="40"/>
+	</spell>
+
+<spell name="Ludicrous Arcane Hit" type="template" templateID="89" anchored="1">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="confuse" amount="6"/>
+	<effect type="paralyze" turns="2" percent="50"/>
+	<effect type="knock" percent="75"/>
+	<effect type="trigger" spell="Arcane Capacitor Backlash" percent="75"/>
+	</spell>
+
+<spell name="Plaid Arcane Hit" type="template" templateID="602" anchored="1">
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="trigger" spell="Arcane Capacitor Damage Dealer"/>
+	<effect type="confuse" amount="6"/>
+	<effect type="paralyze" turns="2" percent="75"/>
+	<effect type="knock"/>
+	<effect type="trigger" spell="Arcane Capacitor Backlash"/>
+	</spell>
+
+<!-- ARCANE CHARGES --> 
+
+<spell name="Arcane Charge Fizzle" type="target" icon="skills/arcane_capacitor32.png">
+	<effect type="triggerfromlist">
+		<option name="Complete Arcane Fizzle"/>
+		<option name="Wussy Arcane Hit"/>
+		<option name="Lame Arcane Hit"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	</spell>
+
+<spell name="Arcane Charge Weak Attack" type="target" icon="skills/arcane_capacitor32.png">
+	<effect type="triggerfromlist">
+		<option name="Lame Arcane Hit"/>
+		<option name="Weak Arcane Hit"/>
+		<option name="OK Arcane Hit"/>
+		</effect> 
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	</spell>
+
+<spell name="Arcane Charge Attack" type="target" icon="skills/arcane_capacitor32.png">
+	<effect type="triggerfromlist">
+		<option name="OK Arcane Hit"/>
+		<option name="Decent Arcane Hit"/>
+		<option name="Full-On Arcane Hit"/>
+		</effect> 
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	</spell>
+
+<spell name="Arcane Charge Unstable Attack" type="target" icon="skills/arcane_capacitor32.png">
+	<effect type="triggerfromlist">
+		<option name="Full-On Arcane Hit"/>
+		<option name="Overcharged Arcane Hit"/>
+		<option name="Backlashing Arcane Hit"/>
+		</effect> 
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+	</spell>
+
+<spell name="Arcane Charge Overload Attack" type="target" icon="skills/arcane_capacitor32.png">
+	<effect type="damage" aethereal="1"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1"/>
+<effect type="triggerfromlist">
+		<option name="Backlashing Arcane Hit"/>
+		<option name="Ludicrous Arcane Hit"/>
+		<option name="Plaid Arcane Hit"/>
+		</effect> 
+	</spell>
+
+<spell name="No Charge DOT" type="self">
+	<effect type="dot" amount="6" self="1" affectsCaster="1" spell="No Arcane Charge For You!" resistable="0"/>
+</spell>
+
+	<!-- Arcane Capacitor buffs -->
+
+<spell name="Uncharged Arcane Capacitor" type="self" icon="skills/arcane_capacitor_charging32.png" >
+	<buff useTimer="1" time="1" attacks="1" allowStacking="0" removable="0" icon="skills/arcane_capacitor_charging64.png" smallicon="skills/arcane_capacitor_charging32.png">
+		<description text="You're imbuing your weapon with a maelstrom of magical energies. It's pretty weak at the moment. Wait a bit and it'll get stronger."/>
+		<targetHitEffectBuff percentage="100" name="Arcane Charge Fizzle" />
+		<halo name="sprites/sfx/chargeA/chargeA" first="0" framerate="120" num="6" />
+	</buff>
+	</spell>
+
+<spell name="Almost Charged Arcane Capacitor" type="self" icon="skills/arcane_capacitor_charging32.png" >
+	<buff useTimer="1" time="1" attacks="1" allowStacking="0" removable="0" icon="skills/arcane_capacitor_charging64.png" smallicon="skills/arcane_capacitor_charging32.png">
+		<description text="You've imbued your weapon with a potent maelstrom of random magical energies. Hit something with it, or wait a bit longer and it'll get to full charge."/>
+		<targetHitEffectBuff percentage="100" name="Arcane Charge Weak Attack" />
+		<halo name="sprites/sfx/chargeA/chargeA" first="0" framerate="90" num="6" />
+		</buff>
+	<effect type="removebuffbyname" name="Uncharged Arcane Capacitor"/>
+	</spell>
+
+<spell name="Charged Arcane Capacitor" type="self" icon="skills/arcane_capacitor32.png" >
+	<buff useTimer="1" time="1" attacks="1" allowStacking="0" removable="0" icon="skills/arcane_capacitor64.png" smallicon="skills/arcane_capacitor32.png">
+		<description text="You've imbued your weapon with a screaming maelstrom of random magical energies. Attack now! ( - Unless you want to risk powers you may not be able to contain.)"/>
+		<targetHitEffectBuff percentage="100" name="Arcane Charge Attack" />
+		<halo name="sprites/sfx/chargeB/chargeB" first="0" framerate="100" num="6" />
+		</buff>
+	<effect type="removebuffbyname" name="Almost Charged Arcane Capacitor"/>
+	</spell>
+
+<spell name="Unstable Arcane Capacitor" type="self" icon="skills/arcane_capacitor_overload32.png" >
+	<buff useTimer="1" time="1" attacks="1" allowStacking="0" removable="0" icon="skills/arcane_capacitor_overload64.png" smallicon="skills/arcane_capacitor_overload32.png">
+		<description text="You've imbued your weapon with an unstable, overcharged maelstrom of random magical energies. Hit something with it now and hope you survive the impact!"/>
+		<targetHitEffectBuff percentage="100" name="Arcane Charge Unstable Attack" />
+		<halo name="sprites/sfx/chargeB/chargeB" first="0" framerate="80" num="6" />
+		</buff>
+	<effect type="removebuffbyname" name="Charged Arcane Capacitor"/>
+	</spell>
+
+<spell name="Overloading Arcane Capacitor" type="self" icon="skills/arcane_capacitor_overload32.png" >
+	<buff useTimer="1" time="1" attacks="1" allowStacking="0" removable="0" icon="skills/arcane_capacitor_overload64.png" smallicon="skills/arcane_capacitor_overload32.png">
+		<description text="You've imbued your weapon with an out-of-control maelstrom of random magical energies! Hit something with it and risk killing it AND you -- or just wait and you'll surely explode."/>
+		<targetHitEffectBuff percentage="100" name="Arcane Charge Overload Attack" />
+		<halo name="sprites/sfx/chargeC/chargeC" first="0" framerate="60" num="6" />
+		</buff>
+	<effect type="removebuffbyname" name="Unstable Arcane Capacitor"/>
+	</spell>
+
+<spell name="Massive Arcane Overload" type="self">
+	<effect type="trigger" spell="Rippling Weakness"/>
+	<effect type="trigger" spell="Manafueled"/>
+	<effect type="trigger" spell="Uh Oh!"/>
+	</spell>
+
+<spell name="Arcane Capacitor" type="self" downtime="12" icon="skills/arcane_capacitor_alt32.png" >
+	<buff useTimer="1" time="6" allowStacking="0" removable="0" icon="skills/arcane_capacitor_alt64.png" smallicon="skills/arcane_capacitor_alt32.png">
+		<description text="You've started a charging process that will reach a frightfully dangerous magnitude of energies. Be sure to use it before your limit is reached."/>
+		<targetHitEffectBuff percentage="100" name="No Charge DOT"/>
+		</buff>
+	<effect type="trigger" amount="0" spell="Arcane Flux" />
+	</spell>
+
+<spell name="Arcane Flux" type="self" >
+	<effect type="trigger" amount="1" spell="Uncharged Arcane Capacitor" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" />
+	<effect type="trigger" amount="2" spell="Almost Charged Arcane Capacitor" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" />
+	<effect type="trigger" amount="3" spell="Charged Arcane Capacitor" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" />
+	<effect type="trigger" amount="4" spell="Unstable Arcane Capacitor" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" />
+	<effect type="trigger" amount="5" spell="Overloading Arcane Capacitor" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" />
+	<effect type="trigger" amount="6" spell="Massive Arcane Overload" requirebuffontrigger="1" requirebuffontriggername="Arcane Capacitor" /> 
+	<effect type="trigger" amount="6" spell="No Arcane Charge For You!" resistable="0"/>
+	</spell>
+
+<!-- God damn, that's a lot of code for something that essentially just makes you hit harder. :D --> 
+<!-- Oh, for the simple days when one spell was one spell - dgb -->
+
+<spell name="Crystallize Mana" type="targetfloor" mine="1" mineradius="1" mineSpriteDrawOrder="0" minesprite="dungeon/healing_crystals.png" icon="skills/spells/crystal_healing32.png">
+  <effect type="spellpoints" amount="3" /> 
+  <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" centerEffect="0" /> 
+  <description text="You just blew through so much mana that some of it got left around you on the floor." /> 
+  </spell>
+
+<spell name="Mana Burst" type="template" templateID="08">
+  <effect type="damage" aethereal="4" aetherealF=".4" conflagratory="2" conflagratoryF=".2" voltaic="2" voltaicF=".2" /> 
+  <effect type="trigger" percent="10" spell="Crystallize Mana" /> 
+  <anim sprite="sprites/sfx/energyring/energyring" frames="8" sfx="magic_damage" /> 
+  </spell>
+
+<spell name="Mana Bomb 1" type="template" anchored="1" templateID="20">
+  <effect type="trigger" percent="80" spell="Mana Burst" /> 
+  <anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" sfx="choir" /> 
+  </spell>
+
+<spell name="Mana Bomb 2" type="template" anchored="1" templateID="21">
+  <effect type="trigger" percent="60" spell="Mana Burst" /> 
+  <anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" sfx="choir" /> 
+  </spell>
+
+<spell name="Mana Bomb 3" type="template" anchored="1" templateID="22">
+  <effect type="trigger" percent="40" spell="Mana Burst" /> 
+  <anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" sfx="choir" /> 
+  </spell>
+
+<spell name="Manacalypse Fizzle" type="self" >
+	<anim sprite="sprites/sfx/blastA/blastA" frames="4" sfx="hex_missile" framerate="200" centerEffect="0"/>
+	<effect type="trigger" spell="Mana Bomb 1" amount="0" /> 
+	<effect type="spellpoints" amount="-999" /> 
+	</spell>
+
+<spell name="Manacalypse Effect" type="self" >
+	<anim sprite="sprites/sfx/blastA/blastA" frames="4" sfx="magic" framerate="200" centerEffect="0"/>
+	<effect type="trigger" spell="Mana Bomb 1" amount="0" /> 
+	<effect type="trigger" spell="Mana Bomb 2" amount="0" /> 
+	<effect type="trigger" spell="Mana Bomb 3" amount="0" /> 
+	<effect type="spellpoints" amount="-999" /> 
+	</spell>
+  
+<spell name="Manacalypse" downtime="384" type="self" icon="skills/manacalypse32.png" wand="0">
+	<anim sprite="sprites/sfx/evil_pact/evil_pact" frames="16" sfx="learning a new spell" framerate="80" centerEffect="1" />
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Essence of Battle" spell="Manacalypse Effect"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Essence of Battle" spell="Manacalypse Fizzle"/>
+	<description text="You can unleash all of your mana built up in your Essence of Battle in a giant flood, dealing terrifying amounts of damage to everything in your vicinity. ... be sure that the Essence of Battle is active when casting this spell or else you're in for a disappointment." />
+	</spell>
+
+<!-- Fax traps & etc -->
+
+<!-- Monster Stuff -->
+<spell name="Corruption Missile" type="missile" >
+	<anim sprite="sprites/sfx/acid_bolt/acid_bolt" frames="3" framerate="80" sfx="missile" />
+	<effect type="corrupt" amount="1"/>
+	<description text="Used by diggle archmagi to grind your equipment to dust." monsterText="corrupts your equipment from afar!"/>
+	<ai hint="target"/>
+	</spell>
+
+<!-- this is a cosmetic tweak for the acid flask spell of the diggle chemist -->
+<spell name="Diggle Acid Flask" type="missile" >
+	<anim sprite="sprites/sfx/canister_toss/canister_toss" frames="8" framerate="50" centerEffect="1"/>
+	<impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="vasebreak" centerEffect="0"/>
+	<effect type="trigger" spell="Strong Acid Pool" />
+	<effect type="trigger" spell="Gas Canister Puff" />
+	</spell>
+
+<spell name="Diggle Rocket Jump Blast" type="self">
+   <effect type="damage" blasting="15" blastingF="1" secondaryScale="10" affectsCaster="1"/>
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+   <effect type="trigger" spell="Rocket Blast2" />
+   <effect type="trigger" spell="Rocket Blast3" />
+   <effect type="suction" />
+   <effect type="trigger" amount="1" spell="Diggle Jump Impact" />
+   <ai hint="buff"/>
+</spell> <!-- cosmetic -->
+
+<spell name="Diggle Jump Impact" type="self" >
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="blast" centerEffect="0"/>
+   </spell>
+
+<!-- Trap Stuff -->
+<spell name="Rusty Caltrop Hit" type="target" >
+	<effect type="damage" piercing="4" toxic="4" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Iron Caltrop Hit" type="target" >
+	<effect type="damage" piercing="10" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Plastic Caltrop Hit" type="target" >
+	<effect type="damage" piercing="14" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Steel Caltrop Hit" type="target" >
+	<effect type="damage" piercing="18" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Cobalt Caltrop Hit" type="target" >
+	<effect type="damage" piercing="16" toxic="8" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Charged Aethereal Caltrop Hit" type="target" >
+	<effect type="damage" piercing="5" voltaic="10" aethereal="10" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Quantum Caltrop Hit" type="target" >
+	<effect type="damage" piercing="5" existential="20" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Dragonsbreath Caltrop Hit" type="target" >
+	<effect type="damage" piercing="10" conflagratory="20" affectsCaster="1" />
+	<anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="100" sfx="blade" />
+	</spell>
+
+<spell name="Rusty Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Rusty Caltrops"/>
+        <option name="Rusty Caltrops"/>
+        <option name="Rusty Caltrops"/>
+        <option name="Rusty Caltrops"/>
+        <option name="Strong Iron Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Rusty Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Iron Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Rusty Caltrops"/>
+        <option name="Strong Iron Caltrops"/>
+        <option name="Strong Iron Caltrops"/>
+        <option name="Strong Iron Caltrops"/>
+        <option name="Plastic Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Iron Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Plastic Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Strong Iron Caltrops"/>
+        <option name="Plastic Caltrops"/>
+        <option name="Plastic Caltrops"/>
+        <option name="Plastic Caltrops"/>
+        <option name="Steel Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Plastic Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Steel Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Plastic Caltrops"/>
+        <option name="Steel Caltrops"/>
+        <option name="Steel Caltrops"/>
+        <option name="Steel Caltrops"/>
+        <option name="Cobalt Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Steel Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Cobalt Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Steel Caltrops"/>
+        <option name="Cobalt Caltrops"/>
+        <option name="Cobalt Caltrops"/>
+        <option name="Cobalt Caltrops"/>
+        <option name="Charged Aethereal Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Cobalt Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Charged Aethereal Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Cobalt Caltrops"/>
+        <option name="Charged Aethereal Caltrops"/>
+        <option name="Charged Aethereal Caltrops"/>
+        <option name="Charged Aethereal Caltrops"/>
+        <option name="Quantum Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Charged Aethereal Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Quantum Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+        <option name="Charged Aethereal Caltrops"/>
+        <option name="Quantum Caltrops"/>
+        <option name="Quantum Caltrops"/>
+        <option name="Quantum Caltrops"/>
+        <option name="Dragonsbreath Caltrops"/>
+        </effect>
+    <effect type="trigger" spell="Quantum Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+ 
+<spell name="Dragonsbreath Caltrop Eruption" type="template" templateID="10" >
+    <effect type="spawnitemfromlist">
+		<option name="Quantum Caltrops"/>
+		<option name="Quantum Caltrops"/>
+		<option name="Quantum Caltrops"/>
+		<option name="Dragonsbreath Caltrops"/>
+		<option name="Dragonsbreath Caltrops"/>
+		<option name="Dragonsbreath Caltrops"/>
+		<option name="Dragonsbreath Caltrops"/>
+		<option name="Dragonsbreath Caltrops"/>
+		<!--<option name="Dragonsbreath Caltrop Eruptor"/> NOOOOOOO -->
+        </effect>
+    <effect type="trigger" spell="Dragonsbreath Caltrop Hit" />
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="bampf" />
+    </spell>
+
+<!-- Last minute additions -->
+
+<!-- Thank you Fax for making this spell for r_b_bergstrom to put in an airlock. -->
+<spell name="Weak Asphyx Cloud"
+      type="targetfloor"
+      icon="skills/spells/conjure_miasma32.png"
+      mineTimer="12"
+      mineUseGlints="1"
+      mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/impact_asphyxiative/impact_asphyxiative"
+      mineSpritePNGFirst="0"
+      mineSpritePNGNum="5"
+      mineSpritePNGRate="140"
+      mine="1"
+      mineradius="2"
+      minePermanent="1" >
+	<effect type="damage" asphyxiative="3" affectscaster="1" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" />
+	<ai hint="target"/>
+	</spell>
+	
+<!-- This will replace the acid burn effect of Alchemical ooze (it was a placeholder) with a more flavor relevant effect -->
+<spell name="Ooze Poisoning" type="target" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="darkmagic" />
+	<buff useTimer="1" time="20" self="1" allowstacking="1" icon="skills/spells/weakness64.png" smallicon="skills/spells/weakness32.png" bad="1" >
+		<secondarybuff id="13" amount="-15" /> <!-- life regen --> 
+		<secondarybuff id="0" amount="-5" /> <!-- life --> 
+		<description text="This stuff is quite toxic. It will not cause you to mutate and get superpowers. Seriously, stop drinking it." />
+	</buff>
+   <effect type="dot" spell="Minor Poison" amount="20" />
+   </spell>
+
+<spell name="Fungal Death Spawn" type="self" icon="skills/rogue/skill_mushroom_lore2_32.png" >
+	<effect type="triggerfromlist">
+	<option name="Sporification" />
+	<option name="Fungling" />
+	</effect>
+	</spell>
+	
+</spellDB>
+ 

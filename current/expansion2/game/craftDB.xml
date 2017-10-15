@@ -1,0 +1,277 @@
+<!-- Dredmor free DLC crafts -->
+
+<craftDB>
+	
+<craft hidden="0">
+	<output skill="2" name="Sonic Wand" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Brass Ingot"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="3" name="Pearlescent Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Electrum Ingot" />
+	<input name="Black Pearl" />
+	</craft>
+<!-- this totally needs art 
+<craft hidden="1">
+	<output skill="3" name="Wand of Van de Graaff" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Aluminum Ingot" />
+	<input name="Copper Wire" />
+	<input name="Voltaic Cell" />
+	</craft>
+-->
+ 
+<craft>
+	<output skill="6" name="Wand of Transmogrification" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Steel Ingot" />
+	<input name="Turquoise" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Clockwork Ravager" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Chainaxe" />
+	<input name="Clockwork Chainaxe" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Clockwork Rail Launcher" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Bolt-thrower" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Clockwork Thunderclap" />
+	<tool tag="tinkerer"/>
+	<input name="Great Warhammer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="2" name="Steam Rocket Bolt" amount="1"/>
+	<output skill="4" name="Steam Rocket Bolt" amount="2"/>
+	<output skill="6" name="Steam Rocket Bolt" amount="3"/>
+	<output skill="8" name="Steam Rocket Bolt" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Black Powder" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft hidden="1" >
+	<output skill="1" name="Clockwork Grappling Bolt" amount="1"/>
+	<output skill="2" name="Clockwork Grappling Bolt" amount="2"/>
+	<output skill="3" name="Clockwork Grappling Bolt" amount="3"/>
+	<output skill="4" name="Clockwork Grappling Bolt" amount="4"/>
+	<output skill="5" name="Clockwork Grappling Bolt" amount="5"/>
+	<output skill="6" name="Clockwork Grappling Bolt" amount="6"/>
+	<output skill="7" name="Clockwork Grappling Bolt" amount="7"/>
+	<output skill="8" name="Clockwork Grappling Bolt" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Ingot" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+<!-- 
+<craft hidden="1" >
+	<output skill="3" name="Incendiary Grenade" amount="1"/>
+	<output skill="5" name="Incendiary Grenade" amount="2"/>
+	<output skill="7" name="Incendiary Grenade" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Ingot" />
+	<input name="Powdered Aluminum" />
+	<input name="Rust" />
+	<input name="Brass Mechanisms" />
+	</craft>	
+	-->
+	
+<craft hidden="1" >
+	<output skill="3" name="Clockwork Sawblade" amount="1"/>
+	<output skill="5" name="Clockwork Sawblade" amount="2"/>
+	<output skill="7" name="Clockwork Sawblade" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="3" name="Clockwork Drill Bomb" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Drill Bolt" />
+	<input name="Copper Wire" />
+	<input name="Brass Mechanisms" />
+	<input name="Iron Bomb" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Clockwork Deflector" />
+	<tool tag="tinkerer"/>
+	<input name="Heater Shield" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	</craft>
+	
+<craft hidden="1" >
+	<output skill="5" name="Clockwork Drill Lance" />
+	<tool tag="tinkerer"/>
+	<input name="Naginata" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Clockwork Tesla Rod" />
+	<tool tag="tinkerer"/>
+	<input name="Fine Steel Mace" />
+	<input name="Voltaic Cell" />
+	<input name="Copper Wire" />
+	<input name="Copper Wire" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="5" name="Clockwork Chainsword" />
+	<tool tag="tinkerer"/>
+	<input name="Fine Steel Sword" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<craft hidden="1">
+	<output name="Clockwork Actuators" skill="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Pants of Shiny Steel Plates"/>
+	<input name="Spring-loaded Power Core"/>
+	<input name="Voltaic Cell"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+
+<craft hidden="1">
+	<output name="Clockwork Regulator Belt" skill="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Girdle of Shiny Steel Plates"/>
+	<input name="Copper Cable Belt"/>
+	<input name="Voltaic Cell"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="7" name="Imperial Clockwork Plate" />
+	<tool tag="tinkerer"/>
+	<input name="Full Plate Armour" />
+	<input name="Brass Ingot" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+   </craft>
+
+<craft hidden="1">
+	<output skill="6" name="Imperial Clockwork Helm" />
+	<tool tag="tinkerer"/>
+	<input name="Knight's Helmet" />
+	<input name="Tinkerer's Goggles" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Brass Ingot" />
+   </craft>
+
+<craft hidden="1">
+	<output skill="6" name="Mechanothaumic Rebreather" />
+	<tool tag="tinkerer"/>
+	<input name="Aetheric Power Cylinder" />
+	<input name="Tinkerer's Goggles" />
+	<input name="Emerald" />
+	<input name="Brass Ingot" />
+   </craft>
+	
+<craft hidden="0">
+	<output skill="3" name="Copper Cable Belt"/>
+	<tool tag="tinkerer"/>
+	<input name="Copper Ingot"/>
+	<input name="Copper Wire"/>
+	<input name="Copper Wire"/>
+	<input name="Copper Wire"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Iron Ingot" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Scrap Iron"/>
+   <input name="Scrap Iron"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Steel Ingot" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Scrap Steel"/>
+   <input name="Scrap Steel"/>
+	</craft>
+
+<craft>
+   <output skill="1" name="Copper Ingot" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Copper Scrap Piping"/>
+   <input name="Copper Scrap Piping"/>
+	</craft>
+
+<craft>
+	<output skill="1" name="Aluminum Ingot" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Aluminum Scrap Piping"/>	
+	<input name="Aluminum Scrap Piping"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="4" name="Clockwork Orb" amount="1"/>
+	<tool tag="tinkerer" />
+	<input name="Cracked Orb" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	</craft>
+
+<craft hidden="0">
+	<output skill="1" name="Salt" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Alchemical Ooze" />
+	<input name="Alchemical Ooze" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Saltpetre" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Alchemical Ooze" />
+	<input name="Alchemical Ooze" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Brimstone" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Alchemical Ooze" />
+	<input name="Alchemical Ooze" />
+	</craft>
+<craft hidden="0">
+	<output skill="1" name="Plastic Ingot" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Alchemical Ooze" />
+	<input name="Alchemical Ooze" />
+	</craft>
+
+</craftDB>
