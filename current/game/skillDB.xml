@@ -544,19 +544,19 @@
   <!-- Mathemagical Formulae -->
 <ability name="Froda's Jump Discontinuity" icon="skills/spells/blink64.png" skill="16" level="0">
   <spell name="Froda's Jump Discontinuity"/>
-  <description text="Этот прототип заклинания телепортации был придуман Фродой как часть колдовской диссертации, 'Исследование Сверхпланарного импульса при столкновении чудес в диапазоне 200 GeV'. Its effects are considered unstable. Randomly teleports you."/>
+  <description text="Этот прототип заклинания телепортации был придуман Фродой как часть колдовской диссертации – 'Исследование Сверхпланарного импульса при столкновении чудес в диапазоне 200 GeV'. Результат действия – телепортация в случайное место."/>
   </ability>
 <ability name="Beklam's Diminuating Calculus" icon="skills/spells/weakness64.png" skill="16" level="1">
   <spell name="Beklam's Diminuating Calculus"/>
-  <description text="Вы можете вычесть саму жизнь? Виликий Беклам, к его несчастью, придумал способ. Это проклятие сильно истощает силы врага."/>
+  <description text="Вы можете вычесть саму жизнь? Великий Беклам, к его несчастью, придумал способ. Это проклятие сильно истощает силы врага."/>
   </ability>
 <ability name="Curse of the Golden Ratio" icon="skills/spells/curse_of_midas64.png" skill="16" level="2">
   <spell name="Curse of the Golden Ratio"/>
-  <description text="Проклятие Золотого Сечения впервые было использовано великим Матемагиком Иксклидом для превращения своих врагов в очень полезное и нужное золото. Просто попробуйте чтобы убедиться. Работает как и описано. Довольно выгодное проклятие."/>
+  <description text="Проклятие Золотого Сечения впервые было использовано великим Матемагиком Иксклидом для превращения своих врагов в очень полезное и нужное золото. Не верите? Попробуйте сами. Работает как и описано. Довольно выгодное проклятие."/>
   </ability>
 <ability name="Zenzizenzizenzic" icon="skills/spells/zenziz64.png" skill="16" level="3">
   <spell name="Zenzizenzizenzic"/>
-  <description text="Увеличение собственной магической силы это просто правильное применение функции к магической силе. Эффект является накапливаемым."/>
+  <description text="Увеличить магическую силу можно применив к ней простую функцию. Эффект является накапливаемым."/>
   </ability>
 <ability name="Xeuclid's Translation" icon="skills/spells/zephyric_transport64.png" skill="16" level="4">
   <spell name="Xeuclid's Translation"/>
@@ -571,22 +571,22 @@
   
 <ability name="Narcosomatic Induction" icon="skills/spells/sleep64.png" skill="17" level="0">
   <spell name="Narcosomatic Induction"/>
-  <description text="Всем спать. Погружает врага в слегка болезненный, удушающий сон."/>
+  <description text="Погружает врага в слегка болезненный, удушающий сон. Всем спать."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Psychokinetic Shove" icon="skills/spells/psychokinetic_shove64.png" skill="17" level="1">
   <spell name="Psychokinetic Shove"/>
-  <description text="Расступитесь. Используй мощную силу, чтобы оттолкнуть врагов (и любые вещи) от себя."/>
+  <description text="Мощный поток псионической энергии раскидывает все вокруг вас."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Crystal Healing" icon="skills/spells/crystal_healing64.png" skill="17" level="2">
   <spell name="Crystal Healing"/>
-  <description text="Исцеляйте себя энергией кристаллов. Оооооох! Наступите на блестяшку, чтобы насладиться целебным эффектом."/>
+  <description text="Исцелите себя энергией кристаллов. Оооооох! Наступите на блестяшку, чтобы насладиться целебным эффектом."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <ability name="Nerve Staple" icon="skills/spells/nerve_staple64.png" skill="17" level="3">
   <spell name="Nerve Staple"/>
-  <description text="Наносит калечащий экзистенциальный урон одному существу. Неосторожное использование заклинания может спровоцировать экономические санкции."/>
+  <description text="Наносит большой экзистенциальный урон одному существу. Неосторожное использование заклинания может спровоцировать экономические санкции."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 <!--
@@ -602,7 +602,7 @@
   </ability>
 <ability name="Unconditional Love" icon="skills/spells/unconditional_love64.png" skill="17" level="5">
   <spell name="Unconditional Love"/>
-  <description text="Магия очарования заставляет монстра забыть, что он злой и стать вашим приятелем ... на какое-то время. Ждите удар в спину, после того как он придет в себя ."/>
+  <description text="Магия очарования заставляет монстра забыть, что он злой и стать вашим приятелем ... на какое-то время. Но ждите удар в спину, после того как он придет в себя."/>
   <secondarybuff id="11" amount="1"/>
   </ability>
 

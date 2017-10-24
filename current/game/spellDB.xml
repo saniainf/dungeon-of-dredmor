@@ -1251,7 +1251,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="blink" self="1"/>  
    <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
    <!-- blinks: note that an animation is also built into player sprite -->
-   <description text="This prototype teleportation spell was developed by Froda as part of a wizarding thesis project, 'A Study of Extra-planar Momentum in the 200 GeV Thaumaturgen Collision Range'. Its effects are considered unstable."/>
+   <description text="Этот прототип заклинания телепортации был придуман Фродой как часть колдовской диссертации – 'Исследование Сверхпланарного импульса при столкновении чудес в диапазоне 200 GeV'. Результат действия – телепортация в случайное место."/>
    <ai hint="self"/>
    </spell>
   
@@ -1275,14 +1275,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="2" amount="-2"/> <!-- melee power -->
       <secondarybuff id="0" amount="-3"/> <!-- life -->
       </buff>
-   <description text="Can you subtract life itself? The Great Beklam discovered a way, much to his undoing. Curses an enemy, depleting their strength, agility, and life-force itself."/>
+   <description text="Вы можете вычесть саму жизнь? Великий Беклам, к его несчастью, придумал способ. Это проклятие сильно истощает силы врага."/>
    </spell>	
 		
   <!-- a nice glinting field effect would be quite appropriate for this spell -->
 <spell name="Curse of the Golden Ratio" type="target"  icon="skills/spells/curse_of_midas32.png">
 	<requirements mp="24" savvyBonus="0.15" mincost="10"/>
 	<effect type="dot" spell="Midas" amount="6" />
-	<description text="The curse of the Golden ratio was first used by the great Mathemagician Xeuclid to convert the flesh of his enemies into useful, useful gold. You just have to keep poking to be sure it takes."/>
+	<description text="Проклятие Золотого Сечения впервые было использовано великим Матемагиком Иксклидом для превращения своих врагов в очень полезное и нужное золото. Не верите? Попробуйте сами."/>
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="100" sfx="ping" centerEffect="1"/>   
    </spell>
 
@@ -1304,11 +1304,11 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="3" amount="3"/> <!-- Magic Power -->
 		<secondarybuff id="14" amount="1"/> <!-- mp regen -->
       </buff>
-	<description text="The enhancement of one's own magical power is simply a function of correctly applying magical power. This effect can be combined with itself only three times, though we have top men working on breaking the fourth wall. It runs out after a time and drains your mana slightly." />
+	<description text="Увеличить магическую силу можно применив к ней простую функцию. Эффект складывается, но только три раза. Хотя есть умники пытающиеся разрушить четвертую стену. Через некоторое время эффект спадает." />
    </spell>
 <spell name="Xeuclid's Translation" type="targetemptyfloor" icon="skills/spells/zephyric_transport32.png">
 	<requirements mp="20" savvyBonus="0.35" mincost="8" />
-	<description text="A more refined (read: accurate) but more costly version of the Jump Discontinuity. We are assured that flesh-eating teleportation worms do not really exist."/>
+	<description text="Усовершенствованная (точная) но более сложная версия Jump Discontinuity Фроды. Мы гарантируем, что плотоядные телепортационные черви это выдумка."/>
 	<effect type="teleport"/>
 	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
    </spell>
@@ -1329,7 +1329,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	</buff>
 	<effect type="dot" amount="10" spell="Recurse Hit" requirebuff="1" />
 	<effect type="dot" amount="6" spell="Mini Recursive Curse" requirebuff="1" />
-	<description text="This is the Curse that keeps on Cursing!" />
+	<description text="Это Проклятие вызывающие Проклятие!" />
    </spell>
 <spell name="Mini Recursive Curse" type="target">
 	<buff useTimer="1" time="10" 
@@ -1357,7 +1357,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="sleep" />
    <requirements mp="5" savvyBonus="0.15" mincost="2" />
    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="induction" />
-   <description text="Sleep, now. Sends an enemy into relatively blissful slumber with a painful blast of tiredness." />
+   <description text="Погружает врага в слегка болезненный, удушающий сон. Всем спать." />
    </spell>
 <spell name="Psychokinetic Shove" type="template" templateID="11" anchored="0" icon="skills/spells/psychokinetic_shove32.png" wand="1">
 	<requirements mp="5" savvyBonus="0.20" mincost="1" />
@@ -1365,14 +1365,14 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="damage" blasting="2" blastingF="0.15" />
 	<effect type="knock" amount="3" />
 	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="psychic_shove" />
-	<description text="Shove, now. Pushes enemies (and other things) around."/>
+	<description text="Мощный поток псионической энергии раскидывает все вокруг вас."/>
    </spell>
 <!-- needs a WHOM sound -->
 <spell name="Crystal Healing" type="targetfloor" mine="1" mineradius="2" mineSpriteDrawOrder="0" minesprite="dungeon/healing_crystals.png" icon="skills/spells/crystal_healing32.png">
    <requirements mp="14" savvyBonus="0.30" mincost="3" />
    <effect type="heal" amount="4" sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" />
    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" centerEffect="0"/>
-   <description text="Lays magic crystals on the floor which release healing magic when they're stepped on. Ooooh."/>
+   <description text="Раскидывает на полу магически кристаллы. Если на них наступить, они вас вылечат."/>
    <ai hint="ally"/>
    </spell>
    <!-- Additional shimmering effect would not be out of place. -->
@@ -1380,7 +1380,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="10" savvyBonus="0.3" mincost="5" />
 	<effect type="damage" conflagratory="3" conflagratoryF="0.75" affectscaster="1" sfx="magic_close"/>
 	<anim sprite="sprites/sfx/fireburst/fireburst" frames="7" sfx="flame" framerate="90"  centerEffect="0" />    
-	<description text="You're a firestarter, a terrific firestarter. Blasts the target with prodigious fire." />
+	<description text="Вы Поджигатель, злостный поджигатель. Яростный огонь охватывает вашу цель." />
    <effect type="trigger" spell="Fire 1" />
    </spell>
 
@@ -1397,7 +1397,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <secondarybuff id="11" amount="-10"/> <!-- resist -->
       <resistbuff existential="20" />
       </buff>
-   <description text="Deals crippling existential damage to one being. Indiscreet use of this spell may provoke economic sanctions." />
+   <description text="Наносит большой экзистенциальный урон одному существу. Неосторожное использование заклинания может спровоцировать экономические санкции." />
    </spell>
 
 <spell name="Unconscious Precognition" type="self" icon="skills/spells/unconscious_precognition32.png" wand="0">
@@ -1408,12 +1408,12 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="8" amount="5"/> <!-- Counter -->
 		<secondarybuff id="9" amount="10"/>  <!-- EDR -->
 	</buff>
-	<description text="You move like they do. Your agility is greatly enhanced - until you get hit, and sense gets knocked back into you." />
+	<description text="Вы двигаетесь так же, как они. Ваша ловкость увеличена. Если по вам попадут, вы вернетесь в реальность." />
    </spell>
 <spell name="Unconditional Love" type="target" icon="skills/spells/unconditional_love32.png" >
 	<requirements mp="32" savvyBonus="0.48" />
 	<effect type="charm" turns="24"/>
-	<description text="Magically charms a monster into giving up their evil ways to become your buddy ... for a short time. Then they just stab you in the back again." />
+	<description text="Магия очарования заставляет монстра забыть, что он злой и стать вашим приятелем ... на какое-то время. Но ждите удар в спину, после того как он придет в себя." />
 	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir"/>
    </spell>
 	
