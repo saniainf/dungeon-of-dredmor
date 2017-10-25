@@ -610,11 +610,11 @@
 
 <ability name="Deathly Hex" icon="skills/spells/deathly_hex64.png" skill="18" level="0">
   <spell name="Deathly Hex"/>
-  <description text="Атакуйте врагов некромантской Стрелой Зла источая их жизненные силы, если вы достаточно сильны. Будьте осторожны - использование этого заклинания может вызвать проклятия Выжигание-Нервов, Разрушительные-Страдания или Смертельные-Фиговины."/>
+  <description text="Поразите врага Стрелой Зла некроманта, если вы достаточно сильны. Будьте осторожны - использование этого заклинания может вызвать проклятия: Выжигание-Нервов, Болезненные-Страдания или Смертельные-Фиговины."/>
   </ability>
 <ability name="Nightmare Curse" icon="skills/spells/nightmare_curse64.png" skill="18" level="1">
   <spell name="Nightmare Curse"/>
-  <description text="Опасное кошмарное проклятие Шобастиана погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто которые ловко заменяют их мысли Дьявольскими Пчелами. Предостережении: вызов Дьявольских Пчел может вызвать токсичное отравление."/>
+  <description text="Опасное, кошмарное проклятие Шобастиана, погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто, которые ловко заменяют их мысли Дьявольскими Пчелами. Предостережение: вызов Дьявольских Пчел может вызвать токсичное отравление."/>
   </ability>
 <ability name="Mark of Chthon" icon="skills/spells/mark_of_chthon64.png" skill="18" level="2">
   <spell name="Mark of Chthon"/>
@@ -627,12 +627,12 @@
   </ability>
 <ability name="Eldritch Inhabitation" icon="skills/spells/eldritch_pillar64.png" skill="18" level="4">
   <spell name="Eldritch Inhabitation"/>
-  <description text="Это заклинание заключает в теле врага существо из другой реальности; оно будет рваться назад с предсказуемо губительным результатом для носителя."/>
+  <description text="Это заклинание заключает в тело цели существо из другой реальности. Существо будет пытаться вырваться, с предсказуемо губительным результатом для носителя."/>
   <resistbuff necromantic="1"/>
   </ability>
 <ability name="Tenebrous Rift" icon="skills/spells/tenebrous_rift64.png" skill="18" level="5">
   <spell name="Tenebrous Rift"/>
-  <description text="Открывает ужасающий разлом в ад поглощающий все около себя."/>
+  <description text="Открывает ужасающий разлом в бездну поглощающий все вокруг себя."/>
   <resistbuff necromantic="1"/>
   </ability>	
 

@@ -1408,7 +1408,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="8" amount="5"/> <!-- Counter -->
 		<secondarybuff id="9" amount="10"/>  <!-- EDR -->
 	</buff>
-	<description text="Вы двигаетесь так же, как они. Ваша ловкость увеличена. Если по вам попадут, вы вернетесь в реальность." />
+	<description text="Вы двигаетесь так же, как они. Ваша ловкость увеличена. Но если по вам попадут, вы вернетесь в реальность." />
    </spell>
 <spell name="Unconditional Love" type="target" icon="skills/spells/unconditional_love32.png" >
 	<requirements mp="32" savvyBonus="0.48" />
@@ -1517,7 +1517,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="6" savvyBonus="0.30" mincost="2" />
    <effect type="drain" necromanticF="0.3" sfx="fleshbore" />
 	<effect type="damage" necromantic="6" necromanticF="0.1" affectscaster="1"/>
-	<description text="Blast your enemies to necromantic ablution with the Bolt of Evil. Be careful, though - use of this spell curses the caster with Nerve-Searing, Pain-Wracking Death-Thingies."/>
+	<description text="Поразите врага Стрелой Зла некроманта. Будьте осторожны - использование этого заклинания может вызвать проклятия: Выжигание-Нервов, Болезненные-Страдания или Смертельные-Фиговины."/>
 	<anim sprite="sprites/sfx/hex_orb/hex_orb" frames="6" framerate="100" sfx="hex_missile" />
 	<impact sprite="sprites/sfx/curse_loop/curse_loop" frames="7" framerate="100" sfx="magic_damage" />
 	<effect type="trigger" amount="3" spell="Minor Blood Debt" />
@@ -1527,7 +1527,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Nightmare Curse" type="target" icon="skills/spells/nightmare_curse32.png" wand="1" >
 	<requirements mp="13" savvyBonus="0.28" mincost="5" />
 	<effect type="damage" necromantic="1" necromanticF="0.15" />
-	<description text="The dreaded Shobastian Nightmare Curse causes your enemies to fall into a blissful slumber. Meanwhile, their brains are beset by Eldritch Things who cunningly replace their internal thinkmeats with the Bees of Evil. Caution: exposure to Bees of Evil may prove to have toxic side effects to the caster."/>
+	<description text="Опасное, кошмарное проклятие Шобастиана, погружает ваших врагов в блаженный сон. Тем временем, их мозгом завладевают Жуткие Нечто, которые ловко заменяют их мысли Дьявольскими Пчелами. Предостережение: вызов Дьявольских Пчел может вызвать токсичное отравление."/>
 	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="naughty" centerEffect="1"/>
 	<buff useTimer="1" time="8" self="0" stacksize="1" allowstacking="0" icon="skills/spells/nightmare_curse64.png" smallicon="skills/spells/nightmare_curse32.png" bad="1" >
 		<halo name="sprites/sfx/curse_loop/curse_loop" framerate="80" first="0" num="7" />
@@ -1542,12 +1542,12 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    </spell>
 
 <spell name="Nightmare" type="target" >
-  <anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="naughty" centerEffect="1"/>
-   <effect type="damage" asphyxiative="3" asphyxiativeF="0.15" affectsCaster="1" />
-   <effect type="sleep" />
-   </spell>
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="naughty" centerEffect="1"/>
+	<effect type="damage" asphyxiative="3" asphyxiativeF="0.15" affectsCaster="1" />
+	<effect type="sleep" />
+</spell>
 
-  <spell name="Mark of Chthon" type="self" icon="skills/spells/mark_of_chthon32.png" wand="0">   
+<spell name="Mark of Chthon" type="self" icon="skills/spells/mark_of_chthon32.png" wand="0">   
 	<requirements mp="15" savvyBonus="0.29" mincost="5" />    
 	<!-- buff: if you want this spell to add a buff, it goes in here. 
 	time - how many turns does this spell do its thing? 
@@ -1561,7 +1561,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<resistbuff necromantic="1" crushing="2" piercing="2" slashing="2" righteous="-5"/>
 		<halo name="sprites/sfx/curse_loop/curse_loop" first="0" num="7" frameRate="100"/>
 		<targetHitEffectBuff percentage="42" name="Nightmare" after="1"/>
-  </buff> 
+	</buff> 
 	<!-- anim: indicates the spell effect that is used. (this thing is context-sensitive, and is overloaded to poop.) 
 		sprite - the sprite directory
 		frames - the # of frames, starting at zero (so since mark of chthon has frames from 0 to 17, we have 18 frames total
@@ -1572,8 +1572,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" amount="27" spell="Curse of Weakness" />
 	<effect type="trigger" amount="33" spell="Minor Blood Debt" />
 	<effect type="trigger" amount="10" spell="Lingering Weakness" />
-	<description text="Using this spell you may wear Chthon's Mark (which makes men mightier than mortals, and allows your attacks to send enemies into terrible nightmare realms). Requires mana to upkeep. Beware the cost to your humanity, of course." />
-   </spell>
+	<description text="Это заклинание помечает вас меткой Хтона, что делает вас значительно сильнее простого смертного на короткое время. Для поддержания требуется мана. Как всегда, вопрос в цене." />
+</spell>
 	
 	<!-- todo: needs health regen, dot self, etc. -->
    
@@ -1589,23 +1589,23 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<targetHitEffectBuff percentage="90" name="Pact Lifesteal" />
 	</buff> 
 	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" sfx="naughty" framerate="100" centerEffect="1"/>
-	<description text="In exchange for the power to steal the life-force of your enemies, you promise to give some of your life to some elder being. This bartering is not for the faint of heart."/>
+	<description text="В обмен на способность красть жизненные силы врагов, вы обещаете отдать часть своей жизни высшим силам. Сделка не для слабых духом."/>
 	<effect type="dot" spell="Necropain" amount="15"/>
 	<effect type="trigger" spell="Curse of Weakness" amount="17" />
-   </spell>
+</spell>
 
 	<!-- Eldritch Pillar goes here. Who the hell knows how this works. -->
 <spell name="Zalgo Blast1" type="template" templateID="12" >
    <effect type="damage" necromantic="2" necromanticF="0.55" affectscaster="1" />
    <anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" centereffect="1" sfx="blast" />
-   </spell>
+</spell>
 <spell name="Zalgo1" type="target" >
 	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="100" sfx="darkmagic" centerEffect="1"/>
 	<effect type="paralyze" amount="3" turns="1" />
 	<effect type="bleed" />
 	<effect type="trigger" spell="Corpse Blast" amount="2" />
 	<effect type="trigger" spell="Nightmare" amount="3" />
-   </spell>
+</spell>
 
 
 <spell name="Eldritch Inhabitation" type="target" icon="skills/spells/eldritch_pillar32.png" >
@@ -1625,7 +1625,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" amount="1" spell="Necromantic Blinding" />
 	<effect type="trigger" amount="2" spell="Lingering Weakness" />
    <effect type="trigger" amount="5" spell="Fleshbore" />
-	<description text="This spell possesses the targeted being with an entity not of this reality; said entity will proceed to tear its way back to whence it came however it can, with destructive effect." />
+	<description text="Это заклинание заключает в тело цели существо из другой реальности. Существо будет пытаться вырваться, с предсказуемо губительным результатом для носителя." />
    </spell>
 
 <spell name="Tenebrous Rift" type="targetfloor" icon="skills/spells/tenebrous_rift32.png" >
@@ -1633,7 +1633,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="rift" amount="9" />
    <requirements mp="35" savvyBonus="0.20" mincost="15" />
    <anim sprite="sprites/sfx/black_ritual/black_ritual" frames="10" framerate="100" centerEffect="1" sfx="portal" />
-   <description text="Opens a fearful un-rift into abwhere. Oh, the horror. The Horror." />
+   <description text="Открывает ужасный разлом в никуда." />
    <effect type="trigger" spell="Tentacular Doom"/>
    <effect type="trigger" spell="Zalgo Blast1" />
    <effect type="trigger" amount="1" spell="Blood Debt" />
@@ -1659,7 +1659,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="dot" spell="Zalgo1" amount="1" />
 	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="100" sfx="magic_damage" centerEffect="1" />
 	<description text="Open one of your six mouths and sing the song that ends the Earth." />  
-   </spell>
+</spell>
 
 
 	<!-- just for fun, tenebrous rift, done 2/9/2011
