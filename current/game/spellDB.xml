@@ -666,7 +666,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0" sfx="fleshbore" framerate="100" centerEffect="0"/>
    </spell>
 <spell name="Thibault's Trompement" downtime="9" type="template" templateID="03" anchored="1" icon="skills/warrior/swordplay2_32.png" attack="1">
-   <description text="Why go around when you can attack *through* your foe? This attack strikes your enemy and anyone standing behind them. Scales to Nimbleness."/>
+   <description text="Зачем ходить если можно атаковать прямо через своего врага? Этот навык позволяет атаковать линию квадратов с противниками. Урон зависит от вашей Nimbleness."/>
    <effect type="damage" slashing="2" slashingF="0.25" piercing="2" primaryScale="2" />
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
    </spell>  
@@ -713,7 +713,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" spell="Blast Effect A" />
    </spell>
 <spell name="Ki Cascade Strike" downtime="14" type="template" templateID="89" anchored="1" icon="skills/warrior/staff-fighting2_32.png" attack="1">
-	<description text="Непостижимый и загадочный метод удара разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг."/>
+	<description text="Невероятный и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг."/>
 	<effect type="damage" aethereal="2" aetherealF="0.15" />
 	<effect type="paralyze" amount="2" turns="3" />
 	<anim sprite="sprites/sfx/summonB/summonB" frames="10" sfx="magic_damage" framerate="70" centerEffect="0"/>
@@ -1658,7 +1658,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="damage" necromantic="1" necromanticF="0.35" affectsCaster="1" />
 	<effect type="dot" spell="Zalgo1" amount="1" />
 	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="100" sfx="magic_damage" centerEffect="1" />
-	<description text="Open one of your six mouths and sing the song that ends the Earth." />  
+	<description text="Откройте один из ваших шести ртов и пойте песню о конце Земли." />  
 </spell>
 
 
@@ -1886,7 +1886,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <damagebuff righteous="1"/>
 		<playerHitEffectBuff percentage="35" name="Blinding Flash" />
 	</buff>
-	<description text="Проявляет силу ауры в сиянии света освещающего тьму подземелья. Тех кто на вас нападет, может может оглушить ослепительной вспышкой. Аура поглощает несколько ударов прежде чем погаснуть."/>
+	<description text="Проявляет силу ауры ярким светом, освещающим тьму подземелья. Тех кто нападет на вас, может ослепить обжигающей вспышкой. Сияние поглощает несколько ударов прежде чем погаснуть."/>
    <ai hint="ally" />
 </spell>
   
@@ -1904,7 +1904,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="trigger" spell="Ignition Bolt" amount="0" />
 	<requirements mp="12" savvyBonus="0.29" mincost="4"/>
    <anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" framerate="80" sfx="rune_set" centerEffect="0"/>
-   <description text="Магическая руна использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
+   <description text="Магическая руна, использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
     <ai hint="mine" />
    </spell>
 <spell name="Syzygy" type="self" icon="skills/spells/syzygy32.png" >
@@ -1931,7 +1931,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       <resistbuff transmutative="4"/>
       <resistbuff righteous="3"/>
    </buff>
-   <description text="Сами звезды защищают вас. Эффект пропадет после нескольких пропущенных ударов. Требуется мана для поддержания эффекта."/>
+   <description text="Могущественные силы всего бесконечного космоса защищают вас. Эффект пропадет после нескольких пропущенных ударов. Требуется мана для поддержания эффекта."/>
    </spell>
 
 <spell name="The Stars Aligned" type="template" templateID="100" anchored="1" icon="skills/spells/stars_aligned32.png" wand="1">
@@ -1940,7 +1940,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="paralyze" amount="2" turns="5" self="0" />
    <effect type="bleed" />
    <anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" sfx="magic_damage" framerate="80"  centerEffect="1"/>
-   <description text="Парад планет поражает всех вокруг вас, ужасающей мощью звезд."/>
+   <description text="Парад планет поражает всех вокруг вас ужасающей мощью звезд."/>
    <!-- add some zalgo crap here? -->
    </spell>
 	
@@ -1950,7 +1950,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="8" savvyBonus="0.25"/>
 	<effect type="damage" crushing="8" slashing="5" blasting="5" affectscaster="1" />
 	<anim sprite="sprites/sfx/rockburst/rockburst" frames="9" sfx="earth" framerate="100"  centerEffect="0"/>  
-	<description text="Взрывает камни под ногами ваших врагов." />
+	<description text="Взрывает камни под ногами врагов." />
    </spell>
 <spell name="Dragon's Breath" type="template" templateID="30" anchored="1" icon="skills/spells/dragons_breath32.png" wand="1">
 	<requirements mp="10" savvyBonus="0.24" mincost="3" />
@@ -2002,7 +2002,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="trigger" spell="Fire 1" amount="0" />
    <requirements mp="18" savvyBonus="0.13" mincost="8" />
    <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="rune_set" centerEffect="0"/>
-   <description text="Наносит на пол магическую руну взрыва. Главное самому не наступить!" />
+   <description text="Наносит на пол магическую руну взрыва. Главное самому не наступить!"/>
    </spell>
 <spell name="Summon Wyrmling" type="targetemptyfloor" icon="skills/spells/summon_wyrmling32.png" >
    <requirements mp="23" savvyBonus="0.23"/>
@@ -2018,7 +2018,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <impact sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
 	<effect type="trigger" spell="Flamefield 1" amount="0" />
 	<effect type="trigger" spell="Fireball Effect" amount="0" />
-	<description text="Здоровенный фаербол. Который БУУУУУМ и потом все горит. Просто горит. А что вы еще ожидали?" />
+	<description text="Здоровенный фаербол. Который БУУУУУМ и потом все горит. А что вы еще ожидали?" />
    </spell>
 <spell name="Fireball Effect" type="template" templateID="98" anchored="0" >
    <effect type="damage" conflagratory="2" blasting="2" conflagratoryF="0.25" blastingF="0.2" affectscaster="1" />
@@ -4071,7 +4071,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="I'm Not Left Handed" type="self" >
    <buff usetimer="1" time="2" icon="skills/warrior/swordplay3_64.png" smallicon="skills/warrior/swordplay3_32.png">
       <secondaryBuff id="8" amount="16" /> 
-      <description text="Неожиданно перекинув меч в другую руку, вы можете начать эффективное контрнаступление." /> 
+      <description text="Быстро перекинув меч в другую руку, вы можете начать эффективное контрнаступление." /> 
       </buff>
    </spell>
 

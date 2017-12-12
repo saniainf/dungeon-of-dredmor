@@ -668,12 +668,12 @@
 
 <ability name="Radiant Aura" icon="skills/spells/radiant_aura64.png" skill="20" level="0">
   <spell name="Radiant Aura"/>
-  <description text="Проявляет силу ауры в сиянии света освещающего тьму подземелья. Тех кто на вас нападет, может ослепить обжигающей вспышкой. Сияние поглощает несколько ударов прежде чем погаснуть."/>
+  <description text="Проявляет силу ауры ярким светом, освещающим тьму подземелья. Тех кто нападет на вас, может ослепить обжигающей вспышкой. Сияние поглощает несколько ударов прежде чем погаснуть."/>
   <resistbuff aethereal="1"/>  
   </ability>
 <ability name="Solar Inscription" icon="skills/spells/divine_inscription64.png" skill="20" level="1">
   <spell name="Solar Inscription"/>
-  <description text="Магическая руна использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
+  <description text="Магическая руна, использующая испепеляющую силу солнца, чтобы намертво приковать ваших врагов к земле."/>
   <resistbuff aethereal="1"/>  
   </ability>
 <ability name="Blinding Flash" icon="skills/spells/blinding_light64.png" skill="20" level="2">
@@ -693,7 +693,7 @@
   </ability>
 <ability name="The Stars Aligned" icon="skills/spells/stars_aligned64.png" skill="20" level="5">
   <spell name="The Stars Aligned"/>
-  <description text="Парад планет поражает всех вокруг вас, ужасающей мощью звезд."/>
+  <description text="Парад планет поражает всех вокруг вас ужасающей мощью звезд."/>
   <resistbuff aethereal="1"/>
   </ability>
 
@@ -764,13 +764,13 @@
   </ability>
 <ability name="Axe Mantra" icon="skills/warrior/axe_mantra64.png" skill="1" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
-  <description text="Священная преданность исскуству махания топором раскрыло вам все его секреты. Есть шанс нанести топором ужасную рану, от которой тяжело оправиться." />
+  <description text="Непогрешимая преданность исскуству махания топором раскрыло вам все его секреты. Есть шанс нанести топором ужасную рану, от которой тяжело оправиться." />
   <targetHitEffectBuff percentage="16" name="Bleeding Out" />
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Philosopher of the Axe" icon="skills/warrior/axemanship3_64.png" skill="1" level="5">
-  <description text="Высочайший уровень махания топором — это не просто боевой навык, это образ мысли и жизни. Боевые способности сильно возрастают при использовании топора. А еще вы узнали эффективный прием с непереводимым латинским названием."/>
+  <description text="Высочайшее мастерство махания топором — это не просто боевой навык, это образ мысли и жизни. Боевые способности сильно возрастают при использовании топора. А еще вы узнали эффективный прием с непереводимым латинским названием."/>
   <spell name="Cogito Ergo Splat"/>
   <secondarybuff id="4" amount="5"/> <!-- Crit -->
   <secondarybuff id="9" amount="14"/> <!-- EDR -->
@@ -780,12 +780,12 @@
 
 
 <ability name="Student of Fencing" icon="skills/warrior/swordplay0_64.png" skill="0" level="0">
-  <description text="Просто помните: заостренный кончик меча втыкается в тело противника. Это только первый шаг на пути к мастерству фехтования и дает незначительные бонусы."/>
+  <description text="Просто помните: острым концом тыкать в тело противника. Это только первый шаг на пути к мастерству фехтования и незначительные бонусы."/>
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <damagebuff slashing="1" />
   </ability>
 <ability name="Liechtenauer's Overhau" icon="skills/warrior/swordplay1_64.png" skill="0" level="1">
-  <description text="Что такое выпад Лейхтенауэра? Рад, что спросили. Это очень эффективный, тевтонский удар, наносящий сильный урон врагу. Жаль, что получается нечасто. Урон зависит от вашей Burliness."/>
+  <description text="Что такое выпад Лихтенауэра? Рад, что спросили. Это очень эффективный, тевтонский удар, наносящий сильный урон врагу. Жаль, что получается нечасто. Урон зависит от вашей Burliness."/>
   <!-- <spell name="Liechtenauer's Overhau"/> -->
   <targetHitEffectBuff percentage="20" name="Liechtenauer's Overhau" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
@@ -793,7 +793,7 @@
   <damagebuff slashing="1"/>
   </ability>
 <ability name="Sword Practice" icon="skills/skill_sword.png" skill="0" level="2">
-  <description text="Вы долго тренировались рассекая мух и ваши навыки фехтования естественно улучшились. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
+  <description text="Вы долго тренировались рассекая мух и ваши навыки фехтования улучшились. В ближнем бою есть шанс нанести 'Crippling Wound'."/>
   <damagebuff piercing="1" />
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -813,7 +813,7 @@
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Sword Poet" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
-  <description text="Перо как известно сильнее меча, но настоящие войны пользуются мечем КАК пером. Вы достигли мастерства во владении мечем и контратаке."/>
+  <description text="Перо как известно сильнее меча, но искусные фехтовальщики могут творить мечем. Вы достигли мастерства во владении мечем и контратаке."/>
   <secondarybuff id="8" amount="4"/> <!-- Counter -->
   <secondarybuff id="9" amount="13"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
@@ -837,7 +837,7 @@
   <damagebuff piercing="1"/>
   </ability>
 <ability name="Mace Rehearsal" icon="skills/skill_mace.png" skill="2" level="2">
-  <description text="Содержать булаву в превосходном состоянии очень важно, чтобы в решающий момент показать идеальное крошилово. В ближнем бою есть шанс нанести 'Crushed Bones'."/>
+  <description text="Держать булаву в идеальном состоянии очень важно, чтобы в решающий момент показать идеальное крошилово. В ближнем бою есть шанс нанести 'Crushed Bones'."/>
   <damagebuff crushing="1" />
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
@@ -852,7 +852,7 @@
   </ability>
 <ability name="Mace Knowledge" icon="skills/warrior/mace_knowledge64.png" skill="2" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
-  <description text="Подробное изучение использования булавы в славной битве, позволило вам постичь все скрытые секреты этого славного оружия. Вы можете нанести булавой такой неповторимый удар, о котором будут слагать легенды, еще несколько поколений." />
+  <description text="Подробное изучение использования булавы в славной битве, позволило вам постичь все скрытые секреты этого славного оружия. Вы можете нанести булавой такой неповторимый удар, о котором будут слагать легенды еще несколько поколений." />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   <targetHitEffectBuff percentage="6" name="Bleeding Out" />
   <targetHitEffectBuff percentage="10" name="Crippling Wound" />
@@ -889,7 +889,7 @@
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
 <ability name="Ki Cascade Strike" icon="skills/warrior/staff-fighting2_64.png" skill="3" level="3">     
-  <description text="Непостижимый и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг."/>
+  <description text="Невероятный и загадочный метод удара, разработанный бывшим торговцем сыра, а ныне великим гладиатором. Этот прием позволяет поразить сразу несколько врагов вокруг."/>
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff crushing="1"/>
@@ -898,13 +898,13 @@
   </ability>
 <ability name="Staff Secrets" icon="skills/warrior/staff_secrets64.png" skill="3" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Глубокое изучение великого многообразия техник ведения боя с посохом, открыло вам многие его тайны. Ваши атаки могут нанести ужасные раны, которые нескоро заживут." />
+  <description text="Тщательное изучение великого многообразия техник ведения боя с посохом, открыло вам многие его тайны. Ваши атаки могут нанести ужасные раны, которые нескоро заживут." />
   <targetHitEffectBuff percentage="6" name="Bleeding Out" />
   <targetHitEffectBuff percentage="10" name="Crippling Wound" />
   <secondarybuff id="2" amount="1"/> <!-- melee power -->
   </ability>
 <ability name="Staff Sage" icon="skills/warrior/staff-fighting3_64.png" skill="3" level="5">
-  <description text="Вы часто слышите, что использование посохов в бою имеет некий фаллический символизм, и это не дает вам покоя. Ведь если это так, вы не только мастерски овладели посохом, но и собой. Хотя это дает много физических и магических бонусов."/>
+  <description text="Вы часто слышите, что использование посоха в бою, имеет некий фаллический символизм, и это не дает вам покоя. Ведь если это так, вы не только мастерски овладели посохом, но и собой. Хотя это дает много физических и магических бонусов."/>
   <secondarybuff id="9" amount="12"/> <!-- EDR -->
   <secondarybuff id="7" amount="5"/> <!-- Block -->
   <secondarybuff id="3" amount="3"/> <!-- Magic Power -->
@@ -952,7 +952,7 @@
   </ability>
 <ability name="Stone Sole" icon="skills/skill_unarmed.png" skill="6" level="4" >
   <secondarybuff id="9" amount="1"/> <!-- EDR -->
-  <description text="Вы много раз проходились ногами по лицам врагов, и ваши ступни стали тверды, как ваш характер. Вы можете так сильно пнуть врага, что все удары, полученные им до этого, покажутся просто щекоткой." />
+  <description text="Вы много раз проходились ногами по лицам врагов, и ваши ступни стали тверды как ваш характер. Вы можете так сильно пнуть врага, что все удары полученные им до этого, покажутся просто щекоткой." />
   <secondarybuff id="3" amount="1"/> <!-- magic power -->
   <targetHitEffectBuff percentage="10" name="Stone Sole Pummeling" />
   <damagebuff crushing="2" />
@@ -984,7 +984,7 @@
   <crossbowShotBuff name="Crossbow Blast" percentage="20" />
   </ability>
 <ability name="Bullseye" icon="skills/warrior/crossbow1_64.png" skill="4" level="2">
-  <description text="Вы промахиваетесь все реже, а урон наносимый выстрелом растет. Шанс сохранить стрелу увеличен."/>
+  <description text="Вы промахиваетесь все реже и можете попать в особо уязвимые места. Шанс сохранить стрелу увеличен."/>
   <secondarybuff id="9" amount="8"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <damagebuff piercing="1"/>
@@ -1017,20 +1017,20 @@
 
 
 <ability name="Underhander" icon="skills/skill_thrown.png" skill="5" level="0">
-  <description text="You've mastered the gentle lob, but don't try out for the basketball team yet. Slightly enhances combat abilities when using thrown weapons. Ammo recovery rate is increased."/>
+  <description text="Вы неплохо бросаете, но не спешите записываться в баскетбольную команду. Сила ваших бросков немного увеличена. Шанс сохранить снаряд увеличен."/>
   <secondarybuff id="9" amount="2"/>
   <secondarybuff id="4" amount="1"/>
   <recoverybuff amount="10" />
   <thrownBuff name="Beaned" percentage="20"/>
   </ability>
 <ability name="Monster Toss" icon="skills/monster_toss64.png" skill="5" level="1" >
-  <description text="Don't like that monster? Just toss it away!" />
+  <description text="Не нравится этот монстр? Оттолкните его подальше!" />
   <recoverybuff amount="5" />
   <spell name="Monster Toss" />
   <secondarybuff id="2" amount="" /> <!-- melee -->
   </ability>
 <ability name="Peltast" icon="skills/warrior/thrown1_64.png" skill="5" level="2">
-  <description text="You're skilled in the hit-and-run tactics of a peltast. Well, not much of the running, but you try to dodge. Ammo recovery rate is increased."/>
+  <description text="Вы обучились тактике пельтастов 'Ударь и отступи'. В смысле не сбежать, а просто увернуться. Шанс сохранить снаряд увеличен."/>
   <secondarybuff id="9" amount="2"/> 
   <secondarybuff id="6" amount="2"/> 
   <damagebuff crushing="1"/>
@@ -1044,7 +1044,7 @@
   <spell name="Dual Pitch" />
   </ability>-->
 <ability name="Australian Technique" icon="skills/australian64.png" skill="5" level="3" >
-  <description text="The Australian Technique is tricky, but when you pull it off it will cause your weapon to burrow deep into your target's flesh (or flesh-analogue), causing terrible damage by the sheer thrown power of that Southern Land." />
+  <description text="Австралийская техника метания невероятно сложная, но когда получается, снаряд очень глубоко проникает в плоть врага (ну или что там у него вместо плоти), нанося урон с истинной силой этих Южных Земель." />
   <recoverybuff amount="5" />
   <thrownBuff name="Fleshbore" percentage="20"/>
   </ability>
@@ -1054,7 +1054,7 @@
   <spell name="Trap Throw" />
   </ability>-->
 <ability name="Regent of Throwing Stuff At People" icon="skills/warrior/thrown2_64.png" skill="5" level="4">
-  <description text="Though throwing stuff at people is not generally held to be among the nobler of the martial arts, you've managed to bring it a kind of regality. Sort of. Mostly you just throw stuff real hard. Ammo recovery rate is increased."/>
+  <description text="Хотя бросание всего подряд в противника и не считается великим боевым исскуством, вы придаете этому немало величия. Вроде как. Но бросаете вы правда неслабо. Шанс сохранить снаряд увеличен."/>
   <secondarybuff id="4" amount="4"/> <!-- Crit -->
   <secondarybuff id="9" amount="2" /> <!-- EDR -->
   <damagebuff crushing="3"/>
