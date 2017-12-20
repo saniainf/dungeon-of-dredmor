@@ -1100,7 +1100,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		mineTimer="16" 
 		mineUseGlints="1" 
 		mineGlintDensity="8"
-      mineSpriteDrawOrder="1"
+		mineSpriteDrawOrder="1"
 		mineSpritePNGSeries="sprites/sfx/skullpuff/skullpuff" 
 		mineSpritePNGFirst="0" 
 		mineSpritePNGNum="10" 
@@ -1111,8 +1111,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<requirements mp="28" savvyBonus="0.28" mincost="9" />
 	<effect type="damage" toxic="4" toxicF="0.18" asphyxiative="4" asphyxiativeF="0.18" putrefying="2" putrefyingF="0.12" affectscaster="1" />
 	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" centerEffect="1" sfx="magic" />
-	<description text="Вызывает разложение всего вокруг, создавая облака ядовитых паров, в которых отравится и задохнется любое живое существо. Заклинание, по существу, создает токсичный газ." />
-   </spell>
+	<description text="Вызывает разложение всего вокруг, создавая облака ядовитых паров, в которых отравится и задохнется любое живое существо. Заклинание, по существу, создает токсичный газ."/>
+	</spell>
   
 <!-- Golemancy -->
 <!-- redo sound -->
