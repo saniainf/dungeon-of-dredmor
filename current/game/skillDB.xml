@@ -1095,11 +1095,11 @@
 
 
 <ability name="Squire of the Shield" icon="skills/skill_shieldbearer.png" skill="8" level="0">
-  <description text="Practice carrying so many other people's shields has made you rather good at handling your own."/>
+  <description text="Занимаясь перетаскиванием чужих щитов, вы улучшили свой навык обращения с ним."/>
   <secondarybuff id="7" amount="8"/> <!-- block -->
   </ability>
 <ability name="Duck And Cover!" icon="skills/warrior/shieldbearer1_64.png" skill="8" level="1">
-  <description text="Fight smarter, not better! Can increase your defense for a while after you are hit."/>
+  <description text="Сражаться с умом не плохо! После получения удара, есть возможность увеличить свои защитные способности на некоторое время."/>
   <playerHitEffectBuff percentage="20" name="Duck And Cover!" />
   <secondarybuff id="7" amount="2"/> <!-- block -->
   </ability>
